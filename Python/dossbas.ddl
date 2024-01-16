@@ -1,0 +1,25657 @@
+*------------------------------------
+ACTUAL_DATA_MODEL;*          DOSSBAS
+*------------------------------------
+*
+WORD_LIST=WL_ACCEPT_REQ,+
+   TYPE=CHAR,+
+   WORDS=('A','F','H','I','N','O','P','R','S','T','U');
+*
+WORD_LIST=WL_AUTO_SOURIS,+
+   TYPE=CHAR,+
+   WORDS=('-','A','R');
+*
+WORD_LIST=WL_BRANCHE,+
+   TYPE=CHAR,+
+   WORDS=('-','A','B','C','D','E','F','G','H','I','K','M','P','S','T','U',+
+'V','W','X','Y','Z');
+*
+WORD_LIST=WL_BRANCHE_NUMEROTATION,+
+   TYPE=CHAR,+
+   WORDS=('-','00','01','02','03','04','05','A','AD','a','B','C','CFE','D',+
+'E','EADM','EMRK','F','G','GG','GS','H','I','K','KOR','M','MA','P','PK','RK',+
+'RM','S','T','U','V','VK','W','X','Y','Z');
+*
+WORD_LIST=WL_BUREAUTIQUE,+
+   TYPE=CHAR,+
+   WORDS=('0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F',+
+'G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y',+
+'Z');
+*
+WORD_LIST=WL_CANTON,+
+   TYPE=CHAR,+
+   WORDS=('--','AG','AI','AR','BE','BL','BS','FL','FR','GE','GL','GR','JU',+
+'LU','NE','NW','OW','SG','SH','SO','SZ','TG','TI','UR','VD','VS','ZG','ZH');
+*
+WORD_LIST=WL_CATEGORIE,+
+   TYPE=CHAR,+
+   WORDS=('A','C','J','P','T');
+*
+WORD_LIST=WL_CATEGORIE_TFA,+
+   TYPE=CHAR,+
+   WORDS=('-','AK','AK-V','ALK','ALK-V','BAG','BIGA','BSV','BVG','EL','IVS',+
+'KASSE','KK','MV','SUVA','UVK','VERS');
+*
+WORD_LIST=WL_CAT_FORMULE,+
+   TYPE=CHAR,+
+   WORDS=('D','E','F','G','I','L','N','R','S','T');
+*
+WORD_LIST=WL_CHAMBRE,+
+   TYPE=CHAR,+
+   WORDS=('1','2','8','9','I','II','III','IV');
+*
+WORD_LIST=WL_CLASSE_PIECE,+
+   TYPE=CHAR,+
+   WORDS=('0','C','F','I','P','S');
+*
+WORD_LIST=WL_CODE_AZA,+
+   TYPE=CHAR,+
+   WORDS=('0/0','0/2','0/3','0/4','0/5','0/6','1/2','1/3','1/4','1/5','1/6');
+*
+WORD_LIST=WL_CODE_MEDIA,+
+   TYPE=CHAR,+
+   WORDS=('0/2','1/2');
+*
+WORD_LIST=WL_COUR,+
+   TYPE=CHAR,+
+   WORDS=('0','1','10','11','12','13','14','15','16','2','3','4','5','6','7',+
+'8','9','A','AK','aoKH','B','BStr','C','C1','C2','D','E','EVG','KH','P1',+
+'P2','Pres');
+*
+WORD_LIST=WL_COUR_NUMEROTATION,+
+   TYPE=CHAR,+
+   WORDS=('0','1','10','11','12','13','14','15','16','2','3','4','5','6','7',+
+'8','9','A','AK','aoKH','B','BStr','C','C1','C2','D','E','EVG','KH','LSN',+
+'LZN','P1','P2','Pres','TAF','TF');
+*
+WORD_LIST=WL_CT,+
+   TYPE=CHAR,+
+   WORDS=('-','1','2','3','4','5','6','7','8','9','K','N','T','V','Z');
+*
+WORD_LIST=WL_DHL,+
+   TYPE=CHAR,+
+   WORDS=('-','D','DH','DHL','DL','L');
+*
+WORD_LIST=WL_DIVISION,+
+   TYPE=CHAR,+
+   WORDS=('--','AK','ARC','aoKH','B','BIB','BStr','C1','C2','CAI','CHA',+
+'DOC','EVG','EXT','GG','HUI','INF','KH','P1','P2','P3','P4','PK','Pres',+
+'PUB','RK','S1','S2','SG','ST1','ST2','VK');
+*
+WORD_LIST=WL_DOMAINE,+
+   TYPE=CHAR,+
+   WORDS=('-','GEN','NOM','SECT','SUP','TRIB');
+*
+WORD_LIST=WL_ECRAN_DEPART,+
+   TYPE=CHAR,+
+   WORDS=('-','D','G','S');
+*
+WORD_LIST=WL_ETAT_CIVIL,+
+   TYPE=CHAR,+
+   WORDS=('C','D','G','I','M','P','S','V');
+*
+WORD_LIST=WL_ETAT_DOSSIER,+
+   TYPE=CHAR,+
+   WORDS=('A','C','D','E','S','T');
+*
+WORD_LIST=WL_ETAT_IMP,+
+   TYPE=CHAR,+
+   WORDS=('A','I','O','P');
+*
+WORD_LIST=WL_FERIE,+
+   TYPE=CHAR,+
+   WORDS=('F','O','T');
+*
+WORD_LIST=WL_FONCTION,+
+   TYPE=CHAR,+
+   WORDS=('#1','#2','#3','#A','#B','#C','#D','#E','AB','AC','AL','AR','AU',+
+'CA','CC','CR','CS','CX','DC','GA','GT','GX','HD','J1','J2','J3','J4','J8',+
+'J9','JC','JJ','JP','JQ','JS','JU','JV','JX','LL','MD','MT','PB','RD','RG',+
+'SE','SG','SI','SP');
+*
+WORD_LIST=WL_FONCT_IMP,+
+   TYPE=CHAR,+
+   WORDS=('-','AC','AK','AK-V','ALK','ALK-V','AS','ASI','BAG','BIGA','BSV',+
+'BVG','BVGER','CJ','EL','ENT','EXP','FAM','HOIR','IS','IVS','JRNL','JSUP',+
+'JUR1','JURC','JUREC','JURID','JURP','KK','MV','NENR','NONJ','OREC','SUVA',+
+'TPF','TRA','UBI','UVK','VERS');
+*
+WORD_LIST=WL_FONC_TACHE,+
+   TYPE=CHAR,+
+   WORDS=('--','CC','CD','CG','CT','FI','GR','JA','JD','JP','JX','RC');
+*
+WORD_LIST=WL_GENRE,+
+   TYPE=CHAR,+
+   WORDS=('F','FP','M','MP','N','NP');
+*
+WORD_LIST=WL_GENRE_AUDIENCE,+
+   TYPE=CHAR,+
+   WORDS=('H','I','P','S');
+*
+WORD_LIST=WL_GENRE_DELAI,+
+   TYPE=CHAR,+
+   WORDS=('ACT','AF','AF2','AJ','AR','AUD','AUT','CD','CDR','CRC','DDT',+
+'DEC','DMA','DMR','DOC','DOM','DOS','DP','DPQ','DSR','EXM','EXP','FAC','FF',+
+'FIN','FJ','FS','HER','IL','MC','MDP','MEM','MNQ','MR','NC','NDF','NEM',+
+'OSI','OSR','PJT','PRO','PTG','PTJ','RAF','RAP','RAR','RCR','RCS','RES',+
+'RPQ','RR','RR2','RR3','SEA','SIG','SUR','SUS','TAR','TEM','TRA','TUT');
+*
+WORD_LIST=WL_GENRE_DOCU,+
+   TYPE=CHAR,+
+   WORDS=('AD','CFE','EADM','EMRK','GG','GS','KOR','MA','PK','RK','U','V',+
+'VK','W','X','Y');
+*
+WORD_LIST=WL_GENRE_FORM,+
+   TYPE=CHAR,+
+   WORDS=('A','C','D','E','L','O','S','T','V','X');
+*
+WORD_LIST=WL_GENRE_PIECE,+
+   TYPE=CHAR,+
+   WORDS=('E','I','P','S');
+*
+WORD_LIST=WL_ICONE,+
+   TYPE=CHAR,+
+   WORDS=('G','P');
+*
+WORD_LIST=WL_LANGUE,+
+   TYPE=CHAR,+
+   WORDS=('D','F','I');
+*
+WORD_LIST=WL_LANGUE_FORMULE,+
+   TYPE=CHAR,+
+   WORDS=('C','D','E','F','H','I','L','M','P','T');
+*
+WORD_LIST=WL_LANGUE_IMPLIQUE,+
+   TYPE=CHAR,+
+   WORDS=('-','C','D','E','F','H','I','L','M','P','T');
+*
+WORD_LIST=WL_LIEU_RECEPT,+
+   TYPE=CHAR,+
+   WORDS=('ALT','BSL','CHI','GVA','KRE','ODM','VAL','ZRH');
+*
+WORD_LIST=WL_MODE_DECISION,+
+   TYPE=CHAR,+
+   WORDS=('--','AF','AI','AP','CI','DF','DI','EI','LF','OF','OI','PI','RI');
+*
+WORD_LIST=WL_MODE_ENVOI,+
+   TYPE=CHAR,+
+   WORDS=('A','B','C','E','F','G','I','J','K','L','N','O','P','Q','R','S',+
+'U','X');
+*
+WORD_LIST=WL_MODE_HISTO,+
+   TYPE=CHAR,+
+   WORDS=('A','M','O','P','T');
+*
+WORD_LIST=WL_MODE_REGLEMENT,+
+   TYPE=CHAR,+
+   WORDS=('----','COL2','COL3','COL5','JUG1','LETT','ORDP','PCIR','PSIM',+
+'PSM3','SEAN');
+*
+WORD_LIST=WL_MODE_RETOUR,+
+   TYPE=CHAR,+
+   WORDS=('0','A','I','R','S');
+*
+WORD_LIST=WL_MONTANT,+
+   TYPE=CHAR,+
+   WORDS=('CHFM','CHFP','CHFS','HCOL','HGRF','HJUG');
+*
+WORD_LIST=WL_MOYEN_DE_DROIT,+
+   TYPE=CHAR,+
+   WORDS=('ADA','APA','INT','MOD','NTFGDP','NTF_A','NTF_B','NTF_C','NTF_D',+
+'NTF_E','NTF_F','NTF_G','NTF_S','NTF_T','NTF_U','NTF_V','NTF_W','NTF_X',+
+'NTF_Y','NTF_Z','PAS','PCA','PDIR','PLP','PN','PN220','PPF','RDA','RDP',+
+'RECDP','RECS','REHAB','REQ','REV','RN','RPA','RREF','RVA','XX');
+*
+WORD_LIST=WL_NIVEAU,+
+   TYPE=CHAR,+
+   WORDS=('A','C','E','F','I','M','N','P','Q','S','U');
+*
+WORD_LIST=WL_OBJET,+
+   TYPE=CHAR,+
+   WORDS=('AD','AD_BORD','AD_FDG','AD_OUV','AD_RECH','AJU_OTE','ARCHIWEB',+
+'ARC_ARC','ARC_NUM','COMPO','CONNEXION','DEC','DEC_AUD','DEC_DIF','DEC_EXP',+
+'DEC_POS','DEC_RED','DEC_TEXTE','DELAI','DELAI_RECH','DOC_ACT','DOC_AJA',+
+'DOC_AJR','DOC_ATF','DOC_AZA','DOC_CMN','DOC_CMT','DOC_DEFAULT',+
+'DOC_DEFAULT_1','DOC_DEFAULT_2','DOC_DEFAULT_3','DOC_DEFAULT_4',+
+'DOC_DEFAULT_8','DOC_DEFAULT_9','DOC_DOC','DOC_DSP','DOC_DVR','DOC_EDF',+
+'DOC_ELA','DOC_ELG','DOC_FCP','DOC_FCR','DOC_FPL','DOC_INS','DOC_JNL',+
+'DOC_NOT','DOC_PBA','DOC_PBB','DOC_PDF','DOC_PJT','DOC_PPL','DOC_PVA',+
+'DOC_PVD','DOC_RBT','DOC_RDF','DOC_RES','DOC_RGS','DOC_RPT','DOC_TMB',+
+'DOC_TRV','DOS','DOS_ATTR','DOS_BORD','DOS_DOC','DOS_EMP','DOS_FDG',+
+'DOS_FDG_PLUS','DOS_LIQ','DOS_OUV','DOS_POS','DOS_QUE_POS','DOS_RECH',+
+'DOS_RENUM','DOS_SEC','DOS_TRAITE','FORMULE','FORM_PROV','FRAIS',+
+'FRAIS_RECH','IMP','IMP_AUTO','IMP_ENREG','IMP_NOT','IMP_OBSO','IMP_RECH',+
+'IMP_SENSI','IMP_SYM','LST_MES','MES','MODOSS','OJC','TRAD_PROV','WEBSTAT');
+*
+WORD_LIST=WL_PROVENANCE,+
+   TYPE=CHAR,+
+   WORDS=('--','AG','AI','AR','BE','BL','BS','CH','FR','GE','GL','GR','JU',+
+'LU','NE','NW','OW','SG','SH','SO','SZ','TG','TI','UR','VD','VS','ZG','ZH');
+*
+WORD_LIST=WL_PUBLICITE_DOSSIER,+
+   TYPE=CHAR,+
+   WORDS=('C','M','O','P','S');
+*
+WORD_LIST=WL_ROLE_CIV_IMP,+
+   TYPE=CHAR,+
+   WORDS=('---','ADJ','APP','ASI','ASS','AUT','DEF','DEM','EMT','EPE','EPT',+
+'EXP','EXR','INT','ITM','ITS','OPP','PRC','PRI','RCP','RCT','RQT','SEC',+
+'SPE','SUI','TEM','TRA','XXX');
+*
+WORD_LIST=WL_ROLE_COLLECTION,+
+   TYPE=CHAR,+
+   WORDS=('----','CHEF','CJNT','ENFT','FILE','FILS','HOIR');
+*
+WORD_LIST=WL_ROLE_IMP,+
+   TYPE=CHAR,+
+   WORDS=('A','C','F','I','R','T');
+*
+WORD_LIST=WL_RUBRUM_DISPO,+
+   TYPE=CHAR,+
+   WORDS=('-','0','1');
+*
+WORD_LIST=WL_R_ISSUE_PROCES,+
+   TYPE=CHAR,+
+   WORDS=('1.0','1.1','1.2','1.3','1.4','1.5','1.9','2.0','2.1','2.2','2.3',+
+'2.4','2.9','3.0','3.1','3.2','3.3','3.9','4.0','4.1','4.2','4.3','4.9',+
+'5.0','5.1','5.2','5.3','5.4','5.5','5.6','5.7','6.0','7.0','7.1');
+*
+WORD_LIST=WL_SALLE,+
+   TYPE=CHAR,+
+   WORDS=('A','B','G','J','M','P','R','S','T','V');
+*
+WORD_LIST=WL_SEXE,+
+   TYPE=CHAR,+
+   WORDS=('F','M');
+*
+WORD_LIST=WL_SITE,+
+   TYPE=CHAR,+
+   WORDS=('BLZ','BRN','LSN','LZN','SGL');
+*
+WORD_LIST=WL_STATUT_DEC,+
+   TYPE=CHAR,+
+   WORDS=('ALX','APR','ATN','ATQ','ATR','CMN','CRE','EEF','EXP','NTF','NUL',+
+'PEC','PRJ','REC','RFM','RND','RPT','SAS');
+*
+WORD_LIST=WL_STATUT_DELAI,+
+   TYPE=CHAR,+
+   WORDS=('CMP','COU','ECH','NUL','PRL','PRO','RES','TAR');
+*
+WORD_LIST=WL_STATUT_ENVOI,+
+   TYPE=CHAR,+
+   WORDS=('LIV','PER','POS','PRV','REG','RET','XXX');
+*
+WORD_LIST=WL_STATUT_ETRANGER,+
+   TYPE=CHAR,+
+   WORDS=('-','A','B','C','D','E','F','G','I','K','L','N','O','R','W','X');
+*
+WORD_LIST=WL_STATUT_FICHIER,+
+   TYPE=CHAR,+
+   WORDS=('ARCHI','CHOUT','ENCOU','INDEF');
+*
+WORD_LIST=WL_STATUT_PIECE,+
+   TYPE=CHAR,+
+   WORDS=('A','N','P','R','T','V');
+*
+WORD_LIST=WL_TRIBUNAL,+
+   TYPE=CHAR,+
+   WORDS=('EVG','NTF','TAF','TFL');
+*
+WORD_LIST=WL_TYPE_PROFIL,+
+   TYPE=CHAR,+
+   WORDS=('C','D','E','L','M','O','P','S','T','W');
+*
+WORD_LIST=WL_TYPE_PUB,+
+   TYPE=CHAR,+
+   WORDS=('-','A','D','P','S');
+*
+WORD_LIST=WL_TYPE_REPRES,+
+   TYPE=CHAR,+
+   WORDS=('-','L','M');
+*
+WORD_LIST=WL_TYPE_REQ,+
+   TYPE=CHAR,+
+   WORDS=('ADM','AG','AJ','AO','AUD','CD','EE2','ES','IL','INT','ML','MP',+
+'PD','RD','REC','REP','SEA','SSR','SUR','SUS','TEM','TRA','XX');
+*
+WORD_LIST=WL_TYP_ADR,+
+   TYPE=CHAR,+
+   WORDS=('CHZ1','CHZ2','CP','DAC','DOM','ELC','ETR','FAC','INC','INV','LET',+
+'OBS','PA','PAQ','PAR','POST','PR','PRO','SDF','TMP');
+*
+CODE_LIST=CL_ETAT_DOSSIER,+
+   CODES=(+
+'A'='2','C'='1','D'='7','E'='8','S'='3','T'='9');
+*
+CODE_LIST=CL_TYPE_REQ_D,+
+   CODES=(+
+'ADM'='vAn','AG'='uV','AJ'='uP','AO'='aV','AUD'='pA','CD'='Akt','EE2'='SW2',+
+'EF'='KB','EPA'='KVE','ES'='aW','EXP'='Gut','IL'='Aug','INT'='Int','LES'=+
+'EaW','ML'='Haf','MP'='vM','PD'='FEr','RD'='FWi','REC'='Aus','REP'='WA','SEA'+
+='éB','SSR'='WVA','SUR'='Sic','SUS'='Sis','TEM'='Zeu','TRA'='Dol','XX'='ébr');
+*
+CODE_LIST=CL_TYPE_REQ_F,+
+   CODES=(+
+'ADM'='Adm','AG'='AG','AJ'='AJ','AO'='AO','AUD'='Aud','CD'='CD','EE2'='EE2',+
+'EF'='EF','EPA'='EAF','ES'='ES','EXP'='Exp','IL'='IL','INT'='Int','LES'='LES'+
+,'ML'='ML','MP'='MP','PD'='PD','RD'='RD','REC'='Rec','REP'='RP','SEA'='DP',+
+'SSR'='SER','SUR'='Sér','SUS'='Sus','TEM'='Tém','TRA'='Tra','XX'='Aut');
+*
+THESAURUS_DATA_CONTROL_SET=TDC_SWITCH_F,+
+   PRIMARY_LANGUAGE=FRENCH,+
+   SWITCH=(FRE),+
+   THESAURUS=JURIVOC.BRADO_DIC_FRE;
+*
+THESAURUS_DATA_CONTROL_SET=TDC_SWITCH_I,+
+   PRIMARY_LANGUAGE=ITALIAN,+
+   SWITCH=(ITA),+
+   THESAURUS=JURIVOC.BRADO_DIC_ITA;
+*
+SEARCH_CONTROL_SET=ABREVIATION_SEARCH,+
+   ENTIRE_VALUE=YES,+
+   PRECISION=30,+
+   RAISE_TERMS=YES,+
+   TEXT=NO;
+*
+SEARCH_CONTROL_SET=SC_DESCR,+
+   ENTIRE_VALUE=YES,+
+   PRECISION=30,+
+   THESAURUS=JURIVOC.BRADO_THES,+
+   SWITCH_SEARCH=($COMPONENT,$PREFER),+
+   RAISE_TERMS=YES,+
+   TEXT=NO;
+*
+SEARCH_CONTROL_SET=SC_NOM,+
+   BREAK=(' !!"(),/:;=?[\]{}'),+
+   SUB_BREAK=('''-.'),+
+   PRECISION=30,+
+   RAISE_TERMS=YES,+
+   TEXT=YES;
+*
+SEARCH_CONTROL_SET=SC_NOM_INC_ENTIRE,+
+   ENTIRE_VALUE=YES,+
+   BREAK=(' !!"(),/:;=?[\]{}'),+
+   SUB_BREAK=('''-.'),+
+   PRECISION=30,+
+   RAISE_TERMS=YES,+
+   TEXT=YES;
+*
+SEARCH_CONTROL_SET=SC_NOM_PLUS,+
+   BREAK=(' !!"(),/:;=?[\]{}'),+
+   SUB_BREAK=('''+-.'),+
+   PRECISION=30,+
+   RAISE_TERMS=YES,+
+   TEXT=YES;
+*
+SEARCH_CONTROL_SET=SC_NORAISE,+
+   PRECISION=30,+
+   TEXT=NO;
+*
+SEARCH_CONTROL_SET=SC_NOTICE,+
+   BREAK=(' !!"(),/:;=?[\]{|}'),+
+   SUB_BREAK=('''-.'),+
+   PRECISION=30,+
+   RAISE_TERMS=YES,+
+   TEXT=YES;
+*
+SEARCH_CONTROL_SET=SC_OCC,+
+   BREAK=(';'),+
+   PRECISION=30,+
+   RAISE_TERMS=YES,+
+   TEXT=YES;
+*
+SEARCH_CONTROL_SET=SC_RAISE,+
+   PRECISION=30,+
+   RAISE_TERMS=YES,+
+   TEXT=NO;
+*
+SEARCH_CONTROL_SET=SC_SOUNDEX,+
+   BREAK=(' '),+
+   PRECISION=30,+
+   RAISE_TERMS=YES,+
+   TEXT=YES;
+*
+SEARCH_CONTROL_SET=SC_TEXTE,+
+   BREAK=(NON_GRAPHIC_MULTINATIONAL,' !!"(),/:;=?[\]{}'),+
+   SUB_BREAK=('''-'),+
+   PRECISION=30,+
+   RAISE_TERMS=YES,+
+   TEXT=YES;
+*
+DOMAIN=ABREVIATION,+
+   SIZE=2:23,+
+   EDIT_BLANKS=SQUEEZE,+
+   COMMENT=(+
+   'Domaine définissant les abréviations de lois'),+
+   TYPE=CHAR;
+*
+DOMAIN=DO_ADR,+
+   SIZE=1:40,+
+   EDIT_BLANKS=TRIM_TRAILING,+
+   COMMENT=(+
+   'Domaine pour l''adresse d''un impliqué'),+
+   SEARCH_CONTROL=SC_NOM,+
+   TYPE=CHAR;
+*
+DOMAIN=DO_BRANCHE,+
+   LEGAL=WL_BRANCHE,+
+   SIZE=1:4,+
+   EDIT_BLANKS=TRIM_TRAILING,+
+   COMMENT=(+
+   'Domaine pour code Branche du TF/TFA'),+
+   RAISE_DATA=YES,+
+   SEARCH_CONTROL=SC_RAISE,+
+   TYPE=CHAR;
+*
+DOMAIN=DO_CANTON,+
+   LEGAL=WL_CANTON,+
+   SIZE=2:2,+
+   EDIT_BLANKS=TRIM_TRAILING,+
+   COMMENT=(+
+   'Domaine pour canton d''un impliqué'),+
+   RAISE_DATA=YES,+
+   SEARCH_CONTROL=SC_RAISE,+
+   TYPE=CHAR;
+*
+DOMAIN=DO_COUR,+
+   LEGAL=WL_COUR,+
+   SIZE=1:4,+
+   EDIT_BLANKS=TRIM_TRAILING,+
+   COMMENT=(+
+   'Domaine pour code Cour du TF/TFA'),+
+   SEARCH_CONTROL=SC_RAISE,+
+   TYPE=CHAR;
+*
+DOMAIN=DO_CT,+
+   LEGAL=WL_CT,+
+   SIZE=1:1,+
+   EDIT_BLANKS=TRIM_TRAILING,+
+   COMMENT=(+
+   'Domaine pour les champs CT (Code de Transfert)'),+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+DOMAIN=DO_DATE,+
+   LEGAL=(DATE),+
+   PRECISION=8,+
+   TYPE=EXACT_BINARY;
+*
+DOMAIN=DO_DAT_CREATION,+
+   LEGAL=(DATE),+
+   SET_EXPR=$yyyymmdd,+
+   COMMENT=(+
+   'Domaine pour date de création du record'),+
+   PRECISION=8,+
+   TYPE=EXACT_BINARY;
+*
+DOMAIN=DO_DAT_MODIFICATION,+
+   LEGAL=(DATE),+
+   SET_EXPR=$yyyymmdd,+
+   COMMENT=(+
+   'Domaine pour date de dernière modification du record'),+
+   PRECISION=8,+
+   TYPE=EXACT_BINARY;
+*
+DOMAIN=DO_HEURE,+
+   PRECISION=6,+
+   TYPE=EXACT_BINARY;
+*
+DOMAIN=DO_LOC,+
+   SIZE=2:30,+
+   EDIT_BLANKS=TRIM,+
+   COMMENT=(+
+   'Domaine pour localité (sans pays et NPA pour l''étranger)'),+
+   SEARCH_CONTROL=SC_NOM,+
+   TYPE=CHAR;
+*
+DOMAIN=DO_LOC_IMP,+
+   SIZE=2:40,+
+   EDIT_BLANKS=TRIM,+
+   COMMENT=(+
+   'Domaine pour localité (y compris pays et NPA pour l''étranger)'),+
+   SEARCH_CONTROL=SC_NOM,+
+   TYPE=CHAR;
+*
+DOMAIN=DO_MONTANT,+
+   COMMENT=(+
+   'Domaine pour montant des frais'),+
+   PRECISION=9,+
+   TYPE=EXACT_BINARY;
+*
+DOMAIN=DO_NOM,+
+   SIZE=1:160,+
+   EDIT_BLANKS=TRIM,+
+   COMMENT=(+
+   'Domaine pour le nom d''un impliqué'),+
+   SEARCH_CONTROL=SC_NOM_INC_ENTIRE,+
+   TYPE=CHAR;
+*
+DOMAIN=DO_NOM_COLLAB,+
+   SIZE=1:20,+
+   EDIT_BLANKS=TRIM_TRAILING,+
+   COMMENT=(+
+   'Domaine pour nom des collaborateurs du TF/TFA'),+
+   SEARCH_CONTROL=SC_RAISE,+
+   TYPE=CHAR;
+*
+DOMAIN=DO_NOM_COURT,+
+   SIZE=1:20,+
+   EDIT_BLANKS=TRIM,+
+   COMMENT=(+
+   'Domaine pour nom court d''un impliqué'),+
+   SEARCH_CONTROL=SC_NOM_INC_ENTIRE,+
+   TYPE=CHAR;
+*
+DOMAIN=DO_NOM_PROFIL,+
+   SIZE=2:20,+
+   EDIT_BLANKS=TRIM,+
+   COMMENT=(+
+   'Nom de profil (pour contrôle des accès).'),+
+   RAISE_DATA=YES,+
+   SEARCH_CONTROL=SC_RAISE,+
+   TYPE=CHAR;
+*
+DOMAIN=DO_NPA,+
+   LEGAL=1000: 9999,+
+   COMMENT=(+
+   'Domaine pour NPA en suisse'),+
+   PRECISION=4,+
+   TYPE=EXACT_BINARY;
+*
+DOMAIN=DO_NUMDO,+
+   SIZE=6:15,+
+   EDIT_BLANKS=TRIM,+
+   COMMENT=(+
+   'Domaine pour numéro de dossier'),+
+   SEARCH_CONTROL=SC_RAISE,+
+   TYPE=CHAR;
+*
+DOMAIN=DO_NUM_IMP,+
+   COMMENT=(+
+   'Domaine pour né d''impliqué'),+
+   PRECISION=9,+
+   TYPE=EXACT_BINARY;
+*
+DOMAIN=DO_NUM_TEL,+
+   SIZE=6:40,+
+   EDIT_BLANKS=TRIM_TRAILING,+
+   COMMENT=(+
+   'Domaine pour numéro de téléphone et de fax, ainsi que courriel'),+
+   TYPE=CHAR;
+*
+DOMAIN=DO_UID,+
+   SET_EXPR=$UID,+
+   SIZE=1:8,+
+   EDIT_BLANKS=TRIM_TRAILING,+
+   COMMENT=(+
+   'Domaine pour nom du dernier UID ayant modifié le record'),+
+   TYPE=CHAR;
+*
+DOMAIN=DO_USER,+
+   SIZE=2:20,+
+   EDIT_BLANKS=TRIM,+
+   COMMENT=(+
+   'Domaine pour nom du dernier utilisateur ayant modifié le record'),+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+DOMAIN=TITRE,+
+   SIZE=2:500,+
+   EDIT_BLANKS=SQUEEZE,+
+   COMMENT=(+
+   'Domaine définissant les titres de lois'),+
+   FORMAT=TEXT_IMAGE,+
+   SEARCH_CONTROL=SC_TEXTE,+
+   TYPE=CHAR;
+*
+PARAMETER_SET=ABREVIATION,+
+   UNIQUE=NO,+
+   OUTPUT_FORMAT=<23<,+
+   SORT_SIZE=23,+
+   SEARCHED=YES,+
+   OCCURS=0:10,+
+   REFLECT=YES;
+*
+PARAMETER_SET=PS_ADR,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   DEFAULT_TEST=PHRASE WORDS,+
+   REFLECT=YES;
+*
+PARAMETER_SET=PS_BRANCHE,+
+   LABEL='Branche',+
+   OUTPUT_FORMAT=<4<,+
+   SORT_SIZE=4,+
+   SEARCHED=YES,+
+   DEFAULT_TEST=EQ,+
+   REFLECT=YES;
+*
+PARAMETER_SET=PS_CANTON,+
+   OUTPUT_FORMAT=<2<,+
+   SORT_SIZE=2,+
+   SEARCHED=YES,+
+   DEFAULT_TEST=EQ,+
+   REFLECT=YES;
+*
+PARAMETER_SET=PS_COUR,+
+   LABEL='Cour',+
+   OUTPUT_FORMAT=<4<,+
+   SORT_SIZE=4,+
+   SEARCHED=YES,+
+   DEFAULT_TEST=EQ,+
+   REFLECT=YES;
+*
+PARAMETER_SET=PS_CT,+
+   INIT='-',+
+   UNIQUE=NO,+
+   LABEL='CT',+
+   OUTPUT_FORMAT=<1<,+
+   SORT_SIZE=1,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=499,+
+   COMMENT=(+
+   'Parameter Set pour les champs CT (Code de Transfert)'),+
+   REFLECT=YES;
+*
+PARAMETER_SET=PS_DATE,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   SEARCHED=YES,+
+   REFLECT=YES;
+*
+PARAMETER_SET=PS_DAT_CREATION,+
+   LABEL='Date création',+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   SET_WHEN=ADD,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   COMMENT=(+
+   'Date de création (Set on ADD).'),+
+   REFLECT=YES;
+*
+PARAMETER_SET=PS_DAT_MODIFICATION,+
+   LABEL='Date modification',+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   SET_WHEN=PUT,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   COMMENT=(+
+   'Date de modification (Set on PUT).'),+
+   REFLECT=YES;
+*
+PARAMETER_SET=PS_HEURE,+
+   OUTPUT_FORMAT=<6/Z<,+
+   SEARCHED=YES,+
+   REFLECT=YES;
+*
+PARAMETER_SET=PS_LOC,+
+   OUTPUT_FORMAT=<15/VR2<,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   DEFAULT_TEST=PHRASE WORDS,+
+   REFLECT=YES;
+*
+PARAMETER_SET=PS_MONTANT,+
+   OUTPUT_FORMAT=<7<,+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   DEFAULT_TEST=EQ,+
+   REFLECT=YES;
+*
+PARAMETER_SET=PS_NOM,+
+   OUTPUT_FORMAT=<30/VR5<,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   DEFAULT_TEST=PHRASE WORDS,+
+   REFLECT=YES;
+*
+PARAMETER_SET=PS_NOM_COLLAB,+
+   OUTPUT_FORMAT=<20<,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   DEFAULT_TEST=EQ,+
+   REFLECT=YES;
+*
+PARAMETER_SET=PS_NPA,+
+   LABEL='NPA',+
+   OUTPUT_FORMAT=<4<,+
+   SEARCHED=YES,+
+   DEFAULT_TEST=EQ,+
+   REFLECT=YES;
+*
+PARAMETER_SET=PS_NUMDO,+
+   LABEL='Numéro du dossier',+
+   OUTPUT_FORMAT=<15<,+
+   SORT_SIZE=15,+
+   SEARCHED=YES,+
+   DEFAULT_TEST=EQ,+
+   REFLECT=YES;
+*
+PARAMETER_SET=PS_NUM_IMP,+
+   OUTPUT_FORMAT=<6/SEC<,+
+   SEARCHED=YES,+
+   DEFAULT_TEST=EQ,+
+   REFLECT=YES;
+*
+PARAMETER_SET=PS_NUM_TEL,+
+   UNIQUE=NO,+
+   OUTPUT_FORMAT=<12<,+
+   SORT_SIZE=40,+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   REFLECT=YES;
+*
+PARAMETER_SET=PS_UID,+
+   UNIQUE=NO,+
+   LABEL='Dernier utilisateur UID',+
+   OUTPUT_FORMAT=<8<,+
+   SET_WHEN=PUT,+
+   SEARCHED=NO,+
+   OCCURS=1:1,+
+   REFLECT=YES;
+*
+PARAMETER_SET=PS_USER,+
+   INIT='FQM',+
+   UNIQUE=NO,+
+   LABEL='Dernier utilisateur',+
+   OUTPUT_FORMAT=<20<,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   REFLECT=YES;
+*
+PARAMETER_SET=TITRE,+
+   UNIQUE=NO,+
+   OUTPUT_FORMAT=<70/VR9<,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   REFLECT=YES;
+*
+*
+RECORD=ACCES,STYLE=CONVENTIONAL,PRIMARY_KEY=CLE_ACCES;
+*
+FIELD=DOMAINE_L,+
+   LABEL='Domaine lect.',+
+   SORT_SIZE=4,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'AUCUN = ''-'', NOMimal = ''NOM'', SECTion = ''SECT'', TRIBunal = ',+
+'''TRIB'', GéNéral',+
+$B,'= ''GEN'', SUPéRieur = ''SUPER'''),+
+   LEGAL=WL_DOMAINE,+
+   SIZE=1:4,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=DOMAINE_M,+
+   LABEL='Domaine modif.',+
+   SORT_SIZE=4,+
+   OCCURS=0:1,+
+   LEGAL=WL_DOMAINE,+
+   SIZE=1:4,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=DROIT,+
+   LABEL='Droit page, champ et MéJ',+
+   SORT_SIZE=27,+
+   OCCURS=0:99,+
+   COMMENT=(+
+   'L(iste Travail) : énumération = col1_LT;col2_LT;etc. | toute colonne',+
+$B,'= *_LT | toute colonne, sauf = *_LT;col_LT;etc. | redirection = @V_vue',+
+$B,'W (vues) : énumération = V_vue1;V_vue2;etc.',+
+$B,'C(onnexion) : énum. = visa1;etc. | tt une div. = D_cour | tout le monde ',+
+'= *',+
+$B,'M(éJ) : AJOUTE:x;EDITE:x;OTE:x avec x = 0/1',+
+$B,'T(able) : énumération = P_onglet1:D;P_onglet2:D;etc. avec D = ',+
+'I:invisible,',+
+$B,'L:lisible, E:éditable | toute page = P_*',+
+$B,'O(bligation) : énumération = champ1:o;etc. avec o = N:Non_onligatoire',+
+$B,'(vert), S:Semi-obligatoire (jaune), O:Obligatoire (rouge), I:Indéterminé'),+
+   SIZE=1:27,+
+   EDIT_BLANKS=REMOVE,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=NOM_PROFIL,+
+   LABEL='NOM_PROFIL',+
+   SORT_SIZE=20,+
+   OCCURS=1:1,+
+   DOMAIN=DO_NOM_PROFIL;
+*
+FIELD=OBJET,+
+   LABEL='Objet',+
+   SORT_SIZE=13,+
+   OCCURS=1:1,+
+   COMMENT=(+
+   'AD = Dossier spécial, AD_BORD = BdP dossier spécial, AF_FDG = FdG dossier',+
+$B,'spécial, AD_OUV = Nouveau doss. spécial, AD_RECH = Rech. doss. spécial,',+
+$B,'ARC_ARC = Archivage dossier, ARC_NUM = Numérotation dossiers, DEC =',+
+$B,'Décision, DEC_AUD = Décision.Délibération, DEC_DIF = Décision.Diffusion,',+
+$B,'DEC_EXP = Décision.Expédition, DEC_RED = Décision.Rédaction, DEC_TEXTE =',+
+$B,'Texte décision, DEC_RECH = Rech. décision, DELAI = Délai, DELAI_RECH =',+
+$B,'Rech. délai, DOS = Dossier ordinaire, DOS_ATTR = Dossier.Attribution,',+
+$B,'DOS_BORD = BdP dossier, DOS_FDG = FdG dossier, DOS_LIQ = Liquidation',+
+$B,'juristes, DOS_FDG_PLUS = FdG TFLu avec descripteurs méme si dossier',+
+$B,'archivé, DOS_OUV = Nouveau dossier, DOS_POS = Dossier.Divers.Position,',+
+$B,'DOS_QUE_POS = Slt Dossier.Divers.Position, DOS_RECH = Rech. dossier,',+
+$B,'DOS_RENUM = Renumérotation dossier, DOS_SEC = Dossier secret, DOS_TRAITE ',+
+'=',+
+$B,'Rech. dossier via Traité par, FORMULE = Tirage formule, FRAIS =',+
+$B,'Délai.Frais, IMP = Impliqué, IMP_AUTO = Impliqué de type Autorité,',+
+$B,'IMP_RECH = Rech. impliqué, IMP_SENSI = Impliqué sensible, IMP_NOT = Note',+
+$B,'impliqué, IMP_SYM = Import Symic ds Impliqué, FORM_PROV = Formule',+
+$B,'provisoire, TRAD_PROV = Traduction provisoire, Mes = Mesure, DOS_EMP =',+
+$B,'Liste dossiers empruntés, WEBSTAT = WebStat, ARCHIREKO = ArchiReko,',+
+$B,'ARCHIWEB = ArchiWeb, CONNEXION = Connexion comme autre usager'),+
+   LEGAL=WL_OBJET,+
+   SIZE=1:13,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=TYPE_PROFIL,+
+   INIT='E',+
+   LABEL='Type de profil',+
+   SORT_SIZE=1,+
+   OCCURS=1:1,+
+   COMMENT=(+
+   'CONNEXION = ''C'', éCRAN = ''E'', LISTE_TRAVAIL = ''L'', MéJ = ''M'', ',+
+'OBLIGATION =',+
+$B,'''O'', PERSONNEL = ''P'', STATISTIQUE (DS) = ''S'', TABLE = ''T'', VUES ',+
+'=''W''',+
+$B,'Objets pour C et W = ''DOS'', sinon Dossier = ''DOS'', Dossier spécial = ',+
+'''AD'',',+
+$B,'Décision = ''DEC'', Délai = ''DELAI'', Impliqué = ''IMP'', Mesure = ',+
+'''MES'', Piéce',+
+$B,'= ''DOS_BORD'''),+
+   LEGAL=WL_TYPE_PROFIL,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=USER,+
+   SORT_SIZE=20,+
+   PARAMETER_SET=PS_USER,+
+   DOMAIN=DO_USER;
+*
+FIELD=CLE_ACCES,+
+   UNIQUE=YES,+
+   LABEL='Clé accès',+
+   SET_WHEN=PUT,+
+   SORT_SIZE=35,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   SET_EXPR=NOM_PROFIL // ' ' // OBJET // ' ' // TYPE_PROFIL,+
+   SIZE=4:35,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=DAT_CREATION,+
+   PARAMETER_SET=PS_DAT_CREATION,+
+   DOMAIN=DO_DAT_CREATION;
+*
+FIELD=DAT_MODIFICATION,+
+   PARAMETER_SET=PS_DAT_MODIFICATION,+
+   DOMAIN=DO_DAT_MODIFICATION;
+*
+FIELD=UID,+
+   SORT_SIZE=8,+
+   PARAMETER_SET=PS_UID,+
+   DOMAIN=DO_UID;
+*
+*
+RECORD=ARCHIVE,STYLE=CONVENTIONAL,+
+   COMMENT=(+
+   '',+
+$B,'Archive des dossiers du TF/TFA');
+*
+FIELD=BORDEREAU,+
+   LABEL='Bordereau des piéces',+
+   OUTPUT_FORMAT=<80<,+
+   SORT_SIZE=50,+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=130,+
+   SIZE=1:1000,+
+   FORMAT=TEXT_IMAGE,+
+   SEARCH_CONTROL=SC_TEXTE,+
+   TYPE=CHAR;
+*
+FIELD=CLE_ARCHIVAGE,+
+   LABEL='Né d''archivage',+
+   OUTPUT_FORMAT=<8<,+
+   DISPLAY_SEQUENCE_NUMBER=10,+
+   USAGE=USER_KEY;
+*
+FIELD=CLE_DOSSIER,+
+   LABEL='Clé dossier (ACCN)',+
+   OUTPUT_FORMAT=>8>,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=30,+
+   PRECISION=8,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=DAT_DEC_DOSSIER,+
+   LABEL='Date décision dossier',+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=40,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DECISION,+
+   LABEL='Décisions',+
+   OUTPUT_FORMAT=<80<,+
+   SORT_SIZE=50,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=110,+
+   SIZE=1:1000,+
+   FORMAT=TEXT_IMAGE,+
+   SEARCH_CONTROL=SC_TEXTE,+
+   TYPE=CHAR;
+*
+FIELD=DESCRIPTEUR,+
+   LABEL='Descripteurs',+
+   OUTPUT_FORMAT=<55/SER/VR20<,+
+   SORT_SIZE=55,+
+   SEARCHED=YES,+
+   OCCURS=0:30,+
+   DISPLAY_SEQUENCE_NUMBER=60,+
+   SIZE=1:55,+
+   TYPE=CHAR;
+*
+FIELD=GENERALITE,+
+   LABEL='Généralités',+
+   OUTPUT_FORMAT=<80<,+
+   SORT_SIZE=50,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=100,+
+   SIZE=1:1000,+
+   FORMAT=TEXT_IMAGE,+
+   SEARCH_CONTROL=SC_TEXTE,+
+   TYPE=CHAR;
+*
+FIELD=IMPLIQUE,+
+   LABEL='Impliqués',+
+   OUTPUT_FORMAT=<80<,+
+   SORT_SIZE=50,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=120,+
+   SIZE=1:1000,+
+   FORMAT=TEXT_IMAGE,+
+   SEARCH_CONTROL=SC_TEXTE,+
+   TYPE=CHAR;
+*
+FIELD=MATIERE,+
+   LABEL='Code matiére',+
+   OUTPUT_FORMAT=<3<,+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=70,+
+   PRECISION=4,+
+   LEGAL=10: 600,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=MEMOIRE,+
+   LABEL='Mémoire des données',+
+   OUTPUT_FORMAT=<80<,+
+   SORT_SIZE=50,+
+   SEARCHED=NO,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=200,+
+   SIZE=1:3000,+
+   FORMAT=TEXT_IMAGE,+
+   SEARCH_CONTROL=SC_TEXTE,+
+   TYPE=CHAR;
+*
+FIELD=NORME,+
+   LABEL='Normes',+
+   OUTPUT_FORMAT=<50/SEC<,+
+   SORT_SIZE=50,+
+   SEARCHED=YES,+
+   OCCURS=0:30,+
+   DISPLAY_SEQUENCE_NUMBER=50,+
+   SIZE=1:50,+
+   TYPE=CHAR;
+*
+FIELD=NUM_DOSSIER,+
+   UNIQUE=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=20,+
+   PARAMETER_SET=PS_NUMDO,+
+   DOMAIN=DO_NUMDO;
+*
+FIELD=ORIGINE,+
+   LABEL='Origine',+
+   OUTPUT_FORMAT=<1<,+
+   SORT_SIZE=1,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=90,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=TRIBUNAL,+
+   LABEL='Tribunal',+
+   OUTPUT_FORMAT=<3<,+
+   SORT_SIZE=3,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=80,+
+   LEGAL=WL_TRIBUNAL,+
+   SIZE=2:3,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=USER,+
+   SORT_SIZE=20,+
+   DISPLAY_SEQUENCE_NUMBER=484,+
+   PARAMETER_SET=PS_USER,+
+   DOMAIN=DO_USER;
+*
+FIELD=DAT_CREATION,+
+   DISPLAY_SEQUENCE_NUMBER=480,+
+   PARAMETER_SET=PS_DAT_CREATION,+
+   DOMAIN=DO_DAT_CREATION;
+*
+FIELD=DAT_MODIFICATION,+
+   DISPLAY_SEQUENCE_NUMBER=482,+
+   PARAMETER_SET=PS_DAT_MODIFICATION,+
+   DOMAIN=DO_DAT_MODIFICATION;
+*
+FIELD=UID,+
+   SORT_SIZE=8,+
+   DISPLAY_SEQUENCE_NUMBER=484,+
+   PARAMETER_SET=PS_UID,+
+   DOMAIN=DO_UID;
+*
+*
+RECORD=AUTRE_DOSSIER,STYLE=CONVENTIONAL,PRIMARY_KEY=CLE_AUT_DOSS;
+*
+FIELD=AUTEUR,+
+   LABEL='Auteur',+
+   OUTPUT_FORMAT=<20/VR4<,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=90,+
+   SIZE=1:80,+
+   TYPE=CHAR;
+*
+FIELD=BRADOC,+
+   LABEL='Dans Bradoc',+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Autre dossier documenté'),+
+   DISPLAY_SEQUENCE_NUMBER=42,+
+   TYPE=LOGICAL;
+*
+FIELD=CLE_AUT_DOSS,+
+   LABEL='Clé autres dossiers',+
+   OUTPUT_FORMAT=>8>,+
+   SEARCHED=YES,+
+   DISPLAY_SEQUENCE_NUMBER=10,+
+   USAGE=SYSTEM_KEY(1000000);
+*
+FIELD=COUR,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=60,+
+   PARAMETER_SET=PS_COUR,+
+   DOMAIN=DO_COUR;
+*
+FIELD=CT,+
+   PARAMETER_SET=PS_CT,+
+   DOMAIN=DO_CT;
+*
+FIELD=DAT_ARCHIVAGE,+
+   LABEL='Date d''archivage',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=72,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_DOSSIER,+
+   LABEL='Date ouverture',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=40,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_FERMETURE,+
+   LABEL='Date fermeture',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=50,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DESTINATAIRE,+
+   LABEL='Destinataire',+
+   OUTPUT_FORMAT=<20/VR4<,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=100,+
+   SIZE=1:80,+
+   TYPE=CHAR;
+*
+FIELD=DOSSIER_CONNEXE,+
+   OCCURS=0:50,+
+   DISPLAY_SEQUENCE_NUMBER=120,+
+   PARAMETER_SET=PS_NUMDO,+
+   DOMAIN=DO_NUMDO;
+*
+FIELD=GENRE_DOCU,+
+   LABEL='Genre autre dossier',+
+   OUTPUT_FORMAT=<4<,+
+   SORT_SIZE=4,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=30,+
+   LEGAL=WL_GENRE_DOCU,+
+   SIZE=1:4,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=INTIME,+
+   LABEL='Nom de l''intimé',+
+   OUTPUT_FORMAT=<20/VR4<,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=140,+
+   SIZE=1:80,+
+   TYPE=CHAR;
+*
+FIELD=JUGE_DELEGUE,+
+   LABEL='Nom juge délégué',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=150,+
+   PARAMETER_SET=PS_NOM_COLLAB,+
+   DOMAIN=DO_NOM_COLLAB;
+*
+FIELD=LANGUE,+
+   LABEL='Langue',+
+   OUTPUT_FORMAT=<1<,+
+   SORT_SIZE=1,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=70,+
+   LEGAL=WL_LANGUE,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=NUM_ARCHIVE,+
+   LABEL='Né d''archive',+
+   OUTPUT_FORMAT=<8<,+
+   SORT_SIZE=8,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=70,+
+   SIZE=1:8,+
+   TYPE=CHAR;
+*
+FIELD=NUM_AUT_DOSS,+
+   UNIQUE=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=20,+
+   PARAMETER_SET=PS_NUMDO,+
+   DOMAIN=DO_NUMDO;
+*
+FIELD=OBJET,+
+   LABEL='Objet',+
+   OUTPUT_FORMAT=<20/VR4<,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=110,+
+   SIZE=1:400,+
+   TYPE=CHAR;
+*
+FIELD=POSITION,+
+   LABEL='Position',+
+   OUTPUT_FORMAT=<3<,+
+   SORT_SIZE=3,+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Position du dossier'),+
+   SIZE=2:3,+
+   EDIT_BLANKS=REMOVE,+
+   FORMAT=STRING,+
+   SEARCH_CONTROL=SC_RAISE,+
+   TYPE=CHAR;
+*
+FIELD=RECOURANT,+
+   LABEL='Nom du recourant',+
+   OUTPUT_FORMAT=<20/VR4<,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=130,+
+   SIZE=1:80,+
+   TYPE=CHAR;
+*
+FIELD=RECOURS_JOINT,+
+   LABEL='Dans Bradoc',+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'PAS UTILISé, é EFFACER LORS D''UN DUMP/RELOAD DE LA TABLE AUTRE_DOSSIER'),+
+   DISPLAY_SEQUENCE_NUMBER=42,+
+   TYPE=LOGICAL;
+*
+FIELD=REDACTEUR,+
+   LABEL='Nom rédacteur',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=160,+
+   PARAMETER_SET=PS_NOM_COLLAB,+
+   DOMAIN=DO_NOM_COLLAB;
+*
+FIELD=REF_EXT,+
+   UNIQUE=YES,+
+   OCCURS=0:1,+
+   PARAMETER_SET=PS_NUMDO,+
+   DOMAIN=DO_NUMDO;
+*
+FIELD=REGISTRATEUR,+
+   LABEL='Nom registrateur',+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=80,+
+   PARAMETER_SET=PS_NOM_COLLAB,+
+   DOMAIN=DO_NOM_COLLAB;
+*
+FIELD=REM_AUTRE_DOSSIER,+
+   LABEL='Remarque autre dossier',+
+   OUTPUT_FORMAT=<40/VR5<,+
+   SORT_SIZE=10,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=170,+
+   SIZE=1:200,+
+   TYPE=CHAR;
+*
+FIELD=USER,+
+   SORT_SIZE=20,+
+   DISPLAY_SEQUENCE_NUMBER=484,+
+   PARAMETER_SET=PS_USER,+
+   DOMAIN=DO_USER;
+*
+FIELD=DAT_CREATION,+
+   DISPLAY_SEQUENCE_NUMBER=480,+
+   PARAMETER_SET=PS_DAT_CREATION,+
+   DOMAIN=DO_DAT_CREATION;
+*
+FIELD=DAT_MODIFICATION,+
+   DISPLAY_SEQUENCE_NUMBER=482,+
+   PARAMETER_SET=PS_DAT_MODIFICATION,+
+   DOMAIN=DO_DAT_MODIFICATION;
+*
+FIELD=UID,+
+   SORT_SIZE=8,+
+   DISPLAY_SEQUENCE_NUMBER=484,+
+   PARAMETER_SET=PS_UID,+
+   DOMAIN=DO_UID;
+*
+*
+RECORD=COLLABORATEUR,STYLE=CONVENTIONAL,PRIMARY_KEY=CLE_COLLAB,+
+   COMMENT=(+
+   '',+
+$B,'Collaborateurs du TF/TFA');
+*
+FIELD=ABREVIATION,+
+   UNIQUE=YES,+
+   LABEL='Abréviation',+
+   OUTPUT_FORMAT=<3<,+
+   SORT_SIZE=3,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=90,+
+   SIZE=2:3,+
+   TYPE=CHAR;
+*
+FIELD=ADR1,+
+   LABEL='Adresse d''envoi',+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Adresse d''envoi (1ére ligne)'),+
+   DISPLAY_SEQUENCE_NUMBER=200,+
+   PARAMETER_SET=PS_ADR,+
+   DOMAIN=DO_ADR;
+*
+FIELD=ADR2,+
+   LABEL='2éme ligne......',+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Adresse d''envoi (2éme ligne)'),+
+   DISPLAY_SEQUENCE_NUMBER=210,+
+   PARAMETER_SET=PS_ADR,+
+   DOMAIN=DO_ADR;
+*
+FIELD=ADR3,+
+   LABEL='3éme ligne......',+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Adresse d''envoi (3éme ligne)'),+
+   DISPLAY_SEQUENCE_NUMBER=220,+
+   PARAMETER_SET=PS_ADR,+
+   DOMAIN=DO_ADR;
+*
+FIELD=ANCIENNETE,+
+   INIT=500,+
+   LABEL='Ancienneté',+
+   OUTPUT_FORMAT=<3<,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   PRECISION=3,+
+   LEGAL=1: 500,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=ANCIEN_COLLAB,+
+   INIT=0,+
+   LABEL='Ancien Collab.',+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   TYPE=LOGICAL;
+*
+FIELD=AUTO_SOURIS,+
+   LABEL='Automatisme souris',+
+   OUTPUT_FORMAT=<1/SEC<,+
+   SORT_SIZE=1,+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   '- = Aucun automatisme, A = Aller automatique é la sur-fenétre, R = Retour',+
+$B,'automatique é la position d''appel de la sur-fenétre'),+
+   LEGAL=WL_AUTO_SOURIS,+
+   SIZE=1:1,+
+   EDIT_BLANKS=TRIM,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=COMPTE_VMS,+
+   UNIQUE=YES,+
+   LABEL='COMPTE_VMS',+
+   OUTPUT_FORMAT=<12<,+
+   SORT_SIZE=12,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   SIZE=1:12,+
+   EDIT_BLANKS=TRIM,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=COUR_PREF,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=6,+
+   PARAMETER_SET=PS_COUR,+
+   LEGAL=WL_COUR,+
+   SIZE=1:4,+
+   SEARCH_CONTROL=SC_RAISE,+
+   TYPE=CHAR;
+*
+FIELD=DAT_ENTREE,+
+   INIT=19000101,+
+   LABEL='Date d''entrée en fonction',+
+   OUTPUT_FORMAT=<10/DATE23/SEC<,+
+   SEARCHED=YES,+
+   OCCURS=1:20,+
+   DISPLAY_SEQUENCE_NUMBER=50,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_SORTIE,+
+   INIT=20990101,+
+   LABEL='Date de fin de la fonction',+
+   OUTPUT_FORMAT=<10/DATE23/SEC<,+
+   SEARCHED=YES,+
+   OCCURS=1:20,+
+   DISPLAY_SEQUENCE_NUMBER=50,+
+   PRECISION=8,+
+   LEGAL=(DATE),+
+   TYPE=EXACT_BINARY;
+*
+FIELD=DIVISION,+
+   LABEL='Division/Service',+
+   OUTPUT_FORMAT=<4<,+
+   SORT_SIZE=4,+
+   SEARCHED=YES,+
+   OCCURS=1:20,+
+   COMMENT=(+
+   'P1 = 1E CDP (1),  P2 = 2E CDP (2), C1 = 1E CDC (4), C2 = 2E CDC (5), KH =',+
+$B,'CDPéN. (6), S1 = 1E CDS (8), S2 = 2E CDS (9), PRES = PRéSIDENCE (11), VK ',+
+'=',+
+$B,'COMMADM. (12), RK = COMMREC. (13), SG = SéCGéN. (14), AR = ARCHIVES, CAI ',+
+'=',+
+$B,'CAISSE, CHA = CHANCELLERIE (CENTRALE), HUI = HUISIERS, BIB = ',+
+'BIBLIOTHéQUE,',+
+$B,'DOC = DOCUMENTATION, PUB = PUBLICATION, INF = SERVICE INFORMATIQUE,',+
+$B,'-- = AUTRE,',+
+$B,'TAFA = COUR I (TAF), TAFB = COUR II (TAF), TABC = COUR III (TAF), TAFD',+
+$B,'= COUR IV (TAF), TAFE = COUR V (TAF)'),+
+   DISPLAY_SEQUENCE_NUMBER=100,+
+   LEGAL=WL_DIVISION,+
+   SIZE=1:4,+
+   TYPE=CHAR;
+*
+FIELD=DOSSIER_BUTINE,+
+   LABEL='Clés dossiers butinés',+
+   OUTPUT_FORMAT=<7/SER<,+
+   SEARCHED=NO,+
+   OCCURS=0:100,+
+   PRECISION=9,+
+   LEGAL=1: 9999999,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=DOSSIER_CONSULTE,+
+   LABEL='Clés dossiers consultés',+
+   OUTPUT_FORMAT=<7/SER<,+
+   SEARCHED=NO,+
+   OCCURS=0:100,+
+   PRECISION=9,+
+   LEGAL=1: 9999999,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=ECRAN_DEPART,+
+   LABEL='Ecran départ',+
+   OUTPUT_FORMAT=<1/SEC<,+
+   SORT_SIZE=1,+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'D = Droite, G = Gauche, S = Souris, ''-'' = Mono-écran'),+
+   LEGAL=WL_ECRAN_DEPART,+
+   SIZE=1:1,+
+   EDIT_BLANKS=TRIM,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=EMAIL,+
+   LABEL='Email',+
+   OUTPUT_FORMAT=<30/VR2<,+
+   SORT_SIZE=60,+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   SIZE=5:60,+
+   TYPE=CHAR;
+*
+FIELD=FONCTION,+
+   LABEL='Fonctions',+
+   OUTPUT_FORMAT=<3/SER<,+
+   SORT_SIZE=3,+
+   SEARCHED=YES,+
+   OCCURS=1:20,+
+   COMMENT=(+
+   'JUGE_PRéSIDENT = ''JP'', JUGE_VICE-PRéSIDENT = ''JV'', JUGE_PRéSIDANT',+
+$B,'(CHAMBRE) = ''JC'', JUGE_ORDINAIRE = ''JU'', JUGE_SUPPLéANT = ''JS'', ',+
+'RéDACTEUR',+
+$B,'= ''RD'', REGISTRATEUR = ''RG'', SECRéTAIRE_GéNéRAL = ''SG'', SECRéTAIRE',+
+$B,'(EXPéDITRICE) = ''SE'', CAISSIER = ''CA'', INFORMATICIEN = ''SI'', ',+
+'ARCHIVISTE =',+
+$B,'''AR'', COLLABORATEUR_SCIENTIFIQUE = ''CS'', LOCAL = ''LL'', AUTRE = ',+
+'''AU'',',+
+$B,'ABSENT = ''AB'', JUGE_PARTICIPANT = ''JJ'', JUGE_SUPPLEANT_PARTICIPANT = ',+
+'''JQ'''),+
+   DISPLAY_SEQUENCE_NUMBER=40,+
+   LEGAL=WL_FONCTION,+
+   SIZE=1:3,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=FORMULE_SO,+
+   LABEL='FORMULE_SO',+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   TYPE=LOGICAL;
+*
+FIELD=ICONE,+
+   LABEL='Taille icones',+
+   OUTPUT_FORMAT=<1<,+
+   SORT_SIZE=1,+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=80,+
+   LEGAL=WL_ICONE,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=IMPRIME_GRAPHIQUE,+
+   LABEL='Nom de l''imprimante (graphique)',+
+   OUTPUT_FORMAT=<15<,+
+   SORT_SIZE=15,+
+   OCCURS=0:1,+
+   DEFAULT_TEST=EQ,+
+   SIZE=1:15,+
+   EDIT_BLANKS=TRIM,+
+   TYPE=CHAR;
+*
+FIELD=IMPRIME_TEXTE,+
+   LABEL='Nom de l''imprimante (texte)',+
+   OUTPUT_FORMAT=<15<,+
+   SORT_SIZE=15,+
+   OCCURS=0:1,+
+   DEFAULT_TEST=EQ,+
+   SIZE=1:15,+
+   EDIT_BLANKS=TRIM,+
+   TYPE=CHAR;
+*
+FIELD=INFOBULLE,+
+   LABEL='Infobulles activées',+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   TYPE=LOGICAL;
+*
+FIELD=INSTRUC_1,+
+   LABEL='Instruction é 1',+
+   OUTPUT_FORMAT=<4<,+
+   SEARCHED=NO,+
+   OCCURS=0:20,+
+   PRECISION=4,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=INSTRUC_3,+
+   LABEL='Instruction é 3',+
+   OUTPUT_FORMAT=<4<,+
+   SEARCHED=NO,+
+   OCCURS=0:20,+
+   PRECISION=4,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=INSTRUC_5,+
+   LABEL='Instruction é 5',+
+   OUTPUT_FORMAT=<4<,+
+   SEARCHED=NO,+
+   OCCURS=0:20,+
+   PRECISION=4,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=LANGUE_DESC,+
+   LABEL='Langue de description',+
+   OUTPUT_FORMAT=<1<,+
+   SORT_SIZE=1,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'D = DEUTSCH, F = FRANéAIS, I = ITALIANO'),+
+   LEGAL=WL_LANGUE,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=LANGUE_INTERFACE,+
+   LABEL='Langue d''interface',+
+   OUTPUT_FORMAT=<1<,+
+   SORT_SIZE=1,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'D = DEUTSCH, F = FRANéAIS'),+
+   LEGAL=WL_LANGUE,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=LANGUE_RECH,+
+   LABEL='Langue de recherche',+
+   OUTPUT_FORMAT=<1<,+
+   SORT_SIZE=1,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'D = DEUTSCH, F = FRANéAIS, I = ITALIANO'),+
+   LEGAL=WL_LANGUE,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=LANGUE_REDACTEUR,+
+   LABEL='Langue rédacteur',+
+   SORT_SIZE=1,+
+   OCCURS=0:3,+
+   COMMENT=(+
+   'D = DEUTSCH, F = FRANéAIS, I = ITALIANO'),+
+   LEGAL=WL_LANGUE,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=LOC,+
+   LABEL='Nom de localité',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=240,+
+   PARAMETER_SET=PS_LOC,+
+   DOMAIN=DO_LOC;
+*
+FIELD=MATIERE,+
+   LABEL='Matiére (spécialité)',+
+   OUTPUT_FORMAT=<6/SER<,+
+   SORT_SIZE=6,+
+   SEARCHED=YES,+
+   OCCURS=0:10,+
+   SIZE=6:6,+
+   PATTERN='999.99',+
+   TYPE=CHAR;
+*
+FIELD=MULTI_VUE_LT,+
+   LABEL='Vues multiples liste de travail',+
+   OUTPUT_FORMAT=<50/SER<,+
+   SORT_SIZE=50,+
+   OCCURS=0:7,+
+   DEFAULT_TEST=EQ,+
+   SIZE=5:50,+
+   EDIT_BLANKS=TRIM,+
+   TYPE=CHAR;
+*
+FIELD=NOM,+
+   LABEL='Nom de famille',+
+   OUTPUT_FORMAT=<15/VR2<,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=60,+
+   SIZE=2:30,+
+   TYPE=CHAR;
+*
+FIELD=NOM_COLLAB,+
+   UNIQUE=YES,+
+   LABEL='Nom collaborateur',+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=10,+
+   PARAMETER_SET=PS_NOM_COLLAB,+
+   DOMAIN=DO_NOM_COLLAB;
+*
+FIELD=NPA,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'NPA suisse (étranger: 9999)'),+
+   DISPLAY_SEQUENCE_NUMBER=230,+
+   PARAMETER_SET=PS_NPA,+
+   DOMAIN=DO_NPA;
+*
+FIELD=NUM_FAX,+
+   LABEL='Né de Fax',+
+   DISPLAY_SEQUENCE_NUMBER=140,+
+   PARAMETER_SET=PS_NUM_TEL,+
+   DOMAIN=DO_NUM_TEL;
+*
+FIELD=NUM_TEL,+
+   LABEL='Né Téléphone',+
+   DISPLAY_SEQUENCE_NUMBER=140,+
+   PARAMETER_SET=PS_NUM_TEL,+
+   DOMAIN=DO_NUM_TEL;
+*
+FIELD=PARTICIP_3,+
+   LABEL='Participation é 3',+
+   OUTPUT_FORMAT=<4<,+
+   SEARCHED=NO,+
+   OCCURS=0:20,+
+   PRECISION=4,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=PARTICIP_5,+
+   LABEL='Participation é 5',+
+   OUTPUT_FORMAT=<4<,+
+   SEARCHED=NO,+
+   OCCURS=0:20,+
+   PRECISION=4,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=PRENOM,+
+   LABEL='Prénom',+
+   OUTPUT_FORMAT=<15/VR2<,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=70,+
+   SIZE=2:20,+
+   TYPE=CHAR;
+*
+FIELD=PRESID,+
+   LABEL='Présidence pure',+
+   OUTPUT_FORMAT=<4<,+
+   SEARCHED=NO,+
+   OCCURS=0:20,+
+   PRECISION=4,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=PROFIL_ACCES,+
+   INIT='P_BASE',+
+   LABEL='Nom profil d''accès',+
+   OUTPUT_FORMAT=<20<,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   OCCURS=1:4,+
+   DEFAULT_TEST=EQ,+
+   DOMAIN=DO_NOM_PROFIL;
+*
+FIELD=PROFIL_STAT,+
+   LABEL='Nom profil statistique',+
+   OUTPUT_FORMAT=<20<,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DEFAULT_TEST=EQ,+
+   DOMAIN=DO_NOM_PROFIL;
+*
+FIELD=RECOIT_EMAIL,+
+   INIT=0,+
+   LABEL='Reéoit Emails',+
+   SEARCHED=NO,+
+   OCCURS=1:1,+
+   TYPE=LOGICAL;
+*
+FIELD=RUBRUM_SO,+
+   LABEL='RUBRUM_SO',+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   TYPE=LOGICAL;
+*
+FIELD=SEXE,+
+   LABEL='Sexe',+
+   OUTPUT_FORMAT=<1<,+
+   SORT_SIZE=1,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=80,+
+   LEGAL=WL_SEXE,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=TAUX,+
+   LABEL='Taux',+
+   OUTPUT_FORMAT=<3<,+
+   SEARCHED=YES,+
+   OCCURS=0:20,+
+   PRECISION=3,+
+   LEGAL=0: 999,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=TRAITEMENT_FORMULE,+
+   LABEL='TRAITEMENT_FORMULE',+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   TYPE=LOGICAL;
+*
+FIELD=TRIBUNAL,+
+   LABEL='Tribunal',+
+   OUTPUT_FORMAT=<3<,+
+   SORT_SIZE=3,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   COMMENT=(+
+   'Nom du tribunal auquel le collaborateur est rattaché'),+
+   DISPLAY_SEQUENCE_NUMBER=20,+
+   LEGAL=WL_TRIBUNAL,+
+   SIZE=3:3,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=USER,+
+   SORT_SIZE=20,+
+   DISPLAY_SEQUENCE_NUMBER=484,+
+   PARAMETER_SET=PS_USER,+
+   DOMAIN=DO_USER;
+*
+FIELD=VUE_LT,+
+   LABEL='Vue liste de travail',+
+   OUTPUT_FORMAT=<30<,+
+   SORT_SIZE=30,+
+   OCCURS=0:1,+
+   DEFAULT_TEST=EQ,+
+   SIZE=1:30,+
+   EDIT_BLANKS=TRIM,+
+   TYPE=CHAR;
+*
+FIELD=CLE_COLLAB,+
+   UNIQUE=YES,+
+   LABEL='Clé collaborateur',+
+   OUTPUT_FORMAT=<24<,+
+   SET_WHEN=GET,+
+   SORT_SIZE=24,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=30,+
+   SET_EXPR=TRIBUNAL//' '//NOM_COLLAB,+
+   SIZE=3:24,+
+   TYPE=CHAR;
+*
+FIELD=DAT_CREATION,+
+   DISPLAY_SEQUENCE_NUMBER=480,+
+   PARAMETER_SET=PS_DAT_CREATION,+
+   DOMAIN=DO_DAT_CREATION;
+*
+FIELD=DAT_MODIFICATION,+
+   DISPLAY_SEQUENCE_NUMBER=482,+
+   PARAMETER_SET=PS_DAT_MODIFICATION,+
+   DOMAIN=DO_DAT_MODIFICATION;
+*
+FIELD=UID,+
+   SORT_SIZE=8,+
+   DISPLAY_SEQUENCE_NUMBER=484,+
+   PARAMETER_SET=PS_UID,+
+   DOMAIN=DO_UID;
+*
+*
+RECORD=COMPO,STYLE=CONVENTIONAL,PRIMARY_KEY=COUR,+
+   COMMENT=(+
+   '',+
+$B,'Table des paramétres pour la composition automatique des colléges');
+*
+FIELD=ABS_MIN,+
+   LABEL='Nbr.j.ouvr.min.absence',+
+   OUTPUT_FORMAT=<2<,+
+   OCCURS=0:1,+
+   PRECISION=4,+
+   LEGAL=0: 99,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=ACTIVE,+
+   INIT=0,+
+   LABEL='Active {0}',+
+   OUTPUT_FORMAT=<1<,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=380,+
+   TYPE=LOGICAL;
+*
+FIELD=ANTICIP_DEPART,+
+   INIT=1,+
+   LABEL='Nbr.j.ouvr.avt départ {1}',+
+   OUTPUT_FORMAT=<2<,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=410,+
+   PRECISION=4,+
+   LEGAL=0: 99,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=ANTICIP_RETOUR,+
+   INIT=5,+
+   LABEL='Nbr.j.ouvr.avt retour {5}',+
+   OUTPUT_FORMAT=<2<,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=420,+
+   PRECISION=4,+
+   LEGAL=0: 99,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=ATTRIB,+
+   INIT=0,+
+   LABEL='Compo é l`attrib.{0}',+
+   OUTPUT_FORMAT=<1<,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=490,+
+   TYPE=LOGICAL;
+*
+FIELD=COLLEGE_5_D,+
+   LABEL='Coll.5 D',+
+   OUTPUT_FORMAT=<20/SER<,+
+   SORT_SIZE=20,+
+   SEARCHED=NO,+
+   OCCURS=0:9,+
+   DISPLAY_SEQUENCE_NUMBER=18,+
+   DEFAULT_TEST=EQ,+
+   SIZE=2:20,+
+   TYPE=CHAR;
+*
+FIELD=COLLEGE_5_F,+
+   LABEL='Coll.5 F',+
+   OUTPUT_FORMAT=<20/SER<,+
+   SORT_SIZE=20,+
+   SEARCHED=NO,+
+   OCCURS=0:9,+
+   DISPLAY_SEQUENCE_NUMBER=20,+
+   DEFAULT_TEST=EQ,+
+   SIZE=2:20,+
+   TYPE=CHAR;
+*
+FIELD=COLLEGE_5_I,+
+   LABEL='Coll.5 I',+
+   OUTPUT_FORMAT=<20/SER<,+
+   SORT_SIZE=20,+
+   SEARCHED=NO,+
+   OCCURS=0:9,+
+   DISPLAY_SEQUENCE_NUMBER=22,+
+   DEFAULT_TEST=EQ,+
+   SIZE=2:20,+
+   TYPE=CHAR;
+*
+FIELD=COLLEGE_COMPLET,+
+   LABEL='Coll.3 long terme',+
+   OUTPUT_FORMAT=<20/SER<,+
+   SORT_SIZE=20,+
+   SEARCHED=NO,+
+   OCCURS=0:9,+
+   DISPLAY_SEQUENCE_NUMBER=16,+
+   DEFAULT_TEST=EQ,+
+   SIZE=2:20,+
+   TYPE=CHAR;
+*
+FIELD=COLLEGE_EFFECTIF,+
+   LABEL='Coll.3 court terme',+
+   OUTPUT_FORMAT=<20/SER<,+
+   SORT_SIZE=20,+
+   SEARCHED=NO,+
+   OCCURS=0:9,+
+   DISPLAY_SEQUENCE_NUMBER=14,+
+   DEFAULT_TEST=EQ,+
+   SIZE=2:20,+
+   TYPE=CHAR;
+*
+FIELD=COLLEGE_URGENT,+
+   LABEL='Coll.3 prioritaire',+
+   OUTPUT_FORMAT=<20/SER<,+
+   SORT_SIZE=20,+
+   SEARCHED=NO,+
+   OCCURS=0:9,+
+   DISPLAY_SEQUENCE_NUMBER=12,+
+   DEFAULT_TEST=EQ,+
+   SIZE=2:20,+
+   TYPE=CHAR;
+*
+FIELD=CONSIGNE,+
+   LABEL='Consigne',+
+   OUTPUT_FORMAT=<3/SER<,+
+   OCCURS=0:9,+
+   DISPLAY_SEQUENCE_NUMBER=117,+
+   PRECISION=3,+
+   LEGAL=0: 999,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=CONSIGNE_5,+
+   LABEL='Consigne 5',+
+   OUTPUT_FORMAT=<3/SER<,+
+   OCCURS=0:9,+
+   DISPLAY_SEQUENCE_NUMBER=217,+
+   PRECISION=3,+
+   LEGAL=0: 999,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=COUR,+
+   UNIQUE=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=1,+
+   PARAMETER_SET=PS_COUR,+
+   LEGAL=WL_COUR,+
+   SIZE=1:4,+
+   SEARCH_CONTROL=SC_RAISE,+
+   TYPE=CHAR;
+*
+FIELD=DAT_ACTIVATION,+
+   LABEL='Date activation',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=390,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=MATIERE,+
+   INIT=0,+
+   LABEL='PrisEnCpte matiére {0}',+
+   OUTPUT_FORMAT=<1<,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=480,+
+   TYPE=LOGICAL;
+*
+FIELD=MESURE,+
+   LABEL='Mesure',+
+   OUTPUT_FORMAT=<3/SER<,+
+   OCCURS=0:9,+
+   DISPLAY_SEQUENCE_NUMBER=110,+
+   PRECISION=3,+
+   LEGAL=0: 999,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=MESURE_5,+
+   LABEL='Mesure 5',+
+   OUTPUT_FORMAT=<3/SER<,+
+   OCCURS=0:9,+
+   DISPLAY_SEQUENCE_NUMBER=210,+
+   PRECISION=3,+
+   LEGAL=0: 999,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=MIN_5_DFI,+
+   LABEL='Nbr.min.5 DFI',+
+   OUTPUT_FORMAT=<1/SER<,+
+   OCCURS=0:3,+
+   DISPLAY_SEQUENCE_NUMBER=492,+
+   PRECISION=1,+
+   LEGAL=0: 5,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=MODE_COLLEGES,+
+   LABEL='Mode calcul colléges',+
+   OUTPUT_FORMAT=<1<,+
+   OCCURS=0:1,+
+   PRECISION=4,+
+   LEGAL=0: 9,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=NBRE_DOSS_LIQ,+
+   LABEL='Nbre doss.liq./an',+
+   OUTPUT_FORMAT=<5<,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=300,+
+   PRECISION=5,+
+   LEGAL=0: 99999,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=PARTICIPADHOC,+
+   LABEL='Particip.adhoc',+
+   OUTPUT_FORMAT=<60/SER<,+
+   SORT_SIZE=60,+
+   SEARCHED=NO,+
+   OCCURS=0:9,+
+   DEFAULT_TEST=EQ,+
+   SIZE=6:60,+
+   TYPE=CHAR;
+*
+FIELD=PARTICIPARQUOTA,+
+   LABEL='Particip. par quota',+
+   OUTPUT_FORMAT=<60/SER<,+
+   SORT_SIZE=60,+
+   SEARCHED=NO,+
+   OCCURS=0:9,+
+   DEFAULT_TEST=EQ,+
+   SIZE=6:60,+
+   TYPE=CHAR;
+*
+FIELD=PENDANCE,+
+   LABEL='Pendance',+
+   OUTPUT_FORMAT=<3/SER<,+
+   OCCURS=0:9,+
+   DISPLAY_SEQUENCE_NUMBER=130,+
+   PRECISION=3,+
+   LEGAL=0: 999,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=PENDANCE_5,+
+   LABEL='Pendance 5',+
+   OUTPUT_FORMAT=<3/SER<,+
+   OCCURS=0:9,+
+   DISPLAY_SEQUENCE_NUMBER=230,+
+   PRECISION=3,+
+   LEGAL=0: 999,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=PRESIDADHOC,+
+   LABEL='Présid.adhoc',+
+   OUTPUT_FORMAT=<60/SER<,+
+   SORT_SIZE=60,+
+   SEARCHED=NO,+
+   OCCURS=0:9,+
+   DEFAULT_TEST=EQ,+
+   SIZE=6:60,+
+   TYPE=CHAR;
+*
+FIELD=PRESIDENCE,+
+   LABEL='Présidence',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=10,+
+   PARAMETER_SET=PS_NOM_COLLAB,+
+   DOMAIN=DO_NOM_COLLAB;
+*
+FIELD=PROACTIVITE,+
+   INIT=30,+
+   LABEL='Proactivité [j] {30}',+
+   OUTPUT_FORMAT=<3<,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=450,+
+   PRECISION=4,+
+   LEGAL=0: 999,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=QUORUM,+
+   INIT=0,+
+   LABEL='PrisEnCpte quorum {0}',+
+   OUTPUT_FORMAT=<1<,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=470,+
+   TYPE=LOGICAL;
+*
+FIELD=RAPPORT,+
+   INIT=0,+
+   LABEL='PrisEnCpte rapport {0}',+
+   OUTPUT_FORMAT=<1<,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=460,+
+   TYPE=LOGICAL;
+*
+FIELD=TAUX,+
+   LABEL='Taux [é/ooo]',+
+   OUTPUT_FORMAT=<5/SER<,+
+   OCCURS=0:9,+
+   DISPLAY_SEQUENCE_NUMBER=27,+
+   PRECISION=5,+
+   LEGAL=0: 99999,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=TOTAL_CONSIGNE,+
+   LABEL='Total consigne',+
+   OUTPUT_FORMAT=<4<,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=118,+
+   PRECISION=4,+
+   LEGAL=0: 9999,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=TOTAL_CONSIGNE_5,+
+   LABEL='Total consigne 5',+
+   OUTPUT_FORMAT=<4<,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=218,+
+   PRECISION=4,+
+   LEGAL=0: 9999,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=TOTAL_MESURE,+
+   LABEL='Total mesure',+
+   OUTPUT_FORMAT=<4<,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=115,+
+   PRECISION=4,+
+   LEGAL=0: 9999,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=TOTAL_MESURE_5,+
+   LABEL='Total mesure 5',+
+   OUTPUT_FORMAT=<4<,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=215,+
+   PRECISION=4,+
+   LEGAL=0: 9999,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=TOTAL_PENDANCE,+
+   LABEL='Total pendance',+
+   OUTPUT_FORMAT=<4<,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=140,+
+   PRECISION=4,+
+   LEGAL=0: 9999,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=TOTAL_PENDANCE_5,+
+   LABEL='Total pendance 5',+
+   OUTPUT_FORMAT=<4<,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=240,+
+   PRECISION=4,+
+   LEGAL=0: 9999,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=TOTAL_TAUX,+
+   LABEL='Total taux [é/ooo]',+
+   OUTPUT_FORMAT=<5<,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=28,+
+   PRECISION=5,+
+   LEGAL=0: 99999,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=DAT_MODIFICATION,+
+   DISPLAY_SEQUENCE_NUMBER=495,+
+   PARAMETER_SET=PS_DAT_MODIFICATION,+
+   DOMAIN=DO_DAT_MODIFICATION;
+*
+FIELD=ECART,+
+   LABEL='écart',+
+   OUTPUT_FORMAT=<4/SER<,+
+   SET_WHEN=PUT,+
+   OCCURS=0:9,+
+   DISPLAY_SEQUENCE_NUMBER=120,+
+   PRECISION=3,+
+   LEGAL=-999: 999,+
+   SET_EXPR=MESURE-CONSIGNE,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=ECART_5,+
+   LABEL='écart 5',+
+   OUTPUT_FORMAT=<4/SER<,+
+   SET_WHEN=PUT,+
+   OCCURS=0:9,+
+   DISPLAY_SEQUENCE_NUMBER=220,+
+   PRECISION=3,+
+   LEGAL=-999: 999,+
+   SET_EXPR=MESURE_5-CONSIGNE_5,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=HEURE_MODIF,+
+   LABEL='Heure modif.',+
+   OUTPUT_FORMAT=<6/Z<,+
+   SET_WHEN=PUT,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=500,+
+   SET_EXPR=$HHMMSS,+
+   USAGE=TIME;
+*
+FIELD=NBRE_JF,+
+   LABEL='Quorum coll.3 long terme',+
+   OUTPUT_FORMAT=<1<,+
+   SET_WHEN=GET,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=26,+
+   PRECISION=4,+
+   LEGAL=0: 9,+
+   SET_EXPR=$OCCURS(COLLEGE_COMPLET),+
+   TYPE=EXACT_BINARY;
+*
+*
+RECORD=DECISION,STYLE=CONVENTIONAL,+
+   COMMENT=(+
+   '',+
+$B,'Décisions du TF/TFA');
+*
+FIELD=ATTAQUABLE,+
+   LABEL='Attaquable',+
+   OUTPUT_FORMAT=<1<,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=390,+
+   TYPE=LOGICAL;
+*
+FIELD=AUTRE_PUB,+
+   INIT=0,+
+   LABEL='Autre publication',+
+   OUTPUT_FORMAT=<1<,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=390,+
+   TYPE=LOGICAL;
+*
+FIELD=CHEZ,+
+   LABEL='Chez',+
+   OUTPUT_FORMAT=<3<,+
+   SORT_SIZE=3,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=50,+
+   DEFAULT_TEST=EQ,+
+   SIZE=2:3,+
+   SEARCH_CONTROL=SC_RAISE,+
+   TYPE=CHAR;
+*
+FIELD=CLE_DECISION,+
+   LABEL='Clé décision',+
+   OUTPUT_FORMAT=>8>,+
+   SEARCHED=YES,+
+   DISPLAY_SEQUENCE_NUMBER=10,+
+   USAGE=SYSTEM_KEY(1);
+*
+FIELD=CLE_PIECE,+
+   LABEL='Clé piéce',+
+   OUTPUT_FORMAT=<12<,+
+   SORT_SIZE=12,+
+   SEARCHED=NO,+
+   OCCURS=0:150,+
+   DISPLAY_SEQUENCE_NUMBER=10,+
+   SIZE=3:12,+
+   TYPE=CHAR;
+*
+FIELD=CLE_PIECE_DISPO,+
+   LABEL='Clé piéce dispo',+
+   OUTPUT_FORMAT=<12/SER<,+
+   SORT_SIZE=12,+
+   SEARCHED=NO,+
+   OCCURS=0:150,+
+   DISPLAY_SEQUENCE_NUMBER=10,+
+   SIZE=3:12,+
+   TYPE=CHAR;
+*
+FIELD=CODE_AZA,+
+   LABEL='Code AZA',+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=397,+
+   LEGAL=0: 6,+
+   TYPE=INTEGER;
+*
+FIELD=CODE_AZA_2,+
+   LABEL='Code AZA 2',+
+   SORT_SIZE=3,+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=397,+
+   LEGAL=WL_CODE_AZA,+
+   SIZE=3:3,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=CODE_MEDIA,+
+   LABEL='Code Média',+
+   SORT_SIZE=3,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=397,+
+   LEGAL=WL_CODE_MEDIA,+
+   SIZE=3:3,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=COMMUNIQUE,+
+   LABEL='Communiqué de presse',+
+   OUTPUT_FORMAT=<1<,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   TYPE=LOGICAL;
+*
+FIELD=COMP_INSTANCE,+
+   LABEL='Composition de l''instance',+
+   OUTPUT_FORMAT=<20/SEC<,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   OCCURS=1:11,+
+   DISPLAY_SEQUENCE_NUMBER=50,+
+   DEFAULT_TEST=EQ,+
+   DOMAIN=DO_NOM_COLLAB;
+*
+FIELD=CONTENU_EXP,+
+   LABEL='Contenu exp.',+
+   OUTPUT_FORMAT=<80/SER<,+
+   SORT_SIZE=10,+
+   SEARCHED=YES,+
+   OCCURS=0:150,+
+   DISPLAY_SEQUENCE_NUMBER=230,+
+   SIZE=1:80,+
+   TYPE=CHAR;
+*
+FIELD=CRIT_COMPO,+
+   LABEL='Critéres composition',+
+   OUTPUT_FORMAT=<1/SER<,+
+   SORT_SIZE=1,+
+   SEARCHED=YES,+
+   OCCURS=0:10,+
+   SIZE=1:1,+
+   BLANK_CONTROL=YES,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=CT,+
+   PARAMETER_SET=PS_CT,+
+   DOMAIN=DO_CT;
+*
+FIELD=DAT_APPR_PROJET,+
+   LABEL='Date approbation projet',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=90,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_AUDIENCE,+
+   LABEL='Date de l''audience',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=300,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_AZA_HORS_INT,+
+   LABEL='Date Aza hors internet',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=486,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_AZA_SUR_INT,+
+   LABEL='Date Aza sur internet',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=485,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_CHEZ,+
+   LABEL='Chez depuis le',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=300,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_DEB_RAP,+
+   LABEL='Date début rapport',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=410,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_DEB_REDAC,+
+   LABEL='Date début rédaction',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=430,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_DECISION,+
+   LABEL='Date décision',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=40,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_DEC_REC,+
+   LABEL='Dates déc. recours',+
+   OCCURS=0:10,+
+   DISPLAY_SEQUENCE_NUMBER=440,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_DISPO,+
+   LABEL='Date expéd. dispo',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=410,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_EMBARGO,+
+   LABEL='DAT_EMBARGO',+
+   OCCURS=0:1,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_EXEC,+
+   LABEL='Date éxécutoire',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=90,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_EXP,+
+   LABEL='Date expédition',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=200,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_FIN_RAP,+
+   LABEL='Date fin rapport',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=420,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_FIN_REDAC,+
+   LABEL='Date fin rédaction',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=440,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_MODIF_SEAN,+
+   LABEL='Date de modification des données de séance',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=440,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_MUT_STATUT,+
+   LABEL='Dat.mut.statut',+
+   OCCURS=0:1,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_NOTIF_DEC,+
+   LABEL='Dates de notif.',+
+   OCCURS=0:150,+
+   DISPLAY_SEQUENCE_NUMBER=440,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_REC,+
+   LABEL='Dates recours',+
+   OCCURS=0:10,+
+   DISPLAY_SEQUENCE_NUMBER=440,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_SEAN_HORS_INT,+
+   LABEL='Date séance publique hors internet',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=440,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_SEAN_SUR_INT,+
+   LABEL='Date séance publique sur internet',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=440,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DESTIN_EXP,+
+   LABEL='Destinataire',+
+   OUTPUT_FORMAT=<20/SEC<,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   OCCURS=0:150,+
+   DISPLAY_SEQUENCE_NUMBER=220,+
+   DOMAIN=DO_NOM_COURT;
+*
+FIELD=EXPED_DISPO,+
+   LABEL='Abrév. expéd. dispo',+
+   OUTPUT_FORMAT=<3<,+
+   SORT_SIZE=3,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=50,+
+   DEFAULT_TEST=EQ,+
+   SIZE=2:3,+
+   SEARCH_CONTROL=SC_RAISE,+
+   TYPE=CHAR;
+*
+FIELD=GENRE_AUDIENCE,+
+   LABEL='Genre d''audience',+
+   OUTPUT_FORMAT=<1<,+
+   SORT_SIZE=1,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=310,+
+   LEGAL=WL_GENRE_AUDIENCE,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=HEURE_AUDIENCE,+
+   LABEL='Heure d''audience',+
+   OUTPUT_FORMAT=<5<,+
+   SORT_SIZE=5,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=320,+
+   SIZE=5:5,+
+   TYPE=CHAR;
+*
+FIELD=INST_REC,+
+   LABEL='Instance recours',+
+   OUTPUT_FORMAT=<20/SER<,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   OCCURS=0:2,+
+   DISPLAY_SEQUENCE_NUMBER=220,+
+   DOMAIN=DO_NOM_COURT;
+*
+FIELD=INTERNET,+
+   INIT=0,+
+   LABEL='Internet (TFA)',+
+   SEARCHED=NO,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=399,+
+   TYPE=LOGICAL;
+*
+FIELD=ISSUE_DEC,+
+   LABEL='Issues recours',+
+   OUTPUT_FORMAT=<4/SER<,+
+   SORT_SIZE=4,+
+   SEARCHED=YES,+
+   OCCURS=0:10,+
+   DISPLAY_SEQUENCE_NUMBER=120,+
+   LEGAL=WL_R_ISSUE_PROCES,+
+   SIZE=1:4,+
+   TYPE=CHAR;
+*
+FIELD=MODE_DECISION,+
+   LABEL='Mode décision',+
+   OUTPUT_FORMAT=<2<,+
+   SORT_SIZE=2,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=70,+
+   LEGAL=WL_MODE_DECISION,+
+   SIZE=2:2,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=MODE_REGLEMENT,+
+   LABEL='Mode réglement',+
+   OUTPUT_FORMAT=<4<,+
+   SORT_SIZE=4,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=80,+
+   LEGAL=WL_MODE_REGLEMENT,+
+   SIZE=2:4,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=MOYEN_REC,+
+   LABEL='Moyens recours',+
+   OUTPUT_FORMAT=<6/SER<,+
+   SORT_SIZE=6,+
+   SEARCHED=YES,+
+   OCCURS=0:10,+
+   DISPLAY_SEQUENCE_NUMBER=30,+
+   LEGAL=WL_MOYEN_DE_DROIT,+
+   SIZE=1:6,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=NB_PAGE,+
+   LABEL='Nbr pages',+
+   OUTPUT_FORMAT=>4>,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=100,+
+   PRECISION=4,+
+   LEGAL=0: 999,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=NOS_DOS_SEAN,+
+   LABEL='Nos de dossier séance',+
+   OUTPUT_FORMAT=<80<,+
+   SORT_SIZE=10,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=340,+
+   SIZE=1:85,+
+   TYPE=CHAR;
+*
+FIELD=NUM_DOSSIER_REGR,+
+   LABEL='Né dossiers',+
+   OUTPUT_FORMAT=<15/SEC<,+
+   SORT_SIZE=15,+
+   SEARCHED=YES,+
+   OCCURS=1:150,+
+   DISPLAY_SEQUENCE_NUMBER=20,+
+   DEFAULT_TEST=EQ,+
+   DOMAIN=DO_NUMDO;
+*
+FIELD=NUM_IMP,+
+   LABEL='Numéro des destinataires',+
+   OCCURS=0:150,+
+   DISPLAY_SEQUENCE_NUMBER=240,+
+   PARAMETER_SET=PS_NUM_IMP,+
+   DOMAIN=DO_NUM_IMP;
+*
+FIELD=OBJET,+
+   LABEL='Objet décision',+
+   OUTPUT_FORMAT=<77<,+
+   SORT_SIZE=10,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=340,+
+   SIZE=1:400,+
+   TYPE=CHAR;
+*
+FIELD=PARTIES_AUDIENCE,+
+   LABEL='Parties audience',+
+   OUTPUT_FORMAT=<77<,+
+   SORT_SIZE=10,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=340,+
+   SIZE=1:134,+
+   TYPE=CHAR;
+*
+FIELD=PRESSE_AVISEE,+
+   LABEL='Presse avisée',+
+   OUTPUT_FORMAT=<1<,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=390,+
+   TYPE=LOGICAL;
+*
+FIELD=PUB_B,+
+   LABEL='Publication B',+
+   OUTPUT_FORMAT=<1<,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   TYPE=LOGICAL;
+*
+FIELD=RAPPORTEUR,+
+   LABEL='Rapporteur',+
+   OUTPUT_FORMAT=<20<,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=50,+
+   DEFAULT_TEST=EQ,+
+   DOMAIN=DO_NOM_COLLAB;
+*
+FIELD=RECOURANT,+
+   LABEL='Recourant',+
+   OUTPUT_FORMAT=<20/SER<,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   OCCURS=0:10,+
+   DISPLAY_SEQUENCE_NUMBER=220,+
+   DOMAIN=DO_NOM_COURT;
+*
+FIELD=REF_DEC_REC,+
+   LABEL='Réf. déc. recours',+
+   OUTPUT_FORMAT=<40/SER<,+
+   SORT_SIZE=40,+
+   SEARCHED=YES,+
+   OCCURS=0:10,+
+   DISPLAY_SEQUENCE_NUMBER=230,+
+   SIZE=1:40,+
+   TYPE=CHAR;
+*
+FIELD=REF_DOS_REC,+
+   LABEL='Réf. doss. recours',+
+   OUTPUT_FORMAT=<20/SER<,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   OCCURS=0:10,+
+   DISPLAY_SEQUENCE_NUMBER=230,+
+   SIZE=1:20,+
+   TYPE=CHAR;
+*
+FIELD=REF_PUB,+
+   LABEL='Réf. publication',+
+   OUTPUT_FORMAT=<22<,+
+   SORT_SIZE=22,+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   SIZE=6:22,+
+   TYPE=CHAR;
+*
+FIELD=REM_AUDIENCE,+
+   LABEL='Remarque audience',+
+   OUTPUT_FORMAT=<30<,+
+   SORT_SIZE=10,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=340,+
+   SIZE=1:70,+
+   TYPE=CHAR;
+*
+FIELD=REM_COMPO,+
+   LABEL='Rem. compo',+
+   OUTPUT_FORMAT=<70/VR3<,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   SIZE=1:200,+
+   TYPE=CHAR;
+*
+FIELD=REM_EXEC,+
+   LABEL='Rem. éxécution',+
+   OUTPUT_FORMAT=<70/VR3<,+
+   SORT_SIZE=20,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=340,+
+   SIZE=1:200,+
+   TYPE=CHAR;
+*
+FIELD=REM_EXPEDITION,+
+   LABEL='Remarque expédition',+
+   OUTPUT_FORMAT=<50/VR4<,+
+   SORT_SIZE=10,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=240,+
+   SIZE=1:200,+
+   TYPE=CHAR;
+*
+FIELD=REM_GEN,+
+   LABEL='Remarque générale',+
+   OUTPUT_FORMAT=<70/VR250<,+
+   SORT_SIZE=30,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=340,+
+   SIZE=1:200,+
+   TYPE=CHAR;
+*
+FIELD=REM_NOTIF_DEC,+
+   LABEL='Rem. notif.',+
+   OUTPUT_FORMAT=<50/SER<,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   OCCURS=0:150,+
+   DISPLAY_SEQUENCE_NUMBER=230,+
+   SIZE=1:50,+
+   TYPE=CHAR;
+*
+FIELD=REM_PUBLICATION,+
+   LABEL='Remarque publication',+
+   OUTPUT_FORMAT=<20/VR4<,+
+   SORT_SIZE=10,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=390,+
+   SIZE=3:80,+
+   TYPE=CHAR;
+*
+FIELD=RUBRUM_DISPO,+
+   LABEL='Mise é disposition Rubrum & dispo',+
+   SORT_SIZE=1,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=397,+
+   LEGAL=WL_RUBRUM_DISPO,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=SALLE,+
+   LABEL='Salle',+
+   OUTPUT_FORMAT=<2<,+
+   SORT_SIZE=2,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=330,+
+   LEGAL=WL_SALLE,+
+   SIZE=1:2,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=SECRETAIRE,+
+   LABEL='Nom secrétaire',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=210,+
+   PARAMETER_SET=PS_NOM_COLLAB,+
+   DOMAIN=DO_NOM_COLLAB;
+*
+FIELD=STATUT_DEC,+
+   LABEL='Statut déc.',+
+   OUTPUT_FORMAT=<3<,+
+   SORT_SIZE=3,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=380,+
+   LEGAL=WL_STATUT_DEC,+
+   SIZE=3:3,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=TAUX_REDAC,+
+   LABEL='Taux rédac. rapport',+
+   OUTPUT_FORMAT=>4>,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   PRECISION=4,+
+   LEGAL=0: 100,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=TYPE_PUB,+
+   LABEL='Publication',+
+   OUTPUT_FORMAT=<1<,+
+   SORT_SIZE=1,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=380,+
+   LEGAL=WL_TYPE_PUB,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=USER,+
+   SORT_SIZE=20,+
+   DISPLAY_SEQUENCE_NUMBER=484,+
+   PARAMETER_SET=PS_USER,+
+   DOMAIN=DO_USER;
+*
+FIELD=VISA_HORS_INT,+
+   LABEL='Aza hors Internet par',+
+   OUTPUT_FORMAT=<3<,+
+   SORT_SIZE=3,+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Visa de la personne qui a retiré l''Aza d''Internet'),+
+   DISPLAY_SEQUENCE_NUMBER=487,+
+   SIZE=2:3,+
+   EDIT_BLANKS=REMOVE,+
+   FORMAT=STRING,+
+   SEARCH_CONTROL=SC_RAISE,+
+   TYPE=CHAR;
+*
+FIELD=VISIBLE,+
+   LABEL='Visible',+
+   OUTPUT_FORMAT=<36<,+
+   SORT_SIZE=36,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=455,+
+   SIZE=1:36,+
+   EDIT_BLANKS=REMOVE,+
+   FORMAT=STRING,+
+   BLANK_CONTROL=YES,+
+   RAISE_DATA=YES,+
+   SEARCH_CONTROL=SC_RAISE,+
+   TYPE=CHAR;
+*
+FIELD=DAT_CREATION,+
+   DISPLAY_SEQUENCE_NUMBER=480,+
+   PARAMETER_SET=PS_DAT_CREATION,+
+   DOMAIN=DO_DAT_CREATION;
+*
+FIELD=DAT_MODIFICATION,+
+   DISPLAY_SEQUENCE_NUMBER=482,+
+   PARAMETER_SET=PS_DAT_MODIFICATION,+
+   DOMAIN=DO_DAT_MODIFICATION;
+*
+FIELD=QUORUM,+
+   LABEL='Quorum',+
+   OUTPUT_FORMAT=>4>,+
+   SET_WHEN=GET,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=60,+
+   PRECISION=4,+
+   LEGAL=1: 11,+
+   SET_EXPR=$OCCURS(COMP_INSTANCE),+
+   TYPE=EXACT_BINARY;
+*
+FIELD=UID,+
+   SORT_SIZE=8,+
+   DISPLAY_SEQUENCE_NUMBER=484,+
+   PARAMETER_SET=PS_UID,+
+   DOMAIN=DO_UID;
+*
+*
+RECORD=DELAI,STYLE=CONVENTIONAL;
+*
+FIELD=CLE_DELAI,+
+   LABEL='Clé délai',+
+   OUTPUT_FORMAT=>8>,+
+   SEARCHED=YES,+
+   DISPLAY_SEQUENCE_NUMBER=10,+
+   USAGE=SYSTEM_KEY(1);
+*
+FIELD=CLE_DOSSIER,+
+   LABEL='Clé dossier',+
+   OUTPUT_FORMAT=<9/SER<,+
+   SEARCHED=YES,+
+   OCCURS=0:20,+
+   DISPLAY_SEQUENCE_NUMBER=30,+
+   PRECISION=9,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=CLE_PIECE,+
+   LABEL='Clé-s piéce',+
+   OUTPUT_FORMAT=<12/SER<,+
+   SORT_SIZE=12,+
+   OCCURS=0:20,+
+   SIZE=3:12,+
+   TYPE=CHAR;
+*
+FIELD=CONTROLEUR,+
+   LABEL='Abrév. contrôleur',+
+   OUTPUT_FORMAT=<3<,+
+   SORT_SIZE=3,+
+   OCCURS=0:1,+
+   SIZE=2:3,+
+   SEARCH_CONTROL=SC_RAISE,+
+   TYPE=CHAR;
+*
+FIELD=CT,+
+   PARAMETER_SET=PS_CT,+
+   DOMAIN=DO_CT;
+*
+FIELD=DAT_ACTION,+
+   LABEL='Date action',+
+   OCCURS=0:1,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_ANCIEN_DELAI,+
+   LABEL='Date ancien délai',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=35,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_CHANGE_STATUT,+
+   LABEL='Date changement de statut délai',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=62,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_DELAI,+
+   LABEL='Date limite du délai',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=40,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_ECHEANCE,+
+   LABEL='Date-s délai',+
+   OCCURS=0:9,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_ENREG,+
+   LABEL='Date enregistrement réception',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=170,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_ENVOI,+
+   LABEL='Date d''envoi du délai',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=35,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_RAPPEL,+
+   LABEL='Date rappel délai',+
+   OCCURS=0:1,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_RECEPTION,+
+   LABEL='Date de réception',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=70,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_TOLERANCE,+
+   LABEL='Date tolérance délai',+
+   OCCURS=0:1,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DERNIER_MONTANT_VERSE,+
+   LABEL='Dernier montant versé',+
+   DISPLAY_SEQUENCE_NUMBER=107,+
+   PARAMETER_SET=PS_MONTANT,+
+   DOMAIN=DO_MONTANT;
+*
+FIELD=DERNIER_MONTANT_VERSE_C,+
+   LABEL='Dernier montant versé (c)',+
+   OUTPUT_FORMAT=<9<,+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=108,+
+   DOMAIN=DO_MONTANT;
+*
+FIELD=DERNIER_MONTANT_VERSE_CTS,+
+   LABEL='Dernier montant versé (cts)',+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=108,+
+   PRECISION=2,+
+   LEGAL=0: 99,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=DUREE,+
+   LABEL='Durée délai (jours)',+
+   OUTPUT_FORMAT=>4>,+
+   OCCURS=0:1,+
+   PRECISION=4,+
+   LEGAL=0: 999,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=FERIE,+
+   LABEL='Computation',+
+   SORT_SIZE=1,+
+   OCCURS=0:1,+
+   LEGAL=WL_FERIE,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=GENRE_DELAI,+
+   LABEL='Genre délai',+
+   OUTPUT_FORMAT=<4<,+
+   SORT_SIZE=4,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=50,+
+   LEGAL=WL_GENRE_DELAI,+
+   SIZE=1:4,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=HEURE_ACTION,+
+   LABEL='Heure action',+
+   OUTPUT_FORMAT=<5<,+
+   SORT_SIZE=5,+
+   OCCURS=0:1,+
+   SIZE=5:5,+
+   PATTERN='29.59',+
+   TYPE=CHAR;
+*
+FIELD=HEURE_MODIF,+
+   LABEL='Heure modif.',+
+   OCCURS=0:1,+
+   PARAMETER_SET=PS_HEURE,+
+   DOMAIN=DO_HEURE;
+*
+FIELD=ID_TACHE,+
+   LABEL='Identif. téche',+
+   OUTPUT_FORMAT=<12<,+
+   SORT_SIZE=12,+
+   OCCURS=0:1,+
+   SIZE=1:12,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=LIEU_ACTION,+
+   LABEL='Lieu action',+
+   OUTPUT_FORMAT=<30<,+
+   SORT_SIZE=30,+
+   OCCURS=0:1,+
+   SIZE=1:30,+
+   TYPE=CHAR;
+*
+FIELD=MONTANT_AF_SU,+
+   LABEL='Montant (AF/Sur.)',+
+   DISPLAY_SEQUENCE_NUMBER=110,+
+   PARAMETER_SET=PS_MONTANT,+
+   DOMAIN=DO_MONTANT;
+*
+FIELD=MONTANT_AO,+
+   LABEL='MONTANT_AO',+
+   DISPLAY_SEQUENCE_NUMBER=140,+
+   PARAMETER_SET=PS_MONTANT,+
+   DOMAIN=DO_MONTANT;
+*
+FIELD=MONTANT_EJ,+
+   LABEL='MONTANT_EJ',+
+   DISPLAY_SEQUENCE_NUMBER=130,+
+   PARAMETER_SET=PS_MONTANT,+
+   DOMAIN=DO_MONTANT;
+*
+FIELD=MONTANT_FI,+
+   LABEL='MONTANT_FI',+
+   DISPLAY_SEQUENCE_NUMBER=120,+
+   PARAMETER_SET=PS_MONTANT,+
+   DOMAIN=DO_MONTANT;
+*
+FIELD=MONTANT_TOTAL_VERSE,+
+   LABEL='Montant total versé',+
+   DISPLAY_SEQUENCE_NUMBER=105,+
+   PARAMETER_SET=PS_MONTANT,+
+   DOMAIN=DO_MONTANT;
+*
+FIELD=MONTANT_TOTAL_VERSE_C,+
+   LABEL='Montant total versé (c)',+
+   OUTPUT_FORMAT=<9<,+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=106,+
+   DOMAIN=DO_MONTANT;
+*
+FIELD=MONTANT_TOTAL_VERSE_CTS,+
+   LABEL='Montant total versé (cts)',+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=106,+
+   PRECISION=2,+
+   LEGAL=0: 99,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=NUM_FACTURE,+
+   LABEL='Né facture/AF',+
+   OUTPUT_FORMAT=<9<,+
+   SORT_SIZE=9,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=100,+
+   SIZE=3:9,+
+   TYPE=CHAR;
+*
+FIELD=NUM_IMP,+
+   LABEL='Numéro impliqué',+
+   OCCURS=1:20,+
+   DISPLAY_SEQUENCE_NUMBER=20,+
+   PARAMETER_SET=PS_NUM_IMP,+
+   DOMAIN=DO_NUM_IMP;
+*
+FIELD=ORIGINE,+
+   LABEL='Clé délai origine',+
+   OUTPUT_FORMAT=>9>,+
+   OCCURS=0:1,+
+   PRECISION=9,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=PRENANT_PART,+
+   LABEL='Abrév. participant-s interne-s',+
+   OUTPUT_FORMAT=<3<,+
+   SORT_SIZE=3,+
+   OCCURS=0:99,+
+   SIZE=2:3,+
+   SEARCH_CONTROL=SC_RAISE,+
+   TYPE=CHAR;
+*
+FIELD=PROVISOIRE,+
+   LABEL='Délai provisoire',+
+   OCCURS=0:1,+
+   TYPE=LOGICAL;
+*
+FIELD=RAPPEL,+
+   LABEL='Rappel délai (jours)',+
+   OUTPUT_FORMAT=>4>,+
+   OCCURS=0:1,+
+   PRECISION=4,+
+   LEGAL=0: 99,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=REM_DELAI,+
+   LABEL='Remarque délai',+
+   OUTPUT_FORMAT=<20/VR4<,+
+   SORT_SIZE=10,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=290,+
+   SIZE=1:90,+
+   TYPE=CHAR;
+*
+FIELD=STATUT_DELAI,+
+   LABEL='Statut délai',+
+   OUTPUT_FORMAT=<3<,+
+   SORT_SIZE=3,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=60,+
+   LEGAL=WL_STATUT_DELAI,+
+   SIZE=3:3,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=TOLERANCE,+
+   LABEL='Tolérance délai (jours)',+
+   OUTPUT_FORMAT=>4>,+
+   OCCURS=0:1,+
+   PRECISION=4,+
+   LEGAL=0: 99,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=USER,+
+   SORT_SIZE=20,+
+   DISPLAY_SEQUENCE_NUMBER=484,+
+   PARAMETER_SET=PS_USER,+
+   DOMAIN=DO_USER;
+*
+FIELD=DAT_CREATION,+
+   DISPLAY_SEQUENCE_NUMBER=480,+
+   PARAMETER_SET=PS_DAT_CREATION,+
+   DOMAIN=DO_DAT_CREATION;
+*
+FIELD=DAT_MODIFICATION,+
+   DISPLAY_SEQUENCE_NUMBER=482,+
+   PARAMETER_SET=PS_DAT_MODIFICATION,+
+   DOMAIN=DO_DAT_MODIFICATION;
+*
+FIELD=UID,+
+   SORT_SIZE=8,+
+   DISPLAY_SEQUENCE_NUMBER=486,+
+   PARAMETER_SET=PS_UID,+
+   DOMAIN=DO_UID;
+*
+*
+RECORD=DOSSIER,STYLE=CONVENTIONAL,PRIMARY_KEY=CLE_DOSSIER,+
+   COMMENT=(+
+   '',+
+$B,'Dossiers du TF/TFA');
+*
+FIELD=ACCEPT_REQ,+
+   LABEL='Acceptation requéte',+
+   OUTPUT_FORMAT=<1/SEC<,+
+   SORT_SIZE=1,+
+   SEARCHED=NO,+
+   OCCURS=0:20,+
+   DISPLAY_SEQUENCE_NUMBER=410,+
+   LEGAL=WL_ACCEPT_REQ,+
+   SIZE=1:1,+
+   EDIT_BLANKS=TRIM,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=ANO,+
+   LABEL='Substit. anonym.',+
+   OUTPUT_FORMAT=<20/SEC<,+
+   SORT_SIZE=20,+
+   SEARCHED=NO,+
+   OCCURS=0:500,+
+   SIZE=0:20,+
+   TYPE=CHAR;
+*
+FIELD=BRANCHE,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=24,+
+   PARAMETER_SET=PS_BRANCHE,+
+   DOMAIN=DO_BRANCHE;
+*
+FIELD=CANTON,+
+   LABEL='Canton',+
+   OCCURS=0:1,+
+   PARAMETER_SET=PS_CANTON,+
+   DOMAIN=DO_CANTON;
+*
+FIELD=CELEBRE,+
+   INIT=0,+
+   LABEL='Cause célébre',+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=52,+
+   TYPE=LOGICAL;
+*
+FIELD=CHAMBRE,+
+   LABEL='Chambre',+
+   OUTPUT_FORMAT=<3<,+
+   SORT_SIZE=3,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Chambre'),+
+   DISPLAY_SEQUENCE_NUMBER=100,+
+   LEGAL=WL_CHAMBRE,+
+   SIZE=1:3,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=CLE_DOSSIER,+
+   LABEL='Clé dossier',+
+   OUTPUT_FORMAT=>8>,+
+   SEARCHED=YES,+
+   DISPLAY_SEQUENCE_NUMBER=12,+
+   USAGE=SYSTEM_KEY(1);
+*
+FIELD=COMPO,+
+   LABEL='Compo',+
+   OUTPUT_FORMAT=<20/SER<,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   OCCURS=0:7,+
+   DEFAULT_TEST=EQ,+
+   SIZE=2:20,+
+   SEARCH_CONTROL=SC_RAISE,+
+   TYPE=CHAR;
+*
+FIELD=COUR,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=26,+
+   PARAMETER_SET=PS_COUR,+
+   DOMAIN=DO_COUR;
+*
+FIELD=CRIT_RAPP,+
+   LABEL='Critére attrib. rapprt',+
+   OUTPUT_FORMAT=<30<,+
+   SORT_SIZE=30,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   SIZE=1:30,+
+   EDIT_BLANKS=SQUEEZE,+
+   SEARCH_CONTROL=SC_NOM_INC_ENTIRE,+
+   TYPE=CHAR;
+*
+FIELD=CT,+
+   PARAMETER_SET=PS_CT,+
+   DOMAIN=DO_CT;
+*
+FIELD=CUMUL_SUSP,+
+   LABEL='Nbr jours suspension',+
+   OUTPUT_FORMAT=>4>,+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=58,+
+   PRECISION=4,+
+   LEGAL=0: 5000,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=DAT_ARCHIVAGE,+
+   LABEL='Date d''archivage',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=72,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_ARRIVEE,+
+   LABEL='Date d''arrivée',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=18,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_ATTR_JD,+
+   LABEL='Date attribution JD',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=104,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_ATTR_RED,+
+   LABEL='Date attribution réd.',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=110,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_COMPO,+
+   LABEL='Date composition',+
+   OCCURS=0:1,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_COM_DISP,+
+   LABEL='Date comm. dispositif',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=38,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_DEB_SUSP,+
+   LABEL='Date début suspension',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=54,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_DEC_ATT,+
+   LABEL='Date déc. attaquée',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=22,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_DEC_ATT_2,+
+   LABEL='Date déc. attaq. 2',+
+   OCCURS=0:1,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_DEC_DOSSIER,+
+   LABEL='Date décision dossier',+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Copie de la date de décision finale (table DECISION)'),+
+   DISPLAY_SEQUENCE_NUMBER=130,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_DEC_PREC,+
+   LABEL='Date déc. précédente',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=22,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_DEC_REQ,+
+   LABEL='Date décision req.',+
+   OUTPUT_FORMAT=<10/DATE23/SEC<,+
+   OCCURS=0:20,+
+   DISPLAY_SEQUENCE_NUMBER=420,+
+   PRECISION=8,+
+   LEGAL=(DATE),+
+   TYPE=EXACT_BINARY;
+*
+FIELD=DAT_DEPOT,+
+   LABEL='Date dépét',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=16,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_FIN_SUSP,+
+   LABEL='Date fin suspension',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=56,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_LIQ_JD,+
+   LABEL='Date liquidation JD',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=106,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_LIQ_RED,+
+   LABEL='Date liquidation réd.',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=112,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_MODIF_NOTIF,+
+   LABEL='Date de modif. de la notice',+
+   OCCURS=0:1,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_MODIF_POS,+
+   LABEL='Date de modif. de la position',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=72,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_NOTIF,+
+   LABEL='Date notification',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=20,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_POSITION,+
+   LABEL='Positionné le',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=72,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_POURVOI,+
+   LABEL='Date pourvoi',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=40,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_REQ,+
+   LABEL='Date req.',+
+   OUTPUT_FORMAT=<10/DATE23/SEC<,+
+   OCCURS=0:20,+
+   DISPLAY_SEQUENCE_NUMBER=420,+
+   PRECISION=8,+
+   LEGAL=(DATE),+
+   TYPE=EXACT_BINARY;
+*
+FIELD=DELEGATION,+
+   LABEL='Délégation',+
+   OUTPUT_FORMAT=<1<,+
+   OCCURS=0:1,+
+   DEFAULT_TEST=EQ,+
+   TYPE=LOGICAL;
+*
+FIELD=DELEGUE,+
+   INIT=0,+
+   LABEL='Délégué',+
+   OUTPUT_FORMAT=<1<,+
+   OCCURS=1:1,+
+   DEFAULT_TEST=EQ,+
+   TYPE=LOGICAL;
+*
+FIELD=DEM_REQ,+
+   LABEL='Demandeur(s) de la requéte',+
+   OUTPUT_FORMAT=<60/SEC<,+
+   SORT_SIZE=9,+
+   OCCURS=0:20,+
+   DISPLAY_SEQUENCE_NUMBER=440,+
+   SIZE=0:2499,+
+   TYPE=CHAR;
+*
+FIELD=DESCRIPTEUR,+
+   LABEL='Descripteurs',+
+   OUTPUT_FORMAT=<76/SER<,+
+   SORT_SIZE=50,+
+   SEARCHED=YES,+
+   OCCURS=0:30,+
+   DISPLAY_SEQUENCE_NUMBER=320,+
+   SIZE=1:76,+
+   EDIT_BLANKS=SQUEEZE,+
+   TYPE=CHAR;
+*
+FIELD=DESCRIPTEUR_F,+
+   LABEL='Descripteurs (F)',+
+   OUTPUT_FORMAT=<76/SER<,+
+   SORT_SIZE=50,+
+   SEARCHED=YES,+
+   OCCURS=0:30,+
+   DISPLAY_SEQUENCE_NUMBER=321,+
+   SIZE=1:76,+
+   EDIT_BLANKS=TRIM,+
+   TYPE=CHAR;
+*
+FIELD=DESCRIPTEUR_I,+
+   LABEL='Descripteurs (I)',+
+   OUTPUT_FORMAT=<76/SER<,+
+   SORT_SIZE=50,+
+   SEARCHED=YES,+
+   OCCURS=0:30,+
+   DISPLAY_SEQUENCE_NUMBER=322,+
+   SIZE=1:76,+
+   EDIT_BLANKS=TRIM,+
+   TYPE=CHAR;
+*
+FIELD=DESCR_D,+
+   LABEL='Descripteurs (D)',+
+   OUTPUT_FORMAT=<76/SER<,+
+   SORT_SIZE=50,+
+   SEARCHED=YES,+
+   OCCURS=0:30,+
+   DISPLAY_SEQUENCE_NUMBER=320,+
+   SIZE=1:76,+
+   EDIT_BLANKS=SQUEEZE,+
+   SEARCH_CONTROL=SC_DESCR,+
+   TYPE=CHAR;
+*
+FIELD=DESCR_F,+
+   LABEL='Descripteurs (F)',+
+   OUTPUT_FORMAT=<76/SER<,+
+   SORT_SIZE=50,+
+   SEARCHED=YES,+
+   OCCURS=0:30,+
+   DISPLAY_SEQUENCE_NUMBER=321,+
+   SIZE=1:76,+
+   EDIT_BLANKS=TRIM,+
+   THESAURUS_DATA_CONTROL=TDC_SWITCH_F,+
+   TYPE=CHAR;
+*
+FIELD=DESCR_I,+
+   LABEL='Descripteurs (I)',+
+   OUTPUT_FORMAT=<76/SER<,+
+   SORT_SIZE=50,+
+   SEARCHED=YES,+
+   OCCURS=0:30,+
+   DISPLAY_SEQUENCE_NUMBER=322,+
+   SIZE=1:76,+
+   EDIT_BLANKS=TRIM,+
+   THESAURUS_DATA_CONTROL=TDC_SWITCH_I,+
+   TYPE=CHAR;
+*
+FIELD=DESTIN,+
+   LABEL='Destinataire',+
+   OUTPUT_FORMAT=<1<,+
+   OCCURS=0:500,+
+   DISPLAY_SEQUENCE_NUMBER=225,+
+   TYPE=LOGICAL;
+*
+FIELD=DIFFICULTE,+
+   LABEL='Difficulté',+
+   OUTPUT_FORMAT=<1<,+
+   SORT_SIZE=1,+
+   OCCURS=0:1,+
+   DEFAULT_TEST=EQ,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=DOSSIER_CONNEXE,+
+   LABEL='Dossiers connexes',+
+   OUTPUT_FORMAT=<15/SEC<,+
+   SORT_SIZE=15,+
+   SEARCHED=YES,+
+   OCCURS=0:150,+
+   DISPLAY_SEQUENCE_NUMBER=44,+
+   DEFAULT_TEST=EQ,+
+   DOMAIN=DO_NUMDO;
+*
+FIELD=ELECTRACTION,+
+   LABEL='Recours électronique',+
+   OUTPUT_FORMAT=<1<,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DEFAULT_TEST=EQ,+
+   TYPE=LOGICAL;
+*
+FIELD=ETAT_DOSSIER,+
+   LABEL='Etat du dossier',+
+   OUTPUT_FORMAT=<1<,+
+   SORT_SIZE=1,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=14,+
+   CODE_LIST=CL_ETAT_DOSSIER,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=EX_AUT_ATT,+
+   LABEL='EX_AUT_ATT',+
+   OUTPUT_FORMAT=<80<,+
+   SORT_SIZE=80,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=220,+
+   SIZE=1:80,+
+   SEARCH_CONTROL=SC_RAISE,+
+   TYPE=CHAR;
+*
+FIELD=EX_NUM_DOSSIER,+
+   LABEL='EX_NUM_DOSSIER',+
+   OUTPUT_FORMAT=<15/SEC<,+
+   SORT_SIZE=15,+
+   SEARCHED=YES,+
+   OCCURS=0:2,+
+   DISPLAY_SEQUENCE_NUMBER=220,+
+   SIZE=1:20,+
+   SEARCH_CONTROL=SC_RAISE,+
+   TYPE=CHAR;
+*
+FIELD=EX_REKO,+
+   LABEL='EX_reko',+
+   OUTPUT_FORMAT=<10<,+
+   SORT_SIZE=10,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=220,+
+   SIZE=1:10,+
+   SEARCH_CONTROL=SC_RAISE,+
+   TYPE=CHAR;
+*
+FIELD=GENRE_REPRES,+
+   LABEL='Genre de représentation',+
+   OUTPUT_FORMAT=<20/SEC<,+
+   SORT_SIZE=20,+
+   SEARCHED=NO,+
+   OCCURS=0:500,+
+   DISPLAY_SEQUENCE_NUMBER=230,+
+   SIZE=0:20,+
+   TYPE=CHAR;
+*
+FIELD=HEURE_MODIF,+
+   LABEL='Heure modif.',+
+   OCCURS=0:1,+
+   PARAMETER_SET=PS_HEURE,+
+   DOMAIN=DO_HEURE;
+*
+FIELD=HEURE_MODIF_POS,+
+   LABEL='Heure de modif. de la position',+
+   OUTPUT_FORMAT=<6<,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=72,+
+   USAGE=TIME;
+*
+FIELD=HISTO_POSITION,+
+   LABEL='Histo position',+
+   OUTPUT_FORMAT=<50/VR20<,+
+   SORT_SIZE=20,+
+   OCCURS=0:1,+
+   SIZE=1:3000,+
+   TYPE=CHAR;
+*
+FIELD=INFO_EX,+
+   LABEL='Infos ex-instance',+
+   OUTPUT_FORMAT=<50/VR4<,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   SIZE=1:200,+
+   TYPE=CHAR;
+*
+FIELD=ISSUE,+
+   LABEL='Issues',+
+   OUTPUT_FORMAT=<3/SER<,+
+   SORT_SIZE=3,+
+   SEARCHED=YES,+
+   OCCURS=0:3,+
+   LEGAL=WL_R_ISSUE_PROCES,+
+   SIZE=1:3,+
+   TYPE=CHAR;
+*
+FIELD=ISSUE_ATTAQUEE,+
+   LABEL='Issue déc. attaq.',+
+   OUTPUT_FORMAT=<50<,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   SIZE=1:50,+
+   TYPE=CHAR;
+*
+FIELD=JUGE,+
+   LABEL='Juges',+
+   OUTPUT_FORMAT=<20/SER<,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   OCCURS=0:7,+
+   DEFAULT_TEST=EQ,+
+   SIZE=2:20,+
+   SEARCH_CONTROL=SC_RAISE,+
+   TYPE=CHAR;
+*
+FIELD=JUGE_DELEGUE,+
+   LABEL='Juge délégué',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=102,+
+   PARAMETER_SET=PS_NOM_COLLAB,+
+   DOMAIN=DO_NOM_COLLAB;
+*
+FIELD=LANGUE,+
+   LABEL='Langue',+
+   OUTPUT_FORMAT=<1<,+
+   SORT_SIZE=1,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Langue de la procédure'),+
+   DISPLAY_SEQUENCE_NUMBER=28,+
+   LEGAL=WL_LANGUE,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=LECTU_DOC,+
+   LABEL='Droits lecture docu',+
+   OUTPUT_FORMAT=<4/SEC<,+
+   SORT_SIZE=4,+
+   SEARCHED=NO,+
+   OCCURS=0:10,+
+   DEFAULT_TEST=EQ,+
+   SIZE=2:4,+
+   EDIT_BLANKS=TRIM,+
+   SEARCH_CONTROL=SC_RAISE,+
+   TYPE=CHAR;
+*
+FIELD=MATIERE,+
+   LABEL='Code matiére',+
+   OUTPUT_FORMAT=<6<,+
+   SORT_SIZE=6,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=300,+
+   SIZE=6:6,+
+   TYPE=CHAR;
+*
+FIELD=MIXITE,+
+   LABEL='Mixité',+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   TYPE=LOGICAL;
+*
+FIELD=MODIF_DOC,+
+   LABEL='Droits modif. docu',+
+   OUTPUT_FORMAT=<4/SEC<,+
+   SORT_SIZE=4,+
+   SEARCHED=NO,+
+   OCCURS=0:10,+
+   DEFAULT_TEST=EQ,+
+   SIZE=2:4,+
+   EDIT_BLANKS=TRIM,+
+   SEARCH_CONTROL=SC_RAISE,+
+   TYPE=CHAR;
+*
+FIELD=MOYEN_DE_DROIT,+
+   LABEL='Moyen de droit',+
+   OUTPUT_FORMAT=<6<,+
+   SORT_SIZE=6,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=30,+
+   LEGAL=WL_MOYEN_DE_DROIT,+
+   SIZE=1:6,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=MULTI_MAT,+
+   LABEL='Matiéres',+
+   OUTPUT_FORMAT=<6/SER<,+
+   SORT_SIZE=6,+
+   SEARCHED=YES,+
+   OCCURS=0:10,+
+   SIZE=6:6,+
+   PATTERN='999.99',+
+   TYPE=CHAR;
+*
+FIELD=NOM_DOSSIER,+
+   LABEL='Nom du dossier',+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Nom du dossier'),+
+   DISPLAY_SEQUENCE_NUMBER=36,+
+   PARAMETER_SET=PS_NOM,+
+   SIZE=3:43,+
+   BLANK_CONTROL=YES,+
+   SEARCH_CONTROL=SC_NOM,+
+   TYPE=CHAR;
+*
+FIELD=NOM_DOSSIER_NON_SECRET,+
+   LABEL='Nom du dossier non secret',+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Nom du dossier non secret'),+
+   PARAMETER_SET=PS_NOM,+
+   SIZE=1:43,+
+   BLANK_CONTROL=YES,+
+   SEARCH_CONTROL=SC_NOM_PLUS,+
+   TYPE=CHAR;
+*
+FIELD=NORME,+
+   LABEL='Normes',+
+   OUTPUT_FORMAT=<50/SER<,+
+   SORT_SIZE=50,+
+   SEARCHED=YES,+
+   OCCURS=0:30,+
+   DISPLAY_SEQUENCE_NUMBER=310,+
+   SIZE=1:50,+
+   EDIT_BLANKS=SQUEEZE,+
+   TYPE=CHAR;
+*
+FIELD=NOTICE_DOSSIER,+
+   LABEL='Notice',+
+   OUTPUT_FORMAT=<50/VR4<,+
+   SORT_SIZE=20,+
+   OCCURS=0:1,+
+   SIZE=1:10000,+
+   TYPE=CHAR;
+*
+FIELD=NUM_ARCHIVE,+
+   LABEL='Né d''archive',+
+   OUTPUT_FORMAT=<8<,+
+   SORT_SIZE=8,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=70,+
+   SIZE=1:8,+
+   TYPE=CHAR;
+*
+FIELD=NUM_DOSSIER,+
+   UNIQUE=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=10,+
+   PARAMETER_SET=PS_NUMDO,+
+   DOMAIN=DO_NUMDO;
+*
+FIELD=NUM_IMP,+
+   ALIAS=(PS_NUM_IMP),+
+   LABEL='Numéro des parties',+
+   OCCURS=0:500,+
+   DISPLAY_SEQUENCE_NUMBER=200,+
+   PARAMETER_SET=PS_NUM_IMP,+
+   DOMAIN=DO_NUM_IMP;
+*
+FIELD=NUM_REPRES,+
+   LABEL='Numéro représentant',+
+   OCCURS=0:500,+
+   DISPLAY_SEQUENCE_NUMBER=240,+
+   PARAMETER_SET=PS_NUM_IMP,+
+   DOMAIN=DO_NUM_IMP;
+*
+FIELD=OBJET,+
+   LABEL='Objet du procés',+
+   OUTPUT_FORMAT=<50/VR8<,+
+   SORT_SIZE=20,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=32,+
+   SIZE=1:400,+
+   TYPE=CHAR;
+*
+FIELD=PAYS,+
+   LABEL='Pays',+
+   OUTPUT_FORMAT=<2<,+
+   SORT_SIZE=2,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   SIZE=2:2,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=POSITION,+
+   LABEL='Position',+
+   OUTPUT_FORMAT=<3<,+
+   SORT_SIZE=3,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Position du dossier'),+
+   DISPLAY_SEQUENCE_NUMBER=100,+
+   SIZE=2:3,+
+   EDIT_BLANKS=REMOVE,+
+   FORMAT=STRING,+
+   SEARCH_CONTROL=SC_RAISE,+
+   TYPE=CHAR;
+*
+FIELD=PRESIDENCE,+
+   LABEL='Présidence du collége',+
+   OCCURS=0:1,+
+   PARAMETER_SET=PS_NOM_COLLAB,+
+   DOMAIN=DO_NOM_COLLAB;
+*
+FIELD=PRIORITE,+
+   LABEL='Priorité',+
+   OUTPUT_FORMAT=<1<,+
+   SORT_SIZE=1,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DEFAULT_TEST=EQ,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=PROCEDURE,+
+   LABEL='Type-s procédure',+
+   OUTPUT_FORMAT=<6<,+
+   SORT_SIZE=6,+
+   SEARCHED=YES,+
+   OCCURS=0:3,+
+   LEGAL=WL_MOYEN_DE_DROIT,+
+   SIZE=1:6,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=PROCURATION,+
+   LABEL='Procuration',+
+   OUTPUT_FORMAT=<15/VR2<,+
+   SORT_SIZE=30,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=46,+
+   SIZE=1:30,+
+   TYPE=CHAR;
+*
+FIELD=PROC_ONEREUSE,+
+   LABEL='Proc. onéreuse',+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=52,+
+   TYPE=LOGICAL;
+*
+FIELD=PUBLIC,+
+   LABEL='Publicité',+
+   OUTPUT_FORMAT=<1<,+
+   SORT_SIZE=1,+
+   OCCURS=0:1,+
+   DEFAULT_TEST=EQ,+
+   LEGAL=WL_PUBLICITE_DOSSIER,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=QUORUM_DOSSIER,+
+   LABEL='Quorum dossier',+
+   OUTPUT_FORMAT=>2>,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   PRECISION=4,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=RECOURS_JOINT,+
+   INIT=0,+
+   LABEL='Recours joint',+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   COMMENT=(+
+   'Un recours joint é été déposé'),+
+   DISPLAY_SEQUENCE_NUMBER=42,+
+   TYPE=LOGICAL;
+*
+FIELD=REDACTEUR,+
+   LABEL='Rédacteur',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=108,+
+   PARAMETER_SET=PS_NOM_COLLAB,+
+   DOMAIN=DO_NOM_COLLAB;
+*
+FIELD=REF_AUT_ATT,+
+   LABEL='Réfer. aut. att.',+
+   OUTPUT_FORMAT=<50/VR3<,+
+   SORT_SIZE=50,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=37,+
+   SIZE=1:150,+
+   TYPE=CHAR;
+*
+FIELD=REGISTRATEUR,+
+   INIT='XX',+
+   LABEL='Nom registrateur',+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=34,+
+   PARAMETER_SET=PS_NOM_COLLAB,+
+   DOMAIN=DO_NOM_COLLAB;
+*
+FIELD=REM_ATTRIBUTION,+
+   LABEL='Remarque attribution',+
+   OUTPUT_FORMAT=<50/VR2<,+
+   SORT_SIZE=10,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=140,+
+   SIZE=1:800,+
+   TYPE=CHAR;
+*
+FIELD=REM_BORDEREAU,+
+   LABEL='Remarque bordereau',+
+   OUTPUT_FORMAT=<50/VR2<,+
+   SORT_SIZE=10,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=290,+
+   SIZE=1:200,+
+   TYPE=CHAR;
+*
+FIELD=REM_COMPO,+
+   LABEL='Rem. compo',+
+   OUTPUT_FORMAT=<70/VR3<,+
+   SORT_SIZE=30,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   SIZE=1:200,+
+   TYPE=CHAR;
+*
+FIELD=REM_DOSSIER,+
+   LABEL='Remarque sur le dossier',+
+   OUTPUT_FORMAT=<50/VR4<,+
+   SORT_SIZE=10,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=60,+
+   SIZE=1:200,+
+   TYPE=CHAR;
+*
+FIELD=REM_POSITION,+
+   LABEL='Rem. position',+
+   OUTPUT_FORMAT=<80<,+
+   SORT_SIZE=20,+
+   OCCURS=0:1,+
+   SIZE=1:100,+
+   TYPE=CHAR;
+*
+FIELD=REM_REQ,+
+   LABEL='Remarque sur la requéte',+
+   OUTPUT_FORMAT=<60/SER<,+
+   SORT_SIZE=10,+
+   OCCURS=0:20,+
+   DISPLAY_SEQUENCE_NUMBER=440,+
+   SIZE=0:60,+
+   TYPE=CHAR;
+*
+FIELD=REM_SUSPENSION,+
+   LABEL='Rem. suspension',+
+   OUTPUT_FORMAT=<50<,+
+   SORT_SIZE=20,+
+   OCCURS=0:1,+
+   SIZE=1:50,+
+   TYPE=CHAR;
+*
+FIELD=RFID,+
+   LABEL='Champ technique RFID',+
+   OUTPUT_FORMAT=>4>,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=58,+
+   PRECISION=4,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=ROLE_CIV_IMP,+
+   LABEL='Sous-réle de l''impliqué',+
+   OUTPUT_FORMAT=<3/SEC<,+
+   SORT_SIZE=3,+
+   SEARCHED=YES,+
+   OCCURS=0:500,+
+   DISPLAY_SEQUENCE_NUMBER=220,+
+   LEGAL=WL_ROLE_CIV_IMP,+
+   SIZE=1:3,+
+   EDIT_BLANKS=TRIM,+
+   TYPE=CHAR;
+*
+FIELD=ROLE_IMP,+
+   LABEL='Réle de l''implique',+
+   OUTPUT_FORMAT=<1/SEC<,+
+   SORT_SIZE=1,+
+   SEARCHED=YES,+
+   OCCURS=0:500,+
+   DISPLAY_SEQUENCE_NUMBER=210,+
+   LEGAL=WL_ROLE_IMP,+
+   SIZE=1:1,+
+   EDIT_BLANKS=TRIM,+
+   TYPE=CHAR;
+*
+FIELD=R_ISSUE_PROCES,+
+   LABEL='Raison et issue du procés',+
+   OUTPUT_FORMAT=<4<,+
+   SORT_SIZE=4,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=120,+
+   LEGAL=WL_R_ISSUE_PROCES,+
+   SIZE=1:4,+
+   TYPE=CHAR;
+*
+FIELD=SITE,+
+   LABEL='Site',+
+   OUTPUT_FORMAT=<3<,+
+   SORT_SIZE=3,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   LEGAL=WL_SITE,+
+   SIZE=3:3,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=TRIBUNAL,+
+   LABEL='Tribunal',+
+   OUTPUT_FORMAT=<3<,+
+   SORT_SIZE=3,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   LEGAL=WL_TRIBUNAL,+
+   SIZE=3:3,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=TYPE_REPRES,+
+   LABEL='Type de représentant',+
+   OUTPUT_FORMAT=<1<,+
+   SORT_SIZE=1,+
+   OCCURS=0:500,+
+   COMMENT=(+
+   'Type de représentation (L = représentant légal, M = mandataire).'),+
+   DISPLAY_SEQUENCE_NUMBER=225,+
+   LEGAL=WL_TYPE_REPRES,+
+   SIZE=1:1,+
+   EDIT_BLANKS=TRIM,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=TYPE_REQ,+
+   LABEL='Type de la requéte',+
+   OUTPUT_FORMAT=<4/SEC<,+
+   SORT_SIZE=4,+
+   SEARCHED=YES,+
+   OCCURS=0:20,+
+   DISPLAY_SEQUENCE_NUMBER=400,+
+   CODE_LIST=CL_TYPE_REQ_D,+
+   SIZE=1:4,+
+   EDIT_BLANKS=TRIM,+
+   TYPE=CHAR;
+*
+FIELD=USER,+
+   SORT_SIZE=20,+
+   DISPLAY_SEQUENCE_NUMBER=484,+
+   PARAMETER_SET=PS_USER,+
+   DOMAIN=DO_USER;
+*
+FIELD=VAL_LITIGIEUSE,+
+   LABEL='Valeur litigieuse',+
+   OUTPUT_FORMAT=<9<,+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=50,+
+   PRECISION=9,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=VISA_MODIF_POS,+
+   LABEL='Position du dossier modifié par',+
+   OUTPUT_FORMAT=<3<,+
+   SORT_SIZE=3,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Visa de la personne qui a modifié la position du dossier papier'),+
+   DISPLAY_SEQUENCE_NUMBER=100,+
+   SIZE=2:3,+
+   EDIT_BLANKS=REMOVE,+
+   FORMAT=STRING,+
+   SEARCH_CONTROL=SC_RAISE,+
+   TYPE=CHAR;
+*
+FIELD=AN_DOSSIER,+
+   LABEL='An doss.',+
+   SET_WHEN=GET,+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   PRECISION=4,+
+   SET_EXPR=$SUBSTRING(NUM_DOSSIER,$SCANC(NUM_DOSSIER,'/')+1,*),+
+   TYPE=EXACT_BINARY;
+*
+FIELD=DAT_CREATION,+
+   DISPLAY_SEQUENCE_NUMBER=480,+
+   PARAMETER_SET=PS_DAT_CREATION,+
+   DOMAIN=DO_DAT_CREATION;
+*
+FIELD=DAT_MODIFICATION,+
+   DISPLAY_SEQUENCE_NUMBER=482,+
+   PARAMETER_SET=PS_DAT_MODIFICATION,+
+   DOMAIN=DO_DAT_MODIFICATION;
+*
+FIELD=ETAT_DOSSIER_2,+
+   LABEL='Etat du dossier numérique',+
+   OUTPUT_FORMAT=<1<,+
+   SORT_SIZE=1,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=14,+
+   SIZE=1:1,+
+   USAGE=TRANSLATE(ETAT_DOSSIER);
+*
+FIELD=RANG_DOSSIER,+
+   LABEL='Rang',+
+   SET_WHEN=GET,+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   PRECISION=4,+
+   SET_EXPR=$SUBSTRING(NUM_DOSSIER,$SCANC(NUM_DOSSIER,'.-_ ')+1,$           +
+ SCANC(NUM_DOSSIER,'/')-1),+
+   TYPE=EXACT_BINARY;
+*
+FIELD=TYPE_REQ_2,+
+   LABEL='Type de la requéte 2',+
+   OUTPUT_FORMAT=<4/SEC<,+
+   SET_WHEN=PUT,+
+   SORT_SIZE=4,+
+   SEARCHED=YES,+
+   OCCURS=0:20,+
+   DISPLAY_SEQUENCE_NUMBER=400,+
+   CODE_LIST=CL_TYPE_REQ_F,+
+   SET_EXPR=TYPE_REQ,+
+   SIZE=1:4,+
+   EDIT_BLANKS=TRIM,+
+   TYPE=CHAR;
+*
+FIELD=TYPE_REQ_D,+
+   LABEL='Type de la requéte en D',+
+   OUTPUT_FORMAT=<7/SEC<,+
+   SORT_SIZE=7,+
+   OCCURS=0:20,+
+   DISPLAY_SEQUENCE_NUMBER=400,+
+   SIZE=1:7,+
+   USAGE=TRANSLATE(TYPE_REQ);
+*
+FIELD=TYPE_REQ_F,+
+   LABEL='Type de la requéte en F',+
+   OUTPUT_FORMAT=<7/SEC<,+
+   SORT_SIZE=7,+
+   OCCURS=0:20,+
+   DISPLAY_SEQUENCE_NUMBER=400,+
+   SIZE=1:7,+
+   USAGE=TRANSLATE(TYPE_REQ_2);
+*
+FIELD=UID,+
+   SORT_SIZE=8,+
+   DISPLAY_SEQUENCE_NUMBER=484,+
+   PARAMETER_SET=PS_UID,+
+   DOMAIN=DO_UID;
+*
+*
+RECORD=ED_STATUT,STYLE=CONVENTIONAL,PRIMARY_KEY=CLE_ED_STATUT,+
+   COMMENT=(+
+   '',+
+$B,'Table des documents (pour gestion eDossier)');
+*
+FIELD=CLE_ED_STATUT,+
+   LABEL='Clé Doc.',+
+   SEARCHED=YES,+
+   DISPLAY_SEQUENCE_NUMBER=1,+
+   USAGE=SYSTEM_KEY(1);
+*
+FIELD=CT,+
+   PARAMETER_SET=PS_CT,+
+   DOMAIN=DO_CT;
+*
+FIELD=HORODATEUR,+
+   LABEL='Horodatage',+
+   OUTPUT_FORMAT=<18<,+
+   SEARCHED=NO,+
+   USAGE=TIMESTAMP;
+*
+FIELD=NOM_FICHIER,+
+   LABEL='Nom du fichier',+
+   OUTPUT_FORMAT=<100<,+
+   SORT_SIZE=100,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   COMMENT=(+
+   'Nom du fichier'),+
+   DISPLAY_SEQUENCE_NUMBER=10,+
+   SIZE=10:100,+
+   TYPE=CHAR;
+*
+FIELD=NOM_MODIF,+
+   LABEL='Nom modificateur',+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=22,+
+   PARAMETER_SET=PS_NOM_COLLAB,+
+   DOMAIN=DO_NOM_COLLAB;
+*
+FIELD=NOUVEAU_NOM_FICHIER,+
+   LABEL='Nouveau nom du fichier',+
+   OUTPUT_FORMAT=<100<,+
+   SORT_SIZE=100,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Nouveau nom du fichier aprés redatage'),+
+   SIZE=10:100,+
+   TYPE=CHAR;
+*
+FIELD=NUM_SOUS_REP,+
+   LABEL='Sous-rép.',+
+   OUTPUT_FORMAT=<1<,+
+   SEARCHED=NO,+
+   OCCURS=1:1,+
+   COMMENT=(+
+   'Numéro du sous-répertoire'),+
+   DISPLAY_SEQUENCE_NUMBER=11,+
+   PRECISION=1,+
+   LEGAL=1: 9,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=STATUT_FICHIER,+
+   INIT='ENCOU',+
+   LABEL='Statut fichier',+
+   SORT_SIZE=5,+
+   OCCURS=1:1,+
+   COMMENT=(+
+   'En Cours=''ENCOU'', Archivé=''ARCHI'', Check OUT=''CHOUT'', ',+
+'Indéfini=''INDEF'',',+
+$B,'Supprimé=''SUPPR'''),+
+   SIZE=1:5,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=VERROUILLE,+
+   INIT=0,+
+   LABEL='Fichier verrouillé',+
+   SEARCHED=NO,+
+   OCCURS=1:1,+
+   TYPE=LOGICAL;
+*
+FIELD=VERROU_PAR,+
+   LABEL='Nom verrouilleur',+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Nom de la personne qui verrouille le document'),+
+   PARAMETER_SET=PS_NOM_COLLAB,+
+   DOMAIN=DO_NOM_COLLAB;
+*
+FIELD=DAT_MODIF,+
+   DISPLAY_SEQUENCE_NUMBER=20,+
+   PARAMETER_SET=PS_DAT_MODIFICATION,+
+   DOMAIN=DO_DAT_MODIFICATION;
+*
+FIELD=HEURE_MODIF,+
+   LABEL='Heure de modif.',+
+   OUTPUT_FORMAT=<6<,+
+   SET_WHEN=PUT,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   SET_EXPR=$HHMMSS,+
+   USAGE=TIME;
+*
+*
+RECORD=FORMULE,STYLE=CONVENTIONAL,PRIMARY_KEY=CLE_FORMULE,+
+   COMMENT=(+
+   '',+
+$B,'Formules du TF/TFA');
+*
+FIELD=ADRESSAGE,+
+   LABEL='Adressage',+
+   OUTPUT_FORMAT=<17<,+
+   SORT_SIZE=17,+
+   SEARCHED=YES,+
+   OCCURS=0:20,+
+   SIZE=1:17,+
+   EDIT_BLANKS=REMOVE,+
+   TYPE=CHAR;
+*
+FIELD=BDP,+
+   INIT=1,+
+   LABEL='BdP',+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=24,+
+   TYPE=LOGICAL;
+*
+FIELD=BRANCHE,+
+   OCCURS=0:11,+
+   COMMENT=(+
+   'A = CIVIL, B = PéNAL, C = PUBLIC, D = CONSTITUTIONNEL SUBSIDIAIRE, E =',+
+$B,'ACTION DIRECTE, F = DEMANDE DE REVISION, G = DEMANDE D''INTERPRéTATION OU',+
+$B,'DE RECTIFICATION, T = DENONCIATION, U = ECHANGE DE VUES INTERNE, V =',+
+$B,'ECHANGE DE VUES EXTERNE, W = DETERMINATION CEDH, X = ORDONNANCE PA, Y =',+
+$B,'RECOURS PA, Z = NON CONTENTIEUX'),+
+   DISPLAY_SEQUENCE_NUMBER=24,+
+   PARAMETER_SET=PS_BRANCHE,+
+   DOMAIN=DO_BRANCHE;
+*
+FIELD=BUREAUTIQUE,+
+   LABEL='Bureautique',+
+   OUTPUT_FORMAT=<1/SER<,+
+   SORT_SIZE=1,+
+   SEARCHED=YES,+
+   OCCURS=0:2,+
+   COMMENT=(+
+   'S = STAROFFICE, A = AD_HOC (FUSIONNEUR MAISON)'),+
+   DISPLAY_SEQUENCE_NUMBER=130,+
+   LEGAL=WL_BUREAUTIQUE,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=CATEGORIE_IMP,+
+   LABEL='Catégorie impl.',+
+   OUTPUT_FORMAT=<1/SER<,+
+   SORT_SIZE=1,+
+   OCCURS=0:3,+
+   COMMENT=(+
+   '''P'' = Personne physique, ''J'' = Personne juridique, ''A'' = Autorité, ',+
+'''C'' =',+
+$B,'Collectif, ''T'' = Impliqué technique'),+
+   DISPLAY_SEQUENCE_NUMBER=20,+
+   LEGAL=WL_CATEGORIE,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=CATEGORIE_TFA,+
+   LABEL='Fonction impliqué',+
+   OUTPUT_FORMAT=<5/SER<,+
+   SORT_SIZE=5,+
+   SEARCHED=YES,+
+   OCCURS=0:16,+
+   COMMENT=(+
+   'HORS_FONCTION = '''', CHARGE_DOSSIER = ''CD'', CHARGE_TACHE = ''CT'', ',+
+'CHEF_GREFFE',+
+$B,'= ''CG'', REGISTRATEUR_CENTRAL = ''RC'', CHEF_GREFFE_CENTRAL = ''CC'', ',+
+'CAISSIER',+
+$B,'= ''FI'', GREFFIER = ''GR'', JUGE_DELEGUE = ''JD'', JUGE_ADJOINT = ',+
+'''JA'',',+
+$B,'JUGE_PRESIDANT = ''JP'', JUGE_AUTRE = ''JX'', LIBRE = ''--'''),+
+   DISPLAY_SEQUENCE_NUMBER=22,+
+   LEGAL=WL_FONCT_IMP,+
+   SIZE=1:5,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=CAT_FORMULE,+
+   LABEL='Cat. formule',+
+   OUTPUT_FORMAT=<1/SER<,+
+   SORT_SIZE=1,+
+   OCCURS=1:7,+
+   COMMENT=(+
+   'G=Dossier (formule), D=Délai, E=Décision (form.), I=Impliqué, N=Dossier',+
+$B,'(rubrum), R=Décision (rubrum), S=Délibération, T=Technique'),+
+   DISPLAY_SEQUENCE_NUMBER=10,+
+   LEGAL=WL_CAT_FORMULE,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=COPIE,+
+   LABEL='Copie',+
+   OUTPUT_FORMAT=<11<,+
+   SORT_SIZE=11,+
+   SEARCHED=NO,+
+   OCCURS=0:5,+
+   DISPLAY_SEQUENCE_NUMBER=120,+
+   SIZE=1:11,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=COUR,+
+   OCCURS=1:15,+
+   COMMENT=(+
+   '1 = 1E CDP, 2 = 2E CDP, 4 = 1E CDC, 5 = 2E CDC, 6 = CDPéN., 8 = 1E CDS, 9',+
+$B,'= 2E CDS, 11 = PRéSIDENCE, 12 = COMMADM., 13 = COMMREC., 14 = SECGéN.'),+
+   DISPLAY_SEQUENCE_NUMBER=12,+
+   PARAMETER_SET=PS_COUR,+
+   DOMAIN=DO_COUR;
+*
+FIELD=DESTIN_MAX,+
+   LABEL='Nbre max. destin.',+
+   OUTPUT_FORMAT=>2>,+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   PRECISION=4,+
+   LEGAL=0: 99,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=ETAT_DOSSIER,+
+   LABEL='Etat-s dossier',+
+   OUTPUT_FORMAT=<1/SER<,+
+   SORT_SIZE=1,+
+   SEARCHED=YES,+
+   OCCURS=0:9,+
+   COMMENT=(+
+   'C=Créé (ouvert), A=Attribué, D=Décidé (jugé), E=Expédié, T=Terminé',+
+$B,'(archivé), S=Suspendu'),+
+   LEGAL=WL_ETAT_DOSSIER,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=ETRANGER,+
+   LABEL='Etranger',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=24,+
+   TYPE=LOGICAL;
+*
+FIELD=GENRE_DELAI,+
+   LABEL='Genre délai',+
+   OUTPUT_FORMAT=<4/SER<,+
+   SORT_SIZE=4,+
+   OCCURS=0:12,+
+   COMMENT=(+
+   'DEMANDE_DOSSIER = ''DOS'', MEMOIRE_COMPLETIF = ''MEM'', ',+
+'DEMANDE_PROCURATION =',+
+$B,'''PRO'', REPLIQUE = ''RPQ'', DUPLIQUE = ''DPQ'', REPONSE_RECOURS = ',+
+'''RR'',',+
+$B,'REPONSE_EFFET_SUSPENSIF = ''RES'', OBSERVATION_INST_SUP = ''OSR'',',+
+$B,'OBSERVATION_INSTRUC = ''OSI'', CONSULTATION_DOSSIER = ''CD'', ',+
+'AUDITION_PARTIE',+
+$B,'= ''AUD'', INSPECTION_LOCALE = ''IL'', INTERRO_TEMOIN = ''TEM'', ',+
+'EXPERTISE =',+
+$B,'''EXP'', MOYEN_DE_PREUVE = ''MDP'', AUTRE_DOCUMENT = ''DOC'', ',+
+'FIXATION_SEANCE =',+
+$B,'''FS'', RECOURS = ''RCR'', DEBAT_PUBLIC = ''DP'', DECISION_SUR_NEM = ',+
+'''NEM'',',+
+$B,'DECISION = ''DEC'', RECUSATION = ''RCS'', AVANCE_FRAIS = ''AF'', ',+
+'AVANCE_FRAIS_2',+
+$B,'= ''AF2'', SURETES = ''SUR'', FACTURE = ''FAC'', NOTE_CREDIT = ''NC'',',+
+$B,'RAPPEL_FACTURE = ''RAP'', DOMICILE_ELU = ''DOM'', AUTORISATION_TUTELAIRE ',+
+'=',+
+$B,'''TUT'', EXEMPLAIRE_MANQUANT = ''EXM'', MAINTIEN_RECOURS = ''MR'',',+
+$B,'MOTIFS_CONCLUSIONS = ''MC'', SIGNATURE = ''SIG'', QUESTIONNAIRE_AJ = ',+
+'''AJ'',',+
+$B,'ATTESTATION_HERITIER = ''HER'', TRADUCTION = ''TRA'', ACTE_A_RETOURNER =',+
+$B,'''ACT'', JUSTIFICATION_RETARD = ''TAR'', SEANCE = ''SEA'', NOTE_FRAIS = ',+
+'''NDF'',',+
+$B,'CIRCULATION = ''CRC'', FINITION = ''FIN'', PROJET = ''PJT'', SUSPENSION ',+
+'= ''SUS'',',+
+$B,'PRESTATION_GREFFIER = ''PTG'', PRESTATOIN_JUGE = ''PTJ'', AUTRE_DELAI = ',+
+'''AUT'',',+
+$B,'AVANCE_FRAIS_DOMICILE = ''DMA'', AVANCE_FRAIS_RECUSATION = ''RAF'',',+
+$B,'FEUILLE_FEDERALE = ''FF'', DOSSIER_OBSERVATIONS = ''DSR'',',+
+$B,'DOMICILE_OBSERVATIONS = ''DMR'', CONSULTATION_OBSERVATIONS = ''CDR'',',+
+$B,'RETRAIT_ARRET = ''RAR'', ACCUSE_RECEPTION = ''AR'', AMELIORATION_RECOURS ',+
+'=',+
+$B,'''MNQ'', OBSERVATIONS_2 = ''RR2'', DEMANDE_DIVERSE = ''DDT'''),+
+   DISPLAY_SEQUENCE_NUMBER=14,+
+   LEGAL=WL_GENRE_DELAI,+
+   SIZE=1:4,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=GENRE_FORMULE,+
+   LABEL='Genre formule',+
+   OUTPUT_FORMAT=<1<,+
+   SORT_SIZE=1,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'SANS_GENRE = '''', ACTE = ''A'', DEC_ACTE = ''C'', DEC_ORDI = ''O'', ',+
+'DEC_TYPE =',+
+$B,'''T'', AVEC_DEST = ''V'', SANS_DEST = ''S'', ASSEMBLAGE = ''E'', ',+
+'ADRESSAGE = ''D'',',+
+$B,'EXPEDITION = ''X'''),+
+   LEGAL=WL_GENRE_FORM,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=LANGUE,+
+   LABEL='Langue',+
+   OUTPUT_FORMAT=<1/SER<,+
+   SORT_SIZE=1,+
+   SEARCHED=YES,+
+   OCCURS=1:26,+
+   COMMENT=(+
+   'CASTELLANO = ''C'', DEUTSCH = ''D'', ENGLISH = ''E'', FRANCAIS = ''F'', ',+
+'HRVATSKO =',+
+$B,'''H'', ITALIANO = ''I'', POLSKI 0 ''L'', MAKEDONSKO = ''M'', PORTUGUES = ',+
+'''P'',',+
+$B,'TURKCE = ''T'''),+
+   DISPLAY_SEQUENCE_NUMBER=7,+
+   LEGAL=WL_LANGUE_FORMULE,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=MODE_DECISION,+
+   LABEL='Mode décision',+
+   OUTPUT_FORMAT=<2<,+
+   SORT_SIZE=2,+
+   SEARCHED=YES,+
+   OCCURS=0:7,+
+   COMMENT=(+
+   'ARRET_FINAL = ''AF'', ARRET_JUGE_UNIQUE = ''1F'', ORDONNANCE_FINALE = ',+
+'''OF'',',+
+$B,'ARRET_PARTIEL = ''AP'', DECISION_INCIDENTE = ''DI'', ',+
+'ORDONNANCE_INCIDENTE =',+
+$B,'''OI'', PROCES_VERBAL_CP = ''PI'', DISPOSITIF = ''DD'', DECISION_FINALE ',+
+'= ''DF'',',+
+$B,'LETTRE_FINALE = ''LF'', ARRET_INCIDENT = ''AI'', ZWISCHENENTSCHEID = ',+
+'''EI'',',+
+$B,'ORDONNANCE_DELEGUE = ''OD'', RECTIFICATION = ''RI'', INDETERMINE = ',+
+'''--'''),+
+   DISPLAY_SEQUENCE_NUMBER=70,+
+   LEGAL=WL_MODE_DECISION,+
+   SIZE=2:2,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=MODE_ENVOI,+
+   LABEL='Mode envoi',+
+   OUTPUT_FORMAT=<1<,+
+   SORT_SIZE=1,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'E=électronique pur, P=Prioritaire (courrier A), R=Recommandé, F=',+
+$B,'Recommandé avec fax, J=Acte judiciaire jaune, I=Acte judiciaire',+
+$B,'international, N=Courrier interne, A=Accusé de réception orangé, ',+
+'Q=Paquet,',+
+$B,'U=Déclaration de réception, X=Autre mode d''envoi, B=économique (courrier',+
+$B,'B), G=Acte judiciaire en ligne, O=Recommandé en ligne, K=Paquet en ligne'),+
+   LEGAL=WL_MODE_ENVOI,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=MODE_REGLEMENT,+
+   LABEL='Mode réglement',+
+   OUTPUT_FORMAT=<4<,+
+   SORT_SIZE=4,+
+   SEARCHED=YES,+
+   OCCURS=0:6,+
+   COMMENT=(+
+   'PAR_COLLEGE_A_5 = ''COL5'', PAR_COLLEGE_A_3 = ''COL3'', PAR_JUGE_UNIQUE =',+
+$B,'''JUG1'', PAR_CIRCULATION = ''PCIR'', PAR_ORDONNANCE = ''ORDP'', ',+
+'PAR_LETTRE =',+
+$B,'''LETT'', PAR_SEANCE = ''SEAN'', PAR_PROCEDURE_SIMPLIFIEE = ''PSIM'', ',+
+'PAR_TANDEM',+
+$B,'= ''COL2'', INDETERMINE = ''----'''),+
+   DISPLAY_SEQUENCE_NUMBER=80,+
+   LEGAL=WL_MODE_REGLEMENT,+
+   SIZE=2:4,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=MOYEN_DE_DROIT,+
+   LABEL='Moyen de droit',+
+   OUTPUT_FORMAT=<6/SER<,+
+   SORT_SIZE=6,+
+   OCCURS=0:17,+
+   COMMENT=(+
+   'Moyen de droit LTF = ''NTF_''branche, Grief de droit public = ''NTFGDP'',',+
+$B,'Action (TAF) = ''APA'', Demande de révision (TAF) = ''RVA'',',+
+$B,'Recours (TAF) = ''RPA'', Divers (TAF) = ''REQ'''),+
+   DISPLAY_SEQUENCE_NUMBER=16,+
+   LEGAL=WL_MOYEN_DE_DROIT,+
+   SIZE=1:6,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=NUM_FORMULE,+
+   LABEL='Né de formule',+
+   OUTPUT_FORMAT=<11<,+
+   SORT_SIZE=11,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=6,+
+   SIZE=1:11,+
+   TYPE=CHAR;
+*
+FIELD=PROVISOIRE,+
+   LABEL='Provisoire',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=24,+
+   TYPE=LOGICAL;
+*
+FIELD=ROLE_IMP,+
+   LABEL='Réle impl.',+
+   OUTPUT_FORMAT=<1/SER<,+
+   SORT_SIZE=1,+
+   OCCURS=0:5,+
+   COMMENT=(+
+   'RECOURANT = ''R'', CONTRE (intimé) = ''I'', AUTORITE_ATTAQUéE = ''A'', ',+
+'CONCERNé',+
+$B,'= ''C'', INFORMé = ''F'', TIERS = ''T'''),+
+   DISPLAY_SEQUENCE_NUMBER=18,+
+   LEGAL=WL_ROLE_IMP,+
+   SIZE=1:1,+
+   EDIT_BLANKS=TRIM,+
+   TYPE=CHAR;
+*
+FIELD=R_ISSUE_PROCES,+
+   LABEL='Raison et issue du procés',+
+   OUTPUT_FORMAT=<4<,+
+   SORT_SIZE=4,+
+   SEARCHED=YES,+
+   OCCURS=0:24,+
+   COMMENT=(+
+   'RADIE_RETRAIT = ''1.1'', RADIE_ACQUIESCEMENT = ''1.2'', ',+
+'RADIE_TRANSACTION =',+
+$B,'''1.3'', RADIé_SANS_OBJET = ''1.4'', RADIé_REEXAMEN_OU_AUTRE_MOTIF = ',+
+'''1.5'',',+
+$B,'RADIé_AUTRE_MOTIF = ''1.9'', IRRECEVABLE = ''2.0'',',+
+$B,'IRRECEVABLE_AVANCE_NON_FOURNIE = ''2.1'', IRRECEVABLE_ILLICITE = ''2.2'',',+
+$B,'IRRECEVABLE_FORMEL = ''2.3'', IRRECEVABLE_AUTRE_MOTIF = ''2.4'',',+
+$B,'IRRECEVABLE_AUTRE_AUTRE_MOTIF = ''2.9'', REJETé = ''3.0'', REJETé_ENTIER ',+
+'=',+
+$B,'''3.1'', REJETé_PAQR = ''3.2'', REJETé_AUTRE_MOTIF = ''3.3'',',+
+$B,'REJETé_AUTRE_AUTRE_MOTIF = ''3.9'', ADMIS = ''4.0'', ADMIS_ENTIER = ',+
+'''4.1'',',+
+$B,'ADMIS_PARTIEL = ''4.2'', ADMIS_AUTRE_MOTIF = ''4.3'', ',+
+'ADMIS_AUTRE_AUTRE_MOTIF',+
+$B,'= ''4.9'', RENVOYé = ''5.0'', RENVOYé_ATTAQUéE = ''5.1'',',+
+$B,'RENVOYé_LAA_OU_PRIMINSTANCE = ''5.2'', RENVOYé_CAISSE = ''5.3'', ',+
+'RENVOYé_OFAS',+
+$B,'= ''5.4'', RENVOYé_OFAM = ''5.5'', RENVOYé_OFIAMT = ''5.6'', ',+
+'RENVOYé_OFSP =',+
+$B,'''5.7'', CONSTATATION_OU_AUTRE_ISSUE 0 ''6.0'', TRANSMISSION = ''7.0'''),+
+   DISPLAY_SEQUENCE_NUMBER=120,+
+   LEGAL=WL_R_ISSUE_PROCES,+
+   SIZE=1:4,+
+   TYPE=CHAR;
+*
+FIELD=SOUS_ROLE,+
+   LABEL='Sous-réle impl.',+
+   OUTPUT_FORMAT=<3/SER<,+
+   SORT_SIZE=3,+
+   SEARCHED=YES,+
+   OCCURS=0:15,+
+   COMMENT=(+
+   'AUCUN_SOUS_ROLE = ''---'', DEMANDEUR = ''DEM'', DEFENDEUR = ''DEF'', ',+
+'EXPROPRIANT',+
+$B,'= ''EPT'', EXPROPRIE = ''EPE'', APPELE_EN_CAUSE = ''APP'', ASSURE = ',+
+'''ASS'',',+
+$B,'INTERVENANT = ''INT'', PREMIERE_INSTANCE = ''PRI'', DEUXIEME_INSTANCE = ',+
+'''SEC'',',+
+$B,'INSTANCE_SUIVANTE = ''SUI'', INSTANCE_PRECEDENTE = ''PRC'', ADJUDICATEUR ',+
+'=',+
+$B,'''ADJ'', EXPERT = ''EXP'', TRADUCTEUR = ''TRA'', TEMOIN = ''TEM'', ',+
+'REQUERANT =',+
+$B,'''RQT'', RECOURANT = ''RCT'', EX_REQUERANT = ''EXR'', OPPOSANT = ',+
+'''OPP'', INTIME =',+
+$B,'''ITM'', REQUERANT_ASILE = ''ASI'', AUTORITE_SPECIALISEE = ''SPE'',',+
+$B,'TIERS_INTERESSE = ITS'', AUTRE = ''AUT'', INCONNU = ''XXX'''),+
+   LEGAL=WL_ROLE_CIV_IMP,+
+   SIZE=1:3,+
+   EDIT_BLANKS=TRIM,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=TRIBUNAL,+
+   LABEL='Tribunal',+
+   OUTPUT_FORMAT=<3<,+
+   SORT_SIZE=3,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   COMMENT=(+
+   'TF (LTF) = ''NTF'', TF (OJ) = ''TFL'', TFA = ''EVG'', TAF = ''TAF'''),+
+   DISPLAY_SEQUENCE_NUMBER=5,+
+   LEGAL=WL_TRIBUNAL,+
+   SIZE=3:3,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=VARIABLE,+
+   LABEL='Variable',+
+   OUTPUT_FORMAT=<15<,+
+   SORT_SIZE=15,+
+   SEARCHED=YES,+
+   OCCURS=0:60,+
+   DISPLAY_SEQUENCE_NUMBER=120,+
+   SIZE=1:15,+
+   EDIT_BLANKS=REMOVE,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=CLE_FORMULE,+
+   UNIQUE=YES,+
+   LABEL='Clé formule',+
+   OUTPUT_FORMAT=<15<,+
+   SET_WHEN=GET,+
+   SORT_SIZE=15,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=1,+
+   SET_EXPR=TRIBUNAL//'.'//NUM_FORMULE,+
+   SIZE=5:15,+
+   TYPE=CHAR;
+*
+*
+RECORD=HISTO,STYLE=CONVENTIONAL,PRIMARY_KEY=CLE_HISTO,+
+   COMMENT=(+
+   '',+
+$B,'Table de l''historique des changements dans les autres tables usager');
+*
+FIELD=CLE_ENREG,+
+   LABEL='Clé enreg.',+
+   SORT_SIZE=40,+
+   OCCURS=1:1,+
+   SIZE=1:40,+
+   TYPE=CHAR;
+*
+FIELD=CLE_HISTO,+
+   LABEL='Clé histo',+
+   SEARCHED=YES,+
+   DISPLAY_SEQUENCE_NUMBER=1,+
+   USAGE=SYSTEM_KEY(1);
+*
+FIELD=CT,+
+   PARAMETER_SET=PS_CT,+
+   DOMAIN=DO_CT;
+*
+FIELD=DAT_HISTO,+
+   LABEL='Date modification',+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=10,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=ENREG_HISTO,+
+   LABEL='Enreg. histo',+
+   SORT_SIZE=200,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=60,+
+   SIZE=1:15850,+
+   TYPE=CHAR;
+*
+FIELD=HEURE_HISTO,+
+   LABEL='Heure histo',+
+   OUTPUT_FORMAT=>6>,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=20,+
+   USAGE=TIME;
+*
+FIELD=MODE_HISTO,+
+   LABEL='Mode histo',+
+   OUTPUT_FORMAT=<1<,+
+   SORT_SIZE=1,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=30,+
+   LEGAL=WL_MODE_HISTO,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=TABLE_HISTO,+
+   LABEL='Table histo',+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=40,+
+   SIZE=1:20,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=USER,+
+   SORT_SIZE=20,+
+   DISPLAY_SEQUENCE_NUMBER=5,+
+   PARAMETER_SET=PS_USER,+
+   DOMAIN=DO_USER;
+*
+FIELD=VERSION_HISTO,+
+   INIT='0',+
+   LABEL='Version histo',+
+   SORT_SIZE=10,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=50,+
+   SIZE=1:10,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+*
+RECORD=IMPLIQUE,STYLE=CONVENTIONAL,PRIMARY_KEY=CLE_IMPLIQUE,+
+   COMMENT=(+
+   '',+
+$B,'Données sur les personnes impliquées dans un dossier du TF');
+*
+FIELD=ABR_BRADOC,+
+   LABEL='Autorité (de BRADOC)',+
+   OUTPUT_FORMAT=<25/VR4<,+
+   SORT_SIZE=50,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Abréviation de l''autorité provenant du thés. de BRADOC'),+
+   DISPLAY_SEQUENCE_NUMBER=160,+
+   SIZE=2:100,+
+   SEARCH_CONTROL=SC_RAISE,+
+   TYPE=CHAR;
+*
+FIELD=ADR1,+
+   LABEL='Adresse d''envoi',+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Adresse d''envoi (1ére ligne)'),+
+   DISPLAY_SEQUENCE_NUMBER=70,+
+   PARAMETER_SET=PS_ADR,+
+   DOMAIN=DO_ADR;
+*
+FIELD=ADR1_SUP,+
+   LABEL='Adresse supplémentaire',+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Adresse supplémentaire (1ére ligne)'),+
+   DISPLAY_SEQUENCE_NUMBER=170,+
+   PARAMETER_SET=PS_ADR,+
+   DOMAIN=DO_ADR;
+*
+FIELD=ADR2,+
+   LABEL='2éme ligne......',+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Adresse d''envoi (2éme ligne)'),+
+   DISPLAY_SEQUENCE_NUMBER=80,+
+   PARAMETER_SET=PS_ADR,+
+   DOMAIN=DO_ADR;
+*
+FIELD=ADR2_SUP,+
+   LABEL='2éme ligne............',+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Adresse supplémentaire (2éme ligne)'),+
+   DISPLAY_SEQUENCE_NUMBER=180,+
+   PARAMETER_SET=PS_ADR,+
+   DOMAIN=DO_ADR;
+*
+FIELD=ADR3,+
+   LABEL='3éme ligne......',+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Adresse d''envoi (3éme ligne)'),+
+   DISPLAY_SEQUENCE_NUMBER=90,+
+   PARAMETER_SET=PS_ADR,+
+   DOMAIN=DO_ADR;
+*
+FIELD=ADR3_SUP,+
+   LABEL='3éme ligne............',+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Adresse supplémentaire (3éme ligne)'),+
+   DISPLAY_SEQUENCE_NUMBER=190,+
+   PARAMETER_SET=PS_ADR,+
+   DOMAIN=DO_ADR;
+*
+FIELD=ALIAS_SOUNDEX,+
+   LABEL='Alias soundexés',+
+   OUTPUT_FORMAT=<50<,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Alias soundexés'),+
+   DISPLAY_SEQUENCE_NUMBER=40,+
+   DEFAULT_TEST=PHRASE WORDS,+
+   SIZE=1:50,+
+   EDIT_BLANKS=SQUEEZE,+
+   FORMAT=STRING,+
+   SEARCH_CONTROL=SC_SOUNDEX,+
+   TYPE=CHAR;
+*
+FIELD=AN_NAIS,+
+   LABEL='Année de naissance',+
+   OUTPUT_FORMAT=<4<,+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Année de naissance d''un impliqué'),+
+   DISPLAY_SEQUENCE_NUMBER=290,+
+   PRECISION=4,+
+   LEGAL=1850: 2050,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=APPART_AUTORITE,+
+   LABEL='Appart. autorité',+
+   OUTPUT_FORMAT=<2<,+
+   SORT_SIZE=2,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Sigle cantonal ou fédéral de l''''autorité communale, cantonale ou ',+
+'fédérale'),+
+   DISPLAY_SEQUENCE_NUMBER=120,+
+   DEFAULT_TEST=EQ,+
+   LEGAL=WL_PROVENANCE,+
+   SIZE=2:2,+
+   RAISE_DATA=YES,+
+   SEARCH_CONTROL=SC_RAISE,+
+   TYPE=CHAR;
+*
+FIELD=AUTRE_NOM,+
+   LABEL='Autre nom',+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Nom de jeune fille, surnom, abréviation, etc...'),+
+   DISPLAY_SEQUENCE_NUMBER=60,+
+   PARAMETER_SET=PS_NOM,+
+   SIZE=1:50,+
+   EDIT_BLANKS=TRIM,+
+   SEARCH_CONTROL=SC_NOM,+
+   TYPE=CHAR;
+*
+FIELD=CADUC,+
+   LABEL='Caduc',+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Caducité d''un impliqué'),+
+   DISPLAY_SEQUENCE_NUMBER=290,+
+   TYPE=LOGICAL;
+*
+FIELD=CANTON,+
+   LABEL='Canton',+
+   OCCURS=1:1,+
+   COMMENT=(+
+   'Abréviation officielle des cantons + FL et --'),+
+   DISPLAY_SEQUENCE_NUMBER=120,+
+   PARAMETER_SET=PS_CANTON,+
+   DOMAIN=DO_CANTON;
+*
+FIELD=CANTON_ASILE,+
+   LABEL='Canton d''asile',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=120,+
+   PARAMETER_SET=PS_CANTON,+
+   DOMAIN=DO_CANTON;
+*
+FIELD=CANTON_SUP,+
+   LABEL='Canton (sup)',+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Abréviation officielle des cantons + FL et --'),+
+   DISPLAY_SEQUENCE_NUMBER=212,+
+   PARAMETER_SET=PS_CANTON,+
+   DOMAIN=DO_CANTON;
+*
+FIELD=CATEGORIE,+
+   LABEL='Catégorie',+
+   OUTPUT_FORMAT=<1<,+
+   SORT_SIZE=1,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   COMMENT=(+
+   'Catégorie d''un impliqué (Autorité, pers. Physique, pers. Juridique)'),+
+   DISPLAY_SEQUENCE_NUMBER=15,+
+   LEGAL=WL_CATEGORIE,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=CATEGORIE_TFA,+
+   LABEL='Catégorie (stat. TFA)',+
+   OUTPUT_FORMAT=<5<,+
+   SORT_SIZE=5,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   COMMENT=(+
+   'Catégorie statistique d''un impliqué du TFA'),+
+   DISPLAY_SEQUENCE_NUMBER=290,+
+   LEGAL=WL_CATEGORIE_TFA,+
+   SIZE=1:5,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=CLE_IMPLIQUE,+
+   LABEL='Numéro d''un impliqué',+
+   OUTPUT_FORMAT=>10>,+
+   SEARCHED=YES,+
+   DISPLAY_SEQUENCE_NUMBER=10,+
+   USAGE=SYSTEM_KEY(1);
+*
+FIELD=COD_ADR,+
+   LABEL='Code adresse',+
+   OUTPUT_FORMAT=<1<,+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   PRECISION=4,+
+   LEGAL=0: 3,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=CT,+
+   PARAMETER_SET=PS_CT,+
+   DOMAIN=DO_CT;
+*
+FIELD=DAT_ASILE,+
+   LABEL='Date de demande d''asile',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=72,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_DECES,+
+   LABEL='Date de décés',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=72,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_ETAT_CIVIL,+
+   LABEL='Date état civil',+
+   OCCURS=0:5,+
+   DISPLAY_SEQUENCE_NUMBER=72,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_MUT_SYMIC,+
+   LABEL='Date de mutation Symic',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=72,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_NAIS,+
+   LABEL='Date de naissance',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=72,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_REAC,+
+   LABEL='Date de réactivation',+
+   OCCURS=0:1,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_STATUT_ETRANGER,+
+   LABEL='Date statut étranger',+
+   OCCURS=0:5,+
+   DISPLAY_SEQUENCE_NUMBER=72,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=ETAT_CIVIL,+
+   LABEL='état civil',+
+   OUTPUT_FORMAT=<1<,+
+   SORT_SIZE=1,+
+   SEARCHED=NO,+
+   OCCURS=0:5,+
+   COMMENT=(+
+   'Langue de correspondance'),+
+   DISPLAY_SEQUENCE_NUMBER=28,+
+   LEGAL=WL_ETAT_CIVIL,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=ETAT_IMP,+
+   LABEL='Etat impliqué',+
+   OUTPUT_FORMAT=<1<,+
+   SORT_SIZE=1,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Etat de l''''impliqué:',+
+$B,'P = Provisoire, A = Actif, I = Inactif, O = Obsoléte.'),+
+   DISPLAY_SEQUENCE_NUMBER=15,+
+   LEGAL=WL_ETAT_IMP,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=EX_NUM_IMP,+
+   LABEL='EX_NUM_IMP',+
+   OUTPUT_FORMAT=<30/SEC<,+
+   SORT_SIZE=30,+
+   SEARCHED=YES,+
+   OCCURS=0:10,+
+   DISPLAY_SEQUENCE_NUMBER=220,+
+   SIZE=1:30,+
+   SEARCH_CONTROL=SC_RAISE,+
+   TYPE=CHAR;
+*
+FIELD=FONCTION,+
+   LABEL='Fonction',+
+   OUTPUT_FORMAT=<5/SEC<,+
+   SORT_SIZE=5,+
+   SEARCHED=YES,+
+   OCCURS=0:5,+
+   DISPLAY_SEQUENCE_NUMBER=210,+
+   LEGAL=WL_FONCT_IMP,+
+   SIZE=1:5,+
+   EDIT_BLANKS=TRIM,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=GENRE,+
+   LABEL='Genre',+
+   OUTPUT_FORMAT=<2<,+
+   SORT_SIZE=2,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   COMMENT=(+
+   'Genre d''un impliqué (Masculin, Féminin, Neutre, Pluriel)'),+
+   DISPLAY_SEQUENCE_NUMBER=20,+
+   LEGAL=WL_GENRE,+
+   SIZE=1:2,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=HEURE_MODIF,+
+   LABEL='Heure modif.',+
+   OCCURS=0:1,+
+   PARAMETER_SET=PS_HEURE,+
+   DOMAIN=DO_HEURE;
+*
+FIELD=IMPLICABLE,+
+   LABEL='Implicable',+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=293,+
+   TYPE=LOGICAL;
+*
+FIELD=INCAPABLE,+
+   INIT=0,+
+   LABEL='Incapable',+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   COMMENT=(+
+   'Incapacité d''agir d''un impliqué'),+
+   DISPLAY_SEQUENCE_NUMBER=293,+
+   TYPE=LOGICAL;
+*
+FIELD=INSOLVABLE,+
+   INIT=0,+
+   LABEL='Insolvable',+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   COMMENT=(+
+   'Insolvabilité d''un impliqué'),+
+   DISPLAY_SEQUENCE_NUMBER=290,+
+   TYPE=LOGICAL;
+*
+FIELD=LANGUE,+
+   LABEL='Langue',+
+   OUTPUT_FORMAT=<1<,+
+   SORT_SIZE=1,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Langue de correspondance'),+
+   DISPLAY_SEQUENCE_NUMBER=28,+
+   LEGAL=WL_LANGUE_IMPLIQUE,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=LIEU_RECEPT,+
+   LABEL='CERA/CT',+
+   OUTPUT_FORMAT=<3<,+
+   SORT_SIZE=3,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Centre d''''enregistrement des requérants d''''asile / Centre de ',+
+'transfert'),+
+   DISPLAY_SEQUENCE_NUMBER=28,+
+   LEGAL=WL_LIEU_RECEPT,+
+   SIZE=3:3,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=LOC,+
+   LABEL='Nom de localité',+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=110,+
+   PARAMETER_SET=PS_LOC,+
+   DOMAIN=DO_LOC_IMP;
+*
+FIELD=LOC_SUP,+
+   LABEL='Nom de localité (sup)',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=210,+
+   PARAMETER_SET=PS_LOC,+
+   DOMAIN=DO_LOC_IMP;
+*
+FIELD=NATIONALITE,+
+   LABEL='Nationalité',+
+   OUTPUT_FORMAT=<2/SEC<,+
+   SORT_SIZE=2,+
+   SEARCHED=YES,+
+   OCCURS=0:2,+
+   DISPLAY_SEQUENCE_NUMBER=210,+
+   SIZE=2:2,+
+   EDIT_BLANKS=TRIM,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=NBR_PERSONNE,+
+   LABEL='Nbre personnes',+
+   OUTPUT_FORMAT=>3>,+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=58,+
+   PRECISION=4,+
+   LEGAL=0: 250,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=NOM,+
+   LABEL='Nom d''un impliqué',+
+   OCCURS=1:1,+
+   COMMENT=(+
+   'Nom de famille, raison sociale, association, autorité, etc...'),+
+   DISPLAY_SEQUENCE_NUMBER=40,+
+   PARAMETER_SET=PS_NOM,+
+   DOMAIN=DO_NOM;
+*
+FIELD=NOM_COURT,+
+   LABEL='Nom court d''un impliqué',+
+   OUTPUT_FORMAT=<20<,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   COMMENT=(+
+   'Nom court d''un impliqué pour certains formulaires'),+
+   DISPLAY_SEQUENCE_NUMBER=158,+
+   DEFAULT_TEST=PHRASE WORDS,+
+   DOMAIN=DO_NOM_COURT;
+*
+FIELD=NOM_SOUNDEX,+
+   LABEL='Noms soundexés',+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Nom, nom court et autre nom soundexés'),+
+   DISPLAY_SEQUENCE_NUMBER=40,+
+   PARAMETER_SET=PS_NOM,+
+   SIZE=1:190,+
+   EDIT_BLANKS=SQUEEZE,+
+   FORMAT=STRING,+
+   SEARCH_CONTROL=SC_SOUNDEX,+
+   TYPE=CHAR;
+*
+FIELD=NOT_IMP,+
+   LABEL='Note interne sur l''impliqué',+
+   OUTPUT_FORMAT=<30/VR5<,+
+   SORT_SIZE=10,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=220,+
+   SIZE=1:150,+
+   EDIT_BLANKS=SQUEEZE,+
+   BLANK_CONTROL=YES,+
+   SEARCH_CONTROL=SC_OCC,+
+   TYPE=CHAR;
+*
+FIELD=NPA,+
+   INIT=9999,+
+   OCCURS=1:1,+
+   COMMENT=(+
+   'NPA suisse (étranger: 9999)'),+
+   DISPLAY_SEQUENCE_NUMBER=100,+
+   PARAMETER_SET=PS_NPA,+
+   DOMAIN=DO_NPA;
+*
+FIELD=NPA_SUP,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'NPA suisse (étranger: 9999)'),+
+   DISPLAY_SEQUENCE_NUMBER=200,+
+   PARAMETER_SET=PS_NPA,+
+   DOMAIN=DO_NPA;
+*
+FIELD=NUM_AVS,+
+   LABEL='Né AVS',+
+   OUTPUT_FORMAT=<18/VR2<,+
+   SORT_SIZE=18,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=130,+
+   SIZE=2:18,+
+   EDIT_BLANKS=TRIM,+
+   TYPE=CHAR;
+*
+FIELD=NUM_FAX,+
+   LABEL='Né FAX',+
+   DISPLAY_SEQUENCE_NUMBER=150,+
+   PARAMETER_SET=PS_NUM_TEL,+
+   DOMAIN=DO_NUM_TEL;
+*
+FIELD=NUM_JUSLINK,+
+   LABEL='No JusLink',+
+   OUTPUT_FORMAT=>18>,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=10,+
+   PRECISION=18,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=NUM_MEMBRE,+
+   LABEL='No de membre',+
+   OUTPUT_FORMAT=>10>,+
+   SEARCHED=YES,+
+   OCCURS=0:500,+
+   COMMENT=(+
+   'No d''''impliqué des membres d''''une collection'),+
+   DISPLAY_SEQUENCE_NUMBER=10,+
+   PRECISION=9,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=NUM_TEL,+
+   LABEL='Né Téléphone',+
+   DISPLAY_SEQUENCE_NUMBER=140,+
+   PARAMETER_SET=PS_NUM_TEL,+
+   DOMAIN=DO_NUM_TEL;
+*
+FIELD=NUM_ZEMIS,+
+   LABEL='No Symic/Zemis',+
+   OUTPUT_FORMAT=>10>,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=10,+
+   PRECISION=9,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=ORIGINE,+
+   LABEL='Numéro de l''impliqué d''origine',+
+   OUTPUT_FORMAT=<6<,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=200,+
+   DEFAULT_TEST=EQ,+
+   DOMAIN=DO_NUM_IMP;
+*
+FIELD=PRENOM,+
+   LABEL='Prénom',+
+   OUTPUT_FORMAT=<20/VR2<,+
+   SORT_SIZE=40,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Prénom d''un impliqué (seul. pour genre H et F)'),+
+   DISPLAY_SEQUENCE_NUMBER=50,+
+   SIZE=1:40,+
+   SEARCH_CONTROL=SC_NOM,+
+   TYPE=CHAR;
+*
+FIELD=PRENOM_SOUNDEX,+
+   LABEL='Prénoms soundexés',+
+   OUTPUT_FORMAT=<40<,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Prénoms soundexés'),+
+   DISPLAY_SEQUENCE_NUMBER=40,+
+   DEFAULT_TEST=PHRASE WORDS,+
+   SIZE=1:40,+
+   EDIT_BLANKS=SQUEEZE,+
+   FORMAT=STRING,+
+   SEARCH_CONTROL=SC_SOUNDEX,+
+   TYPE=CHAR;
+*
+FIELD=PROFESSION,+
+   LABEL='Profession',+
+   OUTPUT_FORMAT=<80<,+
+   SORT_SIZE=80,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Profession/qualité'),+
+   DISPLAY_SEQUENCE_NUMBER=65,+
+   SIZE=1:80,+
+   TYPE=CHAR;
+*
+FIELD=REM_ASILE,+
+   LABEL='Remarque sur l''asile',+
+   OUTPUT_FORMAT=<50/VR5<,+
+   SORT_SIZE=10,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=220,+
+   SIZE=1:80,+
+   EDIT_BLANKS=SQUEEZE,+
+   BLANK_CONTROL=YES,+
+   TYPE=CHAR;
+*
+FIELD=REM_IMP,+
+   LABEL='Remarque sur l''impliqué',+
+   OUTPUT_FORMAT=<30/VR5<,+
+   SORT_SIZE=10,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=220,+
+   SIZE=1:150,+
+   EDIT_BLANKS=SQUEEZE,+
+   BLANK_CONTROL=YES,+
+   SEARCH_CONTROL=SC_OCC,+
+   TYPE=CHAR;
+*
+FIELD=ROLE_MEMBRE,+
+   LABEL='Réle de membre',+
+   OUTPUT_FORMAT=<4/SEC<,+
+   SORT_SIZE=4,+
+   SEARCHED=YES,+
+   OCCURS=0:500,+
+   DISPLAY_SEQUENCE_NUMBER=210,+
+   LEGAL=WL_ROLE_COLLECTION,+
+   SIZE=4:4,+
+   EDIT_BLANKS=TRIM,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=SENSIBLE,+
+   LABEL='Sensible',+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   TYPE=LOGICAL;
+*
+FIELD=SEXE,+
+   LABEL='Sexe',+
+   OUTPUT_FORMAT=<1<,+
+   SORT_SIZE=1,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=80,+
+   LEGAL=WL_SEXE,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=STATUT_ETRANGER,+
+   LABEL='Statut étranger',+
+   OUTPUT_FORMAT=<1<,+
+   SORT_SIZE=1,+
+   SEARCHED=NO,+
+   OCCURS=0:5,+
+   DISPLAY_SEQUENCE_NUMBER=80,+
+   LEGAL=WL_STATUT_ETRANGER,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=TITRE,+
+   LABEL='Titre',+
+   OUTPUT_FORMAT=<10/VR3<,+
+   SORT_SIZE=10,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Titre d''un impliqué (par ex.: Maétre,Monsieur,Herr,Dr.,...)'),+
+   DISPLAY_SEQUENCE_NUMBER=30,+
+   SIZE=1:25,+
+   TYPE=CHAR;
+*
+FIELD=TYP_ADR,+
+   LABEL='Type adresse 1',+
+   OUTPUT_FORMAT=<4/SEC<,+
+   SORT_SIZE=4,+
+   SEARCHED=YES,+
+   OCCURS=0:10,+
+   DISPLAY_SEQUENCE_NUMBER=210,+
+   LEGAL=WL_TYP_ADR,+
+   SIZE=2:4,+
+   EDIT_BLANKS=TRIM,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=TYP_ADR_SUP,+
+   LABEL='Type adresse 2',+
+   OUTPUT_FORMAT=<4/SEC<,+
+   SORT_SIZE=4,+
+   SEARCHED=YES,+
+   OCCURS=0:10,+
+   DISPLAY_SEQUENCE_NUMBER=210,+
+   LEGAL=WL_TYP_ADR,+
+   SIZE=2:4,+
+   EDIT_BLANKS=TRIM,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=USER,+
+   SORT_SIZE=20,+
+   DISPLAY_SEQUENCE_NUMBER=220,+
+   PARAMETER_SET=PS_USER,+
+   DOMAIN=DO_USER;
+*
+FIELD=AUTRE_NOM_INSENSI,+
+   LABEL='Autre nom insensible',+
+   OUTPUT_FORMAT=<30/VR5<,+
+   SET_WHEN=GET,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Alias insensible'),+
+   DEFAULT_TEST=PHRASE WORDS,+
+   SET_EXPR=$SELECT($EXISTS(SENSIBLE),$SELECT(SENSIBLE,'-',AUTRE_NOM),AUTRE_+
+NOM),+
+   SIZE=1:50,+
+   EDIT_BLANKS=TRIM,+
+   SEARCH_CONTROL=SC_NOM,+
+   TYPE=CHAR;
+*
+FIELD=DAT_CREATION,+
+   DISPLAY_SEQUENCE_NUMBER=225,+
+   PARAMETER_SET=PS_DAT_CREATION,+
+   DOMAIN=DO_DAT_CREATION;
+*
+FIELD=DAT_MODIFICATION,+
+   DISPLAY_SEQUENCE_NUMBER=230,+
+   PARAMETER_SET=PS_DAT_MODIFICATION,+
+   DOMAIN=DO_DAT_MODIFICATION;
+*
+FIELD=NOM_COURT_INSENSI,+
+   LABEL='Nom court d''un impliqué insensible',+
+   OUTPUT_FORMAT=<20<,+
+   SET_WHEN=GET,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Nom court d''un impliqué insensible'),+
+   DEFAULT_TEST=PHRASE WORDS,+
+   SET_EXPR=$SELECT($EXISTS(SENSIBLE),$SELECT(SENSIBLE,'-',NOM_COURT),NOM_CO+
+URT),+
+   SIZE=1:20,+
+   EDIT_BLANKS=TRIM,+
+   SEARCH_CONTROL=SC_NOM_INC_ENTIRE,+
+   TYPE=CHAR;
+*
+FIELD=NOM_COURT_LOC,+
+   UNIQUE=YES,+
+   LABEL='Nom court et localité',+
+   OUTPUT_FORMAT=<30/VR2<,+
+   SET_WHEN=PUT,+
+   SORT_SIZE=52,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=300,+
+   DEFAULT_TEST=EQ,+
+   SET_EXPR=NOM_COURT // ', ' //LOC[1:30],+
+   SIZE=1:52,+
+   EDIT_BLANKS=TRIM,+
+   TYPE=CHAR;
+*
+FIELD=NOM_COURT_LOC_INSENSI,+
+   LABEL='Nom court & loc. insensible',+
+   OUTPUT_FORMAT=<30/VR2<,+
+   SET_WHEN=GET,+
+   SORT_SIZE=52,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DEFAULT_TEST=EQ,+
+   SET_EXPR=$SELECT($EXISTS(SENSIBLE),$SELECT(SENSIBLE,                     +
+ '-',NOM_COURT//', '//LOC[1:30]),NOM_COURT//', '//LOC[1:30]),+
+   SIZE=1:52,+
+   EDIT_BLANKS=TRIM,+
+   TYPE=CHAR;
+*
+FIELD=NOM_INSENSI,+
+   LABEL='Nom d''un impliqué insensible',+
+   OUTPUT_FORMAT=<40/VR4<,+
+   SET_WHEN=GET,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'Nom insensible'),+
+   DEFAULT_TEST=PHRASE WORDS,+
+   SET_EXPR=$SELECT($EXISTS(SENSIBLE),$SELECT(SENSIBLE,'-',NOM),NOM),+
+   SIZE=1:160,+
+   SEARCH_CONTROL=SC_NOM_INC_ENTIRE,+
+   TYPE=CHAR;
+*
+FIELD=UID,+
+   SORT_SIZE=8,+
+   DISPLAY_SEQUENCE_NUMBER=220,+
+   PARAMETER_SET=PS_UID,+
+   DOMAIN=DO_UID;
+*
+*
+RECORD=LOI_RS,STYLE=CONVENTIONAL,PRIMARY_KEY=NUMERO_RS,+
+   COMMENT=(+
+   'Table contenant les né RS des Lois Suisse, avec leurs abréviations et',+
+$B,'leurs titres dans les trois langues.');
+*
+FIELD=ABREV_D,+
+   LABEL='Abréviation (D)',+
+   PARAMETER_SET=ABREVIATION,+
+   DOMAIN=ABREVIATION;
+*
+FIELD=ABREV_F,+
+   LABEL='Abréviation (F)',+
+   PARAMETER_SET=ABREVIATION,+
+   DOMAIN=ABREVIATION;
+*
+FIELD=ABREV_I,+
+   LABEL='Abréviation (I)',+
+   PARAMETER_SET=ABREVIATION,+
+   DOMAIN=ABREVIATION;
+*
+FIELD=NUMERO_RS,+
+   UNIQUE=YES,+
+   LABEL='Numéro RS......',+
+   OUTPUT_FORMAT=<20<,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   SIZE=3:20,+
+   EDIT_BLANKS=TRIM,+
+   PATTERN='9(1:3)X(0:19)',+
+   TYPE=CHAR;
+*
+FIELD=TITRE_D,+
+   LABEL='Titre (D)',+
+   SORT_SIZE=15,+
+   PARAMETER_SET=TITRE,+
+   DOMAIN=TITRE;
+*
+FIELD=TITRE_F,+
+   LABEL='Titre (F)',+
+   SORT_SIZE=15,+
+   PARAMETER_SET=TITRE,+
+   DOMAIN=TITRE;
+*
+FIELD=TITRE_I,+
+   LABEL='Titre (I)',+
+   SORT_SIZE=15,+
+   PARAMETER_SET=TITRE,+
+   DOMAIN=TITRE;
+*
+FIELD=VERSION,+
+   LABEL='Version de loi.',+
+   OUTPUT_FORMAT=<4<,+
+   SEARCHED=NO,+
+   OCCURS=0:20,+
+   PRECISION=4,+
+   TYPE=EXACT_BINARY;
+*
+*
+RECORD=MATIERE,STYLE=CONVENTIONAL,PRIMARY_KEY=CLE_MATIERE;
+*
+FIELD=CLE_MATIERE,+
+   UNIQUE=YES,+
+   LABEL='Clé matiére',+
+   OUTPUT_FORMAT=<6<,+
+   SORT_SIZE=6,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=10,+
+   SIZE=6:6,+
+   PATTERN='999.99',+
+   TYPE=CHAR;
+*
+FIELD=HORS_CHARGE,+
+   LABEL='Hors charge [0/1]',+
+   OUTPUT_FORMAT=<1<,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=105,+
+   TYPE=LOGICAL;
+*
+FIELD=INDEXABLE,+
+   LABEL='Indexable',+
+   OUTPUT_FORMAT=<1<,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=40,+
+   TYPE=LOGICAL;
+*
+FIELD=MATIERE_INT,+
+   INIT=0,+
+   LABEL='Matiére internet',+
+   SEARCHED=NO,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=60,+
+   LEGAL=0: 400,+
+   TYPE=INTEGER;
+*
+FIELD=MATIERE_MAX,+
+   LABEL='Matiére max.',+
+   OUTPUT_FORMAT=<6<,+
+   SORT_SIZE=6,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=30,+
+   SIZE=6:6,+
+   PATTERN='999.99',+
+   TYPE=CHAR;
+*
+FIELD=MATIERE_MIN,+
+   LABEL='Matiére min.',+
+   OUTPUT_FORMAT=<6<,+
+   SORT_SIZE=6,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=20,+
+   SIZE=6:6,+
+   PATTERN='999.99',+
+   TYPE=CHAR;
+*
+FIELD=MIXITE,+
+   LABEL='Mixité [0/1]',+
+   OUTPUT_FORMAT=<1<,+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=90,+
+   TYPE=LOGICAL;
+*
+FIELD=MOYENS_DROIT,+
+   LABEL='Moyens de droit',+
+   OUTPUT_FORMAT=<6/SER<,+
+   SORT_SIZE=6,+
+   OCCURS=0:10,+
+   DISPLAY_SEQUENCE_NUMBER=80,+
+   LEGAL=WL_MOYEN_DE_DROIT,+
+   SIZE=1:6,+
+   TYPE=CHAR;
+*
+FIELD=NIVEAU,+
+   LABEL='Niveau',+
+   OUTPUT_FORMAT=<1<,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=50,+
+   LEGAL=0: 4,+
+   TYPE=INTEGER;
+*
+FIELD=PRIORITE,+
+   LABEL='Priorité [0/1]',+
+   OUTPUT_FORMAT=<1<,+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=100,+
+   TYPE=LOGICAL;
+*
+FIELD=SPEC_MIN,+
+   LABEL='Nbre min.experts',+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=110,+
+   LEGAL=0: 5,+
+   TYPE=INTEGER;
+*
+FIELD=STAT_RG,+
+   INIT=0,+
+   LABEL='Statistique RG',+
+   OUTPUT_FORMAT=<1<,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=70,+
+   TYPE=LOGICAL;
+*
+*
+RECORD=MESSAGE,STYLE=CONVENTIONAL,PRIMARY_KEY=CLE_MESSAGE;
+*
+FIELD=CLE_MESSAGE,+
+   UNIQUE=YES,+
+   LABEL='Né message',+
+   OUTPUT_FORMAT=<6<,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=10,+
+   PRECISION=6,+
+   LEGAL=0: 100000,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=MESSAGE_D,+
+   LABEL='Message (D)',+
+   OUTPUT_FORMAT=<80/VR2<,+
+   SORT_SIZE=160,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=18,+
+   SIZE=1:160,+
+   EDIT_BLANKS=TRIM,+
+   TYPE=CHAR;
+*
+FIELD=MESSAGE_F,+
+   LABEL='Message (F)',+
+   OUTPUT_FORMAT=<80/VR2<,+
+   SORT_SIZE=160,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=16,+
+   SIZE=1:160,+
+   EDIT_BLANKS=TRIM,+
+   TYPE=CHAR;
+*
+FIELD=NIVEAU,+
+   LABEL='Niveau',+
+   SORT_SIZE=1,+
+   OCCURS=1:1,+
+   COMMENT=(+
+   'SAISIE = ''E'', SAISIE_SEMI = ''C'', ERREUR_FATALE = ''F'', INFORMATION ',+
+'= ''I'',',+
+$B,'PATIENCE = ''P'', SAISIE_AIDéE = ''A'', QUESTION = ''Q'', MULTIQUESTION ',+
+'= ''M'',',+
+$B,'ERREUR_SYSTéME = ''S'', ERREUR_USAGER = ''U'', NOUVELLE = ''N'''),+
+   DISPLAY_SEQUENCE_NUMBER=14,+
+   LEGAL=WL_NIVEAU,+
+   SIZE=1:1,+
+   TYPE=CHAR;
+*
+FIELD=NOM_MESSAGE,+
+   UNIQUE=YES,+
+   LABEL='Nom du message',+
+   OUTPUT_FORMAT=<30<,+
+   SORT_SIZE=30,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=12,+
+   SIZE=1:50,+
+   EDIT_BLANKS=TRIM,+
+   TYPE=CHAR;
+*
+*
+RECORD=MESURE,STYLE=CONVENTIONAL,PRIMARY_KEY=CLE_MESURE,+
+   COMMENT=(+
+   '',+
+$B,'Tables des mesures disciplinaires');
+*
+FIELD=CLE_DOSSIER,+
+   LABEL='Clé dossier',+
+   OUTPUT_FORMAT=>6>,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=30,+
+   PRECISION=9,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=CLE_MESURE,+
+   LABEL='Clé mesure',+
+   OUTPUT_FORMAT=>8>,+
+   SEARCHED=YES,+
+   DISPLAY_SEQUENCE_NUMBER=10,+
+   USAGE=SYSTEM_KEY(1);
+*
+FIELD=DAT_MESURE,+
+   LABEL='Date de la mesure',+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=40,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=NUM_DOSSIER_ANC,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=10,+
+   PARAMETER_SET=PS_NUMDO,+
+   DOMAIN=DO_NUMDO;
+*
+FIELD=NUM_IMP,+
+   LABEL='Numéro impliqué',+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=20,+
+   PARAMETER_SET=PS_NUM_IMP,+
+   DOMAIN=DO_NUM_IMP;
+*
+FIELD=REM_MESURE,+
+   LABEL='Remarque mesure',+
+   OUTPUT_FORMAT=<60<,+
+   SORT_SIZE=10,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=50,+
+   SIZE=1:60,+
+   TYPE=CHAR;
+*
+FIELD=USER,+
+   SORT_SIZE=20,+
+   DISPLAY_SEQUENCE_NUMBER=484,+
+   PARAMETER_SET=PS_USER,+
+   DOMAIN=DO_USER;
+*
+FIELD=DAT_CREATION,+
+   DISPLAY_SEQUENCE_NUMBER=480,+
+   PARAMETER_SET=PS_DAT_CREATION,+
+   DOMAIN=DO_DAT_CREATION;
+*
+FIELD=DAT_MODIFICATION,+
+   DISPLAY_SEQUENCE_NUMBER=482,+
+   PARAMETER_SET=PS_DAT_MODIFICATION,+
+   DOMAIN=DO_DAT_MODIFICATION;
+*
+FIELD=UID,+
+   SORT_SIZE=8,+
+   DISPLAY_SEQUENCE_NUMBER=484,+
+   PARAMETER_SET=PS_UID,+
+   DOMAIN=DO_UID;
+*
+*
+RECORD=MOYEN_DROIT,STYLE=CONVENTIONAL,PRIMARY_KEY=CLE_MOYEN_DROIT;
+*
+FIELD=BRANCHE_NTF,+
+   LABEL='BRANCHE_NTF',+
+   OUTPUT_FORMAT=<20/SER<,+
+   SORT_SIZE=1,+
+   OCCURS=0:15,+
+   SIZE=1:1,+
+   TYPE=CHAR;
+*
+FIELD=BRANCHE_TAF,+
+   LABEL='BRANCHE_TAF',+
+   OUTPUT_FORMAT=<20/SER<,+
+   SORT_SIZE=1,+
+   OCCURS=0:15,+
+   SIZE=1:1,+
+   TYPE=CHAR;
+*
+FIELD=BRANCHE_TF,+
+   LABEL='BRANCHE_TF',+
+   OUTPUT_FORMAT=<20/SER<,+
+   SORT_SIZE=4,+
+   OCCURS=1:15,+
+   SIZE=1:4,+
+   TYPE=CHAR;
+*
+FIELD=BRANCHE_TFA,+
+   LABEL='BRANCHE_TFA',+
+   OUTPUT_FORMAT=<20/SER<,+
+   SORT_SIZE=1,+
+   OCCURS=0:15,+
+   SIZE=1:1,+
+   TYPE=CHAR;
+*
+FIELD=CLE_MOYEN_DROIT,+
+   LABEL='CLE_MOYEN_DROIT',+
+   SEARCHED=NO,+
+   USAGE=SYSTEM_KEY(1);
+*
+FIELD=MOYEN_DE_DROIT,+
+   UNIQUE=YES,+
+   LABEL='MOYEN_DE_DROIT',+
+   SORT_SIZE=6,+
+   OCCURS=1:1,+
+   SIZE=1:6,+
+   TYPE=CHAR;
+*
+FIELD=NUM_ORDRE,+
+   LABEL='NUM_ORDRE',+
+   SEARCHED=NO,+
+   OCCURS=1:1,+
+   PRECISION=4,+
+   TYPE=EXACT_BINARY;
+*
+*
+RECORD=NPA,STYLE=CONVENTIONAL,PRIMARY_KEY=CLE_NPA,+
+   COMMENT=(+
+   '',+
+$B,'Numéros postaux et localités suisse');
+*
+FIELD=CANTON,+
+   LABEL='Canton',+
+   OCCURS=1:1,+
+   PARAMETER_SET=PS_CANTON,+
+   DOMAIN=DO_CANTON;
+*
+FIELD=LOC,+
+   LABEL='Nom court de localité',+
+   OUTPUT_FORMAT=<18<,+
+   SORT_SIZE=18,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DEFAULT_TEST=PHRASE WORDS,+
+   SIZE=2:18,+
+   EDIT_BLANKS=TRIM,+
+   SEARCH_CONTROL=SC_NOM,+
+   TYPE=CHAR;
+*
+FIELD=LOCALITE,+
+   LABEL='Nom de localité',+
+   OCCURS=1:1,+
+   PARAMETER_SET=PS_LOC,+
+   DOMAIN=DO_LOC;
+*
+FIELD=LOCALITE_D,+
+   LABEL='Localité (D)',+
+   OCCURS=0:1,+
+   PARAMETER_SET=PS_LOC,+
+   DOMAIN=DO_LOC;
+*
+FIELD=LOCALITE_F,+
+   LABEL='Localité (F)',+
+   OCCURS=0:1,+
+   PARAMETER_SET=PS_LOC,+
+   DOMAIN=DO_LOC;
+*
+FIELD=LOCALITE_I,+
+   LABEL='Localité (I)',+
+   OCCURS=0:1,+
+   PARAMETER_SET=PS_LOC,+
+   DOMAIN=DO_LOC;
+*
+FIELD=MAJ,+
+   LABEL='MéJ',+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=52,+
+   TYPE=LOGICAL;
+*
+FIELD=NPA,+
+   OCCURS=1:1,+
+   PARAMETER_SET=PS_NPA,+
+   DOMAIN=DO_NPA;
+*
+FIELD=OBSOLETE,+
+   LABEL='Obsoléte',+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   TYPE=LOGICAL;
+*
+FIELD=CLE_NPA,+
+   UNIQUE=YES,+
+   LABEL='Clé NPA',+
+   OUTPUT_FORMAT=<30/VR2<,+
+   SET_WHEN=GET,+
+   SORT_SIZE=30,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   SET_EXPR=NPA//' '//LOCALITE,+
+   SIZE=6:35,+
+   TYPE=CHAR;
+*
+*
+RECORD=NUMEROTATION,STYLE=CONVENTIONAL,+
+   COMMENT=(+
+   '',+
+$B,'Table permettant la création des numéros de dossiers.');
+*
+FIELD=ANNEE,+
+   LABEL='Année',+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=10,+
+   LEGAL=1975: 2099,+
+   TYPE=INTEGER;
+*
+FIELD=BRANCHE,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=8,+
+   PARAMETER_SET=PS_BRANCHE,+
+   LEGAL=WL_BRANCHE_NUMEROTATION,+
+   SIZE=1:4,+
+   SEARCH_CONTROL=SC_RAISE,+
+   TYPE=CHAR;
+*
+FIELD=COUR,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=6,+
+   PARAMETER_SET=PS_COUR,+
+   LEGAL=WL_COUR_NUMEROTATION,+
+   SIZE=1:4,+
+   SEARCH_CONTROL=SC_RAISE,+
+   TYPE=CHAR;
+*
+FIELD=DERNIER_RANG,+
+   INIT=0,+
+   LABEL='Dernier rang',+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=14,+
+   LEGAL=0: 99999999,+
+   TYPE=INTEGER;
+*
+FIELD=MDD,+
+   LABEL='Moyen de droit',+
+   OUTPUT_FORMAT=<6<,+
+   SORT_SIZE=6,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   LEGAL=WL_MOYEN_DE_DROIT,+
+   SIZE=1:6,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=PREFIXE,+
+   LABEL='Préfixe',+
+   SORT_SIZE=3,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=4,+
+   SIZE=1:5,+
+   TYPE=CHAR;
+*
+FIELD=RANG_VIDE,+
+   LABEL='Rang vide',+
+   OUTPUT_FORMAT=<20/SER<,+
+   OCCURS=0:500,+
+   DISPLAY_SEQUENCE_NUMBER=12,+
+   LEGAL=1: 99999,+
+   TYPE=INTEGER;
+*
+FIELD=SPECIALE,+
+   LABEL='Spéciale',+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   TYPE=LOGICAL;
+*
+FIELD=CLE_NUMEROTATION,+
+   UNIQUE=YES,+
+   LABEL='Clé Numérotation',+
+   SET_WHEN=GET,+
+   SORT_SIZE=21,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=1,+
+   SET_EXPR=COUR // ' ' // BRANCHE // ' ' // ANNEE //                       +
+ $SELEC_CONCAT('+', ' ', MDD),+
+   SIZE=1:21,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+*
+RECORD=PIECE,STYLE=CONVENTIONAL,PRIMARY_KEY=CLE_PIECE,+
+   COMMENT=(+
+   '',+
+$B,'Bordereau des piéces');
+*
+FIELD=CLASSE_PIECE,+
+   LABEL='Classement piéce',+
+   OUTPUT_FORMAT=<1<,+
+   SORT_SIZE=1,+
+   OCCURS=0:1,+
+   LEGAL=WL_CLASSE_PIECE,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=CLE_DOSSIER,+
+   LABEL='Clé dossier',+
+   OUTPUT_FORMAT=<8<,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=20,+
+   PRECISION=9,+
+   LEGAL=1: 9999999,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=CLE_DOSSIER_CONNEXE,+
+   LABEL='Clé dossier connexe',+
+   OUTPUT_FORMAT=<8/SER<,+
+   SEARCHED=YES,+
+   OCCURS=0:150,+
+   DISPLAY_SEQUENCE_NUMBER=20,+
+   PRECISION=9,+
+   LEGAL=1: 9999999,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=CT,+
+   PARAMETER_SET=PS_CT,+
+   DOMAIN=DO_CT;
+*
+FIELD=DAT_DEPOT,+
+   LABEL='Date dépét',+
+   OCCURS=0:150,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_ENVOI,+
+   LABEL='Date d''envoi',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=50,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_NOTIF,+
+   LABEL='Date notif.',+
+   OCCURS=0:150,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_PIECE,+
+   LABEL='Date de la piéce',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=90,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_POSITION,+
+   LABEL='Date position',+
+   OCCURS=0:1,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DAT_STATUT,+
+   LABEL='Date statut',+
+   OCCURS=0:150,+
+   PARAMETER_SET=PS_DATE,+
+   DOMAIN=DO_DATE;
+*
+FIELD=DESIGNATION,+
+   LABEL='Désignation piéce',+
+   OUTPUT_FORMAT=<30/VR2<,+
+   SORT_SIZE=20,+
+   SEARCHED=NO,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=80,+
+   SIZE=1:60,+
+   TYPE=CHAR;
+*
+FIELD=DESTIN_PIECE,+
+   INIT='Y',+
+   LABEL='Destinataire',+
+   OUTPUT_FORMAT=<20/SEC<,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   OCCURS=1:500,+
+   DISPLAY_SEQUENCE_NUMBER=70,+
+   DOMAIN=DO_NOM_COURT;
+*
+FIELD=EXP_PIECE,+
+   INIT='X',+
+   LABEL='Expéditeur',+
+   OUTPUT_FORMAT=<20<,+
+   SORT_SIZE=20,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=60,+
+   DOMAIN=DO_NOM_COURT;
+*
+FIELD=GENRE_PIECE,+
+   LABEL='Genre piéce',+
+   OUTPUT_FORMAT=<1<,+
+   SORT_SIZE=1,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   LEGAL=WL_GENRE_PIECE,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=MODE_ENVOI,+
+   LABEL='Mode envoi',+
+   OUTPUT_FORMAT=<1/SEC<,+
+   SORT_SIZE=1,+
+   SEARCHED=YES,+
+   OCCURS=0:150,+
+   LEGAL=WL_MODE_ENVOI,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=MODE_RETOUR,+
+   LABEL='Mode retour',+
+   OUTPUT_FORMAT=<1<,+
+   SORT_SIZE=1,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   LEGAL=WL_MODE_RETOUR,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=NBRE_PAGES,+
+   LABEL='Nbre pages',+
+   OUTPUT_FORMAT=<8<,+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   PRECISION=9,+
+   LEGAL=1: 9999,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=NUM_ENVOI,+
+   INIT='XXXXXXXXXXXXX',+
+   LABEL='Né envoi',+
+   OUTPUT_FORMAT=<18/SEC<,+
+   SORT_SIZE=18,+
+   SEARCHED=YES,+
+   OCCURS=1:150,+
+   SIZE=13:18,+
+   EDIT_BLANKS=TRIM,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=NUM_PIECE,+
+   LABEL='Né de piéce',+
+   OUTPUT_FORMAT=<4<,+
+   SORT_SIZE=4,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=30,+
+   SIZE=1:4,+
+   EDIT_BLANKS=TRIM,+
+   TYPE=CHAR;
+*
+FIELD=NUM_PIECE_CONNEXE,+
+   LABEL='Né de piéce connexe',+
+   OUTPUT_FORMAT=<4/SER<,+
+   SORT_SIZE=4,+
+   OCCURS=0:150,+
+   DISPLAY_SEQUENCE_NUMBER=30,+
+   SIZE=1:4,+
+   EDIT_BLANKS=TRIM,+
+   TYPE=CHAR;
+*
+FIELD=ORIGINAL,+
+   LABEL='Clé dossier original',+
+   OUTPUT_FORMAT=<8<,+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   PRECISION=9,+
+   LEGAL=1: 9999999,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=POSITION,+
+   LABEL='Position',+
+   OUTPUT_FORMAT=<20<,+
+   SORT_SIZE=20,+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   DOMAIN=DO_NOM_COURT;
+*
+FIELD=REM_PIECE,+
+   LABEL='Remarque piéce',+
+   OUTPUT_FORMAT=<30/VR2<,+
+   SORT_SIZE=20,+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   SIZE=1:60,+
+   TYPE=CHAR;
+*
+FIELD=RETOUR,+
+   INIT=0,+
+   LABEL='Retour',+
+   OUTPUT_FORMAT=<1<,+
+   SEARCHED=NO,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=100,+
+   TYPE=LOGICAL;
+*
+FIELD=RETOURNER_A,+
+   LABEL='Retourner é',+
+   OUTPUT_FORMAT=<20<,+
+   SORT_SIZE=20,+
+   SEARCHED=NO,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=160,+
+   DOMAIN=DO_NOM_COURT;
+*
+FIELD=STATUT_ENVOI,+
+   LABEL='Statut envoi',+
+   OUTPUT_FORMAT=<3/SEC<,+
+   SORT_SIZE=3,+
+   SEARCHED=YES,+
+   OCCURS=0:150,+
+   LEGAL=WL_STATUT_ENVOI,+
+   SIZE=3:3,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=STATUT_PIECE,+
+   LABEL='Statut piéce',+
+   OUTPUT_FORMAT=<1<,+
+   SORT_SIZE=1,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   LEGAL=WL_STATUT_PIECE,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=USER,+
+   SORT_SIZE=20,+
+   DISPLAY_SEQUENCE_NUMBER=484,+
+   PARAMETER_SET=PS_USER,+
+   DOMAIN=DO_USER;
+*
+FIELD=VISIBLE,+
+   LABEL='Visible',+
+   OUTPUT_FORMAT=<1<,+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   TYPE=LOGICAL;
+*
+FIELD=CLE_PIECE,+
+   UNIQUE=YES,+
+   LABEL='Clé piéce',+
+   OUTPUT_FORMAT=<12<,+
+   SET_WHEN=PUT,+
+   SORT_SIZE=12,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=10,+
+   SET_EXPR=CLE_DOSSIER//'.'//NUM_PIECE,+
+   SIZE=3:12,+
+   TYPE=CHAR;
+*
+FIELD=DAT_CREATION,+
+   DISPLAY_SEQUENCE_NUMBER=480,+
+   PARAMETER_SET=PS_DAT_CREATION,+
+   DOMAIN=DO_DAT_CREATION;
+*
+FIELD=DAT_MODIFICATION,+
+   DISPLAY_SEQUENCE_NUMBER=482,+
+   PARAMETER_SET=PS_DAT_MODIFICATION,+
+   DOMAIN=DO_DAT_MODIFICATION;
+*
+FIELD=NUM_PIECE_NORME,+
+   LABEL='Né normé de piéce',+
+   OUTPUT_FORMAT=<4<,+
+   SET_WHEN=GET,+
+   SORT_SIZE=4,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=30,+
+   SET_EXPR=$PADZ($SELECT(($SKIPC(NUM_PIECE,'1234567890')=$LC(NUM_PIECE)),NU+
+M_PIECE,   NUM_PIECE//'_'),4),+
+   SIZE=4:4,+
+   EDIT_BLANKS=TRIM,+
+   TYPE=CHAR;
+*
+FIELD=UID,+
+   SORT_SIZE=8,+
+   DISPLAY_SEQUENCE_NUMBER=484,+
+   PARAMETER_SET=PS_UID,+
+   DOMAIN=DO_UID;
+*
+*
+RECORD=TACHE,STYLE=CONVENTIONAL,+
+   COMMENT=(+
+   '',+
+$B,'Téches');
+*
+FIELD=BDP,+
+   LABEL='BdP',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=240,+
+   TYPE=LOGICAL;
+*
+FIELD=BRANCHE,+
+   OCCURS=0:26,+
+   DISPLAY_SEQUENCE_NUMBER=20,+
+   PARAMETER_SET=PS_BRANCHE,+
+   DOMAIN=DO_BRANCHE;
+*
+FIELD=CAT_IMP,+
+   LABEL='Catégorie impl.',+
+   OUTPUT_FORMAT=<1/SER<,+
+   SORT_SIZE=1,+
+   OCCURS=0:4,+
+   COMMENT=(+
+   '''P'' = Personne physique, ''J'' = Personne juridique, ''A'' = Autorité, ',+
+'''C'' =',+
+$B,'Collectif, ''T'' = Impliqué technique'),+
+   DISPLAY_SEQUENCE_NUMBER=70,+
+   LEGAL=WL_CATEGORIE,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=CLE_FORMULE,+
+   LABEL='Clés formule',+
+   OUTPUT_FORMAT=<15/SER<,+
+   SORT_SIZE=15,+
+   OCCURS=0:50,+
+   DISPLAY_SEQUENCE_NUMBER=250,+
+   SIZE=1:15,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=CONTROLEUR,+
+   LABEL='contrôleur',+
+   OUTPUT_FORMAT=<3/SER<,+
+   SORT_SIZE=3,+
+   OCCURS=0:5,+
+   DISPLAY_SEQUENCE_NUMBER=230,+
+   LEGAL=WL_FONC_TACHE,+
+   SIZE=1:3,+
+   EDIT_BLANKS=TRIM,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=COUR,+
+   OCCURS=0:10,+
+   DISPLAY_SEQUENCE_NUMBER=10,+
+   PARAMETER_SET=PS_COUR,+
+   DOMAIN=DO_COUR;
+*
+FIELD=DHL,+
+   LABEL='Date-Heure-Lieu',+
+   OUTPUT_FORMAT=<3/SER<,+
+   SORT_SIZE=3,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'NI_NI_NI = '''', DATE = ''D'', DATE_HEURE = ''DH'', DATE_HEURE_LIEU = ',+
+'''DHL'',',+
+$B,'DATE_LIEU = ''DL'', LIEU = ''L'', LIBRE = ''-'''),+
+   DISPLAY_SEQUENCE_NUMBER=140,+
+   LEGAL=WL_DHL,+
+   SIZE=1:3,+
+   EDIT_BLANKS=TRIM,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=ETAT_DOSSIER,+
+   LABEL='état du dossier',+
+   OUTPUT_FORMAT=<1/SER<,+
+   SORT_SIZE=1,+
+   OCCURS=0:10,+
+   COMMENT=(+
+   '''C'' = Créé, ''A'' = Attribué, ''D'' = Décidé (jugé), ''E'' = Expédié, ',+
+'''T'' =',+
+$B,'Terminé (archivé), ''S'' = Suspendu'),+
+   DISPLAY_SEQUENCE_NUMBER=50,+
+   LEGAL=WL_ETAT_DOSSIER,+
+   SIZE=1:1,+
+   EDIT_BLANKS=TRIM,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=FERIE,+
+   LABEL='Comput.',+
+   SORT_SIZE=1,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'LIBRE = '''', JOUR_HORS_FERIE = ''F'', JOUR_OUVRE = ''O'', TOUT_JOUR = ',+
+'''T'''),+
+   DISPLAY_SEQUENCE_NUMBER=190,+
+   LEGAL=WL_FERIE,+
+   SIZE=1:1,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=FONC_COLLAB,+
+   LABEL='Fonction collaborateur',+
+   OUTPUT_FORMAT=<3/SER<,+
+   SORT_SIZE=3,+
+   OCCURS=0:16,+
+   COMMENT=(+
+   'HORS_FONCTION = '''', CHARGE_DOSSIER = ''CD'', CHARGE_TACHE = ''CT'', ',+
+'CHEF_GREFFE',+
+$B,'= ''CG'', REGISTRATEUR_CENTRAL = ''RC'', CHEF_GREFFE_CENTRAL = ''CC'', ',+
+'CAISSIER',+
+$B,'= ''FI'', GREFFIER = ''GR'', JUGE_DELEGUE = ''JD'', JUGE_ADJOINT = ',+
+'''JA'',',+
+$B,'JUGE_PRESIDANT = ''JP'', JUGE_AUTRE = ''JX'', LIBRE = ''--'''),+
+   DISPLAY_SEQUENCE_NUMBER=110,+
+   LEGAL=WL_FONC_TACHE,+
+   SIZE=1:3,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=FONC_IMP,+
+   LABEL='Fonction impliqué',+
+   OUTPUT_FORMAT=<5/SER<,+
+   SORT_SIZE=5,+
+   OCCURS=0:16,+
+   COMMENT=(+
+   'ASSURE = ''VERS'', CAISSE_LAA = ''UVK'', CAISSE_COMP_PROF = ''AK-V'',',+
+$B,'CAISSE_CHOM_PROF = ''ALK-V'', CAISSE_MAL = ''KK'', OFFICE_AI = ''IVS'',',+
+$B,'CAISSE_COMP_CANT = ''AK'', CAISSE_CHOM_CANT = ''ALK'', CAISSE_LPP = ',+
+'''BVG'',',+
+$B,'CAISSE_PC = ''EL'', CNA = ''SUVA'', OFAM = ''MV'', OFIAMT (seco) = ',+
+'''BIGA'', OFAS',+
+$B,'= ''BSV'', AUTRE = ''-'', OFFICE = ''AMT'', CAISSE = ''K'', OFSP = ',+
+'''BAG'',',+
+$B,'CONSEIL_JURIDIQUE = ''CJ'', EXPERT = ''EXP'', TRADUCTEUR = ''TRA'', ',+
+'JURIDICTION',+
+$B,'= ''JURID'', JURIDICTION_1ERE_INSTANCE = ''JUR1'', JURIDICTION_RECOURS =',+
+$B,'''JUREC'', JURIDICTION_CIVILE = ''JURC'', JURIDICTION_PENALE = ''JURP'',',+
+$B,'AUTORITE_COMMUNALE = ''AC'', AUTORITE_SPECIALISEE = ''AS'',',+
+$B,'AUTORITE_NON_JURIDIQUE = ''NONJ'', INSTANCE_SUP = ''IS'',',+
+$B,'ORGANISATION_RECOURABLE = ''OREC'', ENTREPRISE = ''ENT'', FAMILLE = ',+
+'''FAM'',',+
+$B,'REQUERANT_ASILE = ''ASI'', AIP_TV = ''UBI'', TPF = ''TPF'', TAF = ',+
+'''BVGER'''),+
+   DISPLAY_SEQUENCE_NUMBER=80,+
+   LEGAL=WL_FONCT_IMP,+
+   SIZE=1:5,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=GENRE_DELAI,+
+   LABEL='Genre délai',+
+   OUTPUT_FORMAT=<4/SER<,+
+   SORT_SIZE=4,+
+   OCCURS=0:50,+
+   COMMENT=(+
+   'DEMANDE_DOSSIER = ''DOS'', MEMOIRE_COMPLETIF = ''MEM'', ',+
+'DEMANDE_PROCURATION =',+
+$B,'''PRO'', REPLIQUE = ''RPQ'', DUPLIQUE = ''DPQ'', REPONSE_RECOURS = ',+
+'''RR'',',+
+$B,'REPONSE_EFFET_SUSPENSIF = ''RES'', OBSERVATION_INST_SUP = ''OSR'',',+
+$B,'OBSERVATION_INSTRUC = ''OSI'', CONSULTATION_DOSSIER = ''CD'', ',+
+'AUDITION_PARTIE',+
+$B,'= ''AUD'', INSPECTION_LOCALE = ''IL'', INTERRO_TEMOIN = ''TEM'', ',+
+'EXPERTISE =',+
+$B,'''EXP'', MOYEN_DE_PREUVE = ''MDP'', AUTRE_DOCUMENT = ''DOC'', ',+
+'FIXATION_SEANCE =',+
+$B,'''FS'', RECOURS = ''RCR'', DEBAT_PUBLIC = ''DP'', DECISION_SUR_NEM = ',+
+'''NEM'',',+
+$B,'DECISION = ''DEC'', RECUSATION = ''RCS'', AVANCE_FRAIS = ''AF'', ',+
+'AVANCE_FRAIS_2',+
+$B,'= ''AF2'', SURETES = ''SUR'', FACTURE = ''FAC'', NOTE_CREDIT = ''NC'',',+
+$B,'RAPPEL_FACTURE = ''RAP'', DOMICILE_ELU = ''DOM'', AUTORISATION_TUTELAIRE ',+
+'=',+
+$B,'''TUT'', EXEMPLAIRE_MANQUANT = ''EXM'', MAINTIEN_RECOURS = ''MR'',',+
+$B,'MOTIFS_CONCLUSIONS = ''MC'', SIGNATURE = ''SIG'', QUESTIONNAIRE_AJ = ',+
+'''AJ'',',+
+$B,'ATTESTATION_HERITIER = ''HER'', TRADUCTION = ''TRA'', ACTE_A_RETOURNER =',+
+$B,'''ACT'', JUSTIFICATION_RETARD = ''TAR'', SEANCE = ''SEA'', NOTE_FRAIS = ',+
+'''NDF'',',+
+$B,'CIRCULATION = ''CRC'', FINITION = ''FIN'', PROJET = ''PJT'', SUSPENSION ',+
+'= ''SUS'',',+
+$B,'PRESTATION_GREFFIER = ''PTG'', PRESTATOIN_JUGE = ''PTJ'', AUTRE_DELAI = ',+
+'''AUT'',',+
+$B,'AVANCE_FRAIS_DOMICILE = ''DMA'', AVANCE_FRAIS_RECUSATION = ''RAF'',',+
+$B,'FEUILLE_FEDERALE = ''FF'', DOSSIER_OBSERVATIONS = ''DSR'',',+
+$B,'DOMICILE_OBSERVATIONS = ''DMR'', CONSULTATION_OBSERVATIONS = ''CDR'',',+
+$B,'RETRAIT_ARRET = ''RAR'', ACCUSE_RECEPTION = ''AR'', AMELIORATION_RECOURS ',+
+'=',+
+$B,'''MNQ'', OBSERVATIONS_2 = ''RR2'', DEMANDE_DIVERSE = ''DDT'''),+
+   DISPLAY_SEQUENCE_NUMBER=130,+
+   LEGAL=WL_GENRE_DELAI,+
+   SIZE=1:4,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=HORS_DOSSIER,+
+   LABEL='Hors dossier',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=60,+
+   TYPE=LOGICAL;
+*
+FIELD=ID_TACHE,+
+   UNIQUE=YES,+
+   LABEL='Identifiant de téche',+
+   OUTPUT_FORMAT=<12<,+
+   SORT_SIZE=12,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=1,+
+   SIZE=1:12,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=JOUR_EXCLU,+
+   LABEL='Jour-s sem. exclu-s',+
+   OUTPUT_FORMAT=<7<,+
+   SORT_SIZE=6,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'LUNDI = ''1'', MARDI = ''2'', MERCREDI = ''3'', JEUDI = ''4'', VENDREDI ',+
+'= ''5'',',+
+$B,'SAMEDI = ''6'', DIMANCHE = ''7'''),+
+   DISPLAY_SEQUENCE_NUMBER=180,+
+   SIZE=1:6,+
+   EDIT_BLANKS=TRIM,+
+   PATTERN='7(1:6)',+
+   TYPE=CHAR;
+*
+FIELD=MATIERE,+
+   LABEL='Code matiére',+
+   OUTPUT_FORMAT=<6/SER<,+
+   SORT_SIZE=6,+
+   OCCURS=0:17,+
+   DISPLAY_SEQUENCE_NUMBER=40,+
+   SIZE=1:6,+
+   TYPE=CHAR;
+*
+FIELD=MONTANT,+
+   LABEL='Type montant',+
+   OUTPUT_FORMAT=<4<,+
+   SORT_SIZE=4,+
+   OCCURS=0:1,+
+   COMMENT=(+
+   'SANS_UNITE = '''', FRANC_SIGNE = ''CHFS'', FRANC_ENTRANT = ''CHFP'',',+
+$B,'FRANC_SORTANT = ''CHFM'', HEURE_JUGE = ''HJUG'', HEURE_GREFFIER = ',+
+'''HGRF'',',+
+$B,'HEURE_COLLABORATEUR = ''HCOL'''),+
+   DISPLAY_SEQUENCE_NUMBER=150,+
+   LEGAL=WL_MONTANT,+
+   SIZE=1:4,+
+   EDIT_BLANKS=TRIM,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=MOYEN_DE_DROIT,+
+   LABEL='Moyen de droit',+
+   OUTPUT_FORMAT=<6/SER<,+
+   SORT_SIZE=6,+
+   OCCURS=0:26,+
+   DISPLAY_SEQUENCE_NUMBER=30,+
+   LEGAL=WL_MOYEN_DE_DROIT,+
+   SIZE=1:6,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=NBRE_JOURS,+
+   LABEL='Nombre jours délai',+
+   OUTPUT_FORMAT=<11<,+
+   SORT_SIZE=11,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=170,+
+   SIZE=1:11,+
+   EDIT_BLANKS=TRIM,+
+   PATTERN='9(1:3):(0:1)9(0:3):(0:1)9(0:3)',+
+   TYPE=CHAR;
+*
+FIELD=NBRE_PROLONGS,+
+   LABEL='Nombre max. de prolongations',+
+   OUTPUT_FORMAT=>4>,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=210,+
+   PRECISION=4,+
+   LEGAL=0: 9,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=PERSONNELLE,+
+   LABEL='Personnelle',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=120,+
+   TYPE=LOGICAL;
+*
+FIELD=POSTCOMPUT,+
+   LABEL='Postcomput possible',+
+   OCCURS=0:1,+
+   TYPE=LOGICAL;
+*
+FIELD=PREMIER_RAPPEL,+
+   LABEL='Premier rappel',+
+   OUTPUT_FORMAT=<13<,+
+   SORT_SIZE=13,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=220,+
+   SIZE=1:13,+
+   EDIT_BLANKS=TRIM,+
+   PATTERN='L(0:1)9(1:3):(0:1)9(0:3):(0:1)9(0:3)R(0:1)R(0:1)',+
+   TYPE=CHAR;
+*
+FIELD=PROVISOIRE,+
+   LABEL='Délai provisoire possible',+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=160,+
+   TYPE=LOGICAL;
+*
+FIELD=ROLE_IMP,+
+   LABEL='Réle impl.',+
+   OUTPUT_FORMAT=<1/SER<,+
+   SORT_SIZE=1,+
+   OCCURS=0:5,+
+   COMMENT=(+
+   'RECOURANT = ''R'', CONTRE (intimé) = ''I'', AUTORITE_ATTAQUEE = ''A'', ',+
+'CONCERNE',+
+$B,'= ''C'', INFORME = ''F'', TIERS = ''T'''),+
+   DISPLAY_SEQUENCE_NUMBER=90,+
+   LEGAL=WL_ROLE_IMP,+
+   SIZE=1:1,+
+   EDIT_BLANKS=TRIM,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=SOUS_ROLE_IMP,+
+   LABEL='Sous-réle impl.',+
+   OUTPUT_FORMAT=<3/SER<,+
+   SORT_SIZE=3,+
+   OCCURS=0:10,+
+   COMMENT=(+
+   'AUCUN_SOUS_ROLE = ''---'', DEMANDEUR = ''DEM'', DEFENDEUR = ''DEF'', ',+
+'EXPROPRIANT',+
+$B,'= ''EPT'', EXPROPRIE = ''EPE'', APPELE_EN_CAUSE = ''APP'', ASSURE = ',+
+'''ASS'',',+
+$B,'INTERVENANT = ''INT'', PREMIERE_INSTANCE = ''PRI'', DEUXIEME_INSTANCE = ',+
+'''SEC'',',+
+$B,'INSTANCE_SUIVANTE = ''SUI'', INSTANCE_PRECEDENTE = ''PRC'', ADJUDICATEUR ',+
+'=',+
+$B,'''ADJ'', EXPERT = ''EXP'', TRADUCTEUR = ''TRA'', TEMOIN = ''TEM'', ',+
+'REQUERANT =',+
+$B,'''RQT'', RECOURANT = ''RCT'', EX_REQUERANT = ''EXR'', OPPOSANT = ',+
+'''OPP'', INTIME =',+
+$B,'''ITM'', REQUERANT_ASILE = ''ASI'', AUTORITE_SPECIALISEE = ''SPE'',',+
+$B,'TIERS_INTERESSE = ITS'', AUTRE = ''AUT'', INCONNU = ''XXX'''),+
+   DISPLAY_SEQUENCE_NUMBER=100,+
+   LEGAL=WL_ROLE_CIV_IMP,+
+   SIZE=1:3,+
+   EDIT_BLANKS=TRIM,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=TOLERANCE,+
+   LABEL='Tolérance',+
+   OUTPUT_FORMAT=<8<,+
+   SORT_SIZE=8,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=200,+
+   SIZE=1:8,+
+   PATTERN='9(1:2):(0:1)9(1:2):(0:1)9(1:2)',+
+   TYPE=CHAR;
+*
+*
+RECORD=TRADUCTION,STYLE=CONVENTIONAL,PRIMARY_KEY=CLE_TRADUCTION;
+*
+FIELD=ABREV_D,+
+   LABEL='Abréviation (D)',+
+   SORT_SIZE=30,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=20,+
+   SIZE=1:30,+
+   EDIT_BLANKS=TRIM,+
+   TYPE=CHAR;
+*
+FIELD=ABREV_F,+
+   LABEL='Abréviation (F)',+
+   SORT_SIZE=30,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=22,+
+   SIZE=1:30,+
+   EDIT_BLANKS=TRIM,+
+   TYPE=CHAR;
+*
+FIELD=ABREV_I,+
+   LABEL='Abréviation (I)',+
+   SORT_SIZE=30,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=24,+
+   SIZE=1:30,+
+   EDIT_BLANKS=TRIM,+
+   TYPE=CHAR;
+*
+FIELD=CLE_TRADUCTION,+
+   LABEL='Clé Traduction',+
+   SEARCHED=YES,+
+   DISPLAY_SEQUENCE_NUMBER=1,+
+   USAGE=SYSTEM_KEY(1);
+*
+FIELD=CODE_MONOLINGUE,+
+   LABEL='Code monolingue',+
+   SORT_SIZE=30,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   SIZE=1:30,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=NOM_CHAMP,+
+   LABEL='Nom du champ',+
+   SORT_SIZE=32,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=4,+
+   SIZE=1:32,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+FIELD=NON_SELEX,+
+   LABEL='Non sélectionnable',+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   TYPE=LOGICAL;
+*
+FIELD=OBSOLETE,+
+   LABEL='Obsoléte',+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   TYPE=LOGICAL;
+*
+FIELD=PROVISOIRE,+
+   LABEL='Provisoire',+
+   SEARCHED=YES,+
+   OCCURS=0:1,+
+   TYPE=LOGICAL;
+*
+FIELD=RANG,+
+   LABEL='RANG',+
+   OUTPUT_FORMAT=>6>,+
+   OCCURS=0:1,+
+   PRECISION=4,+
+   LEGAL=0: 9999,+
+   TYPE=EXACT_BINARY;
+*
+FIELD=TEXTE_D,+
+   LABEL='Texte (D)',+
+   SORT_SIZE=50,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=10,+
+   SIZE=1:360,+
+   TYPE=CHAR;
+*
+FIELD=TEXTE_F,+
+   LABEL='Texte (F)',+
+   SORT_SIZE=50,+
+   OCCURS=1:1,+
+   DISPLAY_SEQUENCE_NUMBER=12,+
+   SIZE=1:360,+
+   TYPE=CHAR;
+*
+FIELD=TEXTE_I,+
+   LABEL='Texte (I)',+
+   SORT_SIZE=50,+
+   OCCURS=0:1,+
+   DISPLAY_SEQUENCE_NUMBER=14,+
+   SIZE=1:360,+
+   TYPE=CHAR;
+*
+FIELD=DAT_MODIFICATION,+
+   PARAMETER_SET=PS_DAT_MODIFICATION,+
+   DOMAIN=DO_DAT_MODIFICATION;
+*
+FIELD=HEURE_MODIF,+
+   LABEL='Heure de modif.',+
+   OUTPUT_FORMAT=<6<,+
+   SET_WHEN=PUT,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   SET_EXPR=$HHMMSS,+
+   USAGE=TIME;
+*
+FIELD=NOM_CODE,+
+   UNIQUE=YES,+
+   LABEL='Nom + Code',+
+   SET_WHEN=PUT,+
+   SORT_SIZE=63,+
+   SEARCHED=YES,+
+   OCCURS=1:1,+
+   SET_EXPR=NOM_CHAMP // ' ' // CODE_MONOLINGUE,+
+   SIZE=1:63,+
+   RAISE_DATA=YES,+
+   TYPE=CHAR;
+*
+ASSERT(1) +
+   ADD_MEMBER_MESSAGE= 'Un impliqué d''un dossier doit exister dans la table+
+ Impliqué!! (ADD       Dossier Assert)' +
+   DEL_OWNER_MESSAGE= 'Cet impliqué é encore des dossiers le concernant!! (D+
+EL Impliqué Assert)' +
+   UNIQUE IMPLIQUE OWNS DOSSIER +
+   IF IMPLIQUE.CLE_IMPLIQUE=DOSSIER.NUM_IMP;
+*
+ASSERT(2) +
+   ADD_MEMBER_MESSAGE= 'Un représentant d''un dossier doit exister dans la t+
+able Impliqué!! (ADD   Dossier Assert)' +
+   DEL_OWNER_MESSAGE= 'Cet impliqué é encore des dossiers le concernant!! (D+
+EL Impliqué Assert)' +
+   UNIQUE IMPLIQUE OWNS DOSSIER +
+   IF IMPLIQUE.CLE_IMPLIQUE=DOSSIER.NUM_REPRES;
+*
+ASSERT(3) +
+   ADD_MEMBER_MESSAGE= 'Cette décision correspont é un dossier inéxistant!! +
+(ADD Decision Assert)' +
+   DEL_OWNER_MESSAGE= 'Ce dossier est encore référencé par des décisions!! (+
+DEL Dossier Assert)' +
+   UNIQUE DOSSIER OWNS DECISION +
+   IF DOSSIER.NUM_DOSSIER=DECISION.NUM_DOSSIER_REGR;
+*
+ASSERT(4) +
+   ADD_MEMBER_MESSAGE= 'Cette mesure correspond é un impliqué inéxistant!! (+
+ADD Mesure Assert)' +
+   DEL_OWNER_MESSAGE= 'Cet impliqué est encore référencé par des mesures!! (+
+DEL Implique Assert)' +
+   UNIQUE IMPLIQUE OWNS MESURE +
+   IF IMPLIQUE.CLE_IMPLIQUE=MESURE.NUM_IMP;
+*
+ASSERT(5) +
+   ADD_MEMBER_MESSAGE= 'Ce PROFIL n''est pas défini dans la table des accès!+
+! (ADD Profil_Acces    Assert)' +
+   DEL_OWNER_MESSAGE= 'Ce Profil est encore référencé par des collaborateurs+
+!! (DEL ACCES         Assert)' +
+   ACCES OWNS COLLABORATEUR +
+   IF ACCES.NOM_PROFIL=COLLABORATEUR.PROFIL_ACCES;
+*
+ASSERT(6) +
+   ADD_MEMBER_MESSAGE= 'Ce PROFIL n''est pas défini dans la table des accès!+
+! (ADD Profil_Stat     Assert)' +
+   DEL_OWNER_MESSAGE= 'Ce Profil est encore référencé par des collaborateurs+
+!! (DEL ACCES         Assert)' +
+   ACCES OWNS COLLABORATEUR +
+   IF ACCES.NOM_PROFIL=COLLABORATEUR.PROFIL_STAT;
+*
+ASSERT(7) +
+   ADD_MEMBER_MESSAGE= 'Un impliqué d''un délai doit exister dans la table I+
+mpliqué!! (ADD Delai   Assert)' +
+   DEL_OWNER_MESSAGE= 'Cet impliqué é encore des délais le concernant!! (DEL+
+ Impliqué Assert)' +
+   UNIQUE IMPLIQUE OWNS DELAI +
+   IF IMPLIQUE.CLE_IMPLIQUE=DELAI.NUM_IMP;
+*
+ASSERT(8) +
+   ADD_MEMBER_MESSAGE= 'L''impliqué d''origine n''existe pas!!' +
+   DEL_OWNER_MESSAGE= 'Cet impliqué est é l''origine d''autres!!' +
+   UNIQUE IMPLIQUE OWNS IMPLIQUE +
+   IF IMPLIQUE.CLE_IMPLIQUE=IMPLIQUE.ORIGINE;
+*
+REVL RECORD=ACCES;
+*
+IF (TYPE_PROFIL = 'E') THEN;
+  CHECK DROIT,     NOT_ALLOWED, MESSAGE='Droit é laisser vide';
+END_IF;
+IF (TYPE_PROFIL = 'C') THEN;
+  CHECK DOMAINE_L, NOT_ALLOWED, MESSAGE='Domaine L é laisser vide';
+  CHECK DOMAINE_M, NOT_ALLOWED, MESSAGE='Domaine M é laisser vide';
+  CHECK DROIT,     REQUIRED,    MESSAGE='Droit é remplir';
+END_IF;
+IF (TYPE_PROFIL = 'D') THEN;
+  CHECK DOMAINE_L, NOT_ALLOWED, MESSAGE='Domaine L é laisser vide';
+  CHECK DOMAINE_M, NOT_ALLOWED, MESSAGE='Domaine M é laisser vide';
+  CHECK DROIT,     REQUIRED,    MESSAGE='Droit é remplir';
+END_IF;
+IF (TYPE_PROFIL = 'L') THEN;
+  CHECK DOMAINE_L, NOT_ALLOWED, MESSAGE='Domaine L é laisser vide';
+  CHECK DOMAINE_M, NOT_ALLOWED, MESSAGE='Domaine M é laisser vide';
+  CHECK DROIT,     REQUIRED,    MESSAGE='Droit é remplir';
+END_IF;
+IF (TYPE_PROFIL = 'T') THEN;
+  CHECK DOMAINE_L, NOT_ALLOWED, MESSAGE='Domaine L é laisser vide';
+  CHECK DOMAINE_M, NOT_ALLOWED, MESSAGE='Domaine M é laisser vide';
+  CHECK DROIT,     REQUIRED,    MESSAGE='Droit é remplir';
+END_IF;
+IF (TYPE_PROFIL = 'M') THEN;
+  CHECK DOMAINE_L, NOT_ALLOWED, MESSAGE='Domaine L é laisser vide';
+  CHECK DOMAINE_M, NOT_ALLOWED, MESSAGE='Domaine M é laisser vide';
+  CHECK DROIT,     REQUIRED,    MESSAGE='Droit é remplir';
+END_IF;
+IF (TYPE_PROFIL = 'O') THEN;
+  CHECK DOMAINE_L, NOT_ALLOWED, MESSAGE='Domaine L é laisser vide';
+  CHECK DOMAINE_M, NOT_ALLOWED, MESSAGE='Domaine M é laisser vide';
+  CHECK DROIT,     REQUIRED,    MESSAGE='Droit é remplir';
+END_IF;
+IF (TYPE_PROFIL = 'P') THEN;
+  CHECK DOMAINE_L, REQUIRED,    MESSAGE='Domaine L é remplir';
+  CHECK DOMAINE_M, NOT_ALLOWED, MESSAGE='Domaine M é laisser vide';
+  CHECK DROIT,     NOT_ALLOWED, MESSAGE='Droit é laisser vide';
+END_IF;
+END_REVL;
+*
+REVL RECORD=COLLABORATEUR;
+*
+IF $OCCURS(FONCTION) NE $OCCURS(DIVISION) THEN
+  CHECK DIVISION, ALWAYS_FAILS,  MESSAGE='Chaque fonction est liée é une div+
+ision !'
+END_IF
+IF $OCCURS(FONCTION) NE $OCCURS(DAT_ENTREE) THEN
+  CHECK DAT_ENTREE, ALWAYS_FAILS,  MESSAGE='Chaque fonction doit avoir une d+
+ate d''entrée !'
+END_IF
+IF $OCCURS(FONCTION) NE $OCCURS(DAT_SORTIE) THEN
+  CHECK DAT_SORTIE, ALWAYS_FAILS,  MESSAGE='Chaque fonction doit avoir une d+
+ate de sortie !'
+END_IF
+END_REVL
+*
+REVL RECORD=COMPO;
+*
+SET_ON_PUT TOTAL_TAUX=$SELECT(($OCCURS(TAUX)=0),0,$ETOTAL(TAUX))
+SET_ON_PUT TOTAL_MESURE=$SELECT(($OCCURS(MESURE)=0),0,$ETOTAL(MESURE))
+SET_ON_PUT TOTAL_MESURE_5=$SELECT(($OCCURS(MESURE_5)=0),0,$ETOTAL(MESURE_5))
+SET_ON_PUT TOTAL_PENDANCE=$SELECT(($OCCURS(PENDANCE)=0),0,$ETOTAL(PENDANCE))
+SET_ON_PUT TOTAL_PENDANCE_5=$SELECT(($OCCURS(PENDANCE_5)=0),0,$ETOTAL(PENDAN+
+CE_5))
+DELETE CONSIGNE;
+DELETE CONSIGNE_5;
+IF $EXISTS(TAUX(1)) THEN
+  IF (TOTAL_TAUX = 0) THEN
+    SET CONSIGNE(1)=0;
+    SET CONSIGNE_5(1)=0;
+  ELSE
+    SET CONSIGNE(1)=(TAUX(1)*TOTAL_MESURE)/TOTAL_TAUX;
+    SET CONSIGNE_5(1)=(TAUX(1)*TOTAL_MESURE_5)/TOTAL_TAUX;
+  END_IF;
+END_IF;
+IF $EXISTS(TAUX(2)) THEN
+  IF (TOTAL_TAUX = 0) THEN
+    SET CONSIGNE(2)=0;
+    SET CONSIGNE_5(2)=0;
+  ELSE
+    SET CONSIGNE(2)=(TAUX(2)*TOTAL_MESURE)/TOTAL_TAUX;
+    SET CONSIGNE_5(2)=(TAUX(2)*TOTAL_MESURE_5)/TOTAL_TAUX;
+  END_IF;
+END_IF;
+IF $EXISTS(TAUX(3)) THEN
+  IF (TOTAL_TAUX = 0) THEN
+    SET CONSIGNE(3)=0;
+    SET CONSIGNE_5(3)=0;
+  ELSE
+    SET CONSIGNE(3)=(TAUX(3)*TOTAL_MESURE)/TOTAL_TAUX;
+    SET CONSIGNE_5(3)=(TAUX(3)*TOTAL_MESURE_5)/TOTAL_TAUX;
+  END_IF;
+END_IF;
+IF $EXISTS(TAUX(4)) THEN
+  IF (TOTAL_TAUX = 0) THEN
+    SET CONSIGNE(4)=0;
+    SET CONSIGNE_5(4)=0;
+  ELSE
+    SET CONSIGNE(4)=(TAUX(4)*TOTAL_MESURE)/TOTAL_TAUX;
+    SET CONSIGNE_5(4)=(TAUX(4)*TOTAL_MESURE_5)/TOTAL_TAUX;
+  END_IF;
+END_IF;
+IF $EXISTS(TAUX(5)) THEN
+  IF (TOTAL_TAUX = 0) THEN
+    SET CONSIGNE(5)=0;
+    SET CONSIGNE_5(5)=0;
+  ELSE
+    SET CONSIGNE(5)=(TAUX(5)*TOTAL_MESURE)/TOTAL_TAUX;
+    SET CONSIGNE_5(5)=(TAUX(5)*TOTAL_MESURE_5)/TOTAL_TAUX;
+  END_IF;
+END_IF;
+IF $EXISTS(TAUX(6)) THEN
+  IF (TOTAL_TAUX = 0) THEN
+    SET CONSIGNE(6)=0;
+    SET CONSIGNE_5(6)=0;
+  ELSE
+    SET CONSIGNE(6)=(TAUX(6)*TOTAL_MESURE)/TOTAL_TAUX;
+    SET CONSIGNE_5(6)=(TAUX(6)*TOTAL_MESURE_5)/TOTAL_TAUX;
+  END_IF;
+END_IF;
+IF $EXISTS(TAUX(7)) THEN
+  IF (TOTAL_TAUX = 0) THEN
+    SET CONSIGNE(7)=0;
+    SET CONSIGNE_5(7)=0;
+  ELSE
+    SET CONSIGNE(7)=(TAUX(7)*TOTAL_MESURE)/TOTAL_TAUX;
+    SET CONSIGNE_5(7)=(TAUX(7)*TOTAL_MESURE_5)/TOTAL_TAUX;
+  END_IF;
+END_IF;
+IF $EXISTS(TAUX(8)) THEN
+  IF (TOTAL_TAUX = 0) THEN
+    SET CONSIGNE(8)=0;
+    SET CONSIGNE_5(8)=0;
+  ELSE
+    SET CONSIGNE(8)=(TAUX(8)*TOTAL_MESURE)/TOTAL_TAUX;
+    SET CONSIGNE_5(8)=(TAUX(8)*TOTAL_MESURE_5)/TOTAL_TAUX;
+  END_IF;
+END_IF;
+IF $EXISTS(TAUX(9)) THEN
+  IF (TOTAL_TAUX = 0) THEN
+    SET CONSIGNE(9)=0;
+    SET CONSIGNE_5(9)=0;
+  ELSE
+    SET CONSIGNE(9)=(TAUX(9)*TOTAL_MESURE)/TOTAL_TAUX;
+    SET CONSIGNE_5(9)=(TAUX(9)*TOTAL_MESURE_5)/TOTAL_TAUX;
+  END_IF;
+END_IF;
+SET_ON_PUT TOTAL_CONSIGNE=$SELECT(($OCCURS(CONSIGNE)=0),0,$ETOTAL(CONSIGNE))
+SET_ON_PUT TOTAL_CONSIGNE_5=$SELECT(($OCCURS(CONSIGNE_5)=0),0,$ETOTAL(CONSIG+
+NE_5))
+END_REVL;
+*
+REVL RECORD=DECISION;
+*
+IF $OCCURS(DESTIN_EXP)  NE $OCCURS(CONTENU_EXP) THEN;
+  CHECK DESTIN_EXP, ALWAYS_FAILS,                                           +
+ MESSAGE='Le                                                                +
+contenu d''expédition de chaque Destinataire doit étre précisé !';
+END_IF;
+IF (OLD STATUT_DEC NE NEW STATUT_DEC) THEN
+  SET DAT_MUT_STATUT=$YYYYMMDD
+END_IF
+END_REVL;
+*
+REVL RECORD=DELAI;
+*
+IF (OLD STATUT_DELAI NE NEW STATUT_DELAI) THEN;
+  SET DAT_CHANGE_STATUT=$YYYYMMDD;
+END_IF;
+IF (OLD DAT_RECEPTION NE NEW DAT_RECEPTION) THEN;
+  SET DAT_ENREG=$YYYYMMDD;
+END_IF;
+IF $ABSENT(HEURE_MODIF) THEN;
+  SET HEURE_MODIF=$HHMMSS;
+END_IF;
+END_REVL;
+*
+REVL RECORD=DOSSIER;
+*
+IF $OCCURS(NUM_IMP) NE $OCCURS(ROLE_IMP) THEN;
+  CHECK ROLE_IMP, ALWAYS_FAILS,  MESSAGE='Chaque impliqué doit avoir un réle !';
+END_IF;
+IF $OCCURS(NUM_IMP) NE $OCCURS(NUM_REPRES) THEN;
+  CHECK NUM_REPRES, ALWAYS_FAILS,  MESSAGE='Chaque impliqué doit avoir un re+
+présentant (Rem. 4 pour "_sans") !';
+END_IF;
+IF $OCCURS(NUM_IMP) NE $OCCURS(ROLE_CIV_IMP) THEN;
+  CHECK ROLE_CIV_IMP, ALWAYS_FAILS, MESSAGE='Chaque impl. doit avoir un réle+
+ civil!';
+END_IF;
+IF $OCCURS(NUM_IMP) NE $OCCURS(TYPE_REPRES) THEN;
+  CHECK TYPE_REPRES, ALWAYS_FAILS, MESSAGE='Chaque impl. doit avoir un type +
+repres.!';
+END_IF;
+IF $OCCURS(NUM_IMP) NE $OCCURS(DESTIN) THEN;
+  CHECK DESTIN, ALWAYS_FAILS, MESSAGE='Chaque impl. doit avoir un type repré+
+s.!';
+END_IF;
+IF $OCCURS(TYPE_REQ) NE $OCCURS(DAT_DEC_REQ) THEN;
+  CHECK DAT_DEC_REQ, ALWAYS_FAILS,  MESSAGE='Chaque requéte doit avoir une d+
+ate de décision !';
+END_IF;
+IF $OCCURS(TYPE_REQ) NE $OCCURS(ACCEPT_REQ) THEN;
+  CHECK ACCEPT_REQ, ALWAYS_FAILS,  MESSAGE='Chaque requéte doit avoir une is+
+sue !';
+END_IF;
+IF COUR EQ 'EVG' THEN;
+  IF BRANCHE EQ 'B';
+    SET MATIERE = '085.50';
+  ELSE_IF BRANCHE EQ 'C';
+    SET MATIERE = '086.20';
+  ELSE_IF BRANCHE EQ 'D';
+    SET MATIERE = '017.00';
+  ELSE_IF BRANCHE EQ 'E';
+    SET MATIERE = '085.95';
+  ELSE_IF BRANCHE EQ 'F';
+    SET MATIERE = '086.10';
+  ELSE_IF BRANCHE EQ 'H';
+    SET MATIERE = '085.10';
+  ELSE_IF BRANCHE EQ 'I';
+    SET MATIERE = '085.30';
+  ELSE_IF BRANCHE EQ 'K';
+    SET MATIERE = '085.70';
+  ELSE_IF BRANCHE EQ 'M';
+    SET MATIERE = '085.90';
+  ELSE_IF BRANCHE EQ 'P';
+    SET MATIERE = '085.40';
+  ELSE_IF BRANCHE EQ 'U';
+    SET MATIERE = '085.80';
+  END_IF;
+END_IF;
+SET DESCR_F=DESCR_D;
+SET DESCR_I=DESCR_D;
+IF $MATCH('-',NUM_DOSSIER) NE 0;
+  SET TRIBUNAL = 'TAF';
+ELSE_IF $MATCH('_',NUM_DOSSIER) NE 0;
+  SET TRIBUNAL = 'NTF';
+ELSE_IF $MATCH('.',NUM_DOSSIER) NE 0;
+  SET TRIBUNAL = 'TFL';
+ELSE_IF $MATCH(' ',NUM_DOSSIER) NE 0;
+  SET TRIBUNAL = 'EVG';
+END_IF;
+IF TRIBUNAL = 'TFL';
+  SET SITE = 'LSN';
+ELSE_IF TRIBUNAL = 'EVG';
+  SET SITE = 'LZN';
+ELSE_IF TRIBUNAL = 'TAF';
+  SET SITE = 'BRN';
+ELSE_IF TRIBUNAL = 'NTF';
+  IF COUR = '8' OR COUR = '9';
+    SET SITE = 'LZN';
+  ELSE;
+    SET SITE = 'LSN';
+  END_IF;
+END_IF;
+IF (PUBLIC = 'S') THEN;
+  SET NOM_DOSSIER_NON_SECRET='-';
+ELSE;
+  SET NOM_DOSSIER_NON_SECRET=NOM_DOSSIER;
+END_IF;
+DELETE COMPO;
+IF $EXISTS(JUGE_DELEGUE) THEN
+  SET COMPO(1) = JUGE_DELEGUE;
+  IF $EXISTS(PRESIDENCE) THEN
+    IF (PRESIDENCE NE JUGE_DELEGUE) THEN
+      SET COMPO(2) = PRESIDENCE;
+      IF $EXISTS(JUGE(1)) THEN
+        SET COMPO(3) = JUGE(1);
+        IF $EXISTS(JUGE(2)) THEN
+          SET COMPO(4) = JUGE(2);
+          IF $EXISTS(JUGE(3)) THEN
+            SET COMPO(5) = JUGE(3);
+            IF $EXISTS(JUGE(4)) THEN
+              SET COMPO(6) = JUGE(4);
+              IF $EXISTS(JUGE(5)) THEN
+                SET COMPO(7) = JUGE(5);
+              END_IF;
+            END_IF;
+          END_IF;
+        END_IF;
+      END_IF;
+    ELSE_IF $EXISTS(JUGE(1));
+      SET COMPO(2) = JUGE(1);
+      IF $EXISTS(JUGE(2)) THEN
+        SET COMPO(3) = JUGE(2);
+        IF $EXISTS(JUGE(3)) THEN
+          SET COMPO(4) = JUGE(3);
+          IF $EXISTS(JUGE(4)) THEN
+            SET COMPO(5) = JUGE(4);
+            IF $EXISTS(JUGE(5)) THEN
+              SET COMPO(6) = JUGE(5);
+              IF $EXISTS(JUGE(6)) THEN
+                SET COMPO(7) = JUGE(6);
+              END_IF;
+            END_IF;
+          END_IF;
+        END_IF;
+      END_IF;
+    END_IF;
+  END_IF;
+END_IF;
+END_REVL;
+*
+REVL RECORD=HISTO;
+*
+IF $ABSENT(DAT_HISTO) THEN;
+  SET DAT_HISTO=$YYYYMMDD;
+END_IF;
+IF $ABSENT(HEURE_HISTO) THEN;
+  SET HEURE_HISTO=$HHMMSS;
+END_IF;
+END_REVL;
+*
+REVL RECORD=IMPLIQUE;
+*
+IF $ABSENT(CATEGORIE_TFA) THEN;
+  IF CATEGORIE EQ 'A' THEN;
+    SET CATEGORIE_TFA = '-';
+  END_IF;
+  IF CATEGORIE EQ 'J' THEN;
+    SET CATEGORIE_TFA = 'VERS';
+  END_IF;
+  IF CATEGORIE EQ 'P' THEN;
+    SET CATEGORIE_TFA = 'VERS';
+  END_IF;
+  IF CATEGORIE EQ 'C' THEN;
+    SET CATEGORIE_TFA = '-';
+  END_IF;
+END_IF;
+CHECK FIELD=NOM_COURT, LENGTH=(1:20), MESSAGE='Donnée trop longue';
+IF CATEGORIE EQ 'A' THEN;
+  CHECK FIELD=PRENOM, NOT_ALLOWED,     MESSAGE='Prénom interdit pour les Aut+
+orités';
+  CHECK FIELD=TITRE, NOT_ALLOWED,     MESSAGE='Titre interdit pour les Autor+
+ités';
+  CHECK FIELD=PROFESSION, NOT_ALLOWED,     MESSAGE='Profession interdite pou+
+r les Autorités';
+  CHECK FIELD=ABR_BRADOC, REQUIRED,     MESSAGE='Abréviation obligatoire pou+
+r les Autorités ';
+END_IF;
+IF CATEGORIE EQ 'P' THEN;
+  CHECK FIELD=ABR_BRADOC, NOT_ALLOWED,     MESSAGE='ABR_BRADOC uniquement po+
+ur les Autorités';
+END_IF;
+IF CATEGORIE EQ 'J' THEN;
+  CHECK FIELD=ABR_BRADOC, NOT_ALLOWED,     MESSAGE='ABR_BRADOC uniquement po+
+ur les Autorités';
+  CHECK FIELD=PRENOM, NOT_ALLOWED,     MESSAGE='Prénom interdit pour cat. "J+
+uridique"';
+  CHECK FIELD=TITRE, NOT_ALLOWED,     MESSAGE='Titre interdit pour cat. "Jur+
+idique"';
+  CHECK FIELD=PROFESSION, NOT_ALLOWED,     MESSAGE='Profession interdite pou+
+r cat. "Juridique"';
+END_IF;
+IF $OCCURS(NUM_MEMBRE) NE $OCCURS(ROLE_MEMBRE) THEN;
+  CHECK ROLE_MEMBRE, ALWAYS_FAILS, MESSAGE='Chaque membre d''une collection +
+ doit y avoir un réle!';
+END_IF;
+IF $OCCURS(STATUT_ETRANGER) NE $OCCURS(DAT_STATUT_ETRANGER) THEN;
+  CHECK DAT_STATUT_ETRANGER, ALWAYS_FAILS, MESSAGE='Chaque statut étranger  +
+ doit avoir une date!';
+END_IF;
+IF $OCCURS(ETAT_CIVIL) NE $OCCURS(DAT_ETAT_CIVIL) THEN;
+  CHECK DAT_ETAT_CIVIL, ALWAYS_FAILS, MESSAGE='Chaque état civil            +
+ doit avoir une date!';
+END_IF;
+IF $ABSENT(HEURE_MODIF) THEN;
+  SET HEURE_MODIF=$HHMMSS;
+END_IF;
+END_REVL;
+*
+REVL RECORD=NUMEROTATION;
+*
+IF $EXISTS(RANG_VIDE) THEN;
+  IF RANG_VIDE($OCCURS(RANG_VIDE)) GT DERNIER_RANG THEN;
+    CHECK RANG_VIDE, ALWAYS_FAILS,  MESSAGE='Rang vide > que Dernier rang !';
+  END_IF;
+END_IF;
+END_REVL;
+*
+REVL RECORD=PIECE;
+*
+IF $OCCURS(CLE_DOSSIER_CONNEXE) NE $OCCURS(NUM_PIECE_CONNEXE) THEN;
+  CHECK NUM_PIECE_CONNEXE, ALWAYS_FAILS, MESSAGE='Clés dossier et Nos piéce +
+ connexes doivent étre appairés!';
+END_IF;
+END_REVL;
+
+
+*----------------------------------
+USER_DATA_MODEL;*          DOSSBAS
+*----------------------------------
+*
+*
+MODEL=DBA,+
+   ACCESS=PUBLIC,+
+   TYPE=FQM;
+*
+VIEW=ACCES,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(ACCES),+
+   FORM=YES;
+AT(1:1,28:59)/U,+
+   SOURCE=ACCES.CLE_ACCES,+
+   SIZE=32,+
+   LABEL='Clé accès',+
+   PAGE=1,+
+   NAME=CLE_ACCES;
+AT(2:2,28:49)/U,+
+   SOURCE=ACCES.DAT_CREATION,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date création',+
+   PAGE=1,+
+   NAME=DAT_CREATION;
+AT(3:3,28:49)/U,+
+   SOURCE=ACCES.DAT_MODIFICATION,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date modification',+
+   PAGE=1,+
+   NAME=DAT_MODIFICATION;
+AT(9:9,28:47)/U,+
+   SOURCE=ACCES.DOMAINE_L,+
+   SIZE=4,+
+   LABEL='Domaine lect.',+
+   PAGE=1,+
+   NAME=DOMAINE_L;
+AT(10:10,28:47)/U,+
+   SOURCE=ACCES.DOMAINE_M,+
+   SIZE=4,+
+   LABEL='Domaine modif.',+
+   PAGE=1,+
+   NAME=DOMAINE_M;
+AT(12:28,2:80)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=ACCES.DROIT,+
+   SIZE=28,+
+   OUTPUT_FORMAT=<28<,+
+   LABEL='Droit page, champ & MéJ',+
+   PAGE=1,+
+   NAME=DROIT;
+AT(1:1,2:26)/P/FL,+
+   PUT('Clé accès...............='),+
+   PAGE=1,+
+   NAME=L01001;
+AT(2:2,2:26)/P/FL,+
+   PUT('Date création...........='),+
+   PAGE=1,+
+   NAME=L01002;
+AT(3:3,2:26)/P/FL,+
+   PUT('Date modification.......='),+
+   PAGE=1,+
+   NAME=L01003;
+AT(4:4,2:26)/P/FL,+
+   PUT('NOM_PROFIL..............='),+
+   PAGE=1,+
+   NAME=L01004;
+AT(5:5,2:26)/P/FL,+
+   PUT('Objet...................='),+
+   PAGE=1,+
+   NAME=L01005;
+AT(6:6,2:26)/P/FL,+
+   PUT('Type de profil..........='),+
+   PAGE=1,+
+   NAME=L01006;
+AT(7:7,2:26)/P/FL,+
+   PUT('Dernier utilisateur UID.='),+
+   PAGE=1,+
+   NAME=L01007;
+AT(8:8,2:26)/P/FL,+
+   PUT('Dernier utilisateur VMS.='),+
+   PAGE=1,+
+   NAME=L01008;
+AT(9:9,2:26)/P/FL,+
+   PUT('Domaine lect............:'),+
+   PAGE=1,+
+   NAME=L01009;
+AT(10:10,2:26)/P/FL,+
+   PUT('Domaine modif...........:'),+
+   PAGE=1,+
+   NAME=L01010;
+AT(11:11,2:26)/P/FL,+
+   PUT('Droit page, champ & MéJ.:'),+
+   PAGE=1,+
+   NAME=L01011;
+AT(4:4,28:47)/U,+
+   SOURCE=ACCES.NOM_PROFIL,+
+   SIZE=20,+
+   LABEL='NOM_PROFIL',+
+   PAGE=1,+
+   NAME=NOM_PROFIL;
+AT(5:5,28:47)/U,+
+   SOURCE=ACCES.OBJET,+
+   SIZE=13,+
+   LABEL='Objet',+
+   PAGE=1,+
+   NAME=OBJET;
+AT(6:6,28:47)/U,+
+   SOURCE=ACCES.TYPE_PROFIL,+
+   SIZE=1,+
+   LABEL='Type de profil',+
+   PAGE=1,+
+   NAME=TYPE_PROFIL;
+AT(7:7,28:47)/U,+
+   SOURCE=ACCES.UID,+
+   SIZE=8,+
+   OUTPUT_FORMAT=<8<,+
+   LABEL='Dernier utilisateur UID',+
+   PAGE=1,+
+   NAME=UID;
+AT(8:8,28:47)/U,+
+   SOURCE=ACCES.USER,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Dernier utilisateur VMS',+
+   PAGE=1,+
+   NAME=USER;
+*
+VIEW=ARCHIVE,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(ARCHIVE),+
+   FORM=YES;
+AT(13:13,28:77)/U,+
+   SOURCE=ARCHIVE.BORDEREAU,+
+   SIZE=1000,+
+   OUTPUT_FORMAT=<80<,+
+   LABEL='Bordereau des piéces',+
+   PAGE=1,+
+   NAME=BORDEREAU;
+AT(1:1,28:45)/U,+
+   SOURCE=ARCHIVE.CLE_ARCHIVAGE,+
+   SIZE=18,+
+   OUTPUT_FORMAT=<8<,+
+   LABEL='Né d''archivage',+
+   PAGE=1,+
+   NAME=CLE_ARCHIVAGE;
+AT(3:3,28:45)/U,+
+   SOURCE=ARCHIVE.CLE_DOSSIER,+
+   SIZE=18,+
+   OUTPUT_FORMAT=>8>,+
+   LABEL='Clé dossier (ACCN)',+
+   PAGE=1,+
+   NAME=CLE_DOSSIER;
+AT(15:15,28:49)/U,+
+   SOURCE=ARCHIVE.DAT_CREATION,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date création',+
+   PAGE=1,+
+   NAME=DAT_CREATION;
+AT(4:4,28:49)/U,+
+   SOURCE=ARCHIVE.DAT_DEC_DOSSIER,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date décision dossier',+
+   PAGE=1,+
+   NAME=DAT_DEC_DOSSIER;
+AT(16:16,28:49)/U,+
+   SOURCE=ARCHIVE.DAT_MODIFICATION,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date modification',+
+   PAGE=1,+
+   NAME=DAT_MODIFICATION;
+AT(11:11,28:77)/U,+
+   SOURCE=ARCHIVE.DECISION,+
+   SIZE=1000,+
+   OUTPUT_FORMAT=<80<,+
+   LABEL='Décisions',+
+   PAGE=1,+
+   NAME=DECISION;
+AT(6:6,28:80)/U,+
+   SOURCE=ARCHIVE.DESCRIPTEUR,+
+   SIZE=55,+
+   OUTPUT_FORMAT=<55/SER/VR20<,+
+   LABEL='Descripteurs',+
+   PAGE=1,+
+   NAME=DESCRIPTEUR;
+AT(10:10,28:77)/U,+
+   SOURCE=ARCHIVE.GENERALITE,+
+   SIZE=1000,+
+   OUTPUT_FORMAT=<80<,+
+   LABEL='Généralités',+
+   PAGE=1,+
+   NAME=GENERALITE;
+AT(12:12,28:77)/U,+
+   SOURCE=ARCHIVE.IMPLIQUE,+
+   SIZE=1000,+
+   OUTPUT_FORMAT=<80<,+
+   LABEL='Impliqués',+
+   PAGE=1,+
+   NAME=IMPLIQUE;
+AT(1:1,2:26)/P/FL,+
+   PUT('Né d''archivage..........='),+
+   PAGE=1,+
+   NAME=L01001;
+AT(2:2,2:26)/P/FL,+
+   PUT('Numéro du dossier.......='),+
+   PAGE=1,+
+   NAME=L01002;
+AT(3:3,2:26)/P/FL,+
+   PUT('Clé dossier (ACCN)......='),+
+   PAGE=1,+
+   NAME=L01003;
+AT(4:4,2:26)/P/FL,+
+   PUT('Date décision dossier...='),+
+   PAGE=1,+
+   NAME=L01004;
+AT(5:5,2:26)/P/FL,+
+   PUT('Normes..................>'),+
+   PAGE=1,+
+   NAME=L01005;
+AT(6:6,2:26)/P/FL,+
+   PUT('Descripteurs............>'),+
+   PAGE=1,+
+   NAME=L01006;
+AT(7:7,2:26)/P/FL,+
+   PUT('Code matiére............:'),+
+   PAGE=1,+
+   NAME=L01007;
+AT(8:8,2:26)/P/FL,+
+   PUT('Tribunal................='),+
+   PAGE=1,+
+   NAME=L01008;
+AT(9:9,2:26)/P/FL,+
+   PUT('Origine.................='),+
+   PAGE=1,+
+   NAME=L01009;
+AT(10:10,2:26)/P/FL,+
+   PUT('Généralités............=>'),+
+   PAGE=1,+
+   NAME=L01010;
+AT(11:11,2:26)/P/FL,+
+   PUT('Décisions...............>'),+
+   PAGE=1,+
+   NAME=L01011;
+AT(12:12,2:26)/P/FL,+
+   PUT('Impliqués..............=>'),+
+   PAGE=1,+
+   NAME=L01012;
+AT(13:13,2:26)/P/FL,+
+   PUT('Bordereau des piéces....>'),+
+   PAGE=1,+
+   NAME=L01013;
+AT(14:14,2:26)/P/FL,+
+   PUT('Mémoire des données....=>'),+
+   PAGE=1,+
+   NAME=L01014;
+AT(15:15,2:26)/P/FL,+
+   PUT('Date création...........='),+
+   PAGE=1,+
+   NAME=L01015;
+AT(16:16,2:26)/P/FL,+
+   PUT('Date modification.......='),+
+   PAGE=1,+
+   NAME=L01016;
+AT(17:17,2:26)/P/FL,+
+   PUT('Dernier utilisateur UID.='),+
+   PAGE=1,+
+   NAME=L01017;
+AT(18:18,2:26)/P/FL,+
+   PUT('Dernier USER............='),+
+   PAGE=1,+
+   NAME=L01018;
+AT(7:7,28:35)/U,+
+   SOURCE=ARCHIVE.MATIERE,+
+   SIZE=8,+
+   OUTPUT_FORMAT=<3<,+
+   LABEL='Code matiére',+
+   PAGE=1,+
+   NAME=MATIERE;
+AT(14:14,28:77)/U,+
+   SOURCE=ARCHIVE.MEMOIRE,+
+   SIZE=3000,+
+   OUTPUT_FORMAT=<80<,+
+   LABEL='Mémoire des données',+
+   PAGE=1,+
+   NAME=MEMOIRE;
+AT(5:5,28:77)/U,+
+   SOURCE=ARCHIVE.NORME,+
+   SIZE=50,+
+   OUTPUT_FORMAT=<50/SEC<,+
+   LABEL='Normes',+
+   PAGE=1,+
+   NAME=NORME;
+AT(2:2,28:47)/U,+
+   SOURCE=ARCHIVE.NUM_DOSSIER,+
+   SIZE=15,+
+   OUTPUT_FORMAT=<15<,+
+   LABEL='Numéro du dossier',+
+   PAGE=1,+
+   NAME=NUM_DOSSIER;
+AT(9:9,28:47)/U,+
+   SOURCE=ARCHIVE.ORIGINE,+
+   SIZE=1,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Origine',+
+   PAGE=1,+
+   NAME=ORIGINE;
+AT(8:8,28:47)/U,+
+   SOURCE=ARCHIVE.TRIBUNAL,+
+   SIZE=3,+
+   OUTPUT_FORMAT=<3<,+
+   LABEL='Tribunal',+
+   PAGE=1,+
+   NAME=TRIBUNAL;
+AT(17:17,28:47)/U,+
+   SOURCE=ARCHIVE.UID,+
+   SIZE=8,+
+   OUTPUT_FORMAT=<8<,+
+   LABEL='Dernier utilisateur UID',+
+   PAGE=1,+
+   NAME=UID;
+AT(18:18,28:47)/U,+
+   SOURCE=ARCHIVE.USER,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Dernier USER',+
+   PAGE=1,+
+   NAME=USER;
+*
+VIEW=ARCHIWEB,+
+   PRIVILEGES=(GET),+
+   RESTRICT=ALWAYS,+
+   JOIN=(DECISION.NUM_DOSSIER_REGR:=DOSSIER.NUM_DOSSIER),+
+   SOURCE=(DECISION,DOSSIER),+
+   FORM=NO;
+*
+FIELD=BRANCHE,+
+   LABEL='Branche',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=DOSSIER.BRANCHE;
+*
+FIELD=CANTON,+
+   LABEL='Canton',+
+   OUTPUT_FORMAT=<2<,+
+   SOURCE=DOSSIER.CANTON;
+*
+FIELD=CHAMBRE,+
+   LABEL='Chambre',+
+   OUTPUT_FORMAT=<3<,+
+   SOURCE=DOSSIER.CHAMBRE;
+*
+FIELD=CODE_AZA_2,+
+   LABEL='Code AZA 2',+
+   SOURCE=DECISION.CODE_AZA_2;
+*
+FIELD=CODE_MEDIA,+
+   LABEL='Code Media',+
+   SOURCE=DECISION.CODE_MEDIA;
+*
+FIELD=COMP_INSTANCE,+
+   LABEL='Composition de l''instance',+
+   OUTPUT_FORMAT=<20/SER<,+
+   SOURCE=DECISION.COMP_INSTANCE;
+*
+FIELD=COUR,+
+   LABEL='Cour',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=DOSSIER.COUR;
+*
+FIELD=DATE_DECISION,+
+   LABEL='Date décision',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DECISION.DAT_DECISION;
+*
+FIELD=DAT_DISPO,+
+   LABEL='DAT_DISPO',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DECISION.DAT_DISPO;
+*
+FIELD=DAT_EMBARGO,+
+   LABEL='DAT_EMBARGO',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DECISION.DAT_EMBARGO;
+*
+FIELD=DAT_EXEC,+
+   LABEL='Date éxécutoire',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DECISION.DAT_EXEC;
+*
+FIELD=DAT_EXP,+
+   LABEL='Date expédition',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DECISION.DAT_EXP;
+*
+FIELD=DAT_MODIFICATION_DEC,+
+   LABEL='Date modification dec',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DECISION.DAT_MODIFICATION;
+*
+FIELD=DAT_MODIFICATION_DOS,+
+   LABEL='Date modification doss.',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DOSSIER.DAT_MODIFICATION;
+*
+FIELD=DOSSIER_CONNEXE,+
+   LABEL='Dossiers connexes',+
+   OUTPUT_FORMAT=<15/SER<,+
+   SOURCE=DOSSIER.DOSSIER_CONNEXE;
+*
+FIELD=INTERNET,+
+   LABEL='Internet (TFA)',+
+   SOURCE=DECISION.INTERNET;
+*
+FIELD=JUGE_DELEGUE,+
+   LABEL='Juge délégué',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=DOSSIER.JUGE_DELEGUE;
+*
+FIELD=LANGUE,+
+   LABEL='Langue',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=DOSSIER.LANGUE;
+*
+FIELD=MATIERE,+
+   LABEL='Matiére',+
+   OUTPUT_FORMAT=<6<,+
+   SOURCE=DOSSIER.MATIERE;
+*
+FIELD=MOYEN_DE_DROIT,+
+   LABEL='Moyen de droit',+
+   OUTPUT_FORMAT=<6<,+
+   SOURCE=DOSSIER.MOYEN_DE_DROIT;
+*
+FIELD=MULTI_MAT,+
+   LABEL='Matiéres',+
+   OUTPUT_FORMAT=<6/SER<,+
+   SOURCE=DOSSIER.MULTI_MAT;
+*
+FIELD=NOM_DOSSIER,+
+   LABEL='Nom du dossier',+
+   OUTPUT_FORMAT=<30/VR5<,+
+   SOURCE=DOSSIER.NOM_DOSSIER;
+*
+FIELD=NUM_DOSSIER,+
+   LABEL='Numéro du dossier',+
+   OUTPUT_FORMAT=<15<,+
+   SOURCE=DOSSIER.NUM_DOSSIER;
+*
+FIELD=NUM_DOSSIER_REGR,+
+   LABEL='Né dossiers',+
+   OUTPUT_FORMAT=<15/SEC<,+
+   SOURCE=DECISION.NUM_DOSSIER_REGR;
+*
+FIELD=NUM_IMP,+
+   LABEL='Numéro des parties',+
+   OUTPUT_FORMAT=<6/SER<,+
+   SOURCE=DOSSIER.NUM_IMP;
+*
+FIELD=OBJET,+
+   LABEL='Objet décision',+
+   OUTPUT_FORMAT=<77<,+
+   SOURCE=DECISION.OBJET;
+*
+FIELD=PAYS,+
+   LABEL='Pays',+
+   OUTPUT_FORMAT=<2<,+
+   SOURCE=DOSSIER.PAYS;
+*
+FIELD=PUBLIC,+
+   LABEL='Public',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=DOSSIER.PUBLIC;
+*
+FIELD=QUORUM,+
+   LABEL='Quorum',+
+   OUTPUT_FORMAT=>4>,+
+   SOURCE=DECISION.QUORUM;
+*
+FIELD=ROLE_IMP,+
+   LABEL='Réle de l''implique',+
+   OUTPUT_FORMAT=<1/SER<,+
+   SOURCE=DOSSIER.ROLE_IMP;
+*
+FIELD=TRIBUNAL,+
+   LABEL='Tribunal',+
+   OUTPUT_FORMAT=<3<,+
+   SOURCE=DOSSIER.TRIBUNAL;
+*
+FIELD=TYPE_PUB,+
+   LABEL='Publication',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=DECISION.TYPE_PUB;
+*
+VIEW=AUTRE_DOSSIER,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(AUTRE_DOSSIER),+
+   FORM=YES;
+AT(13:13,24:63)/U,+
+   SOURCE=AUTRE_DOSSIER.AUTEUR,+
+   SIZE=80,+
+   OUTPUT_FORMAT=<20/VR4<,+
+   LABEL='Auteur',+
+   PAGE=1,+
+   NAME=AUTEUR;
+AT(5:5,24:27)/U,+
+   SOURCE=AUTRE_DOSSIER.BRADOC,+
+   SIZE=4,+
+   LABEL='Dans Bradoc',+
+   PAGE=1,+
+   NAME=BRADOC;
+AT(1:1,24:41)/U,+
+   SOURCE=AUTRE_DOSSIER.CLE_AUT_DOSS,+
+   SIZE=18,+
+   OUTPUT_FORMAT=>8>,+
+   LABEL='Clé autres dossiers',+
+   PAGE=1,+
+   NAME=CLE_AUT_DOSS;
+AT(8:8,24:43)/U,+
+   SOURCE=AUTRE_DOSSIER.COUR,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Cour',+
+   PAGE=1,+
+   NAME=COUR;
+AT(6:6,28:47)/U,+
+   SOURCE=AUTRE_DOSSIER.CT,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='CT',+
+   PAGE=2,+
+   NAME=CT;
+AT(11:11,24:45)/U,+
+   SOURCE=AUTRE_DOSSIER.DAT_ARCHIVAGE,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date d''archivage',+
+   PAGE=1,+
+   NAME=DAT_ARCHIVAGE;
+AT(2:2,28:49)/U,+
+   SOURCE=AUTRE_DOSSIER.DAT_CREATION,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date création',+
+   PAGE=2,+
+   NAME=DAT_CREATION;
+AT(4:4,24:45)/U,+
+   SOURCE=AUTRE_DOSSIER.DAT_DOSSIER,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date ouverture',+
+   PAGE=1,+
+   NAME=DAT_DOSSIER;
+AT(7:7,24:45)/U,+
+   SOURCE=AUTRE_DOSSIER.DAT_FERMETURE,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date fermeture',+
+   PAGE=1,+
+   NAME=DAT_FERMETURE;
+AT(3:3,28:49)/U,+
+   SOURCE=AUTRE_DOSSIER.DAT_MODIFICATION,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date modification',+
+   PAGE=2,+
+   NAME=DAT_MODIFICATION;
+AT(14:14,24:63)/U,+
+   SOURCE=AUTRE_DOSSIER.DESTINATAIRE,+
+   SIZE=80,+
+   OUTPUT_FORMAT=<20/VR4<,+
+   LABEL='Destinataire',+
+   PAGE=1,+
+   NAME=DESTINATAIRE;
+AT(16:16,24:43)/U,+
+   SOURCE=AUTRE_DOSSIER.DOSSIER_CONNEXE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<15<,+
+   LABEL='Numéro du dossier',+
+   PAGE=1,+
+   NAME=DOSSIER_CONNEXE;
+AT(3:3,24:43)/U,+
+   SOURCE=AUTRE_DOSSIER.GENRE_DOCU,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Genre autre dossier',+
+   PAGE=1,+
+   NAME=GENRE_DOCU;
+AT(18:18,24:63)/U,+
+   SOURCE=AUTRE_DOSSIER.INTIME,+
+   SIZE=80,+
+   OUTPUT_FORMAT=<20/VR4<,+
+   LABEL='Nom de l''intimé',+
+   PAGE=1,+
+   NAME=INTIME;
+AT(19:19,24:43)/U,+
+   SOURCE=AUTRE_DOSSIER.JUGE_DELEGUE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Nom juge délégué',+
+   PAGE=1,+
+   NAME=JUGE_DELEGUE;
+AT(1:1,2:22)/P/FL,+
+   PUT('Clé autres dossiers.='),+
+   PAGE=1,+
+   NAME=L01001;
+AT(2:2,2:22)/P/FL,+
+   PUT('Numéro du dossier...='),+
+   PAGE=1,+
+   NAME=L01002;
+AT(3:3,2:22)/P/FL,+
+   PUT('Genre autre dossier.='),+
+   PAGE=1,+
+   NAME=L01003;
+AT(4:4,2:22)/P/FL,+
+   PUT('Date ouverture......:'),+
+   PAGE=1,+
+   NAME=L01004;
+AT(5:5,2:22)/P/FL,+
+   PUT('Dans Bradoc.........:'),+
+   PAGE=1,+
+   NAME=L01005;
+AT(6:6,2:22)/P/FL,+
+   PUT('Dans Bradoc.........:'),+
+   PAGE=1,+
+   NAME=L01006;
+AT(7:7,2:22)/P/FL,+
+   PUT('Date fermeture......:'),+
+   PAGE=1,+
+   NAME=L01007;
+AT(8:8,2:22)/P/FL,+
+   PUT('Cour................:'),+
+   PAGE=1,+
+   NAME=L01008;
+AT(9:9,2:22)/P/FL,+
+   PUT('Langue..............:'),+
+   PAGE=1,+
+   NAME=L01009;
+AT(10:10,2:22)/P/FL,+
+   PUT('Né d''archive........:'),+
+   PAGE=1,+
+   NAME=L01010;
+AT(11:11,2:22)/P/FL,+
+   PUT('Date d''archivage....:'),+
+   PAGE=1,+
+   NAME=L01011;
+AT(12:12,2:22)/P/FL,+
+   PUT('Nom registrateur....='),+
+   PAGE=1,+
+   NAME=L01012;
+AT(13:13,2:22)/P/FL,+
+   PUT('Auteur..............>'),+
+   PAGE=1,+
+   NAME=L01013;
+AT(14:14,2:22)/P/FL,+
+   PUT('Destinataire........>'),+
+   PAGE=1,+
+   NAME=L01014;
+AT(15:15,2:22)/P/FL,+
+   PUT('Objet...............>'),+
+   PAGE=1,+
+   NAME=L01015;
+AT(16:16,2:22)/P/FL,+
+   PUT('Numéro du dossier...>'),+
+   PAGE=1,+
+   NAME=L01016;
+AT(17:17,2:22)/P/FL,+
+   PUT('Nom du recourant....>'),+
+   PAGE=1,+
+   NAME=L01017;
+AT(18:18,2:22)/P/FL,+
+   PUT('Nom de l''intimé.....>'),+
+   PAGE=1,+
+   NAME=L01018;
+AT(19:19,2:22)/P/FL,+
+   PUT('Nom juge délégué....:'),+
+   PAGE=1,+
+   NAME=L01019;
+AT(20:20,2:22)/P/FL,+
+   PUT('Nom rédacteur.......:'),+
+   PAGE=1,+
+   NAME=L01020;
+AT(1:1,2:26)/P/FL,+
+   PUT('Remarque autre dossier..>'),+
+   PAGE=2,+
+   NAME=L02021;
+AT(2:2,2:26)/P/FL,+
+   PUT('Date création...........='),+
+   PAGE=2,+
+   NAME=L02022;
+AT(3:3,2:26)/P/FL,+
+   PUT('Date modification.......='),+
+   PAGE=2,+
+   NAME=L02023;
+AT(4:4,2:26)/P/FL,+
+   PUT('Dernier utilisateur UID.='),+
+   PAGE=2,+
+   NAME=L02024;
+AT(5:5,2:26)/P/FL,+
+   PUT('Dernier utilisateur.....='),+
+   PAGE=2,+
+   NAME=L02025;
+AT(6:6,2:26)/P/FL,+
+   PUT('CT......................='),+
+   PAGE=2,+
+   NAME=L02026;
+AT(7:7,2:26)/P/FL,+
+   PUT('Position................:'),+
+   PAGE=2,+
+   NAME=L02027;
+AT(8:8,2:26)/P/FL,+
+   PUT('Numéro du dossier.......:'),+
+   PAGE=2,+
+   NAME=L02028;
+AT(9:9,24:43)/U,+
+   SOURCE=AUTRE_DOSSIER.LANGUE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Langue',+
+   PAGE=1,+
+   NAME=LANGUE;
+AT(0:0,0:0),+
+   SOURCE=AUTRE_DOSSIER.NOM_COLLAB_INDEX,+
+   SIZE=20,+
+   NAME=NOM_COLLAB_INDEX;
+AT(10:10,24:43)/U,+
+   SOURCE=AUTRE_DOSSIER.NUM_ARCHIVE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<8<,+
+   LABEL='Né d''archive',+
+   PAGE=1,+
+   NAME=NUM_ARCHIVE;
+AT(2:2,24:43)/U,+
+   SOURCE=AUTRE_DOSSIER.NUM_AUT_DOSS,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<15<,+
+   LABEL='Numéro du dossier',+
+   PAGE=1,+
+   NAME=NUM_AUT_DOSS;
+AT(15:15,24:73)/U,+
+   SOURCE=AUTRE_DOSSIER.OBJET,+
+   SIZE=400,+
+   OUTPUT_FORMAT=<20/VR4<,+
+   LABEL='Objet',+
+   PAGE=1,+
+   NAME=OBJET;
+AT(0:0,0:0),+
+   SOURCE=AUTRE_DOSSIER.OBJET_REMARQUE,+
+   SIZE=30,+
+   NAME=OBJET_REMARQUE;
+AT(0:0,0:0),+
+   SOURCE=AUTRE_DOSSIER.PARTIE_INDEX,+
+   SIZE=80,+
+   NAME=PARTIE_INDEX;
+AT(7:7,28:47)/U,+
+   SOURCE=AUTRE_DOSSIER.POSITION,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<3<,+
+   LABEL='Position',+
+   PAGE=2,+
+   NAME=POSITION;
+AT(17:17,24:63)/U,+
+   SOURCE=AUTRE_DOSSIER.RECOURANT,+
+   SIZE=80,+
+   OUTPUT_FORMAT=<20/VR4<,+
+   LABEL='Nom du recourant',+
+   PAGE=1,+
+   NAME=RECOURANT;
+AT(6:6,24:27)/U,+
+   SOURCE=AUTRE_DOSSIER.RECOURS_JOINT,+
+   SIZE=4,+
+   LABEL='Dans Bradoc',+
+   PAGE=1,+
+   NAME=RECOURS_JOINT;
+AT(20:20,24:43)/U,+
+   SOURCE=AUTRE_DOSSIER.REDACTEUR,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Nom rédacteur',+
+   PAGE=1,+
+   NAME=REDACTEUR;
+AT(8:8,28:47)/U,+
+   SOURCE=AUTRE_DOSSIER.REF_EXT,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<15<,+
+   LABEL='Numéro du dossier',+
+   PAGE=2,+
+   NAME=REF_EXT;
+AT(12:12,24:43)/U,+
+   SOURCE=AUTRE_DOSSIER.REGISTRATEUR,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Nom registrateur',+
+   PAGE=1,+
+   NAME=REGISTRATEUR;
+AT(1:1,28:77)/U,+
+   SOURCE=AUTRE_DOSSIER.REM_AUTRE_DOSSIER,+
+   SIZE=200,+
+   OUTPUT_FORMAT=<40/VR5<,+
+   LABEL='Remarque autre dossier',+
+   PAGE=2,+
+   NAME=REM_AUTRE_DOSSIER;
+AT(4:4,28:47)/U,+
+   SOURCE=AUTRE_DOSSIER.UID,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<8<,+
+   LABEL='Dernier utilisateur UID',+
+   PAGE=2,+
+   NAME=UID;
+AT(5:5,28:47)/U,+
+   SOURCE=AUTRE_DOSSIER.USER,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Dernier utilisateur',+
+   PAGE=2,+
+   NAME=USER;
+*
+VIEW=COLLABORATEUR,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(COLLABORATEUR),+
+   FORM=YES;
+AT(12:12,31:50)/U,+
+   SOURCE=COLLABORATEUR.ABREVIATION,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<3<,+
+   LABEL='Abréviation',+
+   PAGE=1,+
+   NAME=ABREVIATION;
+AT(16:16,31:70)/U,+
+   SOURCE=COLLABORATEUR.ADR1,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='Adresse d''envoi',+
+   PAGE=1,+
+   NAME=ADR1;
+AT(17:17,31:70)/U,+
+   SOURCE=COLLABORATEUR.ADR2,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='2éme ligne......',+
+   PAGE=1,+
+   NAME=ADR2;
+AT(18:18,31:70)/U,+
+   SOURCE=COLLABORATEUR.ADR3,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='3éme ligne......',+
+   PAGE=1,+
+   NAME=ADR3;
+AT(5:5,36:43)/U,+
+   SOURCE=COLLABORATEUR.ANCIENNETE,+
+   SIZE=8,+
+   OUTPUT_FORMAT=<3<,+
+   LABEL='Ancienneté',+
+   PAGE=2,+
+   NAME=ANCIENNETE;
+AT(6:6,36:39)/U,+
+   SOURCE=COLLABORATEUR.ANCIEN_COLLAB,+
+   SIZE=4,+
+   LABEL='Ancien Collab.',+
+   PAGE=2,+
+   NAME=ANCIEN_COLLAB;
+AT(9:9,36:55)/U,+
+   SOURCE=COLLABORATEUR.AUTO_SOURIS,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1/SEC<,+
+   LABEL='Automatisme souris',+
+   PAGE=2,+
+   NAME=AUTO_SOURIS;
+AT(4:4,31:54)/U,+
+   SOURCE=COLLABORATEUR.CLE_COLLAB,+
+   SIZE=24,+
+   OUTPUT_FORMAT=<24<,+
+   LABEL='Clé collaborateur',+
+   PAGE=1,+
+   NAME=CLE_COLLAB;
+AT(10:10,36:55)/U,+
+   SOURCE=COLLABORATEUR.COMPTE_VMS,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<12<,+
+   LABEL='COMPTE_VMS',+
+   PAGE=2,+
+   NAME=COMPTE_VMS;
+AT(1:1,31:50)/U,+
+   SOURCE=COLLABORATEUR.COUR_PREF,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Cour',+
+   PAGE=1,+
+   NAME=COUR_PREF;
+AT(1:1,36:57)/U,+
+   SOURCE=COLLABORATEUR.DAT_CREATION,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date création',+
+   PAGE=2,+
+   NAME=DAT_CREATION;
+AT(6:6,31:52)/U,+
+   SOURCE=COLLABORATEUR.DAT_ENTREE,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23/SEC<,+
+   LABEL='Date d''entrée en fonction',+
+   PAGE=1,+
+   NAME=DAT_ENTREE;
+AT(2:2,36:57)/U,+
+   SOURCE=COLLABORATEUR.DAT_MODIFICATION,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date modification',+
+   PAGE=2,+
+   NAME=DAT_MODIFICATION;
+AT(7:7,31:52)/U,+
+   SOURCE=COLLABORATEUR.DAT_SORTIE,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23/SEC<,+
+   LABEL='Date de fin de la fonction',+
+   PAGE=1,+
+   NAME=DAT_SORTIE;
+AT(13:13,31:50)/U,+
+   SOURCE=COLLABORATEUR.DIVISION,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Division/Service',+
+   PAGE=1,+
+   NAME=DIVISION;
+AT(11:11,36:51)/U,+
+   SOURCE=COLLABORATEUR.DOSSIER_BUTINE,+
+   SIZE=16,+
+   OUTPUT_FORMAT=<7/SER<,+
+   LABEL='Clés dossiers butinés',+
+   PAGE=2,+
+   NAME=DOSSIER_BUTINE;
+AT(12:12,36:51)/U,+
+   SOURCE=COLLABORATEUR.DOSSIER_CONSULTE,+
+   SIZE=16,+
+   OUTPUT_FORMAT=<7/SER<,+
+   LABEL='Clés dossiers consultés',+
+   PAGE=2,+
+   NAME=DOSSIER_CONSULTE;
+AT(13:13,36:55)/U,+
+   SOURCE=COLLABORATEUR.ECRAN_DEPART,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1/SEC<,+
+   LABEL='Ecran départ',+
+   PAGE=2,+
+   NAME=ECRAN_DEPART;
+AT(14:14,36:65)/U,+
+   SOURCE=COLLABORATEUR.EMAIL,+
+   SIZE=60,+
+   OUTPUT_FORMAT=<30/VR2<,+
+   LABEL='Email',+
+   PAGE=2,+
+   NAME=EMAIL;
+AT(5:5,31:50)/U,+
+   SOURCE=COLLABORATEUR.FONCTION,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<3/SER<,+
+   LABEL='Fonctions',+
+   PAGE=1,+
+   NAME=FONCTION;
+AT(15:15,36:39)/U,+
+   SOURCE=COLLABORATEUR.FORMULE_SO,+
+   SIZE=4,+
+   LABEL='FORMULE_SO',+
+   PAGE=2,+
+   NAME=FORMULE_SO;
+AT(10:10,31:50)/U,+
+   SOURCE=COLLABORATEUR.ICONE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Taille icones',+
+   PAGE=1,+
+   NAME=ICONE;
+AT(16:16,36:55)/U,+
+   SOURCE=COLLABORATEUR.IMPRIME_GRAPHIQUE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<15<,+
+   LABEL='Nom de l''imprimante (graphique)',+
+   PAGE=2,+
+   NAME=IMPRIME_GRAPHIQUE;
+AT(17:17,36:55)/U,+
+   SOURCE=COLLABORATEUR.IMPRIME_TEXTE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<15<,+
+   LABEL='Nom de l''imprimante (texte)',+
+   PAGE=2,+
+   NAME=IMPRIME_TEXTE;
+AT(18:18,36:39)/U,+
+   SOURCE=COLLABORATEUR.INFOBULLE,+
+   SIZE=4,+
+   LABEL='Infobulles activées',+
+   PAGE=2,+
+   NAME=INFOBULLE;
+AT(19:19,36:45)/U,+
+   SOURCE=COLLABORATEUR.INSTRUC_1,+
+   SIZE=10,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Instruction é 1',+
+   PAGE=2,+
+   NAME=INSTRUC_1;
+AT(20:20,36:45)/U,+
+   SOURCE=COLLABORATEUR.INSTRUC_3,+
+   SIZE=10,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Instruction é 3',+
+   PAGE=2,+
+   NAME=INSTRUC_3;
+AT(1:1,36:45)/U,+
+   SOURCE=COLLABORATEUR.INSTRUC_5,+
+   SIZE=10,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Instruction é 5',+
+   PAGE=3,+
+   NAME=INSTRUC_5;
+AT(1:1,2:29)/P/FL,+
+   PUT('Cour.......................:'),+
+   PAGE=1,+
+   NAME=L01001;
+AT(2:2,2:29)/P/FL,+
+   PUT('Nom collaborateur..........='),+
+   PAGE=1,+
+   NAME=L01002;
+AT(3:3,2:29)/P/FL,+
+   PUT('Tribunal...................='),+
+   PAGE=1,+
+   NAME=L01003;
+AT(4:4,2:29)/P/FL,+
+   PUT('Clé collaborateur..........='),+
+   PAGE=1,+
+   NAME=L01004;
+AT(5:5,2:29)/P/FL,+
+   PUT('Fonctions.................=>'),+
+   PAGE=1,+
+   NAME=L01005;
+AT(6:6,2:29)/P/FL,+
+   PUT('Date d''entrée en fonction.=>'),+
+   PAGE=1,+
+   NAME=L01006;
+AT(7:7,2:29)/P/FL,+
+   PUT('Date de fin de la fonction=>'),+
+   PAGE=1,+
+   NAME=L01007;
+AT(8:8,2:29)/P/FL,+
+   PUT('Nom de famille.............='),+
+   PAGE=1,+
+   NAME=L01008;
+AT(9:9,2:29)/P/FL,+
+   PUT('Prénom.....................='),+
+   PAGE=1,+
+   NAME=L01009;
+AT(10:10,2:29)/P/FL,+
+   PUT('Taille icones..............:'),+
+   PAGE=1,+
+   NAME=L01010;
+AT(11:11,2:29)/P/FL,+
+   PUT('Sexe.......................='),+
+   PAGE=1,+
+   NAME=L01011;
+AT(12:12,2:29)/P/FL,+
+   PUT('Abréviation................='),+
+   PAGE=1,+
+   NAME=L01012;
+AT(13:13,2:29)/P/FL,+
+   PUT('Division/Service..........=>'),+
+   PAGE=1,+
+   NAME=L01013;
+AT(14:14,2:29)/P/FL,+
+   PUT('Né de Fax..................:'),+
+   PAGE=1,+
+   NAME=L01014;
+AT(15:15,2:29)/P/FL,+
+   PUT('Né Téléphone...............:'),+
+   PAGE=1,+
+   NAME=L01015;
+AT(16:16,2:29)/P/FL,+
+   PUT('Adresse d''envoi............:'),+
+   PAGE=1,+
+   NAME=L01016;
+AT(17:17,2:29)/P/FL,+
+   PUT('2éme ligne.................:'),+
+   PAGE=1,+
+   NAME=L01017;
+AT(18:18,2:29)/P/FL,+
+   PUT('3éme ligne.................:'),+
+   PAGE=1,+
+   NAME=L01018;
+AT(19:19,2:29)/P/FL,+
+   PUT('NPA........................:'),+
+   PAGE=1,+
+   NAME=L01019;
+AT(20:20,2:29)/P/FL,+
+   PUT('Nom de localité............:'),+
+   PAGE=1,+
+   NAME=L01020;
+AT(1:1,2:34)/P/FL,+
+   PUT('Date création...................='),+
+   PAGE=2,+
+   NAME=L02021;
+AT(2:2,2:34)/P/FL,+
+   PUT('Date modification...............='),+
+   PAGE=2,+
+   NAME=L02022;
+AT(3:3,2:34)/P/FL,+
+   PUT('Dernier utilisateur UID.........='),+
+   PAGE=2,+
+   NAME=L02023;
+AT(4:4,2:34)/P/FL,+
+   PUT('Dernier utilisateur.............='),+
+   PAGE=2,+
+   NAME=L02024;
+AT(5:5,2:34)/P/FL,+
+   PUT('Ancienneté......................='),+
+   PAGE=2,+
+   NAME=L02025;
+AT(6:6,2:34)/P/FL,+
+   PUT('Ancien Collab...................='),+
+   PAGE=2,+
+   NAME=L02026;
+AT(7:7,2:34)/P/FL,+
+   PUT('Nom profil d''accès.............=>'),+
+   PAGE=2,+
+   NAME=L02027;
+AT(8:8,2:34)/P/FL,+
+   PUT('Reéoit Emails...................='),+
+   PAGE=2,+
+   NAME=L02028;
+AT(9:9,2:34)/P/FL,+
+   PUT('Automatisme souris..............:'),+
+   PAGE=2,+
+   NAME=L02029;
+AT(10:10,2:34)/P/FL,+
+   PUT('COMPTE_VMS......................:'),+
+   PAGE=2,+
+   NAME=L02030;
+AT(11:11,2:34)/P/FL,+
+   PUT('Clés dossiers butinés...........>'),+
+   PAGE=2,+
+   NAME=L02031;
+AT(12:12,2:34)/P/FL,+
+   PUT('Clés dossiers consultés.........>'),+
+   PAGE=2,+
+   NAME=L02032;
+AT(13:13,2:34)/P/FL,+
+   PUT('Ecran départ....................:'),+
+   PAGE=2,+
+   NAME=L02033;
+AT(14:14,2:34)/P/FL,+
+   PUT('Email...........................>'),+
+   PAGE=2,+
+   NAME=L02034;
+AT(15:15,2:34)/P/FL,+
+   PUT('FORMULE_SO......................:'),+
+   PAGE=2,+
+   NAME=L02035;
+AT(16:16,2:34)/P/FL,+
+   PUT('Nom de l''imprimante (graphique).:'),+
+   PAGE=2,+
+   NAME=L02036;
+AT(17:17,2:34)/P/FL,+
+   PUT('Nom de l''imprimante (texte).....:'),+
+   PAGE=2,+
+   NAME=L02037;
+AT(18:18,2:34)/P/FL,+
+   PUT('Infobulles activées.............:'),+
+   PAGE=2,+
+   NAME=L02038;
+AT(19:19,2:34)/P/FL,+
+   PUT('Instruction é 1.................>'),+
+   PAGE=2,+
+   NAME=L02039;
+AT(20:20,2:34)/P/FL,+
+   PUT('Instruction é 3.................>'),+
+   PAGE=2,+
+   NAME=L02040;
+AT(1:1,2:34)/P/FL,+
+   PUT('Instruction é 5.................>'),+
+   PAGE=3,+
+   NAME=L03041;
+AT(2:2,2:34)/P/FL,+
+   PUT('Langue de description...........:'),+
+   PAGE=3,+
+   NAME=L03042;
+AT(3:3,2:34)/P/FL,+
+   PUT('Langue d''interface..............:'),+
+   PAGE=3,+
+   NAME=L03043;
+AT(4:4,2:34)/P/FL,+
+   PUT('Langue de recherche.............:'),+
+   PAGE=3,+
+   NAME=L03044;
+AT(5:5,2:34)/P/FL,+
+   PUT('Langue rédacteur................>'),+
+   PAGE=3,+
+   NAME=L03045;
+AT(6:6,2:34)/P/FL,+
+   PUT('Matiére (spécialité)............>'),+
+   PAGE=3,+
+   NAME=L03046;
+AT(7:7,2:34)/P/FL,+
+   PUT('Vues multiples liste de travail.>'),+
+   PAGE=3,+
+   NAME=L03047;
+AT(8:8,2:34)/P/FL,+
+   PUT('Participation é 3...............>'),+
+   PAGE=3,+
+   NAME=L03048;
+AT(9:9,2:34)/P/FL,+
+   PUT('Participation é 5...............>'),+
+   PAGE=3,+
+   NAME=L03049;
+AT(10:10,2:34)/P/FL,+
+   PUT('Présidence pure.................>'),+
+   PAGE=3,+
+   NAME=L03050;
+AT(11:11,2:34)/P/FL,+
+   PUT('Nom profil statistique..........:'),+
+   PAGE=3,+
+   NAME=L03051;
+AT(12:12,2:34)/P/FL,+
+   PUT('RUBRUM_SO.......................:'),+
+   PAGE=3,+
+   NAME=L03052;
+AT(13:13,2:34)/P/FL,+
+   PUT('Taux............................>'),+
+   PAGE=3,+
+   NAME=L03053;
+AT(14:14,2:34)/P/FL,+
+   PUT('TRAITEMENT_FORMULE..............:'),+
+   PAGE=3,+
+   NAME=L03054;
+AT(15:15,2:34)/P/FL,+
+   PUT('Vue liste de travail............:'),+
+   PAGE=3,+
+   NAME=L03055;
+AT(2:2,36:55)/U,+
+   SOURCE=COLLABORATEUR.LANGUE_DESC,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Langue de description',+
+   PAGE=3,+
+   NAME=LANGUE_DESC;
+AT(3:3,36:55)/U,+
+   SOURCE=COLLABORATEUR.LANGUE_INTERFACE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Langue d''interface',+
+   PAGE=3,+
+   NAME=LANGUE_INTERFACE;
+AT(4:4,36:55)/U,+
+   SOURCE=COLLABORATEUR.LANGUE_RECH,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Langue de recherche',+
+   PAGE=3,+
+   NAME=LANGUE_RECH;
+AT(5:5,36:55)/U,+
+   SOURCE=COLLABORATEUR.LANGUE_REDACTEUR,+
+   SIZE=20,+
+   LABEL='Langue rédacteur',+
+   PAGE=3,+
+   NAME=LANGUE_REDACTEUR;
+AT(20:20,31:60)/U,+
+   SOURCE=COLLABORATEUR.LOC,+
+   SIZE=30,+
+   OUTPUT_FORMAT=<15/VR2<,+
+   LABEL='Nom de localité',+
+   PAGE=1,+
+   NAME=LOC;
+AT(6:6,36:55)/U,+
+   SOURCE=COLLABORATEUR.MATIERE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<6/SER<,+
+   LABEL='Matiére (spécialité)',+
+   PAGE=3,+
+   NAME=MATIERE;
+AT(7:7,36:60)/U,+
+   SOURCE=COLLABORATEUR.MULTI_VUE_LT,+
+   SIZE=50,+
+   OUTPUT_FORMAT=<50/SER<,+
+   LABEL='Vues multiples liste de travail',+
+   PAGE=3,+
+   NAME=MULTI_VUE_LT;
+AT(8:8,31:60)/U,+
+   SOURCE=COLLABORATEUR.NOM,+
+   SIZE=30,+
+   OUTPUT_FORMAT=<15/VR2<,+
+   LABEL='Nom de famille',+
+   PAGE=1,+
+   NAME=NOM;
+AT(2:2,31:50)/U,+
+   SOURCE=COLLABORATEUR.NOM_COLLAB,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Nom collaborateur',+
+   PAGE=1,+
+   NAME=NOM_COLLAB;
+AT(19:19,31:40)/U,+
+   SOURCE=COLLABORATEUR.NPA,+
+   SIZE=10,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='NPA',+
+   PAGE=1,+
+   NAME=NPA;
+AT(14:14,31:70)/U,+
+   SOURCE=COLLABORATEUR.NUM_FAX,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<12<,+
+   LABEL='Né de Fax',+
+   PAGE=1,+
+   NAME=NUM_FAX;
+AT(15:15,31:70)/U,+
+   SOURCE=COLLABORATEUR.NUM_TEL,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<12<,+
+   LABEL='Né Téléphone',+
+   PAGE=1,+
+   NAME=NUM_TEL;
+AT(8:8,36:45)/U,+
+   SOURCE=COLLABORATEUR.PARTICIP_3,+
+   SIZE=10,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Participation é 3',+
+   PAGE=3,+
+   NAME=PARTICIP_3;
+AT(9:9,36:45)/U,+
+   SOURCE=COLLABORATEUR.PARTICIP_5,+
+   SIZE=10,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Participation é 5',+
+   PAGE=3,+
+   NAME=PARTICIP_5;
+AT(9:9,31:50)/U,+
+   SOURCE=COLLABORATEUR.PRENOM,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<15/VR2<,+
+   LABEL='Prénom',+
+   PAGE=1,+
+   NAME=PRENOM;
+AT(10:10,36:45)/U,+
+   SOURCE=COLLABORATEUR.PRESID,+
+   SIZE=10,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Présidence pure',+
+   PAGE=3,+
+   NAME=PRESID;
+AT(7:7,36:55)/U,+
+   SOURCE=COLLABORATEUR.PROFIL_ACCES,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Nom profil d''accès',+
+   PAGE=2,+
+   NAME=PROFIL_ACCES;
+AT(11:11,36:55)/U,+
+   SOURCE=COLLABORATEUR.PROFIL_STAT,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Nom profil statistique',+
+   PAGE=3,+
+   NAME=PROFIL_STAT;
+AT(8:8,36:39)/U,+
+   SOURCE=COLLABORATEUR.RECOIT_EMAIL,+
+   SIZE=4,+
+   LABEL='Reéoit Emails',+
+   PAGE=2,+
+   NAME=RECOIT_EMAIL;
+AT(12:12,36:39)/U,+
+   SOURCE=COLLABORATEUR.RUBRUM_SO,+
+   SIZE=4,+
+   LABEL='RUBRUM_SO',+
+   PAGE=3,+
+   NAME=RUBRUM_SO;
+AT(11:11,31:50)/U,+
+   SOURCE=COLLABORATEUR.SEXE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Sexe',+
+   PAGE=1,+
+   NAME=SEXE;
+AT(13:13,36:43)/U,+
+   SOURCE=COLLABORATEUR.TAUX,+
+   SIZE=8,+
+   OUTPUT_FORMAT=<3<,+
+   LABEL='Taux',+
+   PAGE=3,+
+   NAME=TAUX;
+AT(14:14,36:39)/U,+
+   SOURCE=COLLABORATEUR.TRAITEMENT_FORMULE,+
+   SIZE=4,+
+   LABEL='TRAITEMENT_FORMULE',+
+   PAGE=3,+
+   NAME=TRAITEMENT_FORMULE;
+AT(3:3,31:50)/U,+
+   SOURCE=COLLABORATEUR.TRIBUNAL,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<3<,+
+   LABEL='Tribunal',+
+   PAGE=1,+
+   NAME=TRIBUNAL;
+AT(3:3,36:55)/U,+
+   SOURCE=COLLABORATEUR.UID,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<8<,+
+   LABEL='Dernier utilisateur UID',+
+   PAGE=2,+
+   NAME=UID;
+AT(4:4,36:55)/U,+
+   SOURCE=COLLABORATEUR.USER,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Dernier utilisateur',+
+   PAGE=2,+
+   NAME=USER;
+AT(15:15,36:65)/U,+
+   SOURCE=COLLABORATEUR.VUE_LT,+
+   SIZE=30,+
+   OUTPUT_FORMAT=<30<,+
+   LABEL='Vue liste de travail',+
+   PAGE=3,+
+   NAME=VUE_LT;
+*
+VIEW=COMPO,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(COMPO),+
+   FORM=YES;
+AT(4:4,30:35)/UNDERSCORE,+
+   SOURCE=COMPO.ABS_MIN,+
+   SIZE=6,+
+   OUTPUT_FORMAT=<2<,+
+   LABEL='Nbr.j.ouvr.min.absence',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=ABS_MIN;
+AT(1:1,30:33)/UNDERSCORE,+
+   SOURCE=COMPO.ACTIVE,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Active {0}',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=ACTIVE;
+AT(5:5,30:35)/UNDERSCORE,+
+   SOURCE=COMPO.ANTICIP_DEPART,+
+   SIZE=6,+
+   OUTPUT_FORMAT=<2<,+
+   LABEL='Nbr.j.ouvr.avt départ {1}',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=ANTICIP_DEPART;
+AT(6:6,30:35)/UNDERSCORE,+
+   SOURCE=COMPO.ANTICIP_RETOUR,+
+   SIZE=6,+
+   OUTPUT_FORMAT=<2<,+
+   LABEL='Nbr.j.ouvr.avt retour {5}',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=ANTICIP_RETOUR;
+AT(11:11,30:33)/UNDERSCORE,+
+   SOURCE=COMPO.ATTRIB,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Compo é l`attrib.{0}',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=ATTRIB;
+AT(6:6,30:80)/UNDERSCORE/SER,+
+   SOURCE=COMPO.COLLEGE_5_D,+
+   SIZE=51,+
+   OUTPUT_FORMAT=<20/SER<,+
+   LABEL='Coll.5 D',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=COLLEGE_5_D;
+AT(7:7,30:80)/UNDERSCORE/SER,+
+   SOURCE=COMPO.COLLEGE_5_F,+
+   SIZE=51,+
+   OUTPUT_FORMAT=<20/SER<,+
+   LABEL='Coll.5 F',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=COLLEGE_5_F;
+AT(8:8,30:80)/UNDERSCORE/SER,+
+   SOURCE=COMPO.COLLEGE_5_I,+
+   SIZE=51,+
+   OUTPUT_FORMAT=<20/SER<,+
+   LABEL='Coll.5 I',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=COLLEGE_5_I;
+AT(5:5,30:80)/UNDERSCORE/SER,+
+   SOURCE=COMPO.COLLEGE_COMPLET,+
+   SIZE=51,+
+   OUTPUT_FORMAT=<20/SER<,+
+   LABEL='Coll.3 long terme',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=COLLEGE_COMPLET;
+AT(4:4,30:80)/UNDERSCORE/SER,+
+   SOURCE=COMPO.COLLEGE_EFFECTIF,+
+   SIZE=51,+
+   OUTPUT_FORMAT=<20/SER<,+
+   LABEL='Coll.3 court terme',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=COLLEGE_EFFECTIF;
+AT(3:3,30:80)/UNDERSCORE/SER,+
+   SOURCE=COMPO.COLLEGE_URGENT,+
+   SIZE=51,+
+   OUTPUT_FORMAT=<20/SER<,+
+   LABEL='Coll.3 prioritaire',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=COLLEGE_URGENT;
+AT(14:14,30:80)/UNDERSCORE/SER,+
+   SOURCE=COMPO.CONSIGNE,+
+   SIZE=51,+
+   OUTPUT_FORMAT=<3/SER<,+
+   LABEL='Consigne',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=CONSIGNE;
+AT(21:21,30:80)/UNDERSCORE/SER,+
+   SOURCE=COMPO.CONSIGNE_5,+
+   SIZE=51,+
+   OUTPUT_FORMAT=<3/SER<,+
+   LABEL='Consigne 5',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=CONSIGNE_5;
+AT(1:1,30:49)/UNDERSCORE,+
+   SOURCE=COMPO.COUR,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Cour',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=COUR;
+AT(2:2,30:51)/UNDERSCORE,+
+   SOURCE=COMPO.DAT_ACTIVATION,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date activation',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=DAT_ACTIVATION;
+AT(13:13,30:51)/UNDERSCORE,+
+   SOURCE=COMPO.DAT_MODIFICATION,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date modification',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=DAT_MODIFICATION;
+AT(16:16,30:80)/UNDERSCORE/SER,+
+   SOURCE=COMPO.ECART,+
+   SIZE=51,+
+   OUTPUT_FORMAT=<4/SER<,+
+   LABEL='écart',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=ECART;
+AT(23:23,30:80)/UNDERSCORE/SER,+
+   SOURCE=COMPO.ECART_5,+
+   SIZE=51,+
+   OUTPUT_FORMAT=<4/SER<,+
+   LABEL='écart 5',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=ECART_5;
+AT(1:1,2:28)/PROTECTED/FL,+
+   PUT('Cour......................='),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01001;
+AT(2:2,2:28)/PROTECTED/FL,+
+   PUT('Présidence................:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01002;
+AT(3:3,2:28)/PROTECTED/FL,+
+   PUT('Coll.3 prioritaire........>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01003;
+AT(4:4,2:28)/PROTECTED/FL,+
+   PUT('Coll.3 court terme........>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01004;
+AT(5:5,2:28)/PROTECTED/FL,+
+   PUT('Coll.3 long terme.........>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01005;
+AT(6:6,2:28)/PROTECTED/FL,+
+   PUT('Coll.5 D..................>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01006;
+AT(7:7,2:28)/PROTECTED/FL,+
+   PUT('Coll.5 F..................>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01007;
+AT(8:8,2:28)/PROTECTED/FL,+
+   PUT('Coll.5 I..................>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01008;
+AT(9:9,2:28)/PROTECTED/FL,+
+   PUT('Quorum coll.3 long terme..='),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01009;
+AT(10:10,2:28)/PROTECTED/FL,+
+   PUT('Taux [é/ooo]..............>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01010;
+AT(11:11,2:28)/PROTECTED/FL,+
+   PUT('Total taux [é/ooo]........:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01011;
+AT(12:12,2:28)/PROTECTED/FL,+
+   PUT('Mesure....................>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01012;
+AT(13:13,2:28)/PROTECTED/FL,+
+   PUT('Total mesure..............:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01013;
+AT(14:14,2:28)/PROTECTED/FL,+
+   PUT('Consigne..................>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01014;
+AT(15:15,2:28)/PROTECTED/FL,+
+   PUT('Total consigne............:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01015;
+AT(16:16,2:28)/PROTECTED/FL,+
+   PUT('écart.....................>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01016;
+AT(17:17,2:28)/PROTECTED/FL,+
+   PUT('Pendance..................>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01017;
+AT(18:18,2:28)/PROTECTED/FL,+
+   PUT('Total pendance............:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01018;
+AT(19:19,2:28)/PROTECTED/FL,+
+   PUT('Mesure 5..................>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01019;
+AT(20:20,2:28)/PROTECTED/FL,+
+   PUT('Total mesure 5............:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01020;
+AT(21:21,2:28)/PROTECTED/FL,+
+   PUT('Consigne 5................>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01021;
+AT(22:22,2:28)/PROTECTED/FL,+
+   PUT('Total consigne 5..........:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01022;
+AT(23:23,2:28)/PROTECTED/FL,+
+   PUT('écart 5...................>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01023;
+AT(24:24,2:28)/PROTECTED/FL,+
+   PUT('Pendance 5................>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01024;
+AT(25:25,2:28)/PROTECTED/FL,+
+   PUT('Total pendance 5..........:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01025;
+AT(26:26,2:28)/PROTECTED/FL,+
+   PUT('Participation par quota...>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01026;
+AT(1:1,2:28)/PROTECTED/FL,+
+   PUT('Active {0}................='),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02001;
+AT(2:2,2:28)/PROTECTED/FL,+
+   PUT('Date activation...........:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02002;
+AT(3:3,2:28)/PROTECTED/FL,+
+   PUT('Mode calcul colléges......>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02003;
+AT(4:4,2:28)/PROTECTED/FL,+
+   PUT('Nbr.j.ouvr.min.absence....>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02004;
+AT(5:5,2:28)/PROTECTED/FL,+
+   PUT('Nbr.j.ouvr.avt départ {1}.='),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02005;
+AT(6:6,2:28)/PROTECTED/FL,+
+   PUT('Nbr.j.ouvr.avt retour {5}.='),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02006;
+AT(7:7,2:28)/PROTECTED/FL,+
+   PUT('Proactivité [j] {30}......='),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02007;
+AT(8:8,2:28)/PROTECTED/FL,+
+   PUT('PrisEnCpte rapport {0}....='),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02008;
+AT(9:9,2:28)/PROTECTED/FL,+
+   PUT('PrisEnCpte quorum {0}.....='),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02009;
+AT(10:10,2:28)/PROTECTED/FL,+
+   PUT('PrisEnCpte matiére {0}....='),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02010;
+AT(11:11,2:28)/PROTECTED/FL,+
+   PUT('Compo é l`attrib.{0}......='),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02011;
+AT(12:12,2:28)/PROTECTED/FL,+
+   PUT('Nbr.min.5 DFI.............>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02012;
+AT(13:13,2:28)/PROTECTED/FL,+
+   PUT('Date modif................='),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02013;
+AT(14:14,2:28)/PROTECTED/FL,+
+   PUT('Présidence ad hoc.........>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02014;
+AT(16:16,2:28)/PROTECTED/FL,+
+   PUT('Participation ad hoc......>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02015;
+AT(10:10,30:33)/UNDERSCORE,+
+   SOURCE=COMPO.MATIERE,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='PrisEnCpte matiére {0}',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=MATIERE;
+AT(12:12,30:80)/UNDERSCORE/SER,+
+   SOURCE=COMPO.MESURE,+
+   SIZE=51,+
+   OUTPUT_FORMAT=<3/SER<,+
+   LABEL='Mesure',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=MESURE;
+AT(19:19,30:80)/UNDERSCORE/SER,+
+   SOURCE=COMPO.MESURE_5,+
+   SIZE=51,+
+   OUTPUT_FORMAT=<3/SER<,+
+   LABEL='Mesure 5',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=MESURE_5;
+AT(12:12,30:41)/UNDERSCORE/SER,+
+   SOURCE=COMPO.MIN_5_DFI,+
+   SIZE=12,+
+   OUTPUT_FORMAT=<1/SER<,+
+   LABEL='Nbr.min.5 DFI',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=MIN_5_DFI;
+AT(3:3,30:32)/UNDERSCORE,+
+   SOURCE=COMPO.MODE_COLLEGES,+
+   SIZE=3,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Mode calcul colléges',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=MODE_COLLEGES;
+AT(9:9,30:33)/UNDERSCORE,+
+   SOURCE=COMPO.NBRE_JF,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Quorum coll.comp.',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=NBRE_JF;
+AT(17:18,2:80)/UNDERSCORE/SER,+
+   SOURCE=COMPO.PARTICIPADHOC,+
+   SIZE=158,+
+   OUTPUT_FORMAT=<60/SER<,+
+   LABEL='Particip.adhoc',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=PARTICIPADHOC;
+AT(27:27,2:80)/UNDERSCORE/SER,+
+   SOURCE=COMPO.PARTICIPARQUOTA,+
+   SIZE=79,+
+   OUTPUT_FORMAT=<60/SER<,+
+   LABEL='Particip. par quota',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=PARTICIPARQUOTA;
+AT(17:17,30:80)/UNDERSCORE/SER,+
+   SOURCE=COMPO.PENDANCE,+
+   SIZE=51,+
+   OUTPUT_FORMAT=<3/SER<,+
+   LABEL='Pendance',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=PENDANCE;
+AT(24:24,30:80)/UNDERSCORE/SER,+
+   SOURCE=COMPO.PENDANCE_5,+
+   SIZE=51,+
+   OUTPUT_FORMAT=<3/SER<,+
+   LABEL='Pendance 5',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=PENDANCE_5;
+AT(15:15,2:80)/UNDERSCORE/SER,+
+   SOURCE=COMPO.PRESIDADHOC,+
+   SIZE=79,+
+   OUTPUT_FORMAT=<60/SER<,+
+   LABEL='Présid.adhoc',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=PRESIDADHOC;
+AT(2:2,30:49)/UNDERSCORE,+
+   SOURCE=COMPO.PRESIDENCE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Présidence',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=PRESIDENCE;
+AT(7:7,30:37)/UNDERSCORE,+
+   SOURCE=COMPO.PROACTIVITE,+
+   SIZE=8,+
+   OUTPUT_FORMAT=<3<,+
+   LABEL='Proactivité [j] {30}',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=PROACTIVITE;
+AT(9:9,30:33)/UNDERSCORE,+
+   SOURCE=COMPO.QUORUM,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='PrisEnCpte quorum {0}',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=QUORUM;
+AT(8:8,30:33)/UNDERSCORE,+
+   SOURCE=COMPO.RAPPORT,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='PrisEnCpte rapport {0}',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=RAPPORT;
+AT(10:10,30:80)/UNDERSCORE/SER,+
+   SOURCE=COMPO.TAUX,+
+   SIZE=51,+
+   OUTPUT_FORMAT=<5/SER<,+
+   LABEL='Taux [é/ooo]',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=TAUX;
+AT(15:15,30:39)/UNDERSCORE,+
+   SOURCE=COMPO.TOTAL_CONSIGNE,+
+   SIZE=10,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Total consigne',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=TOTAL_CONSIGNE;
+AT(22:22,30:39)/UNDERSCORE,+
+   SOURCE=COMPO.TOTAL_CONSIGNE_5,+
+   SIZE=10,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Total consigne 5',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=TOTAL_CONSIGNE_5;
+AT(13:13,30:39)/UNDERSCORE,+
+   SOURCE=COMPO.TOTAL_MESURE,+
+   SIZE=10,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Total mesure',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=TOTAL_MESURE;
+AT(20:20,30:39)/UNDERSCORE,+
+   SOURCE=COMPO.TOTAL_MESURE_5,+
+   SIZE=10,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Total mesure 5',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=TOTAL_MESURE_5;
+AT(18:18,30:39)/UNDERSCORE,+
+   SOURCE=COMPO.TOTAL_PENDANCE,+
+   SIZE=10,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Total pendance',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=TOTAL_PENDANCE;
+AT(25:25,30:39)/UNDERSCORE,+
+   SOURCE=COMPO.TOTAL_PENDANCE_5,+
+   SIZE=10,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Total pendance 5',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=TOTAL_PENDANCE_5;
+AT(11:11,30:41)/UNDERSCORE,+
+   SOURCE=COMPO.TOTAL_TAUX,+
+   SIZE=12,+
+   OUTPUT_FORMAT=<5<,+
+   LABEL='Total taux [é/ooo]',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=TOTAL_TAUX;
+*
+VIEW=DECISION,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(DECISION),+
+   FORM=YES;
+AT(6:6,47:50)/U,+
+   SOURCE=DECISION.ATTAQUABLE,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Attaquable',+
+   PAGE=2,+
+   NAME=ATTAQUABLE;
+AT(7:7,47:50)/U,+
+   SOURCE=DECISION.AUTRE_PUB,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Autre publication',+
+   PAGE=2,+
+   NAME=AUTRE_PUB;
+AT(7:7,30:49)/U,+
+   SOURCE=DECISION.CHEZ,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<3<,+
+   LABEL='Chez',+
+   PAGE=1,+
+   NAME=CHEZ;
+AT(1:1,30:47)/U,+
+   SOURCE=DECISION.CLE_DECISION,+
+   SIZE=18,+
+   OUTPUT_FORMAT=>8>,+
+   LABEL='Clé décision',+
+   PAGE=1,+
+   NAME=CLE_DECISION;
+AT(2:2,30:49)/U,+
+   SOURCE=DECISION.CLE_PIECE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<12<,+
+   LABEL='Clé piéce',+
+   PAGE=1,+
+   NAME=CLE_PIECE;
+AT(3:3,30:49)/U,+
+   SOURCE=DECISION.CLE_PIECE_DISPO,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<12/SER<,+
+   LABEL='Clé piéce dispo',+
+   PAGE=1,+
+   NAME=CLE_PIECE_DISPO;
+AT(10:10,47:68)/U,+
+   SOURCE=DECISION.CODE_AZA,+
+   SIZE=22,+
+   LABEL='Code AZA',+
+   PAGE=2,+
+   NAME=CODE_AZA;
+AT(11:11,47:66)/U,+
+   SOURCE=DECISION.CODE_AZA_2,+
+   SIZE=20,+
+   LABEL='Code AZA 2',+
+   PAGE=2,+
+   NAME=CODE_AZA_2;
+AT(12:12,47:66)/U,+
+   SOURCE=DECISION.CODE_MEDIA,+
+   SIZE=20,+
+   LABEL='Code Média',+
+   PAGE=2,+
+   NAME=CODE_MEDIA;
+AT(35:35,47:50)/U,+
+   SOURCE=DECISION.COMMUNIQUE,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Communiqué de presse',+
+   PAGE=2,+
+   NAME=COMMUNIQUE;
+AT(8:8,30:49)/U,+
+   SOURCE=DECISION.COMP_INSTANCE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20/SEC<,+
+   LABEL='Composition de l''instance',+
+   PAGE=1,+
+   NAME=COMP_INSTANCE;
+AT(23:23,30:109)/U,+
+   SOURCE=DECISION.CONTENU_EXP,+
+   SIZE=80,+
+   OUTPUT_FORMAT=<80/SER<,+
+   LABEL='Contenu exp.',+
+   PAGE=1,+
+   NAME=CONTENU_EXP;
+AT(36:36,47:66)/U,+
+   SOURCE=DECISION.CRIT_COMPO,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1/SER<,+
+   LABEL='Critéres composition',+
+   PAGE=2,+
+   NAME=CRIT_COMPO;
+AT(34:34,47:66)/U,+
+   SOURCE=DECISION.CT,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='CT',+
+   PAGE=2,+
+   NAME=CT;
+AT(14:14,30:51)/U,+
+   SOURCE=DECISION.DAT_APPR_PROJET,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date approbation projet',+
+   PAGE=1,+
+   NAME=DAT_APPR_PROJET;
+AT(29:29,30:51)/U,+
+   SOURCE=DECISION.DAT_AUDIENCE,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date de l''audience',+
+   PAGE=1,+
+   NAME=DAT_AUDIENCE;
+AT(32:32,47:68)/U,+
+   SOURCE=DECISION.DAT_AZA_HORS_INT,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date Aza hors internet',+
+   PAGE=2,+
+   NAME=DAT_AZA_HORS_INT;
+AT(31:31,47:68)/U,+
+   SOURCE=DECISION.DAT_AZA_SUR_INT,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date Aza sur internet',+
+   PAGE=2,+
+   NAME=DAT_AZA_SUR_INT;
+AT(30:30,30:51)/U,+
+   SOURCE=DECISION.DAT_CHEZ,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Chez depuis le',+
+   PAGE=1,+
+   NAME=DAT_CHEZ;
+AT(27:27,47:68)/U,+
+   SOURCE=DECISION.DAT_CREATION,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date création',+
+   PAGE=2,+
+   NAME=DAT_CREATION;
+AT(15:15,47:68)/U,+
+   SOURCE=DECISION.DAT_DEB_RAP,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date début rapport',+
+   PAGE=2,+
+   NAME=DAT_DEB_RAP;
+AT(18:18,47:68)/U,+
+   SOURCE=DECISION.DAT_DEB_REDAC,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date début rédaction',+
+   PAGE=2,+
+   NAME=DAT_DEB_REDAC;
+AT(6:6,30:51)/U,+
+   SOURCE=DECISION.DAT_DECISION,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date décision',+
+   PAGE=1,+
+   NAME=DAT_DECISION;
+AT(19:19,47:68)/U,+
+   SOURCE=DECISION.DAT_DEC_REC,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Dates déc. recours',+
+   PAGE=2,+
+   NAME=DAT_DEC_REC;
+AT(16:16,47:68)/U,+
+   SOURCE=DECISION.DAT_DISPO,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date expéd. dispo',+
+   PAGE=2,+
+   NAME=DAT_DISPO;
+AT(1:1,24:45)/U,+
+   SOURCE=DECISION.DAT_EMBARGO,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='DAT_EMBARGO',+
+   PAGE=3,+
+   NAME=DAT_EMBARGO;
+AT(15:15,30:51)/U,+
+   SOURCE=DECISION.DAT_EXEC,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date éxécutoire',+
+   PAGE=1,+
+   NAME=DAT_EXEC;
+AT(18:18,30:51)/U,+
+   SOURCE=DECISION.DAT_EXP,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date expédition',+
+   PAGE=1,+
+   NAME=DAT_EXP;
+AT(17:17,47:68)/U,+
+   SOURCE=DECISION.DAT_FIN_RAP,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date fin rapport',+
+   PAGE=2,+
+   NAME=DAT_FIN_RAP;
+AT(20:20,47:68)/U,+
+   SOURCE=DECISION.DAT_FIN_REDAC,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date fin rédaction',+
+   PAGE=2,+
+   NAME=DAT_FIN_REDAC;
+AT(28:28,47:68)/U,+
+   SOURCE=DECISION.DAT_MODIFICATION,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date modification',+
+   PAGE=2,+
+   NAME=DAT_MODIFICATION;
+AT(21:21,47:68)/U,+
+   SOURCE=DECISION.DAT_MODIF_SEAN,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date de modification des données de séance',+
+   PAGE=2,+
+   NAME=DAT_MODIF_SEAN;
+AT(2:2,24:45)/U,+
+   SOURCE=DECISION.DAT_MUT_STATUT,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Dat.mut.statut',+
+   PAGE=3,+
+   NAME=DAT_MUT_STATUT;
+AT(22:22,47:68)/U,+
+   SOURCE=DECISION.DAT_NOTIF_DEC,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Dates de notif.',+
+   PAGE=2,+
+   NAME=DAT_NOTIF_DEC;
+AT(23:23,47:68)/U,+
+   SOURCE=DECISION.DAT_REC,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Dates recours',+
+   PAGE=2,+
+   NAME=DAT_REC;
+AT(24:24,47:68)/U,+
+   SOURCE=DECISION.DAT_SEAN_HORS_INT,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date séance publique hors internet',+
+   PAGE=2,+
+   NAME=DAT_SEAN_HORS_INT;
+AT(25:25,47:68)/U,+
+   SOURCE=DECISION.DAT_SEAN_SUR_INT,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date séance publique sur internet',+
+   PAGE=2,+
+   NAME=DAT_SEAN_SUR_INT;
+AT(20:20,30:49)/U,+
+   SOURCE=DECISION.DESTIN_EXP,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20/SEC<,+
+   LABEL='Destinataire',+
+   PAGE=1,+
+   NAME=DESTIN_EXP;
+AT(9:9,30:49)/U,+
+   SOURCE=DECISION.EXPED_DISPO,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<3<,+
+   LABEL='Abrév. expéd. dispo',+
+   PAGE=1,+
+   NAME=EXPED_DISPO;
+AT(31:31,30:49)/U,+
+   SOURCE=DECISION.GENRE_AUDIENCE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Genre d''audience',+
+   PAGE=1,+
+   NAME=GENRE_AUDIENCE;
+AT(32:32,30:49)/U,+
+   SOURCE=DECISION.HEURE_AUDIENCE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<5<,+
+   LABEL='Heure d''audience',+
+   PAGE=1,+
+   NAME=HEURE_AUDIENCE;
+AT(21:21,30:49)/U,+
+   SOURCE=DECISION.INST_REC,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20/SER<,+
+   LABEL='Instance recours',+
+   PAGE=1,+
+   NAME=INST_REC;
+AT(14:14,47:50)/U,+
+   SOURCE=DECISION.INTERNET,+
+   SIZE=4,+
+   LABEL='Internet (TFA)',+
+   PAGE=2,+
+   NAME=INTERNET;
+AT(17:17,30:49)/U,+
+   SOURCE=DECISION.ISSUE_DEC,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4/SER<,+
+   LABEL='Issues recours',+
+   PAGE=1,+
+   NAME=ISSUE_DEC;
+AT(1:1,2:28)/P/FL,+
+   PUT('Clé décision..............='),+
+   PAGE=1,+
+   NAME=L01001;
+AT(2:2,2:28)/P/FL,+
+   PUT('Clé piéce.................>'),+
+   PAGE=1,+
+   NAME=L01002;
+AT(3:3,2:28)/P/FL,+
+   PUT('Clé piéce dispo...........>'),+
+   PAGE=1,+
+   NAME=L01003;
+AT(4:4,2:28)/P/FL,+
+   PUT('Né dossiers..............=>'),+
+   PAGE=1,+
+   NAME=L01004;
+AT(5:5,2:28)/P/FL,+
+   PUT('Moyens recours............>'),+
+   PAGE=1,+
+   NAME=L01005;
+AT(6:6,2:28)/P/FL,+
+   PUT('Date décision.............:'),+
+   PAGE=1,+
+   NAME=L01006;
+AT(7:7,2:28)/P/FL,+
+   PUT('Chez......................:'),+
+   PAGE=1,+
+   NAME=L01007;
+AT(8:8,2:28)/P/FL,+
+   PUT('Composition de l''instance=>'),+
+   PAGE=1,+
+   NAME=L01008;
+AT(9:9,2:28)/P/FL,+
+   PUT('Abrév. expéd. dispo.......:'),+
+   PAGE=1,+
+   NAME=L01009;
+AT(10:10,2:28)/P/FL,+
+   PUT('Rapporteur................:'),+
+   PAGE=1,+
+   NAME=L01010;
+AT(11:11,2:28)/P/FL,+
+   PUT('Quorum....................='),+
+   PAGE=1,+
+   NAME=L01011;
+AT(12:12,2:28)/P/FL,+
+   PUT('Mode décision.............='),+
+   PAGE=1,+
+   NAME=L01012;
+AT(13:13,2:28)/P/FL,+
+   PUT('Mode réglement............='),+
+   PAGE=1,+
+   NAME=L01013;
+AT(14:14,2:28)/P/FL,+
+   PUT('Date approbation projet...:'),+
+   PAGE=1,+
+   NAME=L01014;
+AT(15:15,2:28)/P/FL,+
+   PUT('Date éxécutoire...........:'),+
+   PAGE=1,+
+   NAME=L01015;
+AT(16:16,2:28)/P/FL,+
+   PUT('Nbr pages.................:'),+
+   PAGE=1,+
+   NAME=L01016;
+AT(17:17,2:28)/P/FL,+
+   PUT('Issues recours............>'),+
+   PAGE=1,+
+   NAME=L01017;
+AT(18:18,2:28)/P/FL,+
+   PUT('Date expédition...........:'),+
+   PAGE=1,+
+   NAME=L01018;
+AT(19:19,2:28)/P/FL,+
+   PUT('Nom secrétaire............:'),+
+   PAGE=1,+
+   NAME=L01019;
+AT(20:20,2:28)/P/FL,+
+   PUT('Destinataire..............>'),+
+   PAGE=1,+
+   NAME=L01020;
+AT(21:21,2:28)/P/FL,+
+   PUT('Instance recours..........>'),+
+   PAGE=1,+
+   NAME=L01021;
+AT(22:22,2:28)/P/FL,+
+   PUT('Recourant.................>'),+
+   PAGE=1,+
+   NAME=L01022;
+AT(23:23,2:28)/P/FL,+
+   PUT('Contenu exp...............>'),+
+   PAGE=1,+
+   NAME=L01023;
+AT(24:24,2:28)/P/FL,+
+   PUT('Réf. déc. recours.........>'),+
+   PAGE=1,+
+   NAME=L01024;
+AT(25:25,2:28)/P/FL,+
+   PUT('Réf. doss. recours........>'),+
+   PAGE=1,+
+   NAME=L01025;
+AT(26:26,2:28)/P/FL,+
+   PUT('Rem. notif................>'),+
+   PAGE=1,+
+   NAME=L01026;
+AT(27:27,2:28)/P/FL,+
+   PUT('Numéro des destinataires..>'),+
+   PAGE=1,+
+   NAME=L01027;
+AT(28:28,2:28)/P/FL,+
+   PUT('Remarque expédition.......>'),+
+   PAGE=1,+
+   NAME=L01028;
+AT(29:29,2:28)/P/FL,+
+   PUT('Date de l''audience........:'),+
+   PAGE=1,+
+   NAME=L01029;
+AT(30:30,2:28)/P/FL,+
+   PUT('Chez depuis le............:'),+
+   PAGE=1,+
+   NAME=L01030;
+AT(31:31,2:28)/P/FL,+
+   PUT('Genre d''audience..........:'),+
+   PAGE=1,+
+   NAME=L01031;
+AT(32:32,2:28)/P/FL,+
+   PUT('Heure d''audience..........:'),+
+   PAGE=1,+
+   NAME=L01032;
+AT(33:33,2:28)/P/FL,+
+   PUT('Salle.....................:'),+
+   PAGE=1,+
+   NAME=L01033;
+AT(34:34,2:28)/P/FL,+
+   PUT('Nos de dossier séance.....:'),+
+   PAGE=1,+
+   NAME=L01034;
+AT(35:35,2:28)/P/FL,+
+   PUT('Objet décision............>'),+
+   PAGE=1,+
+   NAME=L01035;
+AT(36:36,2:28)/P/FL,+
+   PUT('Parties audience..........>'),+
+   PAGE=1,+
+   NAME=L01036;
+AT(1:1,2:45)/P/FL,+
+   PUT('Remarque audience..........................:'),+
+   PAGE=2,+
+   NAME=L02037;
+AT(2:2,2:45)/P/FL,+
+   PUT('Rem. éxécution.............................>'),+
+   PAGE=2,+
+   NAME=L02038;
+AT(3:3,2:45)/P/FL,+
+   PUT('Remarque générale..........................>'),+
+   PAGE=2,+
+   NAME=L02039;
+AT(4:4,2:45)/P/FL,+
+   PUT('Statut déc.................................:'),+
+   PAGE=2,+
+   NAME=L02040;
+AT(5:5,2:45)/P/FL,+
+   PUT('Publication................................:'),+
+   PAGE=2,+
+   NAME=L02041;
+AT(6:6,2:45)/P/FL,+
+   PUT('Attaquable.................................:'),+
+   PAGE=2,+
+   NAME=L02042;
+AT(7:7,2:45)/P/FL,+
+   PUT('Autre publication..........................='),+
+   PAGE=2,+
+   NAME=L02043;
+AT(8:8,2:45)/P/FL,+
+   PUT('Presse avisée..............................:'),+
+   PAGE=2,+
+   NAME=L02044;
+AT(9:9,2:45)/P/FL,+
+   PUT('Remarque publication.......................:'),+
+   PAGE=2,+
+   NAME=L02045;
+AT(10:10,2:45)/P/FL,+
+   PUT('Code AZA...................................:'),+
+   PAGE=2,+
+   NAME=L02046;
+AT(11:11,2:45)/P/FL,+
+   PUT('Code AZA 2.................................:'),+
+   PAGE=2,+
+   NAME=L02047;
+AT(12:12,2:45)/P/FL,+
+   PUT('Code Média.................................:'),+
+   PAGE=2,+
+   NAME=L02048;
+AT(13:13,2:45)/P/FL,+
+   PUT('Mise é disposition Rubrum & dispo..........:'),+
+   PAGE=2,+
+   NAME=L02049;
+AT(14:14,2:45)/P/FL,+
+   PUT('Internet (TFA).............................='),+
+   PAGE=2,+
+   NAME=L02050;
+AT(15:15,2:45)/P/FL,+
+   PUT('Date début rapport.........................:'),+
+   PAGE=2,+
+   NAME=L02051;
+AT(16:16,2:45)/P/FL,+
+   PUT('Date expéd. dispo..........................:'),+
+   PAGE=2,+
+   NAME=L02052;
+AT(17:17,2:45)/P/FL,+
+   PUT('Date fin rapport...........................:'),+
+   PAGE=2,+
+   NAME=L02053;
+AT(18:18,2:45)/P/FL,+
+   PUT('Date début rédaction.......................:'),+
+   PAGE=2,+
+   NAME=L02054;
+AT(19:19,2:45)/P/FL,+
+   PUT('Dates déc. recours.........................>'),+
+   PAGE=2,+
+   NAME=L02055;
+AT(20:20,2:45)/P/FL,+
+   PUT('Date fin rédaction.........................:'),+
+   PAGE=2,+
+   NAME=L02056;
+AT(21:21,2:45)/P/FL,+
+   PUT('Date de modification des données de séance.:'),+
+   PAGE=2,+
+   NAME=L02057;
+AT(22:22,2:45)/P/FL,+
+   PUT('Dates de notif.............................>'),+
+   PAGE=2,+
+   NAME=L02058;
+AT(23:23,2:45)/P/FL,+
+   PUT('Dates recours..............................>'),+
+   PAGE=2,+
+   NAME=L02059;
+AT(24:24,2:45)/P/FL,+
+   PUT('Date séance publique hors internet.........:'),+
+   PAGE=2,+
+   NAME=L02060;
+AT(25:25,2:45)/P/FL,+
+   PUT('Date séance publique sur internet..........:'),+
+   PAGE=2,+
+   NAME=L02061;
+AT(26:26,2:45)/P/FL,+
+   PUT('Visible....................................:'),+
+   PAGE=2,+
+   NAME=L02062;
+AT(27:27,2:45)/P/FL,+
+   PUT('Date création..............................='),+
+   PAGE=2,+
+   NAME=L02063;
+AT(28:28,2:45)/P/FL,+
+   PUT('Date modification..........................='),+
+   PAGE=2,+
+   NAME=L02064;
+AT(29:29,2:45)/P/FL,+
+   PUT('Dernier utilisateur UID....................='),+
+   PAGE=2,+
+   NAME=L02065;
+AT(30:30,2:45)/P/FL,+
+   PUT('Dernier utilisateur........................='),+
+   PAGE=2,+
+   NAME=L02066;
+AT(31:31,2:45)/P/FL,+
+   PUT('Date Aza sur internet......................:'),+
+   PAGE=2,+
+   NAME=L02067;
+AT(32:32,2:45)/P/FL,+
+   PUT('Date Aza hors internet.....................:'),+
+   PAGE=2,+
+   NAME=L02068;
+AT(33:33,2:45)/P/FL,+
+   PUT('Aza hors Internet par......................:'),+
+   PAGE=2,+
+   NAME=L02069;
+AT(34:34,2:45)/P/FL,+
+   PUT('CT.........................................='),+
+   PAGE=2,+
+   NAME=L02070;
+AT(35:35,2:45)/P/FL,+
+   PUT('Communiqué de presse.......................:'),+
+   PAGE=2,+
+   NAME=L02071;
+AT(36:36,2:45)/P/FL,+
+   PUT('Critéres composition.......................>'),+
+   PAGE=2,+
+   NAME=L02072;
+AT(1:1,2:22)/P/FL,+
+   PUT('DAT_EMBARGO.........:'),+
+   PAGE=3,+
+   NAME=L03073;
+AT(2:2,2:22)/P/FL,+
+   PUT('Dat.mut.statut......:'),+
+   PAGE=3,+
+   NAME=L03074;
+AT(3:3,2:22)/P/FL,+
+   PUT('Publication B.......:'),+
+   PAGE=3,+
+   NAME=L03075;
+AT(4:4,2:22)/P/FL,+
+   PUT('Réf. publication....:'),+
+   PAGE=3,+
+   NAME=L03076;
+AT(5:5,2:22)/P/FL,+
+   PUT('Rem. compo..........>'),+
+   PAGE=3,+
+   NAME=L03077;
+AT(6:6,2:22)/P/FL,+
+   PUT('Taux rédac. rapport.:'),+
+   PAGE=3,+
+   NAME=L03078;
+AT(12:12,30:49)/U,+
+   SOURCE=DECISION.MODE_DECISION,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<2<,+
+   LABEL='Mode décision',+
+   PAGE=1,+
+   NAME=MODE_DECISION;
+AT(13:13,30:49)/U,+
+   SOURCE=DECISION.MODE_REGLEMENT,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Mode réglement',+
+   PAGE=1,+
+   NAME=MODE_REGLEMENT;
+AT(5:5,30:49)/U,+
+   SOURCE=DECISION.MOYEN_REC,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<6/SER<,+
+   LABEL='Moyens recours',+
+   PAGE=1,+
+   NAME=MOYEN_REC;
+AT(16:16,30:39)/U,+
+   SOURCE=DECISION.NB_PAGE,+
+   SIZE=10,+
+   OUTPUT_FORMAT=>4>,+
+   LABEL='Nbr pages',+
+   PAGE=1,+
+   NAME=NB_PAGE;
+AT(34:34,30:114)/U,+
+   SOURCE=DECISION.NOS_DOS_SEAN,+
+   SIZE=85,+
+   OUTPUT_FORMAT=<80<,+
+   LABEL='Nos de dossier séance',+
+   PAGE=1,+
+   NAME=NOS_DOS_SEAN;
+AT(4:4,30:49)/U,+
+   SOURCE=DECISION.NUM_DOSSIER_REGR,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<15/SEC<,+
+   LABEL='Né dossiers',+
+   PAGE=1,+
+   NAME=NUM_DOSSIER_REGR;
+AT(27:27,30:43)/U,+
+   SOURCE=DECISION.NUM_IMP,+
+   SIZE=14,+
+   OUTPUT_FORMAT=<6/SEC<,+
+   LABEL='Numéro des destinataires',+
+   PAGE=1,+
+   NAME=NUM_IMP;
+AT(35:35,30:129)/U,+
+   SOURCE=DECISION.OBJET,+
+   SIZE=400,+
+   OUTPUT_FORMAT=<77<,+
+   LABEL='Objet décision',+
+   PAGE=1,+
+   NAME=OBJET;
+AT(36:36,30:96)/U,+
+   SOURCE=DECISION.PARTIES_AUDIENCE,+
+   SIZE=134,+
+   OUTPUT_FORMAT=<77<,+
+   LABEL='Parties audience',+
+   PAGE=1,+
+   NAME=PARTIES_AUDIENCE;
+AT(8:8,47:50)/U,+
+   SOURCE=DECISION.PRESSE_AVISEE,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Presse avisée',+
+   PAGE=2,+
+   NAME=PRESSE_AVISEE;
+AT(3:3,24:27)/U,+
+   SOURCE=DECISION.PUB_B,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Publication B',+
+   PAGE=3,+
+   NAME=PUB_B;
+AT(11:11,30:39)/U,+
+   SOURCE=DECISION.QUORUM,+
+   SIZE=10,+
+   OUTPUT_FORMAT=>4>,+
+   LABEL='Quorum',+
+   PAGE=1,+
+   NAME=QUORUM;
+AT(10:10,30:49)/U,+
+   SOURCE=DECISION.RAPPORTEUR,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Rapporteur',+
+   PAGE=1,+
+   NAME=RAPPORTEUR;
+AT(22:22,30:49)/U,+
+   SOURCE=DECISION.RECOURANT,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20/SER<,+
+   LABEL='Recourant',+
+   PAGE=1,+
+   NAME=RECOURANT;
+AT(24:24,30:69)/U,+
+   SOURCE=DECISION.REF_DEC_REC,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<40/SER<,+
+   LABEL='Réf. déc. recours',+
+   PAGE=1,+
+   NAME=REF_DEC_REC;
+AT(25:25,30:49)/U,+
+   SOURCE=DECISION.REF_DOS_REC,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20/SER<,+
+   LABEL='Réf. doss. recours',+
+   PAGE=1,+
+   NAME=REF_DOS_REC;
+AT(4:4,24:45)/U,+
+   SOURCE=DECISION.REF_PUB,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<22<,+
+   LABEL='Réf. publication',+
+   PAGE=3,+
+   NAME=REF_PUB;
+AT(1:1,47:116)/U,+
+   SOURCE=DECISION.REM_AUDIENCE,+
+   SIZE=70,+
+   OUTPUT_FORMAT=<30<,+
+   LABEL='Remarque audience',+
+   PAGE=2,+
+   NAME=REM_AUDIENCE;
+AT(5:5,24:123)/U,+
+   SOURCE=DECISION.REM_COMPO,+
+   SIZE=200,+
+   OUTPUT_FORMAT=<70/VR3<,+
+   LABEL='Rem. compo',+
+   PAGE=3,+
+   NAME=REM_COMPO;
+AT(2:2,47:96)/U,+
+   SOURCE=DECISION.REM_EXEC,+
+   SIZE=200,+
+   OUTPUT_FORMAT=<70/VR3<,+
+   LABEL='Rem. éxécution',+
+   PAGE=2,+
+   NAME=REM_EXEC;
+AT(28:28,30:129)/U,+
+   SOURCE=DECISION.REM_EXPEDITION,+
+   SIZE=200,+
+   OUTPUT_FORMAT=<50/VR4<,+
+   LABEL='Remarque expédition',+
+   PAGE=1,+
+   NAME=REM_EXPEDITION;
+AT(3:3,47:96)/U,+
+   SOURCE=DECISION.REM_GEN,+
+   SIZE=200,+
+   OUTPUT_FORMAT=<70/VR250<,+
+   LABEL='Remarque générale',+
+   PAGE=2,+
+   NAME=REM_GEN;
+AT(26:26,30:79)/U,+
+   SOURCE=DECISION.REM_NOTIF_DEC,+
+   SIZE=50,+
+   OUTPUT_FORMAT=<50/SER<,+
+   LABEL='Rem. notif.',+
+   PAGE=1,+
+   NAME=REM_NOTIF_DEC;
+AT(9:9,47:126)/U,+
+   SOURCE=DECISION.REM_PUBLICATION,+
+   SIZE=80,+
+   OUTPUT_FORMAT=<20/VR4<,+
+   LABEL='Remarque publication',+
+   PAGE=2,+
+   NAME=REM_PUBLICATION;
+AT(13:13,47:66)/U,+
+   SOURCE=DECISION.RUBRUM_DISPO,+
+   SIZE=20,+
+   LABEL='Mise é disposition Rubrum & dispo',+
+   PAGE=2,+
+   NAME=RUBRUM_DISPO;
+AT(33:33,30:49)/U,+
+   SOURCE=DECISION.SALLE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<2<,+
+   LABEL='Salle',+
+   PAGE=1,+
+   NAME=SALLE;
+AT(19:19,30:49)/U,+
+   SOURCE=DECISION.SECRETAIRE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Nom secrétaire',+
+   PAGE=1,+
+   NAME=SECRETAIRE;
+AT(4:4,47:66)/U,+
+   SOURCE=DECISION.STATUT_DEC,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<3<,+
+   LABEL='Statut déc.',+
+   PAGE=2,+
+   NAME=STATUT_DEC;
+AT(6:6,24:33)/U,+
+   SOURCE=DECISION.TAUX_REDAC,+
+   SIZE=10,+
+   OUTPUT_FORMAT=>4>,+
+   LABEL='Taux rédac. rapport',+
+   PAGE=3,+
+   NAME=TAUX_REDAC;
+AT(5:5,47:66)/U,+
+   SOURCE=DECISION.TYPE_PUB,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Publication',+
+   PAGE=2,+
+   NAME=TYPE_PUB;
+AT(29:29,47:66)/U,+
+   SOURCE=DECISION.UID,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<8<,+
+   LABEL='Dernier utilisateur UID',+
+   PAGE=2,+
+   NAME=UID;
+AT(30:30,47:66)/U,+
+   SOURCE=DECISION.USER,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Dernier utilisateur',+
+   PAGE=2,+
+   NAME=USER;
+AT(33:33,47:66)/U,+
+   SOURCE=DECISION.VISA_HORS_INT,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<3<,+
+   LABEL='Aza hors Internet par',+
+   PAGE=2,+
+   NAME=VISA_HORS_INT;
+AT(26:26,47:82)/U,+
+   SOURCE=DECISION.VISIBLE,+
+   SIZE=36,+
+   OUTPUT_FORMAT=<36<,+
+   LABEL='Visible',+
+   PAGE=2,+
+   NAME=VISIBLE;
+*
+VIEW=DELAI,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(DELAI),+
+   FORM=YES;
+AT(3:3,36:53)/U,+
+   SOURCE=DELAI.CLE_DELAI,+
+   SIZE=18,+
+   OUTPUT_FORMAT=>8>,+
+   LABEL='Clé délai',+
+   PAGE=1,+
+   NAME=CLE_DELAI;
+AT(5:5,36:55)/U,+
+   SOURCE=DELAI.CLE_DOSSIER,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<9/SER<,+
+   LABEL='Clé dossier',+
+   PAGE=1,+
+   NAME=CLE_DOSSIER;
+AT(13:13,34:53)/U,+
+   SOURCE=DELAI.CLE_PIECE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<12/SER<,+
+   LABEL='Clé-s piéce',+
+   PAGE=2,+
+   NAME=CLE_PIECE;
+AT(14:14,34:53)/U,+
+   SOURCE=DELAI.CONTROLEUR,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<3<,+
+   LABEL='Abrév. contrôleur',+
+   PAGE=2,+
+   NAME=CONTROLEUR;
+AT(12:12,34:53)/U,+
+   SOURCE=DELAI.CT,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='CT',+
+   PAGE=2,+
+   NAME=CT;
+AT(15:15,34:55)/U,+
+   SOURCE=DELAI.DAT_ACTION,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date action',+
+   PAGE=2,+
+   NAME=DAT_ACTION;
+AT(6:6,36:57)/U,+
+   SOURCE=DELAI.DAT_ANCIEN_DELAI,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date ancien délai',+
+   PAGE=1,+
+   NAME=DAT_ANCIEN_DELAI;
+AT(11:11,36:57)/U,+
+   SOURCE=DELAI.DAT_CHANGE_STATUT,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date changement de statut délai',+
+   PAGE=1,+
+   NAME=DAT_CHANGE_STATUT;
+AT(8:8,34:55)/U,+
+   SOURCE=DELAI.DAT_CREATION,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date création',+
+   PAGE=2,+
+   NAME=DAT_CREATION;
+AT(8:8,36:57)/U,+
+   SOURCE=DELAI.DAT_DELAI,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date limite du délai',+
+   PAGE=1,+
+   NAME=DAT_DELAI;
+AT(16:16,34:55)/U,+
+   SOURCE=DELAI.DAT_ECHEANCE,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date-s délai',+
+   PAGE=2,+
+   NAME=DAT_ECHEANCE;
+AT(6:6,34:55)/U,+
+   SOURCE=DELAI.DAT_ENREG,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date enregistrement réception',+
+   PAGE=2,+
+   NAME=DAT_ENREG;
+AT(7:7,36:57)/U,+
+   SOURCE=DELAI.DAT_ENVOI,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date d''envoi du délai',+
+   PAGE=1,+
+   NAME=DAT_ENVOI;
+AT(9:9,34:55)/U,+
+   SOURCE=DELAI.DAT_MODIFICATION,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date modification',+
+   PAGE=2,+
+   NAME=DAT_MODIFICATION;
+AT(17:17,34:55)/U,+
+   SOURCE=DELAI.DAT_RAPPEL,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date rappel délai',+
+   PAGE=2,+
+   NAME=DAT_RAPPEL;
+AT(12:12,36:57)/U,+
+   SOURCE=DELAI.DAT_RECEPTION,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date de réception',+
+   PAGE=1,+
+   NAME=DAT_RECEPTION;
+AT(18:18,34:55)/U,+
+   SOURCE=DELAI.DAT_TOLERANCE,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date tolérance délai',+
+   PAGE=2,+
+   NAME=DAT_TOLERANCE;
+AT(17:17,36:51)/U,+
+   SOURCE=DELAI.DERNIER_MONTANT_VERSE,+
+   SIZE=16,+
+   OUTPUT_FORMAT=<7<,+
+   LABEL='Dernier montant versé',+
+   PAGE=1,+
+   NAME=DERNIER_MONTANT_VERSE;
+AT(18:18,36:55)/U,+
+   SOURCE=DELAI.DERNIER_MONTANT_VERSE_C,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<9<,+
+   LABEL='Dernier montant versé (c)',+
+   PAGE=1,+
+   NAME=DERNIER_MONTANT_VERSE_C;
+AT(19:19,36:43)/U,+
+   SOURCE=DELAI.DERNIER_MONTANT_VERSE_CTS,+
+   SIZE=8,+
+   LABEL='Dernier montant versé (cts)',+
+   PAGE=1,+
+   NAME=DERNIER_MONTANT_VERSE_CTS;
+AT(19:19,34:43)/U,+
+   SOURCE=DELAI.DUREE,+
+   SIZE=10,+
+   OUTPUT_FORMAT=>4>,+
+   LABEL='Durée délai (jours)',+
+   PAGE=2,+
+   NAME=DUREE;
+AT(20:20,34:53)/U,+
+   SOURCE=DELAI.FERIE,+
+   SIZE=20,+
+   LABEL='Computation',+
+   PAGE=2,+
+   NAME=FERIE;
+AT(9:9,36:55)/U,+
+   SOURCE=DELAI.GENRE_DELAI,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Genre délai',+
+   PAGE=1,+
+   NAME=GENRE_DELAI;
+AT(3:3,35:54)/U,+
+   SOURCE=DELAI.HEURE_ACTION,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<5<,+
+   LABEL='Heure action',+
+   PAGE=3,+
+   NAME=HEURE_ACTION;
+AT(4:4,35:48)/U,+
+   SOURCE=DELAI.HEURE_MODIF,+
+   SIZE=14,+
+   OUTPUT_FORMAT=<6/Z<,+
+   LABEL='Heure modif.',+
+   PAGE=3,+
+   NAME=HEURE_MODIF;
+AT(5:5,35:54)/U,+
+   SOURCE=DELAI.ID_TACHE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<12<,+
+   LABEL='Identif. téche',+
+   PAGE=3,+
+   NAME=ID_TACHE;
+AT(1:1,72:80)/P/FL,+
+   PUT('Page: 1'),+
+   PAGE=1,+
+   NAME=L01001;
+AT(1:1,31:44)/P/FL,+
+   PUT('Vue DELAI DBA'),+
+   PAGE=1,+
+   NAME=L01002;
+AT(3:3,2:34)/P/FL,+
+   PUT('Clé délai.......................='),+
+   PAGE=1,+
+   NAME=L01003;
+AT(4:4,2:34)/P/FL,+
+   PUT('Numéro impliqué................=>'),+
+   PAGE=1,+
+   NAME=L01004;
+AT(5:5,2:34)/P/FL,+
+   PUT('Clé dossier.....................>'),+
+   PAGE=1,+
+   NAME=L01005;
+AT(6:6,2:34)/P/FL,+
+   PUT('Date ancien délai...............:'),+
+   PAGE=1,+
+   NAME=L01006;
+AT(7:7,2:34)/P/FL,+
+   PUT('Date d''envoi du délai...........:'),+
+   PAGE=1,+
+   NAME=L01007;
+AT(8:8,2:34)/P/FL,+
+   PUT('Date limite du délai............:'),+
+   PAGE=1,+
+   NAME=L01008;
+AT(9:9,2:34)/P/FL,+
+   PUT('Genre délai.....................='),+
+   PAGE=1,+
+   NAME=L01009;
+AT(10:10,2:34)/P/FL,+
+   PUT('Statut délai....................:'),+
+   PAGE=1,+
+   NAME=L01010;
+AT(11:11,2:34)/P/FL,+
+   PUT('Date changement de statut délai.:'),+
+   PAGE=1,+
+   NAME=L01011;
+AT(12:12,2:34)/P/FL,+
+   PUT('Date de réception...............:'),+
+   PAGE=1,+
+   NAME=L01012;
+AT(13:13,2:34)/P/FL,+
+   PUT('Né facture/AF...................:'),+
+   PAGE=1,+
+   NAME=L01013;
+AT(14:14,2:34)/P/FL,+
+   PUT('Montant total versé.............:'),+
+   PAGE=1,+
+   NAME=L01014;
+AT(15:15,2:34)/P/FL,+
+   PUT('Montant total versé (c).........:'),+
+   PAGE=1,+
+   NAME=L01015;
+AT(16:16,2:34)/P/FL,+
+   PUT('Montant total versé (cts).......:'),+
+   PAGE=1,+
+   NAME=L01016;
+AT(17:17,2:34)/P/FL,+
+   PUT('Dernier montant versé...........:'),+
+   PAGE=1,+
+   NAME=L01017;
+AT(18:18,2:34)/P/FL,+
+   PUT('Dernier montant versé (c).......:'),+
+   PAGE=1,+
+   NAME=L01018;
+AT(19:19,2:34)/P/FL,+
+   PUT('Dernier montant versé (cts).....:'),+
+   PAGE=1,+
+   NAME=L01019;
+AT(20:20,2:34)/P/FL,+
+   PUT('Montant (AF/Sur.)...............:'),+
+   PAGE=1,+
+   NAME=L01020;
+AT(1:1,72:80)/P/FL,+
+   PUT('Page: 2'),+
+   PAGE=2,+
+   NAME=L02001;
+AT(1:1,31:44)/P/FL,+
+   PUT('Vue DELAI DBA'),+
+   PAGE=2,+
+   NAME=L02002;
+AT(3:3,2:32)/P/FL,+
+   PUT('MONTANT_FI....................:'),+
+   PAGE=2,+
+   NAME=L02003;
+AT(4:4,2:32)/P/FL,+
+   PUT('MONTANT_EJ....................:'),+
+   PAGE=2,+
+   NAME=L02004;
+AT(5:5,2:32)/P/FL,+
+   PUT('MONTANT_AO....................:'),+
+   PAGE=2,+
+   NAME=L02005;
+AT(6:6,2:32)/P/FL,+
+   PUT('Date enregistrement réception.:'),+
+   PAGE=2,+
+   NAME=L02006;
+AT(7:7,2:32)/P/FL,+
+   PUT('Remarque délai................>'),+
+   PAGE=2,+
+   NAME=L02007;
+AT(8:8,2:32)/P/FL,+
+   PUT('Date création.................='),+
+   PAGE=2,+
+   NAME=L02008;
+AT(9:9,2:32)/P/FL,+
+   PUT('Date modification.............='),+
+   PAGE=2,+
+   NAME=L02009;
+AT(10:10,2:32)/P/FL,+
+   PUT('Dernier utilisateur...........='),+
+   PAGE=2,+
+   NAME=L02010;
+AT(11:11,2:32)/P/FL,+
+   PUT('Dernier utilisateur UID.......='),+
+   PAGE=2,+
+   NAME=L02011;
+AT(12:12,2:32)/P/FL,+
+   PUT('CT............................='),+
+   PAGE=2,+
+   NAME=L02012;
+AT(13:13,2:32)/P/FL,+
+   PUT('Clé-s piéce...................>'),+
+   PAGE=2,+
+   NAME=L02013;
+AT(14:14,2:32)/P/FL,+
+   PUT('Abrév. contrôleur.............:'),+
+   PAGE=2,+
+   NAME=L02014;
+AT(15:15,2:32)/P/FL,+
+   PUT('Date action...................:'),+
+   PAGE=2,+
+   NAME=L02015;
+AT(16:16,2:32)/P/FL,+
+   PUT('Date-s délai..................>'),+
+   PAGE=2,+
+   NAME=L02016;
+AT(17:17,2:32)/P/FL,+
+   PUT('Date rappel délai.............:'),+
+   PAGE=2,+
+   NAME=L02017;
+AT(18:18,2:32)/P/FL,+
+   PUT('Date tolérance délai..........:'),+
+   PAGE=2,+
+   NAME=L02018;
+AT(19:19,2:32)/P/FL,+
+   PUT('Durée délai (jours)...........:'),+
+   PAGE=2,+
+   NAME=L02019;
+AT(20:20,2:32)/P/FL,+
+   PUT('Computation...................:'),+
+   PAGE=2,+
+   NAME=L02020;
+AT(1:1,72:80)/P/FL,+
+   PUT('Page: 3'),+
+   PAGE=3,+
+   NAME=L03001;
+AT(1:1,31:44)/P/FL,+
+   PUT('Vue DELAI DBA'),+
+   PAGE=3,+
+   NAME=L03002;
+AT(3:3,2:33)/P/FL,+
+   PUT('Heure action...................:'),+
+   PAGE=3,+
+   NAME=L03003;
+AT(4:4,2:33)/P/FL,+
+   PUT('Heure modif....................:'),+
+   PAGE=3,+
+   NAME=L03004;
+AT(5:5,2:33)/P/FL,+
+   PUT('Identif. téche.................:'),+
+   PAGE=3,+
+   NAME=L03005;
+AT(6:6,2:33)/P/FL,+
+   PUT('Lieu action....................:'),+
+   PAGE=3,+
+   NAME=L03006;
+AT(7:7,2:33)/P/FL,+
+   PUT('Clé délai origine..............:'),+
+   PAGE=3,+
+   NAME=L03007;
+AT(8:8,2:33)/P/FL,+
+   PUT('Abrév. participant-s interne-s.>'),+
+   PAGE=3,+
+   NAME=L03008;
+AT(9:9,2:33)/P/FL,+
+   PUT('Délai provisoire...............:'),+
+   PAGE=3,+
+   NAME=L03009;
+AT(10:10,2:33)/P/FL,+
+   PUT('Rappel délai (jours)...........:'),+
+   PAGE=3,+
+   NAME=L03010;
+AT(11:11,2:33)/P/FL,+
+   PUT('Tolérance délai (jours)........:'),+
+   PAGE=3,+
+   NAME=L03011;
+AT(6:6,35:64)/U,+
+   SOURCE=DELAI.LIEU_ACTION,+
+   SIZE=30,+
+   OUTPUT_FORMAT=<30<,+
+   LABEL='Lieu action',+
+   PAGE=3,+
+   NAME=LIEU_ACTION;
+AT(20:20,36:51)/U,+
+   SOURCE=DELAI.MONTANT_AF_SU,+
+   SIZE=16,+
+   OUTPUT_FORMAT=<7<,+
+   LABEL='Montant (AF/Sur.)',+
+   PAGE=1,+
+   NAME=MONTANT_AF_SU;
+AT(5:5,34:49)/U,+
+   SOURCE=DELAI.MONTANT_AO,+
+   SIZE=16,+
+   OUTPUT_FORMAT=<7<,+
+   LABEL='MONTANT_AO',+
+   PAGE=2,+
+   NAME=MONTANT_AO;
+AT(4:4,34:49)/U,+
+   SOURCE=DELAI.MONTANT_EJ,+
+   SIZE=16,+
+   OUTPUT_FORMAT=<7<,+
+   LABEL='MONTANT_EJ',+
+   PAGE=2,+
+   NAME=MONTANT_EJ;
+AT(3:3,34:49)/U,+
+   SOURCE=DELAI.MONTANT_FI,+
+   SIZE=16,+
+   OUTPUT_FORMAT=<7<,+
+   LABEL='MONTANT_FI',+
+   PAGE=2,+
+   NAME=MONTANT_FI;
+AT(14:14,36:51)/U,+
+   SOURCE=DELAI.MONTANT_TOTAL_VERSE,+
+   SIZE=16,+
+   OUTPUT_FORMAT=<7<,+
+   LABEL='Montant total versé',+
+   PAGE=1,+
+   NAME=MONTANT_TOTAL_VERSE;
+AT(15:15,36:55)/U,+
+   SOURCE=DELAI.MONTANT_TOTAL_VERSE_C,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<9<,+
+   LABEL='Montant total versé (c)',+
+   PAGE=1,+
+   NAME=MONTANT_TOTAL_VERSE_C;
+AT(16:16,36:43)/U,+
+   SOURCE=DELAI.MONTANT_TOTAL_VERSE_CTS,+
+   SIZE=8,+
+   LABEL='Montant total versé (cts)',+
+   PAGE=1,+
+   NAME=MONTANT_TOTAL_VERSE_CTS;
+AT(13:13,36:55)/U,+
+   SOURCE=DELAI.NUM_FACTURE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<9<,+
+   LABEL='Né facture/AF',+
+   PAGE=1,+
+   NAME=NUM_FACTURE;
+AT(4:4,36:49)/U,+
+   SOURCE=DELAI.NUM_IMP,+
+   SIZE=14,+
+   OUTPUT_FORMAT=<6/SEC<,+
+   LABEL='Numéro impliqué',+
+   PAGE=1,+
+   NAME=NUM_IMP;
+AT(7:7,35:54)/U,+
+   SOURCE=DELAI.ORIGINE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=>9>,+
+   LABEL='Clé délai origine',+
+   PAGE=3,+
+   NAME=ORIGINE;
+AT(8:8,35:54)/U,+
+   SOURCE=DELAI.PRENANT_PART,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<3<,+
+   LABEL='Abrév. participant-s interne-s',+
+   PAGE=3,+
+   NAME=PRENANT_PART;
+AT(9:9,35:38)/U,+
+   SOURCE=DELAI.PROVISOIRE,+
+   SIZE=4,+
+   LABEL='Délai provisoire',+
+   PAGE=3,+
+   NAME=PROVISOIRE;
+AT(10:10,35:44)/U,+
+   SOURCE=DELAI.RAPPEL,+
+   SIZE=10,+
+   OUTPUT_FORMAT=>4>,+
+   LABEL='Rappel délai (jours)',+
+   PAGE=3,+
+   NAME=RAPPEL;
+AT(7:7,34:78)/U,+
+   SOURCE=DELAI.REM_DELAI,+
+   SIZE=90,+
+   OUTPUT_FORMAT=<20/VR4<,+
+   LABEL='Remarque délai',+
+   PAGE=2,+
+   NAME=REM_DELAI;
+AT(10:10,36:55)/U,+
+   SOURCE=DELAI.STATUT_DELAI,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<3<,+
+   LABEL='Statut délai',+
+   PAGE=1,+
+   NAME=STATUT_DELAI;
+AT(11:11,35:44)/U,+
+   SOURCE=DELAI.TOLERANCE,+
+   SIZE=10,+
+   OUTPUT_FORMAT=>4>,+
+   LABEL='Tolérance délai (jours)',+
+   PAGE=3,+
+   NAME=TOLERANCE;
+AT(11:11,34:53)/U,+
+   SOURCE=DELAI.UID,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<8<,+
+   LABEL='Dernier utilisateur UID',+
+   PAGE=2,+
+   NAME=UID;
+AT(10:10,34:53)/U,+
+   SOURCE=DELAI.USER,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Dernier utilisateur',+
+   PAGE=2,+
+   NAME=USER;
+*
+VIEW=DOSSIER,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(DOSSIER),+
+   FORM=YES;
+AT(11:11,31:50)/U,+
+   SOURCE=DOSSIER.ACCEPT_REQ,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1/SEC<,+
+   LABEL='Acceptation requéte',+
+   PAGE=4,+
+   NAME=ACCEPT_REQ;
+AT(2:2,32:51)/U,+
+   SOURCE=DOSSIER.ANO,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20/SEC<,+
+   LABEL='Substit. anonym.',+
+   PAGE=5,+
+   NAME=ANO;
+AT(3:3,32:43)/U,+
+   SOURCE=DOSSIER.AN_DOSSIER,+
+   SIZE=12,+
+   LABEL='An doss.',+
+   PAGE=5,+
+   NAME=AN_DOSSIER;
+AT(10:10,30:49)/U,+
+   SOURCE=DOSSIER.BRANCHE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Branche',+
+   PAGE=1,+
+   NAME=BRANCHE;
+AT(4:4,32:51)/U,+
+   SOURCE=DOSSIER.CANTON,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<2<,+
+   LABEL='Canton',+
+   PAGE=5,+
+   NAME=CANTON;
+AT(4:4,36:39)/U,+
+   SOURCE=DOSSIER.CELEBRE,+
+   SIZE=4,+
+   LABEL='Cause célébre',+
+   PAGE=2,+
+   NAME=CELEBRE;
+AT(16:16,36:55)/U,+
+   SOURCE=DOSSIER.CHAMBRE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<3<,+
+   LABEL='Chambre',+
+   PAGE=2,+
+   NAME=CHAMBRE;
+AT(0:0,0:0),+
+   SOURCE=DOSSIER.CHARGE_INDEX,+
+   SIZE=20,+
+   NAME=CHARGE_INDEX;
+AT(2:2,30:47)/U,+
+   SOURCE=DOSSIER.CLE_DOSSIER,+
+   SIZE=18,+
+   OUTPUT_FORMAT=>8>,+
+   LABEL='Clé dossier',+
+   PAGE=1,+
+   NAME=CLE_DOSSIER;
+AT(5:5,32:51)/U,+
+   SOURCE=DOSSIER.COMPO,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20/SER<,+
+   LABEL='Compo',+
+   PAGE=5,+
+   NAME=COMPO;
+AT(11:11,30:49)/U,+
+   SOURCE=DOSSIER.COUR,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Cour',+
+   PAGE=1,+
+   NAME=COUR;
+AT(6:6,32:61)/U,+
+   SOURCE=DOSSIER.CRIT_RAPP,+
+   SIZE=30,+
+   OUTPUT_FORMAT=<30<,+
+   LABEL='Critére attrib. rapprt',+
+   PAGE=5,+
+   NAME=CRIT_RAPP;
+AT(20:20,31:50)/U,+
+   SOURCE=DOSSIER.CT,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='CT',+
+   PAGE=4,+
+   NAME=CT;
+AT(8:8,36:45)/U,+
+   SOURCE=DOSSIER.CUMUL_SUSP,+
+   SIZE=10,+
+   OUTPUT_FORMAT=>4>,+
+   LABEL='Nbr jours suspension',+
+   PAGE=2,+
+   NAME=CUMUL_SUSP;
+AT(12:12,36:57)/U,+
+   SOURCE=DOSSIER.DAT_ARCHIVAGE,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date d''archivage',+
+   PAGE=2,+
+   NAME=DAT_ARCHIVAGE;
+AT(6:6,30:51)/U,+
+   SOURCE=DOSSIER.DAT_ARRIVEE,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date d''arrivée',+
+   PAGE=1,+
+   NAME=DAT_ARRIVEE;
+AT(20:20,36:57)/U,+
+   SOURCE=DOSSIER.DAT_ATTR_JD,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date attribution JD',+
+   PAGE=2,+
+   NAME=DAT_ATTR_JD;
+AT(3:3,30:51)/U,+
+   SOURCE=DOSSIER.DAT_ATTR_RED,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date attribution réd.',+
+   PAGE=3,+
+   NAME=DAT_ATTR_RED;
+AT(7:7,32:53)/U,+
+   SOURCE=DOSSIER.DAT_COMPO,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date composition',+
+   PAGE=5,+
+   NAME=DAT_COMPO;
+AT(18:18,30:51)/U,+
+   SOURCE=DOSSIER.DAT_COM_DISP,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date comm. dispositif',+
+   PAGE=1,+
+   NAME=DAT_COM_DISP;
+AT(16:16,31:52)/U,+
+   SOURCE=DOSSIER.DAT_CREATION,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date création',+
+   PAGE=4,+
+   NAME=DAT_CREATION;
+AT(6:6,36:57)/U,+
+   SOURCE=DOSSIER.DAT_DEB_SUSP,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date début suspension',+
+   PAGE=2,+
+   NAME=DAT_DEB_SUSP;
+AT(8:8,30:51)/U,+
+   SOURCE=DOSSIER.DAT_DEC_ATT,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date déc. attaquée',+
+   PAGE=1,+
+   NAME=DAT_DEC_ATT;
+AT(8:8,32:53)/U,+
+   SOURCE=DOSSIER.DAT_DEC_ATT_2,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date déc. attaq. 2',+
+   PAGE=5,+
+   NAME=DAT_DEC_ATT_2;
+AT(6:6,30:51)/U,+
+   SOURCE=DOSSIER.DAT_DEC_DOSSIER,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date décision dossier',+
+   PAGE=3,+
+   NAME=DAT_DEC_DOSSIER;
+AT(9:9,30:51)/U,+
+   SOURCE=DOSSIER.DAT_DEC_PREC,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date déc. précédente',+
+   PAGE=1,+
+   NAME=DAT_DEC_PREC;
+AT(12:12,31:52)/U,+
+   SOURCE=DOSSIER.DAT_DEC_REQ,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23/SEC<,+
+   LABEL='Date décision req.',+
+   PAGE=4,+
+   NAME=DAT_DEC_REQ;
+AT(5:5,30:51)/U,+
+   SOURCE=DOSSIER.DAT_DEPOT,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date dépét',+
+   PAGE=1,+
+   NAME=DAT_DEPOT;
+AT(7:7,36:57)/U,+
+   SOURCE=DOSSIER.DAT_FIN_SUSP,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date fin suspension',+
+   PAGE=2,+
+   NAME=DAT_FIN_SUSP;
+AT(1:1,30:51)/U,+
+   SOURCE=DOSSIER.DAT_LIQ_JD,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date liquidation JD',+
+   PAGE=3,+
+   NAME=DAT_LIQ_JD;
+AT(4:4,30:51)/U,+
+   SOURCE=DOSSIER.DAT_LIQ_RED,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date liquidation réd.',+
+   PAGE=3,+
+   NAME=DAT_LIQ_RED;
+AT(17:17,31:52)/U,+
+   SOURCE=DOSSIER.DAT_MODIFICATION,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date modification',+
+   PAGE=4,+
+   NAME=DAT_MODIFICATION;
+AT(9:9,32:53)/U,+
+   SOURCE=DOSSIER.DAT_MODIF_NOTIF,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date de modif. de la notice',+
+   PAGE=5,+
+   NAME=DAT_MODIF_NOTIF;
+AT(13:13,36:57)/U,+
+   SOURCE=DOSSIER.DAT_MODIF_POS,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date de modif. de la position',+
+   PAGE=2,+
+   NAME=DAT_MODIF_POS;
+AT(7:7,30:51)/U,+
+   SOURCE=DOSSIER.DAT_NOTIF,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date notification',+
+   PAGE=1,+
+   NAME=DAT_NOTIF;
+AT(14:14,36:57)/U,+
+   SOURCE=DOSSIER.DAT_POSITION,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Positionné le',+
+   PAGE=2,+
+   NAME=DAT_POSITION;
+AT(19:19,30:51)/U,+
+   SOURCE=DOSSIER.DAT_POURVOI,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date pourvoi',+
+   PAGE=1,+
+   NAME=DAT_POURVOI;
+AT(13:13,31:52)/U,+
+   SOURCE=DOSSIER.DAT_REQ,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23/SEC<,+
+   LABEL='Date req.',+
+   PAGE=4,+
+   NAME=DAT_REQ;
+AT(10:10,32:35)/U,+
+   SOURCE=DOSSIER.DELEGATION,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Délégation',+
+   PAGE=5,+
+   NAME=DELEGATION;
+AT(1:1,32:35)/U,+
+   SOURCE=DOSSIER.DELEGUE,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Délégué',+
+   PAGE=5,+
+   NAME=DELEGUE;
+AT(14:14,31:79)/U,+
+   SOURCE=DOSSIER.DEM_REQ,+
+   SIZE=2499,+
+   OUTPUT_FORMAT=<60/SEC<,+
+   LABEL='Demandeur(s) de la requéte',+
+   PAGE=4,+
+   NAME=DEM_REQ;
+AT(1:1,31:68)/U,+
+   SOURCE=DOSSIER.DESCRIPTEUR,+
+   SIZE=76,+
+   OUTPUT_FORMAT=<76/SER<,+
+   LABEL='Descripteurs',+
+   PAGE=4,+
+   NAME=DESCRIPTEUR;
+AT(3:3,31:68)/U,+
+   SOURCE=DOSSIER.DESCRIPTEUR_F,+
+   SIZE=76,+
+   OUTPUT_FORMAT=<76/SER<,+
+   LABEL='Descripteurs (F)',+
+   PAGE=4,+
+   NAME=DESCRIPTEUR_F;
+AT(5:5,31:68)/U,+
+   SOURCE=DOSSIER.DESCRIPTEUR_I,+
+   SIZE=76,+
+   OUTPUT_FORMAT=<76/SER<,+
+   LABEL='Descripteurs (I)',+
+   PAGE=4,+
+   NAME=DESCRIPTEUR_I;
+AT(2:2,31:68)/U,+
+   SOURCE=DOSSIER.DESCR_D,+
+   SIZE=76,+
+   OUTPUT_FORMAT=<76/SER<,+
+   LABEL='Descripteurs (D)',+
+   PAGE=4,+
+   NAME=DESCR_D;
+AT(4:4,31:68)/U,+
+   SOURCE=DOSSIER.DESCR_F,+
+   SIZE=76,+
+   OUTPUT_FORMAT=<76/SER<,+
+   LABEL='Descripteurs (F)',+
+   PAGE=4,+
+   NAME=DESCR_F;
+AT(6:6,31:68)/U,+
+   SOURCE=DOSSIER.DESCR_I,+
+   SIZE=76,+
+   OUTPUT_FORMAT=<76/SER<,+
+   LABEL='Descripteurs (I)',+
+   PAGE=4,+
+   NAME=DESCR_I;
+AT(14:14,30:33)/U,+
+   SOURCE=DOSSIER.DESTIN,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Destinataire',+
+   PAGE=3,+
+   NAME=DESTIN;
+AT(11:11,32:51)/U,+
+   SOURCE=DOSSIER.DIFFICULTE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Difficulté',+
+   PAGE=5,+
+   NAME=DIFFICULTE;
+AT(1:1,36:55)/U,+
+   SOURCE=DOSSIER.DOSSIER_CONNEXE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<15/SEC<,+
+   LABEL='Dossiers connexes',+
+   PAGE=2,+
+   NAME=DOSSIER_CONNEXE;
+AT(12:12,32:35)/U,+
+   SOURCE=DOSSIER.ELECTRACTION,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Recours électronique',+
+   PAGE=5,+
+   NAME=ELECTRACTION;
+AT(3:3,30:49)/U,+
+   SOURCE=DOSSIER.ETAT_DOSSIER,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Etat du dossier',+
+   PAGE=1,+
+   NAME=ETAT_DOSSIER;
+AT(4:4,30:49)/U,+
+   SOURCE=DOSSIER.ETAT_DOSSIER_2,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Etat du dossier numérique',+
+   PAGE=1,+
+   NAME=ETAT_DOSSIER_2;
+AT(10:10,30:69)/U,+
+   SOURCE=DOSSIER.EX_AUT_ATT,+
+   SIZE=80,+
+   OUTPUT_FORMAT=<80<,+
+   LABEL='EX_AUT_ATT',+
+   PAGE=3,+
+   NAME=EX_AUT_ATT;
+AT(11:11,30:49)/U,+
+   SOURCE=DOSSIER.EX_NUM_DOSSIER,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<15/SEC<,+
+   LABEL='EX_NUM_DOSSIER',+
+   PAGE=3,+
+   NAME=EX_NUM_DOSSIER;
+AT(12:12,30:49)/U,+
+   SOURCE=DOSSIER.EX_REKO,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<10<,+
+   LABEL='EX_reko',+
+   PAGE=3,+
+   NAME=EX_REKO;
+AT(16:16,30:49)/U,+
+   SOURCE=DOSSIER.GENRE_REPRES,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20/SEC<,+
+   LABEL='Genre de représentation',+
+   PAGE=3,+
+   NAME=GENRE_REPRES;
+AT(13:13,32:45)/U,+
+   SOURCE=DOSSIER.HEURE_MODIF,+
+   SIZE=14,+
+   OUTPUT_FORMAT=<6/Z<,+
+   LABEL='Heure modif.',+
+   PAGE=5,+
+   NAME=HEURE_MODIF;
+AT(15:15,36:49)/U,+
+   SOURCE=DOSSIER.HEURE_MODIF_POS,+
+   SIZE=14,+
+   OUTPUT_FORMAT=<6<,+
+   LABEL='Heure de modif. de la position',+
+   PAGE=2,+
+   NAME=HEURE_MODIF_POS;
+AT(14:14,32:71)/U,+
+   SOURCE=DOSSIER.HISTO_POSITION,+
+   SIZE=3000,+
+   OUTPUT_FORMAT=<50/VR20<,+
+   LABEL='Histo position',+
+   PAGE=5,+
+   NAME=HISTO_POSITION;
+AT(15:15,32:71)/U,+
+   SOURCE=DOSSIER.INFO_EX,+
+   SIZE=200,+
+   OUTPUT_FORMAT=<50/VR4<,+
+   LABEL='Infos ex-instance',+
+   PAGE=5,+
+   NAME=INFO_EX;
+AT(16:16,32:51)/U,+
+   SOURCE=DOSSIER.ISSUE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<3/SER<,+
+   LABEL='Issues',+
+   PAGE=5,+
+   NAME=ISSUE;
+AT(17:17,32:56)/U,+
+   SOURCE=DOSSIER.ISSUE_ATTAQUEE,+
+   SIZE=50,+
+   OUTPUT_FORMAT=<50<,+
+   LABEL='Issue déc. attaq.',+
+   PAGE=5,+
+   NAME=ISSUE_ATTAQUEE;
+AT(18:18,32:51)/U,+
+   SOURCE=DOSSIER.JUGE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20/SER<,+
+   LABEL='Juges',+
+   PAGE=5,+
+   NAME=JUGE;
+AT(19:19,36:55)/U,+
+   SOURCE=DOSSIER.JUGE_DELEGUE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Juge délégué',+
+   PAGE=2,+
+   NAME=JUGE_DELEGUE;
+AT(1:1,2:28)/P/FL,+
+   PUT('Numéro du dossier.........='),+
+   PAGE=1,+
+   NAME=L01001;
+AT(2:2,2:28)/P/FL,+
+   PUT('Clé dossier...............='),+
+   PAGE=1,+
+   NAME=L01002;
+AT(3:3,2:28)/P/FL,+
+   PUT('Etat du dossier...........='),+
+   PAGE=1,+
+   NAME=L01003;
+AT(4:4,2:28)/P/FL,+
+   PUT('Etat du dossier numérique.='),+
+   PAGE=1,+
+   NAME=L01004;
+AT(5:5,2:28)/P/FL,+
+   PUT('Date dépét................:'),+
+   PAGE=1,+
+   NAME=L01005;
+AT(6:6,2:28)/P/FL,+
+   PUT('Date d''arrivée............:'),+
+   PAGE=1,+
+   NAME=L01006;
+AT(7:7,2:28)/P/FL,+
+   PUT('Date notification.........:'),+
+   PAGE=1,+
+   NAME=L01007;
+AT(8:8,2:28)/P/FL,+
+   PUT('Date déc. attaquée........:'),+
+   PAGE=1,+
+   NAME=L01008;
+AT(9:9,2:28)/P/FL,+
+   PUT('Date déc. précédente......:'),+
+   PAGE=1,+
+   NAME=L01009;
+AT(10:10,2:28)/P/FL,+
+   PUT('Branche...................='),+
+   PAGE=1,+
+   NAME=L01010;
+AT(11:11,2:28)/P/FL,+
+   PUT('Cour......................='),+
+   PAGE=1,+
+   NAME=L01011;
+AT(12:12,2:28)/P/FL,+
+   PUT('Langue....................:'),+
+   PAGE=1,+
+   NAME=L01012;
+AT(13:13,2:28)/P/FL,+
+   PUT('Moyen de droit............='),+
+   PAGE=1,+
+   NAME=L01013;
+AT(14:14,2:28)/P/FL,+
+   PUT('Objet du procés...........>'),+
+   PAGE=1,+
+   NAME=L01014;
+AT(15:15,2:28)/P/FL,+
+   PUT('Nom registrateur..........='),+
+   PAGE=1,+
+   NAME=L01015;
+AT(16:16,2:28)/P/FL,+
+   PUT('Nom du dossier............:'),+
+   PAGE=1,+
+   NAME=L01016;
+AT(17:17,2:28)/P/FL,+
+   PUT('Réfer. aut. att...........>'),+
+   PAGE=1,+
+   NAME=L01017;
+AT(18:18,2:28)/P/FL,+
+   PUT('Date comm. dispositif.....:'),+
+   PAGE=1,+
+   NAME=L01018;
+AT(19:19,2:28)/P/FL,+
+   PUT('Date pourvoi..............:'),+
+   PAGE=1,+
+   NAME=L01019;
+AT(20:20,2:28)/P/FL,+
+   PUT('Recours joint.............='),+
+   PAGE=1,+
+   NAME=L01020;
+AT(1:1,2:34)/P/FL,+
+   PUT('Dossiers connexes...............>'),+
+   PAGE=2,+
+   NAME=L02021;
+AT(2:2,2:34)/P/FL,+
+   PUT('Procuration.....................:'),+
+   PAGE=2,+
+   NAME=L02022;
+AT(3:3,2:34)/P/FL,+
+   PUT('Valeur litigieuse...............:'),+
+   PAGE=2,+
+   NAME=L02023;
+AT(4:4,2:34)/P/FL,+
+   PUT('Cause célébre...................='),+
+   PAGE=2,+
+   NAME=L02024;
+AT(5:5,2:34)/P/FL,+
+   PUT('Proc. onéreuse..................:'),+
+   PAGE=2,+
+   NAME=L02025;
+AT(6:6,2:34)/P/FL,+
+   PUT('Date début suspension...........:'),+
+   PAGE=2,+
+   NAME=L02026;
+AT(7:7,2:34)/P/FL,+
+   PUT('Date fin suspension.............:'),+
+   PAGE=2,+
+   NAME=L02027;
+AT(8:8,2:34)/P/FL,+
+   PUT('Nbr jours suspension............:'),+
+   PAGE=2,+
+   NAME=L02028;
+AT(9:9,2:34)/P/FL,+
+   PUT('Champ technique RFID............:'),+
+   PAGE=2,+
+   NAME=L02029;
+AT(10:10,2:34)/P/FL,+
+   PUT('Remarque sur le dossier.........>'),+
+   PAGE=2,+
+   NAME=L02030;
+AT(11:11,2:34)/P/FL,+
+   PUT('Né d''archive....................:'),+
+   PAGE=2,+
+   NAME=L02031;
+AT(12:12,2:34)/P/FL,+
+   PUT('Date d''archivage................:'),+
+   PAGE=2,+
+   NAME=L02032;
+AT(13:13,2:34)/P/FL,+
+   PUT('Date de modif. de la position...:'),+
+   PAGE=2,+
+   NAME=L02033;
+AT(14:14,2:34)/P/FL,+
+   PUT('Positionné le...................:'),+
+   PAGE=2,+
+   NAME=L02034;
+AT(15:15,2:34)/P/FL,+
+   PUT('Heure de modif. de la position..:'),+
+   PAGE=2,+
+   NAME=L02035;
+AT(16:16,2:34)/P/FL,+
+   PUT('Chambre.........................:'),+
+   PAGE=2,+
+   NAME=L02036;
+AT(17:17,2:34)/P/FL,+
+   PUT('Position........................:'),+
+   PAGE=2,+
+   NAME=L02037;
+AT(18:18,2:34)/P/FL,+
+   PUT('Position du dossier modifié par.:'),+
+   PAGE=2,+
+   NAME=L02038;
+AT(19:19,2:34)/P/FL,+
+   PUT('Juge délégué....................:'),+
+   PAGE=2,+
+   NAME=L02039;
+AT(20:20,2:34)/P/FL,+
+   PUT('Date attribution JD.............:'),+
+   PAGE=2,+
+   NAME=L02040;
+AT(1:1,2:28)/P/FL,+
+   PUT('Date liquidation JD.......:'),+
+   PAGE=3,+
+   NAME=L03041;
+AT(2:2,2:28)/P/FL,+
+   PUT('Rédacteur.................:'),+
+   PAGE=3,+
+   NAME=L03042;
+AT(3:3,2:28)/P/FL,+
+   PUT('Date attribution réd......:'),+
+   PAGE=3,+
+   NAME=L03043;
+AT(4:4,2:28)/P/FL,+
+   PUT('Date liquidation réd......:'),+
+   PAGE=3,+
+   NAME=L03044;
+AT(5:5,2:28)/P/FL,+
+   PUT('Raison et issue du procés.:'),+
+   PAGE=3,+
+   NAME=L03045;
+AT(6:6,2:28)/P/FL,+
+   PUT('Date décision dossier.....:'),+
+   PAGE=3,+
+   NAME=L03046;
+AT(7:7,2:28)/P/FL,+
+   PUT('Remarque attribution......>'),+
+   PAGE=3,+
+   NAME=L03047;
+AT(8:8,2:28)/P/FL,+
+   PUT('Numéro des parties........>'),+
+   PAGE=3,+
+   NAME=L03048;
+AT(9:9,2:28)/P/FL,+
+   PUT('Réle de l''implique........>'),+
+   PAGE=3,+
+   NAME=L03049;
+AT(10:10,2:28)/P/FL,+
+   PUT('EX_AUT_ATT................>'),+
+   PAGE=3,+
+   NAME=L03050;
+AT(11:11,2:28)/P/FL,+
+   PUT('EX_NUM_DOSSIER............>'),+
+   PAGE=3,+
+   NAME=L03051;
+AT(12:12,2:28)/P/FL,+
+   PUT('EX_reko...................:'),+
+   PAGE=3,+
+   NAME=L03052;
+AT(13:13,2:28)/P/FL,+
+   PUT('Sous-réle de l''impliqué...>'),+
+   PAGE=3,+
+   NAME=L03053;
+AT(14:14,2:28)/P/FL,+
+   PUT('Destinataire..............>'),+
+   PAGE=3,+
+   NAME=L03054;
+AT(15:15,2:28)/P/FL,+
+   PUT('Type de représentant......>'),+
+   PAGE=3,+
+   NAME=L03055;
+AT(16:16,2:28)/P/FL,+
+   PUT('Genre de représentation...>'),+
+   PAGE=3,+
+   NAME=L03056;
+AT(17:17,2:28)/P/FL,+
+   PUT('Numéro représentant.......>'),+
+   PAGE=3,+
+   NAME=L03057;
+AT(18:18,2:28)/P/FL,+
+   PUT('Remarque bordereau........>'),+
+   PAGE=3,+
+   NAME=L03058;
+AT(19:19,2:28)/P/FL,+
+   PUT('Code matiére..............:'),+
+   PAGE=3,+
+   NAME=L03059;
+AT(20:20,2:28)/P/FL,+
+   PUT('Normes....................>'),+
+   PAGE=3,+
+   NAME=L03060;
+AT(1:1,2:29)/P/FL,+
+   PUT('Descripteurs...............>'),+
+   PAGE=4,+
+   NAME=L04061;
+AT(2:2,2:29)/P/FL,+
+   PUT('Descripteurs (D)...........>'),+
+   PAGE=4,+
+   NAME=L04062;
+AT(3:3,2:29)/P/FL,+
+   PUT('Descripteurs (F)...........>'),+
+   PAGE=4,+
+   NAME=L04063;
+AT(4:4,2:29)/P/FL,+
+   PUT('Descripteurs (F)...........>'),+
+   PAGE=4,+
+   NAME=L04064;
+AT(5:5,2:29)/P/FL,+
+   PUT('Descripteurs (I)...........>'),+
+   PAGE=4,+
+   NAME=L04065;
+AT(6:6,2:29)/P/FL,+
+   PUT('Descripteurs (I)...........>'),+
+   PAGE=4,+
+   NAME=L04066;
+AT(7:7,2:29)/P/FL,+
+   PUT('Type de la requéte.........>'),+
+   PAGE=4,+
+   NAME=L04067;
+AT(8:8,2:29)/P/FL,+
+   PUT('Type de la requéte 2.......>'),+
+   PAGE=4,+
+   NAME=L04068;
+AT(9:9,2:29)/P/FL,+
+   PUT('Type de la requéte en D....>'),+
+   PAGE=4,+
+   NAME=L04069;
+AT(10:10,2:29)/P/FL,+
+   PUT('Type de la requéte en F....>'),+
+   PAGE=4,+
+   NAME=L04070;
+AT(11:11,2:29)/P/FL,+
+   PUT('Acceptation requéte........>'),+
+   PAGE=4,+
+   NAME=L04071;
+AT(12:12,2:29)/P/FL,+
+   PUT('Date décision req..........>'),+
+   PAGE=4,+
+   NAME=L04072;
+AT(13:13,2:29)/P/FL,+
+   PUT('Date req...................>'),+
+   PAGE=4,+
+   NAME=L04073;
+AT(14:14,2:29)/P/FL,+
+   PUT('Demandeur(s) de la requéte.>'),+
+   PAGE=4,+
+   NAME=L04074;
+AT(15:15,2:29)/P/FL,+
+   PUT('Remarque sur la requéte....>'),+
+   PAGE=4,+
+   NAME=L04075;
+AT(16:16,2:29)/P/FL,+
+   PUT('Date création..............='),+
+   PAGE=4,+
+   NAME=L04076;
+AT(17:17,2:29)/P/FL,+
+   PUT('Date modification..........='),+
+   PAGE=4,+
+   NAME=L04077;
+AT(18:18,2:29)/P/FL,+
+   PUT('Dernier utilisateur UID....='),+
+   PAGE=4,+
+   NAME=L04078;
+AT(19:19,2:29)/P/FL,+
+   PUT('Dernier utilisateur........='),+
+   PAGE=4,+
+   NAME=L04079;
+AT(20:20,2:29)/P/FL,+
+   PUT('CT.........................='),+
+   PAGE=4,+
+   NAME=L04080;
+AT(1:1,2:30)/P/FL,+
+   PUT('Délégué.....................='),+
+   PAGE=5,+
+   NAME=L05081;
+AT(2:2,2:30)/P/FL,+
+   PUT('Substit. anonym.............>'),+
+   PAGE=5,+
+   NAME=L05082;
+AT(3:3,2:30)/P/FL,+
+   PUT('An doss.....................:'),+
+   PAGE=5,+
+   NAME=L05083;
+AT(4:4,2:30)/P/FL,+
+   PUT('Canton......................:'),+
+   PAGE=5,+
+   NAME=L05084;
+AT(5:5,2:30)/P/FL,+
+   PUT('Compo.......................>'),+
+   PAGE=5,+
+   NAME=L05085;
+AT(6:6,2:30)/P/FL,+
+   PUT('Critére attrib. rapprt......:'),+
+   PAGE=5,+
+   NAME=L05086;
+AT(7:7,2:30)/P/FL,+
+   PUT('Date composition............:'),+
+   PAGE=5,+
+   NAME=L05087;
+AT(8:8,2:30)/P/FL,+
+   PUT('Date déc. attaq. 2..........:'),+
+   PAGE=5,+
+   NAME=L05088;
+AT(9:9,2:30)/P/FL,+
+   PUT('Date de modif. de la notice.:'),+
+   PAGE=5,+
+   NAME=L05089;
+AT(10:10,2:30)/P/FL,+
+   PUT('Délégation..................:'),+
+   PAGE=5,+
+   NAME=L05090;
+AT(11:11,2:30)/P/FL,+
+   PUT('Difficulté..................:'),+
+   PAGE=5,+
+   NAME=L05091;
+AT(12:12,2:30)/P/FL,+
+   PUT('Recours électronique........:'),+
+   PAGE=5,+
+   NAME=L05092;
+AT(13:13,2:30)/P/FL,+
+   PUT('Heure modif.................:'),+
+   PAGE=5,+
+   NAME=L05093;
+AT(14:14,2:30)/P/FL,+
+   PUT('Histo position..............>'),+
+   PAGE=5,+
+   NAME=L05094;
+AT(15:15,2:30)/P/FL,+
+   PUT('Infos ex-instance...........>'),+
+   PAGE=5,+
+   NAME=L05095;
+AT(16:16,2:30)/P/FL,+
+   PUT('Issues......................>'),+
+   PAGE=5,+
+   NAME=L05096;
+AT(17:17,2:30)/P/FL,+
+   PUT('Issue déc. attaq............>'),+
+   PAGE=5,+
+   NAME=L05097;
+AT(18:18,2:30)/P/FL,+
+   PUT('Juges.......................>'),+
+   PAGE=5,+
+   NAME=L05098;
+AT(19:19,2:30)/P/FL,+
+   PUT('Droits lecture docu.........>'),+
+   PAGE=5,+
+   NAME=L05099;
+AT(20:20,2:30)/P/FL,+
+   PUT('Mixité......................:'),+
+   PAGE=5,+
+   NAME=L05100;
+AT(1:1,2:28)/P/FL,+
+   PUT('Droits modif. docu........>'),+
+   PAGE=6,+
+   NAME=L06101;
+AT(2:2,2:28)/P/FL,+
+   PUT('Matiéres..................>'),+
+   PAGE=6,+
+   NAME=L06102;
+AT(3:3,2:28)/P/FL,+
+   PUT('Nom du dossier non secret.:'),+
+   PAGE=6,+
+   NAME=L06103;
+AT(4:4,2:28)/P/FL,+
+   PUT('Notice....................>'),+
+   PAGE=6,+
+   NAME=L06104;
+AT(5:5,2:28)/P/FL,+
+   PUT('Pays......................:'),+
+   PAGE=6,+
+   NAME=L06105;
+AT(6:6,2:28)/P/FL,+
+   PUT('Présidence du collége.....:'),+
+   PAGE=6,+
+   NAME=L06106;
+AT(7:7,2:28)/P/FL,+
+   PUT('Priorité..................:'),+
+   PAGE=6,+
+   NAME=L06107;
+AT(8:8,2:28)/P/FL,+
+   PUT('Type-s procédure..........>'),+
+   PAGE=6,+
+   NAME=L06108;
+AT(9:9,2:28)/P/FL,+
+   PUT('Publicité.................:'),+
+   PAGE=6,+
+   NAME=L06109;
+AT(10:10,2:28)/P/FL,+
+   PUT('Quorum dossier............:'),+
+   PAGE=6,+
+   NAME=L06110;
+AT(11:11,2:28)/P/FL,+
+   PUT('Rang......................:'),+
+   PAGE=6,+
+   NAME=L06111;
+AT(12:12,2:28)/P/FL,+
+   PUT('Rem. compo................>'),+
+   PAGE=6,+
+   NAME=L06112;
+AT(13:13,2:28)/P/FL,+
+   PUT('Rem. position.............>'),+
+   PAGE=6,+
+   NAME=L06113;
+AT(14:14,2:28)/P/FL,+
+   PUT('Rem. suspension...........:'),+
+   PAGE=6,+
+   NAME=L06114;
+AT(15:15,2:28)/P/FL,+
+   PUT('Site......................:'),+
+   PAGE=6,+
+   NAME=L06115;
+AT(16:16,2:28)/P/FL,+
+   PUT('Tribunal..................:'),+
+   PAGE=6,+
+   NAME=L06116;
+AT(12:12,30:49)/U,+
+   SOURCE=DOSSIER.LANGUE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Langue',+
+   PAGE=1,+
+   NAME=LANGUE;
+AT(19:19,32:51)/U,+
+   SOURCE=DOSSIER.LECTU_DOC,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4/SEC<,+
+   LABEL='Droits lecture docu',+
+   PAGE=5,+
+   NAME=LECTU_DOC;
+AT(19:19,30:49)/U,+
+   SOURCE=DOSSIER.MATIERE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<6<,+
+   LABEL='Code matiére',+
+   PAGE=3,+
+   NAME=MATIERE;
+AT(20:20,32:35)/U,+
+   SOURCE=DOSSIER.MIXITE,+
+   SIZE=4,+
+   LABEL='Mixité',+
+   PAGE=5,+
+   NAME=MIXITE;
+AT(1:1,30:49)/U,+
+   SOURCE=DOSSIER.MODIF_DOC,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4/SEC<,+
+   LABEL='Droits modif. docu',+
+   PAGE=6,+
+   NAME=MODIF_DOC;
+AT(13:13,30:49)/U,+
+   SOURCE=DOSSIER.MOYEN_DE_DROIT,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<6<,+
+   LABEL='Moyen de droit',+
+   PAGE=1,+
+   NAME=MOYEN_DE_DROIT;
+AT(2:2,30:49)/U,+
+   SOURCE=DOSSIER.MULTI_MAT,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<6/SER<,+
+   LABEL='Matiéres',+
+   PAGE=6,+
+   NAME=MULTI_MAT;
+AT(0:0,0:0),+
+   SOURCE=DOSSIER.NOM_COLLAB_INDEX,+
+   SIZE=20,+
+   NAME=NOM_COLLAB_INDEX;
+AT(16:16,30:72)/U,+
+   SOURCE=DOSSIER.NOM_DOSSIER,+
+   SIZE=43,+
+   OUTPUT_FORMAT=<30/VR5<,+
+   LABEL='Nom du dossier',+
+   PAGE=1,+
+   NAME=NOM_DOSSIER;
+AT(3:3,30:72)/U,+
+   SOURCE=DOSSIER.NOM_DOSSIER_NON_SECRET,+
+   SIZE=43,+
+   OUTPUT_FORMAT=<30/VR5<,+
+   LABEL='Nom du dossier non secret',+
+   PAGE=6,+
+   NAME=NOM_DOSSIER_NON_SECRET;
+AT(20:20,30:79)/U,+
+   SOURCE=DOSSIER.NORME,+
+   SIZE=50,+
+   OUTPUT_FORMAT=<50/SER<,+
+   LABEL='Normes',+
+   PAGE=3,+
+   NAME=NORME;
+AT(4:4,30:79)/U,+
+   SOURCE=DOSSIER.NOTICE_DOSSIER,+
+   SIZE=10000,+
+   OUTPUT_FORMAT=<50/VR4<,+
+   LABEL='Notice',+
+   PAGE=6,+
+   NAME=NOTICE_DOSSIER;
+AT(11:11,36:55)/U,+
+   SOURCE=DOSSIER.NUM_ARCHIVE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<8<,+
+   LABEL='Né d''archive',+
+   PAGE=2,+
+   NAME=NUM_ARCHIVE;
+AT(1:1,30:49)/U,+
+   SOURCE=DOSSIER.NUM_DOSSIER,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<15<,+
+   LABEL='Numéro du dossier',+
+   PAGE=1,+
+   NAME=NUM_DOSSIER;
+AT(8:8,30:43)/U,+
+   SOURCE=DOSSIER.NUM_IMP,+
+   SIZE=14,+
+   OUTPUT_FORMAT=<6/SEC<,+
+   LABEL='Numéro des parties',+
+   PAGE=3,+
+   NAME=NUM_IMP;
+AT(0:0,0:0),+
+   SOURCE=DOSSIER.NUM_IMP_INDEX,+
+   SIZE=4,+
+   NAME=NUM_IMP_INDEX;
+AT(17:17,30:43)/U,+
+   SOURCE=DOSSIER.NUM_REPRES,+
+   SIZE=14,+
+   OUTPUT_FORMAT=<6/SEC<,+
+   LABEL='Numéro représentant',+
+   PAGE=3,+
+   NAME=NUM_REPRES;
+AT(14:14,30:79)/U,+
+   SOURCE=DOSSIER.OBJET,+
+   SIZE=400,+
+   OUTPUT_FORMAT=<50/VR8<,+
+   LABEL='Objet du procés',+
+   PAGE=1,+
+   NAME=OBJET;
+AT(5:5,30:49)/U,+
+   SOURCE=DOSSIER.PAYS,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<2<,+
+   LABEL='Pays',+
+   PAGE=6,+
+   NAME=PAYS;
+AT(17:17,36:55)/U,+
+   SOURCE=DOSSIER.POSITION,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<3<,+
+   LABEL='Position',+
+   PAGE=2,+
+   NAME=POSITION;
+AT(6:6,30:49)/U,+
+   SOURCE=DOSSIER.PRESIDENCE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Présidence du collége',+
+   PAGE=6,+
+   NAME=PRESIDENCE;
+AT(7:7,30:49)/U,+
+   SOURCE=DOSSIER.PRIORITE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Priorité',+
+   PAGE=6,+
+   NAME=PRIORITE;
+AT(8:8,30:49)/U,+
+   SOURCE=DOSSIER.PROCEDURE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<6<,+
+   LABEL='Type-s procédure',+
+   PAGE=6,+
+   NAME=PROCEDURE;
+AT(2:2,36:65)/U,+
+   SOURCE=DOSSIER.PROCURATION,+
+   SIZE=30,+
+   OUTPUT_FORMAT=<15/VR2<,+
+   LABEL='Procuration',+
+   PAGE=2,+
+   NAME=PROCURATION;
+AT(5:5,36:39)/U,+
+   SOURCE=DOSSIER.PROC_ONEREUSE,+
+   SIZE=4,+
+   LABEL='Proc. onéreuse',+
+   PAGE=2,+
+   NAME=PROC_ONEREUSE;
+AT(9:9,30:49)/U,+
+   SOURCE=DOSSIER.PUBLIC,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Publicité',+
+   PAGE=6,+
+   NAME=PUBLIC;
+AT(10:10,30:35)/U,+
+   SOURCE=DOSSIER.QUORUM_DOSSIER,+
+   SIZE=6,+
+   OUTPUT_FORMAT=>2>,+
+   LABEL='Quorum dossier',+
+   PAGE=6,+
+   NAME=QUORUM_DOSSIER;
+AT(11:11,30:41)/U,+
+   SOURCE=DOSSIER.RANG_DOSSIER,+
+   SIZE=12,+
+   LABEL='Rang',+
+   PAGE=6,+
+   NAME=RANG_DOSSIER;
+AT(20:20,30:33)/U,+
+   SOURCE=DOSSIER.RECOURS_JOINT,+
+   SIZE=4,+
+   LABEL='Recours joint',+
+   PAGE=1,+
+   NAME=RECOURS_JOINT;
+AT(2:2,30:49)/U,+
+   SOURCE=DOSSIER.REDACTEUR,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Rédacteur',+
+   PAGE=3,+
+   NAME=REDACTEUR;
+AT(17:17,30:79)/U,+
+   SOURCE=DOSSIER.REF_AUT_ATT,+
+   SIZE=150,+
+   OUTPUT_FORMAT=<50/VR3<,+
+   LABEL='Réfer. aut. att.',+
+   PAGE=1,+
+   NAME=REF_AUT_ATT;
+AT(15:15,30:49)/U,+
+   SOURCE=DOSSIER.REGISTRATEUR,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Nom registrateur',+
+   PAGE=1,+
+   NAME=REGISTRATEUR;
+AT(7:7,30:79)/U,+
+   SOURCE=DOSSIER.REM_ATTRIBUTION,+
+   SIZE=800,+
+   OUTPUT_FORMAT=<50/VR2<,+
+   LABEL='Remarque attribution',+
+   PAGE=3,+
+   NAME=REM_ATTRIBUTION;
+AT(18:18,30:79)/U,+
+   SOURCE=DOSSIER.REM_BORDEREAU,+
+   SIZE=200,+
+   OUTPUT_FORMAT=<50/VR2<,+
+   LABEL='Remarque bordereau',+
+   PAGE=3,+
+   NAME=REM_BORDEREAU;
+AT(12:12,30:79)/U,+
+   SOURCE=DOSSIER.REM_COMPO,+
+   SIZE=200,+
+   OUTPUT_FORMAT=<70/VR3<,+
+   LABEL='Rem. compo',+
+   PAGE=6,+
+   NAME=REM_COMPO;
+AT(10:10,36:75)/U,+
+   SOURCE=DOSSIER.REM_DOSSIER,+
+   SIZE=200,+
+   OUTPUT_FORMAT=<50/VR4<,+
+   LABEL='Remarque sur le dossier',+
+   PAGE=2,+
+   NAME=REM_DOSSIER;
+AT(13:13,30:79)/U,+
+   SOURCE=DOSSIER.REM_POSITION,+
+   SIZE=100,+
+   OUTPUT_FORMAT=<80<,+
+   LABEL='Rem. position',+
+   PAGE=6,+
+   NAME=REM_POSITION;
+AT(15:15,31:60)/U,+
+   SOURCE=DOSSIER.REM_REQ,+
+   SIZE=60,+
+   OUTPUT_FORMAT=<60/SER<,+
+   LABEL='Remarque sur la requéte',+
+   PAGE=4,+
+   NAME=REM_REQ;
+AT(14:14,30:79)/U,+
+   SOURCE=DOSSIER.REM_SUSPENSION,+
+   SIZE=50,+
+   OUTPUT_FORMAT=<50<,+
+   LABEL='Rem. suspension',+
+   PAGE=6,+
+   NAME=REM_SUSPENSION;
+AT(9:9,36:45)/U,+
+   SOURCE=DOSSIER.RFID,+
+   SIZE=10,+
+   OUTPUT_FORMAT=>4>,+
+   LABEL='Champ technique RFID',+
+   PAGE=2,+
+   NAME=RFID;
+AT(13:13,30:49)/U,+
+   SOURCE=DOSSIER.ROLE_CIV_IMP,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<3/SEC<,+
+   LABEL='Sous-réle de l''impliqué',+
+   PAGE=3,+
+   NAME=ROLE_CIV_IMP;
+AT(9:9,30:49)/U,+
+   SOURCE=DOSSIER.ROLE_IMP,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1/SEC<,+
+   LABEL='Réle de l''implique',+
+   PAGE=3,+
+   NAME=ROLE_IMP;
+AT(5:5,30:49)/U,+
+   SOURCE=DOSSIER.R_ISSUE_PROCES,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Raison et issue du procés',+
+   PAGE=3,+
+   NAME=R_ISSUE_PROCES;
+AT(15:15,30:49)/U,+
+   SOURCE=DOSSIER.SITE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<3<,+
+   LABEL='Site',+
+   PAGE=6,+
+   NAME=SITE;
+AT(16:16,30:49)/U,+
+   SOURCE=DOSSIER.TRIBUNAL,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<3<,+
+   LABEL='Tribunal',+
+   PAGE=6,+
+   NAME=TRIBUNAL;
+AT(15:15,30:49)/U,+
+   SOURCE=DOSSIER.TYPE_REPRES,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Type de représentant',+
+   PAGE=3,+
+   NAME=TYPE_REPRES;
+AT(7:7,31:50)/U,+
+   SOURCE=DOSSIER.TYPE_REQ,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4/SEC<,+
+   LABEL='Type de la requéte',+
+   PAGE=4,+
+   NAME=TYPE_REQ;
+AT(8:8,31:50)/U,+
+   SOURCE=DOSSIER.TYPE_REQ_2,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4/SEC<,+
+   LABEL='Type de la requéte 2',+
+   PAGE=4,+
+   NAME=TYPE_REQ_2;
+AT(9:9,31:50)/U,+
+   SOURCE=DOSSIER.TYPE_REQ_D,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<7/SEC<,+
+   LABEL='Type de la requéte en D',+
+   PAGE=4,+
+   NAME=TYPE_REQ_D;
+AT(10:10,31:50)/U,+
+   SOURCE=DOSSIER.TYPE_REQ_F,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<7/SEC<,+
+   LABEL='Type de la requéte en F',+
+   PAGE=4,+
+   NAME=TYPE_REQ_F;
+AT(18:18,31:50)/U,+
+   SOURCE=DOSSIER.UID,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<8<,+
+   LABEL='Dernier utilisateur UID',+
+   PAGE=4,+
+   NAME=UID;
+AT(19:19,31:50)/U,+
+   SOURCE=DOSSIER.USER,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Dernier utilisateur',+
+   PAGE=4,+
+   NAME=USER;
+AT(3:3,36:55)/U,+
+   SOURCE=DOSSIER.VAL_LITIGIEUSE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<9<,+
+   LABEL='Valeur litigieuse',+
+   PAGE=2,+
+   NAME=VAL_LITIGIEUSE;
+AT(18:18,36:55)/U,+
+   SOURCE=DOSSIER.VISA_MODIF_POS,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<3<,+
+   LABEL='Position du dossier modifié par',+
+   PAGE=2,+
+   NAME=VISA_MODIF_POS;
+*
+VIEW=DOSSIER_DEC,+
+   PRIVILEGES=(GET,MOD),+
+   RESTRICT=ALWAYS,+
+   COMMENT=(+
+   'Vue permettant de mettre é jour la table dossier é partir de Décision.',+
+$B,'(Etat du dossier et date de liquidation du dossier)'),+
+   SOURCE=(DOSSIER),+
+   FORM=NO;
+*
+FIELD=CRIT_RAPP,+
+   LABEL='Critére attrib. rapport',+
+   OUTPUT_FORMAT=<30<,+
+   SOURCE=DOSSIER.CRIT_RAPP;
+*
+FIELD=CT,+
+   LABEL='Code transfert',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=DOSSIER.CT;
+*
+FIELD=DAT_ATTR_JD,+
+   LABEL='Date attrib. JI',+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   SOURCE=DOSSIER.DAT_ATTR_JD;
+*
+FIELD=DAT_ATTR_RED,+
+   LABEL='Date attrib. rédacteur',+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   SOURCE=DOSSIER.DAT_ATTR_RED;
+*
+FIELD=DAT_DEC_DOSSIER,+
+   LABEL='Date décision dossier',+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   SOURCE=DOSSIER.DAT_DEC_DOSSIER;
+*
+FIELD=DAT_LIQ_JD,+
+   LABEL='Date liquidation JI',+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   SOURCE=DOSSIER.DAT_LIQ_JD;
+*
+FIELD=DAT_LIQ_RED,+
+   LABEL='Date liquidation rédacteur',+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   SOURCE=DOSSIER.DAT_LIQ_RED;
+*
+FIELD=ETAT_DOSSIER,+
+   LABEL='Etat du dossier',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=DOSSIER.ETAT_DOSSIER;
+*
+FIELD=HEURE_MODIF,+
+   LABEL='Heure modif.',+
+   OUTPUT_FORMAT=<6/Z<,+
+   SOURCE=DOSSIER.HEURE_MODIF;
+*
+FIELD=JUGE,+
+   LABEL='Juges au dossier',+
+   OUTPUT_FORMAT=<20/SER<,+
+   SOURCE=DOSSIER.JUGE;
+*
+FIELD=JUGE_DELEGUE,+
+   LABEL='Juge délégué',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=DOSSIER.JUGE_DELEGUE;
+*
+FIELD=MATIERE,+
+   LABEL='Code matiére',+
+   OUTPUT_FORMAT=<6<,+
+   SOURCE=DOSSIER.MATIERE;
+*
+FIELD=NOM_DOSSIER,+
+   LABEL='Nom du dossier',+
+   OUTPUT_FORMAT=<43<,+
+   SOURCE=DOSSIER.NOM_DOSSIER;
+*
+FIELD=NUM_DOSSIER,+
+   LABEL='Numéro du dossier',+
+   OUTPUT_FORMAT=<15<,+
+   SOURCE=DOSSIER.NUM_DOSSIER;
+*
+FIELD=OBJET,+
+   LABEL='Objet du procés',+
+   OUTPUT_FORMAT=<400<,+
+   SOURCE=DOSSIER.OBJET;
+*
+FIELD=PRESIDENCE,+
+   LABEL='Présidence',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=DOSSIER.PRESIDENCE;
+*
+FIELD=PROC_ONEREUSE,+
+   LABEL='Proc. onéreuse',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=DOSSIER.PROC_ONEREUSE;
+*
+FIELD=QUORUM_DOSSIER,+
+   LABEL='Quorum du dossier',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=DOSSIER.QUORUM_DOSSIER;
+*
+FIELD=R_ISSUE_PROCES,+
+   LABEL='Raison et issue du procés',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=DOSSIER.R_ISSUE_PROCES;
+*
+FIELD=USER,+
+   LABEL='Mutateur',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=DOSSIER.USER;
+*
+VIEW=DOSSIER_POS,+
+   PRIVILEGES=(GET,MOD),+
+   SOURCE=(DOSSIER),+
+   FORM=NO;
+*
+FIELD=CT,+
+   LABEL='CT',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=DOSSIER.CT;
+*
+FIELD=DAT_MODIF_POS,+
+   LABEL='Date de modif. de la position',+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   SOURCE=DOSSIER.DAT_MODIF_POS;
+*
+FIELD=DAT_POSITION,+
+   LABEL='Positionné le',+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   SOURCE=DOSSIER.DAT_POSITION;
+*
+FIELD=HEURE_MODIF,+
+   LABEL='Heure modif.',+
+   OUTPUT_FORMAT=<6/Z<,+
+   SOURCE=DOSSIER.HEURE_MODIF;
+*
+FIELD=HEURE_MODIF_POS,+
+   LABEL='Heure de modif. de la position',+
+   OUTPUT_FORMAT=<6/Z<,+
+   SOURCE=DOSSIER.HEURE_MODIF_POS;
+*
+FIELD=HISTO_POSITION,+
+   LABEL='Histo position',+
+   OUTPUT_FORMAT=<50/VR20<,+
+   SOURCE=DOSSIER.HISTO_POSITION;
+*
+FIELD=NUM_DOSSIER,+
+   LABEL='NUM_DOSSIER',+
+   OUTPUT_FORMAT=<15<,+
+   SOURCE=DOSSIER.NUM_DOSSIER;
+*
+FIELD=POSITION,+
+   LABEL='Position',+
+   OUTPUT_FORMAT=<3<,+
+   SOURCE=DOSSIER.POSITION;
+*
+FIELD=REM_POSITION,+
+   LABEL='Rem. position',+
+   OUTPUT_FORMAT=<80/VR2<,+
+   SOURCE=DOSSIER.REM_POSITION;
+*
+FIELD=USER,+
+   LABEL='Dernier utilisateur',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=DOSSIER.USER;
+*
+VIEW=DOSSIER_REQ,+
+   PRIVILEGES=(GET,MOD),+
+   RESTRICT=ALWAYS,+
+   COMMENT=(+
+   'Vue permettant de mettre é jour la partie Requéte.'),+
+   SOURCE=(DOSSIER),+
+   FORM=NO;
+*
+FIELD=ACCEPT_REQ,+
+   LABEL='Issue de la requéte',+
+   OUTPUT_FORMAT=<1/SEC<,+
+   SOURCE=DOSSIER.ACCEPT_REQ;
+*
+FIELD=DAT_DEC_REQ,+
+   LABEL='Date décision req.',+
+   OUTPUT_FORMAT=<10/DATE23/SEC<,+
+   SOURCE=DOSSIER.DAT_DEC_REQ;
+*
+FIELD=NOM_DOSSIER,+
+   LABEL='Nom du dossier',+
+   OUTPUT_FORMAT=<43<,+
+   SOURCE=DOSSIER.NOM_DOSSIER;
+*
+FIELD=NUM_DOSSIER,+
+   LABEL='Numéro du dossier',+
+   OUTPUT_FORMAT=<15<,+
+   SOURCE=DOSSIER.NUM_DOSSIER;
+*
+FIELD=TYPE_REQ,+
+   LABEL='Type de la requéte',+
+   OUTPUT_FORMAT=<4/SEC<,+
+   SOURCE=DOSSIER.TYPE_REQ;
+*
+VIEW=DOSS_IMP,+
+   PRIVILEGES=(GET),+
+   RESTRICT=ALWAYS,+
+   JOIN=(DOSSIER.NUM_IMP := IMPLIQUE.CLE_IMPLIQUE),+
+   SOURCE=(DOSSIER,IMPLIQUE),+
+   FORM=YES;
+AT(16:16,30:79)/U,+
+   SOURCE=IMPLIQUE.ABR_BRADOC,+
+   SIZE=100,+
+   OUTPUT_FORMAT=<25/VR4<,+
+   LABEL='Autorité (de BRADOC)',+
+   PAGE=3,+
+   NAME=ABR_BRADOC;
+AT(19:19,28:35)/U,+
+   SOURCE=DOSSIER.ACCEPT_REQ,+
+   SIZE=8,+
+   OUTPUT_FORMAT=<3/SEC<,+
+   LABEL='Acceptation requéte',+
+   PAGE=4,+
+   NAME=ACCEPT_REQ;
+AT(15:15,28:67)/U,+
+   SOURCE=IMPLIQUE.ADR1,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='Adresse d''envoi',+
+   PAGE=2,+
+   NAME=ADR1;
+AT(17:17,30:69)/U,+
+   SOURCE=IMPLIQUE.ADR1_SUP,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='Adresse supplémentaire',+
+   PAGE=3,+
+   NAME=ADR1_SUP;
+AT(17:17,28:67)/U,+
+   SOURCE=IMPLIQUE.ADR2,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='2éme ligne......',+
+   PAGE=2,+
+   NAME=ADR2;
+AT(18:18,30:69)/U,+
+   SOURCE=IMPLIQUE.ADR2_SUP,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='2éme ligne............',+
+   PAGE=3,+
+   NAME=ADR2_SUP;
+AT(18:18,28:67)/U,+
+   SOURCE=IMPLIQUE.ADR3,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='3éme ligne......',+
+   PAGE=2,+
+   NAME=ADR3;
+AT(19:19,30:69)/U,+
+   SOURCE=IMPLIQUE.ADR3_SUP,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='3éme ligne............',+
+   PAGE=3,+
+   NAME=ADR3_SUP;
+AT(12:12,28:37)/U,+
+   SOURCE=IMPLIQUE.AN_NAIS,+
+   SIZE=10,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Année de naissance',+
+   PAGE=4,+
+   NAME=AN_NAIS;
+AT(12:12,28:77)/U,+
+   SOURCE=IMPLIQUE.AUTRE_NOM,+
+   SIZE=50,+
+   OUTPUT_FORMAT=<30/VR5<,+
+   LABEL='Autre nom',+
+   PAGE=2,+
+   NAME=AUTRE_NOM;
+AT(11:11,26:45)/U,+
+   SOURCE=DOSSIER.BRANCHE,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Branche',+
+   PAGE=1,+
+   NAME=BRANCHE;
+AT(9:9,30:49)/U,+
+   SOURCE=IMPLIQUE.CANTON,+
+   SIZE=2,+
+   OUTPUT_FORMAT=<2<,+
+   LABEL='Canton',+
+   PAGE=3,+
+   NAME=CANTON;
+AT(4:4,28:47)/U,+
+   SOURCE=IMPLIQUE.CANTON_SUP,+
+   SIZE=2,+
+   OUTPUT_FORMAT=<2<,+
+   LABEL='Canton (sup)',+
+   PAGE=4,+
+   NAME=CANTON_SUP;
+AT(5:5,26:45)/U,+
+   SOURCE=IMPLIQUE.CATEGORIE,+
+   SIZE=1,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Catégorie',+
+   PAGE=1,+
+   NAME=CATEGORIE;
+AT(13:13,28:47)/U,+
+   SOURCE=IMPLIQUE.CATEGORIE_TFA,+
+   SIZE=5,+
+   OUTPUT_FORMAT=<5<,+
+   LABEL='Catégorie (stat. TFA)',+
+   PAGE=4,+
+   NAME=CATEGORIE_TFA;
+AT(7:7,28:31)/U,+
+   SOURCE=DOSSIER.CELEBRE,+
+   SIZE=4,+
+   LABEL='Cause célébre',+
+   PAGE=2,+
+   NAME=CELEBRE;
+AT(19:19,28:47)/U,+
+   SOURCE=DOSSIER.CHAMBRE,+
+   SIZE=3,+
+   OUTPUT_FORMAT=<3<,+
+   LABEL='Chambre',+
+   PAGE=2,+
+   NAME=CHAMBRE;
+AT(3:3,26:43)/U,+
+   SOURCE=DOSSIER.CLE_DOSSIER,+
+   SIZE=18,+
+   OUTPUT_FORMAT=>8>,+
+   LABEL='Clé dossier',+
+   PAGE=1,+
+   NAME=CLE_DOSSIER;
+AT(2:2,26:47)/U,+
+   SOURCE=IMPLIQUE.CLE_IMPLIQUE,+
+   SIZE=22,+
+   OUTPUT_FORMAT=>10>,+
+   LABEL='Numéro d''un impliqué',+
+   PAGE=1,+
+   NAME=CLE_IMPLIQUE;
+AT(12:12,26:45)/U,+
+   SOURCE=DOSSIER.COUR,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Cour',+
+   PAGE=1,+
+   NAME=COUR;
+AT(6:6,28:47)/U,+
+   SOURCE=IMPLIQUE.CT,+
+   SIZE=1,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='CT',+
+   PAGE=5,+
+   NAME=CT;
+AT(10:10,28:37)/U,+
+   SOURCE=DOSSIER.CUMUL_SUSP,+
+   SIZE=10,+
+   OUTPUT_FORMAT=>4>,+
+   LABEL='Nbr jours suspension',+
+   PAGE=2,+
+   NAME=CUMUL_SUSP;
+AT(16:16,28:49)/U,+
+   SOURCE=DOSSIER.DAT_ARCHIVAGE,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date d''archivage',+
+   PAGE=2,+
+   NAME=DAT_ARCHIVAGE;
+AT(7:7,26:47)/U,+
+   SOURCE=DOSSIER.DAT_ARRIVEE,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date d''arrivée',+
+   PAGE=1,+
+   NAME=DAT_ARRIVEE;
+AT(2:2,30:51)/U,+
+   SOURCE=DOSSIER.DAT_ATTR_JD,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date attribution JD',+
+   PAGE=3,+
+   NAME=DAT_ATTR_JD;
+AT(5:5,30:51)/U,+
+   SOURCE=DOSSIER.DAT_ATTR_RED,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date attribution réd.',+
+   PAGE=3,+
+   NAME=DAT_ATTR_RED;
+AT(19:19,26:47)/U,+
+   SOURCE=DOSSIER.DAT_COM_DISP,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date comm. dispositif',+
+   PAGE=1,+
+   NAME=DAT_COM_DISP;
+AT(2:2,28:49)/U,+
+   SOURCE=DOSSIER.DAT_CREATION,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date création',+
+   PAGE=5,+
+   NAME=DAT_CREATION;
+AT(8:8,28:49)/U,+
+   SOURCE=DOSSIER.DAT_DEB_SUSP,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date début suspension',+
+   PAGE=2,+
+   NAME=DAT_DEB_SUSP;
+AT(10:10,26:47)/U,+
+   SOURCE=DOSSIER.DAT_DEC_ATT,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date déc. attaquée',+
+   PAGE=1,+
+   NAME=DAT_DEC_ATT;
+AT(10:10,30:51)/U,+
+   SOURCE=DOSSIER.DAT_DEC_DOSSIER,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date décision dossier',+
+   PAGE=3,+
+   NAME=DAT_DEC_DOSSIER;
+AT(20:20,28:49)/U,+
+   SOURCE=DOSSIER.DAT_DEC_REQ,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23/SEC<,+
+   LABEL='Date décision req.',+
+   PAGE=4,+
+   NAME=DAT_DEC_REQ;
+AT(6:6,26:47)/U,+
+   SOURCE=DOSSIER.DAT_DEPOT,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date dépét',+
+   PAGE=1,+
+   NAME=DAT_DEPOT;
+AT(9:9,28:49)/U,+
+   SOURCE=DOSSIER.DAT_FIN_SUSP,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date fin suspension',+
+   PAGE=2,+
+   NAME=DAT_FIN_SUSP;
+AT(3:3,30:51)/U,+
+   SOURCE=DOSSIER.DAT_LIQ_JD,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date liquidation JD',+
+   PAGE=3,+
+   NAME=DAT_LIQ_JD;
+AT(7:7,30:51)/U,+
+   SOURCE=DOSSIER.DAT_LIQ_RED,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date liquidation réd.',+
+   PAGE=3,+
+   NAME=DAT_LIQ_RED;
+AT(3:3,28:49)/U,+
+   SOURCE=DOSSIER.DAT_MODIFICATION,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date modification',+
+   PAGE=5,+
+   NAME=DAT_MODIFICATION;
+AT(8:8,26:47)/U,+
+   SOURCE=DOSSIER.DAT_NOTIF,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date notification',+
+   PAGE=1,+
+   NAME=DAT_NOTIF;
+AT(20:20,26:47)/U,+
+   SOURCE=DOSSIER.DAT_POURVOI,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date pourvoi',+
+   PAGE=1,+
+   NAME=DAT_POURVOI;
+AT(17:17,28:80)/U,+
+   SOURCE=DOSSIER.DESCRIPTEUR,+
+   SIZE=55,+
+   OUTPUT_FORMAT=<55/SEC<,+
+   LABEL='Descripteurs',+
+   PAGE=4,+
+   NAME=DESCRIPTEUR;
+AT(3:3,28:47)/U,+
+   SOURCE=DOSSIER.DOSSIER_CONNEXE,+
+   SIZE=15,+
+   OUTPUT_FORMAT=<15/SEC<,+
+   LABEL='Dossiers connexes',+
+   PAGE=2,+
+   NAME=DOSSIER_CONNEXE;
+AT(4:4,26:45)/U,+
+   SOURCE=DOSSIER.ETAT_DOSSIER,+
+   SIZE=1,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Etat du dossier',+
+   PAGE=1,+
+   NAME=ETAT_DOSSIER;
+AT(9:9,26:45)/U,+
+   SOURCE=IMPLIQUE.GENRE,+
+   SIZE=2,+
+   OUTPUT_FORMAT=<2<,+
+   LABEL='Genre',+
+   PAGE=1,+
+   NAME=GENRE;
+AT(9:9,28:47)/U,+
+   SOURCE=DOSSIER.GENRE_REPRES,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20/SEC<,+
+   LABEL='Genre de représentation',+
+   PAGE=4,+
+   NAME=GENRE_REPRES;
+AT(14:14,28:31)/U,+
+   SOURCE=IMPLIQUE.INSOLVABLE,+
+   SIZE=4,+
+   LABEL='Insolvable',+
+   PAGE=4,+
+   NAME=INSOLVABLE;
+AT(1:1,30:49)/U,+
+   SOURCE=DOSSIER.JUGE_DELEGUE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Juge délégué',+
+   PAGE=3,+
+   NAME=JUGE_DELEGUE;
+AT(1:1,2:24)/P/FL,+
+   PUT('Numéro du dossier.....='),+
+   PAGE=1,+
+   NAME=L01001;
+AT(2:2,2:24)/P/FL,+
+   PUT('Numéro d''un impliqué..='),+
+   PAGE=1,+
+   NAME=L01002;
+AT(3:3,2:24)/P/FL,+
+   PUT('Clé dossier...........='),+
+   PAGE=1,+
+   NAME=L01003;
+AT(4:4,2:24)/P/FL,+
+   PUT('Etat du dossier.......='),+
+   PAGE=1,+
+   NAME=L01004;
+AT(5:5,2:24)/P/FL,+
+   PUT('Catégorie.............='),+
+   PAGE=1,+
+   NAME=L01005;
+AT(6:6,2:24)/P/FL,+
+   PUT('Date dépét............:'),+
+   PAGE=1,+
+   NAME=L01006;
+AT(7:7,2:24)/P/FL,+
+   PUT('Date d''arrivée........:'),+
+   PAGE=1,+
+   NAME=L01007;
+AT(8:8,2:24)/P/FL,+
+   PUT('Date notification.....:'),+
+   PAGE=1,+
+   NAME=L01008;
+AT(9:9,2:24)/P/FL,+
+   PUT('Genre.................='),+
+   PAGE=1,+
+   NAME=L01009;
+AT(10:10,2:24)/P/FL,+
+   PUT('Date déc. attaquée....:'),+
+   PAGE=1,+
+   NAME=L01010;
+AT(11:11,2:24)/P/FL,+
+   PUT('Branche...............='),+
+   PAGE=1,+
+   NAME=L01011;
+AT(12:12,2:24)/P/FL,+
+   PUT('Cour..................='),+
+   PAGE=1,+
+   NAME=L01012;
+AT(13:13,2:24)/P/FL,+
+   PUT('Langue................='),+
+   PAGE=1,+
+   NAME=L01013;
+AT(14:14,2:24)/P/FL,+
+   PUT('Moyen de droit........='),+
+   PAGE=1,+
+   NAME=L01014;
+AT(15:15,2:24)/P/FL,+
+   PUT('Titre.................:'),+
+   PAGE=1,+
+   NAME=L01015;
+AT(16:16,2:24)/P/FL,+
+   PUT('Objet du procés.......>'),+
+   PAGE=1,+
+   NAME=L01016;
+AT(17:17,2:24)/P/FL,+
+   PUT('Nom registrateur......:'),+
+   PAGE=1,+
+   NAME=L01017;
+AT(18:18,2:24)/P/FL,+
+   PUT('Nom du dossier........:'),+
+   PAGE=1,+
+   NAME=L01018;
+AT(19:19,2:24)/P/FL,+
+   PUT('Date comm. dispositif.:'),+
+   PAGE=1,+
+   NAME=L01019;
+AT(20:20,2:24)/P/FL,+
+   PUT('Date pourvoi..........:'),+
+   PAGE=1,+
+   NAME=L01020;
+AT(1:1,2:26)/P/FL,+
+   PUT('Nom d''un impliqué......=>'),+
+   PAGE=2,+
+   NAME=L02021;
+AT(2:2,2:26)/P/FL,+
+   PUT('Recours joint...........:'),+
+   PAGE=2,+
+   NAME=L02022;
+AT(3:3,2:26)/P/FL,+
+   PUT('Dossiers connexes.......>'),+
+   PAGE=2,+
+   NAME=L02023;
+AT(4:4,2:26)/P/FL,+
+   PUT('Procuration.............:'),+
+   PAGE=2,+
+   NAME=L02024;
+AT(5:5,2:26)/P/FL,+
+   PUT('Valeur litigieuse.......:'),+
+   PAGE=2,+
+   NAME=L02025;
+AT(6:6,2:26)/P/FL,+
+   PUT('Prénom..................:'),+
+   PAGE=2,+
+   NAME=L02026;
+AT(7:7,2:26)/P/FL,+
+   PUT('Cause célébre...........='),+
+   PAGE=2,+
+   NAME=L02027;
+AT(8:8,2:26)/P/FL,+
+   PUT('Date début suspension...:'),+
+   PAGE=2,+
+   NAME=L02028;
+AT(9:9,2:26)/P/FL,+
+   PUT('Date fin suspension.....:'),+
+   PAGE=2,+
+   NAME=L02029;
+AT(10:10,2:26)/P/FL,+
+   PUT('Nbr jours suspension....:'),+
+   PAGE=2,+
+   NAME=L02030;
+AT(11:11,2:26)/P/FL,+
+   PUT('Remarque sur le dossier.>'),+
+   PAGE=2,+
+   NAME=L02031;
+AT(12:12,2:26)/P/FL,+
+   PUT('Autre nom...............:'),+
+   PAGE=2,+
+   NAME=L02032;
+AT(13:13,2:26)/P/FL,+
+   PUT('Profession..............:'),+
+   PAGE=2,+
+   NAME=L02033;
+AT(14:14,2:26)/P/FL,+
+   PUT('Né d''archivage..........:'),+
+   PAGE=2,+
+   NAME=L02034;
+AT(15:15,2:26)/P/FL,+
+   PUT('Adresse d''envoi.........:'),+
+   PAGE=2,+
+   NAME=L02035;
+AT(16:16,2:26)/P/FL,+
+   PUT('Date d''archivage........:'),+
+   PAGE=2,+
+   NAME=L02036;
+AT(17:17,2:26)/P/FL,+
+   PUT('2éme ligne..............:'),+
+   PAGE=2,+
+   NAME=L02037;
+AT(18:18,2:26)/P/FL,+
+   PUT('3éme ligne..............:'),+
+   PAGE=2,+
+   NAME=L02038;
+AT(19:19,2:26)/P/FL,+
+   PUT('Chambre.................:'),+
+   PAGE=2,+
+   NAME=L02039;
+AT(20:20,2:26)/P/FL,+
+   PUT('NPA.....................='),+
+   PAGE=2,+
+   NAME=L02040;
+AT(1:1,2:28)/P/FL,+
+   PUT('Juge délégué..............:'),+
+   PAGE=3,+
+   NAME=L03041;
+AT(2:2,2:28)/P/FL,+
+   PUT('Date attribution JD.......:'),+
+   PAGE=3,+
+   NAME=L03042;
+AT(3:3,2:28)/P/FL,+
+   PUT('Date liquidation JD.......:'),+
+   PAGE=3,+
+   NAME=L03043;
+AT(4:4,2:28)/P/FL,+
+   PUT('Rédacteur.................:'),+
+   PAGE=3,+
+   NAME=L03044;
+AT(5:5,2:28)/P/FL,+
+   PUT('Date attribution réd......:'),+
+   PAGE=3,+
+   NAME=L03045;
+AT(6:6,2:28)/P/FL,+
+   PUT('Nom de localité...........='),+
+   PAGE=3,+
+   NAME=L03046;
+AT(7:7,2:28)/P/FL,+
+   PUT('Date liquidation réd......:'),+
+   PAGE=3,+
+   NAME=L03047;
+AT(8:8,2:28)/P/FL,+
+   PUT('Raison et issue du procés.:'),+
+   PAGE=3,+
+   NAME=L03048;
+AT(9:9,2:28)/P/FL,+
+   PUT('Canton....................='),+
+   PAGE=3,+
+   NAME=L03049;
+AT(10:10,2:28)/P/FL,+
+   PUT('Date décision dossier.....:'),+
+   PAGE=3,+
+   NAME=L03050;
+AT(11:11,2:28)/P/FL,+
+   PUT('Né AVS....................:'),+
+   PAGE=3,+
+   NAME=L03051;
+AT(12:12,2:28)/P/FL,+
+   PUT('Remarque attribution......>'),+
+   PAGE=3,+
+   NAME=L03052;
+AT(13:13,2:28)/P/FL,+
+   PUT('Né Téléphone..............:'),+
+   PAGE=3,+
+   NAME=L03053;
+AT(14:14,2:28)/P/FL,+
+   PUT('Né FAX....................:'),+
+   PAGE=3,+
+   NAME=L03054;
+AT(15:15,2:28)/P/FL,+
+   PUT('Nom court d''un impliqué...='),+
+   PAGE=3,+
+   NAME=L03055;
+AT(16:16,2:28)/P/FL,+
+   PUT('Autorité (de BRADOC)......>'),+
+   PAGE=3,+
+   NAME=L03056;
+AT(17:17,2:28)/P/FL,+
+   PUT('Adresse supplémentaire....:'),+
+   PAGE=3,+
+   NAME=L03057;
+AT(18:18,2:28)/P/FL,+
+   PUT('2éme ligne................:'),+
+   PAGE=3,+
+   NAME=L03058;
+AT(19:19,2:28)/P/FL,+
+   PUT('3éme ligne................:'),+
+   PAGE=3,+
+   NAME=L03059;
+AT(20:20,2:28)/P/FL,+
+   PUT('Numéro des parties........>'),+
+   PAGE=3,+
+   NAME=L03060;
+AT(1:1,2:26)/P/FL,+
+   PUT('NPA.....................:'),+
+   PAGE=4,+
+   NAME=L04061;
+AT(2:2,2:26)/P/FL,+
+   PUT('Réle de l''implique......>'),+
+   PAGE=4,+
+   NAME=L04062;
+AT(3:3,2:26)/P/FL,+
+   PUT('Nom de localité (sup)...:'),+
+   PAGE=4,+
+   NAME=L04063;
+AT(4:4,2:26)/P/FL,+
+   PUT('Canton (sup)............:'),+
+   PAGE=4,+
+   NAME=L04064;
+AT(5:5,2:26)/P/FL,+
+   PUT('Sous-réle de l''impliqué.>'),+
+   PAGE=4,+
+   NAME=L04065;
+AT(6:6,2:26)/P/FL,+
+   PUT('Remarque sur l''impliqué.>'),+
+   PAGE=4,+
+   NAME=L04066;
+AT(7:7,2:26)/P/FL,+
+   PUT('Dernier USER............='),+
+   PAGE=4,+
+   NAME=L04067;
+AT(8:8,2:26)/P/FL,+
+   PUT('Date création...........='),+
+   PAGE=4,+
+   NAME=L04068;
+AT(9:9,2:26)/P/FL,+
+   PUT('Genre de représentation.>'),+
+   PAGE=4,+
+   NAME=L04069;
+AT(10:10,2:26)/P/FL,+
+   PUT('Date modification.......='),+
+   PAGE=4,+
+   NAME=L04070;
+AT(11:11,2:26)/P/FL,+
+   PUT('Numéro représentant.....>'),+
+   PAGE=4,+
+   NAME=L04071;
+AT(12:12,2:26)/P/FL,+
+   PUT('Année de naissance......:'),+
+   PAGE=4,+
+   NAME=L04072;
+AT(13:13,2:26)/P/FL,+
+   PUT('Catégorie (stat. TFA)...:'),+
+   PAGE=4,+
+   NAME=L04073;
+AT(14:14,2:26)/P/FL,+
+   PUT('Insolvable..............:'),+
+   PAGE=4,+
+   NAME=L04074;
+AT(15:15,2:26)/P/FL,+
+   PUT('Code matiére............:'),+
+   PAGE=4,+
+   NAME=L04075;
+AT(16:16,2:26)/P/FL,+
+   PUT('Normes..................>'),+
+   PAGE=4,+
+   NAME=L04076;
+AT(17:17,2:26)/P/FL,+
+   PUT('Descripteurs............>'),+
+   PAGE=4,+
+   NAME=L04077;
+AT(18:18,2:26)/P/FL,+
+   PUT('Type de la requéte......>'),+
+   PAGE=4,+
+   NAME=L04078;
+AT(19:19,2:26)/P/FL,+
+   PUT('Acceptation requéte.....>'),+
+   PAGE=4,+
+   NAME=L04079;
+AT(20:20,2:26)/P/FL,+
+   PUT('Date décision req.......>'),+
+   PAGE=4,+
+   NAME=L04080;
+AT(1:1,2:26)/P/FL,+
+   PUT('Remarque sur la requéte.>'),+
+   PAGE=5,+
+   NAME=L05081;
+AT(2:2,2:26)/P/FL,+
+   PUT('Date création...........='),+
+   PAGE=5,+
+   NAME=L05082;
+AT(3:3,2:26)/P/FL,+
+   PUT('Date modification.......='),+
+   PAGE=5,+
+   NAME=L05083;
+AT(4:4,2:26)/P/FL,+
+   PUT('Dernier USER............='),+
+   PAGE=5,+
+   NAME=L05084;
+AT(5:5,2:26)/P/FL,+
+   PUT('CT......................='),+
+   PAGE=5,+
+   NAME=L05085;
+AT(6:6,2:26)/P/FL,+
+   PUT('CT......................='),+
+   PAGE=5,+
+   NAME=L05086;
+AT(13:13,26:45)/U,+
+   SOURCE=DOSSIER.LANGUE,+
+   SIZE=1,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Langue',+
+   PAGE=1,+
+   NAME=LANGUE;
+AT(6:6,30:59)/U,+
+   SOURCE=IMPLIQUE.LOC,+
+   SIZE=30,+
+   OUTPUT_FORMAT=<15/VR2<,+
+   LABEL='Nom de localité',+
+   PAGE=3,+
+   NAME=LOC;
+AT(3:3,28:57)/U,+
+   SOURCE=IMPLIQUE.LOC_SUP,+
+   SIZE=30,+
+   OUTPUT_FORMAT=<15/VR2<,+
+   LABEL='Nom de localité (sup)',+
+   PAGE=4,+
+   NAME=LOC_SUP;
+AT(15:15,28:35)/U,+
+   SOURCE=DOSSIER.MATIERE,+
+   SIZE=8,+
+   OUTPUT_FORMAT=<3<,+
+   LABEL='Code matiére',+
+   PAGE=4,+
+   NAME=MATIERE;
+AT(14:14,26:45)/U,+
+   SOURCE=DOSSIER.MOYEN_DE_DROIT,+
+   SIZE=6,+
+   OUTPUT_FORMAT=<6<,+
+   LABEL='Moyen de droit',+
+   PAGE=1,+
+   NAME=MOYEN_DE_DROIT;
+AT(1:1,28:67)/U,+
+   SOURCE=IMPLIQUE.NOM,+
+   SIZE=120,+
+   OUTPUT_FORMAT=<30/VR5<,+
+   LABEL='Nom d''un impliqué',+
+   PAGE=2,+
+   NAME=NOM;
+AT(15:15,30:49)/U,+
+   SOURCE=IMPLIQUE.NOM_COURT,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Nom court d''un impliqué',+
+   PAGE=3,+
+   NAME=NOM_COURT;
+AT(18:18,26:55)/U,+
+   SOURCE=DOSSIER.NOM_DOSSIER,+
+   SIZE=30,+
+   OUTPUT_FORMAT=<30/VR5<,+
+   LABEL='Nom du dossier',+
+   PAGE=1,+
+   NAME=NOM_DOSSIER;
+AT(16:16,28:77)/U,+
+   SOURCE=DOSSIER.NORME,+
+   SIZE=50,+
+   OUTPUT_FORMAT=<50/SEC<,+
+   LABEL='Normes',+
+   PAGE=4,+
+   NAME=NORME;
+AT(20:20,28:37)/U,+
+   SOURCE=IMPLIQUE.NPA,+
+   SIZE=10,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='NPA',+
+   PAGE=2,+
+   NAME=NPA;
+AT(1:1,28:37)/U,+
+   SOURCE=IMPLIQUE.NPA_SUP,+
+   SIZE=10,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='NPA',+
+   PAGE=4,+
+   NAME=NPA_SUP;
+AT(11:11,30:49)/U,+
+   SOURCE=IMPLIQUE.NUM_AVS,+
+   SIZE=14,+
+   OUTPUT_FORMAT=<10/VR2<,+
+   LABEL='Né AVS',+
+   PAGE=3,+
+   NAME=NUM_AVS;
+AT(1:1,26:45)/U,+
+   SOURCE=DOSSIER.NUM_DOSSIER,+
+   SIZE=15,+
+   OUTPUT_FORMAT=<15<,+
+   LABEL='Numéro du dossier',+
+   PAGE=1,+
+   NAME=NUM_DOSSIER;
+AT(14:14,30:49)/U,+
+   SOURCE=IMPLIQUE.NUM_FAX,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<11/VR2<,+
+   LABEL='Né FAX',+
+   PAGE=3,+
+   NAME=NUM_FAX;
+AT(20:20,30:43)/U,+
+   SOURCE=DOSSIER.NUM_IMP,+
+   SIZE=14,+
+   OUTPUT_FORMAT=<6/SEC<,+
+   LABEL='Numéro des parties',+
+   PAGE=3,+
+   NAME=NUM_IMP;
+AT(11:11,28:41)/U,+
+   SOURCE=DOSSIER.NUM_REPRES,+
+   SIZE=14,+
+   OUTPUT_FORMAT=<6/SEC<,+
+   LABEL='Numéro représentant',+
+   PAGE=4,+
+   NAME=NUM_REPRES;
+AT(13:13,30:49)/U,+
+   SOURCE=IMPLIQUE.NUM_TEL,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<11/VR2<,+
+   LABEL='Né Téléphone',+
+   PAGE=3,+
+   NAME=NUM_TEL;
+AT(16:16,26:75)/U,+
+   SOURCE=DOSSIER.OBJET,+
+   SIZE=400,+
+   OUTPUT_FORMAT=<50/VR8<,+
+   LABEL='Objet du procés',+
+   PAGE=1,+
+   NAME=OBJET;
+AT(6:6,28:57)/U,+
+   SOURCE=IMPLIQUE.PRENOM,+
+   SIZE=30,+
+   OUTPUT_FORMAT=<15/VR2<,+
+   LABEL='Prénom',+
+   PAGE=2,+
+   NAME=PRENOM;
+AT(4:4,28:57)/U,+
+   SOURCE=DOSSIER.PROCURATION,+
+   SIZE=30,+
+   OUTPUT_FORMAT=<15/VR2<,+
+   LABEL='Procuration',+
+   PAGE=2,+
+   NAME=PROCURATION;
+AT(13:13,28:52)/U,+
+   SOURCE=IMPLIQUE.PROFESSION,+
+   SIZE=25,+
+   OUTPUT_FORMAT=<10/VR3<,+
+   LABEL='Profession',+
+   PAGE=2,+
+   NAME=PROFESSION;
+AT(2:2,28:31)/U,+
+   SOURCE=DOSSIER.RECOURS_JOINT,+
+   SIZE=4,+
+   LABEL='Recours joint',+
+   PAGE=2,+
+   NAME=RECOURS_JOINT;
+AT(4:4,30:49)/U,+
+   SOURCE=DOSSIER.REDACTEUR,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Rédacteur',+
+   PAGE=3,+
+   NAME=REDACTEUR;
+AT(17:17,26:45)/U,+
+   SOURCE=DOSSIER.REGISTRATEUR,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Nom registrateur',+
+   PAGE=1,+
+   NAME=REGISTRATEUR;
+AT(12:12,30:69)/U,+
+   SOURCE=DOSSIER.REM_ATTRIBUTION,+
+   SIZE=80,+
+   OUTPUT_FORMAT=<50/VR2<,+
+   LABEL='Remarque attribution',+
+   PAGE=3,+
+   NAME=REM_ATTRIBUTION;
+AT(11:11,28:77)/U,+
+   SOURCE=DOSSIER.REM_DOSSIER,+
+   SIZE=200,+
+   OUTPUT_FORMAT=<50/VR4<,+
+   LABEL='Remarque sur le dossier',+
+   PAGE=2,+
+   NAME=REM_DOSSIER;
+AT(6:6,28:77)/U,+
+   SOURCE=IMPLIQUE.REM_IMP,+
+   SIZE=150,+
+   OUTPUT_FORMAT=<30/VR5<,+
+   LABEL='Remarque sur l''impliqué',+
+   PAGE=4,+
+   NAME=REM_IMP;
+AT(1:1,28:57)/U,+
+   SOURCE=DOSSIER.REM_REQ,+
+   SIZE=60,+
+   OUTPUT_FORMAT=<60/SEC<,+
+   LABEL='Remarque sur la requéte',+
+   PAGE=5,+
+   NAME=REM_REQ;
+AT(5:5,28:47)/U,+
+   SOURCE=DOSSIER.ROLE_CIV_IMP,+
+   SIZE=3,+
+   OUTPUT_FORMAT=<3/SEC<,+
+   LABEL='Sous-réle de l''impliqué',+
+   PAGE=4,+
+   NAME=ROLE_CIV_IMP;
+AT(2:2,28:47)/U,+
+   SOURCE=DOSSIER.ROLE_IMP,+
+   SIZE=1,+
+   OUTPUT_FORMAT=<1/SEC<,+
+   LABEL='Réle de l''implique',+
+   PAGE=4,+
+   NAME=ROLE_IMP;
+AT(8:8,30:49)/U,+
+   SOURCE=DOSSIER.R_ISSUE_PROCES,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Raison et issue du procés',+
+   PAGE=3,+
+   NAME=R_ISSUE_PROCES;
+AT(15:15,26:50)/U,+
+   SOURCE=IMPLIQUE.TITRE,+
+   SIZE=25,+
+   OUTPUT_FORMAT=<10/VR3<,+
+   LABEL='Titre',+
+   PAGE=1,+
+   NAME=TITRE;
+AT(18:18,28:47)/U,+
+   SOURCE=DOSSIER.TYPE_REQ,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<4/SEC<,+
+   LABEL='Type de la requéte',+
+   PAGE=4,+
+   NAME=TYPE_REQ;
+AT(5:5,28:47)/U,+
+   SOURCE=DOSSIER.VAL_LITIGIEUSE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<9<,+
+   LABEL='Valeur litigieuse',+
+   PAGE=2,+
+   NAME=VAL_LITIGIEUSE;
+*
+VIEW=ED_STATUT,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(ED_STATUT),+
+   FORM=YES;
+AT(3:3,27:48)/U,+
+   SOURCE=ED_STATUT.CLE_ED_STATUT,+
+   SIZE=22,+
+   LABEL='Clé Doc.',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=CLE_ED_STATUT;
+AT(8:8,27:46)/U,+
+   SOURCE=ED_STATUT.CT,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='CT',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=CT;
+AT(6:6,27:48)/U,+
+   SOURCE=ED_STATUT.DAT_MODIF,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date modification',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=DAT_MODIF;
+AT(9:9,27:40)/U,+
+   SOURCE=ED_STATUT.HEURE_MODIF,+
+   SIZE=14,+
+   OUTPUT_FORMAT=<6<,+
+   LABEL='Heure de modif.',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=HEURE_MODIF;
+AT(12:12,27:64)/U,+
+   SOURCE=ED_STATUT.HORODATEUR,+
+   SIZE=38,+
+   OUTPUT_FORMAT=<18<,+
+   LABEL='Horodatage',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=HORODATEUR;
+AT(1:1,29:46)/P/FL,+
+   PUT('Vue ED_STATUT DBA'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01001;
+AT(3:3,2:25)/P/FL,+
+   PUT('Clé Doc................='),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01002;
+AT(4:4,2:25)/P/FL,+
+   PUT('Nom du fichier........=>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01003;
+AT(5:5,2:25)/P/FL,+
+   PUT('Sous-rép...............='),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01004;
+AT(6:6,2:25)/P/FL,+
+   PUT('Date modification......='),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01005;
+AT(7:7,2:25)/P/FL,+
+   PUT('Nom modificateur.......='),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01006;
+AT(8:8,2:25)/P/FL,+
+   PUT('CT.....................='),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01007;
+AT(9:9,2:25)/P/FL,+
+   PUT('Heure de modif.........='),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01008;
+AT(10:10,2:25)/P/FL,+
+   PUT('Statut fichier.........='),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01009;
+AT(11:11,2:25)/P/FL,+
+   PUT('Fichier verrouillé.....='),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01010;
+AT(12:12,2:25)/P/FL,+
+   PUT('Horodatage.............:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01011;
+AT(13:13,2:25)/P/FL,+
+   PUT('Nouveau nom du fichier.>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01012;
+AT(14:14,2:25)/P/FL,+
+   PUT('Nom verrouilleur.......:'),+
+   PAGE=1,+
+   NAME=L01013;
+AT(4:4,27:76)/U,+
+   SOURCE=ED_STATUT.NOM_FICHIER,+
+   SIZE=100,+
+   OUTPUT_FORMAT=<100<,+
+   LABEL='Nom du fichier',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=NOM_FICHIER;
+AT(7:7,27:46)/U,+
+   SOURCE=ED_STATUT.NOM_MODIF,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Nom modificateur',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=NOM_MODIF;
+AT(13:13,27:76)/U,+
+   SOURCE=ED_STATUT.NOUVEAU_NOM_FICHIER,+
+   SIZE=100,+
+   OUTPUT_FORMAT=<100<,+
+   LABEL='Nouveau nom du fichier',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=NOUVEAU_NOM_FICHIER;
+AT(5:5,27:30)/U,+
+   SOURCE=ED_STATUT.NUM_SOUS_REP,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Sous-rép.',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=NUM_SOUS_REP;
+AT(10:10,27:46)/U,+
+   SOURCE=ED_STATUT.STATUT_FICHIER,+
+   SIZE=20,+
+   LABEL='Statut fichier',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=STATUT_FICHIER;
+AT(11:11,27:30)/U,+
+   SOURCE=ED_STATUT.VERROUILLE,+
+   SIZE=4,+
+   LABEL='Fichier verrouillé',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=VERROUILLE;
+AT(14:14,27:46)/U,+
+   SOURCE=ED_STATUT.VERROU_PAR,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Nom verrouilleur',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=VERROU_PAR;
+*
+VIEW=FORMULE,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(FORMULE),+
+   FORM=YES;
+AT(2:2,20:39)/U,+
+   SOURCE=FORMULE.ADRESSAGE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<17<,+
+   LABEL='Adressage',+
+   PAGE=2,+
+   NAME=ADRESSAGE;
+AT(12:12,30:33)/U,+
+   SOURCE=FORMULE.BDP,+
+   SIZE=4,+
+   LABEL='BdP',+
+   PAGE=1,+
+   NAME=BDP;
+AT(13:13,30:49)/U,+
+   SOURCE=FORMULE.BRANCHE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Branche',+
+   PAGE=1,+
+   NAME=BRANCHE;
+AT(1:1,20:39)/U,+
+   SOURCE=FORMULE.BUREAUTIQUE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1/SER<,+
+   LABEL='Bureautique',+
+   PAGE=2,+
+   NAME=BUREAUTIQUE;
+AT(10:10,30:49)/U,+
+   SOURCE=FORMULE.CATEGORIE_IMP,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1/SER<,+
+   LABEL='Catégorie impl.',+
+   PAGE=1,+
+   NAME=CATEGORIE_IMP;
+AT(11:11,30:49)/U,+
+   SOURCE=FORMULE.CATEGORIE_TFA,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<5/SER<,+
+   LABEL='Fonction impliqué',+
+   PAGE=1,+
+   NAME=CATEGORIE_TFA;
+AT(5:5,30:49)/U,+
+   SOURCE=FORMULE.CAT_FORMULE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1/SER<,+
+   LABEL='Cat. formule',+
+   PAGE=1,+
+   NAME=CAT_FORMULE;
+AT(1:1,30:49)/U,+
+   SOURCE=FORMULE.CLE_FORMULE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<15<,+
+   LABEL='Clé formule',+
+   PAGE=1,+
+   NAME=CLE_FORMULE;
+AT(18:18,30:49)/U,+
+   SOURCE=FORMULE.COPIE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<11<,+
+   LABEL='Copie',+
+   PAGE=1,+
+   NAME=COPIE;
+AT(6:6,30:49)/U,+
+   SOURCE=FORMULE.COUR,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Cour',+
+   PAGE=1,+
+   NAME=COUR;
+AT(20:20,22:27)/U,+
+   SOURCE=FORMULE.DESTIN_MAX,+
+   SIZE=6,+
+   OUTPUT_FORMAT=>2>,+
+   LABEL='Nbre max. destin.',+
+   PAGE=2,+
+   NAME=DESTIN_MAX;
+AT(3:3,20:39)/U,+
+   SOURCE=FORMULE.ETAT_DOSSIER,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1/SER<,+
+   LABEL='Etat-s dossier',+
+   PAGE=2,+
+   NAME=ETAT_DOSSIER;
+AT(14:14,30:33)/U,+
+   SOURCE=FORMULE.ETRANGER,+
+   SIZE=4,+
+   LABEL='Etranger',+
+   PAGE=1,+
+   NAME=ETRANGER;
+AT(7:7,30:49)/U,+
+   SOURCE=FORMULE.GENRE_DELAI,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4/SER<,+
+   LABEL='Genre délai',+
+   PAGE=1,+
+   NAME=GENRE_DELAI;
+AT(4:4,20:39)/U,+
+   SOURCE=FORMULE.GENRE_FORMULE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Genre formule',+
+   PAGE=2,+
+   NAME=GENRE_FORMULE;
+AT(1:1,2:28)/P/FL,+
+   PUT('Clé formule...............='),+
+   PAGE=1,+
+   NAME=L01001;
+AT(2:2,2:28)/P/FL,+
+   PUT('Tribunal..................='),+
+   PAGE=1,+
+   NAME=L01002;
+AT(3:3,2:28)/P/FL,+
+   PUT('Né de formule.............='),+
+   PAGE=1,+
+   NAME=L01003;
+AT(4:4,2:28)/P/FL,+
+   PUT('Langue...................=>'),+
+   PAGE=1,+
+   NAME=L01004;
+AT(5:5,2:28)/P/FL,+
+   PUT('Cat. formule.............=>'),+
+   PAGE=1,+
+   NAME=L01005;
+AT(6:6,2:28)/P/FL,+
+   PUT('Cour.....................=>'),+
+   PAGE=1,+
+   NAME=L01006;
+AT(7:7,2:28)/P/FL,+
+   PUT('Genre délai...............>'),+
+   PAGE=1,+
+   NAME=L01007;
+AT(8:8,2:28)/P/FL,+
+   PUT('Moyen de droit............>'),+
+   PAGE=1,+
+   NAME=L01008;
+AT(9:9,2:28)/P/FL,+
+   PUT('Réle impl.................>'),+
+   PAGE=1,+
+   NAME=L01009;
+AT(10:10,2:28)/P/FL,+
+   PUT('Catégorie impl............>'),+
+   PAGE=1,+
+   NAME=L01010;
+AT(11:11,2:28)/P/FL,+
+   PUT('Fonction impliqué.........>'),+
+   PAGE=1,+
+   NAME=L01011;
+AT(12:12,2:28)/P/FL,+
+   PUT('BdP.......................='),+
+   PAGE=1,+
+   NAME=L01012;
+AT(13:13,2:28)/P/FL,+
+   PUT('Branche...................>'),+
+   PAGE=1,+
+   NAME=L01013;
+AT(14:14,2:28)/P/FL,+
+   PUT('Etranger..................:'),+
+   PAGE=1,+
+   NAME=L01014;
+AT(15:15,2:28)/P/FL,+
+   PUT('Provisoire................:'),+
+   PAGE=1,+
+   NAME=L01015;
+AT(16:16,2:28)/P/FL,+
+   PUT('Mode décision.............>'),+
+   PAGE=1,+
+   NAME=L01016;
+AT(17:17,2:28)/P/FL,+
+   PUT('Mode réglement............>'),+
+   PAGE=1,+
+   NAME=L01017;
+AT(18:18,2:28)/P/FL,+
+   PUT('Copie.....................>'),+
+   PAGE=1,+
+   NAME=L01018;
+AT(19:19,2:28)/P/FL,+
+   PUT('Raison et issue du procés.>'),+
+   PAGE=1,+
+   NAME=L01019;
+AT(20:20,2:28)/P/FL,+
+   PUT('Variable..................>'),+
+   PAGE=1,+
+   NAME=L01020;
+AT(1:1,2:18)/P/FL,+
+   PUT('Bureautique.....>'),+
+   PAGE=2,+
+   NAME=L02021;
+AT(2:2,2:18)/P/FL,+
+   PUT('Adressage.......>'),+
+   PAGE=2,+
+   NAME=L02022;
+AT(3:3,2:18)/P/FL,+
+   PUT('Etat-s dossier..>'),+
+   PAGE=2,+
+   NAME=L02023;
+AT(4:4,2:18)/P/FL,+
+   PUT('Genre formule...:'),+
+   PAGE=2,+
+   NAME=L02024;
+AT(5:5,2:18)/P/FL,+
+   PUT('Mode envoi......:'),+
+   PAGE=2,+
+   NAME=L02025;
+AT(6:6,2:18)/P/FL,+
+   PUT('Sous-réle impl..>'),+
+   PAGE=2,+
+   NAME=L02026;
+AT(7:7,2:20)/P/FL,+
+   PUT('Sous-réle impl....>'),+
+   PAGE=2,+
+   NAME=L02027;
+AT(4:4,30:49)/U,+
+   SOURCE=FORMULE.LANGUE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1/SER<,+
+   LABEL='Langue',+
+   PAGE=1,+
+   NAME=LANGUE;
+AT(16:16,30:49)/U,+
+   SOURCE=FORMULE.MODE_DECISION,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<2<,+
+   LABEL='Mode décision',+
+   PAGE=1,+
+   NAME=MODE_DECISION;
+AT(5:5,20:39)/U,+
+   SOURCE=FORMULE.MODE_ENVOI,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Mode envoi',+
+   PAGE=2,+
+   NAME=MODE_ENVOI;
+AT(17:17,30:49)/U,+
+   SOURCE=FORMULE.MODE_REGLEMENT,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Mode réglement',+
+   PAGE=1,+
+   NAME=MODE_REGLEMENT;
+AT(8:8,30:49)/U,+
+   SOURCE=FORMULE.MOYEN_DE_DROIT,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<6/SER<,+
+   LABEL='Moyen de droit',+
+   PAGE=1,+
+   NAME=MOYEN_DE_DROIT;
+AT(3:3,30:49)/U,+
+   SOURCE=FORMULE.NUM_FORMULE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<11<,+
+   LABEL='Né de formule',+
+   PAGE=1,+
+   NAME=NUM_FORMULE;
+AT(15:15,30:33)/U,+
+   SOURCE=FORMULE.PROVISOIRE,+
+   SIZE=4,+
+   LABEL='Provisoire',+
+   PAGE=1,+
+   NAME=PROVISOIRE;
+AT(9:9,30:49)/U,+
+   SOURCE=FORMULE.ROLE_IMP,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1/SER<,+
+   LABEL='Réle impl.',+
+   PAGE=1,+
+   NAME=ROLE_IMP;
+AT(19:19,30:49)/U,+
+   SOURCE=FORMULE.R_ISSUE_PROCES,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Raison et issue du procés',+
+   PAGE=1,+
+   NAME=R_ISSUE_PROCES;
+AT(6:6,20:39)/U,+
+   SOURCE=FORMULE.SOUS_ROLE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<3/SER<,+
+   LABEL='Sous-réle impl.',+
+   PAGE=2,+
+   NAME=SOUS_ROLE;
+AT(2:2,30:49)/U,+
+   SOURCE=FORMULE.TRIBUNAL,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<3<,+
+   LABEL='Tribunal',+
+   PAGE=1,+
+   NAME=TRIBUNAL;
+AT(20:20,30:49)/U,+
+   SOURCE=FORMULE.VARIABLE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<15<,+
+   LABEL='Variable',+
+   PAGE=1,+
+   NAME=VARIABLE;
+*
+VIEW=HISTO,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(HISTO),+
+   FORM=YES;
+AT(10:10,24:63)/U,+
+   SOURCE=HISTO.CLE_ENREG,+
+   SIZE=40,+
+   LABEL='Clé enreg.',+
+   PAGE=1,+
+   NAME=CLE_ENREG;
+AT(1:1,24:45)/U,+
+   SOURCE=HISTO.CLE_HISTO,+
+   SIZE=22,+
+   LABEL='Clé histo',+
+   PAGE=1,+
+   NAME=CLE_HISTO;
+AT(9:9,24:43)/U,+
+   SOURCE=HISTO.CT,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='CT',+
+   PAGE=1,+
+   NAME=CT;
+AT(3:3,24:45)/U,+
+   SOURCE=HISTO.DAT_HISTO,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date modification',+
+   PAGE=1,+
+   NAME=DAT_HISTO;
+AT(8:8,24:73)/U,+
+   SOURCE=HISTO.ENREG_HISTO,+
+   SIZE=15850,+
+   LABEL='Enreg. histo',+
+   PAGE=1,+
+   NAME=ENREG_HISTO;
+AT(4:4,24:37)/U,+
+   SOURCE=HISTO.HEURE_HISTO,+
+   SIZE=14,+
+   OUTPUT_FORMAT=>6>,+
+   LABEL='Heure histo',+
+   PAGE=1,+
+   NAME=HEURE_HISTO;
+AT(1:1,2:22)/P/FL,+
+   PUT('Clé histo...........='),+
+   PAGE=1,+
+   NAME=L01001;
+AT(2:2,2:22)/P/FL,+
+   PUT('Dernier utilisateur.='),+
+   PAGE=1,+
+   NAME=L01002;
+AT(3:3,2:22)/P/FL,+
+   PUT('Date modification...='),+
+   PAGE=1,+
+   NAME=L01003;
+AT(4:4,2:22)/P/FL,+
+   PUT('Heure histo.........='),+
+   PAGE=1,+
+   NAME=L01004;
+AT(5:5,2:22)/P/FL,+
+   PUT('Mode histo..........='),+
+   PAGE=1,+
+   NAME=L01005;
+AT(6:6,2:22)/P/FL,+
+   PUT('Table histo.........='),+
+   PAGE=1,+
+   NAME=L01006;
+AT(7:7,2:22)/P/FL,+
+   PUT('Version histo.......='),+
+   PAGE=1,+
+   NAME=L01007;
+AT(8:8,2:22)/P/FL,+
+   PUT('Enreg. histo.......=>'),+
+   PAGE=1,+
+   NAME=L01008;
+AT(9:9,2:22)/P/FL,+
+   PUT('CT..................='),+
+   PAGE=1,+
+   NAME=L01009;
+AT(10:10,2:22)/P/FL,+
+   PUT('Clé enreg...........='),+
+   PAGE=1,+
+   NAME=L01010;
+AT(5:5,24:43)/U,+
+   SOURCE=HISTO.MODE_HISTO,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Mode histo',+
+   PAGE=1,+
+   NAME=MODE_HISTO;
+AT(6:6,24:43)/U,+
+   SOURCE=HISTO.TABLE_HISTO,+
+   SIZE=20,+
+   LABEL='Table histo',+
+   PAGE=1,+
+   NAME=TABLE_HISTO;
+AT(2:2,24:43)/U,+
+   SOURCE=HISTO.USER,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Dernier utilisateur',+
+   PAGE=1,+
+   NAME=USER;
+AT(7:7,24:43)/U,+
+   SOURCE=HISTO.VERSION_HISTO,+
+   SIZE=20,+
+   LABEL='Version histo',+
+   PAGE=1,+
+   NAME=VERSION_HISTO;
+*
+VIEW=IMPLIQUE,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(IMPLIQUE),+
+   FORM=YES;
+AT(20:20,28:77)/U,+
+   SOURCE=IMPLIQUE.ABR_BRADOC,+
+   SIZE=100,+
+   OUTPUT_FORMAT=<25/VR4<,+
+   LABEL='Autorité (de BRADOC)',+
+   PAGE=2,+
+   NAME=ABR_BRADOC;
+AT(20:20,25:64)/U,+
+   SOURCE=IMPLIQUE.ADR1,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='Adresse d''envoi',+
+   PAGE=1,+
+   NAME=ADR1;
+AT(1:1,35:74)/U,+
+   SOURCE=IMPLIQUE.ADR1_SUP,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='Adresse supplémentaire',+
+   PAGE=3,+
+   NAME=ADR1_SUP;
+AT(7:7,28:67)/U,+
+   SOURCE=IMPLIQUE.ADR2,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='2éme ligne......',+
+   PAGE=2,+
+   NAME=ADR2;
+AT(2:2,35:74)/U,+
+   SOURCE=IMPLIQUE.ADR2_SUP,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='2éme ligne............',+
+   PAGE=3,+
+   NAME=ADR2_SUP;
+AT(10:10,28:67)/U,+
+   SOURCE=IMPLIQUE.ADR3,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='3éme ligne......',+
+   PAGE=2,+
+   NAME=ADR3;
+AT(3:3,35:74)/U,+
+   SOURCE=IMPLIQUE.ADR3_SUP,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='3éme ligne............',+
+   PAGE=3,+
+   NAME=ADR3_SUP;
+AT(12:12,25:74)/U,+
+   SOURCE=IMPLIQUE.ALIAS_SOUNDEX,+
+   SIZE=50,+
+   OUTPUT_FORMAT=<50<,+
+   LABEL='Alias soundexés',+
+   PAGE=1,+
+   NAME=ALIAS_SOUNDEX;
+AT(1:1,39:48)/U,+
+   SOURCE=IMPLIQUE.AN_NAIS,+
+   SIZE=10,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Année de naissance',+
+   PAGE=4,+
+   NAME=AN_NAIS;
+AT(13:13,28:47)/U,+
+   SOURCE=IMPLIQUE.APPART_AUTORITE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<2<,+
+   LABEL='Appart. autorité',+
+   PAGE=2,+
+   NAME=APPART_AUTORITE;
+AT(18:18,25:74)/U,+
+   SOURCE=IMPLIQUE.AUTRE_NOM,+
+   SIZE=50,+
+   OUTPUT_FORMAT=<30/VR5<,+
+   LABEL='Autre nom',+
+   PAGE=1,+
+   NAME=AUTRE_NOM;
+AT(9:9,39:63)/U,+
+   SOURCE=IMPLIQUE.AUTRE_NOM_INSENSI,+
+   SIZE=50,+
+   OUTPUT_FORMAT=<30/VR5<,+
+   LABEL='Autre nom insensible',+
+   PAGE=4,+
+   NAME=AUTRE_NOM_INSENSI;
+AT(2:2,39:42)/U,+
+   SOURCE=IMPLIQUE.CADUC,+
+   SIZE=4,+
+   LABEL='Caduc',+
+   PAGE=4,+
+   NAME=CADUC;
+AT(14:14,28:47)/U,+
+   SOURCE=IMPLIQUE.CANTON,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<2<,+
+   LABEL='Canton',+
+   PAGE=2,+
+   NAME=CANTON;
+AT(15:15,28:47)/U,+
+   SOURCE=IMPLIQUE.CANTON_ASILE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<2<,+
+   LABEL='Canton d''asile',+
+   PAGE=2,+
+   NAME=CANTON_ASILE;
+AT(0:0,0:0),+
+   SOURCE=IMPLIQUE.CANTON_INDEX,+
+   SIZE=2,+
+   NAME=CANTON_INDEX;
+AT(12:12,35:54)/U,+
+   SOURCE=IMPLIQUE.CANTON_SUP,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<2<,+
+   LABEL='Canton (sup)',+
+   PAGE=3,+
+   NAME=CANTON_SUP;
+AT(5:5,25:44)/U,+
+   SOURCE=IMPLIQUE.CATEGORIE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Catégorie',+
+   PAGE=1,+
+   NAME=CATEGORIE;
+AT(3:3,39:58)/U,+
+   SOURCE=IMPLIQUE.CATEGORIE_TFA,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<5<,+
+   LABEL='Catégorie (stat. TFA)',+
+   PAGE=4,+
+   NAME=CATEGORIE_TFA;
+AT(1:1,25:46)/U,+
+   SOURCE=IMPLIQUE.CLE_IMPLIQUE,+
+   SIZE=22,+
+   OUTPUT_FORMAT=>10>,+
+   LABEL='Numéro d''un impliqué',+
+   PAGE=1,+
+   NAME=CLE_IMPLIQUE;
+AT(10:10,39:42)/U,+
+   SOURCE=IMPLIQUE.COD_ADR,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Code adresse',+
+   PAGE=4,+
+   NAME=COD_ADR;
+AT(8:8,39:58)/U,+
+   SOURCE=IMPLIQUE.CT,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='CT',+
+   PAGE=4,+
+   NAME=CT;
+AT(1:1,28:49)/U,+
+   SOURCE=IMPLIQUE.DAT_ASILE,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date de demande d''asile',+
+   PAGE=2,+
+   NAME=DAT_ASILE;
+AT(19:19,35:56)/U,+
+   SOURCE=IMPLIQUE.DAT_CREATION,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date création',+
+   PAGE=3,+
+   NAME=DAT_CREATION;
+AT(2:2,28:49)/U,+
+   SOURCE=IMPLIQUE.DAT_DECES,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date de décés',+
+   PAGE=2,+
+   NAME=DAT_DECES;
+AT(3:3,28:49)/U,+
+   SOURCE=IMPLIQUE.DAT_ETAT_CIVIL,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date état civil',+
+   PAGE=2,+
+   NAME=DAT_ETAT_CIVIL;
+AT(20:20,35:56)/U,+
+   SOURCE=IMPLIQUE.DAT_MODIFICATION,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date modification',+
+   PAGE=3,+
+   NAME=DAT_MODIFICATION;
+AT(4:4,28:49)/U,+
+   SOURCE=IMPLIQUE.DAT_MUT_SYMIC,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date de mutation Symic',+
+   PAGE=2,+
+   NAME=DAT_MUT_SYMIC;
+AT(5:5,28:49)/U,+
+   SOURCE=IMPLIQUE.DAT_NAIS,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date de naissance',+
+   PAGE=2,+
+   NAME=DAT_NAIS;
+AT(11:11,39:60)/U,+
+   SOURCE=IMPLIQUE.DAT_REAC,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date de réactivation',+
+   PAGE=4,+
+   NAME=DAT_REAC;
+AT(6:6,28:49)/U,+
+   SOURCE=IMPLIQUE.DAT_STATUT_ETRANGER,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date statut étranger',+
+   PAGE=2,+
+   NAME=DAT_STATUT_ETRANGER;
+AT(8:8,25:44)/U,+
+   SOURCE=IMPLIQUE.ETAT_CIVIL,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='état civil',+
+   PAGE=1,+
+   NAME=ETAT_CIVIL;
+AT(6:6,25:44)/U,+
+   SOURCE=IMPLIQUE.ETAT_IMP,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Etat impliqué',+
+   PAGE=1,+
+   NAME=ETAT_IMP;
+AT(13:13,35:64)/U,+
+   SOURCE=IMPLIQUE.EX_NUM_IMP,+
+   SIZE=30,+
+   OUTPUT_FORMAT=<30/SEC<,+
+   LABEL='EX_NUM_IMP',+
+   PAGE=3,+
+   NAME=EX_NUM_IMP;
+AT(6:6,35:54)/U,+
+   SOURCE=IMPLIQUE.FONCTION,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<5/SEC<,+
+   LABEL='Fonction',+
+   PAGE=3,+
+   NAME=FONCTION;
+AT(7:7,25:44)/U,+
+   SOURCE=IMPLIQUE.GENRE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<2<,+
+   LABEL='Genre',+
+   PAGE=1,+
+   NAME=GENRE;
+AT(12:12,39:52)/U,+
+   SOURCE=IMPLIQUE.HEURE_MODIF,+
+   SIZE=14,+
+   OUTPUT_FORMAT=<6/Z<,+
+   LABEL='Heure modif.',+
+   PAGE=4,+
+   NAME=HEURE_MODIF;
+AT(5:5,39:42)/U,+
+   SOURCE=IMPLIQUE.IMPLICABLE,+
+   SIZE=4,+
+   LABEL='Implicable',+
+   PAGE=4,+
+   NAME=IMPLICABLE;
+AT(6:6,39:42)/U,+
+   SOURCE=IMPLIQUE.INCAPABLE,+
+   SIZE=4,+
+   LABEL='Incapable',+
+   PAGE=4,+
+   NAME=INCAPABLE;
+AT(4:4,39:42)/U,+
+   SOURCE=IMPLIQUE.INSOLVABLE,+
+   SIZE=4,+
+   LABEL='Insolvable',+
+   PAGE=4,+
+   NAME=INSOLVABLE;
+AT(1:1,2:23)/P/FL,+
+   PUT('Numéro d''un impliqué.='),+
+   PAGE=1,+
+   NAME=L01001;
+AT(2:2,2:23)/P/FL,+
+   PUT('No JusLink...........:'),+
+   PAGE=1,+
+   NAME=L01002;
+AT(3:3,2:23)/P/FL,+
+   PUT('No de membre.........>'),+
+   PAGE=1,+
+   NAME=L01003;
+AT(4:4,2:23)/P/FL,+
+   PUT('No Symic/Zemis.......:'),+
+   PAGE=1,+
+   NAME=L01004;
+AT(5:5,2:23)/P/FL,+
+   PUT('Catégorie............='),+
+   PAGE=1,+
+   NAME=L01005;
+AT(6:6,2:23)/P/FL,+
+   PUT('Etat impliqué........:'),+
+   PAGE=1,+
+   NAME=L01006;
+AT(7:7,2:23)/P/FL,+
+   PUT('Genre................='),+
+   PAGE=1,+
+   NAME=L01007;
+AT(8:8,2:23)/P/FL,+
+   PUT('état civil...........>'),+
+   PAGE=1,+
+   NAME=L01008;
+AT(9:9,2:23)/P/FL,+
+   PUT('Langue...............:'),+
+   PAGE=1,+
+   NAME=L01009;
+AT(10:10,2:23)/P/FL,+
+   PUT('CERA/CT..............:'),+
+   PAGE=1,+
+   NAME=L01010;
+AT(11:11,2:23)/P/FL,+
+   PUT('Titre................:'),+
+   PAGE=1,+
+   NAME=L01011;
+AT(12:12,2:23)/P/FL,+
+   PUT('Alias soundexés......:'),+
+   PAGE=1,+
+   NAME=L01012;
+AT(13:13,2:23)/P/FL,+
+   PUT('Nom d''un impliqué...=>'),+
+   PAGE=1,+
+   NAME=L01013;
+AT(14:14,2:23)/P/FL,+
+   PUT('Noms soundexés.......>'),+
+   PAGE=1,+
+   NAME=L01014;
+AT(15:15,2:23)/P/FL,+
+   PUT('Prénoms soundexés....:'),+
+   PAGE=1,+
+   NAME=L01015;
+AT(16:16,2:23)/P/FL,+
+   PUT('Prénom...............:'),+
+   PAGE=1,+
+   NAME=L01016;
+AT(17:17,2:23)/P/FL,+
+   PUT('Nbre personnes.......:'),+
+   PAGE=1,+
+   NAME=L01017;
+AT(18:18,2:23)/P/FL,+
+   PUT('Autre nom............:'),+
+   PAGE=1,+
+   NAME=L01018;
+AT(19:19,2:23)/P/FL,+
+   PUT('Profession...........>'),+
+   PAGE=1,+
+   NAME=L01019;
+AT(20:20,2:23)/P/FL,+
+   PUT('Adresse d''envoi......:'),+
+   PAGE=1,+
+   NAME=L01020;
+AT(1:1,2:26)/P/FL,+
+   PUT('Date de demande d''asile.:'),+
+   PAGE=2,+
+   NAME=L02021;
+AT(2:2,2:26)/P/FL,+
+   PUT('Date de décés...........:'),+
+   PAGE=2,+
+   NAME=L02022;
+AT(3:3,2:26)/P/FL,+
+   PUT('Date état civil.........>'),+
+   PAGE=2,+
+   NAME=L02023;
+AT(4:4,2:26)/P/FL,+
+   PUT('Date de mutation Symic..:'),+
+   PAGE=2,+
+   NAME=L02024;
+AT(5:5,2:26)/P/FL,+
+   PUT('Date de naissance.......:'),+
+   PAGE=2,+
+   NAME=L02025;
+AT(6:6,2:26)/P/FL,+
+   PUT('Date statut étranger....>'),+
+   PAGE=2,+
+   NAME=L02026;
+AT(7:7,2:26)/P/FL,+
+   PUT('2éme ligne..............:'),+
+   PAGE=2,+
+   NAME=L02027;
+AT(8:8,2:26)/P/FL,+
+   PUT('Sexe....................:'),+
+   PAGE=2,+
+   NAME=L02028;
+AT(9:9,2:26)/P/FL,+
+   PUT('Statut étranger.........>'),+
+   PAGE=2,+
+   NAME=L02029;
+AT(10:10,2:26)/P/FL,+
+   PUT('3éme ligne..............:'),+
+   PAGE=2,+
+   NAME=L02030;
+AT(11:11,2:26)/P/FL,+
+   PUT('NPA.....................='),+
+   PAGE=2,+
+   NAME=L02031;
+AT(12:12,2:26)/P/FL,+
+   PUT('Nom de localité.........='),+
+   PAGE=2,+
+   NAME=L02032;
+AT(13:13,2:26)/P/FL,+
+   PUT('Appart. autorité........:'),+
+   PAGE=2,+
+   NAME=L02033;
+AT(14:14,2:26)/P/FL,+
+   PUT('Canton..................='),+
+   PAGE=2,+
+   NAME=L02034;
+AT(15:15,2:26)/P/FL,+
+   PUT('Canton d''asile..........:'),+
+   PAGE=2,+
+   NAME=L02035;
+AT(16:16,2:26)/P/FL,+
+   PUT('Né AVS..................:'),+
+   PAGE=2,+
+   NAME=L02036;
+AT(17:17,2:26)/P/FL,+
+   PUT('Né Téléphone............:'),+
+   PAGE=2,+
+   NAME=L02037;
+AT(18:18,2:26)/P/FL,+
+   PUT('Né FAX..................:'),+
+   PAGE=2,+
+   NAME=L02038;
+AT(19:19,2:26)/P/FL,+
+   PUT('Nom court d''un impliqué.='),+
+   PAGE=2,+
+   NAME=L02039;
+AT(20:20,2:26)/P/FL,+
+   PUT('Autorité (de BRADOC)....>'),+
+   PAGE=2,+
+   NAME=L02040;
+AT(1:1,2:33)/P/FL,+
+   PUT('Adresse supplémentaire.........:'),+
+   PAGE=3,+
+   NAME=L03041;
+AT(2:2,2:33)/P/FL,+
+   PUT('2éme ligne.....................:'),+
+   PAGE=3,+
+   NAME=L03042;
+AT(3:3,2:33)/P/FL,+
+   PUT('3éme ligne.....................:'),+
+   PAGE=3,+
+   NAME=L03043;
+AT(4:4,2:33)/P/FL,+
+   PUT('NPA............................:'),+
+   PAGE=3,+
+   NAME=L03044;
+AT(5:5,2:33)/P/FL,+
+   PUT('Numéro de l''impliqué d''origine.:'),+
+   PAGE=3,+
+   NAME=L03045;
+AT(6:6,2:33)/P/FL,+
+   PUT('Fonction.......................>'),+
+   PAGE=3,+
+   NAME=L03046;
+AT(7:7,2:33)/P/FL,+
+   PUT('Nom de localité (sup)..........:'),+
+   PAGE=3,+
+   NAME=L03047;
+AT(8:8,2:33)/P/FL,+
+   PUT('Nationalité....................>'),+
+   PAGE=3,+
+   NAME=L03048;
+AT(9:9,2:33)/P/FL,+
+   PUT('Réle de membre.................>'),+
+   PAGE=3,+
+   NAME=L03049;
+AT(10:10,2:33)/P/FL,+
+   PUT('Type adresse 1.................>'),+
+   PAGE=3,+
+   NAME=L03050;
+AT(11:11,2:33)/P/FL,+
+   PUT('Type adresse 2.................>'),+
+   PAGE=3,+
+   NAME=L03051;
+AT(12:12,2:33)/P/FL,+
+   PUT('Canton (sup)...................:'),+
+   PAGE=3,+
+   NAME=L03052;
+AT(13:13,2:33)/P/FL,+
+   PUT('EX_NUM_IMP.....................>'),+
+   PAGE=3,+
+   NAME=L03053;
+AT(14:14,2:33)/P/FL,+
+   PUT('Note interne sur l''impliqué....>'),+
+   PAGE=3,+
+   NAME=L03054;
+AT(15:15,2:33)/P/FL,+
+   PUT('Remarque sur l''asile...........>'),+
+   PAGE=3,+
+   NAME=L03055;
+AT(16:16,2:33)/P/FL,+
+   PUT('Remarque sur l''impliqué........>'),+
+   PAGE=3,+
+   NAME=L03056;
+AT(17:17,2:33)/P/FL,+
+   PUT('Dernier utilisateur UID........='),+
+   PAGE=3,+
+   NAME=L03057;
+AT(18:18,2:33)/P/FL,+
+   PUT('Dernier utilisateur............='),+
+   PAGE=3,+
+   NAME=L03058;
+AT(19:19,2:33)/P/FL,+
+   PUT('Date création..................='),+
+   PAGE=3,+
+   NAME=L03059;
+AT(20:20,2:33)/P/FL,+
+   PUT('Date modification..............='),+
+   PAGE=3,+
+   NAME=L03060;
+AT(1:1,2:37)/P/FL,+
+   PUT('Année de naissance.................:'),+
+   PAGE=4,+
+   NAME=L04061;
+AT(2:2,2:37)/P/FL,+
+   PUT('Caduc..............................:'),+
+   PAGE=4,+
+   NAME=L04062;
+AT(3:3,2:37)/P/FL,+
+   PUT('Catégorie (stat. TFA)..............='),+
+   PAGE=4,+
+   NAME=L04063;
+AT(4:4,2:37)/P/FL,+
+   PUT('Insolvable.........................='),+
+   PAGE=4,+
+   NAME=L04064;
+AT(5:5,2:37)/P/FL,+
+   PUT('Implicable.........................:'),+
+   PAGE=4,+
+   NAME=L04065;
+AT(6:6,2:37)/P/FL,+
+   PUT('Incapable..........................='),+
+   PAGE=4,+
+   NAME=L04066;
+AT(7:7,2:37)/P/FL,+
+   PUT('Nom court et localité.............=>'),+
+   PAGE=4,+
+   NAME=L04067;
+AT(8:8,2:37)/P/FL,+
+   PUT('CT.................................='),+
+   PAGE=4,+
+   NAME=L04068;
+AT(9:9,2:37)/P/FL,+
+   PUT('Autre nom insensible...............>'),+
+   PAGE=4,+
+   NAME=L04069;
+AT(10:10,2:37)/P/FL,+
+   PUT('Code adresse.......................:'),+
+   PAGE=4,+
+   NAME=L04070;
+AT(11:11,2:37)/P/FL,+
+   PUT('Date de réactivation...............:'),+
+   PAGE=4,+
+   NAME=L04071;
+AT(12:12,2:37)/P/FL,+
+   PUT('Heure modif........................:'),+
+   PAGE=4,+
+   NAME=L04072;
+AT(13:13,2:37)/P/FL,+
+   PUT('Nom court d''un impliqué insensible.:'),+
+   PAGE=4,+
+   NAME=L04073;
+AT(14:14,2:37)/P/FL,+
+   PUT('Nom court & loc. insensible........>'),+
+   PAGE=4,+
+   NAME=L04074;
+AT(15:15,2:37)/P/FL,+
+   PUT('Nom d''un impliqué insensible.......>'),+
+   PAGE=4,+
+   NAME=L04075;
+AT(16:16,2:37)/P/FL,+
+   PUT('Sensible...........................:'),+
+   PAGE=4,+
+   NAME=L04076;
+AT(9:9,25:44)/U,+
+   SOURCE=IMPLIQUE.LANGUE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Langue',+
+   PAGE=1,+
+   NAME=LANGUE;
+AT(10:10,25:44)/U,+
+   SOURCE=IMPLIQUE.LIEU_RECEPT,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<3<,+
+   LABEL='CERA/CT',+
+   PAGE=1,+
+   NAME=LIEU_RECEPT;
+AT(12:12,28:67)/U,+
+   SOURCE=IMPLIQUE.LOC,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<15/VR2<,+
+   LABEL='Nom de localité',+
+   PAGE=2,+
+   NAME=LOC;
+AT(0:0,0:0),+
+   SOURCE=IMPLIQUE.LOC_INDEX,+
+   SIZE=40,+
+   NAME=LOC_INDEX;
+AT(7:7,35:74)/U,+
+   SOURCE=IMPLIQUE.LOC_SUP,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<15/VR2<,+
+   LABEL='Nom de localité (sup)',+
+   PAGE=3,+
+   NAME=LOC_SUP;
+AT(8:8,35:54)/U,+
+   SOURCE=IMPLIQUE.NATIONALITE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<2/SEC<,+
+   LABEL='Nationalité',+
+   PAGE=3,+
+   NAME=NATIONALITE;
+AT(17:17,25:32)/U,+
+   SOURCE=IMPLIQUE.NBR_PERSONNE,+
+   SIZE=8,+
+   OUTPUT_FORMAT=>3>,+
+   LABEL='Nbre personnes',+
+   PAGE=1,+
+   NAME=NBR_PERSONNE;
+AT(13:13,25:64)/U,+
+   SOURCE=IMPLIQUE.NOM,+
+   SIZE=160,+
+   OUTPUT_FORMAT=<30/VR5<,+
+   LABEL='Nom d''un impliqué',+
+   PAGE=1,+
+   NAME=NOM;
+AT(19:19,28:47)/U,+
+   SOURCE=IMPLIQUE.NOM_COURT,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Nom court d''un impliqué',+
+   PAGE=2,+
+   NAME=NOM_COURT;
+AT(13:13,39:58)/U,+
+   SOURCE=IMPLIQUE.NOM_COURT_INSENSI,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Nom court d''un impliqué insensible',+
+   PAGE=4,+
+   NAME=NOM_COURT_INSENSI;
+AT(7:7,39:64)/U,+
+   SOURCE=IMPLIQUE.NOM_COURT_LOC,+
+   SIZE=52,+
+   OUTPUT_FORMAT=<30/VR2<,+
+   LABEL='Nom court et localité',+
+   PAGE=4,+
+   NAME=NOM_COURT_LOC;
+AT(14:14,39:64)/U,+
+   SOURCE=IMPLIQUE.NOM_COURT_LOC_INSENSI,+
+   SIZE=52,+
+   OUTPUT_FORMAT=<30/VR2<,+
+   LABEL='Nom court & loc. insensible',+
+   PAGE=4,+
+   NAME=NOM_COURT_LOC_INSENSI;
+AT(0:0,0:0),+
+   SOURCE=IMPLIQUE.NOM_INDEX,+
+   SIZE=150,+
+   NAME=NOM_INDEX;
+AT(0:0,0:0),+
+   SOURCE=IMPLIQUE.NOM_INDEX_INSENSI,+
+   SIZE=150,+
+   NAME=NOM_INDEX_INSENSI;
+AT(15:15,39:78)/U,+
+   SOURCE=IMPLIQUE.NOM_INSENSI,+
+   SIZE=160,+
+   OUTPUT_FORMAT=<40/VR4<,+
+   LABEL='Nom d''un impliqué insensible',+
+   PAGE=4,+
+   NAME=NOM_INSENSI;
+AT(14:14,25:62)/U,+
+   SOURCE=IMPLIQUE.NOM_SOUNDEX,+
+   SIZE=190,+
+   OUTPUT_FORMAT=<30/VR5<,+
+   LABEL='Noms soundexés',+
+   PAGE=1,+
+   NAME=NOM_SOUNDEX;
+AT(14:14,35:64)/U,+
+   SOURCE=IMPLIQUE.NOT_IMP,+
+   SIZE=150,+
+   OUTPUT_FORMAT=<30/VR5<,+
+   LABEL='Note interne sur l''impliqué',+
+   PAGE=3,+
+   NAME=NOT_IMP;
+AT(11:11,28:37)/U,+
+   SOURCE=IMPLIQUE.NPA,+
+   SIZE=10,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='NPA',+
+   PAGE=2,+
+   NAME=NPA;
+AT(4:4,35:44)/U,+
+   SOURCE=IMPLIQUE.NPA_SUP,+
+   SIZE=10,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='NPA',+
+   PAGE=3,+
+   NAME=NPA_SUP;
+AT(16:16,28:47)/U,+
+   SOURCE=IMPLIQUE.NUM_AVS,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<18/VR2<,+
+   LABEL='Né AVS',+
+   PAGE=2,+
+   NAME=NUM_AVS;
+AT(18:18,28:67)/U,+
+   SOURCE=IMPLIQUE.NUM_FAX,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<12<,+
+   LABEL='Né FAX',+
+   PAGE=2,+
+   NAME=NUM_FAX;
+AT(2:2,25:62)/U,+
+   SOURCE=IMPLIQUE.NUM_JUSLINK,+
+   SIZE=38,+
+   OUTPUT_FORMAT=>18>,+
+   LABEL='No JusLink',+
+   PAGE=1,+
+   NAME=NUM_JUSLINK;
+AT(3:3,25:46)/U,+
+   SOURCE=IMPLIQUE.NUM_MEMBRE,+
+   SIZE=22,+
+   OUTPUT_FORMAT=>10>,+
+   LABEL='No de membre',+
+   PAGE=1,+
+   NAME=NUM_MEMBRE;
+AT(17:17,28:67)/U,+
+   SOURCE=IMPLIQUE.NUM_TEL,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<12<,+
+   LABEL='Né Téléphone',+
+   PAGE=2,+
+   NAME=NUM_TEL;
+AT(4:4,25:46)/U,+
+   SOURCE=IMPLIQUE.NUM_ZEMIS,+
+   SIZE=22,+
+   OUTPUT_FORMAT=>10>,+
+   LABEL='No Symic/Zemis',+
+   PAGE=1,+
+   NAME=NUM_ZEMIS;
+AT(5:5,35:48)/U,+
+   SOURCE=IMPLIQUE.ORIGINE,+
+   SIZE=14,+
+   OUTPUT_FORMAT=<6<,+
+   LABEL='Numéro de l''impliqué d''origine',+
+   PAGE=3,+
+   NAME=ORIGINE;
+AT(16:16,25:64)/U,+
+   SOURCE=IMPLIQUE.PRENOM,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR2<,+
+   LABEL='Prénom',+
+   PAGE=1,+
+   NAME=PRENOM;
+AT(15:15,25:64)/U,+
+   SOURCE=IMPLIQUE.PRENOM_SOUNDEX,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<40<,+
+   LABEL='Prénoms soundexés',+
+   PAGE=1,+
+   NAME=PRENOM_SOUNDEX;
+AT(19:19,25:64)/U,+
+   SOURCE=IMPLIQUE.PROFESSION,+
+   SIZE=80,+
+   OUTPUT_FORMAT=<80<,+
+   LABEL='Profession',+
+   PAGE=1,+
+   NAME=PROFESSION;
+AT(15:15,35:74)/U,+
+   SOURCE=IMPLIQUE.REM_ASILE,+
+   SIZE=80,+
+   OUTPUT_FORMAT=<50/VR5<,+
+   LABEL='Remarque sur l''asile',+
+   PAGE=3,+
+   NAME=REM_ASILE;
+AT(16:16,35:64)/U,+
+   SOURCE=IMPLIQUE.REM_IMP,+
+   SIZE=150,+
+   OUTPUT_FORMAT=<30/VR5<,+
+   LABEL='Remarque sur l''impliqué',+
+   PAGE=3,+
+   NAME=REM_IMP;
+AT(9:9,35:54)/U,+
+   SOURCE=IMPLIQUE.ROLE_MEMBRE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4/SEC<,+
+   LABEL='Réle de membre',+
+   PAGE=3,+
+   NAME=ROLE_MEMBRE;
+AT(16:16,39:42)/U,+
+   SOURCE=IMPLIQUE.SENSIBLE,+
+   SIZE=4,+
+   LABEL='Sensible',+
+   PAGE=4,+
+   NAME=SENSIBLE;
+AT(8:8,28:47)/U,+
+   SOURCE=IMPLIQUE.SEXE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Sexe',+
+   PAGE=2,+
+   NAME=SEXE;
+AT(0:0,0:0),+
+   SOURCE=IMPLIQUE.SOUNDEX_INDEX,+
+   SIZE=190,+
+   NAME=SOUNDEX_INDEX;
+AT(9:9,28:47)/U,+
+   SOURCE=IMPLIQUE.STATUT_ETRANGER,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Statut étranger',+
+   PAGE=2,+
+   NAME=STATUT_ETRANGER;
+AT(11:11,25:49)/U,+
+   SOURCE=IMPLIQUE.TITRE,+
+   SIZE=25,+
+   OUTPUT_FORMAT=<10/VR3<,+
+   LABEL='Titre',+
+   PAGE=1,+
+   NAME=TITRE;
+AT(10:10,35:54)/U,+
+   SOURCE=IMPLIQUE.TYP_ADR,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4/SEC<,+
+   LABEL='Type adresse 1',+
+   PAGE=3,+
+   NAME=TYP_ADR;
+AT(0:0,0:0),+
+   SOURCE=IMPLIQUE.TYP_ADR_INDEX,+
+   SIZE=4,+
+   NAME=TYP_ADR_INDEX;
+AT(11:11,35:54)/U,+
+   SOURCE=IMPLIQUE.TYP_ADR_SUP,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4/SEC<,+
+   LABEL='Type adresse 2',+
+   PAGE=3,+
+   NAME=TYP_ADR_SUP;
+AT(17:17,35:54)/U,+
+   SOURCE=IMPLIQUE.UID,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<8<,+
+   LABEL='Dernier utilisateur UID',+
+   PAGE=3,+
+   NAME=UID;
+AT(18:18,35:54)/U,+
+   SOURCE=IMPLIQUE.USER,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Dernier utilisateur',+
+   PAGE=3,+
+   NAME=USER;
+*
+VIEW=LOI_RS,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(LOI_RS),+
+   FORM=YES;
+AT(5:5,20:42)/U,+
+   SOURCE=LOI_RS.ABREV_D,+
+   SIZE=23,+
+   OUTPUT_FORMAT=<23<,+
+   LABEL='Abréviation (D)',+
+   PAGE=1,+
+   NAME=ABREV_D;
+AT(6:6,20:42)/U,+
+   SOURCE=LOI_RS.ABREV_F,+
+   SIZE=23,+
+   OUTPUT_FORMAT=<23<,+
+   LABEL='Abréviation (F)',+
+   PAGE=1,+
+   NAME=ABREV_F;
+AT(7:7,20:42)/U,+
+   SOURCE=LOI_RS.ABREV_I,+
+   SIZE=23,+
+   OUTPUT_FORMAT=<23<,+
+   LABEL='Abréviation (I)',+
+   PAGE=1,+
+   NAME=ABREV_I;
+AT(1:1,2:18)/P/FL,+
+   PUT('Numéro RS.......='),+
+   PAGE=1,+
+   NAME=L01001;
+AT(2:2,2:18)/P/FL,+
+   PUT('Titre (D)......=>'),+
+   PAGE=1,+
+   NAME=L01002;
+AT(3:3,2:18)/P/FL,+
+   PUT('Titre (F)......=>'),+
+   PAGE=1,+
+   NAME=L01003;
+AT(4:4,2:18)/P/FL,+
+   PUT('Titre (I)......=>'),+
+   PAGE=1,+
+   NAME=L01004;
+AT(5:5,2:18)/P/FL,+
+   PUT('Abréviation (D).>'),+
+   PAGE=1,+
+   NAME=L01005;
+AT(6:6,2:18)/P/FL,+
+   PUT('Abréviation (F).>'),+
+   PAGE=1,+
+   NAME=L01006;
+AT(7:7,2:18)/P/FL,+
+   PUT('Abréviation (I).>'),+
+   PAGE=1,+
+   NAME=L01007;
+AT(8:8,2:18)/P/FL,+
+   PUT('Version de loi..>'),+
+   PAGE=1,+
+   NAME=L01008;
+AT(1:1,20:39)/U,+
+   SOURCE=LOI_RS.NUMERO_RS,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Numéro RS......',+
+   PAGE=1,+
+   NAME=NUMERO_RS;
+AT(2:2,20:69)/U,+
+   SOURCE=LOI_RS.TITRE_D,+
+   SIZE=500,+
+   OUTPUT_FORMAT=<70/VR9<,+
+   LABEL='Titre (D)',+
+   PAGE=1,+
+   NAME=TITRE_D;
+AT(3:3,20:69)/U,+
+   SOURCE=LOI_RS.TITRE_F,+
+   SIZE=500,+
+   OUTPUT_FORMAT=<70/VR9<,+
+   LABEL='Titre (F)',+
+   PAGE=1,+
+   NAME=TITRE_F;
+AT(4:4,20:69)/U,+
+   SOURCE=LOI_RS.TITRE_I,+
+   SIZE=500,+
+   OUTPUT_FORMAT=<70/VR9<,+
+   LABEL='Titre (I)',+
+   PAGE=1,+
+   NAME=TITRE_I;
+AT(8:8,20:29)/U,+
+   SOURCE=LOI_RS.VERSION,+
+   SIZE=10,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Version de loi.',+
+   PAGE=1,+
+   NAME=VERSION;
+*
+VIEW=MATIERE,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(MATIERE),+
+   FORM=YES;
+AT(1:1,22:41)/U,+
+   SOURCE=MATIERE.CLE_MATIERE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<6<,+
+   LABEL='Clé matiére',+
+   PAGE=1,+
+   NAME=CLE_MATIERE;
+AT(11:11,22:25)/U,+
+   SOURCE=MATIERE.HORS_CHARGE,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Hors charge [0/1]',+
+   PAGE=1,+
+   NAME=HORS_CHARGE;
+AT(4:4,22:25)/U,+
+   SOURCE=MATIERE.INDEXABLE,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Indexable',+
+   PAGE=1,+
+   NAME=INDEXABLE;
+AT(1:1,2:20)/P/FL,+
+   PUT('Clé matiére.......='),+
+   PAGE=1,+
+   NAME=L01001;
+AT(2:2,2:20)/P/FL,+
+   PUT('Matiére min.......:'),+
+   PAGE=1,+
+   NAME=L01002;
+AT(3:3,2:20)/P/FL,+
+   PUT('Matiére max.......:'),+
+   PAGE=1,+
+   NAME=L01003;
+AT(4:4,2:20)/P/FL,+
+   PUT('Indexable.........='),+
+   PAGE=1,+
+   NAME=L01004;
+AT(5:5,2:20)/P/FL,+
+   PUT('Niveau............='),+
+   PAGE=1,+
+   NAME=L01005;
+AT(6:6,2:20)/P/FL,+
+   PUT('Matiére internet..='),+
+   PAGE=1,+
+   NAME=L01006;
+AT(7:7,2:20)/P/FL,+
+   PUT('Statistique RG....='),+
+   PAGE=1,+
+   NAME=L01007;
+AT(8:8,2:20)/P/FL,+
+   PUT('Moyens de droit...>'),+
+   PAGE=1,+
+   NAME=L01008;
+AT(9:9,2:20)/P/FL,+
+   PUT('Mixité [0/1]......:'),+
+   PAGE=1,+
+   NAME=L01009;
+AT(10:10,2:20)/P/FL,+
+   PUT('Priorité [0/1]....:'),+
+   PAGE=1,+
+   NAME=L01010;
+AT(11:11,2:20)/P/FL,+
+   PUT('Hors charge [0/1].:'),+
+   PAGE=1,+
+   NAME=L01011;
+AT(12:12,2:20)/P/FL,+
+   PUT('Nbre min.experts..:'),+
+   PAGE=1,+
+   NAME=L01012;
+AT(6:6,22:43)/U,+
+   SOURCE=MATIERE.MATIERE_INT,+
+   SIZE=22,+
+   LABEL='Matiére internet',+
+   PAGE=1,+
+   NAME=MATIERE_INT;
+AT(3:3,22:41)/U,+
+   SOURCE=MATIERE.MATIERE_MAX,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<6<,+
+   LABEL='Matiére max.',+
+   PAGE=1,+
+   NAME=MATIERE_MAX;
+AT(2:2,22:41)/U,+
+   SOURCE=MATIERE.MATIERE_MIN,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<6<,+
+   LABEL='Matiére min.',+
+   PAGE=1,+
+   NAME=MATIERE_MIN;
+AT(9:9,22:25)/U,+
+   SOURCE=MATIERE.MIXITE,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Mixité [0/1]',+
+   PAGE=1,+
+   NAME=MIXITE;
+AT(8:8,22:41)/U,+
+   SOURCE=MATIERE.MOYENS_DROIT,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<6/SER<,+
+   LABEL='Moyens de droit',+
+   PAGE=1,+
+   NAME=MOYENS_DROIT;
+AT(5:5,22:25)/U,+
+   SOURCE=MATIERE.NIVEAU,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Niveau',+
+   PAGE=1,+
+   NAME=NIVEAU;
+AT(10:10,22:25)/U,+
+   SOURCE=MATIERE.PRIORITE,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Priorité [0/1]',+
+   PAGE=1,+
+   NAME=PRIORITE;
+AT(12:12,22:43)/U,+
+   SOURCE=MATIERE.SPEC_MIN,+
+   SIZE=22,+
+   LABEL='Nbre min.experts',+
+   PAGE=1,+
+   NAME=SPEC_MIN;
+AT(7:7,22:25)/U,+
+   SOURCE=MATIERE.STAT_RG,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Statistique RG',+
+   PAGE=1,+
+   NAME=STAT_RG;
+*
+VIEW=MESSAGE,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(MESSAGE),+
+   FORM=YES;
+AT(1:1,19:32)/U,+
+   SOURCE=MESSAGE.CLE_MESSAGE,+
+   SIZE=14,+
+   OUTPUT_FORMAT=<6<,+
+   LABEL='Né message',+
+   PAGE=1,+
+   NAME=CLE_MESSAGE;
+AT(1:1,2:17)/P/FL,+
+   PUT('Né message.....='),+
+   PAGE=1,+
+   NAME=L01001;
+AT(2:2,2:17)/P/FL,+
+   PUT('Nom du message.='),+
+   PAGE=1,+
+   NAME=L01002;
+AT(3:3,2:17)/P/FL,+
+   PUT('Niveau.........='),+
+   PAGE=1,+
+   NAME=L01003;
+AT(4:4,2:17)/P/FL,+
+   PUT('Message (F)...=>'),+
+   PAGE=1,+
+   NAME=L01004;
+AT(5:5,2:17)/P/FL,+
+   PUT('Message (D)...=>'),+
+   PAGE=1,+
+   NAME=L01005;
+AT(5:5,19:58)/U,+
+   SOURCE=MESSAGE.MESSAGE_D,+
+   SIZE=160,+
+   OUTPUT_FORMAT=<80/VR2<,+
+   LABEL='Message (D)',+
+   PAGE=1,+
+   NAME=MESSAGE_D;
+AT(4:4,19:58)/U,+
+   SOURCE=MESSAGE.MESSAGE_F,+
+   SIZE=160,+
+   OUTPUT_FORMAT=<80/VR2<,+
+   LABEL='Message (F)',+
+   PAGE=1,+
+   NAME=MESSAGE_F;
+AT(3:3,19:38)/U,+
+   SOURCE=MESSAGE.NIVEAU,+
+   SIZE=1,+
+   LABEL='Niveau',+
+   PAGE=1,+
+   NAME=NIVEAU;
+AT(2:2,19:68)/U,+
+   SOURCE=MESSAGE.NOM_MESSAGE,+
+   SIZE=50,+
+   OUTPUT_FORMAT=<30<,+
+   LABEL='Nom du message',+
+   PAGE=1,+
+   NAME=NOM_MESSAGE;
+*
+VIEW=MESURE,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(MESURE),+
+   FORM=YES;
+AT(4:4,28:41)/U,+
+   SOURCE=MESURE.CLE_DOSSIER,+
+   SIZE=14,+
+   OUTPUT_FORMAT=>6>,+
+   LABEL='Clé dossier',+
+   PAGE=1,+
+   NAME=CLE_DOSSIER;
+AT(1:1,28:45)/U,+
+   SOURCE=MESURE.CLE_MESURE,+
+   SIZE=18,+
+   OUTPUT_FORMAT=>8>,+
+   LABEL='Clé mesure',+
+   PAGE=1,+
+   NAME=CLE_MESURE;
+AT(7:7,28:49)/U,+
+   SOURCE=MESURE.DAT_CREATION,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date création',+
+   PAGE=1,+
+   NAME=DAT_CREATION;
+AT(5:5,28:49)/U,+
+   SOURCE=MESURE.DAT_MESURE,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date de la mesure',+
+   PAGE=1,+
+   NAME=DAT_MESURE;
+AT(8:8,28:49)/U,+
+   SOURCE=MESURE.DAT_MODIFICATION,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date modification',+
+   PAGE=1,+
+   NAME=DAT_MODIFICATION;
+AT(1:1,2:26)/P/FL,+
+   PUT('Clé mesure..............='),+
+   PAGE=1,+
+   NAME=L01001;
+AT(2:2,2:26)/P/FL,+
+   PUT('Numéro du dossier.......:'),+
+   PAGE=1,+
+   NAME=L01002;
+AT(3:3,2:26)/P/FL,+
+   PUT('Numéro impliqué.........='),+
+   PAGE=1,+
+   NAME=L01003;
+AT(4:4,2:26)/P/FL,+
+   PUT('Clé dossier.............='),+
+   PAGE=1,+
+   NAME=L01004;
+AT(5:5,2:26)/P/FL,+
+   PUT('Date de la mesure.......='),+
+   PAGE=1,+
+   NAME=L01005;
+AT(6:6,2:26)/P/FL,+
+   PUT('Remarque mesure.........>'),+
+   PAGE=1,+
+   NAME=L01006;
+AT(7:7,2:26)/P/FL,+
+   PUT('Date création...........='),+
+   PAGE=1,+
+   NAME=L01007;
+AT(8:8,2:26)/P/FL,+
+   PUT('Date modification.......='),+
+   PAGE=1,+
+   NAME=L01008;
+AT(9:9,2:26)/P/FL,+
+   PUT('Dernier utilisateur UID.='),+
+   PAGE=1,+
+   NAME=L01009;
+AT(10:10,2:26)/P/FL,+
+   PUT('Dernier utilisateur.....='),+
+   PAGE=1,+
+   NAME=L01010;
+AT(2:2,28:47)/U,+
+   SOURCE=MESURE.NUM_DOSSIER_ANC,+
+   SIZE=15,+
+   OUTPUT_FORMAT=<15<,+
+   LABEL='Numéro du dossier',+
+   PAGE=1,+
+   NAME=NUM_DOSSIER_ANC;
+AT(3:3,28:41)/U,+
+   SOURCE=MESURE.NUM_IMP,+
+   SIZE=14,+
+   OUTPUT_FORMAT=<6/SEC<,+
+   LABEL='Numéro impliqué',+
+   PAGE=1,+
+   NAME=NUM_IMP;
+AT(6:6,28:57)/U,+
+   SOURCE=MESURE.REM_MESURE,+
+   SIZE=60,+
+   OUTPUT_FORMAT=<60<,+
+   LABEL='Remarque mesure',+
+   PAGE=1,+
+   NAME=REM_MESURE;
+AT(9:9,28:47)/U,+
+   SOURCE=MESURE.UID,+
+   SIZE=8,+
+   OUTPUT_FORMAT=<8<,+
+   LABEL='Dernier utilisateur UID',+
+   PAGE=1,+
+   NAME=UID;
+AT(10:10,28:47)/U,+
+   SOURCE=MESURE.USER,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Dernier utilisateur',+
+   PAGE=1,+
+   NAME=USER;
+*
+VIEW=MOYEN_DROIT,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(MOYEN_DROIT),+
+   FORM=YES;
+AT(7:7,20:39)/U,+
+   SOURCE=MOYEN_DROIT.BRANCHE_NTF,+
+   SIZE=1,+
+   OUTPUT_FORMAT=<20/SER<,+
+   LABEL='BRANCHE_NTF',+
+   PAGE=1,+
+   NAME=BRANCHE_NTF;
+AT(6:6,20:39)/U,+
+   SOURCE=MOYEN_DROIT.BRANCHE_TAF,+
+   SIZE=1,+
+   OUTPUT_FORMAT=<20/SER<,+
+   LABEL='BRANCHE_TAF',+
+   PAGE=1,+
+   NAME=BRANCHE_TAF;
+AT(1:1,20:39)/U,+
+   SOURCE=MOYEN_DROIT.BRANCHE_TF,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<20/SER<,+
+   LABEL='BRANCHE_TF',+
+   PAGE=1,+
+   NAME=BRANCHE_TF;
+AT(5:5,20:39)/U,+
+   SOURCE=MOYEN_DROIT.BRANCHE_TFA,+
+   SIZE=1,+
+   OUTPUT_FORMAT=<20/SER<,+
+   LABEL='BRANCHE_TFA',+
+   PAGE=1,+
+   NAME=BRANCHE_TFA;
+AT(2:2,20:41)/U,+
+   SOURCE=MOYEN_DROIT.CLE_MOYEN_DROIT,+
+   SIZE=22,+
+   LABEL='CLE_MOYEN_DROIT',+
+   PAGE=1,+
+   NAME=CLE_MOYEN_DROIT;
+AT(1:1,2:18)/P/FL,+
+   PUT('BRANCHE_TF.....=>'),+
+   PAGE=1,+
+   NAME=L01001;
+AT(2:2,2:18)/P/FL,+
+   PUT('CLE_MOYEN_DROIT.='),+
+   PAGE=1,+
+   NAME=L01002;
+AT(3:3,2:18)/P/FL,+
+   PUT('MOYEN_DE_DROIT..='),+
+   PAGE=1,+
+   NAME=L01003;
+AT(4:4,2:18)/P/FL,+
+   PUT('NUM_ORDRE.......='),+
+   PAGE=1,+
+   NAME=L01004;
+AT(5:5,2:18)/P/FL,+
+   PUT('BRANCHE_TFA.....>'),+
+   PAGE=1,+
+   NAME=L01005;
+AT(6:6,2:18)/P/FL,+
+   PUT('BRANCHE_TAF.....>'),+
+   PAGE=1,+
+   NAME=L01006;
+AT(7:7,2:18)/P/FL,+
+   PUT('BRANCHE_NTF.....>'),+
+   PAGE=1,+
+   NAME=L01007;
+AT(3:3,20:39)/U,+
+   SOURCE=MOYEN_DROIT.MOYEN_DE_DROIT,+
+   SIZE=6,+
+   LABEL='MOYEN_DE_DROIT',+
+   PAGE=1,+
+   NAME=MOYEN_DE_DROIT;
+AT(4:4,20:31)/U,+
+   SOURCE=MOYEN_DROIT.NUM_ORDRE,+
+   SIZE=12,+
+   LABEL='NUM_ORDRE',+
+   PAGE=1,+
+   NAME=NUM_ORDRE;
+*
+VIEW=NPA,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(NPA),+
+   FORM=YES;
+AT(2:2,26:45)/U,+
+   SOURCE=NPA.CANTON,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<2<,+
+   LABEL='Canton',+
+   PAGE=1,+
+   NAME=CANTON;
+AT(3:3,26:60)/U,+
+   SOURCE=NPA.CLE_NPA,+
+   SIZE=35,+
+   OUTPUT_FORMAT=<30/VR2<,+
+   LABEL='Clé NPA',+
+   PAGE=1,+
+   NAME=CLE_NPA;
+AT(1:1,2:24)/P/FL,+
+   PUT('MéJ...................:'),+
+   PAGE=1,+
+   NAME=L01001;
+AT(2:2,2:24)/P/FL,+
+   PUT('Canton................='),+
+   PAGE=1,+
+   NAME=L01002;
+AT(3:3,2:24)/P/FL,+
+   PUT('Clé NPA...............='),+
+   PAGE=1,+
+   NAME=L01003;
+AT(4:4,2:24)/P/FL,+
+   PUT('Nom de localité.......='),+
+   PAGE=1,+
+   NAME=L01004;
+AT(5:5,2:24)/P/FL,+
+   PUT('NPA...................='),+
+   PAGE=1,+
+   NAME=L01005;
+AT(6:6,2:24)/P/FL,+
+   PUT('Nom court de localité.:'),+
+   PAGE=1,+
+   NAME=L01006;
+AT(7:7,2:24)/P/FL,+
+   PUT('Localité (D)..........:'),+
+   PAGE=1,+
+   NAME=L01007;
+AT(8:8,2:24)/P/FL,+
+   PUT('Localité (F)..........:'),+
+   PAGE=1,+
+   NAME=L01008;
+AT(9:9,2:24)/P/FL,+
+   PUT('Localité (I)..........:'),+
+   PAGE=1,+
+   NAME=L01009;
+AT(10:10,2:24)/P/FL,+
+   PUT('Obsoléte..............:'),+
+   PAGE=1,+
+   NAME=L01010;
+AT(6:6,26:45)/U,+
+   SOURCE=NPA.LOC,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<18<,+
+   LABEL='Nom court de localité',+
+   PAGE=1,+
+   NAME=LOC;
+AT(4:4,26:55)/U,+
+   SOURCE=NPA.LOCALITE,+
+   SIZE=30,+
+   OUTPUT_FORMAT=<15/VR2<,+
+   LABEL='Nom de localité',+
+   PAGE=1,+
+   NAME=LOCALITE;
+AT(0:0,0:0),+
+   SOURCE=NPA.LOCALITE_AIDE,+
+   SIZE=30,+
+   NAME=LOCALITE_AIDE;
+AT(7:7,26:55)/U,+
+   SOURCE=NPA.LOCALITE_D,+
+   SIZE=30,+
+   OUTPUT_FORMAT=<15/VR2<,+
+   LABEL='Localité (D)',+
+   PAGE=1,+
+   NAME=LOCALITE_D;
+AT(8:8,26:55)/U,+
+   SOURCE=NPA.LOCALITE_F,+
+   SIZE=30,+
+   OUTPUT_FORMAT=<15/VR2<,+
+   LABEL='Localité (F)',+
+   PAGE=1,+
+   NAME=LOCALITE_F;
+AT(9:9,26:55)/U,+
+   SOURCE=NPA.LOCALITE_I,+
+   SIZE=30,+
+   OUTPUT_FORMAT=<15/VR2<,+
+   LABEL='Localité (I)',+
+   PAGE=1,+
+   NAME=LOCALITE_I;
+AT(0:0,0:0),+
+   SOURCE=NPA.LOCALITE_SEC,+
+   SIZE=30,+
+   NAME=LOCALITE_SEC;
+AT(1:1,26:29)/U,+
+   SOURCE=NPA.MAJ,+
+   SIZE=4,+
+   LABEL='MéJ',+
+   PAGE=1,+
+   NAME=MAJ;
+AT(5:5,26:35)/U,+
+   SOURCE=NPA.NPA,+
+   SIZE=10,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='NPA',+
+   PAGE=1,+
+   NAME=NPA;
+AT(10:10,26:29)/U,+
+   SOURCE=NPA.OBSOLETE,+
+   SIZE=4,+
+   LABEL='Obsoléte',+
+   PAGE=1,+
+   NAME=OBSOLETE;
+*
+VIEW=NUMEROTATION,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(NUMEROTATION),+
+   FORM=YES;
+AT(5:5,21:42)/U,+
+   SOURCE=NUMEROTATION.ANNEE,+
+   SIZE=22,+
+   LABEL='Année',+
+   PAGE=1,+
+   NAME=ANNEE;
+AT(4:4,21:40)/U,+
+   SOURCE=NUMEROTATION.BRANCHE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Branche',+
+   PAGE=1,+
+   NAME=BRANCHE;
+AT(1:1,21:41)/U,+
+   SOURCE=NUMEROTATION.CLE_NUMEROTATION,+
+   SIZE=21,+
+   LABEL='Clé Numérotation',+
+   PAGE=1,+
+   NAME=CLE_NUMEROTATION;
+AT(3:3,21:40)/U,+
+   SOURCE=NUMEROTATION.COUR,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Cour',+
+   PAGE=1,+
+   NAME=COUR;
+AT(7:7,21:42)/U,+
+   SOURCE=NUMEROTATION.DERNIER_RANG,+
+   SIZE=22,+
+   LABEL='Dernier rang',+
+   PAGE=1,+
+   NAME=DERNIER_RANG;
+AT(1:1,2:19)/P/FL,+
+   PUT('Clé Numérotation.='),+
+   PAGE=1,+
+   NAME=L01001;
+AT(2:2,2:19)/P/FL,+
+   PUT('Préfixe..........='),+
+   PAGE=1,+
+   NAME=L01002;
+AT(3:3,2:19)/P/FL,+
+   PUT('Cour.............='),+
+   PAGE=1,+
+   NAME=L01003;
+AT(4:4,2:19)/P/FL,+
+   PUT('Branche..........='),+
+   PAGE=1,+
+   NAME=L01004;
+AT(5:5,2:19)/P/FL,+
+   PUT('Année............='),+
+   PAGE=1,+
+   NAME=L01005;
+AT(6:6,2:19)/P/FL,+
+   PUT('Rang vide........>'),+
+   PAGE=1,+
+   NAME=L01006;
+AT(7:7,2:19)/P/FL,+
+   PUT('Dernier rang.....='),+
+   PAGE=1,+
+   NAME=L01007;
+AT(8:8,2:19)/P/FL,+
+   PUT('Moyen de droit...:'),+
+   PAGE=1,+
+   NAME=L01008;
+AT(9:9,2:19)/P/FL,+
+   PUT('Spéciale.........:'),+
+   PAGE=1,+
+   NAME=L01009;
+AT(8:8,21:40)/U,+
+   SOURCE=NUMEROTATION.MDD,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<6<,+
+   LABEL='Moyen de droit',+
+   PAGE=1,+
+   NAME=MDD;
+AT(2:2,21:40)/U,+
+   SOURCE=NUMEROTATION.PREFIXE,+
+   SIZE=20,+
+   LABEL='Préfixe',+
+   PAGE=1,+
+   NAME=PREFIXE;
+AT(6:6,21:62)/U/SER,+
+   SOURCE=NUMEROTATION.RANG_VIDE,+
+   SIZE=42,+
+   OUTPUT_FORMAT=<20/SER<,+
+   LABEL='Rang vide',+
+   PAGE=1,+
+   NAME=RANG_VIDE;
+AT(9:9,21:24)/U,+
+   SOURCE=NUMEROTATION.SPECIALE,+
+   SIZE=4,+
+   LABEL='Spéciale',+
+   PAGE=1,+
+   NAME=SPECIALE;
+*
+VIEW=PIECE,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(PIECE),+
+   FORM=YES;
+AT(20:20,28:47)/U,+
+   SOURCE=PIECE.CLASSE_PIECE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Classement piéce',+
+   PAGE=1,+
+   NAME=CLASSE_PIECE;
+AT(2:2,28:45)/U,+
+   SOURCE=PIECE.CLE_DOSSIER,+
+   SIZE=18,+
+   OUTPUT_FORMAT=<8<,+
+   LABEL='Clé dossier',+
+   PAGE=1,+
+   NAME=CLE_DOSSIER;
+AT(3:3,28:45)/U,+
+   SOURCE=PIECE.CLE_DOSSIER_CONNEXE,+
+   SIZE=18,+
+   OUTPUT_FORMAT=<8/SER<,+
+   LABEL='Clé dossier connexe',+
+   PAGE=1,+
+   NAME=CLE_DOSSIER_CONNEXE;
+AT(1:1,28:47)/U,+
+   SOURCE=PIECE.CLE_PIECE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<12<,+
+   LABEL='Clé piéce',+
+   PAGE=1,+
+   NAME=CLE_PIECE;
+AT(18:18,28:47)/U,+
+   SOURCE=PIECE.CT,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='CT',+
+   PAGE=1,+
+   NAME=CT;
+AT(14:14,28:49)/U,+
+   SOURCE=PIECE.DAT_CREATION,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date création',+
+   PAGE=1,+
+   NAME=DAT_CREATION;
+AT(1:1,25:46)/U,+
+   SOURCE=PIECE.DAT_DEPOT,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date dépét',+
+   PAGE=2,+
+   NAME=DAT_DEPOT;
+AT(7:7,28:49)/U,+
+   SOURCE=PIECE.DAT_ENVOI,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date d''envoi',+
+   PAGE=1,+
+   NAME=DAT_ENVOI;
+AT(15:15,28:49)/U,+
+   SOURCE=PIECE.DAT_MODIFICATION,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date modification',+
+   PAGE=1,+
+   NAME=DAT_MODIFICATION;
+AT(2:2,25:46)/U,+
+   SOURCE=PIECE.DAT_NOTIF,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date notif.',+
+   PAGE=2,+
+   NAME=DAT_NOTIF;
+AT(11:11,28:49)/U,+
+   SOURCE=PIECE.DAT_PIECE,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date de la piéce',+
+   PAGE=1,+
+   NAME=DAT_PIECE;
+AT(3:3,25:46)/U,+
+   SOURCE=PIECE.DAT_POSITION,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date position',+
+   PAGE=2,+
+   NAME=DAT_POSITION;
+AT(4:4,25:46)/U,+
+   SOURCE=PIECE.DAT_STATUT,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date statut',+
+   PAGE=2,+
+   NAME=DAT_STATUT;
+AT(10:10,28:57)/U,+
+   SOURCE=PIECE.DESIGNATION,+
+   SIZE=60,+
+   OUTPUT_FORMAT=<30/VR2<,+
+   LABEL='Désignation piéce',+
+   PAGE=1,+
+   NAME=DESIGNATION;
+AT(9:9,28:47)/U,+
+   SOURCE=PIECE.DESTIN_PIECE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20/SEC<,+
+   LABEL='Destinataire',+
+   PAGE=1,+
+   NAME=DESTIN_PIECE;
+AT(8:8,28:47)/U,+
+   SOURCE=PIECE.EXP_PIECE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Expéditeur',+
+   PAGE=1,+
+   NAME=EXP_PIECE;
+AT(5:5,25:44)/U,+
+   SOURCE=PIECE.GENRE_PIECE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Genre piéce',+
+   PAGE=2,+
+   NAME=GENRE_PIECE;
+AT(1:1,2:26)/P/FL,+
+   PUT('Clé piéce...............='),+
+   PAGE=1,+
+   NAME=L01001;
+AT(2:2,2:26)/P/FL,+
+   PUT('Clé dossier.............='),+
+   PAGE=1,+
+   NAME=L01002;
+AT(3:3,2:26)/P/FL,+
+   PUT('Clé dossier connexe.....>'),+
+   PAGE=1,+
+   NAME=L01003;
+AT(4:4,2:26)/P/FL,+
+   PUT('Né de piéce.............='),+
+   PAGE=1,+
+   NAME=L01004;
+AT(5:5,2:26)/P/FL,+
+   PUT('Né de piéce connexe.....>'),+
+   PAGE=1,+
+   NAME=L01005;
+AT(6:6,2:26)/P/FL,+
+   PUT('Né normé de piéce.......:'),+
+   PAGE=1,+
+   NAME=L01006;
+AT(7:7,2:26)/P/FL,+
+   PUT('Date d''envoi............:'),+
+   PAGE=1,+
+   NAME=L01007;
+AT(8:8,2:26)/P/FL,+
+   PUT('Expéditeur..............='),+
+   PAGE=1,+
+   NAME=L01008;
+AT(9:9,2:26)/P/FL,+
+   PUT('Destinataire...........=>'),+
+   PAGE=1,+
+   NAME=L01009;
+AT(10:10,2:26)/P/FL,+
+   PUT('Désignation piéce......=>'),+
+   PAGE=1,+
+   NAME=L01010;
+AT(11:11,2:26)/P/FL,+
+   PUT('Date de la piéce........:'),+
+   PAGE=1,+
+   NAME=L01011;
+AT(12:12,2:26)/P/FL,+
+   PUT('Retour..................='),+
+   PAGE=1,+
+   NAME=L01012;
+AT(13:13,2:26)/P/FL,+
+   PUT('Retourner é.............:'),+
+   PAGE=1,+
+   NAME=L01013;
+AT(14:14,2:26)/P/FL,+
+   PUT('Date création...........='),+
+   PAGE=1,+
+   NAME=L01014;
+AT(15:15,2:26)/P/FL,+
+   PUT('Date modification.......='),+
+   PAGE=1,+
+   NAME=L01015;
+AT(16:16,2:26)/P/FL,+
+   PUT('Dernier utilisateur UID.='),+
+   PAGE=1,+
+   NAME=L01016;
+AT(17:17,2:26)/P/FL,+
+   PUT('Dernier utilisateur.....='),+
+   PAGE=1,+
+   NAME=L01017;
+AT(18:18,2:26)/P/FL,+
+   PUT('CT......................='),+
+   PAGE=1,+
+   NAME=L01018;
+AT(19:19,2:26)/P/FL,+
+   PUT('Né envoi...............=>'),+
+   PAGE=1,+
+   NAME=L01019;
+AT(20:20,2:26)/P/FL,+
+   PUT('Classement piéce........:'),+
+   PAGE=1,+
+   NAME=L01020;
+AT(1:1,2:23)/P/FL,+
+   PUT('Date dépét...........>'),+
+   PAGE=2,+
+   NAME=L02021;
+AT(2:2,2:23)/P/FL,+
+   PUT('Date notif...........>'),+
+   PAGE=2,+
+   NAME=L02022;
+AT(3:3,2:23)/P/FL,+
+   PUT('Date position........:'),+
+   PAGE=2,+
+   NAME=L02023;
+AT(4:4,2:23)/P/FL,+
+   PUT('Date statut..........>'),+
+   PAGE=2,+
+   NAME=L02024;
+AT(5:5,2:23)/P/FL,+
+   PUT('Genre piéce..........:'),+
+   PAGE=2,+
+   NAME=L02025;
+AT(6:6,2:23)/P/FL,+
+   PUT('Mode envoi...........>'),+
+   PAGE=2,+
+   NAME=L02026;
+AT(7:7,2:23)/P/FL,+
+   PUT('Mode retour..........:'),+
+   PAGE=2,+
+   NAME=L02027;
+AT(8:8,2:23)/P/FL,+
+   PUT('Nbre pages...........:'),+
+   PAGE=2,+
+   NAME=L02028;
+AT(9:9,2:23)/P/FL,+
+   PUT('Clé dossier original.:'),+
+   PAGE=2,+
+   NAME=L02029;
+AT(10:10,2:23)/P/FL,+
+   PUT('Position.............:'),+
+   PAGE=2,+
+   NAME=L02030;
+AT(11:11,2:23)/P/FL,+
+   PUT('Remarque piéce.......>'),+
+   PAGE=2,+
+   NAME=L02031;
+AT(12:12,2:23)/P/FL,+
+   PUT('Statut envoi.........>'),+
+   PAGE=2,+
+   NAME=L02032;
+AT(13:13,2:23)/P/FL,+
+   PUT('Statut piéce.........:'),+
+   PAGE=2,+
+   NAME=L02033;
+AT(14:14,2:23)/P/FL,+
+   PUT('Visible..............:'),+
+   PAGE=2,+
+   NAME=L02034;
+AT(6:6,25:44)/U,+
+   SOURCE=PIECE.MODE_ENVOI,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1/SEC<,+
+   LABEL='Mode envoi',+
+   PAGE=2,+
+   NAME=MODE_ENVOI;
+AT(7:7,25:44)/U,+
+   SOURCE=PIECE.MODE_RETOUR,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Mode retour',+
+   PAGE=2,+
+   NAME=MODE_RETOUR;
+AT(8:8,25:42)/U,+
+   SOURCE=PIECE.NBRE_PAGES,+
+   SIZE=18,+
+   OUTPUT_FORMAT=<8<,+
+   LABEL='Nbre pages',+
+   PAGE=2,+
+   NAME=NBRE_PAGES;
+AT(19:19,28:47)/U,+
+   SOURCE=PIECE.NUM_ENVOI,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<18/SEC<,+
+   LABEL='Né envoi',+
+   PAGE=1,+
+   NAME=NUM_ENVOI;
+AT(4:4,28:47)/U,+
+   SOURCE=PIECE.NUM_PIECE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Né de piéce',+
+   PAGE=1,+
+   NAME=NUM_PIECE;
+AT(5:5,28:47)/U,+
+   SOURCE=PIECE.NUM_PIECE_CONNEXE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4/SER<,+
+   LABEL='Né de piéce connexe',+
+   PAGE=1,+
+   NAME=NUM_PIECE_CONNEXE;
+AT(6:6,28:47)/U,+
+   SOURCE=PIECE.NUM_PIECE_NORME,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Né normé de piéce',+
+   PAGE=1,+
+   NAME=NUM_PIECE_NORME;
+AT(9:9,25:42)/U,+
+   SOURCE=PIECE.ORIGINAL,+
+   SIZE=18,+
+   OUTPUT_FORMAT=<8<,+
+   LABEL='Clé dossier original',+
+   PAGE=2,+
+   NAME=ORIGINAL;
+AT(10:10,25:44)/U,+
+   SOURCE=PIECE.POSITION,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Position',+
+   PAGE=2,+
+   NAME=POSITION;
+AT(11:11,25:54)/U,+
+   SOURCE=PIECE.REM_PIECE,+
+   SIZE=60,+
+   OUTPUT_FORMAT=<30/VR2<,+
+   LABEL='Remarque piéce',+
+   PAGE=2,+
+   NAME=REM_PIECE;
+AT(12:12,28:31)/U,+
+   SOURCE=PIECE.RETOUR,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Retour',+
+   PAGE=1,+
+   NAME=RETOUR;
+AT(13:13,28:47)/U,+
+   SOURCE=PIECE.RETOURNER_A,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Retourner é',+
+   PAGE=1,+
+   NAME=RETOURNER_A;
+AT(12:12,25:44)/U,+
+   SOURCE=PIECE.STATUT_ENVOI,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<3/SEC<,+
+   LABEL='Statut envoi',+
+   PAGE=2,+
+   NAME=STATUT_ENVOI;
+AT(13:13,25:44)/U,+
+   SOURCE=PIECE.STATUT_PIECE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Statut piéce',+
+   PAGE=2,+
+   NAME=STATUT_PIECE;
+AT(16:16,28:47)/U,+
+   SOURCE=PIECE.UID,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<8<,+
+   LABEL='Dernier utilisateur UID',+
+   PAGE=1,+
+   NAME=UID;
+AT(17:17,28:47)/U,+
+   SOURCE=PIECE.USER,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Dernier utilisateur',+
+   PAGE=1,+
+   NAME=USER;
+AT(14:14,25:28)/U,+
+   SOURCE=PIECE.VISIBLE,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Visible',+
+   PAGE=2,+
+   NAME=VISIBLE;
+*
+VIEW=TACHE,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(TACHE),+
+   FORM=YES;
+AT(5:5,33:36)/U,+
+   SOURCE=TACHE.BDP,+
+   SIZE=4,+
+   LABEL='BdP',+
+   PAGE=2,+
+   NAME=BDP;
+AT(3:3,30:80)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=TACHE.BRANCHE,+
+   SIZE=51,+
+   OUTPUT_FORMAT=<1/SER<,+
+   LABEL='Branche',+
+   PAGE=1,+
+   NAME=BRANCHE;
+AT(8:8,30:49)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=TACHE.CAT_IMP,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1/SER<,+
+   LABEL='Catégorie impl.',+
+   PAGE=1,+
+   NAME=CAT_IMP;
+AT(6:6,33:80)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=TACHE.CLE_FORMULE,+
+   SIZE=48,+
+   OUTPUT_FORMAT=<15/SER<,+
+   LABEL='Clés formule',+
+   PAGE=2,+
+   NAME=CLE_FORMULE;
+AT(4:4,33:52)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=TACHE.CONTROLEUR,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<3/SER<,+
+   LABEL='contrôleur',+
+   PAGE=2,+
+   NAME=CONTROLEUR;
+AT(2:2,30:49)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=TACHE.COUR,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Cour',+
+   PAGE=1,+
+   NAME=COUR;
+AT(15:15,30:49)/U,+
+   SOURCE=TACHE.DHL,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<3/SER<,+
+   LABEL='Date-Heure-Lieu',+
+   PAGE=1,+
+   NAME=DHL;
+AT(6:6,30:49)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=TACHE.ETAT_DOSSIER,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1/SER<,+
+   LABEL='état du dossier',+
+   PAGE=1,+
+   NAME=ETAT_DOSSIER;
+AT(20:20,30:33)/U,+
+   SOURCE=TACHE.FERIE,+
+   SIZE=4,+
+   LABEL='Férie',+
+   PAGE=1,+
+   NAME=FERIE;
+AT(12:12,30:49)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=TACHE.FONC_COLLAB,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<3/SER<,+
+   LABEL='Fonction collaborateur',+
+   PAGE=1,+
+   NAME=FONC_COLLAB;
+AT(9:9,30:49)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=TACHE.FONC_IMP,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<5/SER<,+
+   LABEL='Fonction impliqué',+
+   PAGE=1,+
+   NAME=FONC_IMP;
+AT(14:14,30:80)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=TACHE.GENRE_DELAI,+
+   SIZE=51,+
+   OUTPUT_FORMAT=<4/SER<,+
+   LABEL='Genre délai',+
+   PAGE=1,+
+   NAME=GENRE_DELAI;
+AT(7:7,30:33)/U,+
+   SOURCE=TACHE.HORS_DOSSIER,+
+   SIZE=4,+
+   LABEL='Hors dossier',+
+   PAGE=1,+
+   NAME=HORS_DOSSIER;
+AT(1:1,30:49)/U,+
+   SOURCE=TACHE.ID_TACHE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<12<,+
+   LABEL='Identifiant de téche',+
+   PAGE=1,+
+   NAME=ID_TACHE;
+AT(19:19,30:49)/U,+
+   SOURCE=TACHE.JOUR_EXCLU,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<7<,+
+   LABEL='Jour-s sem. exclu-s',+
+   PAGE=1,+
+   NAME=JOUR_EXCLU;
+AT(1:1,2:28)/P/FL,+
+   PUT('Identifiant de téche......='),+
+   PAGE=1,+
+   NAME=L01001;
+AT(2:2,2:28)/P/FL,+
+   PUT('Cour......................>'),+
+   PAGE=1,+
+   NAME=L01002;
+AT(3:3,2:28)/P/FL,+
+   PUT('Branche...................>'),+
+   PAGE=1,+
+   NAME=L01003;
+AT(4:4,2:28)/P/FL,+
+   PUT('Moyen de droit............>'),+
+   PAGE=1,+
+   NAME=L01004;
+AT(5:5,2:28)/P/FL,+
+   PUT('Code matiére..............>'),+
+   PAGE=1,+
+   NAME=L01005;
+AT(6:6,2:28)/P/FL,+
+   PUT('état du dossier...........>'),+
+   PAGE=1,+
+   NAME=L01006;
+AT(7:7,2:28)/P/FL,+
+   PUT('Hors dossier..............:'),+
+   PAGE=1,+
+   NAME=L01007;
+AT(8:8,2:28)/P/FL,+
+   PUT('Catégorie impl............>'),+
+   PAGE=1,+
+   NAME=L01008;
+AT(9:9,2:28)/P/FL,+
+   PUT('Fonction impliqué.........>'),+
+   PAGE=1,+
+   NAME=L01009;
+AT(10:10,2:28)/P/FL,+
+   PUT('Réle impl.................>'),+
+   PAGE=1,+
+   NAME=L01010;
+AT(11:11,2:28)/P/FL,+
+   PUT('Sous-réle impl............>'),+
+   PAGE=1,+
+   NAME=L01011;
+AT(12:12,2:28)/P/FL,+
+   PUT('Fonction collaborateur....>'),+
+   PAGE=1,+
+   NAME=L01012;
+AT(13:13,2:28)/P/FL,+
+   PUT('Personnelle...............:'),+
+   PAGE=1,+
+   NAME=L01013;
+AT(14:14,2:28)/P/FL,+
+   PUT('Genre délai...............='),+
+   PAGE=1,+
+   NAME=L01014;
+AT(15:15,2:28)/P/FL,+
+   PUT('Date-Heure-Lieu...........:'),+
+   PAGE=1,+
+   NAME=L01015;
+AT(16:16,2:28)/P/FL,+
+   PUT('Type montant..............:'),+
+   PAGE=1,+
+   NAME=L01016;
+AT(17:17,2:28)/P/FL,+
+   PUT('Délai provisoire possible.:'),+
+   PAGE=1,+
+   NAME=L01017;
+AT(18:18,2:28)/P/FL,+
+   PUT('Nombre jours délai........:'),+
+   PAGE=1,+
+   NAME=L01018;
+AT(19:19,2:28)/P/FL,+
+   PUT('Jour-s sem. exclu-s.......:'),+
+   PAGE=1,+
+   NAME=L01019;
+AT(20:20,2:28)/P/FL,+
+   PUT('Computation délai.........:'),+
+   PAGE=1,+
+   NAME=L01020;
+AT(1:1,2:31)/P/FL,+
+   PUT('Tolérance....................:'),+
+   PAGE=2,+
+   NAME=L02021;
+AT(2:2,2:31)/P/FL,+
+   PUT('Nombre max. de prolongations.:'),+
+   PAGE=2,+
+   NAME=L02022;
+AT(3:3,2:31)/P/FL,+
+   PUT('Premier rappel...............:'),+
+   PAGE=2,+
+   NAME=L02023;
+AT(4:4,2:31)/P/FL,+
+   PUT('contrôleur...................>'),+
+   PAGE=2,+
+   NAME=L02024;
+AT(5:5,2:31)/P/FL,+
+   PUT('BdP..........................:'),+
+   PAGE=2,+
+   NAME=L02025;
+AT(6:6,2:31)/P/FL,+
+   PUT('Clés formule.................>'),+
+   PAGE=2,+
+   NAME=L02026;
+AT(7:7,2:31)/P/FL,+
+   PUT('Postcomputable...............:'),+
+   PAGE=2,+
+   NAME=L02027;
+AT(5:5,30:80)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=TACHE.MATIERE,+
+   SIZE=51,+
+   OUTPUT_FORMAT=<6/SER<,+
+   LABEL='Code matiére',+
+   PAGE=1,+
+   NAME=MATIERE;
+AT(16:16,30:49)/U,+
+   SOURCE=TACHE.MONTANT,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Type montant',+
+   PAGE=1,+
+   NAME=MONTANT;
+AT(4:4,30:80)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=TACHE.MOYEN_DE_DROIT,+
+   SIZE=51,+
+   OUTPUT_FORMAT=<6/SER<,+
+   LABEL='Moyen de droit',+
+   PAGE=1,+
+   NAME=MOYEN_DE_DROIT;
+AT(18:18,30:49)/U,+
+   SOURCE=TACHE.NBRE_JOURS,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<11<,+
+   LABEL='Nombre jours délai',+
+   PAGE=1,+
+   NAME=NBRE_JOURS;
+AT(2:2,33:42)/U,+
+   SOURCE=TACHE.NBRE_PROLONGS,+
+   SIZE=10,+
+   OUTPUT_FORMAT=>4>,+
+   LABEL='Nombre max. de prolongations',+
+   PAGE=2,+
+   NAME=NBRE_PROLONGS;
+AT(13:13,30:33)/U,+
+   SOURCE=TACHE.PERSONNELLE,+
+   SIZE=4,+
+   LABEL='Personnelle',+
+   PAGE=1,+
+   NAME=PERSONNELLE;
+AT(7:7,33:36)/U,+
+   SOURCE=TACHE.POSTCOMPUT,+
+   SIZE=4,+
+   LABEL='Postcomputable',+
+   PAGE=2,+
+   NAME=POSTCOMPUT;
+AT(3:3,33:52)/U,+
+   SOURCE=TACHE.PREMIER_RAPPEL,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<13<,+
+   LABEL='Premier rappel',+
+   PAGE=2,+
+   NAME=PREMIER_RAPPEL;
+AT(17:17,30:33)/U,+
+   SOURCE=TACHE.PROVISOIRE,+
+   SIZE=4,+
+   LABEL='Délai provisoire possible',+
+   PAGE=1,+
+   NAME=PROVISOIRE;
+AT(10:10,30:49)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=TACHE.ROLE_IMP,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1/SER<,+
+   LABEL='Réle impl.',+
+   PAGE=1,+
+   NAME=ROLE_IMP;
+AT(11:11,30:50)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=TACHE.SOUS_ROLE_IMP,+
+   SIZE=21,+
+   OUTPUT_FORMAT=<3/SER<,+
+   LABEL='Sous-réle impl.',+
+   PAGE=1,+
+   NAME=SOUS_ROLE_IMP;
+AT(1:1,33:42)/U,+
+   SOURCE=TACHE.TOLERANCE,+
+   SIZE=10,+
+   OUTPUT_FORMAT=>8>,+
+   LABEL='Tolérance',+
+   PAGE=2,+
+   NAME=TOLERANCE;
+*
+VIEW=TRADUCTION,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(TRADUCTION),+
+   FORM=YES;
+AT(6:6,23:52)/U,+
+   SOURCE=TRADUCTION.ABREV_D,+
+   SIZE=30,+
+   LABEL='Abréviation (D)',+
+   PAGE=1,+
+   NAME=ABREV_D;
+AT(7:7,23:52)/U,+
+   SOURCE=TRADUCTION.ABREV_F,+
+   SIZE=30,+
+   LABEL='Abréviation (F)',+
+   PAGE=1,+
+   NAME=ABREV_F;
+AT(8:8,23:52)/U,+
+   SOURCE=TRADUCTION.ABREV_I,+
+   SIZE=30,+
+   LABEL='Abréviation (I)',+
+   PAGE=1,+
+   NAME=ABREV_I;
+AT(1:1,23:44)/U,+
+   SOURCE=TRADUCTION.CLE_TRADUCTION,+
+   SIZE=22,+
+   LABEL='Clé Traduction',+
+   PAGE=1,+
+   NAME=CLE_TRADUCTION;
+AT(9:9,23:52)/U,+
+   SOURCE=TRADUCTION.CODE_MONOLINGUE,+
+   SIZE=30,+
+   LABEL='Code monolingue',+
+   PAGE=1,+
+   NAME=CODE_MONOLINGUE;
+AT(10:10,23:44)/U,+
+   SOURCE=TRADUCTION.DAT_MODIFICATION,+
+   SIZE=22,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date modification',+
+   PAGE=1,+
+   NAME=DAT_MODIFICATION;
+AT(11:11,23:36)/U,+
+   SOURCE=TRADUCTION.HEURE_MODIF,+
+   SIZE=14,+
+   OUTPUT_FORMAT=<6<,+
+   LABEL='Heure de modif.',+
+   PAGE=1,+
+   NAME=HEURE_MODIF;
+AT(1:1,2:21)/P/FL,+
+   PUT('Clé Traduction.....='),+
+   PAGE=1,+
+   NAME=L01001;
+AT(2:2,2:21)/P/FL,+
+   PUT('Nom du champ.......='),+
+   PAGE=1,+
+   NAME=L01002;
+AT(3:3,2:21)/P/FL,+
+   PUT('Texte (D).........=>'),+
+   PAGE=1,+
+   NAME=L01003;
+AT(4:4,2:21)/P/FL,+
+   PUT('Texte (F).........=>'),+
+   PAGE=1,+
+   NAME=L01004;
+AT(5:5,2:21)/P/FL,+
+   PUT('Texte (I)..........>'),+
+   PAGE=1,+
+   NAME=L01005;
+AT(6:6,2:21)/P/FL,+
+   PUT('Abréviation (D)....:'),+
+   PAGE=1,+
+   NAME=L01006;
+AT(7:7,2:21)/P/FL,+
+   PUT('Abréviation (F)....:'),+
+   PAGE=1,+
+   NAME=L01007;
+AT(8:8,2:21)/P/FL,+
+   PUT('Abréviation (I)....:'),+
+   PAGE=1,+
+   NAME=L01008;
+AT(9:9,2:21)/P/FL,+
+   PUT('Code monolingue....='),+
+   PAGE=1,+
+   NAME=L01009;
+AT(10:10,2:21)/P/FL,+
+   PUT('Date modification..='),+
+   PAGE=1,+
+   NAME=L01010;
+AT(11:11,2:21)/P/FL,+
+   PUT('Heure de modif.....='),+
+   PAGE=1,+
+   NAME=L01011;
+AT(12:12,2:21)/P/FL,+
+   PUT('Nom + Code.........='),+
+   PAGE=1,+
+   NAME=L01012;
+AT(13:13,2:21)/P/FL,+
+   PUT('Non sélectionnable.:'),+
+   PAGE=1,+
+   NAME=L01013;
+AT(14:14,2:21)/P/FL,+
+   PUT('Obsoléte...........:'),+
+   PAGE=1,+
+   NAME=L01014;
+AT(15:15,2:21)/P/FL,+
+   PUT('Provisoire.........:'),+
+   PAGE=1,+
+   NAME=L01015;
+AT(16:16,2:21)/P/FL,+
+   PUT('Rang...............:'),+
+   PAGE=1,+
+   NAME=L01016;
+AT(2:2,23:54)/U,+
+   SOURCE=TRADUCTION.NOM_CHAMP,+
+   SIZE=32,+
+   LABEL='Nom du champ',+
+   PAGE=1,+
+   NAME=NOM_CHAMP;
+AT(12:12,23:85)/U,+
+   SOURCE=TRADUCTION.NOM_CODE,+
+   SIZE=63,+
+   LABEL='Nom + Code',+
+   PAGE=1,+
+   NAME=NOM_CODE;
+AT(13:13,23:26)/U,+
+   SOURCE=TRADUCTION.NON_SELEX,+
+   SIZE=4,+
+   LABEL='Non sélectionnable',+
+   PAGE=1,+
+   NAME=NON_SELEX;
+AT(14:14,23:26)/U,+
+   SOURCE=TRADUCTION.OBSOLETE,+
+   SIZE=4,+
+   LABEL='Obsoléte',+
+   PAGE=1,+
+   NAME=OBSOLETE;
+AT(15:15,23:26)/U,+
+   SOURCE=TRADUCTION.PROVISOIRE,+
+   SIZE=4,+
+   LABEL='Provisoire',+
+   PAGE=1,+
+   NAME=PROVISOIRE;
+AT(16:16,23:36)/U,+
+   SOURCE=TRADUCTION.RANG,+
+   SIZE=14,+
+   OUTPUT_FORMAT=>6>,+
+   LABEL='Rang',+
+   PAGE=1,+
+   NAME=RANG;
+AT(3:3,23:102)/U,+
+   SOURCE=TRADUCTION.TEXTE_D,+
+   SIZE=240,+
+   LABEL='Texte (D)',+
+   PAGE=1,+
+   NAME=TEXTE_D;
+AT(4:4,23:102)/U,+
+   SOURCE=TRADUCTION.TEXTE_F,+
+   SIZE=240,+
+   LABEL='Texte (F)',+
+   PAGE=1,+
+   NAME=TEXTE_F;
+AT(5:5,23:102)/U,+
+   SOURCE=TRADUCTION.TEXTE_I,+
+   SIZE=240,+
+   LABEL='Texte (I)',+
+   PAGE=1,+
+   NAME=TEXTE_I;
+*
+*
+MODEL=DBEAVER,+
+   ACCESS=PUBLIC,+
+   TYPE=FQM;
+*
+VIEW=ACCES,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(ACCES),+
+   FORM=NO;
+*
+FIELD=CLE_ACCES,+
+   LABEL='Clé accès',+
+   SOURCE=ACCES.CLE_ACCES;
+*
+FIELD=DAT_CREATION,+
+   LABEL='Date création',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=ACCES.DAT_CREATION;
+*
+FIELD=DAT_MODIFICATION,+
+   LABEL='Date modification',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=ACCES.DAT_MODIFICATION;
+*
+FIELD=DOMAINE_L,+
+   LABEL='Domaine lect.',+
+   SOURCE=ACCES.DOMAINE_L;
+*
+FIELD=DOMAINE_M,+
+   LABEL='Domaine modif.',+
+   SOURCE=ACCES.DOMAINE_M;
+*
+FIELD=DROIT,+
+   LABEL='Droit page, champ et MéJ',+
+   SOURCE=ACCES.DROIT;
+*
+FIELD=NOM_PROFIL,+
+   LABEL='NOM_PROFIL',+
+   SOURCE=ACCES.NOM_PROFIL;
+*
+FIELD=OBJET,+
+   LABEL='Objet',+
+   SOURCE=ACCES.OBJET;
+*
+FIELD=TYPE_PROFIL,+
+   LABEL='Type de profil',+
+   SOURCE=ACCES.TYPE_PROFIL;
+*
+FIELD=UID,+
+   LABEL='Dernier utilisateur UID',+
+   OUTPUT_FORMAT=<8<,+
+   SOURCE=ACCES.UID;
+*
+FIELD=USER,+
+   LABEL='Dernier utilisateur',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=ACCES.USER;
+*
+VIEW=ARCHIVE,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(ARCHIVE),+
+   FORM=NO;
+*
+FIELD=BORDEREAU,+
+   LABEL='Bordereau des piéces',+
+   OUTPUT_FORMAT=<80<,+
+   SOURCE=ARCHIVE.BORDEREAU;
+*
+FIELD=CLE_ARCHIVAGE,+
+   LABEL='Né d''archivage',+
+   OUTPUT_FORMAT=<8<,+
+   SOURCE=ARCHIVE.CLE_ARCHIVAGE;
+*
+FIELD=CLE_DOSSIER,+
+   LABEL='Clé dossier (ACCN)',+
+   OUTPUT_FORMAT=>8>,+
+   SOURCE=ARCHIVE.CLE_DOSSIER;
+*
+FIELD=DAT_CREATION,+
+   LABEL='Date création',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=ARCHIVE.DAT_CREATION;
+*
+FIELD=DAT_DEC_DOSSIER,+
+   LABEL='Date décision dossier',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=ARCHIVE.DAT_DEC_DOSSIER;
+*
+FIELD=DAT_MODIFICATION,+
+   LABEL='Date modification',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=ARCHIVE.DAT_MODIFICATION;
+*
+FIELD=DECISION,+
+   LABEL='Décisions',+
+   OUTPUT_FORMAT=<80<,+
+   SOURCE=ARCHIVE.DECISION;
+*
+FIELD=DESCRIPTEUR,+
+   LABEL='Descripteurs',+
+   OUTPUT_FORMAT=<55/SER/VR20<,+
+   SOURCE=ARCHIVE.DESCRIPTEUR;
+*
+FIELD=GENERALITE,+
+   LABEL='Généralités',+
+   OUTPUT_FORMAT=<80<,+
+   SOURCE=ARCHIVE.GENERALITE;
+*
+FIELD=IMPLIQUE,+
+   LABEL='Impliqués',+
+   OUTPUT_FORMAT=<80<,+
+   SOURCE=ARCHIVE.IMPLIQUE;
+*
+FIELD=MATIERE,+
+   LABEL='Code matiére',+
+   OUTPUT_FORMAT=<3<,+
+   SOURCE=ARCHIVE.MATIERE;
+*
+FIELD=MEMOIRE,+
+   LABEL='Mémoire des données',+
+   OUTPUT_FORMAT=<80<,+
+   SOURCE=ARCHIVE.MEMOIRE;
+*
+FIELD=NORME,+
+   LABEL='Normes',+
+   OUTPUT_FORMAT=<50/SEC<,+
+   SOURCE=ARCHIVE.NORME;
+*
+FIELD=NUM_DOSSIER,+
+   LABEL='Numéro du dossier',+
+   OUTPUT_FORMAT=<15<,+
+   SOURCE=ARCHIVE.NUM_DOSSIER;
+*
+FIELD=ORIGINE,+
+   LABEL='Origine',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=ARCHIVE.ORIGINE;
+*
+FIELD=TRIBUNAL,+
+   LABEL='Tribunal',+
+   OUTPUT_FORMAT=<3<,+
+   SOURCE=ARCHIVE.TRIBUNAL;
+*
+FIELD=UID,+
+   LABEL='Dernier utilisateur UID',+
+   OUTPUT_FORMAT=<8<,+
+   SOURCE=ARCHIVE.UID;
+*
+FIELD=USER,+
+   LABEL='Dernier utilisateur',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=ARCHIVE.USER;
+*
+VIEW=AUTRE_DOSSIER,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(AUTRE_DOSSIER),+
+   FORM=NO;
+*
+FIELD=AUTEUR,+
+   LABEL='Auteur',+
+   OUTPUT_FORMAT=<20/VR4<,+
+   SOURCE=AUTRE_DOSSIER.AUTEUR;
+*
+FIELD=BRADOC,+
+   LABEL='Dans Bradoc',+
+   SOURCE=AUTRE_DOSSIER.BRADOC;
+*
+FIELD=CLE_AUT_DOSS,+
+   LABEL='Clé autres dossiers',+
+   OUTPUT_FORMAT=>8>,+
+   SOURCE=AUTRE_DOSSIER.CLE_AUT_DOSS;
+*
+FIELD=COUR,+
+   LABEL='Cour',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=AUTRE_DOSSIER.COUR;
+*
+FIELD=CT,+
+   LABEL='CT',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=AUTRE_DOSSIER.CT;
+*
+FIELD=DAT_ARCHIVAGE,+
+   LABEL='Date d''archivage',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=AUTRE_DOSSIER.DAT_ARCHIVAGE;
+*
+FIELD=DAT_CREATION,+
+   LABEL='Date création',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=AUTRE_DOSSIER.DAT_CREATION;
+*
+FIELD=DAT_DOSSIER,+
+   LABEL='Date ouverture',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=AUTRE_DOSSIER.DAT_DOSSIER;
+*
+FIELD=DAT_FERMETURE,+
+   LABEL='Date fermeture',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=AUTRE_DOSSIER.DAT_FERMETURE;
+*
+FIELD=DAT_MODIFICATION,+
+   LABEL='Date modification',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=AUTRE_DOSSIER.DAT_MODIFICATION;
+*
+FIELD=DESTINATAIRE,+
+   LABEL='Destinataire',+
+   OUTPUT_FORMAT=<20/VR4<,+
+   SOURCE=AUTRE_DOSSIER.DESTINATAIRE;
+*
+FIELD=DOSSIER_CONNEXE,+
+   LABEL='Numéro du dossier',+
+   OUTPUT_FORMAT=<15<,+
+   SOURCE=AUTRE_DOSSIER.DOSSIER_CONNEXE;
+*
+FIELD=GENRE_DOCU,+
+   LABEL='Genre autre dossier',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=AUTRE_DOSSIER.GENRE_DOCU;
+*
+FIELD=INTIME,+
+   LABEL='Nom de l''intimé',+
+   OUTPUT_FORMAT=<20/VR4<,+
+   SOURCE=AUTRE_DOSSIER.INTIME;
+*
+FIELD=JUGE_DELEGUE,+
+   LABEL='Nom juge délégué',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=AUTRE_DOSSIER.JUGE_DELEGUE;
+*
+FIELD=LANGUE,+
+   LABEL='Langue',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=AUTRE_DOSSIER.LANGUE;
+*
+FIELD=NOM_COLLAB_INDEX,+
+   SOURCE=AUTRE_DOSSIER.NOM_COLLAB_INDEX;
+*
+FIELD=NUM_ARCHIVE,+
+   LABEL='Né d''archive',+
+   OUTPUT_FORMAT=<8<,+
+   SOURCE=AUTRE_DOSSIER.NUM_ARCHIVE;
+*
+FIELD=NUM_AUT_DOSS,+
+   LABEL='Numéro du dossier',+
+   OUTPUT_FORMAT=<15<,+
+   SOURCE=AUTRE_DOSSIER.NUM_AUT_DOSS;
+*
+FIELD=OBJET,+
+   LABEL='Objet',+
+   OUTPUT_FORMAT=<20/VR4<,+
+   SOURCE=AUTRE_DOSSIER.OBJET;
+*
+FIELD=OBJET_REMARQUE,+
+   SOURCE=AUTRE_DOSSIER.OBJET_REMARQUE;
+*
+FIELD=PARTIE_INDEX,+
+   SOURCE=AUTRE_DOSSIER.PARTIE_INDEX;
+*
+FIELD=POSITION,+
+   LABEL='Position',+
+   OUTPUT_FORMAT=<3<,+
+   SOURCE=AUTRE_DOSSIER.POSITION;
+*
+FIELD=RECOURANT,+
+   LABEL='Nom du recourant',+
+   OUTPUT_FORMAT=<20/VR4<,+
+   SOURCE=AUTRE_DOSSIER.RECOURANT;
+*
+FIELD=RECOURS_JOINT,+
+   LABEL='Dans Bradoc',+
+   SOURCE=AUTRE_DOSSIER.RECOURS_JOINT;
+*
+FIELD=REDACTEUR,+
+   LABEL='Nom rédacteur',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=AUTRE_DOSSIER.REDACTEUR;
+*
+FIELD=REF_EXT,+
+   LABEL='Numéro du dossier',+
+   OUTPUT_FORMAT=<15<,+
+   SOURCE=AUTRE_DOSSIER.REF_EXT;
+*
+FIELD=REGISTRATEUR,+
+   LABEL='Nom registrateur',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=AUTRE_DOSSIER.REGISTRATEUR;
+*
+FIELD=REM_AUTRE_DOSSIER,+
+   LABEL='Remarque autre dossier',+
+   OUTPUT_FORMAT=<40/VR5<,+
+   SOURCE=AUTRE_DOSSIER.REM_AUTRE_DOSSIER;
+*
+FIELD=UID,+
+   LABEL='Dernier utilisateur UID',+
+   OUTPUT_FORMAT=<8<,+
+   SOURCE=AUTRE_DOSSIER.UID;
+*
+FIELD=USER,+
+   LABEL='Dernier utilisateur',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=AUTRE_DOSSIER.USER;
+*
+VIEW=COLLABORATEUR,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(COLLABORATEUR),+
+   FORM=NO;
+*
+FIELD=ABREVIATION,+
+   LABEL='Abréviation',+
+   OUTPUT_FORMAT=<3<,+
+   SOURCE=COLLABORATEUR.ABREVIATION;
+*
+FIELD=ADR1,+
+   LABEL='Adresse d''envoi',+
+   OUTPUT_FORMAT=<20/VR3<,+
+   SOURCE=COLLABORATEUR.ADR1;
+*
+FIELD=ADR2,+
+   LABEL='2éme ligne......',+
+   OUTPUT_FORMAT=<20/VR3<,+
+   SOURCE=COLLABORATEUR.ADR2;
+*
+FIELD=ADR3,+
+   LABEL='3éme ligne......',+
+   OUTPUT_FORMAT=<20/VR3<,+
+   SOURCE=COLLABORATEUR.ADR3;
+*
+FIELD=ANCIENNETE,+
+   LABEL='Ancienneté',+
+   OUTPUT_FORMAT=<3<,+
+   SOURCE=COLLABORATEUR.ANCIENNETE;
+*
+FIELD=ANCIEN_COLLAB,+
+   LABEL='Ancien Collab.',+
+   SOURCE=COLLABORATEUR.ANCIEN_COLLAB;
+*
+FIELD=AUTO_SOURIS,+
+   LABEL='Automatisme souris',+
+   OUTPUT_FORMAT=<1/SEC<,+
+   SOURCE=COLLABORATEUR.AUTO_SOURIS;
+*
+FIELD=CLE_COLLAB,+
+   LABEL='Clé collaborateur',+
+   OUTPUT_FORMAT=<24<,+
+   SOURCE=COLLABORATEUR.CLE_COLLAB;
+*
+FIELD=COMPTE_VMS,+
+   LABEL='COMPTE_VMS',+
+   OUTPUT_FORMAT=<12<,+
+   SOURCE=COLLABORATEUR.COMPTE_VMS;
+*
+FIELD=COUR_PREF,+
+   LABEL='Cour',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=COLLABORATEUR.COUR_PREF;
+*
+FIELD=DAT_CREATION,+
+   LABEL='Date création',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=COLLABORATEUR.DAT_CREATION;
+*
+FIELD=DAT_ENTREE,+
+   LABEL='Date d''entrée en fonction',+
+   OUTPUT_FORMAT=<10/DATE21/SEC<,+
+   SOURCE=COLLABORATEUR.DAT_ENTREE;
+*
+FIELD=DAT_MODIFICATION,+
+   LABEL='Date modification',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=COLLABORATEUR.DAT_MODIFICATION;
+*
+FIELD=DAT_SORTIE,+
+   LABEL='Date de fin de la fonction',+
+   OUTPUT_FORMAT=<10/DATE21/SEC<,+
+   SOURCE=COLLABORATEUR.DAT_SORTIE;
+*
+FIELD=DIVISION,+
+   LABEL='Division/Service',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=COLLABORATEUR.DIVISION;
+*
+FIELD=DOSSIER_BUTINE,+
+   LABEL='Clés dossiers butinés',+
+   OUTPUT_FORMAT=<7/SER<,+
+   SOURCE=COLLABORATEUR.DOSSIER_BUTINE;
+*
+FIELD=DOSSIER_CONSULTE,+
+   LABEL='Clés dossiers consultés',+
+   OUTPUT_FORMAT=<7/SER<,+
+   SOURCE=COLLABORATEUR.DOSSIER_CONSULTE;
+*
+FIELD=ECRAN_DEPART,+
+   LABEL='Ecran départ',+
+   OUTPUT_FORMAT=<1/SEC<,+
+   SOURCE=COLLABORATEUR.ECRAN_DEPART;
+*
+FIELD=EMAIL,+
+   LABEL='Email',+
+   OUTPUT_FORMAT=<30/VR2<,+
+   SOURCE=COLLABORATEUR.EMAIL;
+*
+FIELD=FONCTION,+
+   LABEL='Fonctions',+
+   OUTPUT_FORMAT=<3/SER<,+
+   SOURCE=COLLABORATEUR.FONCTION;
+*
+FIELD=FORMULE_SO,+
+   LABEL='FORMULE_SO',+
+   SOURCE=COLLABORATEUR.FORMULE_SO;
+*
+FIELD=ICONE,+
+   LABEL='Taille icones',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=COLLABORATEUR.ICONE;
+*
+FIELD=IMPRIME_GRAPHIQUE,+
+   LABEL='Nom de l''imprimante (graphique)',+
+   OUTPUT_FORMAT=<15<,+
+   SOURCE=COLLABORATEUR.IMPRIME_GRAPHIQUE;
+*
+FIELD=IMPRIME_TEXTE,+
+   LABEL='Nom de l''imprimante (texte)',+
+   OUTPUT_FORMAT=<15<,+
+   SOURCE=COLLABORATEUR.IMPRIME_TEXTE;
+*
+FIELD=INFOBULLE,+
+   LABEL='Infobulles activées',+
+   SOURCE=COLLABORATEUR.INFOBULLE;
+*
+FIELD=INSTRUC_1,+
+   LABEL='Instruction é 1',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=COLLABORATEUR.INSTRUC_1;
+*
+FIELD=INSTRUC_3,+
+   LABEL='Instruction é 3',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=COLLABORATEUR.INSTRUC_3;
+*
+FIELD=INSTRUC_5,+
+   LABEL='Instruction é 5',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=COLLABORATEUR.INSTRUC_5;
+*
+FIELD=LANGUE_DESC,+
+   LABEL='Langue de description',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=COLLABORATEUR.LANGUE_DESC;
+*
+FIELD=LANGUE_INTERFACE,+
+   LABEL='Langue d''interface',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=COLLABORATEUR.LANGUE_INTERFACE;
+*
+FIELD=LANGUE_RECH,+
+   LABEL='Langue de recherche',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=COLLABORATEUR.LANGUE_RECH;
+*
+FIELD=LANGUE_REDACTEUR,+
+   LABEL='Langue rédacteur',+
+   SOURCE=COLLABORATEUR.LANGUE_REDACTEUR;
+*
+FIELD=LOC,+
+   LABEL='Nom de localité',+
+   OUTPUT_FORMAT=<15/VR2<,+
+   SOURCE=COLLABORATEUR.LOC;
+*
+FIELD=MATIERE,+
+   LABEL='Matiére (spécialité)',+
+   OUTPUT_FORMAT=<6/SER<,+
+   SOURCE=COLLABORATEUR.MATIERE;
+*
+FIELD=MULTI_VUE_LT,+
+   LABEL='Vues multiples liste de travail',+
+   OUTPUT_FORMAT=<50/SER<,+
+   SOURCE=COLLABORATEUR.MULTI_VUE_LT;
+*
+FIELD=NOM,+
+   LABEL='Nom de famille',+
+   OUTPUT_FORMAT=<15/VR2<,+
+   SOURCE=COLLABORATEUR.NOM;
+*
+FIELD=NOM_COLLAB,+
+   LABEL='Nom collaborateur',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=COLLABORATEUR.NOM_COLLAB;
+*
+FIELD=NPA,+
+   LABEL='NPA',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=COLLABORATEUR.NPA;
+*
+FIELD=NUM_FAX,+
+   LABEL='Né de Fax',+
+   OUTPUT_FORMAT=<12<,+
+   SOURCE=COLLABORATEUR.NUM_FAX;
+*
+FIELD=NUM_TEL,+
+   LABEL='Né Téléphone',+
+   OUTPUT_FORMAT=<12<,+
+   SOURCE=COLLABORATEUR.NUM_TEL;
+*
+FIELD=PARTICIP_3,+
+   LABEL='Participation é 3',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=COLLABORATEUR.PARTICIP_3;
+*
+FIELD=PARTICIP_5,+
+   LABEL='Participation é 5',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=COLLABORATEUR.PARTICIP_5;
+*
+FIELD=PRENOM,+
+   LABEL='Prénom',+
+   OUTPUT_FORMAT=<15/VR2<,+
+   SOURCE=COLLABORATEUR.PRENOM;
+*
+FIELD=PRESID,+
+   LABEL='Présidence pure',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=COLLABORATEUR.PRESID;
+*
+FIELD=PROFIL_ACCES,+
+   LABEL='Nom profil d''accès',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=COLLABORATEUR.PROFIL_ACCES;
+*
+FIELD=PROFIL_STAT,+
+   LABEL='Nom profil statistique',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=COLLABORATEUR.PROFIL_STAT;
+*
+FIELD=RECOIT_EMAIL,+
+   LABEL='Reéoit Emails',+
+   SOURCE=COLLABORATEUR.RECOIT_EMAIL;
+*
+FIELD=RUBRUM_SO,+
+   LABEL='RUBRUM_SO',+
+   SOURCE=COLLABORATEUR.RUBRUM_SO;
+*
+FIELD=SEXE,+
+   LABEL='Sexe',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=COLLABORATEUR.SEXE;
+*
+FIELD=TAUX,+
+   LABEL='Taux',+
+   OUTPUT_FORMAT=<3<,+
+   SOURCE=COLLABORATEUR.TAUX;
+*
+FIELD=TRAITEMENT_FORMULE,+
+   LABEL='TRAITEMENT_FORMULE',+
+   SOURCE=COLLABORATEUR.TRAITEMENT_FORMULE;
+*
+FIELD=TRIBUNAL,+
+   LABEL='Tribunal',+
+   OUTPUT_FORMAT=<3<,+
+   SOURCE=COLLABORATEUR.TRIBUNAL;
+*
+FIELD=UID,+
+   LABEL='Dernier utilisateur UID',+
+   OUTPUT_FORMAT=<8<,+
+   SOURCE=COLLABORATEUR.UID;
+*
+FIELD=USER,+
+   LABEL='Dernier utilisateur',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=COLLABORATEUR.USER;
+*
+FIELD=VUE_LT,+
+   LABEL='Vue liste de travail',+
+   OUTPUT_FORMAT=<30<,+
+   SOURCE=COLLABORATEUR.VUE_LT;
+*
+VIEW=COMPO,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(COMPO),+
+   FORM=NO;
+*
+FIELD=ABS_MIN,+
+   LABEL='Nbr.j.ouvr.min.absence',+
+   OUTPUT_FORMAT=<2<,+
+   SOURCE=COMPO.ABS_MIN;
+*
+FIELD=ACTIVE,+
+   LABEL='Active {0}',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=COMPO.ACTIVE;
+*
+FIELD=ANTICIP_DEPART,+
+   LABEL='Nbr.j.ouvr.avt départ {1}',+
+   OUTPUT_FORMAT=<2<,+
+   SOURCE=COMPO.ANTICIP_DEPART;
+*
+FIELD=ANTICIP_RETOUR,+
+   LABEL='Nbr.j.ouvr.avt retour {5}',+
+   OUTPUT_FORMAT=<2<,+
+   SOURCE=COMPO.ANTICIP_RETOUR;
+*
+FIELD=ATTRIB,+
+   LABEL='Compo é l`attrib.{0}',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=COMPO.ATTRIB;
+*
+FIELD=COLLEGE_5_D,+
+   LABEL='Coll.5 D',+
+   OUTPUT_FORMAT=<20/SER<,+
+   SOURCE=COMPO.COLLEGE_5_D;
+*
+FIELD=COLLEGE_5_F,+
+   LABEL='Coll.5 F',+
+   OUTPUT_FORMAT=<20/SER<,+
+   SOURCE=COMPO.COLLEGE_5_F;
+*
+FIELD=COLLEGE_5_I,+
+   LABEL='Coll.5 I',+
+   OUTPUT_FORMAT=<20/SER<,+
+   SOURCE=COMPO.COLLEGE_5_I;
+*
+FIELD=COLLEGE_COMPLET,+
+   LABEL='Coll.3 long terme',+
+   OUTPUT_FORMAT=<20/SER<,+
+   SOURCE=COMPO.COLLEGE_COMPLET;
+*
+FIELD=COLLEGE_EFFECTIF,+
+   LABEL='Coll.3 court terme',+
+   OUTPUT_FORMAT=<20/SER<,+
+   SOURCE=COMPO.COLLEGE_EFFECTIF;
+*
+FIELD=COLLEGE_URGENT,+
+   LABEL='Coll.3 prioritaire',+
+   OUTPUT_FORMAT=<20/SER<,+
+   SOURCE=COMPO.COLLEGE_URGENT;
+*
+FIELD=CONSIGNE,+
+   LABEL='Consigne',+
+   OUTPUT_FORMAT=<3/SER<,+
+   SOURCE=COMPO.CONSIGNE;
+*
+FIELD=CONSIGNE_5,+
+   LABEL='Consigne 5',+
+   OUTPUT_FORMAT=<3/SER<,+
+   SOURCE=COMPO.CONSIGNE_5;
+*
+FIELD=COUR,+
+   LABEL='Cour',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=COMPO.COUR;
+*
+FIELD=DAT_ACTIVATION,+
+   LABEL='Date activation',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=COMPO.DAT_ACTIVATION;
+*
+FIELD=DAT_MODIFICATION,+
+   LABEL='Date modification',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=COMPO.DAT_MODIFICATION;
+*
+FIELD=ECART,+
+   LABEL='écart',+
+   OUTPUT_FORMAT=<4/SER<,+
+   SOURCE=COMPO.ECART;
+*
+FIELD=ECART_5,+
+   LABEL='écart 5',+
+   OUTPUT_FORMAT=<4/SER<,+
+   SOURCE=COMPO.ECART_5;
+*
+FIELD=HEURE_MODIF,+
+   LABEL='Heure modif.',+
+   OUTPUT_FORMAT=<6/Z<,+
+   SOURCE=COMPO.HEURE_MODIF;
+*
+FIELD=MATIERE,+
+   LABEL='PrisEnCpte matiére {0}',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=COMPO.MATIERE;
+*
+FIELD=MESURE,+
+   LABEL='Mesure',+
+   OUTPUT_FORMAT=<3/SER<,+
+   SOURCE=COMPO.MESURE;
+*
+FIELD=MESURE_5,+
+   LABEL='Mesure 5',+
+   OUTPUT_FORMAT=<3/SER<,+
+   SOURCE=COMPO.MESURE_5;
+*
+FIELD=MIN_5_DFI,+
+   LABEL='Nbr.min.5 DFI',+
+   OUTPUT_FORMAT=<1/SER<,+
+   SOURCE=COMPO.MIN_5_DFI;
+*
+FIELD=MODE_COLLEGES,+
+   LABEL='Mode calcul colléges',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=COMPO.MODE_COLLEGES;
+*
+FIELD=NBRE_DOSS_LIQ,+
+   LABEL='Nbre doss.liq./an',+
+   OUTPUT_FORMAT=<5<,+
+   SOURCE=COMPO.NBRE_DOSS_LIQ;
+*
+FIELD=NBRE_JF,+
+   LABEL='Quorum coll.3 long terme',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=COMPO.NBRE_JF;
+*
+FIELD=PARTICIPADHOC,+
+   LABEL='Particip.adhoc',+
+   OUTPUT_FORMAT=<60/SER<,+
+   SOURCE=COMPO.PARTICIPADHOC;
+*
+FIELD=PARTICIPARQUOTA,+
+   LABEL='Particip. par quota',+
+   OUTPUT_FORMAT=<60/SER<,+
+   SOURCE=COMPO.PARTICIPARQUOTA;
+*
+FIELD=PENDANCE,+
+   LABEL='Pendance',+
+   OUTPUT_FORMAT=<3/SER<,+
+   SOURCE=COMPO.PENDANCE;
+*
+FIELD=PENDANCE_5,+
+   LABEL='Pendance 5',+
+   OUTPUT_FORMAT=<3/SER<,+
+   SOURCE=COMPO.PENDANCE_5;
+*
+FIELD=PRESIDADHOC,+
+   LABEL='Présid.adhoc',+
+   OUTPUT_FORMAT=<60/SER<,+
+   SOURCE=COMPO.PRESIDADHOC;
+*
+FIELD=PRESIDENCE,+
+   LABEL='Présidence',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=COMPO.PRESIDENCE;
+*
+FIELD=PROACTIVITE,+
+   LABEL='Proactivité [j] {30}',+
+   OUTPUT_FORMAT=<3<,+
+   SOURCE=COMPO.PROACTIVITE;
+*
+FIELD=QUORUM,+
+   LABEL='PrisEnCpte quorum {0}',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=COMPO.QUORUM;
+*
+FIELD=RAPPORT,+
+   LABEL='PrisEnCpte rapport {0}',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=COMPO.RAPPORT;
+*
+FIELD=TAUX,+
+   LABEL='Taux [é/ooo]',+
+   OUTPUT_FORMAT=<5/SER<,+
+   SOURCE=COMPO.TAUX;
+*
+FIELD=TOTAL_CONSIGNE,+
+   LABEL='Total consigne',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=COMPO.TOTAL_CONSIGNE;
+*
+FIELD=TOTAL_CONSIGNE_5,+
+   LABEL='Total consigne 5',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=COMPO.TOTAL_CONSIGNE_5;
+*
+FIELD=TOTAL_MESURE,+
+   LABEL='Total mesure',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=COMPO.TOTAL_MESURE;
+*
+FIELD=TOTAL_MESURE_5,+
+   LABEL='Total mesure 5',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=COMPO.TOTAL_MESURE_5;
+*
+FIELD=TOTAL_PENDANCE,+
+   LABEL='Total pendance',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=COMPO.TOTAL_PENDANCE;
+*
+FIELD=TOTAL_PENDANCE_5,+
+   LABEL='Total pendance 5',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=COMPO.TOTAL_PENDANCE_5;
+*
+FIELD=TOTAL_TAUX,+
+   LABEL='Total taux [é/ooo]',+
+   OUTPUT_FORMAT=<5<,+
+   SOURCE=COMPO.TOTAL_TAUX;
+*
+VIEW=DECISION,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(DECISION),+
+   FORM=NO;
+*
+FIELD=ATTAQUABLE,+
+   LABEL='Attaquable',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=DECISION.ATTAQUABLE;
+*
+FIELD=AUTRE_PUB,+
+   LABEL='Autre publication',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=DECISION.AUTRE_PUB;
+*
+FIELD=CHEZ,+
+   LABEL='Chez',+
+   OUTPUT_FORMAT=<3<,+
+   SOURCE=DECISION.CHEZ;
+*
+FIELD=CLE_DECISION,+
+   LABEL='Clé décision',+
+   OUTPUT_FORMAT=>8>,+
+   SOURCE=DECISION.CLE_DECISION;
+*
+FIELD=CLE_PIECE,+
+   LABEL='Clé piéce',+
+   OUTPUT_FORMAT=<12<,+
+   SOURCE=DECISION.CLE_PIECE;
+*
+FIELD=CLE_PIECE_DISPO,+
+   LABEL='Clé piéce dispo',+
+   OUTPUT_FORMAT=<12/SER<,+
+   SOURCE=DECISION.CLE_PIECE_DISPO;
+*
+FIELD=CODE_AZA,+
+   LABEL='Code AZA',+
+   SOURCE=DECISION.CODE_AZA;
+*
+FIELD=CODE_AZA_2,+
+   LABEL='Code AZA 2',+
+   SOURCE=DECISION.CODE_AZA_2;
+*
+FIELD=CODE_MEDIA,+
+   LABEL='Code Média',+
+   SOURCE=DECISION.CODE_MEDIA;
+*
+FIELD=COMMUNIQUE,+
+   LABEL='Communiqué de presse',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=DECISION.COMMUNIQUE;
+*
+FIELD=COMP_INSTANCE,+
+   LABEL='Composition de l''instance',+
+   OUTPUT_FORMAT=<20/SEC<,+
+   SOURCE=DECISION.COMP_INSTANCE;
+*
+FIELD=CONTENU_EXP,+
+   LABEL='Contenu exp.',+
+   OUTPUT_FORMAT=<80/SER<,+
+   SOURCE=DECISION.CONTENU_EXP;
+*
+FIELD=CRIT_COMPO,+
+   LABEL='Critéres composition',+
+   OUTPUT_FORMAT=<1/SER<,+
+   SOURCE=DECISION.CRIT_COMPO;
+*
+FIELD=CT,+
+   LABEL='CT',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=DECISION.CT;
+*
+FIELD=DAT_APPR_PROJET,+
+   LABEL='Date approbation projet',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DECISION.DAT_APPR_PROJET;
+*
+FIELD=DAT_AUDIENCE,+
+   LABEL='Date de l''audience',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DECISION.DAT_AUDIENCE;
+*
+FIELD=DAT_AZA_HORS_INT,+
+   LABEL='Date Aza hors internet',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DECISION.DAT_AZA_HORS_INT;
+*
+FIELD=DAT_AZA_SUR_INT,+
+   LABEL='Date Aza sur internet',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DECISION.DAT_AZA_SUR_INT;
+*
+FIELD=DAT_CHEZ,+
+   LABEL='Chez depuis le',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DECISION.DAT_CHEZ;
+*
+FIELD=DAT_CREATION,+
+   LABEL='Date création',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DECISION.DAT_CREATION;
+*
+FIELD=DAT_DEB_RAP,+
+   LABEL='Date début rapport',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DECISION.DAT_DEB_RAP;
+*
+FIELD=DAT_DEB_REDAC,+
+   LABEL='Date début rédaction',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DECISION.DAT_DEB_REDAC;
+*
+FIELD=DAT_DECISION,+
+   LABEL='Date décision',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DECISION.DAT_DECISION;
+*
+FIELD=DAT_DEC_REC,+
+   LABEL='Dates déc. recours',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DECISION.DAT_DEC_REC;
+*
+FIELD=DAT_DISPO,+
+   LABEL='Date expéd. dispo',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DECISION.DAT_DISPO;
+*
+FIELD=DAT_EMBARGO,+
+   LABEL='DAT_EMBARGO',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DECISION.DAT_EMBARGO;
+*
+FIELD=DAT_EXEC,+
+   LABEL='Date éxécutoire',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DECISION.DAT_EXEC;
+*
+FIELD=DAT_EXP,+
+   LABEL='Date expédition',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DECISION.DAT_EXP;
+*
+FIELD=DAT_FIN_RAP,+
+   LABEL='Date fin rapport',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DECISION.DAT_FIN_RAP;
+*
+FIELD=DAT_FIN_REDAC,+
+   LABEL='Date fin rédaction',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DECISION.DAT_FIN_REDAC;
+*
+FIELD=DAT_MODIFICATION,+
+   LABEL='Date modification',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DECISION.DAT_MODIFICATION;
+*
+FIELD=DAT_MODIF_SEAN,+
+   LABEL='Date de modification des données de séance',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DECISION.DAT_MODIF_SEAN;
+*
+FIELD=DAT_MUT_STATUT,+
+   LABEL='Dat.mut.statut',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DECISION.DAT_MUT_STATUT;
+*
+FIELD=DAT_NOTIF_DEC,+
+   LABEL='Dates de notif.',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DECISION.DAT_NOTIF_DEC;
+*
+FIELD=DAT_REC,+
+   LABEL='Dates recours',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DECISION.DAT_REC;
+*
+FIELD=DAT_SEAN_HORS_INT,+
+   LABEL='Date séance publique hors internet',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DECISION.DAT_SEAN_HORS_INT;
+*
+FIELD=DAT_SEAN_SUR_INT,+
+   LABEL='Date séance publique sur internet',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DECISION.DAT_SEAN_SUR_INT;
+*
+FIELD=DESTIN_EXP,+
+   LABEL='Destinataire',+
+   OUTPUT_FORMAT=<20/SEC<,+
+   SOURCE=DECISION.DESTIN_EXP;
+*
+FIELD=EXPED_DISPO,+
+   LABEL='Abrév. expéd. dispo',+
+   OUTPUT_FORMAT=<3<,+
+   SOURCE=DECISION.EXPED_DISPO;
+*
+FIELD=GENRE_AUDIENCE,+
+   LABEL='Genre d''audience',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=DECISION.GENRE_AUDIENCE;
+*
+FIELD=HEURE_AUDIENCE,+
+   LABEL='Heure d''audience',+
+   OUTPUT_FORMAT=<5<,+
+   SOURCE=DECISION.HEURE_AUDIENCE;
+*
+FIELD=INST_REC,+
+   LABEL='Instance recours',+
+   OUTPUT_FORMAT=<20/SER<,+
+   SOURCE=DECISION.INST_REC;
+*
+FIELD=INTERNET,+
+   LABEL='Internet (TFA)',+
+   SOURCE=DECISION.INTERNET;
+*
+FIELD=ISSUE_DEC,+
+   LABEL='Issues recours',+
+   OUTPUT_FORMAT=<4/SER<,+
+   SOURCE=DECISION.ISSUE_DEC;
+*
+FIELD=MODE_DECISION,+
+   LABEL='Mode décision',+
+   OUTPUT_FORMAT=<2<,+
+   SOURCE=DECISION.MODE_DECISION;
+*
+FIELD=MODE_REGLEMENT,+
+   LABEL='Mode réglement',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=DECISION.MODE_REGLEMENT;
+*
+FIELD=MOYEN_REC,+
+   LABEL='Moyens recours',+
+   OUTPUT_FORMAT=<6/SER<,+
+   SOURCE=DECISION.MOYEN_REC;
+*
+FIELD=NB_PAGE,+
+   LABEL='Nbr pages',+
+   OUTPUT_FORMAT=>4>,+
+   SOURCE=DECISION.NB_PAGE;
+*
+FIELD=NOS_DOS_SEAN,+
+   LABEL='Nos de dossier séance',+
+   OUTPUT_FORMAT=<80<,+
+   SOURCE=DECISION.NOS_DOS_SEAN;
+*
+FIELD=NUM_DOSSIER_REGR,+
+   LABEL='Né dossiers',+
+   OUTPUT_FORMAT=<15/SEC<,+
+   SOURCE=DECISION.NUM_DOSSIER_REGR;
+*
+FIELD=NUM_IMP,+
+   LABEL='Numéro des destinataires',+
+   OUTPUT_FORMAT=<6/SEC<,+
+   SOURCE=DECISION.NUM_IMP;
+*
+FIELD=OBJET,+
+   LABEL='Objet décision',+
+   OUTPUT_FORMAT=<77<,+
+   SOURCE=DECISION.OBJET;
+*
+FIELD=PARTIES_AUDIENCE,+
+   LABEL='Parties audience',+
+   OUTPUT_FORMAT=<77<,+
+   SOURCE=DECISION.PARTIES_AUDIENCE;
+*
+FIELD=PRESSE_AVISEE,+
+   LABEL='Presse avisée',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=DECISION.PRESSE_AVISEE;
+*
+FIELD=PUB_B,+
+   LABEL='Publication B',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=DECISION.PUB_B;
+*
+FIELD=QUORUM,+
+   LABEL='Quorum',+
+   OUTPUT_FORMAT=>4>,+
+   SOURCE=DECISION.QUORUM;
+*
+FIELD=RAPPORTEUR,+
+   LABEL='Rapporteur',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=DECISION.RAPPORTEUR;
+*
+FIELD=RECOURANT,+
+   LABEL='Recourant',+
+   OUTPUT_FORMAT=<20/SER<,+
+   SOURCE=DECISION.RECOURANT;
+*
+FIELD=REF_DEC_REC,+
+   LABEL='Réf. déc. recours',+
+   OUTPUT_FORMAT=<40/SER<,+
+   SOURCE=DECISION.REF_DEC_REC;
+*
+FIELD=REF_DOS_REC,+
+   LABEL='Réf. doss. recours',+
+   OUTPUT_FORMAT=<20/SER<,+
+   SOURCE=DECISION.REF_DOS_REC;
+*
+FIELD=REF_PUB,+
+   LABEL='Réf. publication',+
+   OUTPUT_FORMAT=<22<,+
+   SOURCE=DECISION.REF_PUB;
+*
+FIELD=REM_AUDIENCE,+
+   LABEL='Remarque audience',+
+   OUTPUT_FORMAT=<30<,+
+   SOURCE=DECISION.REM_AUDIENCE;
+*
+FIELD=REM_COMPO,+
+   LABEL='Rem. compo',+
+   OUTPUT_FORMAT=<70/VR3<,+
+   SOURCE=DECISION.REM_COMPO;
+*
+FIELD=REM_EXEC,+
+   LABEL='Rem. éxécution',+
+   OUTPUT_FORMAT=<70/VR3<,+
+   SOURCE=DECISION.REM_EXEC;
+*
+FIELD=REM_EXPEDITION,+
+   LABEL='Remarque expédition',+
+   OUTPUT_FORMAT=<50/VR4<,+
+   SOURCE=DECISION.REM_EXPEDITION;
+*
+FIELD=REM_GEN,+
+   LABEL='Remarque générale',+
+   OUTPUT_FORMAT=<70/VR250<,+
+   SOURCE=DECISION.REM_GEN;
+*
+FIELD=REM_NOTIF_DEC,+
+   LABEL='Rem. notif.',+
+   OUTPUT_FORMAT=<50/SER<,+
+   SOURCE=DECISION.REM_NOTIF_DEC;
+*
+FIELD=REM_PUBLICATION,+
+   LABEL='Remarque publication',+
+   OUTPUT_FORMAT=<20/VR4<,+
+   SOURCE=DECISION.REM_PUBLICATION;
+*
+FIELD=RUBRUM_DISPO,+
+   LABEL='Mise é disposition Rubrum & dispo',+
+   SOURCE=DECISION.RUBRUM_DISPO;
+*
+FIELD=SALLE,+
+   LABEL='Salle',+
+   OUTPUT_FORMAT=<2<,+
+   SOURCE=DECISION.SALLE;
+*
+FIELD=SECRETAIRE,+
+   LABEL='Nom secrétaire',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=DECISION.SECRETAIRE;
+*
+FIELD=STATUT_DEC,+
+   LABEL='Statut déc.',+
+   OUTPUT_FORMAT=<3<,+
+   SOURCE=DECISION.STATUT_DEC;
+*
+FIELD=TAUX_REDAC,+
+   LABEL='Taux rédac. rapport',+
+   OUTPUT_FORMAT=>4>,+
+   SOURCE=DECISION.TAUX_REDAC;
+*
+FIELD=TYPE_PUB,+
+   LABEL='Publication',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=DECISION.TYPE_PUB;
+*
+FIELD=UID,+
+   LABEL='Dernier utilisateur UID',+
+   OUTPUT_FORMAT=<8<,+
+   SOURCE=DECISION.UID;
+*
+FIELD=USER,+
+   LABEL='Dernier utilisateur',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=DECISION.USER;
+*
+FIELD=VISA_HORS_INT,+
+   LABEL='Aza hors Internet par',+
+   OUTPUT_FORMAT=<3<,+
+   SOURCE=DECISION.VISA_HORS_INT;
+*
+FIELD=VISIBLE,+
+   LABEL='Visible',+
+   OUTPUT_FORMAT=<36<,+
+   SOURCE=DECISION.VISIBLE;
+*
+VIEW=DELAI,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(DELAI),+
+   FORM=NO;
+*
+FIELD=CLE_DELAI,+
+   LABEL='Clé délai',+
+   OUTPUT_FORMAT=>8>,+
+   SOURCE=DELAI.CLE_DELAI;
+*
+FIELD=CLE_DOSSIER,+
+   LABEL='Clé dossier',+
+   OUTPUT_FORMAT=<9/SER<,+
+   SOURCE=DELAI.CLE_DOSSIER;
+*
+FIELD=CLE_PIECE,+
+   LABEL='Clé-s piéce',+
+   OUTPUT_FORMAT=<12/SER<,+
+   SOURCE=DELAI.CLE_PIECE;
+*
+FIELD=CONTROLEUR,+
+   LABEL='Abrév. contrôleur',+
+   OUTPUT_FORMAT=<3<,+
+   SOURCE=DELAI.CONTROLEUR;
+*
+FIELD=CT,+
+   LABEL='CT',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=DELAI.CT;
+*
+FIELD=DAT_ACTION,+
+   LABEL='Date action',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DELAI.DAT_ACTION;
+*
+FIELD=DAT_ANCIEN_DELAI,+
+   LABEL='Date ancien délai',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DELAI.DAT_ANCIEN_DELAI;
+*
+FIELD=DAT_CHANGE_STATUT,+
+   LABEL='Date changement de statut délai',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DELAI.DAT_CHANGE_STATUT;
+*
+FIELD=DAT_CREATION,+
+   LABEL='Date création',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DELAI.DAT_CREATION;
+*
+FIELD=DAT_DELAI,+
+   LABEL='Date limite du délai',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DELAI.DAT_DELAI;
+*
+FIELD=DAT_ECHEANCE,+
+   LABEL='Date-s délai',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DELAI.DAT_ECHEANCE;
+*
+FIELD=DAT_ENREG,+
+   LABEL='Date enregistrement réception',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DELAI.DAT_ENREG;
+*
+FIELD=DAT_ENVOI,+
+   LABEL='Date d''envoi du délai',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DELAI.DAT_ENVOI;
+*
+FIELD=DAT_MODIFICATION,+
+   LABEL='Date modification',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DELAI.DAT_MODIFICATION;
+*
+FIELD=DAT_RAPPEL,+
+   LABEL='Date rappel délai',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DELAI.DAT_RAPPEL;
+*
+FIELD=DAT_RECEPTION,+
+   LABEL='Date de réception',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DELAI.DAT_RECEPTION;
+*
+FIELD=DAT_TOLERANCE,+
+   LABEL='Date tolérance délai',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DELAI.DAT_TOLERANCE;
+*
+FIELD=DERNIER_MONTANT_VERSE,+
+   LABEL='Dernier montant versé',+
+   OUTPUT_FORMAT=<7<,+
+   SOURCE=DELAI.DERNIER_MONTANT_VERSE;
+*
+FIELD=DERNIER_MONTANT_VERSE_C,+
+   LABEL='Dernier montant versé (c)',+
+   OUTPUT_FORMAT=<9<,+
+   SOURCE=DELAI.DERNIER_MONTANT_VERSE_C;
+*
+FIELD=DERNIER_MONTANT_VERSE_CTS,+
+   LABEL='Dernier montant versé (cts)',+
+   SOURCE=DELAI.DERNIER_MONTANT_VERSE_CTS;
+*
+FIELD=DUREE,+
+   LABEL='Durée délai (jours)',+
+   OUTPUT_FORMAT=>4>,+
+   SOURCE=DELAI.DUREE;
+*
+FIELD=FERIE,+
+   LABEL='Computation',+
+   SOURCE=DELAI.FERIE;
+*
+FIELD=GENRE_DELAI,+
+   LABEL='Genre délai',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=DELAI.GENRE_DELAI;
+*
+FIELD=HEURE_ACTION,+
+   LABEL='Heure action',+
+   OUTPUT_FORMAT=<5<,+
+   SOURCE=DELAI.HEURE_ACTION;
+*
+FIELD=HEURE_MODIF,+
+   LABEL='Heure modif.',+
+   OUTPUT_FORMAT=<6/Z<,+
+   SOURCE=DELAI.HEURE_MODIF;
+*
+FIELD=ID_TACHE,+
+   LABEL='Identif. téche',+
+   OUTPUT_FORMAT=<12<,+
+   SOURCE=DELAI.ID_TACHE;
+*
+FIELD=LIEU_ACTION,+
+   LABEL='Lieu action',+
+   OUTPUT_FORMAT=<30<,+
+   SOURCE=DELAI.LIEU_ACTION;
+*
+FIELD=MONTANT_AF_SU,+
+   LABEL='Montant (AF/Sur.)',+
+   OUTPUT_FORMAT=<7<,+
+   SOURCE=DELAI.MONTANT_AF_SU;
+*
+FIELD=MONTANT_AO,+
+   LABEL='MONTANT_AO',+
+   OUTPUT_FORMAT=<7<,+
+   SOURCE=DELAI.MONTANT_AO;
+*
+FIELD=MONTANT_EJ,+
+   LABEL='MONTANT_EJ',+
+   OUTPUT_FORMAT=<7<,+
+   SOURCE=DELAI.MONTANT_EJ;
+*
+FIELD=MONTANT_FI,+
+   LABEL='MONTANT_FI',+
+   OUTPUT_FORMAT=<7<,+
+   SOURCE=DELAI.MONTANT_FI;
+*
+FIELD=MONTANT_TOTAL_VERSE,+
+   LABEL='Montant total versé',+
+   OUTPUT_FORMAT=<7<,+
+   SOURCE=DELAI.MONTANT_TOTAL_VERSE;
+*
+FIELD=MONTANT_TOTAL_VERSE_C,+
+   LABEL='Montant total versé (c)',+
+   OUTPUT_FORMAT=<9<,+
+   SOURCE=DELAI.MONTANT_TOTAL_VERSE_C;
+*
+FIELD=MONTANT_TOTAL_VERSE_CTS,+
+   LABEL='Montant total versé (cts)',+
+   SOURCE=DELAI.MONTANT_TOTAL_VERSE_CTS;
+*
+FIELD=NUM_FACTURE,+
+   LABEL='Né facture/AF',+
+   OUTPUT_FORMAT=<9<,+
+   SOURCE=DELAI.NUM_FACTURE;
+*
+FIELD=NUM_IMP,+
+   LABEL='Numéro impliqué',+
+   OUTPUT_FORMAT=<6/SEC<,+
+   SOURCE=DELAI.NUM_IMP;
+*
+FIELD=ORIGINE,+
+   LABEL='Clé délai origine',+
+   OUTPUT_FORMAT=>9>,+
+   SOURCE=DELAI.ORIGINE;
+*
+FIELD=PRENANT_PART,+
+   LABEL='Abrév. participant-s interne-s',+
+   OUTPUT_FORMAT=<3<,+
+   SOURCE=DELAI.PRENANT_PART;
+*
+FIELD=PROVISOIRE,+
+   LABEL='Délai provisoire',+
+   SOURCE=DELAI.PROVISOIRE;
+*
+FIELD=RAPPEL,+
+   LABEL='Rappel délai (jours)',+
+   OUTPUT_FORMAT=>4>,+
+   SOURCE=DELAI.RAPPEL;
+*
+FIELD=REM_DELAI,+
+   LABEL='Remarque délai',+
+   OUTPUT_FORMAT=<20/VR4<,+
+   SOURCE=DELAI.REM_DELAI;
+*
+FIELD=STATUT_DELAI,+
+   LABEL='Statut délai',+
+   OUTPUT_FORMAT=<3<,+
+   SOURCE=DELAI.STATUT_DELAI;
+*
+FIELD=TOLERANCE,+
+   LABEL='Tolérance délai (jours)',+
+   OUTPUT_FORMAT=>4>,+
+   SOURCE=DELAI.TOLERANCE;
+*
+FIELD=UID,+
+   LABEL='Dernier utilisateur UID',+
+   OUTPUT_FORMAT=<8<,+
+   SOURCE=DELAI.UID;
+*
+FIELD=USER,+
+   LABEL='Dernier utilisateur',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=DELAI.USER;
+*
+VIEW=DOSSIER,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(DOSSIER),+
+   FORM=NO;
+*
+FIELD=ACCEPT_REQ,+
+   LABEL='Acceptation requéte',+
+   OUTPUT_FORMAT=<1/SEC<,+
+   SOURCE=DOSSIER.ACCEPT_REQ;
+*
+FIELD=ANO,+
+   LABEL='Substit. anonym.',+
+   OUTPUT_FORMAT=<20/SEC<,+
+   SOURCE=DOSSIER.ANO;
+*
+FIELD=AN_DOSSIER,+
+   LABEL='An doss.',+
+   SOURCE=DOSSIER.AN_DOSSIER;
+*
+FIELD=BRANCHE,+
+   LABEL='Branche',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=DOSSIER.BRANCHE;
+*
+FIELD=CANTON,+
+   LABEL='Canton',+
+   OUTPUT_FORMAT=<2<,+
+   SOURCE=DOSSIER.CANTON;
+*
+FIELD=CELEBRE,+
+   LABEL='Cause célébre',+
+   SOURCE=DOSSIER.CELEBRE;
+*
+FIELD=CHAMBRE,+
+   LABEL='Chambre',+
+   OUTPUT_FORMAT=<3<,+
+   SOURCE=DOSSIER.CHAMBRE;
+*
+FIELD=CHARGE_INDEX,+
+   SOURCE=DOSSIER.CHARGE_INDEX;
+*
+FIELD=CLE_DOSSIER,+
+   LABEL='Clé dossier',+
+   OUTPUT_FORMAT=>8>,+
+   SOURCE=DOSSIER.CLE_DOSSIER;
+*
+FIELD=COMPO,+
+   LABEL='Compo',+
+   OUTPUT_FORMAT=<20/SER<,+
+   SOURCE=DOSSIER.COMPO;
+*
+FIELD=COUR,+
+   LABEL='Cour',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=DOSSIER.COUR;
+*
+FIELD=CRIT_RAPP,+
+   LABEL='Critére attrib. rapprt',+
+   OUTPUT_FORMAT=<30<,+
+   SOURCE=DOSSIER.CRIT_RAPP;
+*
+FIELD=CT,+
+   LABEL='CT',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=DOSSIER.CT;
+*
+FIELD=CUMUL_SUSP,+
+   LABEL='Nbr jours suspension',+
+   OUTPUT_FORMAT=>4>,+
+   SOURCE=DOSSIER.CUMUL_SUSP;
+*
+FIELD=DAT_ARCHIVAGE,+
+   LABEL='Date d''archivage',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DOSSIER.DAT_ARCHIVAGE;
+*
+FIELD=DAT_ARRIVEE,+
+   LABEL='Date d''arrivée',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DOSSIER.DAT_ARRIVEE;
+*
+FIELD=DAT_ATTR_JD,+
+   LABEL='Date attribution JD',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DOSSIER.DAT_ATTR_JD;
+*
+FIELD=DAT_ATTR_RED,+
+   LABEL='Date attribution réd.',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DOSSIER.DAT_ATTR_RED;
+*
+FIELD=DAT_COMPO,+
+   LABEL='Date composition',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DOSSIER.DAT_COMPO;
+*
+FIELD=DAT_COM_DISP,+
+   LABEL='Date comm. dispositif',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DOSSIER.DAT_COM_DISP;
+*
+FIELD=DAT_CREATION,+
+   LABEL='Date création',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DOSSIER.DAT_CREATION;
+*
+FIELD=DAT_DEB_SUSP,+
+   LABEL='Date début suspension',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DOSSIER.DAT_DEB_SUSP;
+*
+FIELD=DAT_DEC_ATT,+
+   LABEL='Date déc. attaquée',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DOSSIER.DAT_DEC_ATT;
+*
+FIELD=DAT_DEC_ATT_2,+
+   LABEL='Date déc. attaq. 2',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DOSSIER.DAT_DEC_ATT_2;
+*
+FIELD=DAT_DEC_DOSSIER,+
+   LABEL='Date décision dossier',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DOSSIER.DAT_DEC_DOSSIER;
+*
+FIELD=DAT_DEC_PREC,+
+   LABEL='Date déc. précédente',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DOSSIER.DAT_DEC_PREC;
+*
+FIELD=DAT_DEC_REQ,+
+   LABEL='Date décision req.',+
+   OUTPUT_FORMAT=<10/DATE21/SEC<,+
+   SOURCE=DOSSIER.DAT_DEC_REQ;
+*
+FIELD=DAT_DEPOT,+
+   LABEL='Date dépét',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DOSSIER.DAT_DEPOT;
+*
+FIELD=DAT_FIN_SUSP,+
+   LABEL='Date fin suspension',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DOSSIER.DAT_FIN_SUSP;
+*
+FIELD=DAT_LIQ_JD,+
+   LABEL='Date liquidation JD',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DOSSIER.DAT_LIQ_JD;
+*
+FIELD=DAT_LIQ_RED,+
+   LABEL='Date liquidation réd.',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DOSSIER.DAT_LIQ_RED;
+*
+FIELD=DAT_MODIFICATION,+
+   LABEL='Date modification',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DOSSIER.DAT_MODIFICATION;
+*
+FIELD=DAT_MODIF_NOTIF,+
+   LABEL='Date de modif. de la notice',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DOSSIER.DAT_MODIF_NOTIF;
+*
+FIELD=DAT_MODIF_POS,+
+   LABEL='Date de modif. de la position',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DOSSIER.DAT_MODIF_POS;
+*
+FIELD=DAT_NOTIF,+
+   LABEL='Date notification',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DOSSIER.DAT_NOTIF;
+*
+FIELD=DAT_POSITION,+
+   LABEL='Positionné le',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DOSSIER.DAT_POSITION;
+*
+FIELD=DAT_POURVOI,+
+   LABEL='Date pourvoi',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=DOSSIER.DAT_POURVOI;
+*
+FIELD=DAT_REQ,+
+   LABEL='Date req.',+
+   OUTPUT_FORMAT=<10/DATE21/SEC<,+
+   SOURCE=DOSSIER.DAT_REQ;
+*
+FIELD=DELEGATION,+
+   LABEL='Délégation',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=DOSSIER.DELEGATION;
+*
+FIELD=DELEGUE,+
+   LABEL='Délégué',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=DOSSIER.DELEGUE;
+*
+FIELD=DEM_REQ,+
+   LABEL='Demandeur(s) de la requéte',+
+   OUTPUT_FORMAT=<60/SEC<,+
+   SOURCE=DOSSIER.DEM_REQ;
+*
+FIELD=DESCRIPTEUR,+
+   LABEL='Descripteurs',+
+   OUTPUT_FORMAT=<76/SER<,+
+   SOURCE=DOSSIER.DESCRIPTEUR;
+*
+FIELD=DESCRIPTEUR_F,+
+   LABEL='Descripteurs (F)',+
+   OUTPUT_FORMAT=<76/SER<,+
+   SOURCE=DOSSIER.DESCRIPTEUR_F;
+*
+FIELD=DESCRIPTEUR_I,+
+   LABEL='Descripteurs (I)',+
+   OUTPUT_FORMAT=<76/SER<,+
+   SOURCE=DOSSIER.DESCRIPTEUR_I;
+*
+FIELD=DESCR_D,+
+   LABEL='Descripteurs (D)',+
+   OUTPUT_FORMAT=<76/SER<,+
+   SOURCE=DOSSIER.DESCR_D;
+*
+FIELD=DESCR_F,+
+   LABEL='Descripteurs (F)',+
+   OUTPUT_FORMAT=<76/SER<,+
+   SOURCE=DOSSIER.DESCR_F;
+*
+FIELD=DESCR_I,+
+   LABEL='Descripteurs (I)',+
+   OUTPUT_FORMAT=<76/SER<,+
+   SOURCE=DOSSIER.DESCR_I;
+*
+FIELD=DESTIN,+
+   LABEL='Destinataire',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=DOSSIER.DESTIN;
+*
+FIELD=DIFFICULTE,+
+   LABEL='Difficulté',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=DOSSIER.DIFFICULTE;
+*
+FIELD=DOSSIER_CONNEXE,+
+   LABEL='Dossiers connexes',+
+   OUTPUT_FORMAT=<15/SEC<,+
+   SOURCE=DOSSIER.DOSSIER_CONNEXE;
+*
+FIELD=ELECTRACTION,+
+   LABEL='Recours électronique',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=DOSSIER.ELECTRACTION;
+*
+FIELD=ETAT_DOSSIER,+
+   LABEL='Etat du dossier',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=DOSSIER.ETAT_DOSSIER;
+*
+FIELD=ETAT_DOSSIER_2,+
+   LABEL='Etat du dossier numérique',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=DOSSIER.ETAT_DOSSIER_2;
+*
+FIELD=EX_AUT_ATT,+
+   LABEL='EX_AUT_ATT',+
+   OUTPUT_FORMAT=<80<,+
+   SOURCE=DOSSIER.EX_AUT_ATT;
+*
+FIELD=EX_NUM_DOSSIER,+
+   LABEL='EX_NUM_DOSSIER',+
+   OUTPUT_FORMAT=<15/SEC<,+
+   SOURCE=DOSSIER.EX_NUM_DOSSIER;
+*
+FIELD=EX_REKO,+
+   LABEL='EX_reko',+
+   OUTPUT_FORMAT=<10<,+
+   SOURCE=DOSSIER.EX_REKO;
+*
+FIELD=GENRE_REPRES,+
+   LABEL='Genre de représentation',+
+   OUTPUT_FORMAT=<20/SEC<,+
+   SOURCE=DOSSIER.GENRE_REPRES;
+*
+FIELD=HEURE_MODIF,+
+   LABEL='Heure modif.',+
+   OUTPUT_FORMAT=<6/Z<,+
+   SOURCE=DOSSIER.HEURE_MODIF;
+*
+FIELD=HEURE_MODIF_POS,+
+   LABEL='Heure de modif. de la position',+
+   OUTPUT_FORMAT=<6<,+
+   SOURCE=DOSSIER.HEURE_MODIF_POS;
+*
+FIELD=HISTO_POSITION,+
+   LABEL='Histo position',+
+   OUTPUT_FORMAT=<50/VR20<,+
+   SOURCE=DOSSIER.HISTO_POSITION;
+*
+FIELD=INFO_EX,+
+   LABEL='Infos ex-instance',+
+   OUTPUT_FORMAT=<50/VR4<,+
+   SOURCE=DOSSIER.INFO_EX;
+*
+FIELD=ISSUE,+
+   LABEL='Issues',+
+   OUTPUT_FORMAT=<3/SER<,+
+   SOURCE=DOSSIER.ISSUE;
+*
+FIELD=ISSUE_ATTAQUEE,+
+   LABEL='Issue déc. attaq.',+
+   OUTPUT_FORMAT=<50<,+
+   SOURCE=DOSSIER.ISSUE_ATTAQUEE;
+*
+FIELD=JUGE,+
+   LABEL='Juges',+
+   OUTPUT_FORMAT=<20/SER<,+
+   SOURCE=DOSSIER.JUGE;
+*
+FIELD=JUGE_DELEGUE,+
+   LABEL='Juge délégué',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=DOSSIER.JUGE_DELEGUE;
+*
+FIELD=LANGUE,+
+   LABEL='Langue',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=DOSSIER.LANGUE;
+*
+FIELD=LECTU_DOC,+
+   LABEL='Droits lecture docu',+
+   OUTPUT_FORMAT=<4/SEC<,+
+   SOURCE=DOSSIER.LECTU_DOC;
+*
+FIELD=MATIERE,+
+   LABEL='Code matiére',+
+   OUTPUT_FORMAT=<6<,+
+   SOURCE=DOSSIER.MATIERE;
+*
+FIELD=MIXITE,+
+   LABEL='Mixité',+
+   SOURCE=DOSSIER.MIXITE;
+*
+FIELD=MODIF_DOC,+
+   LABEL='Droits modif. docu',+
+   OUTPUT_FORMAT=<4/SEC<,+
+   SOURCE=DOSSIER.MODIF_DOC;
+*
+FIELD=MOYEN_DE_DROIT,+
+   LABEL='Moyen de droit',+
+   OUTPUT_FORMAT=<6<,+
+   SOURCE=DOSSIER.MOYEN_DE_DROIT;
+*
+FIELD=MULTI_MAT,+
+   LABEL='Matiéres',+
+   OUTPUT_FORMAT=<6/SER<,+
+   SOURCE=DOSSIER.MULTI_MAT;
+*
+FIELD=NOM_COLLAB_INDEX,+
+   SOURCE=DOSSIER.NOM_COLLAB_INDEX;
+*
+FIELD=NOM_DOSSIER,+
+   LABEL='Nom du dossier',+
+   OUTPUT_FORMAT=<30/VR5<,+
+   SOURCE=DOSSIER.NOM_DOSSIER;
+*
+FIELD=NOM_DOSSIER_NON_SECRET,+
+   LABEL='Nom du dossier non secret',+
+   OUTPUT_FORMAT=<30/VR5<,+
+   SOURCE=DOSSIER.NOM_DOSSIER_NON_SECRET;
+*
+FIELD=NORME,+
+   LABEL='Normes',+
+   OUTPUT_FORMAT=<50/SER<,+
+   SOURCE=DOSSIER.NORME;
+*
+FIELD=NOTICE_DOSSIER,+
+   LABEL='Notice',+
+   OUTPUT_FORMAT=<50/VR4<,+
+   SOURCE=DOSSIER.NOTICE_DOSSIER;
+*
+FIELD=NUM_ARCHIVE,+
+   LABEL='Né d''archive',+
+   OUTPUT_FORMAT=<8<,+
+   SOURCE=DOSSIER.NUM_ARCHIVE;
+*
+FIELD=NUM_DOSSIER,+
+   LABEL='Numéro du dossier',+
+   OUTPUT_FORMAT=<15<,+
+   SOURCE=DOSSIER.NUM_DOSSIER;
+*
+FIELD=NUM_IMP,+
+   LABEL='Numéro des parties',+
+   OUTPUT_FORMAT=<6/SEC<,+
+   ALIAS=(PS_NUM_IMP),+
+   SOURCE=DOSSIER.NUM_IMP;
+*
+FIELD=NUM_IMP_INDEX,+
+   SOURCE=DOSSIER.NUM_IMP_INDEX;
+*
+FIELD=NUM_REPRES,+
+   LABEL='Numéro représentant',+
+   OUTPUT_FORMAT=<6/SEC<,+
+   SOURCE=DOSSIER.NUM_REPRES;
+*
+FIELD=OBJET,+
+   LABEL='Objet du procés',+
+   OUTPUT_FORMAT=<50/VR8<,+
+   SOURCE=DOSSIER.OBJET;
+*
+FIELD=PAYS,+
+   LABEL='Pays',+
+   OUTPUT_FORMAT=<2<,+
+   SOURCE=DOSSIER.PAYS;
+*
+FIELD=POSITION,+
+   LABEL='Position',+
+   OUTPUT_FORMAT=<3<,+
+   SOURCE=DOSSIER.POSITION;
+*
+FIELD=PRESIDENCE,+
+   LABEL='Présidence du collége',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=DOSSIER.PRESIDENCE;
+*
+FIELD=PRIORITE,+
+   LABEL='Priorité',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=DOSSIER.PRIORITE;
+*
+FIELD=PROCEDURE,+
+   LABEL='Type-s procédure',+
+   OUTPUT_FORMAT=<6<,+
+   SOURCE=DOSSIER.PROCEDURE;
+*
+FIELD=PROCURATION,+
+   LABEL='Procuration',+
+   OUTPUT_FORMAT=<15/VR2<,+
+   SOURCE=DOSSIER.PROCURATION;
+*
+FIELD=PROC_ONEREUSE,+
+   LABEL='Proc. onéreuse',+
+   SOURCE=DOSSIER.PROC_ONEREUSE;
+*
+FIELD=PUBLIC,+
+   LABEL='Publicité',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=DOSSIER.PUBLIC;
+*
+FIELD=QUORUM_DOSSIER,+
+   LABEL='Quorum dossier',+
+   OUTPUT_FORMAT=>2>,+
+   SOURCE=DOSSIER.QUORUM_DOSSIER;
+*
+FIELD=RANG_DOSSIER,+
+   LABEL='Rang',+
+   SOURCE=DOSSIER.RANG_DOSSIER;
+*
+FIELD=RECOURS_JOINT,+
+   LABEL='Recours joint',+
+   SOURCE=DOSSIER.RECOURS_JOINT;
+*
+FIELD=REDACTEUR,+
+   LABEL='Rédacteur',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=DOSSIER.REDACTEUR;
+*
+FIELD=REF_AUT_ATT,+
+   LABEL='Réfer. aut. att.',+
+   OUTPUT_FORMAT=<50/VR3<,+
+   SOURCE=DOSSIER.REF_AUT_ATT;
+*
+FIELD=REGISTRATEUR,+
+   LABEL='Nom registrateur',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=DOSSIER.REGISTRATEUR;
+*
+FIELD=REM_ATTRIBUTION,+
+   LABEL='Remarque attribution',+
+   OUTPUT_FORMAT=<50/VR2<,+
+   SOURCE=DOSSIER.REM_ATTRIBUTION;
+*
+FIELD=REM_BORDEREAU,+
+   LABEL='Remarque bordereau',+
+   OUTPUT_FORMAT=<50/VR2<,+
+   SOURCE=DOSSIER.REM_BORDEREAU;
+*
+FIELD=REM_COMPO,+
+   LABEL='Rem. compo',+
+   OUTPUT_FORMAT=<70/VR3<,+
+   SOURCE=DOSSIER.REM_COMPO;
+*
+FIELD=REM_DOSSIER,+
+   LABEL='Remarque sur le dossier',+
+   OUTPUT_FORMAT=<50/VR4<,+
+   SOURCE=DOSSIER.REM_DOSSIER;
+*
+FIELD=REM_POSITION,+
+   LABEL='Rem. position',+
+   OUTPUT_FORMAT=<80<,+
+   SOURCE=DOSSIER.REM_POSITION;
+*
+FIELD=REM_REQ,+
+   LABEL='Remarque sur la requéte',+
+   OUTPUT_FORMAT=<60/SER<,+
+   SOURCE=DOSSIER.REM_REQ;
+*
+FIELD=REM_SUSPENSION,+
+   LABEL='Rem. suspension',+
+   OUTPUT_FORMAT=<50<,+
+   SOURCE=DOSSIER.REM_SUSPENSION;
+*
+FIELD=RFID,+
+   LABEL='Champ technique RFID',+
+   OUTPUT_FORMAT=>4>,+
+   SOURCE=DOSSIER.RFID;
+*
+FIELD=ROLE_CIV_IMP,+
+   LABEL='Sous-réle de l''impliqué',+
+   OUTPUT_FORMAT=<3/SEC<,+
+   SOURCE=DOSSIER.ROLE_CIV_IMP;
+*
+FIELD=ROLE_IMP,+
+   LABEL='Réle de l''implique',+
+   OUTPUT_FORMAT=<1/SEC<,+
+   SOURCE=DOSSIER.ROLE_IMP;
+*
+FIELD=R_ISSUE_PROCES,+
+   LABEL='Raison et issue du procés',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=DOSSIER.R_ISSUE_PROCES;
+*
+FIELD=SITE,+
+   LABEL='Site',+
+   OUTPUT_FORMAT=<3<,+
+   SOURCE=DOSSIER.SITE;
+*
+FIELD=TRIBUNAL,+
+   LABEL='Tribunal',+
+   OUTPUT_FORMAT=<3<,+
+   SOURCE=DOSSIER.TRIBUNAL;
+*
+FIELD=TYPE_REPRES,+
+   LABEL='Type de représentant',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=DOSSIER.TYPE_REPRES;
+*
+FIELD=TYPE_REQ,+
+   LABEL='Type de la requéte',+
+   OUTPUT_FORMAT=<4/SEC<,+
+   SOURCE=DOSSIER.TYPE_REQ;
+*
+FIELD=TYPE_REQ_2,+
+   LABEL='Type de la requéte 2',+
+   OUTPUT_FORMAT=<4/SEC<,+
+   SOURCE=DOSSIER.TYPE_REQ_2;
+*
+FIELD=TYPE_REQ_D,+
+   LABEL='Type de la requéte en D',+
+   OUTPUT_FORMAT=<7/SEC<,+
+   SOURCE=DOSSIER.TYPE_REQ_D;
+*
+FIELD=TYPE_REQ_F,+
+   LABEL='Type de la requéte en F',+
+   OUTPUT_FORMAT=<7/SEC<,+
+   SOURCE=DOSSIER.TYPE_REQ_F;
+*
+FIELD=UID,+
+   LABEL='Dernier utilisateur UID',+
+   OUTPUT_FORMAT=<8<,+
+   SOURCE=DOSSIER.UID;
+*
+FIELD=USER,+
+   LABEL='Dernier utilisateur',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=DOSSIER.USER;
+*
+FIELD=VAL_LITIGIEUSE,+
+   LABEL='Valeur litigieuse',+
+   OUTPUT_FORMAT=<9<,+
+   SOURCE=DOSSIER.VAL_LITIGIEUSE;
+*
+FIELD=VISA_MODIF_POS,+
+   LABEL='Position du dossier modifié par',+
+   OUTPUT_FORMAT=<3<,+
+   SOURCE=DOSSIER.VISA_MODIF_POS;
+*
+VIEW=ED_STATUT,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(ED_STATUT),+
+   FORM=NO;
+*
+FIELD=CLE_ED_STATUT,+
+   LABEL='Clé Doc.',+
+   SOURCE=ED_STATUT.CLE_ED_STATUT;
+*
+FIELD=CT,+
+   LABEL='CT',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=ED_STATUT.CT;
+*
+FIELD=DAT_MODIF,+
+   LABEL='Date modification',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=ED_STATUT.DAT_MODIF;
+*
+FIELD=HEURE_MODIF,+
+   LABEL='Heure de modif.',+
+   OUTPUT_FORMAT=<6<,+
+   SOURCE=ED_STATUT.HEURE_MODIF;
+*
+FIELD=HORODATEUR,+
+   LABEL='Horodatage',+
+   OUTPUT_FORMAT=<18<,+
+   SOURCE=ED_STATUT.HORODATEUR;
+*
+FIELD=NOM_FICHIER,+
+   LABEL='Nom du fichier',+
+   OUTPUT_FORMAT=<100<,+
+   SOURCE=ED_STATUT.NOM_FICHIER;
+*
+FIELD=NOM_MODIF,+
+   LABEL='Nom modificateur',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=ED_STATUT.NOM_MODIF;
+*
+FIELD=NOUVEAU_NOM_FICHIER,+
+   LABEL='Nouveau nom du fichier',+
+   OUTPUT_FORMAT=<100<,+
+   SOURCE=ED_STATUT.NOUVEAU_NOM_FICHIER;
+*
+FIELD=NUM_SOUS_REP,+
+   LABEL='Sous-rép.',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=ED_STATUT.NUM_SOUS_REP;
+*
+FIELD=STATUT_FICHIER,+
+   LABEL='Statut fichier',+
+   SOURCE=ED_STATUT.STATUT_FICHIER;
+*
+FIELD=VERROUILLE,+
+   LABEL='Fichier verrouillé',+
+   SOURCE=ED_STATUT.VERROUILLE;
+*
+FIELD=VERROU_PAR,+
+   LABEL='Nom verrouilleur',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=ED_STATUT.VERROU_PAR;
+*
+VIEW=FORMULE,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(FORMULE),+
+   FORM=NO;
+*
+FIELD=ADRESSAGE,+
+   LABEL='Adressage',+
+   OUTPUT_FORMAT=<17<,+
+   SOURCE=FORMULE.ADRESSAGE;
+*
+FIELD=BDP,+
+   LABEL='BdP',+
+   SOURCE=FORMULE.BDP;
+*
+FIELD=BRANCHE,+
+   LABEL='Branche',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=FORMULE.BRANCHE;
+*
+FIELD=BUREAUTIQUE,+
+   LABEL='Bureautique',+
+   OUTPUT_FORMAT=<1/SER<,+
+   SOURCE=FORMULE.BUREAUTIQUE;
+*
+FIELD=CATEGORIE_IMP,+
+   LABEL='Catégorie impl.',+
+   OUTPUT_FORMAT=<1/SER<,+
+   SOURCE=FORMULE.CATEGORIE_IMP;
+*
+FIELD=CATEGORIE_TFA,+
+   LABEL='Fonction impliqué',+
+   OUTPUT_FORMAT=<5/SER<,+
+   SOURCE=FORMULE.CATEGORIE_TFA;
+*
+FIELD=CAT_FORMULE,+
+   LABEL='Cat. formule',+
+   OUTPUT_FORMAT=<1/SER<,+
+   SOURCE=FORMULE.CAT_FORMULE;
+*
+FIELD=CLE_FORMULE,+
+   LABEL='Clé formule',+
+   OUTPUT_FORMAT=<15<,+
+   SOURCE=FORMULE.CLE_FORMULE;
+*
+FIELD=COPIE,+
+   LABEL='Copie',+
+   OUTPUT_FORMAT=<11<,+
+   SOURCE=FORMULE.COPIE;
+*
+FIELD=COUR,+
+   LABEL='Cour',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=FORMULE.COUR;
+*
+FIELD=DESTIN_MAX,+
+   LABEL='Nbre max. destin.',+
+   OUTPUT_FORMAT=>2>,+
+   SOURCE=FORMULE.DESTIN_MAX;
+*
+FIELD=ETAT_DOSSIER,+
+   LABEL='Etat-s dossier',+
+   OUTPUT_FORMAT=<1/SER<,+
+   SOURCE=FORMULE.ETAT_DOSSIER;
+*
+FIELD=ETRANGER,+
+   LABEL='Etranger',+
+   SOURCE=FORMULE.ETRANGER;
+*
+FIELD=GENRE_DELAI,+
+   LABEL='Genre délai',+
+   OUTPUT_FORMAT=<4/SER<,+
+   SOURCE=FORMULE.GENRE_DELAI;
+*
+FIELD=GENRE_FORMULE,+
+   LABEL='Genre formule',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=FORMULE.GENRE_FORMULE;
+*
+FIELD=LANGUE,+
+   LABEL='Langue',+
+   OUTPUT_FORMAT=<1/SER<,+
+   SOURCE=FORMULE.LANGUE;
+*
+FIELD=MODE_DECISION,+
+   LABEL='Mode décision',+
+   OUTPUT_FORMAT=<2<,+
+   SOURCE=FORMULE.MODE_DECISION;
+*
+FIELD=MODE_ENVOI,+
+   LABEL='Mode envoi',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=FORMULE.MODE_ENVOI;
+*
+FIELD=MODE_REGLEMENT,+
+   LABEL='Mode réglement',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=FORMULE.MODE_REGLEMENT;
+*
+FIELD=MOYEN_DE_DROIT,+
+   LABEL='Moyen de droit',+
+   OUTPUT_FORMAT=<6/SER<,+
+   SOURCE=FORMULE.MOYEN_DE_DROIT;
+*
+FIELD=NUM_FORMULE,+
+   LABEL='Né de formule',+
+   OUTPUT_FORMAT=<11<,+
+   SOURCE=FORMULE.NUM_FORMULE;
+*
+FIELD=PROVISOIRE,+
+   LABEL='Provisoire',+
+   SOURCE=FORMULE.PROVISOIRE;
+*
+FIELD=ROLE_IMP,+
+   LABEL='Réle impl.',+
+   OUTPUT_FORMAT=<1/SER<,+
+   SOURCE=FORMULE.ROLE_IMP;
+*
+FIELD=R_ISSUE_PROCES,+
+   LABEL='Raison et issue du procés',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=FORMULE.R_ISSUE_PROCES;
+*
+FIELD=SOUS_ROLE,+
+   LABEL='Sous-réle impl.',+
+   OUTPUT_FORMAT=<3/SER<,+
+   SOURCE=FORMULE.SOUS_ROLE;
+*
+FIELD=TRIBUNAL,+
+   LABEL='Tribunal',+
+   OUTPUT_FORMAT=<3<,+
+   SOURCE=FORMULE.TRIBUNAL;
+*
+FIELD=VARIABLE,+
+   LABEL='Variable',+
+   OUTPUT_FORMAT=<15<,+
+   SOURCE=FORMULE.VARIABLE;
+*
+VIEW=HISTO,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(HISTO),+
+   FORM=NO;
+*
+FIELD=CLE_ENREG,+
+   LABEL='Clé enreg.',+
+   SOURCE=HISTO.CLE_ENREG;
+*
+FIELD=CLE_HISTO,+
+   LABEL='Clé histo',+
+   SOURCE=HISTO.CLE_HISTO;
+*
+FIELD=CT,+
+   LABEL='CT',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=HISTO.CT;
+*
+FIELD=DAT_HISTO,+
+   LABEL='Date modification',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=HISTO.DAT_HISTO;
+*
+FIELD=ENREG_HISTO,+
+   LABEL='Enreg. histo',+
+   SOURCE=HISTO.ENREG_HISTO;
+*
+FIELD=HEURE_HISTO,+
+   LABEL='Heure histo',+
+   OUTPUT_FORMAT=>6>,+
+   SOURCE=HISTO.HEURE_HISTO;
+*
+FIELD=MODE_HISTO,+
+   LABEL='Mode histo',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=HISTO.MODE_HISTO;
+*
+FIELD=TABLE_HISTO,+
+   LABEL='Table histo',+
+   SOURCE=HISTO.TABLE_HISTO;
+*
+FIELD=USER,+
+   LABEL='Dernier utilisateur',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=HISTO.USER;
+*
+FIELD=VERSION_HISTO,+
+   LABEL='Version histo',+
+   SOURCE=HISTO.VERSION_HISTO;
+*
+VIEW=IMPLIQUE,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(IMPLIQUE),+
+   FORM=NO;
+*
+FIELD=ABR_BRADOC,+
+   LABEL='Autorité (de BRADOC)',+
+   OUTPUT_FORMAT=<25/VR4<,+
+   SOURCE=IMPLIQUE.ABR_BRADOC;
+*
+FIELD=ADR1,+
+   LABEL='Adresse d''envoi',+
+   OUTPUT_FORMAT=<20/VR3<,+
+   SOURCE=IMPLIQUE.ADR1;
+*
+FIELD=ADR1_SUP,+
+   LABEL='Adresse supplémentaire',+
+   OUTPUT_FORMAT=<20/VR3<,+
+   SOURCE=IMPLIQUE.ADR1_SUP;
+*
+FIELD=ADR2,+
+   LABEL='2éme ligne......',+
+   OUTPUT_FORMAT=<20/VR3<,+
+   SOURCE=IMPLIQUE.ADR2;
+*
+FIELD=ADR2_SUP,+
+   LABEL='2éme ligne............',+
+   OUTPUT_FORMAT=<20/VR3<,+
+   SOURCE=IMPLIQUE.ADR2_SUP;
+*
+FIELD=ADR3,+
+   LABEL='3éme ligne......',+
+   OUTPUT_FORMAT=<20/VR3<,+
+   SOURCE=IMPLIQUE.ADR3;
+*
+FIELD=ADR3_SUP,+
+   LABEL='3éme ligne............',+
+   OUTPUT_FORMAT=<20/VR3<,+
+   SOURCE=IMPLIQUE.ADR3_SUP;
+*
+FIELD=ALIAS_SOUNDEX,+
+   LABEL='Alias soundexés',+
+   OUTPUT_FORMAT=<50<,+
+   SOURCE=IMPLIQUE.ALIAS_SOUNDEX;
+*
+FIELD=AN_NAIS,+
+   LABEL='Année de naissance',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=IMPLIQUE.AN_NAIS;
+*
+FIELD=APPART_AUTORITE,+
+   LABEL='Appart. autorité',+
+   OUTPUT_FORMAT=<2<,+
+   SOURCE=IMPLIQUE.APPART_AUTORITE;
+*
+FIELD=AUTRE_NOM,+
+   LABEL='Autre nom',+
+   OUTPUT_FORMAT=<30/VR5<,+
+   SOURCE=IMPLIQUE.AUTRE_NOM;
+*
+FIELD=AUTRE_NOM_INSENSI,+
+   LABEL='Autre nom insensible',+
+   OUTPUT_FORMAT=<30/VR5<,+
+   SOURCE=IMPLIQUE.AUTRE_NOM_INSENSI;
+*
+FIELD=CADUC,+
+   LABEL='Caduc',+
+   SOURCE=IMPLIQUE.CADUC;
+*
+FIELD=CANTON,+
+   LABEL='Canton',+
+   OUTPUT_FORMAT=<2<,+
+   SOURCE=IMPLIQUE.CANTON;
+*
+FIELD=CANTON_ASILE,+
+   LABEL='Canton d''asile',+
+   OUTPUT_FORMAT=<2<,+
+   SOURCE=IMPLIQUE.CANTON_ASILE;
+*
+FIELD=CANTON_INDEX,+
+   SOURCE=IMPLIQUE.CANTON_INDEX;
+*
+FIELD=CANTON_SUP,+
+   LABEL='Canton (sup)',+
+   OUTPUT_FORMAT=<2<,+
+   SOURCE=IMPLIQUE.CANTON_SUP;
+*
+FIELD=CATEGORIE,+
+   LABEL='Catégorie',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=IMPLIQUE.CATEGORIE;
+*
+FIELD=CATEGORIE_TFA,+
+   LABEL='Catégorie (stat. TFA)',+
+   OUTPUT_FORMAT=<5<,+
+   SOURCE=IMPLIQUE.CATEGORIE_TFA;
+*
+FIELD=CLE_IMPLIQUE,+
+   LABEL='Numéro d''un impliqué',+
+   OUTPUT_FORMAT=>10>,+
+   SOURCE=IMPLIQUE.CLE_IMPLIQUE;
+*
+FIELD=COD_ADR,+
+   LABEL='Code adresse',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=IMPLIQUE.COD_ADR;
+*
+FIELD=CT,+
+   LABEL='CT',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=IMPLIQUE.CT;
+*
+FIELD=DAT_ASILE,+
+   LABEL='Date de demande d''asile',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=IMPLIQUE.DAT_ASILE;
+*
+FIELD=DAT_CREATION,+
+   LABEL='Date création',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=IMPLIQUE.DAT_CREATION;
+*
+FIELD=DAT_DECES,+
+   LABEL='Date de décés',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=IMPLIQUE.DAT_DECES;
+*
+FIELD=DAT_ETAT_CIVIL,+
+   LABEL='Date état civil',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=IMPLIQUE.DAT_ETAT_CIVIL;
+*
+FIELD=DAT_MODIFICATION,+
+   LABEL='Date modification',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=IMPLIQUE.DAT_MODIFICATION;
+*
+FIELD=DAT_MUT_SYMIC,+
+   LABEL='Date de mutation Symic',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=IMPLIQUE.DAT_MUT_SYMIC;
+*
+FIELD=DAT_NAIS,+
+   LABEL='Date de naissance',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=IMPLIQUE.DAT_NAIS;
+*
+FIELD=DAT_REAC,+
+   LABEL='Date de réactivation',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=IMPLIQUE.DAT_REAC;
+*
+FIELD=DAT_STATUT_ETRANGER,+
+   LABEL='Date statut étranger',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=IMPLIQUE.DAT_STATUT_ETRANGER;
+*
+FIELD=ETAT_CIVIL,+
+   LABEL='état civil',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=IMPLIQUE.ETAT_CIVIL;
+*
+FIELD=ETAT_IMP,+
+   LABEL='Etat impliqué',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=IMPLIQUE.ETAT_IMP;
+*
+FIELD=EX_NUM_IMP,+
+   LABEL='EX_NUM_IMP',+
+   OUTPUT_FORMAT=<30/SEC<,+
+   SOURCE=IMPLIQUE.EX_NUM_IMP;
+*
+FIELD=FONCTION,+
+   LABEL='Fonction',+
+   OUTPUT_FORMAT=<5/SEC<,+
+   SOURCE=IMPLIQUE.FONCTION;
+*
+FIELD=GENRE,+
+   LABEL='Genre',+
+   OUTPUT_FORMAT=<2<,+
+   SOURCE=IMPLIQUE.GENRE;
+*
+FIELD=HEURE_MODIF,+
+   LABEL='Heure modif.',+
+   OUTPUT_FORMAT=<6/Z<,+
+   SOURCE=IMPLIQUE.HEURE_MODIF;
+*
+FIELD=IMPLICABLE,+
+   LABEL='Implicable',+
+   SOURCE=IMPLIQUE.IMPLICABLE;
+*
+FIELD=INCAPABLE,+
+   LABEL='Incapable',+
+   SOURCE=IMPLIQUE.INCAPABLE;
+*
+FIELD=INSOLVABLE,+
+   LABEL='Insolvable',+
+   SOURCE=IMPLIQUE.INSOLVABLE;
+*
+FIELD=LANGUE,+
+   LABEL='Langue',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=IMPLIQUE.LANGUE;
+*
+FIELD=LIEU_RECEPT,+
+   LABEL='CERA/CT',+
+   OUTPUT_FORMAT=<3<,+
+   SOURCE=IMPLIQUE.LIEU_RECEPT;
+*
+FIELD=LOC,+
+   LABEL='Nom de localité',+
+   OUTPUT_FORMAT=<15/VR2<,+
+   SOURCE=IMPLIQUE.LOC;
+*
+FIELD=LOC_INDEX,+
+   SOURCE=IMPLIQUE.LOC_INDEX;
+*
+FIELD=LOC_SUP,+
+   LABEL='Nom de localité (sup)',+
+   OUTPUT_FORMAT=<15/VR2<,+
+   SOURCE=IMPLIQUE.LOC_SUP;
+*
+FIELD=NATIONALITE,+
+   LABEL='Nationalité',+
+   OUTPUT_FORMAT=<2/SEC<,+
+   SOURCE=IMPLIQUE.NATIONALITE;
+*
+FIELD=NBR_PERSONNE,+
+   LABEL='Nbre personnes',+
+   OUTPUT_FORMAT=>3>,+
+   SOURCE=IMPLIQUE.NBR_PERSONNE;
+*
+FIELD=NOM,+
+   LABEL='Nom d''un impliqué',+
+   OUTPUT_FORMAT=<30/VR5<,+
+   SOURCE=IMPLIQUE.NOM;
+*
+FIELD=NOM_COURT,+
+   LABEL='Nom court d''un impliqué',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=IMPLIQUE.NOM_COURT;
+*
+FIELD=NOM_COURT_INSENSI,+
+   LABEL='Nom court d''un impliqué insensible',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=IMPLIQUE.NOM_COURT_INSENSI;
+*
+FIELD=NOM_COURT_LOC,+
+   LABEL='Nom court et localité',+
+   OUTPUT_FORMAT=<30/VR2<,+
+   SOURCE=IMPLIQUE.NOM_COURT_LOC;
+*
+FIELD=NOM_COURT_LOC_INSENSI,+
+   LABEL='Nom court & loc. insensible',+
+   OUTPUT_FORMAT=<30/VR2<,+
+   SOURCE=IMPLIQUE.NOM_COURT_LOC_INSENSI;
+*
+FIELD=NOM_INDEX,+
+   SOURCE=IMPLIQUE.NOM_INDEX;
+*
+FIELD=NOM_INDEX_INSENSI,+
+   SOURCE=IMPLIQUE.NOM_INDEX_INSENSI;
+*
+FIELD=NOM_INSENSI,+
+   LABEL='Nom d''un impliqué insensible',+
+   OUTPUT_FORMAT=<40/VR4<,+
+   SOURCE=IMPLIQUE.NOM_INSENSI;
+*
+FIELD=NOM_SOUNDEX,+
+   LABEL='Noms soundexés',+
+   OUTPUT_FORMAT=<30/VR5<,+
+   SOURCE=IMPLIQUE.NOM_SOUNDEX;
+*
+FIELD=NOT_IMP,+
+   LABEL='Note interne sur l''impliqué',+
+   OUTPUT_FORMAT=<30/VR5<,+
+   SOURCE=IMPLIQUE.NOT_IMP;
+*
+FIELD=NPA,+
+   LABEL='NPA',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=IMPLIQUE.NPA;
+*
+FIELD=NPA_SUP,+
+   LABEL='NPA',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=IMPLIQUE.NPA_SUP;
+*
+FIELD=NUM_AVS,+
+   LABEL='Né AVS',+
+   OUTPUT_FORMAT=<18/VR2<,+
+   SOURCE=IMPLIQUE.NUM_AVS;
+*
+FIELD=NUM_FAX,+
+   LABEL='Né FAX',+
+   OUTPUT_FORMAT=<12<,+
+   SOURCE=IMPLIQUE.NUM_FAX;
+*
+FIELD=NUM_JUSLINK,+
+   LABEL='No JusLink',+
+   OUTPUT_FORMAT=>18>,+
+   SOURCE=IMPLIQUE.NUM_JUSLINK;
+*
+FIELD=NUM_MEMBRE,+
+   LABEL='No de membre',+
+   OUTPUT_FORMAT=>10>,+
+   SOURCE=IMPLIQUE.NUM_MEMBRE;
+*
+FIELD=NUM_TEL,+
+   LABEL='Né Téléphone',+
+   OUTPUT_FORMAT=<12<,+
+   SOURCE=IMPLIQUE.NUM_TEL;
+*
+FIELD=NUM_ZEMIS,+
+   LABEL='No Symic/Zemis',+
+   OUTPUT_FORMAT=>10>,+
+   SOURCE=IMPLIQUE.NUM_ZEMIS;
+*
+FIELD=ORIGINE,+
+   LABEL='Numéro de l''impliqué d''origine',+
+   OUTPUT_FORMAT=<6<,+
+   SOURCE=IMPLIQUE.ORIGINE;
+*
+FIELD=PRENOM,+
+   LABEL='Prénom',+
+   OUTPUT_FORMAT=<20/VR2<,+
+   SOURCE=IMPLIQUE.PRENOM;
+*
+FIELD=PRENOM_SOUNDEX,+
+   LABEL='Prénoms soundexés',+
+   OUTPUT_FORMAT=<40<,+
+   SOURCE=IMPLIQUE.PRENOM_SOUNDEX;
+*
+FIELD=PROFESSION,+
+   LABEL='Profession',+
+   OUTPUT_FORMAT=<80<,+
+   SOURCE=IMPLIQUE.PROFESSION;
+*
+FIELD=REM_ASILE,+
+   LABEL='Remarque sur l''asile',+
+   OUTPUT_FORMAT=<50/VR5<,+
+   SOURCE=IMPLIQUE.REM_ASILE;
+*
+FIELD=REM_IMP,+
+   LABEL='Remarque sur l''impliqué',+
+   OUTPUT_FORMAT=<30/VR5<,+
+   SOURCE=IMPLIQUE.REM_IMP;
+*
+FIELD=ROLE_MEMBRE,+
+   LABEL='Réle de membre',+
+   OUTPUT_FORMAT=<4/SEC<,+
+   SOURCE=IMPLIQUE.ROLE_MEMBRE;
+*
+FIELD=SENSIBLE,+
+   LABEL='Sensible',+
+   SOURCE=IMPLIQUE.SENSIBLE;
+*
+FIELD=SEXE,+
+   LABEL='Sexe',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=IMPLIQUE.SEXE;
+*
+FIELD=SOUNDEX_INDEX,+
+   SOURCE=IMPLIQUE.SOUNDEX_INDEX;
+*
+FIELD=STATUT_ETRANGER,+
+   LABEL='Statut étranger',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=IMPLIQUE.STATUT_ETRANGER;
+*
+FIELD=TITRE,+
+   LABEL='Titre',+
+   OUTPUT_FORMAT=<10/VR3<,+
+   SOURCE=IMPLIQUE.TITRE;
+*
+FIELD=TYP_ADR,+
+   LABEL='Type adresse 1',+
+   OUTPUT_FORMAT=<4/SEC<,+
+   SOURCE=IMPLIQUE.TYP_ADR;
+*
+FIELD=TYP_ADR_INDEX,+
+   SOURCE=IMPLIQUE.TYP_ADR_INDEX;
+*
+FIELD=TYP_ADR_SUP,+
+   LABEL='Type adresse 2',+
+   OUTPUT_FORMAT=<4/SEC<,+
+   SOURCE=IMPLIQUE.TYP_ADR_SUP;
+*
+FIELD=UID,+
+   LABEL='Dernier utilisateur UID',+
+   OUTPUT_FORMAT=<8<,+
+   SOURCE=IMPLIQUE.UID;
+*
+FIELD=USER,+
+   LABEL='Dernier utilisateur',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=IMPLIQUE.USER;
+*
+VIEW=LOI_RS,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(LOI_RS),+
+   FORM=NO;
+*
+FIELD=ABREV_D,+
+   LABEL='Abréviation (D)',+
+   OUTPUT_FORMAT=<23<,+
+   SOURCE=LOI_RS.ABREV_D;
+*
+FIELD=ABREV_F,+
+   LABEL='Abréviation (F)',+
+   OUTPUT_FORMAT=<23<,+
+   SOURCE=LOI_RS.ABREV_F;
+*
+FIELD=ABREV_I,+
+   LABEL='Abréviation (I)',+
+   OUTPUT_FORMAT=<23<,+
+   SOURCE=LOI_RS.ABREV_I;
+*
+FIELD=NUMERO_RS,+
+   LABEL='Numéro RS......',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=LOI_RS.NUMERO_RS;
+*
+FIELD=TITRE_D,+
+   LABEL='Titre (D)',+
+   OUTPUT_FORMAT=<70/VR9<,+
+   SOURCE=LOI_RS.TITRE_D;
+*
+FIELD=TITRE_F,+
+   LABEL='Titre (F)',+
+   OUTPUT_FORMAT=<70/VR9<,+
+   SOURCE=LOI_RS.TITRE_F;
+*
+FIELD=TITRE_I,+
+   LABEL='Titre (I)',+
+   OUTPUT_FORMAT=<70/VR9<,+
+   SOURCE=LOI_RS.TITRE_I;
+*
+FIELD=VERSION,+
+   LABEL='Version de loi.',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=LOI_RS.VERSION;
+*
+VIEW=MATIERE,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(MATIERE),+
+   FORM=NO;
+*
+FIELD=CLE_MATIERE,+
+   LABEL='Clé matiére',+
+   OUTPUT_FORMAT=<6<,+
+   SOURCE=MATIERE.CLE_MATIERE;
+*
+FIELD=HORS_CHARGE,+
+   LABEL='Hors charge [0/1]',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=MATIERE.HORS_CHARGE;
+*
+FIELD=INDEXABLE,+
+   LABEL='Indexable',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=MATIERE.INDEXABLE;
+*
+FIELD=MATIERE_INT,+
+   LABEL='Matiére internet',+
+   SOURCE=MATIERE.MATIERE_INT;
+*
+FIELD=MATIERE_MAX,+
+   LABEL='Matiére max.',+
+   OUTPUT_FORMAT=<6<,+
+   SOURCE=MATIERE.MATIERE_MAX;
+*
+FIELD=MATIERE_MIN,+
+   LABEL='Matiére min.',+
+   OUTPUT_FORMAT=<6<,+
+   SOURCE=MATIERE.MATIERE_MIN;
+*
+FIELD=MIXITE,+
+   LABEL='Mixité [0/1]',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=MATIERE.MIXITE;
+*
+FIELD=MOYENS_DROIT,+
+   LABEL='Moyens de droit',+
+   OUTPUT_FORMAT=<6/SER<,+
+   SOURCE=MATIERE.MOYENS_DROIT;
+*
+FIELD=NIVEAU,+
+   LABEL='Niveau',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=MATIERE.NIVEAU;
+*
+FIELD=PRIORITE,+
+   LABEL='Priorité [0/1]',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=MATIERE.PRIORITE;
+*
+FIELD=SPEC_MIN,+
+   LABEL='Nbre min.experts',+
+   SOURCE=MATIERE.SPEC_MIN;
+*
+FIELD=STAT_RG,+
+   LABEL='Statistique RG',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=MATIERE.STAT_RG;
+*
+VIEW=MESSAGE,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(MESSAGE),+
+   FORM=NO;
+*
+FIELD=CLE_MESSAGE,+
+   LABEL='Né message',+
+   OUTPUT_FORMAT=<6<,+
+   SOURCE=MESSAGE.CLE_MESSAGE;
+*
+FIELD=MESSAGE_D,+
+   LABEL='Message (D)',+
+   OUTPUT_FORMAT=<80/VR2<,+
+   SOURCE=MESSAGE.MESSAGE_D;
+*
+FIELD=MESSAGE_F,+
+   LABEL='Message (F)',+
+   OUTPUT_FORMAT=<80/VR2<,+
+   SOURCE=MESSAGE.MESSAGE_F;
+*
+FIELD=NIVEAU,+
+   LABEL='Niveau',+
+   SOURCE=MESSAGE.NIVEAU;
+*
+FIELD=NOM_MESSAGE,+
+   LABEL='Nom du message',+
+   OUTPUT_FORMAT=<30<,+
+   SOURCE=MESSAGE.NOM_MESSAGE;
+*
+VIEW=MESURE,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(MESURE),+
+   FORM=NO;
+*
+FIELD=CLE_DOSSIER,+
+   LABEL='Clé dossier',+
+   OUTPUT_FORMAT=>6>,+
+   SOURCE=MESURE.CLE_DOSSIER;
+*
+FIELD=CLE_MESURE,+
+   LABEL='Clé mesure',+
+   OUTPUT_FORMAT=>8>,+
+   SOURCE=MESURE.CLE_MESURE;
+*
+FIELD=DAT_CREATION,+
+   LABEL='Date création',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=MESURE.DAT_CREATION;
+*
+FIELD=DAT_MESURE,+
+   LABEL='Date de la mesure',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=MESURE.DAT_MESURE;
+*
+FIELD=DAT_MODIFICATION,+
+   LABEL='Date modification',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=MESURE.DAT_MODIFICATION;
+*
+FIELD=NUM_DOSSIER_ANC,+
+   LABEL='Numéro du dossier',+
+   OUTPUT_FORMAT=<15<,+
+   SOURCE=MESURE.NUM_DOSSIER_ANC;
+*
+FIELD=NUM_IMP,+
+   LABEL='Numéro impliqué',+
+   OUTPUT_FORMAT=<6/SEC<,+
+   SOURCE=MESURE.NUM_IMP;
+*
+FIELD=REM_MESURE,+
+   LABEL='Remarque mesure',+
+   OUTPUT_FORMAT=<60<,+
+   SOURCE=MESURE.REM_MESURE;
+*
+FIELD=UID,+
+   LABEL='Dernier utilisateur UID',+
+   OUTPUT_FORMAT=<8<,+
+   SOURCE=MESURE.UID;
+*
+FIELD=USER,+
+   LABEL='Dernier utilisateur',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=MESURE.USER;
+*
+VIEW=MOYEN_DROIT,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(MOYEN_DROIT),+
+   FORM=NO;
+*
+FIELD=BRANCHE_NTF,+
+   LABEL='BRANCHE_NTF',+
+   OUTPUT_FORMAT=<20/SER<,+
+   SOURCE=MOYEN_DROIT.BRANCHE_NTF;
+*
+FIELD=BRANCHE_TAF,+
+   LABEL='BRANCHE_TAF',+
+   OUTPUT_FORMAT=<20/SER<,+
+   SOURCE=MOYEN_DROIT.BRANCHE_TAF;
+*
+FIELD=BRANCHE_TF,+
+   LABEL='BRANCHE_TF',+
+   OUTPUT_FORMAT=<20/SER<,+
+   SOURCE=MOYEN_DROIT.BRANCHE_TF;
+*
+FIELD=BRANCHE_TFA,+
+   LABEL='BRANCHE_TFA',+
+   OUTPUT_FORMAT=<20/SER<,+
+   SOURCE=MOYEN_DROIT.BRANCHE_TFA;
+*
+FIELD=CLE_MOYEN_DROIT,+
+   LABEL='CLE_MOYEN_DROIT',+
+   SOURCE=MOYEN_DROIT.CLE_MOYEN_DROIT;
+*
+FIELD=MOYEN_DE_DROIT,+
+   LABEL='MOYEN_DE_DROIT',+
+   SOURCE=MOYEN_DROIT.MOYEN_DE_DROIT;
+*
+FIELD=NUM_ORDRE,+
+   LABEL='NUM_ORDRE',+
+   SOURCE=MOYEN_DROIT.NUM_ORDRE;
+*
+VIEW=NPA,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(NPA),+
+   FORM=NO;
+*
+FIELD=CANTON,+
+   LABEL='Canton',+
+   OUTPUT_FORMAT=<2<,+
+   SOURCE=NPA.CANTON;
+*
+FIELD=CLE_NPA,+
+   LABEL='Clé NPA',+
+   OUTPUT_FORMAT=<30/VR2<,+
+   SOURCE=NPA.CLE_NPA;
+*
+FIELD=LOC,+
+   LABEL='Nom court de localité',+
+   OUTPUT_FORMAT=<18<,+
+   SOURCE=NPA.LOC;
+*
+FIELD=LOCALITE,+
+   LABEL='Nom de localité',+
+   OUTPUT_FORMAT=<15/VR2<,+
+   SOURCE=NPA.LOCALITE;
+*
+FIELD=LOCALITE_AIDE,+
+   SOURCE=NPA.LOCALITE_AIDE;
+*
+FIELD=LOCALITE_D,+
+   LABEL='Localité (D)',+
+   OUTPUT_FORMAT=<15/VR2<,+
+   SOURCE=NPA.LOCALITE_D;
+*
+FIELD=LOCALITE_F,+
+   LABEL='Localité (F)',+
+   OUTPUT_FORMAT=<15/VR2<,+
+   SOURCE=NPA.LOCALITE_F;
+*
+FIELD=LOCALITE_I,+
+   LABEL='Localité (I)',+
+   OUTPUT_FORMAT=<15/VR2<,+
+   SOURCE=NPA.LOCALITE_I;
+*
+FIELD=LOCALITE_SEC,+
+   SOURCE=NPA.LOCALITE_SEC;
+*
+FIELD=MAJ,+
+   LABEL='MéJ',+
+   SOURCE=NPA.MAJ;
+*
+FIELD=NPA,+
+   LABEL='NPA',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=NPA.NPA;
+*
+FIELD=OBSOLETE,+
+   LABEL='Obsoléte',+
+   SOURCE=NPA.OBSOLETE;
+*
+VIEW=NUMEROTATION,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(NUMEROTATION),+
+   FORM=NO;
+*
+FIELD=ANNEE,+
+   LABEL='Année',+
+   SOURCE=NUMEROTATION.ANNEE;
+*
+FIELD=BRANCHE,+
+   LABEL='Branche',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=NUMEROTATION.BRANCHE;
+*
+FIELD=CLE_NUMEROTATION,+
+   LABEL='Clé Numérotation',+
+   SOURCE=NUMEROTATION.CLE_NUMEROTATION;
+*
+FIELD=COUR,+
+   LABEL='Cour',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=NUMEROTATION.COUR;
+*
+FIELD=DERNIER_RANG,+
+   LABEL='Dernier rang',+
+   SOURCE=NUMEROTATION.DERNIER_RANG;
+*
+FIELD=MDD,+
+   LABEL='Moyen de droit',+
+   OUTPUT_FORMAT=<6<,+
+   SOURCE=NUMEROTATION.MDD;
+*
+FIELD=PREFIXE,+
+   LABEL='Préfixe',+
+   SOURCE=NUMEROTATION.PREFIXE;
+*
+FIELD=RANG_VIDE,+
+   LABEL='Rang vide',+
+   OUTPUT_FORMAT=<20/SER<,+
+   SOURCE=NUMEROTATION.RANG_VIDE;
+*
+FIELD=SPECIALE,+
+   LABEL='Spéciale',+
+   SOURCE=NUMEROTATION.SPECIALE;
+*
+VIEW=PIECE,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(PIECE),+
+   FORM=NO;
+*
+FIELD=CLASSE_PIECE,+
+   LABEL='Classement piéce',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=PIECE.CLASSE_PIECE;
+*
+FIELD=CLE_DOSSIER,+
+   LABEL='Clé dossier',+
+   OUTPUT_FORMAT=<8<,+
+   SOURCE=PIECE.CLE_DOSSIER;
+*
+FIELD=CLE_DOSSIER_CONNEXE,+
+   LABEL='Clé dossier connexe',+
+   OUTPUT_FORMAT=<8/SER<,+
+   SOURCE=PIECE.CLE_DOSSIER_CONNEXE;
+*
+FIELD=CLE_PIECE,+
+   LABEL='Clé piéce',+
+   OUTPUT_FORMAT=<12<,+
+   SOURCE=PIECE.CLE_PIECE;
+*
+FIELD=CT,+
+   LABEL='CT',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=PIECE.CT;
+*
+FIELD=DAT_CREATION,+
+   LABEL='Date création',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=PIECE.DAT_CREATION;
+*
+FIELD=DAT_DEPOT,+
+   LABEL='Date dépét',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=PIECE.DAT_DEPOT;
+*
+FIELD=DAT_ENVOI,+
+   LABEL='Date d''envoi',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=PIECE.DAT_ENVOI;
+*
+FIELD=DAT_MODIFICATION,+
+   LABEL='Date modification',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=PIECE.DAT_MODIFICATION;
+*
+FIELD=DAT_NOTIF,+
+   LABEL='Date notif.',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=PIECE.DAT_NOTIF;
+*
+FIELD=DAT_PIECE,+
+   LABEL='Date de la piéce',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=PIECE.DAT_PIECE;
+*
+FIELD=DAT_POSITION,+
+   LABEL='Date position',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=PIECE.DAT_POSITION;
+*
+FIELD=DAT_STATUT,+
+   LABEL='Date statut',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=PIECE.DAT_STATUT;
+*
+FIELD=DESIGNATION,+
+   LABEL='Désignation piéce',+
+   OUTPUT_FORMAT=<30/VR2<,+
+   SOURCE=PIECE.DESIGNATION;
+*
+FIELD=DESTIN_PIECE,+
+   LABEL='Destinataire',+
+   OUTPUT_FORMAT=<20/SEC<,+
+   SOURCE=PIECE.DESTIN_PIECE;
+*
+FIELD=EXP_PIECE,+
+   LABEL='Expéditeur',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=PIECE.EXP_PIECE;
+*
+FIELD=GENRE_PIECE,+
+   LABEL='Genre piéce',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=PIECE.GENRE_PIECE;
+*
+FIELD=MODE_ENVOI,+
+   LABEL='Mode envoi',+
+   OUTPUT_FORMAT=<1/SEC<,+
+   SOURCE=PIECE.MODE_ENVOI;
+*
+FIELD=MODE_RETOUR,+
+   LABEL='Mode retour',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=PIECE.MODE_RETOUR;
+*
+FIELD=NBRE_PAGES,+
+   LABEL='Nbre pages',+
+   OUTPUT_FORMAT=<8<,+
+   SOURCE=PIECE.NBRE_PAGES;
+*
+FIELD=NUM_ENVOI,+
+   LABEL='Né envoi',+
+   OUTPUT_FORMAT=<18/SEC<,+
+   SOURCE=PIECE.NUM_ENVOI;
+*
+FIELD=NUM_PIECE,+
+   LABEL='Né de piéce',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=PIECE.NUM_PIECE;
+*
+FIELD=NUM_PIECE_CONNEXE,+
+   LABEL='Né de piéce connexe',+
+   OUTPUT_FORMAT=<4/SER<,+
+   SOURCE=PIECE.NUM_PIECE_CONNEXE;
+*
+FIELD=NUM_PIECE_NORME,+
+   LABEL='Né normé de piéce',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=PIECE.NUM_PIECE_NORME;
+*
+FIELD=ORIGINAL,+
+   LABEL='Clé dossier original',+
+   OUTPUT_FORMAT=<8<,+
+   SOURCE=PIECE.ORIGINAL;
+*
+FIELD=POSITION,+
+   LABEL='Position',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=PIECE.POSITION;
+*
+FIELD=REM_PIECE,+
+   LABEL='Remarque piéce',+
+   OUTPUT_FORMAT=<30/VR2<,+
+   SOURCE=PIECE.REM_PIECE;
+*
+FIELD=RETOUR,+
+   LABEL='Retour',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=PIECE.RETOUR;
+*
+FIELD=RETOURNER_A,+
+   LABEL='Retourner é',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=PIECE.RETOURNER_A;
+*
+FIELD=STATUT_ENVOI,+
+   LABEL='Statut envoi',+
+   OUTPUT_FORMAT=<3/SEC<,+
+   SOURCE=PIECE.STATUT_ENVOI;
+*
+FIELD=STATUT_PIECE,+
+   LABEL='Statut piéce',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=PIECE.STATUT_PIECE;
+*
+FIELD=UID,+
+   LABEL='Dernier utilisateur UID',+
+   OUTPUT_FORMAT=<8<,+
+   SOURCE=PIECE.UID;
+*
+FIELD=USER,+
+   LABEL='Dernier utilisateur',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=PIECE.USER;
+*
+FIELD=VISIBLE,+
+   LABEL='Visible',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=PIECE.VISIBLE;
+*
+VIEW=TACHE,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(TACHE),+
+   FORM=NO;
+*
+FIELD=BDP,+
+   LABEL='BdP',+
+   SOURCE=TACHE.BDP;
+*
+FIELD=BRANCHE,+
+   LABEL='Branche',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=TACHE.BRANCHE;
+*
+FIELD=CAT_IMP,+
+   LABEL='Catégorie impl.',+
+   OUTPUT_FORMAT=<1/SER<,+
+   SOURCE=TACHE.CAT_IMP;
+*
+FIELD=CLE_FORMULE,+
+   LABEL='Clés formule',+
+   OUTPUT_FORMAT=<15/SER<,+
+   SOURCE=TACHE.CLE_FORMULE;
+*
+FIELD=CONTROLEUR,+
+   LABEL='contrôleur',+
+   OUTPUT_FORMAT=<3/SER<,+
+   SOURCE=TACHE.CONTROLEUR;
+*
+FIELD=COUR,+
+   LABEL='Cour',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=TACHE.COUR;
+*
+FIELD=DHL,+
+   LABEL='Date-Heure-Lieu',+
+   OUTPUT_FORMAT=<3/SER<,+
+   SOURCE=TACHE.DHL;
+*
+FIELD=ETAT_DOSSIER,+
+   LABEL='état du dossier',+
+   OUTPUT_FORMAT=<1/SER<,+
+   SOURCE=TACHE.ETAT_DOSSIER;
+*
+FIELD=FERIE,+
+   LABEL='Comput.',+
+   SOURCE=TACHE.FERIE;
+*
+FIELD=FONC_COLLAB,+
+   LABEL='Fonction collaborateur',+
+   OUTPUT_FORMAT=<3/SER<,+
+   SOURCE=TACHE.FONC_COLLAB;
+*
+FIELD=FONC_IMP,+
+   LABEL='Fonction impliqué',+
+   OUTPUT_FORMAT=<5/SER<,+
+   SOURCE=TACHE.FONC_IMP;
+*
+FIELD=GENRE_DELAI,+
+   LABEL='Genre délai',+
+   OUTPUT_FORMAT=<4/SER<,+
+   SOURCE=TACHE.GENRE_DELAI;
+*
+FIELD=HORS_DOSSIER,+
+   LABEL='Hors dossier',+
+   SOURCE=TACHE.HORS_DOSSIER;
+*
+FIELD=ID_TACHE,+
+   LABEL='Identifiant de téche',+
+   OUTPUT_FORMAT=<12<,+
+   SOURCE=TACHE.ID_TACHE;
+*
+FIELD=JOUR_EXCLU,+
+   LABEL='Jour-s sem. exclu-s',+
+   OUTPUT_FORMAT=<7<,+
+   SOURCE=TACHE.JOUR_EXCLU;
+*
+FIELD=MATIERE,+
+   LABEL='Code matiére',+
+   OUTPUT_FORMAT=<6/SER<,+
+   SOURCE=TACHE.MATIERE;
+*
+FIELD=MONTANT,+
+   LABEL='Type montant',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=TACHE.MONTANT;
+*
+FIELD=MOYEN_DE_DROIT,+
+   LABEL='Moyen de droit',+
+   OUTPUT_FORMAT=<6/SER<,+
+   SOURCE=TACHE.MOYEN_DE_DROIT;
+*
+FIELD=NBRE_JOURS,+
+   LABEL='Nombre jours délai',+
+   OUTPUT_FORMAT=<11<,+
+   SOURCE=TACHE.NBRE_JOURS;
+*
+FIELD=NBRE_PROLONGS,+
+   LABEL='Nombre max. de prolongations',+
+   OUTPUT_FORMAT=>4>,+
+   SOURCE=TACHE.NBRE_PROLONGS;
+*
+FIELD=PERSONNELLE,+
+   LABEL='Personnelle',+
+   SOURCE=TACHE.PERSONNELLE;
+*
+FIELD=POSTCOMPUT,+
+   LABEL='Postcomput possible',+
+   SOURCE=TACHE.POSTCOMPUT;
+*
+FIELD=PREMIER_RAPPEL,+
+   LABEL='Premier rappel',+
+   OUTPUT_FORMAT=<13<,+
+   SOURCE=TACHE.PREMIER_RAPPEL;
+*
+FIELD=PROVISOIRE,+
+   LABEL='Délai provisoire possible',+
+   SOURCE=TACHE.PROVISOIRE;
+*
+FIELD=ROLE_IMP,+
+   LABEL='Réle impl.',+
+   OUTPUT_FORMAT=<1/SER<,+
+   SOURCE=TACHE.ROLE_IMP;
+*
+FIELD=SOUS_ROLE_IMP,+
+   LABEL='Sous-réle impl.',+
+   OUTPUT_FORMAT=<3/SER<,+
+   SOURCE=TACHE.SOUS_ROLE_IMP;
+*
+FIELD=TOLERANCE,+
+   LABEL='Tolérance',+
+   OUTPUT_FORMAT=<8<,+
+   SOURCE=TACHE.TOLERANCE;
+*
+VIEW=TRADUCTION,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(TRADUCTION),+
+   FORM=NO;
+*
+FIELD=ABREV_D,+
+   LABEL='Abréviation (D)',+
+   SOURCE=TRADUCTION.ABREV_D;
+*
+FIELD=ABREV_F,+
+   LABEL='Abréviation (F)',+
+   SOURCE=TRADUCTION.ABREV_F;
+*
+FIELD=ABREV_I,+
+   LABEL='Abréviation (I)',+
+   SOURCE=TRADUCTION.ABREV_I;
+*
+FIELD=CLE_TRADUCTION,+
+   LABEL='Clé Traduction',+
+   SOURCE=TRADUCTION.CLE_TRADUCTION;
+*
+FIELD=CODE_MONOLINGUE,+
+   LABEL='Code monolingue',+
+   SOURCE=TRADUCTION.CODE_MONOLINGUE;
+*
+FIELD=DAT_MODIFICATION,+
+   LABEL='Date modification',+
+   OUTPUT_FORMAT=<10/DATE21<,+
+   SOURCE=TRADUCTION.DAT_MODIFICATION;
+*
+FIELD=HEURE_MODIF,+
+   LABEL='Heure de modif.',+
+   OUTPUT_FORMAT=<6<,+
+   SOURCE=TRADUCTION.HEURE_MODIF;
+*
+FIELD=NOM_CHAMP,+
+   LABEL='Nom du champ',+
+   SOURCE=TRADUCTION.NOM_CHAMP;
+*
+FIELD=NOM_CODE,+
+   LABEL='Nom + Code',+
+   SOURCE=TRADUCTION.NOM_CODE;
+*
+FIELD=NON_SELEX,+
+   LABEL='Non sélectionnable',+
+   SOURCE=TRADUCTION.NON_SELEX;
+*
+FIELD=OBSOLETE,+
+   LABEL='Obsoléte',+
+   SOURCE=TRADUCTION.OBSOLETE;
+*
+FIELD=PROVISOIRE,+
+   LABEL='Provisoire',+
+   SOURCE=TRADUCTION.PROVISOIRE;
+*
+FIELD=RANG,+
+   LABEL='RANG',+
+   OUTPUT_FORMAT=>6>,+
+   SOURCE=TRADUCTION.RANG;
+*
+FIELD=TEXTE_D,+
+   LABEL='Texte (D)',+
+   SOURCE=TRADUCTION.TEXTE_D;
+*
+FIELD=TEXTE_F,+
+   LABEL='Texte (F)',+
+   SOURCE=TRADUCTION.TEXTE_F;
+*
+FIELD=TEXTE_I,+
+   LABEL='Texte (I)',+
+   SOURCE=TRADUCTION.TEXTE_I;
+*
+*
+MODEL=MODOSS,+
+   ACCESS=PUBLIC,+
+   TYPE=FQM;
+PROGRAMS=(FQM(GET,ADD,MOD,DEL,PRIORITY=8 ));
+*
+VIEW=ACCES,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   FDL_REG='1(1:22,1:80)',+
+   SOURCE=(ACCES),+
+   FORM=YES;
+BORDER=B01001, FDL_INFO='BMARKER=.,DEFAULT=NO', PAGE=1, REGION=1,+
+ (1:1,1:80)/INTENSITY, (1:16,1:1)/INTENSITY, (1:16,80:80)/INTENSITY,+
+ (5:5,1:80)/INTENSITY, (9:9,1:80)/INTENSITY, (9:16,24:24)/INTENSITY,+
+ (9:16,39:39)/INTENSITY, (9:16,48:48)/INTENSITY, (9:16,58:58)/INTENSITY,+
+ (12:12,1:80)/INTENSITY, (16:16,1:80)/INTENSITY, (19:19,1:80)/INTENSITY;
+AT(7:7,17:48)/UNDERSCORE/REVERSE/PROTECTED/EREVERSE,+
+   SOURCE=ACCES.CLE_ACCES,+
+   SIZE=32,+
+   LABEL='Clé accès',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=CLE_ACCES;
+AT(14:14,50:53)/UNDERSCORE/EREVERSE,+
+   SOURCE=ACCES.DOMAINE_L,+
+   SIZE=4,+
+   LABEL='Domaine lect.',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=DOMAINE_L;
+AT(14:14,60:63)/UNDERSCORE/EREVERSE,+
+   SOURCE=ACCES.DOMAINE_M,+
+   SIZE=4,+
+   LABEL='Domaine modif.',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=DOMAINE_M;
+AT(3:3,25:54)/INTENSITY/UNDERSCORE/PROTECTED/FL,+
+   PUT('Définition des accès é BRADOSS'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01001;
+AT(7:7,3:15)/PROTECTED/FL,+
+   PUT('Clé d''accès :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01002;
+AT(10:10,41:44)/PROTECTED/FL,+
+   PUT('Type'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01003;
+AT(10:10,50:56)/PROTECTED/FL,+
+   PUT('Domaine'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01004;
+AT(10:10,60:66)/PROTECTED/FL,+
+   PUT('Domaine'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01005;
+AT(11:11,3:15)/PROTECTED/FL,+
+   PUT('Nom du profil'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01006;
+AT(11:11,26:30)/PROTECTED/FL,+
+   PUT('Objet'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01007;
+AT(11:11,41:46)/PROTECTED/FL,+
+   PUT('profil'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01008;
+AT(11:11,50:56)/PROTECTED/FL,+
+   PUT('lecture'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01009;
+AT(11:11,60:71)/PROTECTED/FL,+
+   PUT('modification'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01010;
+AT(18:18,2:24)/PROTECTED/FL,+
+   PUT('(Aide avec PF2 ou AIDE)'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01011;
+AT(20:20,51:55)/PROTECTED/FL,+
+   PUT('Mode:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01012;
+AT(20:20,58:78)/INTENSITY/PROTECTED/MODE/FL,+
+   PUT(' '),+
+   FDL_INFO='MARKER=#,DEFAULT=NO',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01013;
+AT(14:14,3:22)/UNDERSCORE/EREVERSE,+
+   SOURCE=ACCES.NOM_PROFIL,+
+   SIZE=20,+
+   LABEL='NOM_PROFIL',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=NOM_PROFIL;
+AT(14:14,26:37)/UNDERSCORE/EREVERSE,+
+   SOURCE=ACCES.OBJET,+
+   SIZE=12,+
+   LABEL='Objet',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=OBJET;
+AT(14:14,43:43)/UNDERSCORE/PROTECTED/EREVERSE,+
+   SOURCE=ACCES.TYPE_PROFIL,+
+   SIZE=1,+
+   LABEL='Type de profil',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=TYPE_PROFIL;
+*
+VIEW=AUTORITE,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   WHERE=(CATEGORIE='A'),+
+   SOURCE=(IMPLIQUE),+
+   FORM=YES;
+AT(18:18,28:77)/UNDERSCORE/RR,+
+   SOURCE=IMPLIQUE.ABR_BRADOC,+
+   SIZE=100,+
+   OUTPUT_FORMAT=<25/VR4<,+
+   LABEL='Autorité (de BRADOC)',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=ABR_BRADOC;
+AT(12:12,23:62)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.ADR1,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='Adresse d''envoi',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=ADR1;
+AT(10:10,28:67)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.ADR1_SUP,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='Adresse supplémentaire',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=ADR1_SUP;
+AT(13:13,23:62)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.ADR2,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='2éme ligne......',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=ADR2;
+AT(11:11,28:67)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.ADR2_SUP,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='2éme ligne............',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=ADR2_SUP;
+AT(14:14,23:62)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.ADR3,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='3éme ligne......',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=ADR3;
+AT(12:12,28:67)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.ADR3_SUP,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='3éme ligne............',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=ADR3_SUP;
+BORDER=B01001, FDL_INFO='BMARKER=.,DEFAULT=NO', PAGE=1, (1:1,1:80)/INTENSITY,+
+ (1:20,1:1)/INTENSITY, (1:20,80:80)/INTENSITY, (3:3,1:80)/INTENSITY,+
+ (3:5,66:66)/INTENSITY, (5:5,66:80)/INTENSITY, (11:11,1:80)/INTENSITY,+
+ (16:16,1:80)/INTENSITY, (20:20,1:80)/INTENSITY;
+BORDER=B02001, FDL_INFO='BMARKER=.,DEFAULT=NO', PAGE=2, (1:1,1:80)/INTENSITY,+
+ (1:19,1:1)/INTENSITY, (1:19,80:80)/INTENSITY, (3:3,1:80)/INTENSITY,+
+ (8:8,1:80)/INTENSITY, (14:14,1:80)/INTENSITY, (19:19,1:80)/INTENSITY;
+AT(15:15,73:74)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.CANTON,+
+   SIZE=2,+
+   OUTPUT_FORMAT=<2<,+
+   LABEL='Canton',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=CANTON;
+AT(13:13,77:78)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.CANTON_SUP,+
+   SIZE=2,+
+   OUTPUT_FORMAT=<2<,+
+   LABEL='Canton (sup)',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=CANTON_SUP;
+AT(5:5,56:56)/UNDERSCORE/PROTECTED,+
+   SOURCE=IMPLIQUE.CATEGORIE,+
+   SIZE=1,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Catégorie',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   DEFAULT='A',+
+   NAME=CATEGORIE;
+AT(7:7,38:42)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.CATEGORIE_TFA,+
+   SIZE=5,+
+   OUTPUT_FORMAT=<5<,+
+   LABEL='Catégorie (stat. TFA)',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=CATEGORIE_TFA;
+AT(4:4,73:78)/UNDERSCORE/REVERSE/PROTECTED,+
+   SOURCE=IMPLIQUE.CLE_IMPLIQUE,+
+   SIZE=6,+
+   OUTPUT_FORMAT=>6>,+
+   LABEL='Numéro d''un impliqué',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=CLE_IMPLIQUE;
+AT(18:18,20:20)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.CT,+
+   SIZE=1,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='CT',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=CT;
+AT(16:16,20:30)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.DAT_CREATION,+
+   SIZE=11,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date création',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=DAT_CREATION;
+AT(16:16,63:73)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.DAT_MODIFICATION,+
+   SIZE=11,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date modification',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=DAT_MODIFICATION;
+AT(6:6,56:57)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.GENRE,+
+   SIZE=2,+
+   OUTPUT_FORMAT=<2<,+
+   LABEL='Genre',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=GENRE;
+AT(2:2,18:59)/INTENSITY/UNDERSCORE/PROTECTED/FL,+
+   PUT('Adresses et informations sur les autorités'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01001;
+AT(4:4,68:71)/PROTECTED/FL,+
+   PUT('Né :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01002;
+AT(5:5,3:54)/PROTECTED/FL,+
+   PUT('Catégorie (P= Personne, J= Juridique, A= Autorité) :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01003;
+AT(6:6,31:54)/PROTECTED/FL,+
+   PUT('Genre (M,F,N,MP,FP,NP) :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01004;
+AT(8:8,3:12)/PROTECTED/FL,+
+   PUT('Nom      :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01005;
+AT(10:10,3:12)/PROTECTED/FL,+
+   PUT('Nom court:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01006;
+AT(12:12,3:21)/PROTECTED/FL,+
+   PUT('Adresse d''envoi   :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01007;
+AT(13:13,21:21)/PROTECTED/FL,+
+   PUT(':'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01008;
+AT(14:14,21:21)/PROTECTED/FL,+
+   PUT(':'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01009;
+AT(15:15,3:21)/PROTECTED/FL,+
+   PUT('NPA et localité   :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01010;
+AT(15:15,64:71)/PROTECTED/FL,+
+   PUT('Canton :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01011;
+AT(18:18,3:26)/PROTECTED/FL,+
+   PUT('Autorité (Abrév BRADOC):'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01012;
+AT(19:19,3:16)/PROTECTED/FL,+
+   PUT('Remarque     :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01013;
+AT(2:2,18:59)/INTENSITY/UNDERSCORE/PROTECTED/FL,+
+   PUT('Adresses et informations sur les autorités'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02001;
+AT(2:2,61:67)/PROTECTED/FL,+
+   PUT('(suite)'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02002;
+AT(5:5,3:16)/PROTECTED/FL,+
+   PUT('Né Téléphone :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02003;
+AT(6:6,3:16)/PROTECTED/FL,+
+   PUT('Né FAX       :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02004;
+AT(7:7,3:36)/PROTECTED/FL,+
+   PUT('Catégorie (pour statistique TFA) :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02005;
+AT(10:10,3:26)/PROTECTED/FL,+
+   PUT('Adresse supplémentaire :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02006;
+AT(11:11,3:26)/PROTECTED/FL,+
+   PUT('(domicile é l''étranger,:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02007;
+AT(12:12,3:26)/PROTECTED/FL,+
+   PUT('autre adresse)         :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02008;
+AT(13:13,3:26)/PROTECTED/FL,+
+   PUT('NPA et localité        :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02009;
+AT(13:13,68:75)/PROTECTED/FL,+
+   PUT('Canton :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02010;
+AT(16:16,3:18)/PROTECTED/FL,+
+   PUT('Date création  :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02011;
+AT(16:16,43:61)/PROTECTED/FL,+
+   PUT('Date modification :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02012;
+AT(17:17,3:18)/PROTECTED/FL,+
+   PUT('Dernier usager :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02013;
+AT(18:18,3:18)/PROTECTED/FL,+
+   PUT('Code transfert :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02014;
+AT(15:15,29:58)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.LOC,+
+   SIZE=30,+
+   OUTPUT_FORMAT=<15/VR2<,+
+   LABEL='Nom de localité',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=LOC;
+AT(13:13,34:63)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.LOC_SUP,+
+   SIZE=30,+
+   OUTPUT_FORMAT=<15/VR2<,+
+   LABEL='Nom de localité (sup)',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=LOC_SUP;
+AT(8:9,14:78)/UNDERSCORE/CURSOR/RR,+
+   SOURCE=IMPLIQUE.NOM,+
+   SIZE=120,+
+   OUTPUT_FORMAT=<60/VR3<,+
+   LABEL='Nom d''un impliqué',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=NOM;
+AT(10:10,14:33)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.NOM_COURT,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Nom court d''un impliqué',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=NOM_COURT;
+AT(15:15,23:26)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.NPA,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='NPA',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   DEFAULT='9999',+
+   NAME=NPA;
+AT(13:13,28:31)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.NPA_SUP,+
+   SIZE=10,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='NPA',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=NPA_SUP;
+AT(6:6,18:37)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.NUM_FAX,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<11/VR2<,+
+   LABEL='Né FAX',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=NUM_FAX;
+AT(5:5,18:37)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.NUM_TEL,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<11/VR2<,+
+   LABEL='Né Téléphone',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=NUM_TEL;
+AT(19:19,18:77)/UNDERSCORE/RR,+
+   SOURCE=IMPLIQUE.REM_IMP,+
+   SIZE=150,+
+   OUTPUT_FORMAT=<60/VR3<,+
+   LABEL='Remarque sur l''impliqué',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=REM_IMP;
+*
+VIEW=COLLABORATEUR,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   FDL_REG='1(1:29,1:80),2(30:30,1:80)',+
+   SOURCE=(COLLABORATEUR),+
+   FORM=YES;
+AT(5:5,59:61)/UNDERSCORE/EREVERSE,+
+   SOURCE=COLLABORATEUR.ABREVIATION,+
+   SIZE=3,+
+   OUTPUT_FORMAT=<3<,+
+   LABEL='Abréviation',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=ABREVIATION;
+AT(13:13,21:60)/UNDERSCORE/EREVERSE,+
+   SOURCE=COLLABORATEUR.ADR1,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='Adresse d''envoi',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=ADR1;
+AT(14:14,21:60)/UNDERSCORE/EREVERSE,+
+   SOURCE=COLLABORATEUR.ADR2,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='2éme ligne......',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=ADR2;
+AT(15:15,21:60)/UNDERSCORE/EREVERSE,+
+   SOURCE=COLLABORATEUR.ADR3,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='3éme ligne......',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=ADR3;
+AT(6:6,59:61)/UNDERSCORE/EREVERSE,+
+   SOURCE=COLLABORATEUR.ANCIENNETE,+
+   SIZE=3,+
+   OUTPUT_FORMAT=<3<,+
+   LABEL='Ancienneté',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=ANCIENNETE;
+AT(28:28,41:41)/UNDERSCORE/EREVERSE,+
+   SOURCE=COLLABORATEUR.ANCIEN_COLLAB,+
+   SIZE=1,+
+   LABEL='Ancien Collab.',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=ANCIEN_COLLAB;
+BORDER=B01001, FDL_INFO='BMARKER=.,DEFAULT=NO', PAGE=1, REGION=1,+
+ (1:1,1:80)/INTENSITY, (1:29,1:1)/INTENSITY, (1:3,76:76)/INTENSITY,+
+ (1:29,80:80)/INTENSITY, (3:3,1:80)/INTENSITY, (6:6,1:49)/INTENSITY,+
+ (6:29,48:48)/INTENSITY, (6:6,56:80)/INTENSITY, (29:29,1:80)/INTENSITY;
+BORDER=B02001, FDL_INFO='BMARKER=.,DEFAULT=NO', PAGE=2, REGION=1,+
+ (1:1,1:80)/INTENSITY, (1:19,1:1)/INTENSITY, (1:3,76:76)/INTENSITY,+
+ (1:19,80:80)/INTENSITY, (3:3,1:80)/INTENSITY, (8:8,1:80)/INTENSITY,+
+ (12:12,1:80)/INTENSITY, (17:17,1:80)/INTENSITY, (19:19,1:80)/INTENSITY;
+AT(2:2,50:73)/UNDERSCORE/REVERSE/PROTECTED/EREVERSE,+
+   SOURCE=COLLABORATEUR.CLE_COLLAB,+
+   SIZE=24,+
+   OUTPUT_FORMAT=<24<,+
+   LABEL='Clé collaborateur',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=CLE_COLLAB;
+AT(5:5,32:43)/UNDERSCORE/EREVERSE,+
+   SOURCE=COLLABORATEUR.COMPTE_VMS,+
+   SIZE=12,+
+   OUTPUT_FORMAT=<12<,+
+   LABEL='COMPTE_VMS',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=COMPTE_VMS;
+AT(18:18,31:40)/UNDERSCORE/PROTECTED/EREVERSE,+
+   SOURCE=COLLABORATEUR.DAT_CREATION,+
+   SIZE=10,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date création',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=DAT_CREATION;
+AT(8:27,16:26)/UNDERSCORE/EREVERSE/SEC,+
+   SOURCE=COLLABORATEUR.DAT_ENTREE,+
+   SIZE=11,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date d''entrée en fonction',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   REGION=1,+
+   SCROLL_GROUP=1,+
+   NAME=DAT_ENTREE;
+AT(18:18,42:51)/UNDERSCORE/PROTECTED/EREVERSE,+
+   SOURCE=COLLABORATEUR.DAT_MODIFICATION,+
+   SIZE=10,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date modification',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=DAT_MODIFICATION;
+AT(8:27,31:41)/UNDERSCORE/EREVERSE/SEC,+
+   SOURCE=COLLABORATEUR.DAT_SORTIE,+
+   SIZE=11,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date de fin de la fonction',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   REGION=1,+
+   SCROLL_GROUP=1,+
+   NAME=DAT_SORTIE;
+AT(8:27,3:7)/UNDERSCORE/EREVERSE/SEC,+
+   SOURCE=COLLABORATEUR.DIVISION,+
+   SIZE=5,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Division/Service',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   REGION=1,+
+   SCROLL_GROUP=1,+
+   NAME=DIVISION;
+AT(10:10,34:79)/UNDERSCORE/EREVERSE,+
+   SOURCE=COLLABORATEUR.EMAIL,+
+   SIZE=46,+
+   OUTPUT_FORMAT=<30/VR2<,+
+   LABEL='Email',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=EMAIL;
+AT(8:27,9:11)/UNDERSCORE/EREVERSE/SEC,+
+   SOURCE=COLLABORATEUR.FONCTION,+
+   SIZE=3,+
+   OUTPUT_FORMAT=<3/SER<,+
+   LABEL='Fonctions',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   REGION=1,+
+   SCROLL_GROUP=1,+
+   NAME=FONCTION;
+AT(11:11,62:76)/UNDERSCORE/EREVERSE,+
+   SOURCE=COLLABORATEUR.IMPRIME_GRAPHIQUE,+
+   SIZE=15,+
+   OUTPUT_FORMAT=<15<,+
+   LABEL='Nom de l''imprimante (graphique)',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=IMPRIME_GRAPHIQUE;
+AT(11:11,21:35)/UNDERSCORE/EREVERSE,+
+   SOURCE=COLLABORATEUR.IMPRIME_TEXTE,+
+   SIZE=15,+
+   OUTPUT_FORMAT=<15<,+
+   LABEL='Nom de l''imprimante (texte)',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=IMPRIME_TEXTE;
+AT(8:27,65:68)/UNDERSCORE/EREVERSE/SEC,+
+   SOURCE=COLLABORATEUR.INSTRUC_1,+
+   SIZE=4,+
+   OUTPUT_FORMAT=>4>,+
+   LABEL='instruction é 1',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   REGION=1,+
+   SCROLL_GROUP=1,+
+   NAME=INSTRUC_1;
+AT(8:27,70:73)/UNDERSCORE/EREVERSE/SEC,+
+   SOURCE=COLLABORATEUR.INSTRUC_3,+
+   SIZE=4,+
+   OUTPUT_FORMAT=>4>,+
+   LABEL='instruction é 3',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   REGION=1,+
+   SCROLL_GROUP=1,+
+   NAME=INSTRUC_3;
+AT(8:27,75:78)/UNDERSCORE/EREVERSE/SEC,+
+   SOURCE=COLLABORATEUR.INSTRUC_5,+
+   SIZE=4,+
+   OUTPUT_FORMAT=>4>,+
+   LABEL='instruction é 5',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   REGION=1,+
+   SCROLL_GROUP=1,+
+   NAME=INSTRUC_5;
+AT(2:2,32:45)/PROTECTED/FL,+
+   PUT('Collaborateurs'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01001;
+AT(2:2,77:79)/PROTECTED/FL,+
+   PUT('1/2'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01002;
+AT(4:4,3:30)/PROTECTED/FL,+
+   PUT('Nom unique du collaborateur:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01003;
+AT(4:4,65:74)/PROTECTED/FL,+
+   PUT('Tribunal :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01004;
+AT(5:5,3:30)/PROTECTED/FL,+
+   PUT('Nom du compte VMS          :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01005;
+AT(6:6,50:55)/PROTECTED/FL,+
+   PUT('Charge'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01006;
+AT(7:7,3:47)/PROTECTED/FL,+
+   PUT('Div:  Fonctions & dates entrée/sortie:  Taux:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01007;
+AT(7:7,50:78)/PROTECTED/FL,+
+   PUT('Pres Par3 Par5 Ins1 Ins3 Ins5'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01008;
+AT(8:8,13:14)/PROTECTED/FL,+
+   PUT('du'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01009;
+AT(8:8,28:29)/PROTECTED/FL,+
+   PUT('au'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01010;
+AT(9:9,13:14)/PROTECTED/FL,+
+   PUT('du'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01011;
+AT(9:9,28:29)/PROTECTED/FL,+
+   PUT('au'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01012;
+AT(10:10,13:14)/PROTECTED/FL,+
+   PUT('du'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01013;
+AT(10:10,28:29)/PROTECTED/FL,+
+   PUT('au'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01014;
+AT(11:11,13:14)/PROTECTED/FL,+
+   PUT('du'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01015;
+AT(11:11,28:29)/PROTECTED/FL,+
+   PUT('au'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01016;
+AT(12:12,13:14)/PROTECTED/FL,+
+   PUT('du'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01017;
+AT(12:12,28:29)/PROTECTED/FL,+
+   PUT('au'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01018;
+AT(13:13,13:14)/PROTECTED/FL,+
+   PUT('du'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01019;
+AT(13:13,28:29)/PROTECTED/FL,+
+   PUT('au'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01020;
+AT(14:14,13:14)/PROTECTED/FL,+
+   PUT('du'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01021;
+AT(14:14,28:29)/PROTECTED/FL,+
+   PUT('au'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01022;
+AT(15:15,13:14)/PROTECTED/FL,+
+   PUT('du'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01023;
+AT(15:15,28:29)/PROTECTED/FL,+
+   PUT('au'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01024;
+AT(16:16,13:14)/PROTECTED/FL,+
+   PUT('du'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01025;
+AT(16:16,28:29)/PROTECTED/FL,+
+   PUT('au'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01026;
+AT(17:17,13:14)/PROTECTED/FL,+
+   PUT('du'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01027;
+AT(17:17,28:29)/PROTECTED/FL,+
+   PUT('au'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01028;
+AT(18:18,13:14)/PROTECTED/FL,+
+   PUT('du'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01029;
+AT(18:18,28:29)/PROTECTED/FL,+
+   PUT('au'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01030;
+AT(19:19,13:14)/PROTECTED/FL,+
+   PUT('du'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01031;
+AT(19:19,28:29)/PROTECTED/FL,+
+   PUT('au'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01032;
+AT(20:20,13:14)/PROTECTED/FL,+
+   PUT('du'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01033;
+AT(20:20,28:29)/PROTECTED/FL,+
+   PUT('au'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01034;
+AT(21:21,13:14)/PROTECTED/FL,+
+   PUT('du'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01035;
+AT(21:21,28:29)/PROTECTED/FL,+
+   PUT('au'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01036;
+AT(22:22,13:14)/PROTECTED/FL,+
+   PUT('du'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01037;
+AT(22:22,28:29)/PROTECTED/FL,+
+   PUT('au'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01038;
+AT(23:23,13:14)/PROTECTED/FL,+
+   PUT('du'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01039;
+AT(23:23,28:29)/PROTECTED/FL,+
+   PUT('au'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01040;
+AT(24:24,13:14)/PROTECTED/FL,+
+   PUT('du'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01041;
+AT(24:24,28:29)/PROTECTED/FL,+
+   PUT('au'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01042;
+AT(25:25,13:14)/PROTECTED/FL,+
+   PUT('du'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01043;
+AT(25:25,28:29)/PROTECTED/FL,+
+   PUT('au'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01044;
+AT(26:26,13:14)/PROTECTED/FL,+
+   PUT('du'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01045;
+AT(26:26,28:29)/PROTECTED/FL,+
+   PUT('au'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01046;
+AT(27:27,13:14)/PROTECTED/FL,+
+   PUT('du'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01047;
+AT(27:27,28:29)/PROTECTED/FL,+
+   PUT('au'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01048;
+AT(28:28,3:39)/PROTECTED/FL,+
+   PUT('Ancien collaborateur (0=Non; 1=Oui) :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01049;
+AT(28:28,63:78)/PROTECTED/FL,+
+   PUT('(Aide avec AIDE)'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=L01050;
+AT(30:30,51:55)/PROTECTED/FL,+
+   PUT('Mode:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   REGION=2,+
+   NAME=L01051;
+AT(30:30,58:78)/INTENSITY/PROTECTED/MODE/FL,+
+   PUT(' '),+
+   FDL_INFO='MARKER=#,DEFAULT=NO',+
+   PAGE=1,+
+   REGION=2,+
+   NAME=L01052;
+AT(2:2,3:48)/PROTECTED/FL,+
+   PUT('Collaborateurs                            Clé:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=L02001;
+AT(2:2,77:79)/PROTECTED/FL,+
+   PUT('2/2'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=L02002;
+AT(4:4,3:19)/PROTECTED/FL,+
+   PUT('Nom de famille  :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=L02003;
+AT(4:4,52:78)/PROTECTED/FL,+
+   PUT('(y compris nom jeune fille)'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=L02004;
+AT(5:5,3:19)/PROTECTED/FL,+
+   PUT('Prénom          :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=L02005;
+AT(5:5,46:57)/PROTECTED/FL,+
+   PUT('Abréviation:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=L02006;
+AT(5:5,68:72)/PROTECTED/FL,+
+   PUT('Sexe:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=L02007;
+AT(6:6,3:19)/PROTECTED/FL,+
+   PUT('Langue rédaction:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=L02008;
+AT(6:6,36:57)/PROTECTED/FL,+
+   PUT('Ancienneté/Préséance :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=L02009;
+AT(7:7,3:19)/PROTECTED/FL,+
+   PUT('Profil accès    :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=L02010;
+AT(7:7,60:65)/PROTECTED/FL,+
+   PUT('Stat :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=L02011;
+AT(9:9,3:10)/PROTECTED/FL,+
+   PUT('Matiére:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=L02012;
+AT(10:10,3:19)/PROTECTED/FL,+
+   PUT('Reéoit les avis :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=L02013;
+AT(10:10,24:32)/PROTECTED/FL,+
+   PUT('Courriel:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=L02014;
+AT(11:11,3:19)/PROTECTED/FL,+
+   PUT('Imprimante texte:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=L02015;
+AT(11:11,45:60)/PROTECTED/FL,+
+   PUT('Imprimante RFID:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=L02016;
+AT(13:13,3:19)/PROTECTED/FL,+
+   PUT('Adresse d''envoi :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=L02017;
+AT(16:16,3:19)/PROTECTED/FL,+
+   PUT('NPA & Localité  :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=L02018;
+AT(18:18,3:29)/PROTECTED/FL,+
+   PUT('Date création/modification:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=L02019;
+AT(18:18,41:41)/PROTECTED/FL,+
+   PUT('/'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=L02020;
+AT(18:18,54:58)/PROTECTED/FL,+
+   PUT('User:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=L02021;
+AT(6:6,21:25)/UNDERSCORE/EREVERSE/SER,+
+   SOURCE=COLLABORATEUR.LANGUE_REDACTEUR,+
+   SIZE=5,+
+   LABEL='Langue rédacteur',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=LANGUE_REDACTEUR;
+AT(16:16,27:56)/UNDERSCORE/EREVERSE,+
+   SOURCE=COLLABORATEUR.LOC,+
+   SIZE=30,+
+   OUTPUT_FORMAT=<15/VR2<,+
+   LABEL='Nom de localité',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=LOC;
+AT(9:9,11:79)/UNDERSCORE/EREVERSE/SER,+
+   SOURCE=COLLABORATEUR.MATIERE,+
+   SIZE=69,+
+   OUTPUT_FORMAT=<6/SER<,+
+   LABEL='Matiéres',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=MATIERE;
+AT(4:4,21:50)/UNDERSCORE/EREVERSE,+
+   SOURCE=COLLABORATEUR.NOM,+
+   SIZE=30,+
+   OUTPUT_FORMAT=<15/VR2<,+
+   LABEL='Nom de famille',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=NOM;
+AT(4:4,32:51)/UNDERSCORE/EREVERSE,+
+   SOURCE=COLLABORATEUR.NOM_COLLAB,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Nom collaborateur',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=NOM_COLLAB;
+AT(16:16,21:24)/UNDERSCORE/EREVERSE,+
+   SOURCE=COLLABORATEUR.NPA,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='NPA',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=NPA;
+AT(8:27,55:58)/UNDERSCORE/EREVERSE/SEC,+
+   SOURCE=COLLABORATEUR.PARTICIP_3,+
+   SIZE=4,+
+   OUTPUT_FORMAT=>4>,+
+   LABEL='Participation é 3',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   REGION=1,+
+   SCROLL_GROUP=1,+
+   NAME=PARTICIP_3;
+AT(8:27,60:63)/UNDERSCORE/EREVERSE/SEC,+
+   SOURCE=COLLABORATEUR.PARTICIP_5,+
+   SIZE=4,+
+   OUTPUT_FORMAT=>4>,+
+   LABEL='Participation é 5',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   REGION=1,+
+   SCROLL_GROUP=1,+
+   NAME=PARTICIP_5;
+AT(5:5,21:40)/UNDERSCORE/EREVERSE,+
+   SOURCE=COLLABORATEUR.PRENOM,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<15/VR2<,+
+   LABEL='Prénom',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=PRENOM;
+AT(8:27,50:53)/UNDERSCORE/EREVERSE/SEC,+
+   SOURCE=COLLABORATEUR.PRESID,+
+   SIZE=4,+
+   OUTPUT_FORMAT=>4>,+
+   LABEL='Présidence pure',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   REGION=1,+
+   SCROLL_GROUP=1,+
+   NAME=PRESID;
+AT(7:7,21:58)/UNDERSCORE/EREVERSE/SER,+
+   SOURCE=COLLABORATEUR.PROFIL_ACCES,+
+   SIZE=38,+
+   OUTPUT_FORMAT=<20/SER<,+
+   LABEL='Nom profil d''accès',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=PROFIL_ACCES;
+AT(7:7,67:79)/UNDERSCORE/EREVERSE,+
+   SOURCE=COLLABORATEUR.PROFIL_STAT,+
+   SIZE=13,+
+   OUTPUT_FORMAT=<13<,+
+   LABEL='Nom profil statistique',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=PROFIL_STAT;
+AT(10:10,21:21)/UNDERSCORE/EREVERSE,+
+   SOURCE=COLLABORATEUR.RECOIT_EMAIL,+
+   SIZE=1,+
+   LABEL='Reéoit Emails',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=RECOIT_EMAIL;
+AT(5:5,74:74)/UNDERSCORE/EREVERSE,+
+   SOURCE=COLLABORATEUR.SEXE,+
+   SIZE=1,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Sexe',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=SEXE;
+AT(8:27,43:46)/UNDERSCORE/EREVERSE/SEC,+
+   SOURCE=COLLABORATEUR.TAUX,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<3<,+
+   LABEL='Taux d`activité',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   REGION=1,+
+   SCROLL_GROUP=1,+
+   NAME=TAUX;
+AT(4:4,76:78)/UNDERSCORE/EREVERSE,+
+   SOURCE=COLLABORATEUR.TRIBUNAL,+
+   SIZE=3,+
+   OUTPUT_FORMAT=<3<,+
+   LABEL='Tribunal',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   REGION=1,+
+   NAME=TRIBUNAL;
+AT(18:18,60:79)/UNDERSCORE/PROTECTED/EREVERSE,+
+   SOURCE=COLLABORATEUR.USER,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Dernier utilisateur',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   REGION=1,+
+   NAME=USER;
+*
+VIEW=FORMULE,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(FORMULE),+
+   FORM=YES;
+AT(12:12,41:80)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=FORMULE.ADRESSAGE,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<17<,+
+   LABEL='ADR',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=ADRESSAGE;
+AT(12:12,30:33)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=FORMULE.BDP,+
+   SIZE=4,+
+   LABEL='BdP',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=BDP;
+AT(13:13,30:49)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=FORMULE.BRANCHE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Branche',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=BRANCHE;
+AT(19:19,30:49)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=FORMULE.BUREAUTIQUE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1/SER<,+
+   LABEL='Bureautique',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=BUREAUTIQUE;
+AT(10:10,30:49)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=FORMULE.CATEGORIE_IMP,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1/SER<,+
+   LABEL='Catégorie impl.',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=CATEGORIE_IMP;
+AT(11:11,30:49)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=FORMULE.CATEGORIE_TFA,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<5/SER<,+
+   LABEL='Catégorie (stat. TFA)',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=CATEGORIE_TFA;
+AT(5:5,30:49)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=FORMULE.CAT_FORMULE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1/SER<,+
+   LABEL='Cat. formule',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=CAT_FORMULE;
+AT(1:1,30:49)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=FORMULE.CLE_FORMULE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<8<,+
+   LABEL='Clé formule',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=CLE_FORMULE;
+AT(17:17,30:49)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=FORMULE.COPIE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<11<,+
+   LABEL='Copie',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=COPIE;
+AT(6:6,30:49)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=FORMULE.COUR,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Cour',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=COUR;
+AT(18:18,65:80)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=FORMULE.ETAT_DOSSIER,+
+   SIZE=16,+
+   OUTPUT_FORMAT=<1/SER<,+
+   LABEL='Etat dossier',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=ETAT_DOSSIER;
+AT(14:14,30:33)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=FORMULE.ETRANGER,+
+   SIZE=4,+
+   LABEL='Etranger',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=ETRANGER;
+AT(7:7,30:49)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=FORMULE.GENRE_DELAI,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4/SER<,+
+   LABEL='Genre délai',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=GENRE_DELAI;
+AT(5:5,65:80)/U,+
+   SOURCE=FORMULE.GENRE_FORMULE,+
+   SIZE=16,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Genre form.',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=GENRE_FORMULE;
+AT(1:1,2:28)/PROTECTED/FL,+
+   PUT('Clé formule...............='),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01001;
+AT(2:2,2:28)/PROTECTED/FL,+
+   PUT('Tribunal..................='),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01002;
+AT(3:3,2:28)/PROTECTED/FL,+
+   PUT('Né de formule.............='),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01003;
+AT(4:4,2:28)/PROTECTED/FL,+
+   PUT('Langue...................=>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01004;
+AT(5:5,2:28)/PROTECTED/FL,+
+   PUT('Cat. formule.............=>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01005;
+AT(6:6,2:28)/PROTECTED/FL,+
+   PUT('Cour.....................=>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01006;
+AT(7:7,2:28)/PROTECTED/FL,+
+   PUT('Genre délai...............>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01007;
+AT(8:8,2:28)/PROTECTED/FL,+
+   PUT('Moyen de droit............>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01008;
+AT(9:9,2:28)/PROTECTED/FL,+
+   PUT('Réle impl.................>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01009;
+AT(10:10,2:28)/PROTECTED/FL,+
+   PUT('Catégorie impl............>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01010;
+AT(11:11,2:28)/PROTECTED/FL,+
+   PUT('Fonction-s impliqué.......>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01011;
+AT(12:12,2:28)/PROTECTED/FL,+
+   PUT('BdP.......................='),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01012;
+AT(13:13,2:28)/PROTECTED/FL,+
+   PUT('Branche...................>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01013;
+AT(14:14,2:28)/PROTECTED/FL,+
+   PUT('Etranger..................:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01014;
+AT(15:15,2:28)/PROTECTED/FL,+
+   PUT('Mode décision.............>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01015;
+AT(16:16,2:28)/PROTECTED/FL,+
+   PUT('Mode réglement............>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01016;
+AT(17:17,2:28)/PROTECTED/FL,+
+   PUT('Copie.....................>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01017;
+AT(18:18,2:28)/PROTECTED/FL,+
+   PUT('Raison et issue du procés.>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01018;
+AT(19:19,2:28)/PROTECTED/FL,+
+   PUT('Bureautique...............>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01019;
+AT(20:20,2:28)/PROTECTED/FL,+
+   PUT('Provisoire................>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01020;
+AT(21:21,2:28)/PROTECTED/FL,+
+   PUT('Variable..................>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01021;
+AT(5:5,51:63)/P/FL,+
+   PUT('Genre form..:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01022;
+AT(9:9,51:63)/P/FL,+
+   PUT('Sous-réle...>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01023;
+AT(14:14,51:63)/P/FL,+
+   PUT('Mode envoi..:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01024;
+AT(18:18,51:63)/P/FL,+
+   PUT('Etat dossier>'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01025;
+AT(6:6,51:63)/PROTECTED/FL,+
+   PUT('Max. destin.:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01050;
+AT(6:6,68:76)/PROTECTED/FL,+
+   PUT('(Genre=L)'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01051;
+AT(12:12,35:39)/PROTECTED/FL,+
+   PUT('Adr.>'),+
+   PAGE=1,+
+   NAME=L01099;
+AT(4:4,30:49)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=FORMULE.LANGUE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1/SER<,+
+   LABEL='Langue',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=LANGUE;
+AT(6:6,65:66)/UNDERSCORE,+
+   SOURCE=FORMULE.DESTIN_MAX,+
+   SIZE=2,+
+   OUTPUT_FORMAT=>2>,+
+   LABEL='Max. destin.',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=MAX_DESTIN;
+AT(15:15,30:49)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=FORMULE.MODE_DECISION,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<2<,+
+   LABEL='Mode décision',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=MODE_DECISION;
+AT(14:14,65:80)/U,+
+   SOURCE=FORMULE.MODE_ENVOI,+
+   SIZE=16,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Mode envoi',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=MODE_ENVOI;
+AT(16:16,30:49)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=FORMULE.MODE_REGLEMENT,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Mode réglement',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=MODE_REGLEMENT;
+AT(8:8,30:49)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=FORMULE.MOYEN_DE_DROIT,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<6/SER<,+
+   LABEL='Moyen de droit',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=MOYEN_DE_DROIT;
+AT(3:3,30:49)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=FORMULE.NUM_FORMULE,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Né de formule',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=NUM_FORMULE;
+AT(20:20,30:30)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=FORMULE.PROVISOIRE,+
+   SIZE=1,+
+   OUTPUT_FORMAT=<1/SER<,+
+   LABEL='Provisoire',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=PROVISOIRE;
+AT(9:9,30:49)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=FORMULE.ROLE_IMP,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<1/SER<,+
+   LABEL='Réle impl.',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=ROLE_IMP;
+AT(18:18,30:49)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=FORMULE.R_ISSUE_PROCES,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Raison et issue du procés',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=R_ISSUE_PROCES;
+AT(9:9,65:80)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=FORMULE.SOUS_ROLE,+
+   SIZE=16,+
+   OUTPUT_FORMAT=<3/SER<,+
+   LABEL='Sous-réle',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=SOUS_ROLE;
+AT(2:2,30:49)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=FORMULE.TRIBUNAL,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<3<,+
+   LABEL='Tribunal',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=TRIBUNAL;
+AT(22:31,2:80)/INTENSITY/UNDERSCORE/EREVERSE/CURSOR/SER/RR,+
+   SOURCE=FORMULE.VARIABLE,+
+   SIZE=50,+
+   OUTPUT_FORMAT=<15<,+
+   LABEL='Variable',+
+   FDL_INFO='MARKER=-,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=VARIABLE;
+*
+VIEW=IMPLIQUE,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(IMPLIQUE),+
+   FORM=YES;
+AT(19:19,28:77)/UNDERSCORE/RR,+
+   SOURCE=IMPLIQUE.ABR_BRADOC,+
+   SIZE=100,+
+   OUTPUT_FORMAT=<25/VR4<,+
+   LABEL='Autorité (de BRADOC)',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=ABR_BRADOC;
+AT(13:13,23:62)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.ADR1,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='Adresse d''envoi',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=ADR1;
+AT(13:13,28:67)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.ADR1_SUP,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='Adresse supplémentaire',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=ADR1_SUP;
+AT(14:14,23:62)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.ADR2,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='2éme ligne......',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=ADR2;
+AT(14:14,28:67)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.ADR2_SUP,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='2éme ligne............',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=ADR2_SUP;
+AT(15:15,23:62)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.ADR3,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='3éme ligne......',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=ADR3;
+AT(15:15,28:67)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.ADR3_SUP,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='3éme ligne............',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=ADR3_SUP;
+AT(7:7,24:27)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.AN_NAIS,+
+   SIZE=10,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='Année de naissance',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=AN_NAIS;
+AT(10:10,49:78)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.AUTRE_NOM,+
+   SIZE=50,+
+   OUTPUT_FORMAT=<30/VR5<,+
+   LABEL='Autre nom',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=AUTRE_NOM;
+BORDER=B01001, FDL_INFO='BMARKER=.,DEFAULT=NO', PAGE=1, (1:1,1:80)/INTENSITY,+
+ (1:22,1:1)/INTENSITY, (1:22,80:80)/INTENSITY, (3:3,1:80)/INTENSITY,+
+ (3:5,66:66)/INTENSITY, (5:5,66:80)/INTENSITY, (11:11,1:80)/INTENSITY,+
+ (17:17,1:80)/INTENSITY, (22:22,1:80)/INTENSITY;
+BORDER=B02001, FDL_INFO='BMARKER=.,DEFAULT=NO', PAGE=2, (1:1,1:80)/INTENSITY,+
+ (1:21,1:1)/INTENSITY, (1:21,80:80)/INTENSITY, (3:3,1:80)/INTENSITY,+
+ (11:11,1:80)/INTENSITY, (17:17,1:80)/INTENSITY, (21:21,1:80)/INTENSITY;
+AT(20:20,51:51)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.CADUC,+
+   SIZE=1,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Caduc',+
+   PAGE=1,+
+   NAME=CADUC;
+AT(16:16,73:74)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.CANTON,+
+   SIZE=2,+
+   OUTPUT_FORMAT=<2<,+
+   LABEL='Canton',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=CANTON;
+AT(16:16,77:78)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.CANTON_SUP,+
+   SIZE=2,+
+   OUTPUT_FORMAT=<2<,+
+   LABEL='Canton (sup)',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=CANTON_SUP;
+AT(5:5,56:56)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.CATEGORIE,+
+   SIZE=1,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Catégorie',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   DEFAULT='P',+
+   NAME=CATEGORIE;
+AT(9:9,39:43)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.CATEGORIE_TFA,+
+   SIZE=5,+
+   OUTPUT_FORMAT=<5<,+
+   LABEL='Catégorie (stat. TFA)',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=CATEGORIE_TFA;
+AT(4:4,73:78)/UNDERSCORE/REVERSE/PROTECTED,+
+   SOURCE=IMPLIQUE.CLE_IMPLIQUE,+
+   SIZE=6,+
+   OUTPUT_FORMAT=>6>,+
+   LABEL='Numéro d''un impliqué',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=CLE_IMPLIQUE;
+AT(20:20,63:63)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.CT,+
+   SIZE=1,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='CT',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=CT;
+AT(19:19,20:30)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.DAT_CREATION,+
+   SIZE=11,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date création',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=DAT_CREATION;
+AT(19:19,63:73)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.DAT_MODIFICATION,+
+   SIZE=11,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date modification',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=DAT_MODIFICATION;
+AT(6:6,56:57)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.GENRE,+
+   SIZE=2,+
+   OUTPUT_FORMAT=<2<,+
+   LABEL='Genre',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=GENRE;
+AT(20:20,75:75)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.INSOLVABLE,+
+   SIZE=4,+
+   LABEL='Insolvable',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=INSOLVABLE;
+AT(2:2,18:59)/INTENSITY/UNDERSCORE/PROTECTED/FL,+
+   PUT('Adresses et informations sur les impliqués'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01001;
+AT(4:4,68:71)/PROTECTED/FL,+
+   PUT('Né :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01002;
+AT(5:5,3:54)/PROTECTED/FL,+
+   PUT('Catégorie (P: Personne, J: Juridique, A: Autorité) :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01003;
+AT(6:6,3:12)/PROTECTED/FL,+
+   PUT('Titre    :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01004;
+AT(6:6,48:54)/PROTECTED/FL,+
+   PUT('Genre :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01005;
+AT(7:7,3:12)/PROTECTED/FL,+
+   PUT('Prénom   :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01006;
+AT(8:8,3:12)/PROTECTED/FL,+
+   PUT('Nom      :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01007;
+AT(10:10,3:12)/PROTECTED/FL,+
+   PUT('Nom court:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01008;
+AT(10:10,38:47)/PROTECTED/FL,+
+   PUT('Autre nom:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01009;
+AT(13:13,3:21)/PROTECTED/FL,+
+   PUT('Adresse d''envoi   :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01010;
+AT(14:14,3:21)/PROTECTED/FL,+
+   PUT('(domicile élu)    :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01011;
+AT(15:15,21:21)/PROTECTED/FL,+
+   PUT(':'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01012;
+AT(16:16,3:21)/PROTECTED/FL,+
+   PUT('NPA et localité   :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01013;
+AT(16:16,64:71)/PROTECTED/FL,+
+   PUT('Canton :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01014;
+AT(19:19,3:26)/PROTECTED/FL,+
+   PUT('Autorité (Abrév BRADOC):'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01015;
+AT(20:20,3:14)/PROTECTED/FL,+
+   PUT('Profession :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01016;
+AT(20:20,62:73)/PROTECTED/FL,+
+   PUT('Insolvable :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01017;
+AT(21:21,3:14)/PROTECTED/FL,+
+   PUT('Remarque   :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01018;
+AT(20:20,43:49)/PROTECTED/FL,+
+   PUT('Caduc :'),+
+   PAGE=1,+
+   NAME=L01019;
+AT(2:2,18:59)/INTENSITY/UNDERSCORE/PROTECTED/FL,+
+   PUT('Adresses et informations sur les impliqués'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02001;
+AT(2:2,61:67)/PROTECTED/FL,+
+   PUT('(suite)'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02002;
+AT(5:5,3:26)/PROTECTED/FL,+
+   PUT('Informations pour l''EVG:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02003;
+AT(7:7,3:22)/PROTECTED/FL,+
+   PUT('Année de naissance :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02004;
+AT(7:7,46:53)/PROTECTED/FL,+
+   PUT('Né AVS :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02005;
+AT(8:8,3:22)/PROTECTED/FL,+
+   PUT('Né Téléphone       :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02006;
+AT(8:8,46:53)/PROTECTED/FL,+
+   PUT('Né FAX :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02007;
+AT(9:9,3:37)/PROTECTED/FL,+
+   PUT('Catégorie (pour statistique TFA)  :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02008;
+AT(13:13,3:26)/PROTECTED/FL,+
+   PUT('Adresse supplémentaire :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02009;
+AT(14:14,3:26)/PROTECTED/FL,+
+   PUT('(domicile é l''étranger,:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02010;
+AT(15:15,3:26)/PROTECTED/FL,+
+   PUT('autre adresse)         :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02011;
+AT(16:16,3:26)/PROTECTED/FL,+
+   PUT('NPA et localité        :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02012;
+AT(16:16,68:75)/PROTECTED/FL,+
+   PUT('Canton :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02013;
+AT(19:19,3:18)/PROTECTED/FL,+
+   PUT('Date création  :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02014;
+AT(19:19,43:61)/PROTECTED/FL,+
+   PUT('Date modification :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02015;
+AT(20:20,3:18)/PROTECTED/FL,+
+   PUT('Dernier usager :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02016;
+AT(20:20,43:61)/PROTECTED/FL,+
+   PUT('Code transfert    :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02017;
+AT(16:16,29:58)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.LOC,+
+   SIZE=30,+
+   OUTPUT_FORMAT=<15/VR2<,+
+   LABEL='Nom de localité',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=LOC;
+AT(16:16,34:63)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.LOC_SUP,+
+   SIZE=30,+
+   OUTPUT_FORMAT=<15/VR2<,+
+   LABEL='Nom de localité (sup)',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=LOC_SUP;
+AT(8:9,14:78)/UNDERSCORE/RR,+
+   SOURCE=IMPLIQUE.NOM,+
+   SIZE=120,+
+   OUTPUT_FORMAT=<60/VR3<,+
+   LABEL='Nom d''un impliqué',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=NOM;
+AT(10:10,14:33)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.NOM_COURT,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Nom court d''un impliqué',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=NOM_COURT;
+AT(16:16,23:26)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.NPA,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='NPA',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   DEFAULT='9999',+
+   NAME=NPA;
+AT(16:16,28:31)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.NPA_SUP,+
+   SIZE=10,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='NPA',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=NPA_SUP;
+AT(7:7,55:68)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.NUM_AVS,+
+   SIZE=14,+
+   OUTPUT_FORMAT=<10/VR2<,+
+   LABEL='Né AVS',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=NUM_AVS;
+AT(8:8,55:74)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.NUM_FAX,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<11/VR2<,+
+   LABEL='Né FAX',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=NUM_FAX;
+AT(8:8,24:43)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.NUM_TEL,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<11/VR2<,+
+   LABEL='Né Téléphone',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=NUM_TEL;
+AT(7:7,14:43)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.PRENOM,+
+   SIZE=30,+
+   OUTPUT_FORMAT=<15/VR2<,+
+   LABEL='Prénom',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=PRENOM;
+AT(20:20,16:40)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.PROFESSION,+
+   SIZE=25,+
+   OUTPUT_FORMAT=<10/VR3<,+
+   LABEL='Profession',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=PROFESSION;
+AT(21:21,16:75)/UNDERSCORE/RR,+
+   SOURCE=IMPLIQUE.REM_IMP,+
+   SIZE=150,+
+   OUTPUT_FORMAT=<60/VR3<,+
+   LABEL='Remarque sur l''impliqué',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=REM_IMP;
+AT(6:6,14:38)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.TITRE,+
+   SIZE=25,+
+   OUTPUT_FORMAT=<10/VR3<,+
+   LABEL='Titre',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=TITRE;
+*
+VIEW=JURIDIQUE,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   RESTRICT=ALWAYS,+
+   WHERE=(CATEGORIE='J'),+
+   SOURCE=(IMPLIQUE),+
+   FORM=YES;
+AT(12:12,23:62)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.ADR1,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='Adresse d''envoi',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=ADR1;
+AT(10:10,28:67)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.ADR1_SUP,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='Adresse supplémentaire',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=ADR1_SUP;
+AT(13:13,23:62)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.ADR2,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='2éme ligne......',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=ADR2;
+AT(11:11,28:67)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.ADR2_SUP,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='2éme ligne............',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=ADR2_SUP;
+AT(14:14,23:62)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.ADR3,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='3éme ligne......',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=ADR3;
+AT(12:12,28:67)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.ADR3_SUP,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='3éme ligne............',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=ADR3_SUP;
+BORDER=B01001, FDL_INFO='BMARKER=.,DEFAULT=NO', PAGE=1, (1:1,1:80)/INTENSITY,+
+ (1:20,1:1)/INTENSITY, (1:20,80:80)/INTENSITY, (3:3,1:80)/INTENSITY,+
+ (3:5,66:66)/INTENSITY, (5:5,66:80)/INTENSITY, (11:11,1:80)/INTENSITY,+
+ (16:16,1:80)/INTENSITY, (20:20,1:80)/INTENSITY;
+BORDER=B02001, FDL_INFO='BMARKER=.,DEFAULT=NO', PAGE=2, (1:1,1:80)/INTENSITY,+
+ (1:19,1:1)/INTENSITY, (1:19,80:80)/INTENSITY, (3:3,1:80)/INTENSITY,+
+ (8:8,1:80)/INTENSITY, (14:14,1:80)/INTENSITY, (19:19,1:80)/INTENSITY;
+AT(15:15,73:74)/UNDERSCORE/PROTECTED,+
+   SOURCE=IMPLIQUE.CANTON,+
+   SIZE=2,+
+   OUTPUT_FORMAT=<2<,+
+   LABEL='Canton',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   DEFAULT='--',+
+   NAME=CANTON;
+AT(13:13,77:78)/UNDERSCORE/PROTECTED,+
+   SOURCE=IMPLIQUE.CANTON_SUP,+
+   SIZE=2,+
+   OUTPUT_FORMAT=<2<,+
+   LABEL='Canton (sup)',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=CANTON_SUP;
+AT(5:5,56:56)/UNDERSCORE/PROTECTED,+
+   SOURCE=IMPLIQUE.CATEGORIE,+
+   SIZE=1,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Catégorie',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   DEFAULT='J',+
+   NAME=CATEGORIE;
+AT(18:18,38:42)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.CATEGORIE_TFA,+
+   SIZE=5,+
+   OUTPUT_FORMAT=<5<,+
+   LABEL='Catégorie (stat. TFA)',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=CATEGORIE_TFA;
+AT(4:4,73:78)/UNDERSCORE/REVERSE/PROTECTED,+
+   SOURCE=IMPLIQUE.CLE_IMPLIQUE,+
+   SIZE=10,+
+   OUTPUT_FORMAT=>10>,+
+   LABEL='Numéro d''un impliqué',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=CLE_IMPLIQUE;
+AT(18:18,20:20)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.CT,+
+   SIZE=1,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='CT',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=CT;
+AT(16:16,20:30)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.DAT_CREATION,+
+   SIZE=11,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date création',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=DAT_CREATION;
+AT(16:16,63:73)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.DAT_MODIFICATION,+
+   SIZE=11,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date modification',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=DAT_MODIFICATION;
+AT(6:6,56:57)/UNDERSCORE/CURSOR,+
+   SOURCE=IMPLIQUE.GENRE,+
+   SIZE=2,+
+   OUTPUT_FORMAT=<2<,+
+   LABEL='Genre',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=GENRE;
+AT(2:2,12:66)/INTENSITY/UNDERSCORE/PROTECTED/FL,+
+   PUT('Adresses et informations sur les Impliqués (Juridiques)'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01001;
+AT(4:4,68:71)/PROTECTED/FL,+
+   PUT('Né :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01002;
+AT(5:5,3:54)/PROTECTED/FL,+
+   PUT('Catégorie (P= Personne, J= Juridique, A= Autorité) :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01003;
+AT(6:6,31:54)/PROTECTED/FL,+
+   PUT('Genre (M,F,N,MP,FP,NP) :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01004;
+AT(8:8,3:12)/PROTECTED/FL,+
+   PUT('Nom      :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01005;
+AT(10:10,3:12)/PROTECTED/FL,+
+   PUT('Nom court:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01006;
+AT(12:12,3:21)/PROTECTED/FL,+
+   PUT('Adresse d''envoi   :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01007;
+AT(13:13,21:21)/PROTECTED/FL,+
+   PUT(':'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01008;
+AT(14:14,21:21)/PROTECTED/FL,+
+   PUT(':'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01009;
+AT(15:15,3:21)/PROTECTED/FL,+
+   PUT('NPA et localité   :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01010;
+AT(15:15,64:71)/PROTECTED/FL,+
+   PUT('Canton :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01011;
+AT(18:18,3:36)/PROTECTED/FL,+
+   PUT('Catégorie (pour statistique TFA) :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01012;
+AT(19:19,3:16)/PROTECTED/FL,+
+   PUT('Remarque     :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01013;
+AT(2:2,9:71)/INTENSITY/UNDERSCORE/PROTECTED/FL,+
+   PUT('Adresses et informations sur les Impliqués (Juridiques) (suite)'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02001;
+AT(5:5,3:16)/PROTECTED/FL,+
+   PUT('Né Téléphone :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02002;
+AT(6:6,3:16)/PROTECTED/FL,+
+   PUT('Né FAX       :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02003;
+AT(10:10,3:26)/PROTECTED/FL,+
+   PUT('Adresse supplémentaire :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02004;
+AT(11:11,3:26)/PROTECTED/FL,+
+   PUT('(domicile é l''étranger,:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02005;
+AT(12:12,3:26)/PROTECTED/FL,+
+   PUT('autre adresse)         :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02006;
+AT(13:13,3:26)/PROTECTED/FL,+
+   PUT('NPA et localité        :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02007;
+AT(13:13,68:75)/PROTECTED/FL,+
+   PUT('Canton :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02008;
+AT(16:16,3:18)/PROTECTED/FL,+
+   PUT('Date création  :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02009;
+AT(16:16,43:61)/PROTECTED/FL,+
+   PUT('Date modification :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02010;
+AT(17:17,3:18)/PROTECTED/FL,+
+   PUT('Dernier usager :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02011;
+AT(18:18,3:18)/PROTECTED/FL,+
+   PUT('Code transfert :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02012;
+AT(15:15,29:58)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.LOC,+
+   SIZE=30,+
+   OUTPUT_FORMAT=<15/VR2<,+
+   LABEL='Nom de localité',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=LOC;
+AT(13:13,34:63)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.LOC_SUP,+
+   SIZE=30,+
+   OUTPUT_FORMAT=<15/VR2<,+
+   LABEL='Nom de localité (sup)',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=LOC_SUP;
+AT(8:9,14:78)/UNDERSCORE/RR,+
+   SOURCE=IMPLIQUE.NOM,+
+   SIZE=120,+
+   OUTPUT_FORMAT=<60/VR3<,+
+   LABEL='Nom d''un impliqué',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=NOM;
+AT(10:10,14:33)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.NOM_COURT,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Nom court d''un impliqué',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=NOM_COURT;
+AT(15:15,23:26)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.NPA,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='NPA',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   DEFAULT='0000',+
+   NAME=NPA;
+AT(13:13,28:31)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.NPA_SUP,+
+   SIZE=10,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='NPA',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=NPA_SUP;
+AT(6:6,18:37)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.NUM_FAX,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<11/VR2<,+
+   LABEL='Né FAX',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=NUM_FAX;
+AT(5:5,18:37)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.NUM_TEL,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<11/VR2<,+
+   LABEL='Né Téléphone',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=NUM_TEL;
+AT(19:19,18:77)/UNDERSCORE/RR,+
+   SOURCE=IMPLIQUE.REM_IMP,+
+   SIZE=150,+
+   OUTPUT_FORMAT=<60/VR3<,+
+   LABEL='Remarque sur l''impliqué',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=REM_IMP;
+*
+VIEW=MESSAGE,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(MESSAGE),+
+   FORM=YES;
+BORDER=B01001, FDL_INFO='BMARKER=.,DEFAULT=NO', PAGE=1, (1:1,1:80)/INTENSITY,+
+ (1:18,1:1)/INTENSITY, (1:18,80:80)/INTENSITY, (4:4,1:80)/INTENSITY,+
+ (10:10,1:80)/INTENSITY, (14:14,1:80)/INTENSITY, (18:18,1:80)/INTENSITY;
+AT(6:6,29:34)/UNDERSCORE/EREVERSE,+
+   SOURCE=MESSAGE.CLE_MESSAGE,+
+   SIZE=6,+
+   OUTPUT_FORMAT=<6<,+
+   LABEL='Né message',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=CLE_MESSAGE;
+AT(3:3,28:45)/PROTECTED/FL,+
+   PUT('Table des Messages'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01001;
+AT(6:6,3:27)/PROTECTED/FL,+
+   PUT('Né du message  (unique) :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01002;
+AT(7:7,3:27)/PROTECTED/FL,+
+   PUT('Nom du message (unique) :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01003;
+AT(8:8,3:27)/PROTECTED/FL,+
+   PUT('Niveau                  :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01004;
+AT(8:8,32:67)/PROTECTED/FL,+
+   PUT('P=Patience,I=Information,Q=Question,'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01005;
+AT(9:9,32:79)/PROTECTED/FL,+
+   PUT('U=erreur Usager,S=erreur Systéme,F=erreur Fatale'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01006;
+AT(11:11,3:32)/PROTECTED/FL,+
+   PUT('Texte du message en franéais :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01007;
+AT(15:15,3:32)/PROTECTED/FL,+
+   PUT('Texte du message en allemand :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01008;
+AT(19:19,51:55)/PROTECTED/FL,+
+   PUT('Mode:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01009;
+AT(19:19,58:78)/INTENSITY/PROTECTED/MODE/FL,+
+   PUT(' '),+
+   FDL_INFO='MARKER=#,DEFAULT=NO',+
+   PAGE=1,+
+   NAME=L01010;
+AT(16:17,3:78)/UNDERSCORE/EREVERSE,+
+   SOURCE=MESSAGE.MESSAGE_D,+
+   SIZE=160,+
+   OUTPUT_FORMAT=<80/VR2<,+
+   LABEL='Message (D)',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=MESSAGE_D;
+AT(12:13,3:78)/UNDERSCORE/EREVERSE,+
+   SOURCE=MESSAGE.MESSAGE_F,+
+   SIZE=160,+
+   OUTPUT_FORMAT=<80/VR2<,+
+   LABEL='Message (F)',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=MESSAGE_F;
+AT(8:8,29:29)/UNDERSCORE/EREVERSE,+
+   SOURCE=MESSAGE.NIVEAU,+
+   SIZE=1,+
+   LABEL='Niveau',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=NIVEAU;
+AT(7:7,29:78)/UNDERSCORE/EREVERSE,+
+   SOURCE=MESSAGE.NOM_MESSAGE,+
+   SIZE=50,+
+   OUTPUT_FORMAT=<30<,+
+   LABEL='Nom du message',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=NOM_MESSAGE;
+*
+VIEW=MOYEN_DROIT,+
+   PRIVILEGES=(GET,MOD,DEL),+
+   SOURCE=(MOYEN_DROIT),+
+   FORM=YES;
+BORDER=B01001, FDL_INFO='BMARKER=.,DEFAULT=NO', PAGE=1, (1:1,1:80)/INTENSITY,+
+ (1:13,1:1)/INTENSITY, (1:13,80:80)/INTENSITY, (4:4,1:80)/INTENSITY,+
+ (13:13,1:80)/INTENSITY;
+AT(9:9,28:70)/UNDERSCORE/EREVERSE/SER,+
+   SOURCE=MOYEN_DROIT.BRANCHE_TF,+
+   SIZE=43,+
+   OUTPUT_FORMAT=<20/SER<,+
+   LABEL='BRANCHE_TF',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=BRANCHE_TF;
+AT(10:10,28:70)/UNDERSCORE/EREVERSE/SER,+
+   SOURCE=MOYEN_DROIT.BRANCHE_TFA,+
+   SIZE=43,+
+   OUTPUT_FORMAT=<20/SER<,+
+   LABEL='BRANCHE_TFA',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=BRANCHE_TFA;
+AT(6:6,73:76)/UNDERSCORE/PROTECTED/EREVERSE,+
+   SOURCE=MOYEN_DROIT.CLE_MOYEN_DROIT,+
+   SIZE=10,+
+   LABEL='CLE_MOYEN_DROIT',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=CLE_MOYEN_DROIT;
+AT(3:3,13:63)/PROTECTED/FL,+
+   PUT('Table de correspondance BRANCHE <-> MOYEN_DE_DROIT'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01001;
+AT(6:6,59:71)/PROTECTED/FL,+
+   PUT('Clé Systéme :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01002;
+AT(8:8,4:26)/PROTECTED/FL,+
+   PUT('Moyen de droit (Code) :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01003;
+AT(9:9,4:26)/PROTECTED/FL,+
+   PUT('Branches du TF        :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01004;
+AT(10:10,4:26)/PROTECTED/FL,+
+   PUT('Branches du TFA       :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01005;
+AT(8:8,28:33)/UNDERSCORE/EREVERSE,+
+   SOURCE=MOYEN_DROIT.MOYEN_DE_DROIT,+
+   SIZE=6,+
+   LABEL='MOYEN_DE_DROIT',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=MOYEN_DE_DROIT;
+*
+VIEW=NPA,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(NPA),+
+   FORM=YES;
+BORDER=B01001, FDL_INFO='BMARKER=.,DEFAULT=NO', PAGE=1, (1:1,1:80)/INTENSITY,+
+ (1:15,1:1)/INTENSITY, (1:15,80:80)/INTENSITY, (5:5,1:80)/INTENSITY,+
+ (11:11,1:80)/INTENSITY, (15:15,1:80)/INTENSITY;
+AT(9:9,65:66)/UNDERSCORE,+
+   SOURCE=NPA.CANTON,+
+   SIZE=2,+
+   OUTPUT_FORMAT=<2<,+
+   LABEL='Canton',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=CANTON;
+AT(13:13,20:54)/UNDERSCORE/REVERSE/PROTECTED,+
+   SOURCE=NPA.CLE_NPA,+
+   SIZE=35,+
+   OUTPUT_FORMAT=<30/VR2<,+
+   LABEL='Clé NPA',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=CLE_NPA;
+AT(3:3,22:56)/INTENSITY/UNDERSCORE/PROTECTED/FL,+
+   PUT('Numéro postaux d''acheminement (NPA)'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01001;
+AT(7:7,4:7)/PROTECTED/FL,+
+   PUT('NPA:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01002;
+AT(9:9,4:22)/PROTECTED/FL,+
+   PUT('Nom de la localité:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01003;
+AT(9:9,57:63)/PROTECTED/FL,+
+   PUT('Canton:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01004;
+AT(13:13,4:18)/PROTECTED/FL,+
+   PUT('NPA & Localité:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01005;
+AT(13:13,57:61)/PROTECTED/FL,+
+   PUT('(Clé)'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01006;
+AT(7:7,24:33)/PROTECTED/FL,+
+   PUT('Nom court:'),+
+   PAGE=1,+
+   NAME=L01007;
+AT(7:7,35:52)/UNDERSCORE,+
+   SOURCE=NPA.LOC,+
+   SIZE=18,+
+   OUTPUT_FORMAT=<18<,+
+   LABEL='Nom court de localité',+
+   PAGE=1,+
+   NAME=LOC;
+AT(9:9,24:53)/UNDERSCORE,+
+   SOURCE=NPA.LOCALITE,+
+   SIZE=30,+
+   OUTPUT_FORMAT=<15/VR2<,+
+   LABEL='Nom de localité',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=LOCALITE;
+AT(7:7,9:17)/UNDERSCORE,+
+   SOURCE=NPA.NPA,+
+   SIZE=9,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='NPA',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=NPA;
+*
+VIEW=PHYSIQUE,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   WHERE=(CATEGORIE='P'),+
+   SOURCE=(IMPLIQUE),+
+   FORM=YES;
+AT(12:12,23:62)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.ADR1,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='Adresse d''envoi',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=ADR1;
+AT(11:11,28:67)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.ADR1_SUP,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='Adresse supplémentaire',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=ADR1_SUP;
+AT(13:13,23:62)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.ADR2,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='2éme ligne......',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=ADR2;
+AT(12:12,28:67)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.ADR2_SUP,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='2éme ligne............',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=ADR2_SUP;
+AT(14:14,23:62)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.ADR3,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='3éme ligne......',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=ADR3;
+AT(13:13,28:67)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.ADR3_SUP,+
+   SIZE=40,+
+   OUTPUT_FORMAT=<20/VR3<,+
+   LABEL='3éme ligne............',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=ADR3_SUP;
+BORDER=B01001, FDL_INFO='BMARKER=.,DEFAULT=NO', PAGE=1, (1:1,1:80)/INTENSITY,+
+ (1:19,1:1)/INTENSITY, (1:19,80:80)/INTENSITY, (3:3,1:80)/INTENSITY,+
+ (3:5,66:66)/INTENSITY, (5:5,66:80)/INTENSITY, (11:11,1:80)/INTENSITY,+
+ (16:16,1:80)/INTENSITY, (19:19,1:80)/INTENSITY;
+BORDER=B02001, FDL_INFO='BMARKER=.,DEFAULT=NO', PAGE=2, (1:1,1:80)/INTENSITY,+
+ (1:19,1:1)/INTENSITY, (1:7,80:80)/INTENSITY, (3:3,1:80)/INTENSITY,+
+ (9:9,1:80)/INTENSITY, (9:19,80:80)/INTENSITY, (15:15,1:80)/INTENSITY,+
+ (19:19,1:80)/INTENSITY;
+AT(15:15,73:74)/UNDERSCORE/PROTECTED,+
+   SOURCE=IMPLIQUE.CANTON,+
+   SIZE=2,+
+   OUTPUT_FORMAT=<2<,+
+   LABEL='Canton',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   DEFAULT='--',+
+   NAME=CANTON;
+AT(14:14,77:78)/UNDERSCORE/PROTECTED,+
+   SOURCE=IMPLIQUE.CANTON_SUP,+
+   SIZE=2,+
+   OUTPUT_FORMAT=<2<,+
+   LABEL='Canton (sup)',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=CANTON_SUP;
+AT(5:5,56:56)/UNDERSCORE/PROTECTED,+
+   SOURCE=IMPLIQUE.CATEGORIE,+
+   SIZE=1,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='Catégorie',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   DEFAULT='P',+
+   NAME=CATEGORIE;
+AT(7:7,38:42)/UNDERSCORE/PROTECTED,+
+   SOURCE=IMPLIQUE.CATEGORIE_TFA,+
+   SIZE=5,+
+   OUTPUT_FORMAT=<5<,+
+   LABEL='Catégorie (stat. TFA)',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   DEFAULT='VERS',+
+   NAME=CATEGORIE_TFA;
+AT(4:4,73:78)/UNDERSCORE/REVERSE/PROTECTED,+
+   SOURCE=IMPLIQUE.CLE_IMPLIQUE,+
+   SIZE=6,+
+   OUTPUT_FORMAT=>6>,+
+   LABEL='Numéro d''un impliqué',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=CLE_IMPLIQUE;
+AT(18:18,20:20)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.CT,+
+   SIZE=1,+
+   OUTPUT_FORMAT=<1<,+
+   LABEL='CT',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=CT;
+AT(16:16,20:30)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.DAT_CREATION,+
+   SIZE=11,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date création',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=DAT_CREATION;
+AT(16:16,63:73)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.DAT_MODIFICATION,+
+   SIZE=11,+
+   OUTPUT_FORMAT=<10/DATE23<,+
+   LABEL='Date modification',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=DAT_MODIFICATION;
+AT(6:6,56:57)/UNDERSCORE/CURSOR,+
+   SOURCE=IMPLIQUE.GENRE,+
+   SIZE=2,+
+   OUTPUT_FORMAT=<2<,+
+   LABEL='Genre',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   DEFAULT='M',+
+   NAME=GENRE;
+AT(2:2,9:72)/INTENSITY/UNDERSCORE/PROTECTED/FL,+
+   PUT('Adresses et informations sur les Impliqués (personnes physiques)'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01001;
+AT(4:4,68:71)/PROTECTED/FL,+
+   PUT('Né :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01002;
+AT(5:5,3:54)/PROTECTED/FL,+
+   PUT('Catégorie (P= Personne, J= Juridique, A= Autorité) :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01003;
+AT(6:6,31:54)/PROTECTED/FL,+
+   PUT('Genre (M,F,N,MP,FP,NP) :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01004;
+AT(7:7,3:12)/PROTECTED/FL,+
+   PUT('Titre    :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01005;
+AT(8:8,3:12)/PROTECTED/FL,+
+   PUT('Prénom   :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01006;
+AT(9:9,3:12)/PROTECTED/FL,+
+   PUT('Nom      :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01007;
+AT(10:10,3:12)/PROTECTED/FL,+
+   PUT('Nom court:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01008;
+AT(10:10,41:52)/PROTECTED/FL,+
+   PUT('Profession :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01009;
+AT(12:12,3:21)/PROTECTED/FL,+
+   PUT('Adresse d''envoi   :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01010;
+AT(13:13,21:21)/PROTECTED/FL,+
+   PUT(':'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01011;
+AT(14:14,21:21)/PROTECTED/FL,+
+   PUT(':'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01012;
+AT(15:15,3:21)/PROTECTED/FL,+
+   PUT('NPA et localité   :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01013;
+AT(15:15,64:71)/PROTECTED/FL,+
+   PUT('Canton :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01014;
+AT(18:18,3:16)/PROTECTED/FL,+
+   PUT('Remarque     :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01015;
+AT(2:2,5:76)/INTENSITY/UNDERSCORE/PROTECTED/FL,+
+   PUT(+
+'Adresses et informations sur les Impliqués (personnes physiques) (suite)'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02001;
+AT(5:5,3:16)/PROTECTED/FL,+
+   PUT('Né Téléphone :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02002;
+AT(6:6,3:16)/PROTECTED/FL,+
+   PUT('Né FAX       :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02003;
+AT(7:7,3:36)/PROTECTED/FL,+
+   PUT('Catégorie (pour statistique TFA) :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02004;
+AT(8:8,3:16)/PROTECTED/FL,+
+   PUT('Né AVS       :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02005;
+AT(11:11,3:26)/PROTECTED/FL,+
+   PUT('Adresse supplémentaire :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02006;
+AT(12:12,3:26)/PROTECTED/FL,+
+   PUT('(domicile é l''étranger,:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02007;
+AT(13:13,3:26)/PROTECTED/FL,+
+   PUT('autre adresse)         :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02008;
+AT(14:14,3:26)/PROTECTED/FL,+
+   PUT('NPA et localité        :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02009;
+AT(14:14,68:75)/PROTECTED/FL,+
+   PUT('Canton :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02010;
+AT(16:16,3:18)/PROTECTED/FL,+
+   PUT('Date création  :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02011;
+AT(16:16,43:61)/PROTECTED/FL,+
+   PUT('Date modification :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02012;
+AT(17:17,3:18)/PROTECTED/FL,+
+   PUT('Dernier usager :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02013;
+AT(18:18,3:18)/PROTECTED/FL,+
+   PUT('Code transfert :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=2,+
+   NAME=L02014;
+AT(15:15,29:58)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.LOC,+
+   SIZE=30,+
+   OUTPUT_FORMAT=<15/VR2<,+
+   LABEL='Nom de localité',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=LOC;
+AT(14:14,34:63)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.LOC_SUP,+
+   SIZE=30,+
+   OUTPUT_FORMAT=<15/VR2<,+
+   LABEL='Nom de localité (sup)',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=LOC_SUP;
+AT(9:9,14:77)/UNDERSCORE/RR,+
+   SOURCE=IMPLIQUE.NOM,+
+   SIZE=120,+
+   OUTPUT_FORMAT=<60/VR3<,+
+   LABEL='Nom d''un impliqué',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=NOM;
+AT(10:10,14:33)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.NOM_COURT,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<20<,+
+   LABEL='Nom court d''un impliqué',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   DEFAULT='-',+
+   NAME=NOM_COURT;
+AT(15:15,23:26)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.NPA,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='NPA',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   DEFAULT='0000',+
+   NAME=NPA;
+AT(14:14,28:31)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.NPA_SUP,+
+   SIZE=4,+
+   OUTPUT_FORMAT=<4<,+
+   LABEL='NPA',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=NPA_SUP;
+AT(8:8,18:31)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.NUM_AVS,+
+   SIZE=14,+
+   OUTPUT_FORMAT=<10/VR2<,+
+   LABEL='Né AVS',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=NUM_AVS;
+AT(6:6,18:37)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.NUM_FAX,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<11/VR2<,+
+   LABEL='Né FAX',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=NUM_FAX;
+AT(5:5,18:37)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.NUM_TEL,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<11/VR2<,+
+   LABEL='Né Téléphone',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=NUM_TEL;
+AT(8:8,14:43)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.PRENOM,+
+   SIZE=30,+
+   OUTPUT_FORMAT=<15/VR2<,+
+   LABEL='Prénom',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=PRENOM;
+AT(10:10,54:78)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.PROFESSION,+
+   SIZE=25,+
+   OUTPUT_FORMAT=<10/VR3<,+
+   LABEL='Profession',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=PROFESSION;
+AT(18:18,18:77)/UNDERSCORE/RR,+
+   SOURCE=IMPLIQUE.REM_IMP,+
+   SIZE=150,+
+   OUTPUT_FORMAT=<60/VR3<,+
+   LABEL='Remarque sur l''impliqué',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=REM_IMP;
+AT(7:7,14:38)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.TITRE,+
+   SIZE=25,+
+   OUTPUT_FORMAT=<10/VR3<,+
+   LABEL='Titre',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=TITRE;
+AT(17:17,20:39)/UNDERSCORE,+
+   SOURCE=IMPLIQUE.USER,+
+   SIZE=20,+
+   OUTPUT_FORMAT=<10/VR2<,+
+   LABEL='Dernier USER',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=2,+
+   NAME=USER;
+*
+VIEW=TRADUCTION,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(TRADUCTION),+
+   FORM=YES;
+AT(25:25,21:50)/UNDERSCORE/EREVERSE,+
+   SOURCE=TRADUCTION.ABREV_D,+
+   SIZE=30,+
+   LABEL='Abréviation (D)',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=ABREV_D;
+AT(26:26,21:50)/UNDERSCORE/EREVERSE,+
+   SOURCE=TRADUCTION.ABREV_F,+
+   SIZE=30,+
+   LABEL='Abréviation (F)',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=ABREV_F;
+AT(27:27,21:50)/UNDERSCORE/EREVERSE,+
+   SOURCE=TRADUCTION.ABREV_I,+
+   SIZE=30,+
+   LABEL='Abréviation (I)',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=ABREV_I;
+BORDER=B01001, FDL_INFO='BMARKER=.,DEFAULT=NO', PAGE=1, (1:1,1:80)/INTENSITY,+
+ (1:28,1:1)/INTENSITY, (1:28,80:80)/INTENSITY, (5:5,1:80)/INTENSITY,+
+ (24:24,1:80)/INTENSITY, (28:28,1:80)/INTENSITY;
+AT(3:3,71:78)/UNDERSCORE/PROTECTED/EREVERSE,+
+   SOURCE=TRADUCTION.CLE_TRADUCTION,+
+   SIZE=10,+
+   LABEL='Clé Traduction',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=CLE_TRADUCTION;
+AT(4:4,21:50)/UNDERSCORE/EREVERSE,+
+   SOURCE=TRADUCTION.CODE_MONOLINGUE,+
+   SIZE=30,+
+   LABEL='Code monolingue',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=CODE_MONOLINGUE;
+AT(2:2,28:48)/PROTECTED/FL,+
+   PUT('Table des Traductions'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01001;
+AT(3:3,3:19)/PROTECTED/FL,+
+   PUT('Nom du champ    :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01002;
+AT(3:3,57:69)/PROTECTED/FL,+
+   PUT('Clé systéme :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01003;
+AT(4:4,3:19)/PROTECTED/FL,+
+   PUT('Code monolingue :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01004;
+AT(4:4,57:69)/PROTECTED/FL,+
+   PUT('Rang        :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01005;
+AT(6:6,3:13)/PROTECTED/FL,+
+   PUT('Texte (D) :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01006;
+AT(12:12,3:13)/PROTECTED/FL,+
+   PUT('Texte (F) :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01007;
+AT(18:18,3:13)/PROTECTED/FL,+
+   PUT('Texte (I) :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01008;
+AT(25:25,3:19)/PROTECTED/FL,+
+   PUT('Abréviation (D) :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01009;
+AT(25:25,56:69)/PROTECTED/FL,+
+   PUT('Obsoléte     :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01010;
+AT(26:26,3:19)/PROTECTED/FL,+
+   PUT('Abréviation (F) :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01011;
+AT(26:26,56:69)/PROTECTED/FL,+
+   PUT('Provisoire   :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01012;
+AT(27:27,3:19)/PROTECTED/FL,+
+   PUT('Abréviation (I) :'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01013;
+AT(27:27,56:69)/PROTECTED/FL,+
+   PUT('Non sélection:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01014;
+AT(29:29,51:55)/PROTECTED/FL,+
+   PUT('Mode:'),+
+   FDL_INFO='MARKER=UNMARKED,DEFAULT=YES',+
+   PAGE=1,+
+   NAME=L01015;
+AT(29:29,58:78)/INTENSITY/PROTECTED/MODE/FL,+
+   PUT(' '),+
+   FDL_INFO='MARKER=#,DEFAULT=NO',+
+   PAGE=1,+
+   NAME=L01016;
+AT(3:3,21:52)/UNDERSCORE/EREVERSE,+
+   SOURCE=TRADUCTION.NOM_CHAMP,+
+   SIZE=32,+
+   LABEL='Nom du champ',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=NOM_CHAMP;
+AT(27:27,71:76)/UNDERSCORE/EREVERSE,+
+   SOURCE=TRADUCTION.NON_SELEX,+
+   SIZE=6,+
+   OUTPUT_FORMAT=>6>,+
+   LABEL='Non sélection',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=NON_SELEX;
+AT(25:25,71:76)/UNDERSCORE/EREVERSE,+
+   SOURCE=TRADUCTION.OBSOLETE,+
+   SIZE=6,+
+   OUTPUT_FORMAT=>6>,+
+   LABEL='Obsoléte',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=OBSOLETE;
+AT(26:26,71:76)/UNDERSCORE/EREVERSE,+
+   SOURCE=TRADUCTION.PROVISOIRE,+
+   SIZE=6,+
+   OUTPUT_FORMAT=>6>,+
+   LABEL='Provisoire',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=PROVISOIRE;
+AT(4:4,71:76)/UNDERSCORE/EREVERSE,+
+   SOURCE=TRADUCTION.RANG,+
+   SIZE=6,+
+   OUTPUT_FORMAT=>6>,+
+   LABEL='Rang',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=RANG;
+AT(6:11,15:74)/UNDERSCORE/EREVERSE/RR,+
+   SOURCE=TRADUCTION.TEXTE_D,+
+   SIZE=360,+
+   LABEL='Texte (D)',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=TEXTE_D;
+AT(12:17,15:74)/UNDERSCORE/EREVERSE/RR,+
+   SOURCE=TRADUCTION.TEXTE_F,+
+   SIZE=360,+
+   LABEL='Texte (F)',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=TEXTE_F;
+AT(18:23,15:74)/UNDERSCORE/EREVERSE/RR,+
+   SOURCE=TRADUCTION.TEXTE_I,+
+   SIZE=360,+
+   LABEL='Texte (I)',+
+   FDL_INFO='MARKER=_,DEFAULT=YES,CONT=+',+
+   PAGE=1,+
+   NAME=TEXTE_I;
+*
+*
+MODEL=MOTIF,+
+   ACCESS=PUBLIC,+
+   TYPE=FQM;
+*
+VIEW=IMPLIQUE,+
+   PRIVILEGES=(GET,ADD,MOD,DEL),+
+   SOURCE=(IMPLIQUE),+
+   FORM=NO;
+*
+FIELD=ABR_BRADOC,+
+   LABEL='Autorité (de BRADOC)',+
+   OUTPUT_FORMAT=<25/VR4<,+
+   SOURCE=IMPLIQUE.ABR_BRADOC;
+*
+FIELD=ADR1,+
+   LABEL='Adresse d''envoi',+
+   OUTPUT_FORMAT=<20/VR3<,+
+   SOURCE=IMPLIQUE.ADR1;
+*
+FIELD=ADR1_SUP,+
+   LABEL='Adresse supplémentaire',+
+   OUTPUT_FORMAT=<20/VR3<,+
+   SOURCE=IMPLIQUE.ADR1_SUP;
+*
+FIELD=ADR2,+
+   LABEL='2éme ligne......',+
+   OUTPUT_FORMAT=<20/VR3<,+
+   SOURCE=IMPLIQUE.ADR2;
+*
+FIELD=ADR2_SUP,+
+   LABEL='2éme ligne............',+
+   OUTPUT_FORMAT=<20/VR3<,+
+   SOURCE=IMPLIQUE.ADR2_SUP;
+*
+FIELD=ADR3,+
+   LABEL='3éme ligne......',+
+   OUTPUT_FORMAT=<20/VR3<,+
+   SOURCE=IMPLIQUE.ADR3;
+*
+FIELD=ADR3_SUP,+
+   LABEL='3éme ligne............',+
+   OUTPUT_FORMAT=<20/VR3<,+
+   SOURCE=IMPLIQUE.ADR3_SUP;
+*
+FIELD=AN_NAIS,+
+   LABEL='Année de naissance',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=IMPLIQUE.AN_NAIS;
+*
+FIELD=AUTRE_NOM,+
+   LABEL='Autre nom',+
+   OUTPUT_FORMAT=<30/VR5<,+
+   SOURCE=IMPLIQUE.AUTRE_NOM;
+*
+FIELD=CANTON,+
+   LABEL='Canton',+
+   OUTPUT_FORMAT=<2<,+
+   SOURCE=IMPLIQUE.CANTON;
+*
+FIELD=CANTON_SUP,+
+   LABEL='Canton (sup)',+
+   OUTPUT_FORMAT=<2<,+
+   SOURCE=IMPLIQUE.CANTON_SUP;
+*
+FIELD=CATEGORIE,+
+   LABEL='Catégorie',+
+   OUTPUT_FORMAT=<1<,+
+   SOURCE=IMPLIQUE.CATEGORIE;
+*
+FIELD=CATEGORIE_TFA,+
+   LABEL='Catégorie (stat. TFA)',+
+   OUTPUT_FORMAT=<5<,+
+   SOURCE=IMPLIQUE.CATEGORIE_TFA;
+*
+FIELD=CLE_IMPLIQUE,+
+   LABEL='Numéro d''un impliqué',+
+   OUTPUT_FORMAT=>10>,+
+   SOURCE=IMPLIQUE.CLE_IMPLIQUE;
+*
+FIELD=GENRE,+
+   LABEL='Genre',+
+   OUTPUT_FORMAT=<2<,+
+   SOURCE=IMPLIQUE.GENRE;
+*
+FIELD=INSOLVABLE,+
+   LABEL='Insolvable',+
+   SOURCE=IMPLIQUE.INSOLVABLE;
+*
+FIELD=LOC,+
+   LABEL='Nom de localité',+
+   OUTPUT_FORMAT=<15/VR2<,+
+   SOURCE=IMPLIQUE.LOC;
+*
+FIELD=LOC_SUP,+
+   LABEL='Nom de localité (sup)',+
+   OUTPUT_FORMAT=<15/VR2<,+
+   SOURCE=IMPLIQUE.LOC_SUP;
+*
+FIELD=NOM,+
+   LABEL='Nom d''un impliqué',+
+   OUTPUT_FORMAT=<30/VR5<,+
+   SOURCE=IMPLIQUE.NOM;
+*
+FIELD=NOM_COURT,+
+   LABEL='Nom court d''un impliqué',+
+   OUTPUT_FORMAT=<20<,+
+   SOURCE=IMPLIQUE.NOM_COURT;
+*
+FIELD=NPA,+
+   LABEL='NPA',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=IMPLIQUE.NPA;
+*
+FIELD=NPA_SUP,+
+   LABEL='NPA',+
+   OUTPUT_FORMAT=<4<,+
+   SOURCE=IMPLIQUE.NPA_SUP;
+*
+FIELD=NUM_AVS,+
+   LABEL='Né AVS',+
+   OUTPUT_FORMAT=<10/VR2<,+
+   SOURCE=IMPLIQUE.NUM_AVS;
+*
+FIELD=NUM_FAX,+
+   LABEL='Né FAX',+
+   OUTPUT_FORMAT=<11/VR2<,+
+   SOURCE=IMPLIQUE.NUM_FAX;
+*
+FIELD=NUM_TEL,+
+   LABEL='Né Téléphone',+
+   OUTPUT_FORMAT=<11/VR2<,+
+   SOURCE=IMPLIQUE.NUM_TEL;
+*
+FIELD=PRENOM,+
+   LABEL='Prénom',+
+   OUTPUT_FORMAT=<15/VR2<,+
+   SOURCE=IMPLIQUE.PRENOM;
+*
+FIELD=PROFESSION,+
+   LABEL='Profession',+
+   OUTPUT_FORMAT=<10/VR3<,+
+   SOURCE=IMPLIQUE.PROFESSION;
+*
+FIELD=REM_IMP,+
+   LABEL='Remarque sur l''impliqué',+
+   OUTPUT_FORMAT=<30/VR5<,+
+   SOURCE=IMPLIQUE.REM_IMP;
+*
+FIELD=TITRE,+
+   LABEL='Titre',+
+   OUTPUT_FORMAT=<10/VR3<,+
+   SOURCE=IMPLIQUE.TITRE;
+*
+*
+MODEL=DBA,+
+   ACCESS=PUBLIC,+
+   TYPE=FQM;
+*
+FIELD_LIST=CLE_IMP, VIEW=DOSSIER,+
+   FIELDS=(NUM_IMP,NUM_REPRES);
+*
+FIELD_LIST=INFO_EX2, VIEW=DOSSIER,+
+   FIELDS=(EX_NUM_DOSSIER,EX_REKO,EX_AUT_ATT,INFO_EX);
+*
+FIELD_LIST=TOUT_REM, VIEW=DOSSIER,+
+   FIELDS=(INFO_EX,OBJET,REM_ATTRIBUTION,REM_DOSSIER,REF_AUT_ATT,+
+REM_BORDEREAU,REM_REQ,NOTICE_DOSSIER);
+*
+FIELD_LIST=ECHANGEUR, VIEW=PIECE,+
+   FIELDS=(EXP_PIECE,DESTIN_PIECE,RETOURNER_A);
+
+
+*----------------------------------------
+STRUCTURAL_DATA_MODEL;*          DOSSBAS
+*----------------------------------------
+*
+AREA=ARCHIVE_DATA,+
+   ALLOCATION=DYNAMIC,+
+   DEFAULT_RECORD_AREA=NO,+
+   DEFAULT_INDEX_AREA=NO,+
+   DEFAULT_QUEUE_AREA=NO,+
+   PAGES_IN_AREA=500000;
+*
+AREA=ARCHIVE_IND,+
+   ALLOCATION=DYNAMIC,+
+   DEFAULT_RECORD_AREA=NO,+
+   DEFAULT_INDEX_AREA=NO,+
+   DEFAULT_QUEUE_AREA=NO,+
+   PAGES_IN_AREA=500000;
+*
+AREA=DECISION_DATA,+
+   ALLOCATION=DYNAMIC,+
+   DEFAULT_RECORD_AREA=NO,+
+   DEFAULT_INDEX_AREA=NO,+
+   DEFAULT_QUEUE_AREA=NO,+
+   PAGES_IN_AREA=250000;
+*
+AREA=DECISION_IND,+
+   ALLOCATION=DYNAMIC,+
+   DEFAULT_RECORD_AREA=NO,+
+   DEFAULT_INDEX_AREA=NO,+
+   DEFAULT_QUEUE_AREA=NO,+
+   PAGES_IN_AREA=250000;
+*
+AREA=DEFAULT_DATA,+
+   ALLOCATION=DYNAMIC,+
+   DEFAULT_RECORD_AREA=YES,+
+   DEFAULT_INDEX_AREA=NO,+
+   DEFAULT_QUEUE_AREA=NO,+
+   PAGES_IN_AREA=250000;
+*
+AREA=DEFAULT_IND,+
+   ALLOCATION=DYNAMIC,+
+   DEFAULT_RECORD_AREA=NO,+
+   DEFAULT_INDEX_AREA=YES,+
+   DEFAULT_QUEUE_AREA=NO,+
+   PAGES_IN_AREA=250000;
+*
+AREA=DEFAULT_QUEUE,+
+   ALLOCATION=DYNAMIC,+
+   DEFAULT_RECORD_AREA=NO,+
+   DEFAULT_INDEX_AREA=NO,+
+   DEFAULT_QUEUE_AREA=NO,+
+   PAGES_IN_AREA=250000;
+*
+AREA=DELAI_DATA,+
+   ALLOCATION=DYNAMIC,+
+   DEFAULT_RECORD_AREA=NO,+
+   DEFAULT_INDEX_AREA=NO,+
+   DEFAULT_QUEUE_AREA=NO,+
+   PAGES_IN_AREA=250000;
+*
+AREA=DELAI_IND,+
+   ALLOCATION=DYNAMIC,+
+   DEFAULT_RECORD_AREA=NO,+
+   DEFAULT_INDEX_AREA=NO,+
+   DEFAULT_QUEUE_AREA=NO,+
+   PAGES_IN_AREA=250000;
+*
+AREA=DOSSIER_DATA,+
+   ALLOCATION=DYNAMIC,+
+   DEFAULT_RECORD_AREA=NO,+
+   DEFAULT_INDEX_AREA=NO,+
+   DEFAULT_QUEUE_AREA=NO,+
+   PAGES_IN_AREA=500000;
+*
+AREA=DOSSIER_IND,+
+   ALLOCATION=DYNAMIC,+
+   DEFAULT_RECORD_AREA=NO,+
+   DEFAULT_INDEX_AREA=NO,+
+   DEFAULT_QUEUE_AREA=NO,+
+   PAGES_IN_AREA=750000;
+*
+AREA=IMPLIQUE_DATA,+
+   ALLOCATION=DYNAMIC,+
+   DEFAULT_RECORD_AREA=NO,+
+   DEFAULT_INDEX_AREA=NO,+
+   DEFAULT_QUEUE_AREA=NO,+
+   PAGES_IN_AREA=250000;
+*
+AREA=IMPLIQUE_IND,+
+   ALLOCATION=DYNAMIC,+
+   DEFAULT_RECORD_AREA=NO,+
+   DEFAULT_INDEX_AREA=NO,+
+   DEFAULT_QUEUE_AREA=NO,+
+   PAGES_IN_AREA=750000;
+*
+AREA=NPA_DATA,+
+   ALLOCATION=DYNAMIC,+
+   DEFAULT_RECORD_AREA=NO,+
+   DEFAULT_INDEX_AREA=NO,+
+   DEFAULT_QUEUE_AREA=NO,+
+   PAGES_IN_AREA=250000;
+*
+AREA=PIECE_DATA,+
+   ALLOCATION=DYNAMIC,+
+   DEFAULT_RECORD_AREA=NO,+
+   DEFAULT_INDEX_AREA=NO,+
+   DEFAULT_QUEUE_AREA=NO,+
+   PAGES_IN_AREA=750000;
+*
+AREA=PIECE_IND,+
+   ALLOCATION=DYNAMIC,+
+   DEFAULT_RECORD_AREA=NO,+
+   DEFAULT_INDEX_AREA=NO,+
+   DEFAULT_QUEUE_AREA=NO,+
+   PAGES_IN_AREA=750000;
+*
+FILE(1)='$BRADOSS_DB_DD/dossier_data.rdb',+
+   AREAS=(DOSSIER_DATA),+
+   BACKUP_CYCLES=10;
+*
+FILE(2)='$BRADOSS_DB_DI/dossier_ind.rdb',+
+   AREAS=(DOSSIER_IND),+
+   BACKUP_CYCLES=10;
+*
+FILE(3)='$BRADOSS_DB_ED/decision_data.rdb',+
+   AREAS=(DECISION_DATA),+
+   BACKUP_CYCLES=10;
+*
+FILE(4)='$BRADOSS_DB_EI/decision_ind.rdb',+
+   AREAS=(DECISION_IND),+
+   BACKUP_CYCLES=10;
+*
+FILE(5)='$BRADOSS_DB_ID/implique_data.rdb',+
+   AREAS=(IMPLIQUE_DATA),+
+   BACKUP_CYCLES=10;
+*
+FILE(6)='$BRADOSS_DB_II/implique_ind.rdb',+
+   AREAS=(IMPLIQUE_IND),+
+   BACKUP_CYCLES=10;
+*
+FILE(7)='$BRADOSS_DB_PD/piece_data.rdb',+
+   AREAS=(PIECE_DATA),+
+   BACKUP_CYCLES=10;
+*
+FILE(8)='$BRADOSS_DB_PI/piece_ind.rdb',+
+   AREAS=(PIECE_IND),+
+   BACKUP_CYCLES=10;
+*
+FILE(9)='$BRADOSS_DB_XD/dossbas_data.rdb',+
+   AREAS=(DEFAULT_DATA),+
+   BACKUP_CYCLES=10;
+*
+FILE(10)='$BRADOSS_DB_XI/dossbas_ind.rdb',+
+   AREAS=(DEFAULT_IND),+
+   BACKUP_CYCLES=10;
+*
+FILE(11)='$BRADOSS_DB_ND/npa_data.rdb',+
+   AREAS=(NPA_DATA),+
+   BACKUP_CYCLES=10;
+*
+FILE(12)='$BRADOSS_DB_AD/archive_data.rdb',+
+   AREAS=(ARCHIVE_DATA),+
+   BACKUP_CYCLES=10;
+*
+FILE(13)='$BRADOSS_DB_AI/archive_index.rdb',+
+   AREAS=(ARCHIVE_IND),+
+   BACKUP_CYCLES=10;
+*
+FILE(14)='$BRADOSS_DB_Q/dossbas_queue.rdb',+
+   AREAS=(DEFAULT_QUEUE),+
+   BACKUP_CYCLES=10;
+*
+FILE(15)='$BRADOSS_DB_LD/delai_data.rdb',+
+   AREAS=(DELAI_DATA),+
+   BACKUP_CYCLES=10;
+*
+FILE(16)='$BRADOSS_DB_LI/delai_index.rdb',+
+   AREAS=(DELAI_IND),+
+   BACKUP_CYCLES=10;
+*
+FILE(1)='$BRADOSS_DB_DD/dossier_data.rdb1',+
+   VERSION=1,+
+   BACKUP_CYCLES=10;
+*
+FILE(2)='$BRADOSS_DB_DI/dossier_ind.rdb1',+
+   VERSION=1,+
+   BACKUP_CYCLES=10;
+*
+FILE(3)='$BRADOSS_DB_ED/decision_data.rdb1',+
+   VERSION=1,+
+   BACKUP_CYCLES=10;
+*
+FILE(4)='$BRADOSS_DB_EI/decision_ind.rdb1',+
+   VERSION=1,+
+   BACKUP_CYCLES=10;
+*
+FILE(5)='$BRADOSS_DB_ID/implique_data.rdb1',+
+   VERSION=1,+
+   BACKUP_CYCLES=10;
+*
+FILE(6)='$BRADOSS_DB_II/implique_ind.rdb1',+
+   VERSION=1,+
+   BACKUP_CYCLES=10;
+*
+FILE(7)='$BRADOSS_DB_PD/piece_data.rdb1',+
+   VERSION=1,+
+   BACKUP_CYCLES=10;
+*
+FILE(8)='$BRADOSS_DB_PI/piece_ind.rdb1',+
+   VERSION=1,+
+   BACKUP_CYCLES=10;
+*
+FILE(9)='$BRADOSS_DB_XD/dossbas_data.rdb1',+
+   VERSION=1,+
+   BACKUP_CYCLES=10;
+*
+FILE(10)='$BRADOSS_DB_XI/dossbas_ind.rdb1',+
+   VERSION=1,+
+   BACKUP_CYCLES=10;
+*
+FILE(11)='$BRADOSS_DB_ND/npa_data.rdb1',+
+   VERSION=1,+
+   BACKUP_CYCLES=10;
+*
+FILE(12)='$BRADOSS_DB_AD/archive_data.rdb1',+
+   VERSION=1,+
+   BACKUP_CYCLES=10;
+*
+FILE(13)='$BRADOSS_DB_AI/archive_index.rdb1',+
+   VERSION=1,+
+   BACKUP_CYCLES=10;
+*
+FILE(14)='$BRADOSS_DB_Q/dossbas_queue.rdb1',+
+   VERSION=1,+
+   BACKUP_CYCLES=10;
+*
+FILE(15)='$BRADOSS_DB_LD/delai_data.rdb1',+
+   VERSION=1,+
+   BACKUP_CYCLES=10;
+*
+FILE(16)='$BRADOSS_DB_LI/delai_index.rdb1',+
+   VERSION=1,+
+   BACKUP_CYCLES=10;
+*
+FILE(1)='$BRADOSS_DB_DD/dossier_data.rdb2',+
+   VERSION=2,+
+   BACKUP_CYCLES=10;
+*
+FILE(2)='$BRADOSS_DB_DI/dossier_ind.rdb2',+
+   VERSION=2,+
+   BACKUP_CYCLES=10;
+*
+FILE(3)='$BRADOSS_DB_ED/decision_data.rdb2',+
+   VERSION=2,+
+   BACKUP_CYCLES=10;
+*
+FILE(4)='$BRADOSS_DB_EI/decision_ind.rdb2',+
+   VERSION=2,+
+   BACKUP_CYCLES=10;
+*
+FILE(5)='$BRADOSS_DB_ID/implique_data.rdb2',+
+   VERSION=2,+
+   BACKUP_CYCLES=10;
+*
+FILE(6)='$BRADOSS_DB_II/implique_ind.rdb2',+
+   VERSION=2,+
+   BACKUP_CYCLES=10;
+*
+FILE(7)='$BRADOSS_DB_PD/piece_data.rdb2',+
+   VERSION=2,+
+   BACKUP_CYCLES=10;
+*
+FILE(8)='$BRADOSS_DB_PI/piece_ind.rdb2',+
+   VERSION=2,+
+   BACKUP_CYCLES=10;
+*
+FILE(9)='$BRADOSS_DB_XD/dossbas_data.rdb2',+
+   VERSION=2,+
+   BACKUP_CYCLES=10;
+*
+FILE(10)='$BRADOSS_DB_XI/dossbas_ind.rdb2',+
+   VERSION=2,+
+   BACKUP_CYCLES=10;
+*
+FILE(11)='$BRADOSS_DB_ND/npa_data.rdb2',+
+   VERSION=2,+
+   BACKUP_CYCLES=10;
+*
+FILE(12)='$BRADOSS_DB_AD/archive_data.rdb2',+
+   VERSION=2,+
+   BACKUP_CYCLES=10;
+*
+FILE(13)='$BRADOSS_DB_AI/archive_index.rdb2',+
+   VERSION=2,+
+   BACKUP_CYCLES=10;
+*
+FILE(14)='$BRADOSS_DB_Q/dossbas_queue.rdb2',+
+   VERSION=2,+
+   BACKUP_CYCLES=10;
+*
+FILE(15)='$BRADOSS_DB_LD/delai_data.rdb2',+
+   VERSION=2,+
+   BACKUP_CYCLES=10;
+*
+FILE(16)='$BRADOSS_DB_LI/delai_index.rdb2',+
+   VERSION=2,+
+   BACKUP_CYCLES=10;
+*
+FILE(1)='$BRADOSS_DB_DD/dossier_data.rdb3',+
+   VERSION=3,+
+   BACKUP_CYCLES=10;
+*
+FILE(2)='$BRADOSS_DB_DI/dossier_ind.rdb3',+
+   VERSION=3,+
+   BACKUP_CYCLES=10;
+*
+FILE(3)='$BRADOSS_DB_ED/decision_data.rdb3',+
+   VERSION=3,+
+   BACKUP_CYCLES=10;
+*
+FILE(4)='$BRADOSS_DB_EI/decision_ind.rdb3',+
+   VERSION=3,+
+   BACKUP_CYCLES=10;
+*
+FILE(5)='$BRADOSS_DB_ID/implique_data.rdb3',+
+   VERSION=3,+
+   BACKUP_CYCLES=10;
+*
+FILE(6)='$BRADOSS_DB_II/implique_ind.rdb3',+
+   VERSION=3,+
+   BACKUP_CYCLES=10;
+*
+FILE(7)='$BRADOSS_DB_PD/piece_data.rdb3',+
+   VERSION=3,+
+   BACKUP_CYCLES=10;
+*
+FILE(8)='$BRADOSS_DB_PI/piece_ind.rdb3',+
+   VERSION=3,+
+   BACKUP_CYCLES=10;
+*
+FILE(9)='$BRADOSS_DB_XD/dossbas_data.rdb3',+
+   VERSION=3,+
+   BACKUP_CYCLES=10;
+*
+FILE(10)='$BRADOSS_DB_XI/dossbas_ind.rdb3',+
+   VERSION=3,+
+   BACKUP_CYCLES=10;
+*
+FILE(11)='$BRADOSS_DB_ND/npa_data.rdb3',+
+   VERSION=3,+
+   BACKUP_CYCLES=10;
+*
+FILE(12)='$BRADOSS_DB_AD/archive_data.rdb3',+
+   VERSION=3,+
+   BACKUP_CYCLES=10;
+*
+FILE(13)='$BRADOSS_DB_AI/archive_index.rdb3',+
+   VERSION=3,+
+   BACKUP_CYCLES=10;
+*
+FILE(14)='$BRADOSS_DB_Q/dossbas_queue.rdb3',+
+   VERSION=3,+
+   BACKUP_CYCLES=10;
+*
+FILE(15)='$BRADOSS_DB_LD/delai_data.rdb3',+
+   VERSION=3,+
+   BACKUP_CYCLES=10;
+*
+FILE(16)='$BRADOSS_DB_LI/delai_index.rdb3',+
+   VERSION=3,+
+   BACKUP_CYCLES=10;
+*
+JOURNAL A='$BRADOSS_JNL/dossbas.rja',+
+   SAVE_BEFORE_IMAGES=NO,+
+   BACKUP_CYCLES=10,+
+   B='$BRADOSS_JNL/dossbas.rjb',+
+   PAGES=50000;
+*
+JOURNAL A='$BRADOSS_JNL/dossbas.rja1',+
+   VERSION=1,+
+   SAVE_BEFORE_IMAGES=NO,+
+   BACKUP_CYCLES=10,+
+   B='$BRADOSS_JNL/dossbas.rjb1',+
+   PAGES=15000;
+*
+JOURNAL A='$BRADOSS_JNL/dossbas.rja2',+
+   VERSION=2,+
+   SAVE_BEFORE_IMAGES=NO,+
+   BACKUP_CYCLES=10,+
+   B='$BRADOSS_JNL/dossbas.rjb2',+
+   PAGES=15000;
+*
+JOURNAL A='$BRADOSS_JNL/dossbas.rja3',+
+   VERSION=3,+
+   SAVE_BEFORE_IMAGES=NO,+
+   BACKUP_CYCLES=10,+
+   B='$BRADOSS_JNL/dossbas.rjb3',+
+   PAGES=15000;
+*
+*
+DEFINITION_DATA_BASE='/db2/bradoss/database/dossbas.ddb';
+*
+INDEX=ACCES.CLE_ACCES,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=4:35),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=UNIQUE;
+*
+INDEX=ACCES.DROIT,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=YES,INSERT_METHOD=RANDOM,SIZE=1:27),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=ACCES.NOM_PROFIL/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=2:20),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=ACCES.OBJET/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:13),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=ACCES.TYPE_PROFIL/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:1,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=ARCHIVE.CLE_ARCHIVAGE,+
+   AREA=ARCHIVE_DATA,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=UNIQUE;
+*
+INDEX=ARCHIVE.CLE_DOSSIER,+
+   AREA=ARCHIVE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=ARCHIVE.DAT_DEC_DOSSIER,+
+   AREA=ARCHIVE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=ARCHIVE.NUM_DOSSIER/SC_RAISE,+
+   AREA=ARCHIVE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=6:15),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=UNIQUE;
+*
+INDEX=AUTRE_DOSSIER.AUTEUR/SC_NOM_INC_ENTIRE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:80),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=AUTRE_DOSSIER.BRADOC,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=AUTRE_DOSSIER.CLE_AUT_DOSS,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=SEQUENTIAL,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=UNIQUE;
+*
+INDEX=AUTRE_DOSSIER.COUR/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:4),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=AUTRE_DOSSIER.DAT_DOSSIER,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=AUTRE_DOSSIER.DAT_FERMETURE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=YES,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=AUTRE_DOSSIER.DESTINATAIRE/SC_NOM_INC_ENTIRE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:80),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=AUTRE_DOSSIER.DOSSIER_CONNEXE/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=6:15),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=AUTRE_DOSSIER.GENRE_DOCU,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:4,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=AUTRE_DOSSIER.INTIME/SC_NOM_INC_ENTIRE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:80),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=AUTRE_DOSSIER.JUGE_DELEGUE/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:20),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=AUTRE_DOSSIER.LANGUE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:1,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX AUTRE_DOSSIER.NOM_COLLAB_INDEX+
+  =$COMBINE(+
+REGISTRATEUR/SC_RAISE,REDACTEUR/SC_RAISE,JUGE_DELEGUE/SC_RAISE),+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:20),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=AUTRE_DOSSIER.NUM_ARCHIVE/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=YES,INSERT_METHOD=RANDOM,SIZE=1:8),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=AUTRE_DOSSIER.NUM_AUT_DOSS/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=6:15),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=UNIQUE;
+*
+INDEX=AUTRE_DOSSIER.OBJET/SC_NOM,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX AUTRE_DOSSIER.OBJET_REMARQUE+
+  =$COMBINE(+
+OBJET/SC_NOM,REM_AUTRE_DOSSIER/SC_NOM),+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX AUTRE_DOSSIER.PARTIE_INDEX+
+  =$COMBINE(+
+RECOURANT/SC_NOM_INC_ENTIRE,INTIME/SC_NOM_INC_ENTIRE),+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:80),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=AUTRE_DOSSIER.RECOURANT/SC_NOM_INC_ENTIRE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:80),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=AUTRE_DOSSIER.REDACTEUR/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:20),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=AUTRE_DOSSIER.REF_EXT/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=6:15),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=UNIQUE;
+*
+INDEX=AUTRE_DOSSIER.REGISTRATEUR/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:20),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=COLLABORATEUR.ABREVIATION/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=2:3),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=UNIQUE;
+*
+INDEX=COLLABORATEUR.ANCIENNETE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=COLLABORATEUR.ANCIEN_COLLAB,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=COLLABORATEUR.CLE_COLLAB/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=3:24),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=UNIQUE;
+*
+INDEX=COLLABORATEUR.COMPTE_VMS/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:12),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=UNIQUE;
+*
+INDEX=COLLABORATEUR.DAT_CREATION,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=COLLABORATEUR.DAT_ENTREE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=COLLABORATEUR.DAT_MODIFICATION,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=COLLABORATEUR.DAT_SORTIE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=COLLABORATEUR.DIVISION/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:4),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=COLLABORATEUR.FONCTION/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:3,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=COLLABORATEUR.LANGUE_REDACTEUR/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:1),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=COLLABORATEUR.MATIERE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=6:6),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=COLLABORATEUR.NOM_COLLAB/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:20),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=UNIQUE;
+*
+INDEX=COLLABORATEUR.PROFIL_ACCES/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=2:20,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=COLLABORATEUR.PROFIL_STAT/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=2:20,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=COLLABORATEUR.TRIBUNAL/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=2:3,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=COLLABORATEUR.USER,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=2:20),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=COMPO.COUR/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:4),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=UNIQUE;
+*
+INDEX=COMPO.PRESIDENCE/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:20),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.CHEZ/SC_RAISE,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=2:3),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.CLE_DECISION,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=SEQUENTIAL,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=UNIQUE;
+*
+INDEX=DECISION.CLE_PIECE/SC_RAISE,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=3:12),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.CLE_PIECE_DISPO/SC_RAISE,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=3:12),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.CODE_AZA_2,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=3:3),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.CODE_MEDIA,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=3:3),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.COMMUNIQUE,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.COMP_INSTANCE/SC_RAISE,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:20),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.CRIT_COMPO/SC_RAISE,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:1),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.CT,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:1),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.DAT_APPR_PROJET,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.DAT_AUDIENCE,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.DAT_CHEZ,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.DAT_CREATION,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.DAT_DEB_RAP,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.DAT_DEB_REDAC,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.DAT_DECISION,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.DAT_DISPO,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=YES,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.DAT_EMBARGO,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.DAT_EXEC,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.DAT_EXP,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=YES,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.DAT_FIN_RAP,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.DAT_FIN_REDAC,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.DAT_MODIFICATION,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.DAT_MODIF_SEAN,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.DAT_MUT_STATUT,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.DAT_SEAN_HORS_INT,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.DAT_SEAN_SUR_INT,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.EXPED_DISPO/SC_RAISE,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=YES,INSERT_METHOD=RANDOM,SIZE=2:3),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.GENRE_AUDIENCE/SC_RAISE,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:1,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.INTERNET,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.MODE_DECISION/SC_RAISE,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:2,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.MODE_REGLEMENT/SC_RAISE,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=2:4,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.NUM_DOSSIER_REGR/SC_RAISE,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=6:15),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.OBJET/SC_NOM,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=DECISION.PRESSE_AVISEE,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=YES,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.PUB_B,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.QUORUM,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.RAPPORTEUR/SC_RAISE,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:20),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.REM_COMPO/SC_NOM,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=YES,INSERT_METHOD=RANDOM,SIZE=1:30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=DECISION.RUBRUM_DISPO/SC_RAISE,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=YES,INSERT_METHOD=RANDOM,SIZE=1:1,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.SALLE,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:2,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.SECRETAIRE/SC_RAISE,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:20),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.STATUT_DEC/SC_RAISE,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=3:3,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.TYPE_PUB/SC_RAISE,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:1,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.USER/SC_RAISE,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:20),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DECISION.VISIBLE/SC_RAISE,+
+   AREA=DECISION_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:36),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DELAI.CLE_DELAI,+
+   AREA=DELAI_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=SEQUENTIAL,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=UNIQUE;
+*
+INDEX=DELAI.CLE_DOSSIER,+
+   AREA=DELAI_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=DELAI.CLE_PIECE/SC_RAISE,+
+   AREA=DELAI_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=3:12),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=DELAI.CONTROLEUR/SC_RAISE,+
+   AREA=DELAI_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=2:3),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DELAI.CT,+
+   AREA=DELAI_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:1),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DELAI.DAT_ACTION,+
+   AREA=DELAI_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DELAI.DAT_CHANGE_STATUT,+
+   AREA=DELAI_IND,+
+   TERMS=(INDEX_NULLS=YES,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DELAI.DAT_DELAI,+
+   AREA=DELAI_IND,+
+   TERMS=(INDEX_NULLS=YES,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DELAI.DAT_ECHEANCE,+
+   AREA=DELAI_IND,+
+   TERMS=(INDEX_NULLS=YES,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=DELAI.DAT_ENVOI,+
+   AREA=DELAI_IND,+
+   TERMS=(INDEX_NULLS=YES,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DELAI.DAT_MODIFICATION,+
+   AREA=DELAI_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DELAI.DAT_RAPPEL,+
+   AREA=DELAI_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DELAI.DAT_RECEPTION,+
+   AREA=DELAI_IND,+
+   TERMS=(INDEX_NULLS=YES,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DELAI.DAT_TOLERANCE,+
+   AREA=DELAI_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DELAI.GENRE_DELAI/SC_RAISE,+
+   AREA=DELAI_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:4,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DELAI.LIEU_ACTION,+
+   AREA=DELAI_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DELAI.MONTANT_AF_SU,+
+   AREA=DELAI_IND,+
+   TERMS=(INDEX_NULLS=YES,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DELAI.NUM_FACTURE,+
+   AREA=DELAI_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=3:9,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DELAI.NUM_IMP,+
+   AREA=DELAI_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=DELAI.ORIGINE,+
+   AREA=DELAI_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DELAI.PRENANT_PART/SC_RAISE,+
+   AREA=DELAI_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=2:3),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=DELAI.STATUT_DELAI/SC_RAISE,+
+   AREA=DELAI_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=3:3,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DELAI.USER,+
+   AREA=DELAI_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:20,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.AN_DOSSIER,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.BRANCHE/SC_RAISE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:4),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.CANTON/SC_RAISE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=2:2),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.CELEBRE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.CHAMBRE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:3,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX DOSSIER.CHARGE_INDEX+
+  =$COMBINE(+
+REGISTRATEUR/SC_RAISE,REDACTEUR/SC_RAISE,JUGE_DELEGUE/SC_RAISE),+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:20),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.CLE_DOSSIER,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=SEQUENTIAL,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=UNIQUE;
+*
+INDEX=DOSSIER.COMPO/SC_RAISE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=2:20),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.COUR/SC_RAISE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:4),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.CRIT_RAPP/SC_NOM_INC_ENTIRE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=DOSSIER.DAT_ARCHIVAGE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.DAT_ARRIVEE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.DAT_ATTR_JD,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.DAT_ATTR_RED,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.DAT_COMPO,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.DAT_COM_DISP,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.DAT_CREATION,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.DAT_DEB_SUSP,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.DAT_DEC_ATT,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.DAT_DEC_ATT_2,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.DAT_DEC_DOSSIER,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=YES,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.DAT_DEC_REQ,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.DAT_DEPOT,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.DAT_FIN_SUSP,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.DAT_LIQ_JD,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.DAT_LIQ_RED,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.DAT_MODIFICATION,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.DAT_MODIF_NOTIF,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.DAT_NOTIF,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.DAT_POSITION/SC_RAISE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=YES,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.DAT_POURVOI,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.DAT_REQ,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.DEM_REQ/SC_NOM,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:9),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=DOSSIER.DESCR_D/SC_DESCR,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:76),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.DESCR_F/SC_RAISE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:76),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.DESCR_I/SC_RAISE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:76),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.DOSSIER_CONNEXE/SC_RAISE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=5:15),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.ELECTRACTION,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=YES,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.ETAT_DOSSIER,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:1,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.EX_AUT_ATT/SC_RAISE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=DOSSIER.EX_NUM_DOSSIER/SC_RAISE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:20),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.EX_REKO/SC_RAISE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:10),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.HEURE_MODIF,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.INFO_EX/SC_NOM,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=DOSSIER.ISSUE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:3),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.JUGE/SC_RAISE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=2:20),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.JUGE_DELEGUE/SC_RAISE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:20),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.LANGUE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:1,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.LECTU_DOC/SC_RAISE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=2:4),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.MATIERE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=6:6),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.MIXITE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=YES,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.MODIF_DOC/SC_RAISE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=2:4),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.MOYEN_DE_DROIT,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:6,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.MULTI_MAT,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=6:6),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX DOSSIER.NOM_COLLAB_INDEX+
+  =$COMBINE(+
+REGISTRATEUR/SC_RAISE,REDACTEUR/SC_RAISE,JUGE_DELEGUE/SC_RAISE,JUGE/SC_RAISE),+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:20),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.NOM_DOSSIER/SC_NOM,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=3:43),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=DOSSIER.NOM_DOSSIER_NON_SECRET/SC_NOM,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:43),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=DOSSIER.NORME/SC_RAISE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:50),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.NOTICE_DOSSIER/SC_NOTICE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=DOSSIER.NUM_ARCHIVE/SC_RAISE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=YES,INSERT_METHOD=RANDOM,SIZE=1:8),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.NUM_DOSSIER/SC_RAISE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=5:15),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=UNIQUE;
+*
+INDEX=DOSSIER.NUM_IMP,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX DOSSIER.NUM_IMP_INDEX+
+  =$COMBINE(+
+NUM_IMP,NUM_REPRES),+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.NUM_REPRES,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.OBJET/SC_NOM,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=DOSSIER.PAYS/SC_RAISE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=2:2),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.POSITION/SC_RAISE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=YES,INSERT_METHOD=RANDOM,SIZE=2:3),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.PRESIDENCE/SC_RAISE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:20),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.PRIORITE/SC_RAISE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:1),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.PROCEDURE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:6),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.PROC_ONEREUSE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=YES,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.PUBLIC,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=YES,INSERT_METHOD=RANDOM,SIZE=1:1,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.RANG_DOSSIER,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.RECOURS_JOINT,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.REDACTEUR/SC_RAISE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:20),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.REF_AUT_ATT/SC_NOM,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=YES,INSERT_METHOD=RANDOM,SIZE=1:50),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=DOSSIER.REGISTRATEUR/SC_RAISE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:20),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.REM_ATTRIBUTION/SC_NOTICE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=DOSSIER.REM_BORDEREAU/SC_NOM,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=DOSSIER.REM_COMPO/SC_NOM,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=YES,INSERT_METHOD=RANDOM,SIZE=1:30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=DOSSIER.REM_DOSSIER/SC_NOM,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=DOSSIER.REM_REQ/SC_NOM,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=DOSSIER.RFID,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=YES,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.ROLE_CIV_IMP,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=3:3),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.ROLE_IMP,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:1),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.R_ISSUE_PROCES,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:4),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.SITE/SC_RAISE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=3:3),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.TRIBUNAL/SC_RAISE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=3:3),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.TYPE_REQ,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:4),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=DOSSIER.USER/SC_RAISE,+
+   AREA=DOSSIER_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:20),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=ED_STATUT.CLE_ED_STATUT,+
+   AREA=ARCHIVE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=SEQUENTIAL,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=UNIQUE;
+*
+INDEX=ED_STATUT.DAT_MODIF,+
+   AREA=ARCHIVE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=ED_STATUT.HEURE_MODIF,+
+   AREA=ARCHIVE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=ED_STATUT.NOM_FICHIER,+
+   AREA=ARCHIVE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:100),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=ED_STATUT.NOUVEAU_NOM_FICHIER,+
+   AREA=ARCHIVE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:100),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=ED_STATUT.STATUT_FICHIER,+
+   AREA=ARCHIVE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:5),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=ED_STATUT.VERROU_PAR/SC_RAISE,+
+   AREA=ARCHIVE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=2:3),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=FORMULE.CLE_FORMULE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=5:15),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=UNIQUE;
+*
+INDEX=HISTO.CLE_ENREG/SC_RAISE,+
+   AREA=ARCHIVE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:40,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=HISTO.CLE_HISTO,+
+   AREA=ARCHIVE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=SEQUENTIAL,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=UNIQUE;
+*
+INDEX=HISTO.DAT_HISTO,+
+   AREA=ARCHIVE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=SEQUENTIAL,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=HISTO.HEURE_HISTO,+
+   AREA=ARCHIVE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=HISTO.MODE_HISTO/SC_RAISE,+
+   AREA=ARCHIVE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:1,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=HISTO.TABLE_HISTO/SC_RAISE,+
+   AREA=ARCHIVE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:20,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=HISTO.USER/SC_RAISE,+
+   AREA=ARCHIVE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=2:20,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=HISTO.VERSION_HISTO/SC_RAISE,+
+   AREA=ARCHIVE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:10,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=IMPLIQUE.ABR_BRADOC/SC_NOM_INC_ENTIRE,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=2:100),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=IMPLIQUE.ALIAS_SOUNDEX/SC_SOUNDEX,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=YES,INSERT_METHOD=RANDOM,SIZE=1:50),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=IMPLIQUE.AN_NAIS,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=IMPLIQUE.APPART_AUTORITE/SC_RAISE,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=2:2),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=IMPLIQUE.AUTRE_NOM/SC_NOM_INC_ENTIRE,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=2:150),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=IMPLIQUE.AUTRE_NOM_INSENSI/SC_NOM_INC_ENTIRE,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:150),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=IMPLIQUE.CADUC,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX IMPLIQUE.CANTON_INDEX+
+  =$COMBINE(+
+CANTON/SC_RAISE,CANTON_SUP/SC_RAISE),+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=2:2),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=IMPLIQUE.CATEGORIE,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:1,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=IMPLIQUE.CATEGORIE_TFA,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:5,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=IMPLIQUE.CLE_IMPLIQUE,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=SEQUENTIAL,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=UNIQUE;
+*
+INDEX=IMPLIQUE.COD_ADR,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=IMPLIQUE.DAT_ASILE,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=IMPLIQUE.DAT_CREATION,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=IMPLIQUE.DAT_MODIFICATION,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=IMPLIQUE.DAT_MUT_SYMIC,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=IMPLIQUE.DAT_NAIS,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=IMPLIQUE.DAT_REAC,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=IMPLIQUE.ETAT_IMP,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:1,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=IMPLIQUE.EX_NUM_IMP/SC_RAISE,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=IMPLIQUE.FONCTION/SC_RAISE,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:5),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=IMPLIQUE.GENRE,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:2,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=IMPLIQUE.IMPLICABLE,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=IMPLIQUE.LANGUE,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=YES,INSERT_METHOD=RANDOM,SIZE=1:1),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX IMPLIQUE.LOC_INDEX+
+  =$COMBINE(+
+LOC/SC_NOM_INC_ENTIRE,LOC_SUP/SC_NOM_INC_ENTIRE),+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=2:40),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=IMPLIQUE.NATIONALITE,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=2:2),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=IMPLIQUE.NOM/SC_NOM_INC_ENTIRE,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=2:150),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=IMPLIQUE.NOM_COURT/SC_NOM_INC_ENTIRE,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:20),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=IMPLIQUE.NOM_COURT_LOC/SC_RAISE,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=5:52),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=UNIQUE;
+*
+INDEX IMPLIQUE.NOM_INDEX+
+  =$COMBINE(+
+NOM/SC_NOM_INC_ENTIRE,NOM_COURT/SC_NOM_INC_ENTIRE,+
+AUTRE_NOM/SC_NOM_INC_ENTIRE,NOM_COURT_LOC/SC_NOM_INC_ENTIRE),+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=2:150),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX IMPLIQUE.NOM_INDEX_INSENSI+
+  =$COMBINE(+
+NOM_INSENSI/SC_NOM_INC_ENTIRE,NOM_COURT_INSENSI/SC_NOM_INC_ENTIRE,+
+AUTRE_NOM_INSENSI/SC_NOM_INC_ENTIRE,NOM_COURT_LOC_INSENSI/SC_NOM_INC_ENTIRE),+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:150),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=IMPLIQUE.NOM_INSENSI/SC_NOM_INC_ENTIRE,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:150),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=IMPLIQUE.NOM_SOUNDEX/SC_SOUNDEX,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=YES,INSERT_METHOD=RANDOM,SIZE=1:190),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=IMPLIQUE.NPA,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=IMPLIQUE.NPA_SUP,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=IMPLIQUE.NUM_AVS,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=2:18),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=IMPLIQUE.NUM_JUSLINK,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=IMPLIQUE.NUM_MEMBRE,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=IMPLIQUE.NUM_ZEMIS,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=IMPLIQUE.ORIGINE,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=IMPLIQUE.PRENOM/SC_NOM_INC_ENTIRE,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:40),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=IMPLIQUE.PRENOM_SOUNDEX/SC_SOUNDEX,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=YES,INSERT_METHOD=RANDOM,SIZE=1:40),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=IMPLIQUE.PROFESSION,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:80),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=IMPLIQUE.REM_IMP/SC_NOM,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=IMPLIQUE.SENSIBLE,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=YES,INSERT_METHOD=RANDOM,   PRECISION=30,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=IMPLIQUE.SEXE,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:1),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX IMPLIQUE.SOUNDEX_INDEX+
+  =$COMBINE(+
+NOM_SOUNDEX/SC_SOUNDEX,PRENOM_SOUNDEX/SC_SOUNDEX,ALIAS_SOUNDEX/SC_SOUNDEX),+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:190),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=IMPLIQUE.TITRE,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:25),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX IMPLIQUE.TYP_ADR_INDEX+
+  =$COMBINE(+
+TYP_ADR/SC_RAISE,TYP_ADR_SUP/SC_RAISE),+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=YES,INSERT_METHOD=RANDOM,SIZE=2:4),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=IMPLIQUE.USER/SC_RAISE,+
+   AREA=IMPLIQUE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:20),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=LOI_RS.ABREV_D/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=2:23),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=LOI_RS.ABREV_F/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=2:23),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=LOI_RS.ABREV_I/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=2:23),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=LOI_RS.NUMERO_RS,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=3:20),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=UNIQUE;
+*
+INDEX=LOI_RS.TITRE_D/SC_TEXTE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:40),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=LOI_RS.TITRE_F/SC_TEXTE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:40),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=LOI_RS.TITRE_I/SC_TEXTE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:40),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=MATIERE.CLE_MATIERE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=6:6),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=UNIQUE;
+*
+INDEX=MATIERE.HORS_CHARGE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=MATIERE.INDEXABLE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=MATIERE.MATIERE_MAX,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=6:6),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=MATIERE.MATIERE_MIN,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=6:6),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=MESSAGE.CLE_MESSAGE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=UNIQUE;
+*
+INDEX=MESSAGE.NOM_MESSAGE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:50),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=UNIQUE;
+*
+INDEX=MESURE.CLE_DOSSIER,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=MESURE.CLE_MESURE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=SEQUENTIAL,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=UNIQUE;
+*
+INDEX=MESURE.DAT_MESURE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=MESURE.DAT_MODIFICATION,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=MESURE.NUM_IMP,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=MESURE.USER/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:20),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=MOYEN_DROIT.BRANCHE_TF,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:4),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=MOYEN_DROIT.BRANCHE_TFA,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:1),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=MOYEN_DROIT.CLE_MOYEN_DROIT,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=SEQUENTIAL,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=UNIQUE;
+*
+INDEX=MOYEN_DROIT.MOYEN_DE_DROIT,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:6),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=UNIQUE;
+*
+INDEX=NPA.CANTON/SC_RAISE,+
+   AREA=NPA_DATA,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:2,NORMALIZE=YES),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=NPA.CLE_NPA,+
+   AREA=NPA_DATA,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=6:50),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=UNIQUE;
+*
+INDEX=NPA.LOCALITE/SC_RAISE,+
+   AREA=NPA_DATA,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=2:30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX NPA.LOCALITE_AIDE+
+  =$CONCATENATE(+
+LOCALITE)/SC_NORAISE,+
+   AREA=NPA_DATA,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=2:30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX NPA.LOCALITE_SEC+
+  =$COMBINE(+
+LOCALITE_D/SC_RAISE,LOCALITE_F/SC_RAISE,LOCALITE_I/SC_RAISE),+
+   AREA=NPA_DATA,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=2:30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=NPA.NPA,+
+   AREA=NPA_DATA,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=NPA.OBSOLETE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=YES,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=NUMEROTATION.ANNEE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=NUMEROTATION.BRANCHE/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:4),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=NUMEROTATION.CLE_NUMEROTATION,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:21),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=UNIQUE;
+*
+INDEX=NUMEROTATION.COUR/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:4),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=NUMEROTATION.PREFIXE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:5),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=NUMEROTATION.SPECIALE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=PIECE.CLE_DOSSIER,+
+   AREA=PIECE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=PIECE.CLE_DOSSIER_CONNEXE,+
+   AREA=PIECE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=PIECE.CLE_PIECE,+
+   AREA=PIECE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=3:12),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=UNIQUE;
+*
+INDEX=PIECE.DAT_DEPOT,+
+   AREA=PIECE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=PIECE.DAT_ENVOI,+
+   AREA=PIECE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=PIECE.DAT_MODIFICATION,+
+   AREA=PIECE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=PIECE.DAT_PIECE,+
+   AREA=PIECE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=PIECE.DESIGNATION,+
+   AREA=PIECE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:60),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=PIECE.DESTIN_PIECE/SC_NOM_INC_ENTIRE,+
+   AREA=PIECE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:20),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=PIECE.EXP_PIECE/SC_NOM_INC_ENTIRE,+
+   AREA=PIECE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:20),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=PIECE.GENRE_PIECE,+
+   AREA=PIECE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:1),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=PIECE.MODE_RETOUR,+
+   AREA=PIECE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:1),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=PIECE.NUM_ENVOI,+
+   AREA=PIECE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=13:18),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=PIECE.NUM_PIECE_CONNEXE,+
+   AREA=PIECE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:4),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=CONTEXT),+
+   TYPE=EXACT;
+*
+INDEX=PIECE.RETOUR,+
+   AREA=PIECE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=PIECE.RETOURNER_A/SC_NOM_INC_ENTIRE,+
+   AREA=PIECE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:20),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=PIECE.STATUT_PIECE,+
+   AREA=PIECE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:1),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=PIECE.USER/SC_RAISE,+
+   AREA=PIECE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:20),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=PIECE.VISIBLE,+
+   AREA=PIECE_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=TACHE.ID_TACHE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:12),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=UNIQUE;
+*
+INDEX=TRADUCTION.ABREV_D/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=TRADUCTION.ABREV_F/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=TRADUCTION.ABREV_I/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=TRADUCTION.CLE_TRADUCTION,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=SEQUENTIAL,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=UNIQUE;
+*
+INDEX=TRADUCTION.CODE_MONOLINGUE/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=TRADUCTION.NOM_CHAMP/SC_RAISE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:32),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=TRADUCTION.NOM_CODE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:63),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=UNIQUE;
+*
+INDEX=TRADUCTION.NON_SELEX,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=TRADUCTION.OBSOLETE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=TRADUCTION.PROVISOIRE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=TRADUCTION.RANG,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,   PRECISION=30),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=NONE),+
+   TYPE=EXACT;
+*
+INDEX=TRADUCTION.TEXTE_D/SC_TEXTE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:50),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=TRADUCTION.TEXTE_F/SC_TEXTE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:50),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+INDEX=TRADUCTION.TEXTE_I/SC_TEXTE,+
+   AREA=DEFAULT_IND,+
+   TERMS=(INDEX_NULLS=NO,INSERT_METHOD=RANDOM,SIZE=1:50),+
+   REFERENCES=(INSERT_METHOD=RANDOM,PROXIMITY=WORD),+
+   TYPE=INCLUSIVE;
+*
+RECORD_STORAGE=ACCES,+
+   UPDATE=IMMEDIATE,+
+   MULTI_FIELD_INDEX=YES,+
+   AREAS=DEFAULT_DATA;
+*
+RECORD_STORAGE=ARCHIVE,+
+   UPDATE=IMMEDIATE,+
+   MULTI_FIELD_INDEX=YES,+
+   AREAS=ARCHIVE_DATA;
+*
+RECORD_STORAGE=AUTRE_DOSSIER,+
+   UPDATE=IMMEDIATE,+
+   MULTI_FIELD_INDEX=YES,+
+   AREAS=DEFAULT_DATA;
+*
+RECORD_STORAGE=COLLABORATEUR,+
+   UPDATE=IMMEDIATE,+
+   MULTI_FIELD_INDEX=YES,+
+   AREAS=DEFAULT_DATA;
+*
+RECORD_STORAGE=COMPO,+
+   UPDATE=IMMEDIATE,+
+   MULTI_FIELD_INDEX=YES,+
+   AREAS=DEFAULT_DATA;
+*
+RECORD_STORAGE=DECISION,+
+   UPDATE=IMMEDIATE,+
+   MULTI_FIELD_INDEX=YES,+
+   AREAS=DECISION_DATA;
+*
+RECORD_STORAGE=DELAI,+
+   UPDATE=IMMEDIATE,+
+   MULTI_FIELD_INDEX=YES,+
+   AREAS=DELAI_DATA;
+*
+RECORD_STORAGE=DOSSIER,+
+   UPDATE=IMMEDIATE,+
+   MULTI_FIELD_INDEX=YES,+
+   AREAS=DOSSIER_DATA;
+*
+RECORD_STORAGE=ED_STATUT,+
+   UPDATE=IMMEDIATE,+
+   MULTI_FIELD_INDEX=YES,+
+   AREAS=ARCHIVE_DATA;
+*
+RECORD_STORAGE=FORMULE,+
+   UPDATE=IMMEDIATE,+
+   MULTI_FIELD_INDEX=YES,+
+   AREAS=DEFAULT_DATA;
+*
+RECORD_STORAGE=HISTO,+
+   UPDATE=IMMEDIATE,+
+   MULTI_FIELD_INDEX=YES,+
+   AREAS=ARCHIVE_DATA;
+*
+RECORD_STORAGE=IMPLIQUE,+
+   UPDATE=IMMEDIATE,+
+   MULTI_FIELD_INDEX=YES,+
+   AREAS=IMPLIQUE_DATA;
+*
+RECORD_STORAGE=LOI_RS,+
+   UPDATE=IMMEDIATE,+
+   MULTI_FIELD_INDEX=YES,+
+   AREAS=DEFAULT_DATA;
+*
+RECORD_STORAGE=MATIERE,+
+   UPDATE=IMMEDIATE,+
+   MULTI_FIELD_INDEX=YES,+
+   AREAS=DEFAULT_DATA;
+*
+RECORD_STORAGE=MESSAGE,+
+   UPDATE=IMMEDIATE,+
+   MULTI_FIELD_INDEX=YES,+
+   AREAS=DEFAULT_DATA;
+*
+RECORD_STORAGE=MESURE,+
+   UPDATE=IMMEDIATE,+
+   MULTI_FIELD_INDEX=YES,+
+   AREAS=DEFAULT_DATA;
+*
+RECORD_STORAGE=MOYEN_DROIT,+
+   UPDATE=IMMEDIATE,+
+   MULTI_FIELD_INDEX=YES,+
+   AREAS=DEFAULT_DATA;
+*
+RECORD_STORAGE=NPA,+
+   UPDATE=IMMEDIATE,+
+   MULTI_FIELD_INDEX=YES,+
+   AREAS=NPA_DATA;
+*
+RECORD_STORAGE=NUMEROTATION,+
+   UPDATE=IMMEDIATE,+
+   MULTI_FIELD_INDEX=YES,+
+   AREAS=DEFAULT_DATA;
+*
+RECORD_STORAGE=PIECE,+
+   UPDATE=IMMEDIATE,+
+   MULTI_FIELD_INDEX=YES,+
+   AREAS=PIECE_DATA;
+*
+RECORD_STORAGE=TACHE,+
+   UPDATE=IMMEDIATE,+
+   MULTI_FIELD_INDEX=YES,+
+   AREAS=DEFAULT_DATA;
+*
+RECORD_STORAGE=TRADUCTION,+
+   UPDATE=IMMEDIATE,+
+   MULTI_FIELD_INDEX=YES,+
+   AREAS=DEFAULT_DATA;
+*
+DDB_JOURNAL A='/jnl1/bradoss/journal/dossbas.dja',+
+   SAVE_BEFORE_IMAGES=NO,+
+   B='/jnl1/bradoss/journal/dossbas.djb',+
+   PAGES=4000;

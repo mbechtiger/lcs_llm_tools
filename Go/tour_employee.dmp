@@ -1,0 +1,1068 @@
+R  EMPLOYEE                            <<< record # 1 >>>
+V  DNO(1)=100
+V  ENO(1)=1001
+V  JOB(1)=President
+V  MGR_NO(1)=1001
+V  NAME(1)=DAVIS, Joey
+V  SALARY(1)=8000.00
+V  TEL(1)=4231
+R  EMPLOYEE                            <<< record # 2 >>>
+V  COMM(1)=400.00
+V  DNO(1)=201
+V  ENO(1)=1823
+V  JOB(1)=Salesman
+V  MGR_NO(1)=3724
+V  NAME(1)=SMITH, JOHN
+V  SALARY(1)=2000.00
+V  TEL(1)=3873
+R  EMPLOYEE                            <<< record # 3 >>>
+V  DNO(1)=301
+V  ENO(1)=2312
+V  JOB(1)=Programmer
+V  MGR_NO(1)=2930
+V  NAME(1)=MILLER, JOHN
+V  SALARY(1)=2350.00
+V  TEL(1)=1504
+R  EMPLOYEE                            <<< record # 4 >>>
+V  DNO(1)=301
+V  ENO(1)=2458
+V  JOB(1)=Clerk
+V  MGR_NO(1)=2930
+V  NAME(1)=MARTIN, PETER
+V  SALARY(1)=1050.00
+V  TEL(1)=1506
+R  EMPLOYEE                            <<< record # 5 >>>
+V  DNO(1)=301
+V  ENO(1)=2843
+V  JOB(1)=Programmer
+V  MGR_NO(1)=2312
+V  NAME(1)=JAMES, JOYCE
+V  SALARY(1)=2000.00
+V  TEL(1)=7328
+R  EMPLOYEE                            <<< record # 6 >>>
+V  DNO(1)=202
+V  ENO(1)=5235
+V  JOB(1)=Secretary
+V  MGR_NO(1)=5829
+V  NAME(1)=JOHNSON, JANE
+V  SALARY(1)=1000.00
+V  TEL(1)=2513
+R  EMPLOYEE                            <<< record # 7 >>>
+V  DNO(1)=301
+V  ENO(1)=2930
+V  JOB(1)=Manager
+V  MGR_NO(1)=10008
+V  NAME(1)=BLACK, THOMAS
+V  SALARY(1)=2650.00
+V  TEL(1)=1508
+R  EMPLOYEE                            <<< record # 8 >>>
+V  DNO(1)=100
+V  ENO(1)=3395
+V  JOB(1)=Secretary
+V  MGR_NO(1)=1001
+V  NAME(1)=BROWN, SANDRA
+V  SALARY(1)=1700.00
+V  TEL(1)=4227
+R  EMPLOYEE                            <<< record # 9 >>>
+V  COMM(1)=250.00
+V  DNO(1)=201
+V  ENO(1)=3724
+V  JOB(1)=Manager
+V  MGR_NO(1)=10089
+V  NAME(1)=JACKSON, MARY
+V  SALARY(1)=2700.00
+V  TEL(1)=3870
+R  EMPLOYEE                            <<< record # 10 >>>
+V  DNO(1)=301
+V  ENO(1)=3912
+V  JOB(1)=Programmer
+V  MGR_NO(1)=2930
+V  NAME(1)=LEMON, LINDA
+V  SALARY(1)=2150.00
+V  TEL(1)=1512
+R  EMPLOYEE                            <<< record # 11 >>>
+V  DNO(1)=101
+V  ENO(1)=4552
+V  JOB(1)=Clerk
+V  MGR_NO(1)=5962
+V  NAME(1)=DOE, ABRAHAM
+V  SALARY(1)=1050.00
+V  TEL(1)=4296
+R  EMPLOYEE                            <<< record # 12 >>>
+V  COMM(1)=1400.00
+V  DNO(1)=201
+V  ENO(1)=4801
+V  JOB(1)=Salesman
+V  MGR_NO(1)=3724
+V  NAME(1)=JONES, PAUL
+V  SALARY(1)=2100.00
+V  TEL(1)=3872
+R  EMPLOYEE                            <<< record # 13 >>>
+V  DNO(1)=401
+V  ENO(1)=5007
+V  JOB(1)=Secretary
+V  MGR_NO(1)=5519
+V  NAME(1)=ROWE, TIM
+V  SALARY(1)=1150.00
+V  TEL(1)=2213
+R  EMPLOYEE                            <<< record # 14 >>>
+V  DNO(1)=401
+V  ENO(1)=5519
+V  JOB(1)=Manager
+V  MGR_NO(1)=10029
+V  NAME(1)=SMITH, NANCY
+V  SALARY(1)=2600.00
+V  TEL(1)=2215
+R  EMPLOYEE                            <<< record # 15 >>>
+V  DNO(1)=201
+V  ENO(1)=5734
+V  JOB(1)=Clerk
+V  MGR_NO(1)=3724
+V  NAME(1)=ADAMS, PAULA
+V  SALARY(1)=1100.00
+V  TEL(1)=3876
+R  EMPLOYEE                            <<< record # 16 >>>
+V  DNO(1)=202
+V  ENO(1)=5829
+V  JOB(1)=Manager
+V  MGR_NO(1)=1001
+V  NAME(1)=SCHMIDT, MARVIN
+V  SALARY(1)=1300.00
+V  TEL(1)=2516
+R  EMPLOYEE                            <<< record # 17 >>>
+V  DNO(1)=101
+V  ENO(1)=5962
+V  JOB(1)=Manager
+V  MGR_NO(1)=10090
+V  NAME(1)=WILLIAMS, JAMES
+V  SALARY(1)=2500.00
+V  TEL(1)=4250
+R  EMPLOYEE                            <<< record # 18 >>>
+V  DNO(1)=401
+V  ENO(1)=6071
+V  JOB(1)=Operator
+V  MGR_NO(1)=5519
+V  NAME(1)=CLARK, RICHARD
+V  SALARY(1)=1200.00
+V  TEL(1)=2209
+R  EMPLOYEE                            <<< record # 19 >>>
+V  DNO(1)=101
+V  ENO(1)=6107
+V  JOB(1)=Secretary
+V  MGR_NO(1)=5962
+V  NAME(1)=PETERS, BRENDA
+V  SALARY(1)=1250.00
+V  TEL(1)=4251
+R  EMPLOYEE                            <<< record # 20 >>>
+V  DNO(1)=202
+V  ENO(1)=6413
+V  JOB(1)=Secretary
+V  MGR_NO(1)=5829
+V  NAME(1)=WATSON, JOAN
+V  SALARY(1)=900.00
+V  TEL(1)=2513
+R  EMPLOYEE                            <<< record # 21 >>>
+V  DNO(1)=202
+V  ENO(1)=6286
+V  JOB(1)=Clerk
+V  MGR_NO(1)=5829
+V  NAME(1)=EMERSON, RALPH
+V  SALARY(1)=750.00
+V  TEL(1)=2513
+R  EMPLOYEE                            <<< record # 22 >>>
+V  DNO(1)=401
+V  ENO(1)=6315
+V  JOB(1)=Operator
+V  MGR_NO(1)=5519
+V  NAME(1)=WELCH, PATRICIA
+V  SALARY(1)=1400.00
+V  TEL(1)=2207
+R  EMPLOYEE                            <<< record # 23 >>>
+V  DNO(1)=100
+V  ENO(1)=6366
+V  JOB(1)=Clerk
+V  MGR_NO(1)=1001
+V  NAME(1)=MASON, PERRY
+V  SALARY(1)=1500.00
+V  TEL(1)=4188
+R  EMPLOYEE                            <<< record # 24 >>>
+V  DNO(1)=301
+V  ENO(1)=7290
+V  JOB(1)=Programmer
+V  MGR_NO(1)=2843
+V  NAME(1)=LONG, TOM
+V  SALARY(1)=2150.00
+V  TEL(1)=4001
+R  EMPLOYEE                            <<< record # 25 >>>
+V  DNO(1)=101
+V  ENO(1)=7350
+V  JOB(1)=Clerk
+V  MGR_NO(1)=4552
+V  NAME(1)=LEWIS, BILL
+V  SALARY(1)=1200.00
+V  TEL(1)=9726
+R  EMPLOYEE                            <<< record # 26 >>>
+V  COMM(1)=400.00
+V  DNO(1)=201
+V  ENO(1)=7408
+V  JOB(1)=Salesman
+V  MGR_NO(1)=5829
+V  NAME(1)=JARVIS, JERRY
+V  SALARY(1)=1650.00
+V  TEL(1)=726
+R  EMPLOYEE                            <<< record # 27 >>>
+V  DNO(1)=302
+V  ENO(1)=10004
+V  JOB(1)=Administrative Assistant
+V  MGR_NO(1)=10019
+V  NAME(1)=HOBBS, JEREMY
+V  SALARY(1)=1021.00
+V  TEL(1)=2539
+R  EMPLOYEE                            <<< record # 28 >>>
+V  COMM(1)=800.00
+V  DNO(1)=201
+V  ENO(1)=6819
+V  JOB(1)=Salesman
+V  MGR_NO(1)=5829
+V  NAME(1)=DAY, THOMAS
+V  SALARY(1)=1500.00
+V  TEL(1)=7560
+R  EMPLOYEE                            <<< record # 29 >>>
+V  DNO(1)=401
+V  ENO(1)=7028
+V  JOB(1)=Operator
+V  MGR_NO(1)=6071
+V  NAME(1)=BECK, GARY
+V  SALARY(1)=1450.00
+V  TEL(1)=1624
+R  EMPLOYEE                            <<< record # 30 >>>
+V  DNO(1)=101
+V  ENO(1)=7192
+V  JOB(1)=Secretary
+V  MGR_NO(1)=6107
+V  NAME(1)=LYONS, JEANNE
+V  SALARY(1)=1300.00
+V  TEL(1)=4326
+R  EMPLOYEE                            <<< record # 31 >>>
+V  DNO(1)=100
+V  ENO(1)=7498
+V  JOB(1)=Clerk
+V  MGR_NO(1)=4552
+V  NAME(1)=BARNETT, DON
+V  SALARY(1)=1650.00
+V  TEL(1)=2172
+R  EMPLOYEE                            <<< record # 32 >>>
+V  DNO(1)=302
+V  ENO(1)=10000
+V  JOB(1)=Clerk
+V  MGR_NO(1)=10086
+V  NAME(1)=CRIST, RONALD
+V  SALARY(1)=1167.00
+V  TEL(1)=5542
+R  EMPLOYEE                            <<< record # 33 >>>
+V  DNO(1)=100
+V  ENO(1)=10001
+V  JOB(1)=Manager
+V  MGR_NO(1)=10060
+V  NAME(1)=ACHILLES, HAROLD
+V  SALARY(1)=2455.00
+V  TEL(1)=9854
+R  EMPLOYEE                            <<< record # 34 >>>
+V  DNO(1)=501
+V  ENO(1)=10007
+V  JOB(1)=Secretary
+V  MGR_NO(1)=10086
+V  NAME(1)=MCNALLY, WENDY
+V  SALARY(1)=1503.00
+V  TEL(1)=4642
+R  EMPLOYEE                            <<< record # 35 >>>
+V  DNO(1)=201
+V  ENO(1)=10002
+V  JOB(1)=Administrative Assistant
+V  MGR_NO(1)=10086
+V  NAME(1)=SCHMIDT, RANDY
+V  SALARY(1)=1431.00
+V  TEL(1)=9588
+R  EMPLOYEE                            <<< record # 36 >>>
+V  DNO(1)=201
+V  ENO(1)=10012
+V  JOB(1)=Clerk
+V  MGR_NO(1)=10089
+V  NAME(1)=WRIGHT, EGOR
+V  SALARY(1)=1239.00
+V  TEL(1)=4518
+R  EMPLOYEE                            <<< record # 37 >>>
+V  DNO(1)=101
+V  ENO(1)=10003
+V  JOB(1)=Clerk
+V  MGR_NO(1)=10045
+V  NAME(1)=BODNARUK, ANN
+V  SALARY(1)=811.00
+V  TEL(1)=2727
+R  EMPLOYEE                            <<< record # 38 >>>
+V  DNO(1)=301
+V  ENO(1)=10005
+V  JOB(1)=Programmer
+V  MGR_NO(1)=10049
+V  NAME(1)=ELLIS, BOB
+V  SALARY(1)=1354.00
+V  TEL(1)=7772
+R  EMPLOYEE                            <<< record # 39 >>>
+V  COMM(1)=181.00
+V  DNO(1)=202
+V  ENO(1)=10006
+V  JOB(1)=Salesman
+V  MGR_NO(1)=10086
+V  NAME(1)=LUKENS, WILMA
+V  SALARY(1)=2015.00
+V  TEL(1)=5196
+R  EMPLOYEE                            <<< record # 40 >>>
+V  DNO(1)=301
+V  ENO(1)=10042
+V  JOB(1)=Administrative Assistant
+V  MGR_NO(1)=10001
+V  NAME(1)=HOWARD, MARK
+V  SALARY(1)=1213.00
+V  TEL(1)=9324
+R  EMPLOYEE                            <<< record # 41 >>>
+V  DNO(1)=501
+V  ENO(1)=10044
+V  JOB(1)=Administrative Assistant
+V  MGR_NO(1)=10049
+V  NAME(1)=SHELTON, JOSHUA
+V  SALARY(1)=1166.00
+V  TEL(1)=6263
+R  EMPLOYEE                            <<< record # 42 >>>
+V  DNO(1)=401
+V  ENO(1)=10008
+V  JOB(1)=Vice-President
+V  MGR_NO(1)=1001
+V  NAME(1)=WHANG, BERNARD
+V  SALARY(1)=2739.00
+V  TEL(1)=8816
+R  EMPLOYEE                            <<< record # 43 >>>
+V  DNO(1)=401
+V  ENO(1)=10009
+V  JOB(1)=Programmer
+V  MGR_NO(1)=10093
+V  NAME(1)=SIGMAN, RICH
+V  SALARY(1)=2371.00
+V  TEL(1)=3717
+R  EMPLOYEE                            <<< record # 44 >>>
+V  DNO(1)=601
+V  ENO(1)=10010
+V  JOB(1)=Programmer
+V  MGR_NO(1)=10001
+V  NAME(1)=SEUFERT, TODD
+V  SALARY(1)=1919.00
+V  TEL(1)=3070
+R  EMPLOYEE                            <<< record # 45 >>>
+V  DNO(1)=100
+V  ENO(1)=10011
+V  JOB(1)=Programmer
+V  MGR_NO(1)=10085
+V  NAME(1)=BAHAM, GEORGE
+V  SALARY(1)=2194.00
+V  TEL(1)=4979
+R  EMPLOYEE                            <<< record # 46 >>>
+V  COMM(1)=434.00
+V  DNO(1)=301
+V  ENO(1)=10013
+V  JOB(1)=Salesman
+V  MGR_NO(1)=10093
+V  NAME(1)=FERRARA, ROBERTA
+V  SALARY(1)=1609.00
+V  TEL(1)=1420
+R  EMPLOYEE                            <<< record # 47 >>>
+V  DNO(1)=201
+V  ENO(1)=10014
+V  JOB(1)=Administrative Assistant
+V  MGR_NO(1)=10089
+V  NAME(1)=PIZZINO, JUDY
+V  SALARY(1)=1304.00
+V  TEL(1)=1312
+R  EMPLOYEE                            <<< record # 48 >>>
+V  COMM(1)=323.00
+V  DNO(1)=201
+V  ENO(1)=10015
+V  JOB(1)=Salesman
+V  MGR_NO(1)=10019
+V  NAME(1)=COMSTOCK, JANEEN
+V  SALARY(1)=1406.00
+V  TEL(1)=1812
+R  EMPLOYEE                            <<< record # 49 >>>
+V  DNO(1)=301
+V  ENO(1)=10016
+V  JOB(1)=Clerk
+V  MGR_NO(1)=10045
+V  NAME(1)=CASHWELL, YOLA
+V  SALARY(1)=1150.00
+V  TEL(1)=7159
+R  EMPLOYEE                            <<< record # 50 >>>
+V  DNO(1)=301
+V  ENO(1)=10017
+V  JOB(1)=Programmer
+V  MGR_NO(1)=10089
+V  NAME(1)=DILIBERTI, JAME
+V  SALARY(1)=2096.00
+V  TEL(1)=6495
+R  EMPLOYEE                            <<< record # 51 >>>
+V  DNO(1)=302
+V  ENO(1)=10018
+V  JOB(1)=Programmer
+V  MGR_NO(1)=10019
+V  NAME(1)=REUTER, RALPH
+V  SALARY(1)=1499.00
+V  TEL(1)=4154
+R  EMPLOYEE                            <<< record # 52 >>>
+V  DNO(1)=301
+V  ENO(1)=10021
+V  JOB(1)=Secretary
+V  MGR_NO(1)=10093
+V  NAME(1)=BALUKJIAN, HENRY
+V  SALARY(1)=1547.00
+V  TEL(1)=2116
+R  EMPLOYEE                            <<< record # 53 >>>
+V  DNO(1)=301
+V  ENO(1)=10024
+V  JOB(1)=Clerk
+V  MGR_NO(1)=10001
+V  NAME(1)=DAVIS, SCOTT
+V  SALARY(1)=867.00
+V  TEL(1)=9569
+R  EMPLOYEE                            <<< record # 54 >>>
+V  DNO(1)=202
+V  ENO(1)=10025
+V  JOB(1)=Clerk
+V  MGR_NO(1)=10085
+V  NAME(1)=MAIR, ALICE
+V  SALARY(1)=1041.00
+V  TEL(1)=2090
+R  EMPLOYEE                            <<< record # 55 >>>
+V  DNO(1)=401
+V  ENO(1)=10026
+V  JOB(1)=Clerk
+V  MGR_NO(1)=10045
+V  NAME(1)=READER, WILMA
+V  SALARY(1)=829.00
+V  TEL(1)=5833
+R  EMPLOYEE                            <<< record # 56 >>>
+V  DNO(1)=202
+V  ENO(1)=10019
+V  JOB(1)=Manager
+V  MGR_NO(1)=10029
+V  NAME(1)=JOHNSON, TORIE
+V  SALARY(1)=2258.00
+V  TEL(1)=1248
+R  EMPLOYEE                            <<< record # 57 >>>
+V  DNO(1)=601
+V  ENO(1)=10020
+V  JOB(1)=Secretary
+V  MGR_NO(1)=10089
+V  NAME(1)=WHITESIDE, DOUG
+V  SALARY(1)=1079.00
+V  TEL(1)=9898
+R  EMPLOYEE                            <<< record # 58 >>>
+V  COMM(1)=841.00
+V  DNO(1)=201
+V  ENO(1)=10027
+V  JOB(1)=Salesman
+V  MGR_NO(1)=10019
+V  NAME(1)=BERT, CARL
+V  SALARY(1)=1870.00
+V  TEL(1)=8024
+R  EMPLOYEE                            <<< record # 59 >>>
+V  DNO(1)=501
+V  ENO(1)=10022
+V  JOB(1)=Administrative Assistant
+V  MGR_NO(1)=10019
+V  NAME(1)=COHEN, SUAN
+V  SALARY(1)=1038.00
+V  TEL(1)=6567
+R  EMPLOYEE                            <<< record # 60 >>>
+V  DNO(1)=301
+V  ENO(1)=10023
+V  JOB(1)=Programmer
+V  MGR_NO(1)=10089
+V  NAME(1)=NELSON, LEAH
+V  SALARY(1)=1684.00
+V  TEL(1)=6965
+R  EMPLOYEE                            <<< record # 61 >>>
+V  DNO(1)=101
+V  ENO(1)=10037
+V  JOB(1)=Secretary
+V  MGR_NO(1)=10086
+V  NAME(1)=ANGELLO, LUKE
+V  SALARY(1)=1477.00
+V  TEL(1)=9516
+R  EMPLOYEE                            <<< record # 62 >>>
+V  DNO(1)=201
+V  ENO(1)=10038
+V  JOB(1)=Programmer
+V  MGR_NO(1)=10076
+V  NAME(1)=HAWKINS, SUSAN
+V  SALARY(1)=1614.00
+V  TEL(1)=8468
+R  EMPLOYEE                            <<< record # 63 >>>
+V  DNO(1)=601
+V  ENO(1)=10028
+V  JOB(1)=Vice-President
+V  MGR_NO(1)=1001
+V  NAME(1)=WILLIAMS, RHONDA
+V  SALARY(1)=2834.00
+V  TEL(1)=5684
+R  EMPLOYEE                            <<< record # 64 >>>
+V  DNO(1)=401
+V  ENO(1)=10029
+V  JOB(1)=Vice-President
+V  MGR_NO(1)=1001
+V  NAME(1)=LIN, ANN
+V  SALARY(1)=2724.00
+V  TEL(1)=9436
+R  EMPLOYEE                            <<< record # 65 >>>
+V  DNO(1)=301
+V  ENO(1)=10030
+V  JOB(1)=Secretary
+V  MGR_NO(1)=10045
+V  NAME(1)=PHOENIX, SUNNY
+V  SALARY(1)=1805.00
+V  TEL(1)=8971
+R  EMPLOYEE                            <<< record # 66 >>>
+V  DNO(1)=501
+V  ENO(1)=10031
+V  JOB(1)=Secretary
+V  MGR_NO(1)=10049
+V  NAME(1)=LAPP, RUSSELL
+V  SALARY(1)=1349.00
+V  TEL(1)=7121
+R  EMPLOYEE                            <<< record # 67 >>>
+V  DNO(1)=301
+V  ENO(1)=10032
+V  JOB(1)=Programmer
+V  MGR_NO(1)=10049
+V  NAME(1)=STOCKER, HAZEL
+V  SALARY(1)=1603.00
+V  TEL(1)=8485
+R  EMPLOYEE                            <<< record # 68 >>>
+V  DNO(1)=501
+V  ENO(1)=10034
+V  JOB(1)=Administrative Assistant
+V  MGR_NO(1)=10049
+V  NAME(1)=KANG, SAM
+V  SALARY(1)=933.00
+V  TEL(1)=1291
+R  EMPLOYEE                            <<< record # 69 >>>
+V  DNO(1)=302
+V  ENO(1)=10039
+V  JOB(1)=Administrative Assistant
+V  MGR_NO(1)=10076
+V  NAME(1)=SMITH, CASEY
+V  SALARY(1)=1090.00
+V  TEL(1)=9404
+R  EMPLOYEE                            <<< record # 70 >>>
+V  COMM(1)=390.00
+V  DNO(1)=501
+V  ENO(1)=10033
+V  JOB(1)=Salesman
+V  MGR_NO(1)=10045
+V  NAME(1)=HELMICK, CURT
+V  SALARY(1)=1448.00
+V  TEL(1)=6180
+R  EMPLOYEE                            <<< record # 71 >>>
+V  COMM(1)=164.00
+V  DNO(1)=401
+V  ENO(1)=10035
+V  JOB(1)=Salesman
+V  MGR_NO(1)=10076
+V  NAME(1)=ALTMAN, MARY
+V  SALARY(1)=1823.00
+V  TEL(1)=8780
+R  EMPLOYEE                            <<< record # 72 >>>
+V  DNO(1)=401
+V  ENO(1)=10045
+V  JOB(1)=Manager
+V  MGR_NO(1)=10028
+V  NAME(1)=MARTIN, MARK
+V  SALARY(1)=2723.00
+V  TEL(1)=9780
+R  EMPLOYEE                            <<< record # 73 >>>
+V  DNO(1)=501
+V  ENO(1)=10036
+V  JOB(1)=Administrative Assistant
+V  MGR_NO(1)=10093
+V  NAME(1)=SABOE, MIKE
+V  SALARY(1)=1317.00
+V  TEL(1)=7771
+R  EMPLOYEE                            <<< record # 74 >>>
+V  DNO(1)=101
+V  ENO(1)=10043
+V  JOB(1)=Secretary
+V  MGR_NO(1)=10045
+V  NAME(1)=SCHAUER, RACHEL
+V  SALARY(1)=1378.00
+V  TEL(1)=2261
+R  EMPLOYEE                            <<< record # 75 >>>
+V  DNO(1)=501
+V  ENO(1)=10040
+V  JOB(1)=Manager
+V  MGR_NO(1)=10089
+V  NAME(1)=KUNCHAL, KURT
+V  SALARY(1)=3944.00
+V  TEL(1)=6640
+R  EMPLOYEE                            <<< record # 76 >>>
+V  DNO(1)=100
+V  ENO(1)=10041
+V  JOB(1)=Administrative Assistant
+V  MGR_NO(1)=10045
+V  NAME(1)=GROOMS, DIANE
+V  SALARY(1)=1446.00
+V  TEL(1)=6984
+R  EMPLOYEE                            <<< record # 77 >>>
+V  DNO(1)=401
+V  ENO(1)=10046
+V  JOB(1)=Administrative Assistant
+V  MGR_NO(1)=10019
+V  NAME(1)=PECKHAM, PATTY
+V  SALARY(1)=1385.00
+V  TEL(1)=2780
+R  EMPLOYEE                            <<< record # 78 >>>
+V  COMM(1)=569.00
+V  DNO(1)=301
+V  ENO(1)=10047
+V  JOB(1)=Salesman
+V  MGR_NO(1)=10093
+V  NAME(1)=KONOPKA, ALLEN
+V  SALARY(1)=1627.00
+V  TEL(1)=3820
+R  EMPLOYEE                            <<< record # 79 >>>
+V  DNO(1)=201
+V  ENO(1)=10048
+V  JOB(1)=Programmer
+V  MGR_NO(1)=10093
+V  NAME(1)=HERWIG, LOUIS
+V  SALARY(1)=1364.00
+V  TEL(1)=8693
+R  EMPLOYEE                            <<< record # 80 >>>
+V  DNO(1)=201
+V  ENO(1)=10049
+V  JOB(1)=Manager
+V  MGR_NO(1)=10008
+V  NAME(1)=ROSSIGNOL, GWEN
+V  SALARY(1)=2573.00
+V  TEL(1)=2050
+R  EMPLOYEE                            <<< record # 81 >>>
+V  DNO(1)=201
+V  ENO(1)=10050
+V  JOB(1)=Programmer
+V  MGR_NO(1)=10019
+V  NAME(1)=GOOD, SHELLY
+V  SALARY(1)=1793.00
+V  TEL(1)=4114
+R  EMPLOYEE                            <<< record # 82 >>>
+V  DNO(1)=401
+V  ENO(1)=10051
+V  JOB(1)=Secretary
+V  MGR_NO(1)=10085
+V  NAME(1)=SUROSKY, HARVEY
+V  SALARY(1)=1367.00
+V  TEL(1)=4308
+R  EMPLOYEE                            <<< record # 83 >>>
+V  DNO(1)=301
+V  ENO(1)=10052
+V  JOB(1)=Secretary
+V  MGR_NO(1)=10019
+V  NAME(1)=BARTICK, HARRIETT
+V  SALARY(1)=1034.00
+V  TEL(1)=2302
+R  EMPLOYEE                            <<< record # 84 >>>
+V  DNO(1)=101
+V  ENO(1)=10053
+V  JOB(1)=Secretary
+V  MGR_NO(1)=10093
+V  NAME(1)=TODD, FAY
+V  SALARY(1)=1053.00
+V  TEL(1)=5007
+R  EMPLOYEE                            <<< record # 85 >>>
+V  DNO(1)=501
+V  ENO(1)=10054
+V  JOB(1)=Secretary
+V  MGR_NO(1)=10085
+V  NAME(1)=YEH, HUEI
+V  SALARY(1)=1310.00
+V  TEL(1)=5650
+R  EMPLOYEE                            <<< record # 86 >>>
+V  COMM(1)=432.00
+V  DNO(1)=101
+V  ENO(1)=10055
+V  JOB(1)=Salesman
+V  MGR_NO(1)=10085
+V  NAME(1)=SARCHIN, TONY
+V  SALARY(1)=1395.00
+V  TEL(1)=7880
+R  EMPLOYEE                            <<< record # 87 >>>
+V  DNO(1)=401
+V  ENO(1)=10056
+V  JOB(1)=Administrative Assistant
+V  MGR_NO(1)=10045
+V  NAME(1)=MCCORMICK, WILLIE
+V  SALARY(1)=1015.00
+V  TEL(1)=8816
+R  EMPLOYEE                            <<< record # 88 >>>
+V  DNO(1)=401
+V  ENO(1)=10057
+V  JOB(1)=Secretary
+V  MGR_NO(1)=10093
+V  NAME(1)=SCHREIBER, ROY
+V  SALARY(1)=1822.00
+V  TEL(1)=7745
+R  EMPLOYEE                            <<< record # 89 >>>
+V  COMM(1)=48.00
+V  DNO(1)=201
+V  ENO(1)=10058
+V  JOB(1)=Salesman
+V  MGR_NO(1)=10049
+V  NAME(1)=LEIGHTON, LISA
+V  SALARY(1)=1615.00
+V  TEL(1)=5516
+R  EMPLOYEE                            <<< record # 90 >>>
+V  DNO(1)=401
+V  ENO(1)=10059
+V  JOB(1)=Secretary
+V  MGR_NO(1)=10085
+V  NAME(1)=TICKER, ALBERT
+V  SALARY(1)=1026.00
+V  TEL(1)=8101
+R  EMPLOYEE                            <<< record # 91 >>>
+V  DNO(1)=601
+V  ENO(1)=10060
+V  JOB(1)=Vice-President
+V  MGR_NO(1)=1001
+V  NAME(1)=STEIN, MINDY
+V  SALARY(1)=2902.00
+V  TEL(1)=4176
+R  EMPLOYEE                            <<< record # 92 >>>
+V  DNO(1)=202
+V  ENO(1)=10061
+V  JOB(1)=Clerk
+V  MGR_NO(1)=10086
+V  NAME(1)=CLARK, WAYNE
+V  SALARY(1)=1125.00
+V  TEL(1)=5532
+R  EMPLOYEE                            <<< record # 93 >>>
+V  COMM(1)=463.00
+V  DNO(1)=601
+V  ENO(1)=10062
+V  JOB(1)=Salesman
+V  MGR_NO(1)=10076
+V  NAME(1)=SPEIDEL, TOMMY
+V  SALARY(1)=1854.00
+V  TEL(1)=5460
+R  EMPLOYEE                            <<< record # 94 >>>
+V  DNO(1)=301
+V  ENO(1)=10063
+V  JOB(1)=Secretary
+V  MGR_NO(1)=10019
+V  NAME(1)=DUNN, EDDIE
+V  SALARY(1)=1826.00
+V  TEL(1)=9910
+R  EMPLOYEE                            <<< record # 95 >>>
+V  DNO(1)=302
+V  ENO(1)=10064
+V  JOB(1)=Operator
+V  MGR_NO(1)=10019
+V  NAME(1)=MILLS, GLENN
+V  SALARY(1)=1193.00
+V  TEL(1)=3439
+R  EMPLOYEE                            <<< record # 96 >>>
+V  DNO(1)=601
+V  ENO(1)=10065
+V  JOB(1)=Operator
+V  MGR_NO(1)=10076
+V  NAME(1)=CHERNIAVSKY, ELAINE
+V  SALARY(1)=1093.00
+V  TEL(1)=9631
+R  EMPLOYEE                            <<< record # 97 >>>
+V  DNO(1)=601
+V  ENO(1)=10066
+V  JOB(1)=Secretary
+V  MGR_NO(1)=10045
+V  NAME(1)=BUCKLEY, SAMUEL
+V  SALARY(1)=1377.00
+V  TEL(1)=2440
+R  EMPLOYEE                            <<< record # 98 >>>
+V  COMM(1)=151.00
+V  DNO(1)=401
+V  ENO(1)=10070
+V  JOB(1)=Salesman
+V  MGR_NO(1)=10045
+V  NAME(1)=SWITZER, DWIGHT
+V  SALARY(1)=1680.00
+V  TEL(1)=7372
+R  EMPLOYEE                            <<< record # 99 >>>
+V  DNO(1)=201
+V  ENO(1)=10067
+V  JOB(1)=Secretary
+V  MGR_NO(1)=10049
+V  NAME(1)=PANZER, RITA
+V  SALARY(1)=1612.00
+V  TEL(1)=5347
+R  EMPLOYEE                            <<< record # 100 >>>
+V  DNO(1)=202
+V  ENO(1)=10068
+V  JOB(1)=Clerk
+V  MGR_NO(1)=10086
+V  NAME(1)=MULLICK, STACEY
+V  SALARY(1)=989.00
+V  TEL(1)=9793
+R  EMPLOYEE                            <<< record # 101 >>>
+V  DNO(1)=501
+V  ENO(1)=10069
+V  JOB(1)=Programmer
+V  MGR_NO(1)=10089
+V  NAME(1)=WARD, DANA
+V  SALARY(1)=2361.00
+V  TEL(1)=4978
+R  EMPLOYEE                            <<< record # 102 >>>
+V  DNO(1)=100
+V  ENO(1)=10071
+V  JOB(1)=Programmer
+V  MGR_NO(1)=10019
+V  NAME(1)=NORMANDIN, RON
+V  SALARY(1)=1790.00
+V  TEL(1)=6820
+R  EMPLOYEE                            <<< record # 103 >>>
+V  COMM(1)=685.00
+V  DNO(1)=601
+V  ENO(1)=10072
+V  JOB(1)=Salesman
+V  MGR_NO(1)=10019
+V  NAME(1)=UNDERWOOD, JACK
+V  SALARY(1)=1458.00
+V  TEL(1)=5316
+R  EMPLOYEE                            <<< record # 104 >>>
+V  DNO(1)=401
+V  ENO(1)=10073
+V  JOB(1)=Secretary
+V  MGR_NO(1)=10045
+V  NAME(1)=KRENZKE, MARY
+V  SALARY(1)=1260.00
+V  TEL(1)=6512
+R  EMPLOYEE                            <<< record # 105 >>>
+V  DNO(1)=302
+V  ENO(1)=10077
+V  JOB(1)=Clerk
+V  MGR_NO(1)=10089
+V  NAME(1)=FAY, JENNIFER
+V  SALARY(1)=979.00
+V  TEL(1)=9930
+R  EMPLOYEE                            <<< record # 106 >>>
+V  DNO(1)=201
+V  ENO(1)=10074
+V  JOB(1)=Secretary
+V  MGR_NO(1)=10019
+V  NAME(1)=ISLER, ROBERT
+V  SALARY(1)=1186.00
+V  TEL(1)=9245
+R  EMPLOYEE                            <<< record # 107 >>>
+V  DNO(1)=302
+V  ENO(1)=10075
+V  JOB(1)=Secretary
+V  MGR_NO(1)=10019
+V  NAME(1)=THEILHEIMER, FLO
+V  SALARY(1)=1620.00
+V  TEL(1)=2786
+R  EMPLOYEE                            <<< record # 108 >>>
+V  DNO(1)=301
+V  ENO(1)=10076
+V  JOB(1)=Manager
+V  MGR_NO(1)=10008
+V  NAME(1)=CZIKK, AMY
+V  SALARY(1)=2791.00
+V  TEL(1)=6212
+R  EMPLOYEE                            <<< record # 109 >>>
+V  DNO(1)=401
+V  ENO(1)=10078
+V  JOB(1)=Administrative Assistant
+V  MGR_NO(1)=10019
+V  NAME(1)=GEROPP, DONNA
+V  SALARY(1)=1227.00
+V  TEL(1)=3903
+R  EMPLOYEE                            <<< record # 110 >>>
+V  DNO(1)=201
+V  ENO(1)=10079
+V  JOB(1)=Secretary
+V  MGR_NO(1)=10085
+V  NAME(1)=MORAN, DAN
+V  SALARY(1)=1514.00
+V  TEL(1)=2731
+R  EMPLOYEE                            <<< record # 111 >>>
+V  COMM(1)=542.00
+V  DNO(1)=202
+V  ENO(1)=10080
+V  JOB(1)=Salesman
+V  MGR_NO(1)=10085
+V  NAME(1)=VANDEUSEN, ROSELYN
+V  SALARY(1)=1643.00
+V  TEL(1)=6518
+R  EMPLOYEE                            <<< record # 112 >>>
+V  DNO(1)=302
+V  ENO(1)=10081
+V  JOB(1)=Clerk
+V  MGR_NO(1)=10019
+V  NAME(1)=ODONNELL, JERRY
+V  SALARY(1)=1170.00
+V  TEL(1)=3875
+R  EMPLOYEE                            <<< record # 113 >>>
+V  DNO(1)=202
+V  ENO(1)=10082
+V  JOB(1)=Operator
+V  MGR_NO(1)=10089
+V  NAME(1)=FORREST, CATHY
+V  SALARY(1)=902.00
+V  TEL(1)=8116
+R  EMPLOYEE                            <<< record # 114 >>>
+V  DNO(1)=601
+V  ENO(1)=10083
+V  JOB(1)=Clerk
+V  MGR_NO(1)=10089
+V  NAME(1)=WEINSTEIN, ALFRED
+V  SALARY(1)=757.00
+V  TEL(1)=2011
+R  EMPLOYEE                            <<< record # 115 >>>
+V  DNO(1)=202
+V  ENO(1)=10084
+V  JOB(1)=Clerk
+V  MGR_NO(1)=10049
+V  NAME(1)=WHITNEY, JACKIE
+V  SALARY(1)=1096.00
+V  TEL(1)=8736
+R  EMPLOYEE                            <<< record # 116 >>>
+V  DNO(1)=101
+V  ENO(1)=10085
+V  JOB(1)=Manager
+V  MGR_NO(1)=10090
+V  NAME(1)=KELLY, CINDY
+V  SALARY(1)=2713.00
+V  TEL(1)=8624
+R  EMPLOYEE                            <<< record # 117 >>>
+V  DNO(1)=501
+V  ENO(1)=10086
+V  JOB(1)=Manager
+V  MGR_NO(1)=10008
+V  NAME(1)=GUSTAFSON, RUSSELL
+V  SALARY(1)=2814.00
+V  TEL(1)=2368
+R  EMPLOYEE                            <<< record # 118 >>>
+V  DNO(1)=601
+V  ENO(1)=10087
+V  JOB(1)=Programmer
+V  MGR_NO(1)=10076
+V  NAME(1)=PURCELL, CHUCK
+V  SALARY(1)=2273.00
+V  TEL(1)=9643
+R  EMPLOYEE                            <<< record # 119 >>>
+V  DNO(1)=601
+V  ENO(1)=10088
+V  JOB(1)=Programmer
+V  MGR_NO(1)=10045
+V  NAME(1)=TATUM, SONJA
+V  SALARY(1)=2216.00
+V  TEL(1)=4722
+R  EMPLOYEE                            <<< record # 120 >>>
+V  DNO(1)=601
+V  ENO(1)=10089
+V  JOB(1)=Manager
+V  MGR_NO(1)=10028
+V  NAME(1)=WERMTER, RILEY
+V  SALARY(1)=2551.00
+V  TEL(1)=4700
+R  EMPLOYEE                            <<< record # 121 >>>
+V  DNO(1)=101
+V  ENO(1)=10090
+V  JOB(1)=Vice-President
+V  MGR_NO(1)=1001
+V  NAME(1)=ROBINSON, JOHN
+V  SALARY(1)=2629.00
+V  TEL(1)=8518
+R  EMPLOYEE                            <<< record # 122 >>>
+V  DNO(1)=601
+V  ENO(1)=10091
+V  JOB(1)=Administrative Assistant
+V  MGR_NO(1)=10076
+V  NAME(1)=STROM-TEJSEN, JILL
+V  SALARY(1)=1185.00
+V  TEL(1)=7887
+R  EMPLOYEE                            <<< record # 123 >>>
+V  DNO(1)=201
+V  ENO(1)=10092
+V  JOB(1)=Operator
+V  MGR_NO(1)=10089
+V  NAME(1)=WOOD, DWAYNE
+V  SALARY(1)=930.00
+V  TEL(1)=2272
+R  EMPLOYEE                            <<< record # 124 >>>
+V  DNO(1)=601
+V  ENO(1)=10093
+V  JOB(1)=Operator
+V  MGR_NO(1)=10089
+V  NAME(1)=BREKHOVSKIKH, LARRY
+V  SALARY(1)=1100.00
+V  TEL(1)=2940
+R  EMPLOYEE                            <<< record # 125 >>>
+V  DNO(1)=501
+V  ENO(1)=10094
+V  JOB(1)=Clerk
+V  MGR_NO(1)=10089
+V  NAME(1)=LOVE, ALLEN
+V  SALARY(1)=953.00
+V  TEL(1)=4544
+R  EMPLOYEE                            <<< record # 126 >>>
+V  DNO(1)=100
+V  ENO(1)=10095
+V  JOB(1)=Operator
+V  MGR_NO(1)=10085
+V  NAME(1)=HANKLEY, DAVE
+V  SALARY(1)=1015.00
+V  TEL(1)=7916
+R  EMPLOYEE                            <<< record # 127 >>>
+V  DNO(1)=202
+V  ENO(1)=10096
+V  JOB(1)=Clerk
+V  MGR_NO(1)=10085
+V  NAME(1)=WADE, REGGIE
+V  SALARY(1)=998.00
+V  TEL(1)=7920
+R  EMPLOYEE                            <<< record # 128 >>>
+V  DNO(1)=301
+V  ENO(1)=10097
+V  JOB(1)=Administrative Assistant
+V  MGR_NO(1)=10086
+V  NAME(1)=TRASK, ABRAHAM
+V  SALARY(1)=993.00
+V  TEL(1)=7127
+R  EMPLOYEE                            <<< record # 129 >>>
+V  COMM(1)=219.00
+V  DNO(1)=601
+V  ENO(1)=10098
+V  JOB(1)=Salesman
+V  MGR_NO(1)=10089
+V  NAME(1)=NAKONECHNY, BRUCE
+V  SALARY(1)=1991.00
+V  TEL(1)=3472
+R  EMPLOYEE                            <<< record # 130 >>>
+V  COMM(1)=219.00
+V  DNO(1)=302
+V  ENO(1)=10099
+V  JOB(1)=Salesman
+V  MGR_NO(1)=10019
+V  NAME(1)=GARCIA, ANDREW
+V  SALARY(1)=1570.00
+V  TEL(1)=6057
+R  EMPLOYEE                            <<< record # 131 >>>
+V  DNO(1)=302
+V  ENO(1)=2939
+V  JOB(1)=Manager
+V  MGR_NO(1)=10029
+V  NAME(1)=BREKHOVSKIKH, LARRY
+V  SALARY(1)=2227.00
+V  TEL(1)=6874

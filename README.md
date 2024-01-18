@@ -28,6 +28,6 @@ The repository contains sub-folders :
 
 Comments at the beginning of each program provides a description and sample usage, and should be sufficient to use the tool.
 
-More tools may be added, upon request by you !
+More tools may be added, upon request by you ! I'm currently thinking about utilities to migrate tables (structure and data) from LCS to ElasticSearch, PostgreSQL, Apache Solr.
 
 Contact me at marcel.bechtiger@domain-sa.ch.

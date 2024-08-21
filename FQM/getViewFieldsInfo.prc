@@ -2,7 +2,7 @@
 * description : given database/model/view, retrieve fields characteristics
 * usage : @getViewFieldsInfo, '!databaseName!', '!modelName!', '!viewName!'
 * created : marcel.bechtiger@domain-sa.ch - 20231223
-* modified :
+* modified : 20240821
 
    set/pv databaseName=p1
    set/pv modelName=p2
@@ -53,10 +53,12 @@
        order by mvenm end result=no
    acquire/pv members n1=fieldNE
    set/gv fieldNE=fieldNE
-   set/gv viewUniqueField=''
+   set/gv viewUniqueField='' 
+ 
    set/gv viewStreamField=''
 
    for i=1,fieldNE
+      * get field details
       get/v [0,i]ved intent=read
       assign/pv mvenm=mvenm
       assign/pv source=source
@@ -66,6 +68,7 @@
       * I=Integer, R=Real, D=Double, K=Cell, C=Character, E=exact_binary,
       * P=exact_decimal, A=approximate, X=complex, L=logical, B=byte_string
       *put/f fid=* fieldName!i! ' dt: ' dt
+      set/gv fieldDataType!i!=dt
       set/gv fieldIsChar!i!='N'
       set/gv fieldIsLogical!i!='N'
       if dt='C'
@@ -141,9 +144,30 @@
       if myWhen<>''
          set/gv virtualFieldsList=virtualFieldsList//fieldName!i!//':'//when!i!//' '
       end_if
-      put/f fid=* '>>>>> FIELD ' fieldName!i! ' isChar:' fieldIsChar!i! ' length:' fieldLength!i! +
+
+      * get index information, if any
+      * please note that this script does not include the MFI indexes as they are not
+      * bound to a field
+      get/v [name='!source!']indxd, err=noIndxd
+      * Y=Yes, N=No
+      assign/pv detail=detail
+      assign/pv fldlst=fldlst
+      * U=Unique, E=Exact, I=Inclusive, C=Catalog, 
+      * X=Extended catalog 
+      assign/pv it=it
+      * C=$CONCAT, B=$COMBINE, F=Field, R=Regular
+      assign/pv mfityp=mfityp
+      assign/pv name=name
+      set/gv fieldIndexType!i!=it
+      set/gv fieldMfiType!i!=mfityp
+      jump hasIndxd
+noIndxd:
+      set/gv fieldIndexType!i!='-'
+      set/gv fieldMfiType!i!='-'
+hasIndxd:
+      put/f fid=* '>>>>> FIELD ' fieldName!i! ' dataType:' fieldDataType!i! ' isChar:' fieldIsChar!i! ' length:' fieldLength!i! +
          ' hasSubfields:' fieldHasSubfields!i! ' isDate:' fieldIsDate!i! +
-         ' isLogical:' fieldIsLogical!i! ' isVirtual:' when!i!
+         ' isLogical:' fieldIsLogical!i! ' isVirtual:' when!i! ' indexType:' fieldIndexType!i!
    end_for
 
    close/db X!databaseName!.USER err=$continue

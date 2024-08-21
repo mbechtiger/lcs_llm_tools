@@ -18,7 +18,7 @@ The repository contains programs written in LCS proprietary module DMFQM, Python
 
 The repository contains sub-folders :
 - FQM : 
-	- "getInfo.prc" and "export_csv.prc"/"export_json.prc", "export_xml.prc" calling "getViewFieldsInfo.prc"
+	- "getInfo.prc" and "export_csv.prc/export_json.prc/export_xml.prc" calling "getViewFieldsInfo.prc"
 - Python : 
 	- "ddlViewer.py" and sample DDL "tour.ddl" & "dossbas.ddl"
 	- "hvuConvert.py", sample dump files "tour_employee.dmp" & "tlpfra_cat.dmp"

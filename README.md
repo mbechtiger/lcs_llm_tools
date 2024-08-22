@@ -6,9 +6,12 @@ Livelink Library Management (LLM) is a library and documentation center data man
 
 I have been involved in many LCS/LLM data extraction and migration projects, some of the tools I developed are made available here.
 
-The tools can be used with any version of LCS resp. LLM as they are based on the module DMFQM to query the data dictionary and database, dump files produced in "stream" format with the module DMHVU, and DDL files produced by the DMDDBE module. The 3 programs are included in the base LCS system.
+The tools can be used with any version of LCS resp. LLM as they are based on the module DMFQM to query the data dictionary and database, dump files produced in "stream" format with the module DMHVU, and DDL files produced by the DMDDBE module. The 3 programs are included in the base LCS system. 
+
+Why use DMFQM for database structure query and data extraction ? Because it is included/available on every LCS server, as opposed to optional/costly components like the JDBC or ODBC driver. And the 4GL procedural language is powerful enough for all the tasks, although it is not at fast as other programming languages.
 
 The repository contains programs written in LCS proprietary module DMFQM, Python and Go to :
+
 - explore the LCS data dictionary definition for a view, to provide insight prior to the export (uses DMFQM)
 - export data from LCS to CSV - any output format can be implemented (uses DMFQM)
 - reformat/convert files exported with LCS proprietary module DMHVU (in Stream format) to CSV/XML/JSON (usiusesng Python)
@@ -17,6 +20,7 @@ The repository contains programs written in LCS proprietary module DMFQM, Python
 - list the fields referenced in a dump file created with the LCS DMHVU module in Stream format (uses Go)
 
 The repository contains sub-folders :
+
 - FQM : 
 	- "getInfo.prc" and "export_csv.prc/export_json.prc/export_xml.prc" calling "getViewFieldsInfo.prc"
 - Python : 

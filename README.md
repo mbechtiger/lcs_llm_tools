@@ -8,7 +8,7 @@ I have been involved in many LCS/LLM data extraction and migration projects, som
 
 The tools can be used with any version of LCS resp. LLM as they are based on the module DMFQM to query the data dictionary and database, dump files produced in "stream" format with the module DMHVU, and DDL files produced by the DMDDBE module. The 3 programs are included in the base LCS system. 
 
-Why use DMFQM for database structure query and data extraction ? Because it is included/available on every LCS server, as opposed to optional/costly components like the JDBC or ODBC driver. And the 4GL procedural language is powerful enough for all the tasks, although it is not at fast as other programming languages.
+Why use DMFQM for database structure query and data extraction ? Because it's included/available on every LCS server, as opposed to optional/costly components like the JDBC or ODBC drivers. The 4GL procedural language is powerful enough for all the tasks, although it is not at fast as other programming languages.
 
 The repository contains programs written in LCS proprietary module DMFQM, Python and Go to :
 

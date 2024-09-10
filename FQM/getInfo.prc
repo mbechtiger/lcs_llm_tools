@@ -17,7 +17,7 @@
 *       z
 * usage : @getInfo db='bold' model='all'
 * created :  marcel.bechtiger@domain-sa.ch - 20231220
-* modified :
+* modified : 20240910
 
    * try to use environment variables
    assign/host/pv hostDb=DB
@@ -90,7 +90,7 @@
    if virtualParameterSetNE<>0
       put/f fid=* '--- ' virtualParameterSetNE ' RECORD virtual fields with SET_WHEN in PARAMETER_SET '
       put/f fid=l '--- ' virtualParameterSetNE ' RECORD virtual fields with SET_WHEN in PARAMETER_SET '
-      for i=1,virtualParameterSetNE
+      for i=1,virtualParameterSetNEdictionaryViewsNE
          get/v [0,i]red
          assign/pv renms=renms(1)
          get/v [0,i]epsd
@@ -111,6 +111,7 @@
    * get list of views for given model
    find viewd where mvnm='!model!.'* order by mvnm end result=no
    acquire/pv members n1=dictionaryViewsNE
+   set/gv dbInfo_viewsNE=dictionaryViewsNE
    acquire/pv lastset n1=viewdSetNB
    put/f fid=* '--- ' dictionaryViewsNE ' views defined in model ' db '.' model ' will be checked for content'
    put/f fid=l '--- ' dictionaryViewsNE ' views defined in model ' db '.' model ' will be checked for content'
@@ -135,6 +136,8 @@
          put/f fid=* viewName!i! ' : Sectioned'
          put/f fid=l viewName!i! ' : Sectioned'
       end_if
+      set/gv dbInfo_recordStyle!i!=style
+      set/gv dbInfo_viewName!i!=viewName!i!
       discard/set 0
    end_for
 
@@ -160,6 +163,7 @@
          put/f fid=* i ') No ' viewName ' occurence'
          put/f fid=l i ') No ' viewName ' occurence'
       end_if
+      set/gv dbInfo_occurences!i!=mem
    end_for
 
    put/f fid=* 'Total of ' totalOccurencesNB ' occurences in database/model'

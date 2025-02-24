@@ -1,28 +1,42 @@
 * file : getViewFieldsInfo.prc
 * description : given database/model/view, retrieve fields characteristics
-* usage : @getViewFieldsInfo, '!databaseName!', '!modelName!', '!viewName!'
+* usage : @getViewFieldsInfo, '!databaseName!', '!modelName!', '!viewName!', '!trace:Yes|No!', '!openCloseDDB:Yes|No!'
 * created : marcel.bechtiger@domain-sa.ch - 20231223
-* modified : 20240821
+* modified : 20240821, 20250130, 20250214
 
    set/pv databaseName=p1
    set/pv modelName=p2
-   set/pv viewName=p3
+   set/pv viewName=$raise(p3)
+   set/pv trace=$raise(p4)
+   if $substr(trace,1,1) = 'Y'
+      set/pv trace='YES'
+   else
+      set/pv trace='NO'
+   end_if
+   set/pv openCloseDdb=$raise(p5)
+   if $substr(openCloseDdb,1,1) = 'N'
+      set/pv openCloseDdb='NO'
+   else
+      set/pv openCloseDdb='YES'
+   end_if
 
    *************************************************************************
    ********** get view fields from database structure information
    *************************************************************************
 
    * note: there can be several unique fields defined in a record
-   * if none or several exit, use an incremental value for the eventual
+   * if none exists or several exist, use an incremental value for the eventual
    * continuous exported document file
    set/gv viewUniqueField=''
    set/gv virtualFieldsList=''
 
    * open dictionary/DDB
    discard/sets all err=$continue
-   put/f fid=* 'Opening dictionary/DDB X' databaseName '.USER'
-   close/db X!databaseName!.USER err=$continue
-   open/db X!databaseName!.USER intent=read wait=no err=ddbErr
+   if openCloseDdb='YES'
+      put/f fid=* 'Opening dictionary/DDB X' databaseName '.USER'
+      close/db X!databaseName!.USER err=$continue
+      open/db X!databaseName!.USER intent=read wait=no err=ddbErr
+   end_if
 
    * get view characteristics
    find viewd where mvnm='!modelName!.!viewName!' end result=no
@@ -33,6 +47,7 @@
    end_if
    get/v [0,1]viewd intent=read
    assign/pv source=source
+   set/gv viewSource=source
    find recd where recnm='!source!' end result=no
    get/v [0,1]recd intent=read
    assign/pv style=style
@@ -42,11 +57,14 @@
    set/gv viewIsSectioned='N'
    if style='C'
       set/gv viewIsConventional='Y'
+      set/gv viewStyle='Conventional'
    else_if style='D'
       set/gv viewIsContinuous='Y'
-   else_if style='S'
+      set/gv viewStyle='Continuous'
+    else_if style='S'
       set/gv viewIsSectioned='Y'
-   end_if
+      set/gv viewStyle='Sectioned'
+    end_if
 
    * get fields characteristics
    find ved where mvenm='!modelName!.!viewName!.'* and kind='EI' +
@@ -63,6 +81,7 @@
       assign/pv mvenm=mvenm
       assign/pv source=source
       set/gv fieldName!i!=$item(3,'.',mvenm)
+      set/gv fieldSource!i!=$item(2,'.',source)
       get/v [renms='!source!']red
       assign/pv dt=dt
       * I=Integer, R=Real, D=Double, K=Cell, C=Character, E=exact_binary,
@@ -111,6 +130,8 @@
       end_if
       assign/pv minocc=minocc
       assign/pv maxocc=maxocc
+      set/gv fieldMinOcc!i!=minocc
+      set/gv fieldMaxOcc!i!=maxocc
       if maxocc^=1
          set/gv fieldHasSubfields!i!='Y'
       end_if
@@ -165,24 +186,32 @@ noIndxd:
       set/gv fieldIndexType!i!='-'
       set/gv fieldMfiType!i!='-'
 hasIndxd:
-      put/f fid=* '>>>>> FIELD ' fieldName!i! ' dataType:' fieldDataType!i! ' isChar:' fieldIsChar!i! ' length:' fieldLength!i! +
-         ' hasSubfields:' fieldHasSubfields!i! ' isDate:' fieldIsDate!i! +
-         ' isLogical:' fieldIsLogical!i! ' isVirtual:' when!i! ' indexType:' fieldIndexType!i!
+      if trace = 'YES'
+         put/f fid=* '>>>>> FIELD ' fieldName!i! ' dataType:' fieldDataType!i! ' isChar:' fieldIsChar!i! ' length:' fieldLength!i! +
+            ' hasSubfields:' fieldHasSubfields!i! ' fieldMinOcc:' fieldMinOcc!i! ' fieldMaxOcc:' fieldMaxOcc!i! +
+            ' isDate:' fieldIsDate!i! ' isLogical:' fieldIsLogical!i! ' isVirtual:' when!i! ' indexType:' fieldIndexType!i! +
+            ' fieldSource:' fieldSource!i!
+      end_if
    end_for
 
-   close/db X!databaseName!.USER err=$continue
-
-   put/f fid=* '>>>>> VIEW ' viewName ' isConventional:' viewIsConventional +
-      ' isContinuous:' viewIsContinuous ' isSectioned:' viewIsSectioned +
-      ' uniqueField:' viewUniqueField ' streamField:' viewStreamField
-
-   if viewIsContinuous='Y'
-      put/f fid=* 'Note that dumping CONTinous view is not fully supported'
-   else_if viewIsSectioned='Y'
-      put/f fid=* 'Note that dumping SECTioned view is not supported'
+   if openCloseDdb='YES'
+      close/db X!databaseName!.USER err=$continue
    end_if
 
-   if virtualFieldsList<>''
+   if trace = 'YES'
+      put/f fid=* '>>>>> VIEW ' viewName ' isConventional:' viewIsConventional +
+         ' isContinuous:' viewIsContinuous ' isSectioned:' viewIsSectioned +
+         ' uniqueField:' viewUniqueField ' streamField:' viewStreamField +
+         ' viewSource:' viewSource ' fieldNE:' fieldNE
+   end_if
+
+   if viewIsContinuous='Y'
+      put/f fid=* 'Note : CONTinous view'
+   else_if viewIsSectioned='Y'
+      put/f fid=* 'Note : SECTioned view'
+   end_if
+
+   if virtualFieldsList<>'' and trace = 'YES'
       put/f fid=* '>>>>> Virtual fields: ' virtualFieldsList
    end_if
 
@@ -199,7 +228,7 @@ ddbErr:
    return
 
 prcErr:
-   close/db !databaseName!.!modelName! err=$continue
+   close/db !X!databaseName!.USER err=$continue
    put/f fid=* 'Error in getViewFieldsInfo, abort'
    set/gv getViewFieldsInfoRC=-2
    return

@@ -1,7 +1,7 @@
 /*
-hvuStream.go - read HVU STREAM formatted dump and list FIELD occurences,
+hvuStreamListFields.go - read HVU STREAM formatted dump and list FIELD occurences,
 to be used to figure out which fields are actually used in the table
-usage : go run hvuStream.go TOUR_EMPLOYEE.dmp
+usage : go run hvuStreamListFields.go TOUR_EMPLOYEE.dmp
 created : marcel.bechtiger@domain-sa.ch 20230120
 modified :
 note that the host/target OS/architecture are defined by variables

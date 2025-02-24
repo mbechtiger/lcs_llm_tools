@@ -14,21 +14,23 @@ The repository contains programs written in LCS proprietary module DMFQM, Python
 
 - explore the LCS data dictionary definition for a view, to provide insight prior to the export (uses DMFQM)
 - export data from LCS to CSV - any output format can be implemented (uses DMFQM)
-- reformat/convert files exported with LCS proprietary module DMHVU (in Stream format) to CSV/XML/JSON (usiusesng Python)
+- create a graphviz DOT file based on a <db.model> to display views definitions and assert relationships (uses DMFQM)
+- reformat/convert files exported with LCS proprietary module DMHVU (in Stream format) to CSV/XML/JSON (uses Python)
 - visualize a LCS Data Definition Language (DDL) file exported with LCS proprietary module DMDDBE using a tree-view (uses Python+wxpython)
 - remove a column from any CSV export file (uses Python+Pandas+csv)
-- list the fields referenced in a dump file created with the LCS DMHVU module in Stream format (uses Go)
+- list the fields referenced in a dump file created with the LCS DMHVU module in Stream format, remove empty columns from a CSV dump file created with LCS DMHVU (uses Go)
 
 The repository contains sub-folders :
 
 - FQM : 
-	- "getInfo.prc" and "export_csv.prc/export_json.prc/export_xml.prc" calling "getViewFieldsInfo.prc"
+	- "getInfo.prc", "viewsRelationships.prc" and "export_csv.prc/export_json.prc/export_xml.prc" calling "getViewFieldsInfo.prc"
 - Python : 
 	- "ddlViewer.py" and sample DDL "tour.ddl" & "dossbas.ddl"
 	- "hvuConvert.py", sample dump files "tour_employee.dmp" & "tlpfra_cat.dmp"
 	- "removeCsvColumn.py"
 - Go : 
 	- "hvuStreamListFields.go", sample dump files "tour_employee.dmp" & "tlpfra_cat.dmp"
+ 	- "removeEmptyColumns.go" 	
 
 Comments at the beginning of each program provides a description and sample usage, and should be sufficient to use the tool.
 

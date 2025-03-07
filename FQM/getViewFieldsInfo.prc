@@ -2,7 +2,7 @@
 * description : given database/model/view, retrieve fields characteristics
 * usage : @getViewFieldsInfo, '!databaseName!', '!modelName!', '!viewName!', '!trace:Yes|No!', '!openCloseDDB:Yes|No!'
 * created : marcel.bechtiger@domain-sa.ch - 20231223
-* modified : 20240821, 20250130, 20250214
+* modified : 20240821, 20250130, 20250214, 20250307
 
    set/pv databaseName=p1
    set/pv modelName=p2
@@ -116,6 +116,7 @@
       * SN=Section name, SL=Section level, SR=Section number,
       * ST=Section title, MI=Mimetype, TI=Timestamp,
       * SY=System
+      set/gv fieldUsage!i!=myUsage
       set/gv fieldIsDate!i!='N'
       set/gv fieldHasSubfields!i!='N'
       if $match(myUsage,'KD.DT')<>0
@@ -157,7 +158,7 @@
       else_if myWhen='G'
          set/pv whenS='Get'
       else_if myWhen='P'
-         set/pv whenS='Put'
+      set/pv whenS='Put'
       else
          set/pv whenS='N'
       end_if

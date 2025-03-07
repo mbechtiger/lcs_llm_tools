@@ -1,7 +1,7 @@
 * file : viewsJsonDescription.prc
 * description : given model, create a full description of all view in JSON format
 * created : marcel.bechtiger@domain-sa.ch - 20250303
-* modified : 
+* modified : 20250307
 
    if db='' or model='' 
        put/f fid=* 'Usage : @viewsJsonDescription.prc db=''X'',model=''Y'''
@@ -38,6 +38,59 @@
       put/f fid=* 'No view for this model'
       jump prcEnd
    end_if
+
+   * I=Integer, R=Real, D=Double, K=Cell, C=Character, E=Exact_binary,
+   * P=Exact_decimal, A=Approximate, X=Complex, L=Logical, B=byte_string
+   set/pv fieldDataTypeList_I='Integer'
+   set/pv fieldDataTypeList_R='Real'
+   set/pv fieldDataTypeList_D='Double'
+   set/pv fieldDataTypeList_K='Cell'
+   set/pv fieldDataTypeList_C='Character'
+   set/pv fieldDataTypeList_E='Exact_binary'
+   set/pv fieldDataTypeList_P='Exact_decimal'
+   set/pv fieldDataTypeList_A='Approximate'
+   set/pv fieldDataTypeList_X='Complex'
+   set/pv fieldDataTypeList_L='Logical'
+   set/pv fieldDataTypeList_B='Byte_string'
+
+   * KS=System key, KD=Date key, DT=Date, NR=Number,
+   * SI=Scientific, CH=Character, SH=Short text, TM=Time,
+   * MY=Money, PN=Person name, TL=Title, UK=User key,
+   * CK=Dupcheck key, TR=Translate, OT=Other, TS=Text stream,
+   * SN=Section name, SL=Section level, SR=Section number,
+   * ST=Section title, MI=Mimetype, TI=Timestamp,
+   * SY=System
+   set/pv fieldUsageList_KS='System key'
+   set/pv fieldUsageList_KD='Date key'
+   set/pv fieldUsageList_DT='Date'
+   set/pv fieldUsageList_NR='Number'
+   set/pv fieldUsageList_SI='Scientific'
+   set/pv fieldUsageList_CH='Character'
+   set/pv fieldUsageList_SH='Short text'
+   set/pv fieldUsageList_TM='Time'
+   set/pv fieldUsageList_MY='Money'
+   set/pv fieldUsageList_PN='Person name'
+   set/pv fieldUsageList_TL='Title'
+   set/pv fieldUsageList_UK='User key'
+   set/pv fieldUsageList_CK='Dupcheck key'
+   set/pv fieldUsageList_TR='Translate'
+   set/pv fieldUsageList_OT='Other'
+   set/pv fieldUsageList_TS='Text stream'
+   set/pv fieldUsageList_SN='Section name'
+   set/pv fieldUsageList_SL='Section level'
+   set/pv fieldUsageList_SR='Section number'
+   set/pv fieldUsageList_ST='Section title'
+   set/pv fieldUsageList_MI='Mimetype'
+   set/pv fieldUsageList_TI='Timestamp'
+   set/pv fieldUsageList_SY='System'
+ 
+   * U=Unique, E=Exact, I=Inclusive, C=Catalog, 
+   * X=Extended catalog 
+   set/pv fieldIndexTypeList_U='Unique'
+   set/pv fieldIndexTypeList_E='Exact'
+   set/pv fieldIndexTypeList_I='Inclusive'
+   set/pv fieldIndexTypeList_C='Catalog'
+   set/pv fieldIndexTypeList_X='Extended catalog'
 
    *************************************************************************
    ********** DICT header **********
@@ -82,19 +135,37 @@
       put/f fid=dict '      {'
 
       for jj=1,fieldNE
+
+         * replace code by label
+         set/pv s=fieldDataType!jj!
+         set/pv fieldDataType=fieldDataTypeList_!s!
+
+         * replace code by label
+         set/pv s=fieldUsage!jj!
+         set/pv fieldUsage=fieldUsageList_!s!
+
+         * replace code by label
+         set/pv s=fieldIndexType!jj!
+         if s='-'
+            set/pv fieldIndexType='None'
+         else
+           set/pv fieldIndexType=fieldIndexTypeList_!s!
+         end_if
+
          put/f fid=* '   ' fieldName!jj!
          put/f fid=dict '        "' fieldName!jj! '" :'
          put/f fid=dict '        {'
          put/f fid=dict '          "entry" : ' jj ','
          put/f fid=dict '          "name" : "' fieldName!jj! '",'
          put/f fid=dict '          "source" : "' fieldSource!jj! '",'
-         put/f fid=dict '          "type" : "' fieldDataType!jj! '",'
+         put/f fid=dict '          "type" : "' fieldDataType '",'
+         put/f fid=dict '          "usage" : "' fieldUsage '",'
          put/f fid=dict '          "len" : "' fieldLength!jj! '",'
          put/f fid=dict '          "occMin" : ' fieldMinOcc!jj! ','
          put/f fid=dict '          "occMax" : ' fieldMaxOcc!jj! ','
          put/f fid=dict '          "virtual" : "' when!jj! '",'
          put/f fid=dict '          "isDate" : "' fieldIsDate!jj! '",'
-         put/f fid=dict '          "idxType" : "' fieldIndexType!jj! '"'
+         put/f fid=dict '          "idxType" : "' fieldIndexType '"'
          if jj=fieldNE
             put/f fid=dict '        }'
          else

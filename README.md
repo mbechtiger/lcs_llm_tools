@@ -15,6 +15,7 @@ The repository contains programs written in LCS proprietary module DMFQM, Python
 - explore the LCS data dictionary definition for a view, to provide insight prior to the export (uses DMFQM)
 - export data from LCS to CSV - any output format can be implemented (uses DMFQM)
 - create a graphviz DOT file based on a <db.model> to display views definitions and assert relationships (uses DMFQM)
+- create a dictionary description in JSON format based on a <db.model> (uses DMFQM) 
 - reformat/convert files exported with LCS proprietary module DMHVU (in Stream format) to CSV/XML/JSON (uses Python)
 - visualize a LCS Data Definition Language (DDL) file exported with LCS proprietary module DMDDBE using a tree-view (uses Python+wxpython)
 - remove a column from any CSV export file (uses Python+Pandas+csv)
@@ -22,8 +23,8 @@ The repository contains programs written in LCS proprietary module DMFQM, Python
 
 The repository contains sub-folders :
 
-- FQM : 
-	- "getInfo.prc", "viewsRelationships.prc" and "export_csv.prc/export_json.prc/export_xml.prc" calling "getViewFieldsInfo.prc"
+- LCS DMFQM : 
+	- "getInfo.prc", "viewsRelationships.prc", "viewsJsonDescription.prc" and "export_csv.prc/export_json.prc/export_xml.prc" calling "getViewFieldsInfo.prc"
 - Python : 
 	- "ddlViewer.py" and sample DDL "tour.ddl" & "dossbas.ddl"
 	- "hvuConvert.py", sample dump files "tour_employee.dmp" & "tlpfra_cat.dmp"

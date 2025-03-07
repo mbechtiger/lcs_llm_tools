@@ -1,0 +1,672 @@
+﻿{
+  "database" : "TOUR",
+  "model" : "ALL",
+  "created" : "Mar 03, 2025 - 19:35:40",
+  "views_ne" : 6,
+  "views" :
+  {
+    "CLIENT" :
+    {
+      "entry" : 1,
+      "name" : "CLIENT",
+      "source" : "CLIENT",
+      "style" : "Conventional",
+      "uniqueField" : "ID",
+      "streamField" : "",
+      "fields_ne" : 10,
+      "fields" :
+      {
+        "CITY" :
+        {
+          "entry" : 1,
+          "name" : "CITY",
+          "source" : "CITY",
+          "type" : "C",
+          "len" : "1:20",
+          "occMin" : 0,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "-"
+        },
+        "CNAME" :
+        {
+          "entry" : 2,
+          "name" : "CNAME",
+          "source" : "CNAME",
+          "type" : "C",
+          "len" : "1:48",
+          "occMin" : 1,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "-"
+        },
+        "CO" :
+        {
+          "entry" : 3,
+          "name" : "CO",
+          "source" : "CO",
+          "type" : "C",
+          "len" : "1:50",
+          "occMin" : 0,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "I"
+        },
+        "COUNTRY" :
+        {
+          "entry" : 4,
+          "name" : "COUNTRY",
+          "source" : "COUNTRY",
+          "type" : "C",
+          "len" : "1:25",
+          "occMin" : 0,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "-"
+        },
+        "ID" :
+        {
+          "entry" : 5,
+          "name" : "ID",
+          "source" : "ID",
+          "type" : "E",
+          "len" : "9",
+          "occMin" : 1,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "U"
+        },
+        "LONG_STATE" :
+        {
+          "entry" : 6,
+          "name" : "LONG_STATE",
+          "source" : "LONG_STATE",
+          "type" : "C",
+          "len" : "0:30",
+          "occMin" : 0,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "-"
+        },
+        "NEWCO" :
+        {
+          "entry" : 7,
+          "name" : "NEWCO",
+          "source" : "NEWCO",
+          "type" : "C",
+          "len" : "1:50",
+          "occMin" : 0,
+          "occMax" : 2,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "E"
+        },
+        "STATE" :
+        {
+          "entry" : 8,
+          "name" : "STATE",
+          "source" : "STATE",
+          "type" : "C",
+          "len" : "1:3",
+          "occMin" : 0,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "-"
+        },
+        "STREET" :
+        {
+          "entry" : 9,
+          "name" : "STREET",
+          "source" : "STREET",
+          "type" : "C",
+          "len" : "1:40",
+          "occMin" : 1,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "I"
+        },
+        "ZIP" :
+        {
+          "entry" : 10,
+          "name" : "ZIP",
+          "source" : "ZIP",
+          "type" : "C",
+          "len" : "0:10",
+          "occMin" : 0,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "-"
+        }
+      }
+    },
+    "DEPARTMENT" :
+    {
+      "entry" : 2,
+      "name" : "DEPARTMENT",
+      "source" : "DEPARTMENT",
+      "style" : "Conventional",
+      "uniqueField" : "multipleUniqueFieldsDefined",
+      "streamField" : "",
+      "fields_ne" : 4,
+      "fields" :
+      {
+        "BUILDING_NO" :
+        {
+          "entry" : 1,
+          "name" : "BUILDING_NO",
+          "source" : "BUILDING_NO",
+          "type" : "E",
+          "len" : "1",
+          "occMin" : 1,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "-"
+        },
+        "DNO" :
+        {
+          "entry" : 2,
+          "name" : "DNO",
+          "source" : "DNO",
+          "type" : "E",
+          "len" : "3",
+          "occMin" : 1,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "U"
+        },
+        "MANAGER" :
+        {
+          "entry" : 3,
+          "name" : "MANAGER",
+          "source" : "MANAGER",
+          "type" : "E",
+          "len" : "5",
+          "occMin" : 1,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "U"
+        },
+        "NAME" :
+        {
+          "entry" : 4,
+          "name" : "NAME",
+          "source" : "NAME",
+          "type" : "C",
+          "len" : "1:50",
+          "occMin" : 1,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "E"
+        }
+      }
+    },
+    "DEPENDENT" :
+    {
+      "entry" : 3,
+      "name" : "DEPENDENT",
+      "source" : "DEPENDENT",
+      "style" : "Conventional",
+      "uniqueField" : "UDNO",
+      "streamField" : "",
+      "fields_ne" : 5,
+      "fields" :
+      {
+        "DEP_NO" :
+        {
+          "entry" : 1,
+          "name" : "DEP_NO",
+          "source" : "DEP_NO",
+          "type" : "E",
+          "len" : "2",
+          "occMin" : 1,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "-"
+        },
+        "ENO" :
+        {
+          "entry" : 2,
+          "name" : "ENO",
+          "source" : "ENO",
+          "type" : "E",
+          "len" : "5",
+          "occMin" : 1,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "E"
+        },
+        "NAME" :
+        {
+          "entry" : 3,
+          "name" : "NAME",
+          "source" : "NAME",
+          "type" : "C",
+          "len" : "1:48",
+          "occMin" : 1,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "-"
+        },
+        "RELATIONSHIP" :
+        {
+          "entry" : 4,
+          "name" : "RELATIONSHIP",
+          "source" : "RELATIONSHIP",
+          "type" : "C",
+          "len" : "1:7",
+          "occMin" : 1,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "-"
+        },
+        "UDNO" :
+        {
+          "entry" : 5,
+          "name" : "UDNO",
+          "source" : "UDNO",
+          "type" : "E",
+          "len" : "9",
+          "occMin" : 1,
+          "occMax" : 1,
+          "virtual" : "Put",
+          "isDate" : "N",
+          "idxType" : "U"
+        }
+      }
+    },
+    "EMPLOYEE" :
+    {
+      "entry" : 4,
+      "name" : "EMPLOYEE",
+      "source" : "EMPLOYEE",
+      "style" : "Conventional",
+      "uniqueField" : "ENO",
+      "streamField" : "",
+      "fields_ne" : 11,
+      "fields" :
+      {
+        "COMM" :
+        {
+          "entry" : 1,
+          "name" : "COMM",
+          "source" : "COMM",
+          "type" : "P",
+          "len" : "6.2",
+          "occMin" : 0,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "-"
+        },
+        "DNO" :
+        {
+          "entry" : 2,
+          "name" : "DNO",
+          "source" : "DNO",
+          "type" : "E",
+          "len" : "3",
+          "occMin" : 1,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "E"
+        },
+        "ENO" :
+        {
+          "entry" : 3,
+          "name" : "ENO",
+          "source" : "ENO",
+          "type" : "E",
+          "len" : "5",
+          "occMin" : 1,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "U"
+        },
+        "HIRE_DATES" :
+        {
+          "entry" : 4,
+          "name" : "HIRE_DATES",
+          "source" : "HIRE_DATE",
+          "type" : "E",
+          "len" : "8",
+          "occMin" : 1,
+          "occMax" : 5,
+          "virtual" : "N",
+          "isDate" : "Y",
+          "idxType" : "-"
+        },
+        "IS_MANAGER" :
+        {
+          "entry" : 5,
+          "name" : "IS_MANAGER",
+          "source" : "IS_MANAGER",
+          "type" : "L",
+          "len" : "1",
+          "occMin" : 0,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "-"
+        },
+        "JOB" :
+        {
+          "entry" : 6,
+          "name" : "JOB",
+          "source" : "JOB",
+          "type" : "C",
+          "len" : "1:24",
+          "occMin" : 1,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "E"
+        },
+        "MGR_NO" :
+        {
+          "entry" : 7,
+          "name" : "MGR_NO",
+          "source" : "MGR_NO",
+          "type" : "E",
+          "len" : "5",
+          "occMin" : 1,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "E"
+        },
+        "NAME" :
+        {
+          "entry" : 8,
+          "name" : "NAME",
+          "source" : "NAME",
+          "type" : "C",
+          "len" : "1:48",
+          "occMin" : 1,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "E"
+        },
+        "NICK_NAMES" :
+        {
+          "entry" : 9,
+          "name" : "NICK_NAMES",
+          "source" : "NICKNAMES",
+          "type" : "C",
+          "len" : "1:48",
+          "occMin" : 1,
+          "occMax" : 5,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "-"
+        },
+        "SALARY" :
+        {
+          "entry" : 10,
+          "name" : "SALARY",
+          "source" : "SALARY",
+          "type" : "P",
+          "len" : "7.2",
+          "occMin" : 1,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "E"
+        },
+        "TEL" :
+        {
+          "entry" : 11,
+          "name" : "TEL",
+          "source" : "TEL",
+          "type" : "E",
+          "len" : "4",
+          "occMin" : 0,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "-"
+        }
+      }
+    },
+    "PLACE" :
+    {
+      "entry" : 5,
+      "name" : "PLACE",
+      "source" : "PLACE",
+      "style" : "Sectioned",
+      "uniqueField" : "LOCATION",
+      "streamField" : "TEXT",
+      "fields_ne" : 9,
+      "fields" :
+      {
+        "ENO" :
+        {
+          "entry" : 1,
+          "name" : "ENO",
+          "source" : "ENO",
+          "type" : "E",
+          "len" : "5",
+          "occMin" : 1,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "-"
+        },
+        "LEVEL" :
+        {
+          "entry" : 2,
+          "name" : "LEVEL",
+          "source" : "LEVEL",
+          "type" : "E",
+          "len" : "2",
+          "occMin" : 0,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "-"
+        },
+        "LOCATION" :
+        {
+          "entry" : 3,
+          "name" : "LOCATION",
+          "source" : "LOCATION",
+          "type" : "C",
+          "len" : "1:50",
+          "occMin" : 1,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "U"
+        },
+        "NUMBER" :
+        {
+          "entry" : 4,
+          "name" : "NUMBER",
+          "source" : "NUMBER",
+          "type" : "C",
+          "len" : "1:240",
+          "occMin" : 0,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "-"
+        },
+        "OVERVIEW" :
+        {
+          "entry" : 5,
+          "name" : "OVERVIEW",
+          "source" : "OVERVIEW",
+          "type" : "C",
+          "len" : "1:1000",
+          "occMin" : 1,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "I"
+        },
+        "REVDATE" :
+        {
+          "entry" : 6,
+          "name" : "REVDATE",
+          "source" : "REVDATE",
+          "type" : "E",
+          "len" : "9",
+          "occMin" : 1,
+          "occMax" : 1,
+          "virtual" : "Put",
+          "isDate" : "Y",
+          "idxType" : "-"
+        },
+        "REVID" :
+        {
+          "entry" : 7,
+          "name" : "REVID",
+          "source" : "REVID",
+          "type" : "C",
+          "len" : "1:8",
+          "occMin" : 1,
+          "occMax" : 1,
+          "virtual" : "Put",
+          "isDate" : "N",
+          "idxType" : "-"
+        },
+        "TEXT" :
+        {
+          "entry" : 8,
+          "name" : "TEXT",
+          "source" : "TEXT",
+          "type" : "C",
+          "len" : "0:65000",
+          "occMin" : 0,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "I"
+        },
+        "TOPIC" :
+        {
+          "entry" : 9,
+          "name" : "TOPIC",
+          "source" : "TOPIC",
+          "type" : "C",
+          "len" : "1:31",
+          "occMin" : 1,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "E"
+        }
+      }
+    },
+    "SCHED" :
+    {
+      "entry" : 6,
+      "name" : "SCHED",
+      "source" : "SCHED",
+      "style" : "Continuous",
+      "uniqueField" : "",
+      "streamField" : "NOTES",
+      "fields_ne" : 6,
+      "fields" :
+      {
+        "DEPARTURE" :
+        {
+          "entry" : 1,
+          "name" : "DEPARTURE",
+          "source" : "DEPARTURE",
+          "type" : "E",
+          "len" : "8",
+          "occMin" : 1,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "Y",
+          "idxType" : "-"
+        },
+        "DESTIN" :
+        {
+          "entry" : 2,
+          "name" : "DESTIN",
+          "source" : "DESTIN",
+          "type" : "C",
+          "len" : "1:20",
+          "occMin" : 1,
+          "occMax" : 20,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "E"
+        },
+        "ENO" :
+        {
+          "entry" : 3,
+          "name" : "ENO",
+          "source" : "ENO",
+          "type" : "E",
+          "len" : "5",
+          "occMin" : 1,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "-"
+        },
+        "ID" :
+        {
+          "entry" : 4,
+          "name" : "ID",
+          "source" : "ID",
+          "type" : "E",
+          "len" : "8",
+          "occMin" : 1,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "E"
+        },
+        "ITIN" :
+        {
+          "entry" : 5,
+          "name" : "ITIN",
+          "source" : "ITIN",
+          "type" : "C",
+          "len" : "1:500",
+          "occMin" : 0,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "-"
+        },
+        "NOTES" :
+        {
+          "entry" : 6,
+          "name" : "NOTES",
+          "source" : "NOTES",
+          "type" : "C",
+          "len" : "0:65000",
+          "occMin" : 0,
+          "occMax" : 1,
+          "virtual" : "N",
+          "isDate" : "N",
+          "idxType" : "I"
+        }
+      }
+    }
+  }
+}

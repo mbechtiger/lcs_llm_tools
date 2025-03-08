@@ -31,7 +31,8 @@ The repository contains sub-folders :
 	- "removeCsvColumn.py"
 - Go : 
 	- "hvuStreamListFields.go", sample dump files "tour_employee.dmp" & "tlpfra_cat.dmp"
- 	- "removeEmptyColumns.go" 	
+ 	- "removeEmptyColumns.go"
+    	- "viewsJsonDescription.go", sample Json dictionary "TLPFRA_ASP.json"  
 
 Comments at the beginning of each program provides a description and sample usage, and should be sufficient to use the tool.
 
